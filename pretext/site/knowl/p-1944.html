@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:45:02+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>To compute the directional derivative, we need the gradient. To compute the gradient, we need some partial derivatives. So we start with the partial derivatives of \(f\) at \((0,1)\text{:}\)</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+f_x(0,1) &amp;= e^{x+y^2}\Big|_{x=0\atop y=1} &amp;&amp;=e\\
+f_y(0,1) &amp;= 2ye^{x+y^2}\Big|_{x=0\atop y=1} &amp;&amp;=2e
+\end{alignat*}
+</div>
+<p data-braille="continuation">So the gradient of \(f\) at \((0,1)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(0,1) = f_x(0,1)\,\hi + f_y(0,1)\,\hj
+= e\,\hi + 2e\,\hj
+\end{equation*}
+</div>
+<p data-braille="continuation">and the direction derivative in the direction \(-\hi + \hj\) is</p>
+<div class="displaymath">
+\begin{equation*}
+D_{\frac{-\hi+\hj}{|-\hi+\hj|}} f(0,1)
+= \vnabla f(0,1)\cdot\frac{-\hi+\hj}{|-\hi+\hj|}
+= \big(e\,\hi + 2e\,\hj\big)\cdot \frac{-\hi+\hj}{\sqrt{2}}
+= \frac{e}{\sqrt{2}}
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec_directional_derivatives.html#p-1944">in-context</a></span>
+</body>
+</html>

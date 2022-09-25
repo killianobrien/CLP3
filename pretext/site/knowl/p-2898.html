@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:46:32+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>We will give only the proof for part (a) in the special case that</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
+\end{equation*}
+</div>
+<p data-braille="continuation">In part (a), we are assuming that \(\cR\) is symmetric about the \(y\)-axis, so that \(L(y)=-R(y)\text{.}\) So, using horizontal strips, as described in §<a href="sec_2d_integrals.html#sec_horizontal_slices" class="internal" title="Subsection 3.1.2: Horizontal Slices">3.1.2</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y}
+=\int_c^d \dee{y} \int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)
+\end{equation*}
+</div>
+<p data-braille="continuation">Fix any \(c\le y\le d\text{.}\)</p>
+<ul class="disc">
+<li>If \(f(x,y)\) is odd under \(x\rightarrow -x\text{,}\) then \(f(-x,y)=-f(x,y)\) for all \(-R(y)\le x\le R(y)\) and<div class="displaymath">
+\begin{equation*}
+\int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)=0
+\end{equation*}
+</div>by part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a> (Theorem 1.2.11 in the CLP-2 text).</li>
+<li>If \(f(x,y)\) is even under \(x\rightarrow -x\text{,}\) then \(f(-x,y)=f(x,y)\) for all \(-R(y)\le x\le R(y)\) and<div class="displaymath">
+\begin{equation*}
+\int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)=2\int_0^{R(y)} \dee{x}\ f(x,y)
+\end{equation*}
+</div>by part (a) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a>.</li>
+</ul>
+<p data-braille="continuation">As the statements of the two bullets are true for each fixed \(c\le y\le d\text{,}\) we have that</p>
+<ul class="disc">
+<li>if \(f(x,y)\) is odd under \(x\rightarrow -x\text{,}\) then<div class="displaymath">
+\begin{align*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y}
+&amp;=\int_c^d \dee{y} \int_{-R(y)}^{R(y)} \dee{x}\ f(x,y) 
+=\int_c^d \dee{y}\ 0 \\
+&amp;=0
+\end{align*}
+</div>
+</li>
+<li>and if \(f(x,y)\) is even under \(x\rightarrow -x\text{,}\) then<div class="displaymath">
+\begin{align*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y}
+&amp;=\int_c^d \dee{y} \int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)
+=\int_c^d \dee{y}\ 2\int_0^{R(y)} \dee{x}\ f(x,y) \\
+&amp;=2\dblInt_{\cR_+} f(x,y)\,\dee{x}\dee{y}
+\end{align*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">The proof of part (a) when \(\cR\) is not of the form</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
+\end{equation*}
+</div>
+<p data-braille="continuation">(for example if \(\cR\) has holes in it) is most easily done using the change of variables \(x=-u\text{,}\) \(y=v\) in Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a>, which is part of the optional §<a href="sec_Jacobian.html" class="internal" title="Section 3.8: Optional— Integrals in General Coordinates">3.8</a>.</p>
+<span class="incontext"><a href="sec_2d_integrals.html#p-2898">in-context</a></span>
+</body>
+</html>

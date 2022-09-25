@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:42:05+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Double Integrals in Polar Coordinates</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_2d_integrals.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_int_2d_applications.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_2d_integrals.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_int_2d_applications.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars" class="active">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_polars"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Double Integrals in Polar Coordinates</span>
+</h2>
+<section class="introduction" id="introduction-70"><p id="p-3103">So far, in setting up integrals, we have always cut up the domain of integration into tiny rectangles by drawing in many lines of constant \(x\) and many lines of constant \(y\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:36%;margin-right:36%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/intDecomp3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3104">There is no law that says that we must cut up our domains of integration into tiny pieces in that way. Indeed, when the objects of interest are sort of round and centered on the origin, it is often advantageous<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-118" id="fn-118"><sup> 1 </sup></a> to use polar coordinates, rather than Cartesian coordinates.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-118"><div class="fn">The “golden hammer” (also known as Maslow's hammer and as the law of the instrument) refers to a tendency to always use the same tool, even when it isn't the best tool for the job. It is just as bad in mathematics as it is in carpentry.</div></div></section><section class="subsection" id="sec_polar_coords"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Polar Coordinates</span>
+</h3>
+<p id="p-3105">It may have been a while since you did anything in polar coordinates. So let's review before we resume integrating.</p>
+<article class="definition definition-like" id="def_polars"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
+</h6>
+<p id="p-3106">The polar coordinates<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-119" id="fn-119"><sup> 2 </sup></a> of any point \((x,y)\) in the \(xy\)-plane are</p>
+<div class="displaymath">
+\begin{align*}
+r&amp;=\text{ the distance from }(0,0)\text{ to }(x,y)\\
+\theta&amp;=\text{ the (counter-clockwise) angle between the $x$-axis }\\
+&amp; \qquad \text{ and the line joining $(x,y)$ to $(0,0)$}
+\end{align*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-119"><div class="fn">In the mathematical literature, the angular coordinate is usually denoted \(\theta\text{,}\) as we do here. The symbol \(\phi\) is also often used for the angular coordinate. In fact there is an ISO standard (#80000 – 2) which specifies that \(\phi\) should be used in the natural sciences and in technology. See Appendix  <a href="ap_ISO.html" class="internal" title="Section A.7: ISO Coordinate System Notation">A.7</a>.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:37.5%;margin-right:37.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polar.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-3107">Cartesian and polar coordinates are related, via a quick bit of trigonometry, by</p>
+<article class="fact theorem-like" id="eqn_polars"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-3108">
+\begin{align*}
+x&amp;=r\cos\theta &amp;
+y&amp;=r\sin\theta\\
+r&amp;=\sqrt{x^2+y^2} &amp;
+\theta&amp;=\arctan\frac{y}{x}
+\end{align*}
+</div></article><p id="p-3109">The following two figures show a number of lines of constant \(\theta\text{,}\) on the left, and curves of constant \(r\text{,}\) on the right.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
+<div class="sbspanel" style="width:37.5%;justify-content:flex-start;"><img src="figs/polarTh.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:37.5%;justify-content:flex-start;"><img src="figs/polarR.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3110">Note that the polar angle \(\theta\) is only defined up to integer multiples of \(2\pi\text{.}\) For example, the point \((1,0)\) on the \(x\)-axis could have \(\theta=0\text{,}\) but could also have \(\theta=2\pi\) or \(\theta=4\pi\text{.}\) It is sometimes convenient to assign \(\theta\) negative values. When \(\theta \lt 0\text{,}\) the counter-clockwise<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-120" id="fn-120"><sup> 3 </sup></a> angle \(\theta\) refers to the clockwise angle \(|\theta|\text{.}\) For example, the point \((0,-1)\) on the negative \(y\)-axis can have \(\theta=-\frac{\pi}{2}\) and can also have \(\theta=\frac{3\pi}{2}\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-120"><div class="fn">or anti-clockwise or widdershins. Yes, widdershins is a real word, though the Oxford English Dictionary lists its frequency of usage as between 0.01 and 0.1 times per million words. Of course both “counter-clockwise” and “anti-clockwise” assume that your clock is not a sundial in the southern hemisphere.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarNegTh.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3111">It is also sometimes convenient to extend the above definitions by saying that \(x=r\cos\theta\) and \(y=r\sin\theta\) even when \(r\) is negative. For example, the following figure shows \((x,y)\) for \(r=1\text{,}\) \(\theta=\frac{\pi}{4}\) and for \(r=-1\text{,}\) \(\theta=\frac{\pi}{4}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarNeg.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3112">Both points lie on the  line through the origin that makes an angle of \(45^\circ\) with the \(x\)-axis and both are a distance one from the origin. But they are on opposite sides of the the origin.</p></section><section class="subsection" id="sec_polar_curves"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Polar Curves</span>
+</h3>
+<p id="p-3113">Here are a couple of examples in which we sketch curves specified by equations in terms of polar coordinates.</p>
+<article class="example example-like" id="eg_cardioid"><a data-knowl="" class="id-ref original" data-refid="hk-eg_cardioid"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">The Cardioid.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_cardioid"><article class="example example-like"><p id="p-3114">Let's sketch the curve</p>
+<div class="displaymath">
+\begin{equation*}
+r= 1+\cos\theta
+\end{equation*}
+</div>
+<p data-braille="continuation">Our starting point will be to understand how \(1+\cos\theta\) varies with \(\theta\text{.}\) So it will be helpful to remember what the graph of \(\cos\theta\) looks like for \(0\le\theta\le 2\pi\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cosGraph.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3115">From this we see that the graph of \(y=1+\cos\theta\) is</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:22.5%;margin-right:22.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cosGraphP1.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3116">Now let's pick some easy \(\theta\) values, find the corresponding \(r\)'s and sketch them.</p>
+<ul id="p-3117" class="disc">
+<li id="li-1576">When \(\theta=0\text{,}\) we have \(r=1+\cos 0 = 1+1=2\text{.}\) To sketch the point with \(\theta=0\) and \(r=2\text{,}\) we first draw in the half-line consisting of all points with \(\theta=0\text{,}\) \(r \gt 0\text{.}\) That's the positive \(x\)-axis, sketched in gray in the leftmost figure below. Then we put in a dot on that line a distance \(2\) from the origin. That's the red dot in the first figure below.</li>
+<li id="li-1577">
+<p id="p-3118">Now increase \(\theta\) a bit (to another easy place to evaluate), say to \(\theta=\frac{\pi}{6}\text{.}\) As we do so \(r=1+\cos\theta\) decreases to \(r=1+\cos\frac{\pi}{6} = 1+\frac{\sqrt{3}}{2}\approx 1.87\text{.}\) To sketch the point with \(\theta=\frac{\pi}{6}\) and \(r\approx 1.87\text{,}\) we first draw in the half-line consisting of all points with \(\theta=\frac{\pi}{6}\text{,}\) \(r \gt 0\text{.}\) That's the upper gray line in the second figure below. Then we put in a dot on that line a distance \(1.87\) from the origin. That's the upper red dot in the second figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:11%;margin-right:11%;">
+<div class="sbspanel" style="width:35.8974358974359%;justify-content:flex-start;"><img src="figs/cardioid1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:35.8974358974359%;justify-content:flex-start;"><img src="figs/cardioid2.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cardioid3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1578">
+<p id="p-3119">Now increase \(\theta\) still more, say to</p>
+<ul class="circle">
+<li id="li-1579">\(\theta=\frac{2\pi}{6}=\frac{\pi}{3}\text{,}\)</li>
+<li id="li-1580">followed by \(\theta=\frac{3\pi}{6}=\frac{\pi}{2}\text{,}\)</li>
+<li id="li-1581">followed by \(\theta=\frac{4\pi}{6}=\frac{2\pi}{3}\text{,}\)</li>
+<li id="li-1582">followed by \(\theta=\frac{5\pi}{6}\text{,}\)</li>
+<li id="li-1583">followed by \(\theta=\frac{6\pi}{6}=\pi\text{.}\)</li>
+</ul>
+<p data-braille="continuation">As \(\theta\) increases, \(r=1+\cos\theta\) decreases, hitting \(r=1\) when \(\theta=\frac{\pi}{2}\) and ending at \(r=0\) when \(\theta=\pi\text{.}\) For each of these \(\theta\)'s,  we first draw in the half-line consisting of all points with that \(\theta\) and \(r\ge 0\text{.}\) Those are the five gray lines in the figure on the right above. Then we put in a dot on each \(\theta\)-line a distance \(r=1+\cos\theta\) from the origin. Those are the red dots on the gray lines in the figure on the right above.</p>
+</li>
+<li id="li-1584">
+<p id="p-3120">We could continue the above procedure for \(\pi\le\theta\le 2\pi\text{.}\) Or we can look at the graph of \(\cos\theta\) above and notice that the graph of \(\cos\theta\) for \(\pi\le\theta\le 2\pi\) is exactly the mirror image, about \(\theta=\pi\text{,}\) of the graph of \(\cos\theta\) for \(0\le\theta\le \pi\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:22.5%;margin-right:22.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cosGraphR.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3121">That is, \(\cos(\pi+\theta) =\cos(\pi-\theta)\) so that \(r(\pi+\theta) = r(\pi-\theta)\text{.}\) So we get the figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:36%;margin-right:36%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cardiod4.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1585">
+<p id="p-3122">Finally, we fill in a smooth curve through the dots and we get the graph below. This curve is called a <em class="emphasis">cardioid</em> because it looks like a heart<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-121" id="fn-121"><sup> 4 </sup></a>.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cardiodF.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ul>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-121"><div class="fn">Well, a mathematician's heart. The name “cardioid” comes from the Greek word \(\kappa \alpha \rho \delta \iota \alpha\) (which anglicizes to kardia) for heart.</div></div></article></div>
+<article class="example example-like" id="eg_rose"><a data-knowl="" class="id-ref original" data-refid="hk-eg_rose"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">The Three Petal Rose.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_rose"><article class="example example-like"><p id="p-3123">Now we'll use the same procedure as in the last example to sketch the graph of</p>
+<div class="displaymath">
+\begin{equation*}
+r=\sin(3\theta)
+\end{equation*}
+</div>
+<p data-braille="continuation">Again it will be useful to remember what the graph of \(\sin(3\theta)\) looks like for \(0\le\theta\le 2\pi\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sin3Graph.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<ul id="p-3124" class="disc">
+<li id="li-1586">
+<p id="p-3125">We'll first consider \(0\le\theta\le\frac{\pi}{3}\text{,}\) so that \(0\le 3\theta \le \pi\text{.}\) On this interval \(r(\theta)=\sin(3\theta)\)</p>
+<ul class="circle">
+<li id="li-1587">starts with \(r(0)=0\text{,}\) and then</li>
+<li id="li-1588">increases as \(\theta\) increases until</li>
+<li id="li-1589">\(3\theta=\frac{\pi}{2}\text{,}\) i.e. \(\theta=\frac{\pi}{6}\text{,}\) where \(r\big(\frac{\pi}{6}\big)=1\text{,}\) and then</li>
+<li id="li-1590">decreases as \(\theta\) increases until</li>
+<li id="li-1591">\(3\theta=\pi\text{,}\) i.e. \(\theta=\frac{\pi}{3}\text{,}\) where \(r\big(\frac{\pi}{3}\big)=0\text{,}\) again.</li>
+</ul>
+<p data-braille="continuation">Here is a table giving a few values of \(r(\theta)\) for \(0\le \theta\le\frac{\pi}{3}\text{.}\) Notice that we have chosen values of \(\theta\) for which \(\sin(3\theta)\) is easy to compute.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(\theta\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3\theta\)</td>
+<td class="c m b1 r1 l0 t1 lines" data-braille="last-cell">\(r(\theta)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">0</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{\pi}{12}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{\pi}{4}\)</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(\frac{1}{\sqrt{2}}\approx  0.71\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{2 \pi}{12}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{\pi}{2}\)</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{3 \pi}{12}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{3\pi}{4}\)</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(\frac{1}{\sqrt{2}}\approx  0.71\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{4 \pi}{12}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\pi\)</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(0\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-3126">and here is a sketch exhibiting those values and another sketch of the part of the curve with \(0\le \theta\le\frac{\pi}{3}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:4.25%;margin-right:4.25%;">
+<div class="sbspanel" style="width:46.9945355191257%;justify-content:center;"><img src="figs/rose1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:43.7158469945355%;justify-content:center;"><img src="figs/rose1b.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-1592">
+<p id="p-3127">Next consider \(\frac{\pi}{3}\le\theta\le\frac{2\pi}{3}\text{,}\) so that \(\pi\le 3\theta \le 2\pi\text{.}\) On this interval \(r(\theta)=\sin(3\theta)\)</p>
+<ul class="circle">
+<li id="li-1593">starts with \(r\big(\frac{\pi}{3}\big)=0\text{,}\) and then</li>
+<li id="li-1594">decreases as \(\theta\) increases until</li>
+<li id="li-1595">\(3\theta=\frac{3\pi}{2}\text{,}\) i.e. \(\theta=\frac{\pi}{2}\text{,}\) where \(r\big(\frac{\pi}{2}\big)=-1\text{,}\) and then</li>
+<li id="li-1596">increases as \(\theta\) increases until</li>
+<li id="li-1597">\(3\theta=2\pi\text{,}\) i.e. \(\theta=\frac{2\pi}{3}\text{,}\) where \(r\big(\frac{2\pi}{3}\big)=0\text{,}\) again.</li>
+</ul>
+<p data-braille="continuation">We are now encountering, for the first time, \(r(\theta)\)'s that are negative. The figure on the left below contains, for each of \(\theta = \frac{4\pi}{12}=\frac{\pi}{3}\text{,}\) \(\frac{5\pi}{12}\text{,}\) \(\ \frac{6\pi}{12}=\frac{\pi}{2}\text{,}\) \(\ \frac{7\pi}{12}\) and \(\ \frac{8\pi}{12}=\frac{2\pi}{3}\)</p>
+<ul class="circle">
+<li id="li-1598">the (dashed) half-line consisting of all points with that \(\theta\) and \(r \lt 0\) and</li>
+<li id="li-1599">the dot with that \(\theta\) and \(r(\theta)=\sin(3\theta)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">The figure on the right below provides a sketch of the part of the curve \(r=\sin(3\theta)\) with \(\frac{\pi}{3}\le \theta\le \frac{2\pi}{3}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/rose2.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/rose2b.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-1600">
+<p id="p-3128">Finally consider \(\frac{2\pi}{3}\le\theta\le\pi\) (because \(r(\theta+\pi) = \sin (3\theta+3\pi) = -\sin(3\theta)=-r(\theta)\text{,}\) the part of the curve with \(\pi\le\theta\le 2\pi\) just retraces the part with \(0\le\theta\le \pi\)), so that \(2\pi\le 3\theta \le 3\pi\text{.}\) On this interval \(r(\theta)=\sin(3\theta)\)</p>
+<ul class="circle">
+<li id="li-1601">starts with \(r\big(\frac{2\pi}{3}\big)=0\text{,}\) and then</li>
+<li id="li-1602">increases as \(\theta\) increases until</li>
+<li id="li-1603">\(3\theta=\frac{5\pi}{2}\text{,}\) i.e. \(\theta=\frac{10\pi}{12}\text{,}\) where \(r\big(\frac{5\pi}{2}\big)=1\text{,}\) and then</li>
+<li id="li-1604">decreases as \(\theta\) increases until</li>
+<li id="li-1605">\(3\theta=3\pi\text{,}\) i.e. \(\theta=\frac{12\pi}{12}=\pi\text{,}\) where \(r\big(\pi\big)=0\text{,}\) again.</li>
+</ul>
+<p data-braille="continuation">The figure on the left below contains, for each of \(\theta = \frac{8\pi}{12}=\frac{2\pi}{3}\text{,}\) \(\frac{9\pi}{12}\text{,}\) \(\ \frac{10\pi}{12}\text{,}\) \(\ \frac{11\pi}{12}\) and \(\ \frac{12\pi}{12}=\pi\)</p>
+<ul class="circle">
+<li id="li-1606">the (solid) half-line consisting of all points with that \(\theta\) and \(r\ge 0\) and</li>
+<li id="li-1607">the dot with that \(\theta\) and \(r(\theta)=\sin(3\theta)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">The figure on the right below provides a sketch of the part of the curve \(r=\sin(3\theta)\) with \(\frac{2\pi}{3}\le \theta\le \pi\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/rose3.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/rose3b.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+</ul>
+<p data-braille="continuation">Putting the three lobes together gives the full curve, which is called the “three petal rose”.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/rose3F.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3129">There is an infinite family of similar rose curves (also called rhodonea<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-122" id="fn-122"><sup> 5 </sup></a> curves).</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-122"><div class="fn">The name rhodenea first appeared in the 1728 publication <em class="emphasis">Flores geometrici</em> of the Italian monk, theologian, mathematician and engineer, Guido Grandi (1671– 1742).</div></div></article></div></section><section class="subsection" id="sec_polar_integrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.3</span> <span class="title">Integrals in Polar Coordinates</span>
+</h3>
+<p id="p-3130">We now return to the problem of using polar coordinates to set up double integrals. So far, we have used Cartesian coordinates, in the sense that we have cut up our domains of integration into tiny rectangles (on which the integrand is essentially constant) by drawing in many lines of constant \(x\) and many lines of constant \(y\text{.}\) To use polar coordinates, we instead draw in both lines of constant \(\theta\) and curves of constant \(r\text{.}\) This cuts the \(xy\)-plane up into approximate rectangles.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarRTh.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3131">Here is an enlarged sketch of one such approximate rectangle.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3132">One side has length \(\dee{r}\text{,}\) the spacing between the curves of constant \(r\text{.}\) The other side is a portion of a circle of radius \(r\) that subtends, at the origin, an angle \(\dee{\theta}\text{,}\) the angle between the lines of constant \(\theta\text{.}\) As the circumference of the full circle is \(2\pi r\) and as \(\dee{\theta}\) is the fraction \(\frac{\dee{\theta}}{2\pi}\) of a full circle<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-123" id="fn-123"><sup> 6 </sup></a>, the other side of the approximate rectangle has length \(\frac{\dee{\theta}}{2\pi}2\pi r = r\dee{\theta}\text{.}\) So the shaded region has area approximately</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-123"><div class="fn">Recall that \(\theta\) has to be measured in radians for this to be true.</div></div>
+<article class="fact theorem-like" id="eq_dA_polar"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-3133">
+\begin{equation*}
+\dee{A} = r\,\dee{r}\,\dee{\theta}
+\end{equation*}
+</div></article><p id="p-3134">By way of comparison, using Cartesian coordinates we had \(\dee{A}
+=\dee{x}\,\dee{y}\text{.}\)</p>
+<p id="p-3135">This intuitive computation has been somewhat handwavy<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-124" id="fn-124"><sup> 7 </sup></a>. But using it in the usual integral setup procedure, in which we choose \(\dee{r}\) and \(\dee{\theta}\) to be constants times \(\frac{1}{n}\) and then take the limit \(n\rightarrow 0\text{,}\) gives, in the limit, error exactly zero. A sample argument, in which we see the error going to zero in the limit \(n\rightarrow\infty\text{,}\) is provided in the (optional) section §<a href="sec_polars.html#sec_integral_error" class="internal" title="Subsection 3.2.4: Optional— Error Control for the Polar Area Formula&gt;">3.2.4</a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-124"><div class="fn">“Handwaving” is sometimes used as a pejorative to refer to an argument that lacks substance. Here we are just using it to indicate that we have left out a bunch of technical details. In mathematics, “nose-following” is sometimes used as the polar opposite of handwaving. It refers to a very narrow, mechanical, line of reasoning.</div></div>
+<article class="example example-like" id="eg_polar_mass"><a data-knowl="" class="id-ref original" data-refid="hk-eg_polar_mass"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Mass.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_polar_mass"><article class="example example-like"><p id="p-3136">Let \(0\le a \lt b\le 2\pi\) be constants and let \(\cR\) be the region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(r\cos\theta,r\sin\theta)}{a\le\theta\le b,
+B(\theta)\le r\le T(\theta)}
+\end{equation*}
+</div>
+<p data-braille="continuation">where the functions \(T(\theta)\) and \(B(\theta)\) are continuous and obey \(B(\theta)\le T(\theta)\) for all \(a\le\theta\le b\text{.}\) Find the mass of \(\cR\) if it has density \(f(x,y)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-441" id="solution-441"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-441"><div class="solution solution-like">
+<p id="p-3137">The figure on the left below is a sketch of \(\cR\text{.}\) Notice that \(r=T(\theta)\) is the outer curve while \(r=B(\theta)\) is the inner curve.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/polarMass.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/polarMass2.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3138">Divide \(\cR\) into wedges (as in wedges of pie<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-125" id="fn-125"><sup> 8 </sup></a> or wedges of cheese) by drawing in many lines of constant \(\theta\text{,}\) with the various values of \(\theta\) differing by a tiny amount \(\dee{\theta}\text{.}\) The figure on the right above shows one such wedge, outlined in blue.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-125"><div class="fn">There is a pie/pi/pye pun in there somewhere.</div></div>
+<p id="p-3139">Concentrate on any one wedge. Subdivide the wedge further into approximate rectangles by drawing in many circles of constant \(r\text{,}\) with the various values of \(r\) differing by a tiny amount \(\dee{r}\text{.}\) The figure below shows one such approximate rectangle, in black.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarMass3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3140">Now concentrate on one such rectangle. Let's say that it contains the point with polar coordinates \(r\) and \(\theta\text{.}\) As we saw in <a class="xref" data-knowl="./knowl/eq_dA_polar.html" title="Equation 3.2.5">3.2.5</a> above,</p>
+<ul class="disc">
+<li id="li-1608">the area of that rectangle is essentially \(\dee{A} =  r\,\dee{r}\,\dee{\theta}\text{.}\)</li>
+<li id="li-1609">As the mass density on the rectangle is essentially \(f\big(r\cos\theta\,,\,r\sin\theta\big)\text{,}\) the mass of the rectangle is essentially \(f\big(r\cos\theta\,,\,r\sin\theta\big)\,r\,\dee{r}\,\dee{\theta}\text{.}\)</li>
+<li id="li-1610">To get the mass of any one wedge,  say the wedge whose polar angle runs from \(\theta\) to \(\theta+\dee{\theta}\text{,}\) we just add up the masses of the approximate rectangles in that wedge, by integrating \(r\) from its smallest value on the wedge, namely \(B(\theta)\text{,}\) to its largest value on the wedge, namely \(T(\theta)\text{.}\) The mass of the wedge is thus<div class="displaymath">
+\begin{equation*}
+\dee{\theta} \int_{B(\theta)}^{T(\theta)}  \dee{r}\,r\,
+f\big(r\cos\theta\,,\,r\sin\theta\big)
+\end{equation*}
+</div>
+</li>
+<li id="li-1611">Finally, to get the mass of \(\cR\text{,}\) we just add up the masses of all of the different wedges, by integrating \(\theta\) from its smallest value on \(\cR\text{,}\) namely \(a\text{,}\) to its largest value on \(\cR\text{,}\) namely \(b\text{.}\)</li>
+</ul>
+<p data-braille="continuation">In conclusion,</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Mass}(\cR) = \int_a^b  \dee{\theta}
+\int_{B(\theta)}^{T(\theta)}  \dee{r}\,r\,
+f\big(r\cos\theta\,,\,r\sin\theta\big)
+\end{equation*}
+</div>
+<p data-braille="continuation">We have repeatedly used the word “essentially” above to avoid getting into the nitty-gritty details required to prove things rigorously. The mathematically correct proof of <a class="xref" data-knowl="./knowl/eq_polar_mass.html" title="Equation 3.2.7">3.2.7</a> follows the same intuition, but requires some more careful error bounds, as in the optional §<a href="sec_polars.html#sec_integral_error" class="internal" title="Subsection 3.2.4: Optional— Error Control for the Polar Area Formula&gt;">3.2.4</a> below.</p>
+</div></div>
+</div></article></div>
+<p id="p-3141">In the last example, we derived the important formula that the mass of the region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(r\cos\theta,r\sin\theta)}{a\le\theta\le b,
+B(\theta)\le r\le T(\theta)}
+\end{equation*}
+</div>
+<p data-braille="continuation">with mass density \(f(x,y)\) is</p>
+<article class="fact theorem-like" id="eq_polar_mass"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-3142">
+\begin{equation*}
+\text{Mass}(\cR) = \int_a^b  \dee{\theta}
+\int_{B(\theta)}^{T(\theta)}  \dee{r}\,r\,
+f\big(r\cos\theta\,,\,r\sin\theta\big)
+\end{equation*}
+</div></article><p id="p-3143">We can immediately adapt that example to calculate areas and derive the formula that the area of the region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(r\cos\theta,r\sin\theta)}{a\le\theta\le b, 
+0\le r\le R(\theta)}
+\end{equation*}
+</div>
+<p data-braille="continuation">is</p>
+<article class="fact theorem-like" id="eq_polar_area"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-3144">
+\begin{equation*}
+\text{Area}(\cR) =\frac{1}{2} \int_a^b R(\theta)^2\  \dee{\theta}
+\end{equation*}
+</div></article><p id="p-3145">We just have set the density to \(1\text{.}\) We do so in the next example.</p>
+<article class="example example-like" id="eg_polar_area"><a data-knowl="" class="id-ref original" data-refid="hk-eg_polar_area"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Polar Area.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_polar_area"><article class="example example-like"><p id="p-3146">Let \(0\le a \lt b\le 2\pi\) be constants. Find the area of the region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(r\cos\theta,r\sin\theta)}{a\le\theta\le b,
+0\le r\le B(\theta)}
+\end{equation*}
+</div>
+<p data-braille="continuation">where the function  \(R(\theta)\ge 0\) is continuous.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-442" id="solution-442"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-442"><div class="solution solution-like">
+<p id="p-3147">To get the area of \(\cR\) we just need to assign it a density one and find the resulting mass. So, by <a class="xref" data-knowl="./knowl/eq_polar_mass.html" title="Equation 3.2.7">3.2.7</a>, with \(f(x,y)=1\text{,}\) \(B(\theta)=0\) and \(T(\theta)=R(\theta)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\text{Area}(\cR) &amp;= \int_a^b  \dee{\theta}
+\int_0^{R(\theta)}  \dee{r}\,r
+\end{align*}
+</div>
+<p data-braille="continuation">In this case we can easily do the inner \(r\) integral, giving</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Area}(\cR) =\frac{1}{2} \int_a^b R(\theta)^2\  \dee{\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">The expression \(\frac{1}{2} R(\theta)^2\ \dee{\theta}\) in <a class="xref" data-knowl="./knowl/eq_polar_area.html" title="Equation 3.2.8">3.2.8</a> has a geometric interpretation. It is just the area of a wedge of a circular disk of radius \(R(\theta)\) (with \(R(\theta)\) treated as a constant) that subtends the angle \(\dee{\theta}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarArea3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3148">To see this, note that area of the wedge is the fraction \(\frac{\dee{\theta}}{2\pi}\) of the area of the entire disk, which is \(\pi R(\theta)^2\text{.}\) So <a class="xref" data-knowl="./knowl/eq_polar_area.html" title="Equation 3.2.8">3.2.8</a> just says that the area of \(\cR\) can be computed by cutting \(\cR\) up into tiny wedges and adding up the areas of all of the tiny wedges.</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_area_rose"><a data-knowl="" class="id-ref original" data-refid="hk-eg_area_rose"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Polar Area.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_area_rose"><article class="example example-like"><p id="p-3149">Find the area of one petal of the three petal rose \(r=\sin(3\theta)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-443" id="solution-443"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-443"><div class="solution solution-like">
+<p id="p-3150">Looking at the last figure in Example <a class="xref" data-knowl="./knowl/eg_rose.html" title="Example 3.2.4: The Three Petal Rose">3.2.4</a>, we see that we want the area of</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(r\cos\theta,r\sin\theta)}{0\le\theta\le \frac{\pi}{3},\
+0\le r\le \sin(3\theta)}
+\end{equation*}
+</div>
+<p data-braille="continuation">So, by <a class="xref" data-knowl="./knowl/eq_polar_area.html" title="Equation 3.2.8">3.2.8</a> with \(a=0\text{,}\) \(b=\frac{\pi}{3}\text{,}\) and \(R(\theta) =\sin(3\theta)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\text{area}(\cR)
+&amp;=\frac{1}{2} \int_0^{\frac{\pi}{3}} \sin^2(3\theta)\  \dee{\theta}\\
+&amp;=\frac{1}{4} \int_0^{\frac{\pi}{3}} \big(1-\cos(6\theta)\big)
+\  \dee{\theta}\\
+&amp;= \frac{1}{4}\left[\theta -\frac{1}{6}\sin(6\theta)\right]
+_0^{\frac{\pi}{3}}\\
+&amp;=\frac{\pi}{12}
+\end{align*}
+</div>
+<p data-braille="continuation">In the first step we used the double angle formula \(\cos(2\phi) = 1-2\sin^2(\phi)\text{.}\) Unsurprisingly, trig identities show up a lot when polar coordinates are used.</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_polar_volume"><a data-knowl="" class="id-ref original" data-refid="hk-eg_polar_volume"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Volumes Using Polar Coordinates.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_polar_volume"><article class="example example-like"><p id="p-3151">A cylindrical hole of radius \(b\) is drilled symmetrically (i.e. along a diameter) through a metal sphere of radius \(a\ge b\text{.}\) Find the volume of metal removed.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-444" id="solution-444"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-444"><div class="solution solution-like">
+<p id="p-3152">Let's use a coordinate system with the sphere centred on \((0,0,0)\) and with the centre of the drill hole following the \(z\)-axis. In particular, the sphere is \(x^2+y^2+z^2\le a^2\text{.}\)</p>
+<p id="p-3153">Here is a sketch of the part of the sphere in the first octant. The hole in the sphere made by the drill is outlined in red. By symmetry the total amount of metal removed will be eight times the amount from the first octant.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/appleCore.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3154">That is, the volume of metal removed will be eight times the volume of the solid</p>
+<div class="displaymath">
+\begin{equation*}
+\cV_1 = \Set{(x,y,z)}{(x,y)\in\cR_1,\ 0\le z\le\sqrt{a^2-x^2-y^2}}
+\end{equation*}
+</div>
+<p data-braille="continuation">where the base region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR_1 = \Set{(x,y)}{x^2+y^2\le b^2,\ x\ge 0,\ y\ge 0}
+\end{equation*}
+</div>
+<p data-braille="continuation">In polar coordinates</p>
+<div class="displaymath">
+\begin{align*}
+\cV_1 &amp;= \Set{(r\cos\theta,r\sin\theta,z)}{(r\cos\theta,r\sin\theta)\in\cR_1,\
+0\le z\le\sqrt{a^2-r^2}}\\
+\cR_1 &amp;= \Set{(r\cos\theta,r\sin\theta)}{0\le r\le b,\
+0\le\theta\le\frac{\pi}{2}}
+\end{align*}
+</div>
+<p data-braille="continuation">We follow our standard divide and sum up strategy. We will cut the base region \(\cR_1\) into small pieces and sum up the volumes that lie above each small piece.</p>
+<ul class="disc">
+<li id="li-1612">
+<p id="p-3155">Divide \(\cR_1\) into wedges by drawing in many lines of constant \(\theta\text{,}\) with the various values of \(\theta\) differing by a tiny amount \(\dee{\theta}\text{.}\) The figure on the left below shows one such wedge, outlined in blue.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/appleCore1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/appleCore2.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-1613">Concentrate on any one wedge. Subdivide the wedge further into approximate rectangles by drawing in many circles of constant \(r\text{,}\) with the various values of \(r\) differing by a tiny amount \(\dee{r}\text{.}\) The figure on the right above shows one such approximate rectangle, in black.</li>
+<li id="li-1614">
+<p id="p-3156">Concentrate on one such rectangle. Let's say that it contains the point with polar coordinates \(r\) and \(\theta\text{.}\) As we saw in <a class="xref" data-knowl="./knowl/eq_dA_polar.html" title="Equation 3.2.5">3.2.5</a> above,</p>
+<ul class="circle">
+<li id="li-1615">the area of that rectangle is essentially \(\dee{A} =  r\,\dee{r}\,\dee{\theta}\text{.}\)</li>
+<li id="li-1616">
+<p id="p-3157">The part of \(\cV_1\) that is above that rectangle is like an office tower whose height is essentially \(\sqrt{a^2-r^2}\text{,}\) and whose base has area \(\dee{A} =  r\,\dee{r}\,\dee{\theta}\text{.}\) It is outlined in black in the figure below. So the volume of the part of \(\cV_1 \) that is above the rectangle is essentially \(\sqrt{a^2-r^2}\,r\,\dee{r}\,\dee{\theta}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/appleCore3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ul>
+</li>
+<li id="li-1617">
+<p id="p-3158">To get the volume of the part of \(\cV_1\) above any one wedge (outlined in blue in the figure below),  say the wedge whose polar angle runs from \(\theta\) to \(\theta+\dee{\theta}\text{,}\) we just add up the volumes above the approximate rectangles in that wedge, by integrating \(r\) from its smallest value on the wedge, namely \(0\text{,}\) to its largest value on the wedge, namely \(b\text{.}\) The volume above the wedge is thus</p>
+<div class="displaymath">
+\begin{align*}
+\dee{\theta} \int_0^b  \dee{r}\,r\, \sqrt{a^2-r^2}
+&amp;= \dee{\theta} \int_{a^2}^{a^2-b^2}  \frac{\dee{u}}{-2}\, \sqrt{u}\\
+&amp;\hskip0.5in   \text{where } u= a^2-r^2,\ \dee{u} =-2r\,\dee{r}\\
+&amp;=  \dee{\theta}\left[\frac{u^{3/2}}{-3}\right]_{a^2}^{a^2-b^2}\\
+&amp;=  \frac{1}{3}\dee{\theta}\left[a^3-{\big(a^2-b^2\big)}^{3/2}\right]
+\end{align*}
+</div>
+<p data-braille="continuation">Notice that this quantity is independent of \(\theta\text{.}\) If you think about this for a moment, you can see that this is a consequence of the fact that our solid is invariant under rotations about the \(z\)-axis.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/appleCore4.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1618">Finally, to get the volume of \(\cV_1\text{,}\) we just add up the volumes over all of the different wedges, by integrating \(\theta\) from its smallest value on \(\cR_1\text{,}\) namely \(0\text{,}\) to its largest value on \(\cR_1\text{,}\) namely \(\frac{\pi}{2}\text{.}\)<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\frac{1}{3}\int_0^{\pi/2}\dee{\theta}
+\left[a^3-{\big(a^2-b^2\big)}^{3/2}\right]\\
+&amp;=\frac{\pi}{6}\left[a^3-{\big(a^2-b^2\big)}^{3/2}\right]
+\end{align*}
+</div>
+</li>
+<li id="li-1619">In conclusion, the total volume of metal removed is<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV)
+&amp;=8\,\text{Volume}(\cV_1)\\
+&amp;=\frac{4\pi}{3}\left[a^3-{\big(a^2-b^2\big)}^{3/2}\right]
+\end{align*}
+</div>
+</li>
+</ul>
+<p id="p-3159">Note that we can easily apply a couple of sanity checks to our answer.</p>
+<ul class="disc">
+<li id="li-1620">If the radius of the drill bit \(b=0\text{,}\) no metal is removed at all. So the total volume removed should be zero. Our answer does indeed give \(0\) in this case.</li>
+<li id="li-1621">If the radius of the drill bit \(b=a\text{,}\) the radius of the sphere, then the entire sphere disappears. So the total volume removed should be the volume of a sphere of radius \(a\text{.}\) Our answer does indeed give \(\frac{4}{3}\pi a^3\) in this case.</li>
+<li id="li-1622">If the radius, \(a\text{,}\) of the sphere and the radius, \(b\text{,}\) of the drill bit are measured in units of meters, then the remaining volume \(\frac{4\pi}{3}\left[a^3-{\big(a^2-b^2\big)}^{3/2}\right]\text{,}\) has units \(\text{meters}^3\text{,}\) as it should.</li>
+</ul>
+</div></div>
+</div></article></div>
+<p id="p-3160">The previous two problems were given to us (or nearly given to us) in polar coordinates. We'll now get a little practice converting integrals into polar coordinates, and recognising when it is helpful to do so.</p>
+<article class="example example-like" id="eg_change_to_polar"><a data-knowl="" class="id-ref original" data-refid="hk-eg_change_to_polar"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Changing to Polar Coordinates.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_change_to_polar"><article class="example example-like"><p id="p-3161">Convert the integral \(\int_0^1\int_0^x y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}\) to polar coordinates and evaluate the result.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-445" id="solution-445"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-445"><div class="solution solution-like">
+<p id="p-3162">First recall that in polar coordinates \(x=r\cos\theta\text{,}\) \(y=r\sin\theta\) and \(\dee{x}\,\dee{y}=\dee{A}=r\,\dee{r}\,\dee{\theta}\) so that the integrand (and \(\dee{A}\))</p>
+<div class="displaymath">
+\begin{gather*}
+y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}
+=(r\sin\theta)\ r\ r\, \dee{r}\,\dee{\theta}
+=r^3\sin\theta\,\dee{r}\,\dee{\theta}
+\end{gather*}
+</div>
+<p data-braille="continuation">is very simple. So whether or not this integral will be easy to evaluate using polar coordinates will be largely determined by the domain of integration.</p>
+<p id="p-3163">So our main task is to sketch the domain of integration. To prepare for the sketch, note that in the integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1\int_0^x y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}
+=\int_0^1\dee{x}  \left[\int_0^x \dee{y}\ y\sqrt{x^2+y^2}\right]
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-1623">the variable \(x\) runs from \(0\) to \(1\) and</li>
+<li id="li-1624">for each fixed \(0\le x\le 1\text{,}\) \(y\) runs from \(0\) to \(x\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the domain of integration is</p>
+<div class="displaymath">
+\begin{equation*}
+\cD=\Set{(x,y)}{0\le x\le 1,\ 0\le y\le x}
+\end{equation*}
+</div>
+<p data-braille="continuation">which is sketched in the figure on the left below. It is a right angled triangle.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/convPolarA.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/convPolarC.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3164">Next we express the domain of integration in terms of polar coordinates, by expressing the equations of each of the boundary lines in terms of polar coordinates.</p>
+<ul class="disc">
+<li id="li-1625">The \(x\)-axis, i.e. \(y=r\sin\theta=0\text{,}\) is \(\theta=0\text{.}\)</li>
+<li id="li-1626">The line \(x=1\) is \(r\cos\theta=1\) or \(r=\frac{1}{\cos\theta}\text{.}\)</li>
+<li id="li-1627">Finally, (in the first quadrant)  the line<div class="displaymath">
+\begin{gather*}
+y=x
+\iff
+r\sin\theta = r\cos\theta
+\iff
+\tan\theta=\frac{\sin\theta}{\cos\theta}=1
+\iff
+\theta=\frac{\pi}{4}
+\end{gather*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">So, in polar coordinates, we can write the domain of integration as</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Big\{(r,\theta)\ \Big|\ 0\le\theta\le\frac{\pi}{4},\
+0\le r\le \frac{1}{\cos\theta}\Big\}
+\end{equation*}
+</div>
+<p data-braille="continuation">We can now slice up \(\cR\) using polar coordinates.</p>
+<ul class="disc">
+<li id="li-1628">
+<p id="p-3165">Divide \(\cR\) into wedges by drawing in many lines of constant \(\theta\text{,}\) with the various values of \(\theta\) differing by a tiny amount \(\dee{\theta}\text{.}\) The figure on the right above shows one such wedge.</p>
+<ul class="circle">
+<li id="li-1629">The first wedge has \(\theta=0\text{.}\)</li>
+<li id="li-1630">The last wedge has \(\theta=\frac{\pi}{4}\text{.}\)</li>
+</ul>
+</li>
+<li id="li-1631">
+<p id="p-3166">Concentrate on any one wedge. Subdivide the wedge further into approximate rectangles by drawing in many circles of constant \(r\text{,}\) with the various values of \(r\) differing by a tiny amount \(\dee{r}\text{.}\) The figure on the right above shows one such approximate rectangle, in black.</p>
+<ul class="circle">
+<li id="li-1632">The rectangle that contains the point with polar coordinates \(r\) and \(\theta\) has area (essentially) \(r\,\dee{r}\,\dee{\theta}\text{.}\)</li>
+<li id="li-1633">The first rectangle has \(r=0\text{.}\)</li>
+<li id="li-1634">The last rectangle has \(r=\frac{1}{\cos\theta}\text{.}\)</li>
+</ul>
+</li>
+</ul>
+<p data-braille="continuation">So our integral is</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1\int_0^x y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}
+&amp;=\int_0^{\pi/4}\dee{\theta}\int_0^{\frac{1}{\cos\theta}}\dee{r}\
+r\overbrace{(r^2\sin\theta)}^{y\sqrt{x^2+y^2}}
+\end{align*}
+</div>
+<p data-braille="continuation">Because the \(r\)-integral treats \(\theta\) as a constant, we can pull the \(\sin\theta\) out of the inner \(r\)-integral.</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1\int_0^x y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}
+&amp;=\int_0^{\pi/4}\dee{\theta}\ \sin\theta\int_0^{\frac{1}{\cos\theta}}\dee{r}\
+r^3\\
+&amp;=\frac{1}{4}\int_0^{\pi/4}\dee{\theta}\ \sin\theta\frac{1}{\cos^4\theta}
+\end{align*}
+</div>
+<p data-braille="continuation">Make the substitution</p>
+<div class="displaymath">
+\begin{equation*}
+u=\cos\theta,\ \dee{u}=-\sin\theta\ \dee{\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">When \(\theta=0\text{,}\) \(u=\cos\theta=1\) and when \(\theta=\frac{\pi}{4}\text{,}\) \(u=\cos\theta=\frac{1}{\sqrt{2}}\text{.}\) So</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1\int_0^x y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}
+&amp;=\frac{1}{4}\int_1^{1/\sqrt{2}} (-\dee{u})\frac{1}{u^4}\\
+&amp;=-\frac{1}{4}\left[\frac{u^{-3}}{-3}\right]_1^{1/\sqrt{2}}
+=\frac{1}{12}\left[2\sqrt{2}-1\right]
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_change_to_polar_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_change_to_polar_B"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Changing to Polar Coordinates.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_change_to_polar_B"><article class="example example-like"><p id="p-3167">Evaluate \(\displaystyle\int_0^\infty e^{-x^2}\ \dee{x}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-446" id="solution-446"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-446"><div class="solution solution-like">
+<p id="p-3168">This is actually a trick question. In fact it is a famous trick question<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-126" id="fn-126"><sup> 9 </sup></a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-126"><div class="fn">The solution is attributed to the French Mathematician Sim\'eon Denis Poisson (1781 – 840) and was published in the textbook <em class="emphasis">Cours d'Analyse de l'\'ecole polytechnique</em> by Jacob Karl Franz Sturm (1803 – 1855).</div></div>
+<p id="p-3169">The integrand \(e^{-x^2}\) does not have an antiderivative that can be expressed in terms of elementary functions<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-127" id="fn-127"><sup> 10 </sup></a>. So we cannot evaluate this integral using the usual Calculus II methods. However we can evaluate it's square</p>
+<div class="displaymath">
+\begin{gather*}
+\left[\int_0^\infty e^{-x^2}\ \dee{x}\right]^2
+=\int_0^\infty e^{-x^2}\ \dee{x}\   \int_0^\infty e^{-y^2}\ \dee{y}
+=\int_0^\infty \dee{x} \int_0^\infty \dee{y}\ e^{-x^2-y^2}
+\end{gather*}
+</div>
+<p data-braille="continuation">precisely because this double integral can be easily evaluated just by changing to polar coordinates! The domain of integration is the first quadrant \(\Set{(x,y)}{x\ge 0,\ y\ge 0}\text{.}\) In polar coordinates, \(\dee{x}\dee{y} = r\,\dee{r}\dee{\theta}\) and the first  quadrant is</p>
+<div class="displaymath">
+\begin{equation*}
+\Set{(r\cos\theta\,,\,r\sin\theta)}{r\ge 0,\ 0\le\theta\le \frac{\pi}{2}}
+\end{equation*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{gather*}
+\left[\int_0^\infty e^{-x^2}\ \dee{x}\right]^2
+=\int_0^\infty \dee{x} \int_0^\infty \dee{y}\ e^{-x^2-y^2}
+=\int_0^{\pi/2}\dee{\theta}\int_0^\infty \dee{r}\ r\, e^{-r^2}
+\end{gather*}
+</div>
+<p data-braille="continuation">As \(r\) runs all the way to \(+\infty\text{,}\) this is an improper integral, so we should be a little bit careful.</p>
+<div class="displaymath">
+\begin{align*}
+\left[\int_0^\infty e^{-x^2}\ \dee{x}\right]^2
+&amp;=\lim_{R\rightarrow\infty}
+\int_0^{\pi/2}\dee{\theta}\int_0^R \dee{r}\ r\, e^{-r^2}\\
+&amp;=\lim_{R\rightarrow\infty}
+\int_0^{\pi/2}\dee{\theta}\int_0^{R^2} \frac{\dee{u}}{2}\ e^{-u} \qquad
+\text{where } u= r^2,\ \dee{u} =2r\,\dee{r}\\
+&amp;=\lim_{R\rightarrow\infty}
+\int_0^{\pi/2}\dee{\theta}\ \left[-\frac{e^{-u}}{2}\right]_0^{R^2}\\
+&amp;=\lim_{R\rightarrow\infty} \frac{\pi}{2}
+\left[\frac{1}{2}-\frac{e^{-R^2}}{2}\right]\\
+&amp;=\frac{\pi}{4}
+\end{align*}
+</div>
+<p data-braille="continuation">and so we get the famous result</p>
+<div class="displaymath">
+\begin{gather*}
+\int_0^\infty e^{-x^2}\ \dee{x} =\frac{\sqrt{\pi}}{2}
+\end{gather*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-127"><div class="fn">On the other hand it is the core of the function \(\text{erf}
+(z)=\frac{2}{\sqrt{\pi}}\int_0^z e^{-t^2}\ \dee{t}\text{,}\) which gives Gaussian (i.e. bell curve) probabilities. “erf” stands for “error function”.</div></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_area_polar"><a data-knowl="" class="id-ref original" data-refid="hk-eg_area_polar"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.14</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_area_polar"><article class="example example-like"><p id="p-3170">Find the area of the region that is inside the circle \(r=4\cos\theta\) and to the left of the line \(x=1\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-447" id="solution-447"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-447"><div class="solution solution-like">
+<p id="p-3171">First, let's check that \(r=4\cos\theta\) really is a circle and figure out what circle it is. To do so, we'll convert the equation \(r=4\cos\theta\) into Cartesian coordinates. Multiplying both sides by \(r\) gives</p>
+<div class="displaymath">
+\begin{gather*}
+r^2=4r\cos\theta
+\iff x^2+y^2 =4x
+\iff (x-2)^2 + y^2 = 4
+\end{gather*}
+</div>
+<p data-braille="continuation">So \(r=4\cos\theta\) is the circle of radius \(2\) centred on \((2,0)\text{.}\) We'll also need the intersection point(s) of \(x=r\cos\theta=1\) and \(r=4\cos\theta\text{.}\) At such an intersection point</p>
+<div class="displaymath">
+\begin{align*}
+r\cos\theta=1,\ r=4\cos\theta
+&amp;\implies \frac{1}{\cos\theta} = 4\cos\theta\\
+&amp;\implies \cos^2\theta = \frac{1}{4}\\
+&amp;\implies \cos\theta =\frac{1}{2}\qquad\text{since }r\cos\theta=1  \gt  0\\
+&amp;\implies \theta = \pm \frac{\pi}{3}
+\end{align*}
+</div>
+<p data-braille="continuation">Here is a sketch of the region of interest, which we'll call \(\cR\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/comPolarA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3172">We could figure out the area of \(\cR\) by using some high school geometry, because \(\cR\) is a circular wedge with a triangle removed. (See Example <a class="xref" data-knowl="./knowl/eg_area_polar_HS.html" title="Example 3.2.15: Optional — Example 3.2.14 by high school geometry">3.2.15</a>, below.)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:36%;margin-right:36%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/comPolarAA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3173">Instead, we'll treat its computation as an exercise in integration using polar coordinates.</p>
+<p id="p-3174">As \(\cR\) is symmetric about the \(x\)-axis, the area of \(\cR\) is twice the area of the part that is above the \(x\)-axis. We'll denote by \(\cR_1\) the upper half of \(\cR\text{.}\) Note that we can write the equation \(x=1\) in polar coordinates as \(r=\frac{1}{\cos\theta}\text{.}\) Here is a sketch of \(\cR_1\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/comPolarB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3175">Observe that, on \(\cR_1\text{,}\) for any fixed \(\theta\) between \(0\) and \(\frac{\pi}{2}\text{,}\)</p>
+<ul class="disc">
+<li id="li-1635">if \(\theta \lt \frac{\pi}{3}\text{,}\) then \(r\) runs from \(0\) to \(\frac{1}{\cos\theta}\text{,}\) while</li>
+<li id="li-1636">if \(\theta \gt \frac{\pi}{3}\text{,}\) then \(r\) runs from \(0\) to \(4\cos\theta\text{.}\)</li>
+</ul>
+<p data-braille="continuation">This naturally leads us to split the domain of integration at \(\theta
+=\frac{\pi}{3}\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\text{Area}(\cR_1)&amp; =
+\int_0^{\pi/3}\dee{\theta}\int_0^{1/\cos\theta}\dee{r}\ r
++\int_{\pi/3}^{\pi/2}\dee{\theta}\int_0^{4\cos\theta}\dee{r}\ r
+\end{align*}
+</div>
+<p data-braille="continuation">As \(\int r\ \dee{r}=\frac{r^2}{2}+C\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\text{Area}(\cR_1)
+&amp;=\int_0^{\pi/3}\dee{\theta}\ \frac{\sec^2\theta}{2}
++\int_{\pi/3}^{\pi/2}\dee{\theta}\ 8\cos^2\theta\\
+&amp;=\frac{1}{2}\tan\theta\Big|_0^{\pi/3}
++4\int_{\pi/3}^{\pi/2}\dee{\theta}\ \big[1+\cos(2\theta)\big]\\
+&amp;=\frac{\sqrt{3}}{2} +4\left[\theta+\frac{\sin(2\theta)}{2}\right]_{\pi/3}^{\pi/2}\\
+&amp;=\frac{\sqrt{3}}{2} +4\left[\frac{\pi}{6}-\frac{\sqrt{3}}{4}\right]\\
+&amp;=\frac{2\pi}{3}-\frac{\sqrt{3}}{2}
+\end{align*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{gather*}
+\text{Area}(\cR)=2\text{Area}(\cR_1) = \frac{4\pi}{3}-\sqrt{3}
+\end{gather*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_area_polar_HS"><a data-knowl="" class="id-ref original" data-refid="hk-eg_area_polar_HS"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.15</span><span class="period">.</span><span class="space"> </span><span class="title">Optional — Example 3.2.14 by high school geometry.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_area_polar_HS"><article class="example example-like"><p id="p-3176">We'll now again compute the area of the region \(\cR\) that is inside the circle \(r=4\cos\theta\) and to the left of the line \(x=1\text{.}\) That was the region of interest in Example <a class="xref" data-knowl="./knowl/eg_area_polar.html" title="Example 3.2.14">3.2.14</a>. This time we'll just use some geometry. Think of \(\cR\) as being the wedge \(\cW\text{,}\) of the figure on the left below, with the triangle \(\cT\text{,}\) of the figure on the right below, removed.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/comPolarC.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/comPolarD.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<ul id="p-3177" class="disc">
+<li id="li-1637">First we'll get the area of \(\cW\text{.}\) The cosine of the angle between the \(x\) axis and the radius vector from \(C\) to \(A\) is \(\frac{1}{2}\text{.}\) So that angle is \(\frac{\pi}{3}\) and \(\cW\) subtends an angle of \(\frac{2\pi}{3}\text{.}\) The entire circle has area \(\pi 2^2\text{,}\) so that \(\cW\text{,}\) which is the fraction \(\frac{2\pi/3}{2\pi}=\frac{1}{3}\) of the full circle, has area \(\frac{4\pi}{3}\text{.}\)</li>
+<li id="li-1638">Now we'll get the area of the triangle \(\cT\text{.}\) Think of \(\cT\) as having base \(BD\text{.}\) Then the length of the base of \(\cT\) is \(2\sqrt{3}\) and the height of \(\cT\) is \(1\text{.}\) So \(\cT\) has area \(\frac{1}{2}(2\sqrt{3})(1)
+=\sqrt{3}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">All together</p>
+<div class="displaymath">
+\begin{align*}
+\text{Area}(\cR)
+&amp;=\text{Area}(\cW)-\text{Area}(\cT)
+=\frac{4\pi}{3}-\sqrt{3}
+\end{align*}
+</div></article></div>
+<p id="p-3178">We used some hand waving in deriving the area formula <a class="xref" data-knowl="./knowl/eq_polar_area.html" title="Equation 3.2.8">3.2.8</a>: the word “essentially” appeared quite a few times. Here is how do that derivation more rigorously.</p></section><section class="subsection" id="sec_integral_error"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.4</span> <span class="title">Optional— Error Control for the Polar Area Formula&gt;</span>
+</h3>
+<p id="p-3179">Let \(0\le a \lt b\le 2\pi\text{.}\) In Examples <a class="xref" data-knowl="./knowl/eg_polar_mass.html" title="Example 3.2.6: Mass">3.2.6</a> and <a class="xref" data-knowl="./knowl/eg_polar_area.html" title="Example 3.2.9: Polar Area">3.2.9</a> we derived the formula</p>
+<div class="displaymath">
+\begin{equation*}
+A=\frac{1}{2}\int_a^b R(\theta)^2\,d\theta
+\end{equation*}
+</div>
+<p data-braille="continuation">for the area of the region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{\big(r\cos\theta,r\sin\theta\big)}
+{a\le\theta\le b,\ 0\le r\le R(\theta)}
+\end{equation*}
+</div>
+<p data-braille="continuation">In the course of that derivation we approximated the area of the shaded region in</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3180">by \(\dee{A} = r\,\dee{r}\,\dee{\theta}\text{.}\)</p>
+<p id="p-3181">We will now justify that approximation, under the assumption that</p>
+<div class="displaymath">
+\begin{equation*}
+0\le R(\theta)\le M \qquad |R'(\theta)|\le L
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(a\le \theta\le b\text{.}\) That is, \(R(\theta)\) is bounded and its derivative exists and is bounded too.</p>
+<p id="p-3182">Divide the interval \(a\le \theta\le b\) into \(n\) equal subintervals, each of length \(\De\theta=\frac{b-a}{n}\text{.}\) Let \(\theta_i^*\) be the midpoint of the \(i^{\rm th}\) interval. On the \(i^{\rm th}\) interval, \(\theta\) runs from \(\theta_i^*-\frac{1}{2}\De\theta\) to \(\theta_i^*+\frac{1}{2}\De\theta\text{.}\)</p>
+<p id="p-3183">By the mean value theorem</p>
+<div class="displaymath">
+\begin{gather*}
+R(\theta)-R(\theta_i^*)  = R'(c) (\theta-\theta_i^*)
+\end{gather*}
+</div>
+<p data-braille="continuation">for some \(c\) between \(\theta\) and \(\theta_i^*\text{.}\) Because \(|R'(\theta)|\le L\)</p>
+<div class="displaymath">
+\begin{equation*}
+\big|R(\theta)-R(\theta_i^*)\big|  \le L \big|\theta-\theta_i^*\big|
+\tag{$*$}
+\end{equation*}
+</div>
+<p data-braille="continuation">This tells us that the difference between \(R(\theta)\) and \(R(\theta_i^*)\) can't be too big compared to \(\big|\theta-\theta_i^*\big|\text{.}\)</p>
+<p id="p-3184">On the \(i^{\rm th}\) interval, the radius \(r=R(\theta)\) runs over all values of \(R(\theta)\) with \(\theta\) satisfying \(\big|\theta-\theta_i^*\big|\le\frac{1}{2}\De\theta\text{.}\) By \((*)\text{,}\) all of these values of \(R(\theta)\) lie between \(r_i=R(\theta_i^*)-\frac{1}{2} L\De\theta\) and \(R_i=R(\theta_i^*) +\frac{1}{2} L\De\theta\text{.}\) Consequently the part of \(\cR\) having \(\theta\) in the \(i^{\rm th}\) subinterval, namely,</p>
+<div class="displaymath">
+\begin{equation*}
+\cR_i=\Set{\big(r\cos\theta,r\sin\theta\big)}
+{\theta_i^*-\half\De\theta\le\theta\le \theta_i^*+\half\De\theta,
+\ 0\le r\le R(\theta)}
+\end{equation*}
+</div>
+<p data-braille="continuation">must contain all of the circular sector</p>
+<div class="displaymath">
+\begin{equation*}
+\Set{\big(r\cos\theta,r\sin\theta\big)}
+{\theta_i^*-\half\De\theta\le\theta\le \theta_i^*+\half\De\theta,
+\ 0\le r\le r_i}
+\end{equation*}
+</div>
+<p data-braille="continuation">and must be completely contained inside the circular sector</p>
+<div class="displaymath">
+\begin{equation*}
+\Set{\big(r\cos\theta,r\sin\theta\big)}
+{\theta_i^*-\half\De\theta\le\theta\le \theta_i^*+\half\De\theta,
+\ 0\le r\le R_i}
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:8.5%;margin-right:8.5%;">
+<div class="sbspanel" style="width:39.7590361445783%;justify-content:flex-start;"><img src="figs/polarArea.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:39.7590361445783%;justify-content:flex-start;"><img src="figs/polarArea2.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3185">That is, we have found one circular sector that is bigger than the one we are approximating, and one circular sector that is smaller. The area of a circular disk of radius \(\rho\) is \(\pi\rho^2\text{.}\) A circular sector of radius \(\rho\)  that subtends an angle \(\De \theta\) is the fraction \(\frac{\De\theta}{2\pi}\) of the full disk and so has the area \(\frac{\De\theta}{2\pi}\pi\rho^2 = \frac{\De\theta}{2}\rho^2\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sectorArea.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3186">So the area of \(\cR_i\) must lie between</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{1}{2}\De\theta\, r_i^2
+=\frac{1}{2}\De\theta\left[R(\theta_i^*)-\frac{1}{2} L\De\theta\right]^2
+\quad\text{and}\quad
+\frac{1}{2}\De\theta\, R_i^2
+=\frac{1}{2}\De\theta\left[R(\theta_i^*)+\frac{1}{2} L\De\theta\right]^2
+\end{equation*}
+</div>
+<p data-braille="continuation">Observe that</p>
+<div class="displaymath">
+\begin{equation*}
+\left[R(\theta_i^*)\pm \frac{1}{2} L\De\theta\right]^2
+=R(\theta_i^*)^2 \pm L R(\theta_i^*)\De\theta +\frac{1}{4} L^2\De\theta^2
+\end{equation*}
+</div>
+<p data-braille="continuation">implies that, since \(0\le R(\theta)\le M\text{,}\)</p>
+<div class="displaymath">
+\begin{gather*}
+R(\theta_i^*)^2 - L M\De\theta +\frac{1}{4} L^2\De\theta^2\hskip2in\\
+\le \left[R(\theta_i^*)\pm \frac{1}{2} L\De\theta\right]^2\le\\
+\hskip2in R(\theta_i^*)^2 + L M\De\theta +\frac{1}{4} L^2\De\theta^2
+\end{gather*}
+</div>
+<p data-braille="continuation">Hence (multiplying by \(\frac{\De\theta}{2}\) to turn them into areas)</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{1}{2} R(\theta_i^*)^2\De\theta - \frac{1}{2} L M\De\theta^2
++\frac{1}{8} L^2\De\theta^3\hskip2in\\
+\le\text{Area}(\cR_i)\le\\
+\hskip2in\frac{1}{2} R(\theta_i^*)^2\De\theta
++ \frac{1}{2} L M\De\theta^2 +\frac{1}{8} L^2\De\theta^3
+\end{gather*}
+</div>
+<p data-braille="continuation">and the total area \(A\) obeys the bounds</p>
+<div class="displaymath">
+\begin{gather*}
+\sum_{i=1}^n\left[ \frac{1}{2} R(\theta_i^*)^2\De\theta
+- \frac{1}{2} L M\De\theta^2 +\frac{1}{8} L^2\De\theta^3\right]\hskip2in\\
+\le A\le\\
+\hskip2in\sum_{i=1}^n\left[\frac{1}{2} R(\theta_i^*)^2\De\theta
++ \frac{1}{2} L M\De\theta^2 +\frac{1}{8} L^2\De\theta^3\right]
+\end{gather*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{1}{2}\sum_{i=1}^n R(\theta_i^*)^2\De\theta
+- \frac{1}{2}  n L M\De\theta^2 +\frac{1}{8} n L^2\De\theta^3\hskip2in\\
+\le A\le\\
+\hskip2in\sum_{i=1}^n\frac{1}{2} R(\theta_i^*)^2\De\theta + \frac{1}{2} n L M\De\theta^2 +\frac{1}{8}
+nL^2\De\theta^3
+\end{gather*}
+</div>
+<p data-braille="continuation">Since \(\De \theta=\frac{b-a}{n}\text{,}\)</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{1}{2}\sum_{i=1}^n R(\theta_i^*)^2\De\theta
+\!-\! \frac{ L M}{2}\frac{(b\!-\!a)^2}{n}
+\!+\!\frac{L^2}{8} \frac{(b\!-\!a)^3}{n^2}\hskip2in\\
+\le A\le\\
+\hskip2in\frac{1}{2}\sum_{i=1}^n R(\theta_i^*)^2\De\theta
+\!+\! \frac{ L M}{2}\frac{(b\!-\!a)^2}{n}
+\!+\! \frac{L^2}{8} \frac{(b\!-\!a)^3}{n^2}
+\end{gather*}
+</div>
+<p data-braille="continuation">Now take the limit as \(n\rightarrow\infty\text{.}\) Since</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\lim_{n\rightarrow\infty}\left[
+\frac{1}{2}\sum_{i=1}^n R(\theta_i^*)^2\De\theta
+\pm \frac{ L M}{2}\frac{(b-a)^2}{n}
++\frac{L^2}{8} \frac{(b-a)^3}{n^2}\right]
+\cr
+&amp;\hskip1in=\frac{1}{2}\int_a^b R(\theta)^2\,d\theta
+\pm \lim_{n\rightarrow\infty}\frac{ L M}{2}\frac{(b-a)^2}{n}
++\lim_{n\rightarrow\infty}\frac{L^2}{8} \frac{(b-a)^3}{n^2}\\
+&amp;\hskip1in=\frac{1}{2}\int_a^b R(\theta)^2\,d\theta \qquad
+\text{(since $L, M, a$ and $b$ are all constants)}
+\end{align*}
+</div>
+<p data-braille="continuation">we have that</p>
+<div class="displaymath">
+\begin{equation*}
+A=\frac{1}{2}\int_a^b R(\theta)^2\,d\theta
+\end{equation*}
+</div>
+<p data-braille="continuation">exactly, as desired.</p></section><section class="exercises" id="exercises-19"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.2.5</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-54">
+<div class="introduction" id="introduction-71"><p id="p-3187"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-384"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-3188">Consider the points</p>
+<div class="displaymath">
+\begin{align*}
+(x_1,y_1) &amp;= (3,0) &amp;
+(x_2,y_2) &amp;= (1,1)  &amp;
+(x_3,y_3) &amp;= (0,1)\\
+(x_4,y_4) &amp;= (-1,1) &amp;
+(x_5,y_5) &amp;= (-2,0)
+\end{align*}
+</div>
+<p data-braille="continuation">For each \(1\le i\le 5\text{,}\)</p>
+<ul class="disc">
+<li id="li-1639">sketch, in the \(xy\)-plane, the point \((x_i,y_i)\) and</li>
+<li id="li-1640">find polar coordinates \(r_i\) and \(\theta_i\text{,}\) with \(r_i&gt;0\) and \(0\le\theta_i \lt 2\pi\text{,}\) for the point \((x_i,y_i)\text{.}\)</li>
+</ul></article><article class="exercise exercise-like" id="exercise-385"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-3197">For each of the following points \((x_i,y_i)\text{,}\)</p>
+<ul class="disc">
+<li id="li-1641">find <em class="emphasis">all</em> pairs \((r_i,\theta_i)\) such that \((x_i,y_i) = \big(r_i\cos\theta_i\,,\,r_i\sin\theta_i\big)\text{,}\) and</li>
+<li id="li-1642">in particular, find a pair \((r_i,\theta_i)\) with \(r_i\lt 0\) and \(0\le\theta_i\lt 2\pi\) such that \((x_i,y_i) = \big(r_i\cos\theta_i\,,\,r_i\sin\theta_i\big)\)</li>
+</ul>
+<ol class="lower-alpha">
+<li id="li-1643">\(\displaystyle (x_1,y_1)=(-2,0) \)</li>
+<li id="li-1644">\(\displaystyle (x_2,y_2)=(1,1) \)</li>
+<li id="li-1645">\(\displaystyle (x_3,y_3)=(-1,-1)\)</li>
+<li id="li-1646">\(\displaystyle (x_4,y_4)=(3,0)\)</li>
+<li id="li-1647">\(\displaystyle (x_5,y_5)=(0,1)\)</li>
+</ol></article><article class="exercise exercise-like" id="prb_polar_vectors"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-3215">Consider the points</p>
+<div class="displaymath">
+\begin{align*}
+(x_1,y_1) &amp;= (3,0) &amp;
+(x_2,y_2) &amp;= (1,1)  &amp;
+(x_3,y_3) &amp;= (0,1)\\
+(x_4,y_4) &amp;= (-1,1) &amp;
+(x_5,y_5) &amp;= (-2,0)
+\end{align*}
+</div>
+<p data-braille="continuation">Also define, for each angle \(\theta\text{,}\) the vectors</p>
+<div class="displaymath">
+\begin{gather*}
+\he_r(\theta)=\cos\theta\ \hi + \sin\theta\ \hj\qquad
+\he_\theta(\theta) = -\sin\theta\ \hi + \cos\theta\ \hj
+\end{gather*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1658">Determine, for each angle \(\theta\text{,}\) the lengths of the vectors \(\he_r(\theta)\) and \(\he_\theta(\theta)\) and the angle between the vectors \(\he_r(\theta)\) and \(\he_\theta(\theta)\text{.}\) Compute \(\he_r(\theta)\times\he_\theta(\theta)\) (viewing \(\he_r(\theta)\) and \(\he_\theta(\theta)\) as vectors in three dimensions with zero \(\hk\) components).</li>
+<li id="li-1659">For each \(1\le i\le 5\text{,}\) sketch, in the \(xy\)-plane, the point \((x_i,y_i)\) and the vectors \(\he_r(\theta_i)\) and \(\he_\theta(\theta_i)\text{.}\) In your sketch of the vectors, place the tails of the vectors \(\he_r(\theta_i)\) and \(\he_\theta(\theta_i)\) at \((x_i,y_i)\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-387"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-3223">Let \(\llt a, b\rgt\) be a vector. Let \(r\) be the length of \(\llt a, b\rgt\) and \(\theta\) be the angle between \(\llt a, b\rgt\) and the \(x\)-axis.</p>
+<ol class="lower-alpha">
+<li id="li-1663">Express \(a\) and \(b\) in terms of \(r\) and \(\theta\text{.}\)</li>
+<li id="li-1664">Let \(\llt A, B\rgt\) be the vector gotten by rotating \(\llt a, b\rgt\) by an angle \(\varphi\) about its tail. Express \(A\) and \(B\) in terms of \(a\text{,}\) \(b\) and \(\varphi\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-388"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-3230">For each of the regions \(\cR\) sketched below, express \(\dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}\) as an iterated integral in polar coordinates in two different ways.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:5.128205128205129%;justify-content:flex-start;"><p id="p-3231">(a)</p></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:flex-start;"><img src="pfigs/polar5a1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:5.128205128205129%;justify-content:flex-start;"><p id="p-3232">(b)</p></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:flex-start;"><img src="pfigs/polar5b1.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:5.128205128205129%;justify-content:flex-start;"><p id="p-3233">(c)</p></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:flex-start;"><img src="pfigs/polar5e1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:5.128205128205129%;justify-content:flex-start;"><p id="p-3234">(d)</p></div>
+<div class="sbspanel" style="width:41.025641025641%;justify-content:flex-start;"><img src="pfigs/polar5c1.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div></article><article class="exercise exercise-like" id="exercise-389"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-3248">Sketch the domain of integration in the \(xy\)-plane for each of the following polar coordinate integrals.</p>
+<ol class="lower-alpha">
+<li id="li-1694">\(\displaystyle \displaystyle
+\int_1^2\dee{r}
+\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\dee{\theta}
+\ r\ f(r\cos\theta,r\sin\theta)\)</li>
+<li id="li-1695">\(\displaystyle \displaystyle
+\int_0^{\frac{\pi}{4}}\dee{\theta}
+\int_0^{\frac{2}{\sin\theta+\cos\theta}}\dee{r}
+\ r\ f(r\cos\theta,r\sin\theta)\)</li>
+<li id="li-1696">\(\displaystyle \displaystyle
+\int_0^{2\pi}\dee{\theta}
+\int_0^{\frac{3}{\sqrt{\cos^2\theta+9\sin^2\theta}}}\dee{r}
+\ r\ f(r\cos\theta,r\sin\theta)\)</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-55">
+<div class="introduction" id="introduction-72"><p id="p-3255"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-390"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-3256">Use polar coordinates to evaluate each of the following integrals.</p>
+<ol class="lower-alpha">
+<li id="li-1711">\(\displaystyle\dblInt_S (x+y)\dee{x}\,\dee{y}\) where \(S\) is the region in the first quadrant lying inside the disc \(x^2+y^2\le a^2\) and under the line \(y=\sqrt{3}x\text{.}\)</li>
+<li id="li-1712">\(\displaystyle\dblInt_Sx\ \dee{x}\,\dee{y}\text{,}\) where \(S\)  is the disc segment \(x^2+y^2\le 2,\ x\ge 1\text{.}\)</li>
+<li id="li-1713">\(\displaystyle\dblInt_T (x^2+y^2)\dee{x}\,\dee{y}\) where \(T\) is the triangle with vertices \((0,0), (1,0)\) and \((1,1)\text{.}\)</li>
+<li id="li-1714">\(\displaystyle \displaystyle\dblInt_{x^2+y^2\le 1} \ln(x^2+y^2)\,\dee{x}\,\dee{y}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-391"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-3266">Find the volume lying inside the sphere \(x^2+y^2+z^2=2\) and above the paraboloid \(z=x^2+y^2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-392"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-3270">Let \(a \gt 0\text{.}\) Find the volume lying inside the cylinder \(x^2+(y-a)^2=a^2\) and between the upper and lower halves of the cone \(z^2=x^2+y^2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-393"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
+<p id="p-3274">Let \(a \gt 0\text{.}\) Find the volume common to the cylinders \(x^2+y^2\le 2ax\) and \(z^2\le 2ax\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-394"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3278">Consider  the region \(E\) in 3--dimensions specified by the inequalities \(x^2 + y^2 \le 2y\) and \(0 \le z \le \sqrt{x^2 + y^2}\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1715">Draw a reasonably accurate picture of \(E\) in 3--dimensions. Be sure to show the units on the coordinate axes.</li>
+<li id="li-1716"><p id="p-3279">Use polar coordinates to find the volume of \(E\text{.}\) Note that you will be “using polar coordinates” if you solve this problem by means of cylindrical coordinates.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-395"><h6 class="heading">
+<span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3286">Evaluate the iterated double integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{x=0}^{x=2}\int_{y=0}^{y=\sqrt{4-x^2}} {(x^2+y^2)}^{\frac{3}{2}}\ \dee{y}\,\dee{x}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-396"><h6 class="heading">
+<span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-3290" class="lower-alpha">
+<li id="li-1731">Sketch the region \(\cL\) (in the first quadrant of the \(xy\)--plane) with boundary curves<div class="displaymath">
+\begin{equation*}
+x^2 + y^2 = 2,\
+x^2 + y^2 = 4,\
+y = x,\
+y = 0.
+\end{equation*}
+</div>The mass of a thin lamina with a density function \(\rho(x,y)\) over the region \(\cL\) is given by<div class="displaymath">
+\begin{equation*}
+M =\dblInt_\cL \rho(x,y)\,\dee{A}
+\end{equation*}
+</div>
+</li>
+<li id="li-1732">Find an expression for \(M\) as an integral in polar coordinates.</li>
+<li id="li-1733">Find M when<div class="displaymath">
+\begin{equation*}
+\rho(x,y) = \frac{2xy}{x^2+y^2}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-397"><h6 class="heading">
+<span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3297">Evaluate \(\displaystyle \dblInt_{\bbbr^2} \frac{1}{{(1+x^2+y^2)}^2}\ \dee{A}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-398"><h6 class="heading">
+<span class="codenumber">15<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3300">Evaluate the double integral</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_D y\sqrt{x^2+y^2}\,\dee{A}
+\end{equation*}
+</div>
+<p data-braille="continuation">over the region \(D =\Set{(x,y)}{ x^2+y^2\le 2,\ 0\le y\le x}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-399"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3304">This question is about the integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1 \int_{\sqrt{3}y}^{\sqrt{4-y^2}} \ln\big(1+x^2+y^2)\
+\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1741">Sketch the domain of integration.</li>
+<li id="li-1742">Evaluate the integral by transforming to polar coordinates.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-400"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3309">Let \(D\) be the region in the \(xy\)--plane bounded on the left by the line \(x = 2\) and on the right by the circle \(x^2 + y^2 = 16\text{.}\) Evaluate</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_D\big(x^2+y^2\big)^{-3/2}\ \dee{A}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-401"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3313">In the \(xy\)--plane, the disk \(x^2 + y^2 \le 2x\) is cut into \(2\) pieces by the line \(y = x\text{.}\) Let \(D\) be the larger piece.</p>
+<ol class="lower-alpha">
+<li id="li-1745">Sketch \(D\) including an accurate description of the center and radius of the given disk. Then describe \(D\) in polar coordinates \((r, \theta)\text{.}\)</li>
+<li id="li-1746">Find the volume of the solid below \(z = \sqrt{x^2 + y^2}\) and above \(D\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-402"><h6 class="heading">
+<span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3319">Let \(D\) be the shaded region in the diagram. Find the average distance of points in \(D\) from the origin. You may use that \(\int\cos^n(x)\,dx = \frac{\cos^{n-1}(x)\sin(x)}{n}
++\frac{n-1}{n}\int\cos^{n-2}(x)\,dx\) for all natural numbers \(n\ge 2\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/OE00AQ8.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-56">
+<div class="introduction" id="introduction-73"><p id="p-3322"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-403"><h6 class="heading">
+<span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3323">Let \(G\) be the region in \(\bbbr^2\) given by</p>
+<div class="displaymath">
+\begin{gather*}
+x^2 + y^2 \le 1\\
+0 \le x \le 2y\\
+y \le 2x
+\end{gather*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1749">Sketch the region \(G\text{.}\)</li>
+<li id="li-1750">Express the integral \(\dblInt_G f(x,y)\ \dee{A}\) a sum of iterated integrals \(\dblInt f(x, y)\ \dee{x}\dee{y}\text{.}\)</li>
+<li id="li-1751">Express the integral \(\dblInt_G f(x,y)\ \dee{A}\) as an iterated integral in polar coordinates \((r, \theta)\) where \(x = r \cos(\theta)\) and \(y = r \sin(\theta)\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-404"><h6 class="heading">
+<span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3333">Consider</p>
+<div class="displaymath">
+\begin{equation*}
+J = \int_0^{\sqrt{2}}  \int_y^{\sqrt{4-y^2}}  \frac{y}{x}  e^{x^2+y^2}\
+\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1763">Sketch the region of integration.</li>
+<li id="li-1764">Reverse the order of integration.</li>
+<li id="li-1765">Evaluate \(J\) by using polar coordinates.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-405"><h6 class="heading"><span class="codenumber">22<span class="period">.</span></span></h6>
+<p id="p-3340">Find the volume of the region in the first octant below the paraboloid</p>
+<div class="displaymath">
+\begin{equation*}
+z=1-\frac{x^2}{a^2}-\frac{y^2}{b^2}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-406"><h6 class="heading"><span class="codenumber">23<span class="period">.</span></span></h6>
+<p id="p-3343">A symmetrical coffee percolator holds 24 cups when full. The interior has a circular cross-section which tapers from a radius of 3' at the centre to 2' at the base and top, which are 12' apart. The bounding surface is parabolic. Where should the mark indicating the 6 cup level be placed?</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/coffee.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="exercise exercise-like" id="exercise-407"><h6 class="heading">
+<span class="codenumber">24<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3347">Consider the surface \(S\) given by \(z=e^{x^2+y^2}\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1771">Compute the volume under \(S\) and above the disk \(x^2+y^2\le 9\) in the \(xy\)-plane.</li>
+<li id="li-1772">The volume under \(S\) and above a certain region \(R\) in the \(xy\)-plane is<div class="displaymath">
+\begin{equation*}
+\int_0^1\bigg(\int_0^y e^{x^2+y^2}\,\dee{x}\bigg)\dee{y}
++\int_1^2\bigg(\int_0^{2-y} e^{x^2+y^2}\,\dee{x}\bigg)\dee{y}
+\end{equation*}
+</div>Sketch \(R\) and express the volume as a single iterated integral with the order of integration reversed. <em class="emphasis">Do not compute either integral in part (b).</em>
+</li>
+</ol></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:44:26+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.4.5.9.1</span><span class="period">.</span>
+</h6>
+<p>By the chain rule,</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{g}{s}(s,t)
+&amp;=\pdiff{}{s} f (s - t, s + t)\\
+&amp;= \pdiff{f}{x}\big(s-t\,,\,s+t\big)\pdiff{}{s}\big(s-t\big)
++\pdiff{f}{y}\big(s-t\,,\,s+t\big)\pdiff{}{s}\big(s+t\big)\\
+&amp;= \pdiff{f}{x}\big(s-t\,,\,s+t\big)
++\pdiff{f}{y}\big(s-t\,,\,s+t\big)\\
+\frac{\partial^2 g}{\partial s^2}(s,t)
+&amp;=\color{blue}{\pdiff{}{s}\left[\pdiff{f}{x}\big(s-t\,,\,s+t\big)\right]}
++\color{red}{\pdiff{}{s}\left[\pdiff{f}{y}\big(s-t\,,\,s+t\big)\right]}\\
+&amp;=\color{blue}{ \frac{\partial^2 f}{\partial x^2}\big(s-t\,,\,s+t\big)
++\frac{\partial^2 f}{\partial y\partial x}\big(s-t\,,\,s+t\big)}\\
+&amp;\hskip0.2in
++\color{red}{\frac{\partial^2 f}{\partial x\partial y}\big(s-t\,,\,s+t\big)
++\frac{\partial^2 f}{\partial y^2}\big(s-t\,,\,s+t\big)}\\
+&amp;=\left\{\frac{\partial^2 f}{\partial x^2}\big(s\!-\!t,s\!+\!t\big)
++ 2\frac{\partial^2 f}{\partial x\partial y}\big(s\!-\!t,s\!+\!t\big)
++\frac{\partial^2 f}{\partial y^2}\big(s\!-\!t,s\!+\!t\big)\right\}
+\end{align*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{g}{t}(s,t)&amp;=\pdiff{}{t} f (s - t, s + t)\\
+&amp;= \pdiff{f}{x}\big(s-t\,,\,s+t\big)\pdiff{}{t}\big(s-t\big)
++\pdiff{f}{y}\big(s-t\,,\,s+t\big)\pdiff{}{t}\big(s+t\big)\\
+&amp;= -\pdiff{f}{x}\big(s-t\,,\,s+t\big)
++\pdiff{f}{y}\big(s-t\,,\,s+t\big)\\
+\frac{\partial^2 g}{\partial t^2}(s,t)
+&amp;=-\color{blue}{\pdiff{}{t}\left[\pdiff{f}{x}\big(s-t\,,\,s+t\big)\right]}
++\color{red}{\pdiff{}{t}\left[\pdiff{f}{y}\big(s-t\,,\,s+t\big)\right]}\\
+&amp;= -\color{blue}{\Big[-\frac{\partial^2 f}{\partial x^2}
+\big(s-t\,,\,s+t\big)
++\frac{\partial^2 f}{\partial y\partial x}\big(s-t\,,\,s+t\big)\Big]}\\
+&amp;\hskip0.2in
++\color{red}{\Big[-\frac{\partial^2 f}{\partial x\partial y}                                                       \big(s-t\,,\,s+t\big)
++\frac{\partial^2 f}{\partial y^2}\big(s-t\,,\,s+t\big) \Big]}\\
+&amp;=\left\{\frac{\partial^2 f}{\partial x^2}\big(s\!-\!t,s\!+\!t\big)
+- 2\frac{\partial^2 f}{\partial x\partial y}\big(s\!-\!t,s\!+\!t\big)
++\frac{\partial^2 f}{\partial y^2}\big(s\!-\!t,s\!+\!t\big)\right\}
+\end{align*}
+</div>
+<p data-braille="continuation">Suppressing the arguments</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\partial^2 g}{\partial s^2} + \frac{\partial^2 g}{\partial t^2}
+&amp;=\left\{\frac{\partial^2 f}{\partial x^2}
++ 2\frac{\partial^2 f}{\partial x\partial y}
++\frac{\partial^2 f}{\partial y^2}\right\}
++\left\{\frac{\partial^2 f}{\partial x^2}
+- 2\frac{\partial^2 f}{\partial x\partial y}
++\frac{\partial^2 f}{\partial y^2}\right\}\\
+&amp;=2\left[\frac{\partial^2 f}{\partial x^2}
++\frac{\partial^2 f}{\partial y^2}\right]\\
+&amp;=0
+\end{align*}
+</div>
+<p data-braille="continuation">as desired.</p>
+</div>
+<span class="incontext"><a href="sec_chain_rule.html#solution-184">in-context</a></span>
+</body>
+</html>

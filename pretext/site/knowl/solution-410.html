@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:46:33+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.1.28.1</span><span class="period">.</span>
+</h6>
+<p>Start by checking the evenness and oddness properties of the integrand \(f(x,y) =  e^x\sin(y+y^3)\text{.}\) Since</p>
+<div class="displaymath">
+\begin{align*}
+f(-x,y)&amp;=e^{-x}\sin(y+y^3) \\
+f(x,-y)&amp;=e^{x}\sin\big(-y+(-y)^3\big)
+=e^{x}\sin(-y-y^3)
+=-e^{x}\sin(y+y^3) \\
+&amp;=-f(x,y) \\
+f(-x,-y)&amp;=-e^{-x}\sin(y+y^3) 
+\end{align*}
+</div>
+<p data-braille="continuation">the integrand is odd under \(y\rightarrow-y\) but is neither even nor odd under \(x\rightarrow -x\) and \((x,y)\rightarrow-(x,y)\text{.}\) Fortunately (or by rigging), the domain of integration \(\cR\) is invariant under \(y\rightarrow -y\) (i.e. is symmetric about the \(x\)-axis) and so</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} e^x\sin(y+y^3)\,\dee{x}\dee{y}=0
+\end{equation*}
+</div>
+<p data-braille="continuation">by part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd2d.html" title="Theorem 3.1.27: 2d Even and Odd">3.1.27</a> (Theorem 1.2.11 in the CLP-2 text).</p>
+</div>
+<span class="incontext"><a href="sec_2d_integrals.html#solution-410">in-context</a></span>
+</body>
+</html>

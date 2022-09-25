@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:47:51+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="answer solution-like">
+<h6 class="heading">
+<span class="type">Answer</span><span class="space"> </span><span class="codenumber">3.5.1.8.1</span><span class="period">.</span>
+</h6>
+<div class="displaymath">
+\begin{alignat*}{2}
+I&amp;= \int_0^1 \int_{\sqrt{x}}^1 \int_0^{1-y}\!\! f(x,y,z)\,\dee{z}\,\dee{y}\,\dee{x}
+&amp;&amp;=\int_0^1 \int_0^{1-\sqrt{x}}\!\! \int_{\sqrt{x}}^{1-z}
+f(x,y,z)\  \dee{y}\,\dee{z}\,\dee{x}\\
+&amp;=\int_0^1  \int_0^{y^2}\int_0^{1-y}\!\!f(x,y,z)\
+\dee{z}\,\dee{x}\, \dee{y}
+&amp;&amp;=\int_0^1  \int_0^{1-y} \int_0^{y^2} f(x,y,z)\
+\dee{x}\, \dee{z}\,\dee{y}\\
+&amp;=\int_0^1\!\!  \int_0^{(1-z)^2}\!\! \int_{\sqrt{x}}^{1-z}\!\!f(x,y,z)\
+\dee{y}\,\dee{x}\, \dee{z}
+&amp;&amp;=\int_0^1\!  \int_0^{1-z}\! \int_0^{y^2}\!\!f(x,y,z)\
+\dee{x}\, \dee{y}\,\dee{z}
+\end{alignat*}
+</div>
+</div>
+<span class="incontext"><a href="sec_3d_integrals.html#answer-435">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:48:39+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>(c) Both spherical and cylindrical integrals are straight forward to evaluate. Here are both. First, in spherical coordinates,</p>
+<div class="displaymath">
+\begin{align*}
+I&amp;=  \left[\int_0^{\pi/2}\dee{\varphi}\ \sin^2\varphi\cos\varphi\right]
+\left[\int_0^{\pi/2}\dee{\theta}\ \cos\theta\right]
+\left[\int_0^1\dee{\rho}\ \rho^4\right]\\
+&amp;=\left[\frac{\sin^3\varphi}{3}\right]_0^{\pi/2}
+\left[\sin\theta\right]_0^{\pi/2}
+\left[\frac{\rho^5}{5}\right]_0^1\\
+&amp;=\frac{1}{15}
+\end{align*}
+</div>
+<p data-braille="continuation">Now in cylindrical coordinates</p>
+<div class="displaymath">
+\begin{align*}
+I&amp;=\int_0^1\dee{z}\int_0^{\pi/2}\dee{\theta}\int_0^{\sqrt{1-z^2}}\dee{r} \
+r^2\,z\,\cos\theta\\
+&amp;=\frac{1}{3}\int_0^1\dee{z}\int_0^{\pi/2}\dee{\theta}\ z{(1-z^2\big)}^{3/2}\,
+\cos\theta\\
+&amp;=\frac{1}{3}\int_0^1\dee{z}\ z{(1-z^2\big)}^{3/2}\\
+&amp;=\frac{1}{3}\left[-\frac{1}{2}\ \frac{(1-z^2)^{5/2}}{5/2}\right]_0^1\\
+&amp;=\frac{1}{15}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_spherical.html#p-3993">in-context</a></span>
+</body>
+</html>

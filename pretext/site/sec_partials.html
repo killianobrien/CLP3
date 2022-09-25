@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:41:08+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Partial Derivatives</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_limits.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_higher_order.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_limits.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_higher_order.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials" class="active">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_partials"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Partial Derivatives</span>
+</h2>
+<section class="introduction" id="introduction-30"><p id="p-1223">We are now ready to define derivatives of functions of more than one variable. First, recall how we defined the derivative, \(f'(a)\text{,}\) of a function of one variable, \(f(x)\text{.}\) We imagined that we were walking along the \(x\)-axis, in the positive direction, measuring, for example, the temperature along the way. We denoted by \(f(x)\) the temperature at \(x\text{.}\) The instantaneous rate of change of temperature that we observed as we passed through \(x=a\) was</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{f}{x}(a) =\lim_{h\rightarrow 0}\frac{f(a+h) - f(a)}{h}
+=\lim_{x\rightarrow a}\frac{f(x) - f(a)}{x-a}
+\end{equation*}
+</div>
+<p id="p-1224">Next suppose that we are walking in the \(xy\)-plane and that the temperature at \((x,y)\) is \(f(x,y)\text{.}\) We can pass through the point \((x,y)=(a,b)\) moving in many different directions, and we cannot expect the measured rate of change of temperature if we walk parallel to the \(x\)-axis, in the direction of increasing \(x\text{,}\) to be the same as the measured rate of change of temperature if we walk parallel to the \(y\)-axis in the direction of increasing \(y\text{.}\) We'll start by considering just those two directions. We'll consider other directions (like walking parallel to the line \(y=x\)) later.</p>
+<p id="p-1225">Suppose that we are passing through the point \((x,y)=(a,b)\) and that we are walking parallel to the \(x\)-axis (in the positive direction). Then our \(y\)-coordinate will be constant, always taking the value \(y=b\text{.}\) So we can think of the measured temperature as the function of one variable \(B(x) = f(x,b)\) and we will observe the rate of change of temperature</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{B}{x}(a) = \lim_{h\rightarrow 0}\frac{B(a+h) - B(a)}{h}
+= \lim_{h\rightarrow 0}\frac{f(a+h,b) - f(a,b)}{h}
+\end{equation*}
+</div>
+<p data-braille="continuation">This is called the “partial derivative \(f\) with respect to \(x\) at \((a,b)\)” and is denoted \(\pdiff{f}{x}(a,b)\text{.}\) Here</p>
+<ul class="disc">
+<li id="li-672">the symbol \(\partial\text{,}\) which is read “partial”, indicates that we are dealing with a function of more than one variable, and</li>
+<li id="li-673">the \(x\) in \({\pdiff{f}{x}}\) indicates that we are differentiating with respect to \(x\text{,}\) while \(y\) is being held fixed, i.e. being treated as a constant.</li>
+<li id="li-674">\({\pdiff{f}{x}}\) is read “partial dee \(f\) dee \(x\)”.</li>
+</ul>
+<p data-braille="continuation">Do not write \(\diff{}{x}\) when \(\pdiff{}{x}\) is appropriate. We shall later encounter situations when \(\diff{}{x}f\) and \(\pdiff{}{x}f\) are both defined and have different meanings.</p>
+<p id="p-1226">If, instead, we are passing through the point \((x,y)=(a,b)\) and are walking parallel to the \(y\)-axis (in the positive direction), then our \(x\)-coordinate will be constant, always taking the value \(x=a\text{.}\) So we can think of the measured temperature as the function of one variable \(A(y) = f(a,y)\) and we will observe the rate of change of temperature</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{A}{y}(b) = \lim_{h\rightarrow 0}\frac{A(b+h) - A(b)}{h}
+= \lim_{h\rightarrow 0}\frac{f(a,b+h) - f(a,b)}{h}
+\end{equation*}
+</div>
+<p data-braille="continuation">This is called the “partial derivative \(f\) with respect to \(y\) at \((a,b)\)” and is denoted \(\pdiff{f}{y}(a,b)\text{.}\)</p>
+<p id="p-1227">Just as was the case for the ordinary derivative \(\diff{f}{x}(x)\) (see Definition 2.2.6 in the CLP-1 text), it is common to treat the partial derivatives of \(f(x,y)\) as functions of \((x,y)\) simply by evaluating the partial derivatives at \((x,y)\) rather than at \((a,b)\text{.}\)</p>
+<article class="definition definition-like" id="def_partials"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Partial Derivatives.</span>
+</h6>
+<p id="p-1228">The \(x\)- and \(y\)-partial derivatives of the function \(f(x,y)\) are</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{f}{x}(x,y)
+&amp;= \lim_{h\rightarrow 0}\frac{f(x+h,y) - f(x,y)}{h}\\
+\pdiff{f}{y}(x,y)
+&amp;= \lim_{h\rightarrow 0}\frac{f(x,y+h) - f(x,y)}{h}
+\end{align*}
+</div>
+<p data-braille="continuation">respectively. The partial derivatives of functions of more than two variables are defined analogously.</p></article><p id="p-1229">Partial derivatives are used a lot. And there many notations for them.</p>
+<article class="definition definition-like" id="notn_partial"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
+</h6>
+<p id="p-1230">The partial derivative \(\pdiff{f}{x}(x,y)\) of a function \(f(x,y)\) is also denoted</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{x}\qquad
+f_x(x,y)\qquad
+f_x\qquad
+D_xf(x,y)\qquad
+D_xf\qquad
+D_1 f(x,y)\qquad
+D_1 f
+\end{equation*}
+</div>
+<p data-braille="continuation">The subscript \(1\) on \(D_1 f\) indicates that \(f\) is being differentiated with respect to its first variable. The partial derivative \(\pdiff{f}{x}(a,b)\) is also denoted</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{x}\bigg|_{(a,b)}
+\end{equation*}
+</div>
+<p data-braille="continuation">with the subscript \((a,b)\) indicating that \(\pdiff{f}{x}\) is being evaluated at \((x,y)=(a,b)\text{.}\)</p>
+<p id="p-1231">The notation \({\left(\pdiff{f}{x}\right)}_{\!y}\) is used to make explicit that the variable \(y\) is being held fixed<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-40" id="fn-40"><sup> 1 </sup></a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-40"><div class="fn">There are applications in which there are several variables that cannot be varied independently. For example, the pressure, volume and temperature of an ideal gas are related by the equation of state \(PV= \text{(constant)} T\text{.}\) In those applications, it may not be clear from the context which variables are being held fixed.</div></div></article><article class="remark remark-like" id="rem_geom_interp"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">The Geometric Interpretation of Partial Derivatives.</span>
+</h6>
+<p id="p-1232">We'll now develop a geometric interpretation of the partial derivative</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{x}(a,b)  = \lim_{h\rightarrow 0}\frac{f(a+h,b) - f(a,b)}{h}
+\end{equation*}
+</div>
+<p data-braille="continuation">in terms of the shape of the graph \(z=f(x,y)\) of the function \(f(x,y)\text{.}\) That graph appears in the figure below. It looks like the part of a deformed sphere that is in the first octant.</p>
+<p id="p-1233">The definition of \(\pdiff{f}{x}(a,b)\) concerns only points on the graph that have \(y=b\text{.}\) In other words, the curve of intersection of the surface \(z=f(x,y)\) with the plane \(y=b\text{.}\) That is the red curve in the figure. The two blue vertical line segments in the figure have heights \(f(a,b)\) and \(f(a+h,b)\text{,}\) which are the two numbers in the numerator of \(\frac{f(a+h,b) - f(a,b)}{h}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/xderiv.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1234">A side view of the curve (looking from the left side of the \(y\)-axis) is sketched in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/xderivSide.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1235">Again, the two blue vertical line segments in the figure have heights \(f(a,b)\) and \(f(a+h,b)\text{,}\) which are the two numbers in the numerator of \(\frac{f(a+h,b) - f(a,b)}{h}\text{.}\) So the numerator \(f(a+h,b) - f(a,b)\) and denominator \(h\) are the rise and run, respectively, of the curve \(z=f(x,b)\) from \(x=a\) to \(x=a+h\text{.}\) Thus \(\pdiff{f}{x}(a,b)\) is exactly <em class="emphasis">the slope of (the tangent to) the curve of intersection of the surface \(z=f(x,y)\) and the plane \(y=b\) at the point \(\big(a,b, f(a,b)\big)\text{.}\)</em> In the same way \(\pdiff{f}{y}(a,b)\) is exactly <em class="emphasis">the slope of (the tangent to) the curve of intersection of the surface \(z=f(x,y)\) and the plane \(x=a\) at the point \(\big(a,b, f(a,b)\big)\text{.}\)</em></p></article></section><section class="subsection" id="sec_eval_partials"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.1</span> <span class="title">Evaluation of Partial Derivatives</span>
+</h3>
+<p id="p-1236">From the above discussion, we see that we can readily compute partial derivatives \(\pdiff{}{x}\) by using what we already know about ordinary derivatives \(\diff{}{x}\text{.}\) More precisely,</p>
+<ul class="disc">
+<li id="li-675">to evaluate \(\pdiff{f}{x}(x,y)\text{,}\) treat the \(y\) in \(f(x,y)\) as a constant and differentiate the resulting function of \(x\) with respect to \(x\text{.}\)</li>
+<li id="li-676">To evaluate \(\pdiff{f}{y}(x,y)\text{,}\) treat the \(x\) in \(f(x,y)\) as a constant and differentiate the resulting function of \(y\) with respect to \(y\text{.}\)</li>
+<li id="li-677">To evaluate \(\pdiff{f}{x}(a,b)\text{,}\) treat the \(y\) in \(f(x,y)\) as a constant and differentiate the resulting function of \(x\) with respect to \(x\text{.}\) Then evaluate the result at \(x=a\text{,}\) \(y=b\text{.}\)</li>
+<li id="li-678">To evaluate \(\pdiff{f}{y}(a,b)\text{,}\) treat the \(x\) in \(f(x,y)\) as a constant and differentiate the resulting function of \(y\) with respect to \(y\text{.}\) Then evaluate the result at \(x=a\text{,}\) \(y=b\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Now for some examples.</p>
+<article class="example example-like" id="eg_partials_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_A"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_A"><article class="example example-like"><p id="p-1237">Let</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y) = x^3+y^2+ 4xy^2
+\end{equation*}
+</div>
+<p data-braille="continuation">Then, since \(\pdiff{}{x}\) treats \(y\) as a constant,</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{f}{x}
+&amp;= \pdiff{}{x}(x^3) + \pdiff{}{x}(y^2) +\pdiff{}{x}(4xy^2)\\
+&amp;= 3x^2+0 + 4y^2\pdiff{}{x}(x)\\
+&amp;= 3x^2 +4y^2
+\end{align*}
+</div>
+<p data-braille="continuation">and, since \(\pdiff{}{y}\) treats \(x\) as a constant,</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{f}{y}
+&amp;= \pdiff{}{y}(x^3) + \pdiff{}{y}(y^2) +\pdiff{}{y}(4xy^2)\\
+&amp;= 0 + 2y + 4x\pdiff{}{y}(y^2)\\
+&amp;= 2y+8xy
+\end{align*}
+</div>
+<p data-braille="continuation">In particular, at \((x,y)=(1,0)\) these partial derivatives take the values</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+\pdiff{f}{x}(1,0) &amp;= 3(1)^2 +4(0)^2&amp;=3\\
+\pdiff{f}{y}(1,0) &amp;= 2(0) +8(1)(0)\ &amp;=0
+\end{alignat*}
+</div></article></div>
+<article class="example example-like" id="eg_partials_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_B"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_B"><article class="example example-like"><p id="p-1238">Let</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y) = y\cos x + xe^{xy}
+\end{equation*}
+</div>
+<p data-braille="continuation">Then, since \(\pdiff{}{x}\) treats \(y\) as a constant, \(\pdiff{}{x} e^{yx}=y e^{yx}\) and</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{f}{x}(x,y) &amp;= y\pdiff{}{x}(\cos x) + e^{xy}\pdiff{}{x}(x)
++x\pdiff{}{x}\big(e^{xy}\big)
+\qquad\text{(by the product rule)}\\
+&amp;= -y\sin x + e^{xy} +xye^{xy}\\
+\pdiff{f}{y}(x,y) &amp;= \cos x\pdiff{}{y}(y) + x\pdiff{}{y}\big(e^{xy}\big)\\
+&amp;= \cos x + x^2e^{xy}
+\end{align*}
+</div></article></div>
+<p id="p-1239">Let's move up to a function of four variables. Things generalize in a quite straight forward way.</p>
+<article class="example example-like" id="eg_partials_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_C"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_C"><article class="example example-like"><p id="p-1240">Let</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y,z,t) = x\sin(y+2z) +t^2e^{3y}\ln z
+\end{equation*}
+</div>
+<p data-braille="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{f}{x}(x,y,z,t) &amp;= \sin(y+2z)\\
+\pdiff{f}{y}(x,y,z,t) &amp;= x\cos(y+2z) +3t^2e^{3y}\ln z\\
+\pdiff{f}{z}(x,y,z,t) &amp;= 2x\cos(y+2z) +t^2e^{3y}/z\\
+\pdiff{f}{t}(x,y,z,t) &amp;= 2te^{3y}\ln z
+\end{align*}
+</div></article></div>
+<p id="p-1241">Now here is a more complicated example — our function takes a special value at \((0,0)\text{.}\) To compute derivatives there we revert to the definition.</p>
+<article class="example example-like" id="eg_partials_D"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_D"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_D"><article class="example example-like"><p id="p-1242">Set</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}
+\frac{\cos x-\cos y}{x-y}&amp;\text{if } x\ne y \\
+0&amp;\text{if } x=y
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">If \(b\ne a\text{,}\) then for all \((x,y)\) sufficiently close to \((a,b)\text{,}\) \(f(x,y) = \frac{\cos x-\cos y}{x-y}\) and we can compute the partial derivatives of \(f\) at \((a,b)\) using the familiar rules of differentiation. However that is not the case for \((a,b)=(0,0)\text{.}\) To evaluate \(f_x(0,0)\text{,}\) we need to set \(y=0\) and find the derivative of</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,0) = \begin{cases}
+\frac{\cos x-1}{x}&amp;\text{if } x\ne 0 \\
+0&amp;\text{if } x=0
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">with respect to \(x\) at \(x=0\text{.}\) As we cannot use the usual differentiation rules, we evaluate the derivative<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-41" id="fn-41"><sup> 2 </sup></a> by applying the definition</p>
+<div class="displaymath">
+\begin{align*}
+f_x(0,0) &amp;= \lim_{h\rightarrow 0}\frac{f(h,0)-f(0,0)}{h}\\
+&amp;= \lim_{h\rightarrow 0}\frac{\frac{\cos h-1}{h}-0}{h}
+&amp;\qquad\text{(Recall that $h\ne 0$ in the limit.)}\\
+&amp;= \lim_{h\rightarrow 0}\frac{\cos h-1}{h^2}\\
+&amp;= \lim_{h\rightarrow 0}\frac{-\sin h}{2h}
+&amp;\qquad\text{(By l'Hôpital's rule.)}\\
+&amp;= \lim_{h\rightarrow 0}\frac{-\cos h}{2}
+&amp;\qquad\text{(By l'Hôpital again.)}\\
+&amp;=-\frac{1}{2}
+\end{align*}
+</div>
+<p data-braille="continuation">We could also evaluate the limit of \(\frac{\cos h-1}{h^2} \) by substituting in the Taylor expansion</p>
+<div class="displaymath">
+\begin{equation*}
+\cos h = 1 -\frac{h^2}{2}+\frac{h^4}{4!} -\cdots
+\end{equation*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-41"><div class="fn">It is also possible to evaluate the derivative by using the technique of the optional Section 2.15 in the CLP-1 text.</div></div>
+<p id="p-1243">We can also use Taylor expansions to understand the behaviour of \(f(x,y)\) for \((x,y)\) near \((0,0)\text{.}\) For \(x\ne y\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\cos x-\cos y}{x-y}
+&amp;=\frac{\left[1-\frac{x^2}{2!} +\frac{x^4}{4!}-\cdots\right]
+-\left[1-\frac{y^2}{2!} +\frac{y^4}{4!}-\cdots\right]}{x-y}\\
+&amp;=\frac{-\frac{x^2-y^2}{2!} +\frac{x^4-y^4}{4!}-\cdots}{x-y} \\
+&amp;= -\frac{1}{2!}\frac{x^2-y^2}{x-y} +\frac{1}{4!}\frac{x^4-y^4}{x-y}-\cdots \\
+&amp;= -\frac{x+y}{2!} +\frac{x^3+x^2y+xy^2+y^3}{4!}-\cdots
+\end{align*}
+</div>
+<p data-braille="continuation">So for \((x,y)\) near \((0,0)\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)\approx\begin{cases}
+-\frac{x+y}{2} &amp;\text{if $x\ne y$} \\
+0 &amp;\text{if $x=y$}
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">So it sure looks like (and in fact it is true that)</p>
+<ul class="disc">
+<li id="li-679">\(f(x,y)\) is continuous at \((0,0)\) and</li>
+<li id="li-680">\(f(x,y)\) is not continuous at \((a,a)\) for small \(a\ne 0\) and</li>
+<li id="li-681">\(\displaystyle f_x(0,0)=f_y(0,0)=-\frac{1}{2}\)</li>
+</ul></article></div>
+<article class="example example-like" id="eg_partials_DD"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_DD"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_DD"><article class="example example-like"><p id="p-1244">Again set</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}
+\frac{\cos x-\cos y}{x-y}&amp;\text{if } x\ne y \\
+0&amp;\text{if } x=y
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">We'll now compute \(f_y(x,y)\) for all \((x,y)\text{.}\)</p>
+<p id="p-1245"><em class="emphasis">The case \(y\ne x\text{:}\)</em> When \(y\ne x\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+f_y(x,y) &amp; = \pdiff{}{y}\frac{\cos x-\cos y}{x-y}\\
+&amp;=\frac{(x-y)\pdiff{}{y}(\cos x-\cos y)
+- (\cos x-\cos y)\pdiff{}{y}(x-y) }{(x-y)^2}\\
+&amp;\hskip2in\text{(by the quotient rule)}\\
+&amp;=\frac{(x-y)\sin y
++ \cos x-\cos y }{(x-y)^2}
+\end{align*}
+</div>
+<p id="p-1246"><em class="emphasis">The case \(y= x\text{:}\)</em> When \(y = x\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+f_y(x,y) &amp;= \lim_{h\rightarrow 0}\frac{f(x,y+h)-f(x,y)}{h}\\
+&amp;= \lim_{h\rightarrow 0}\frac{f(x,x+h)-f(x,x)}{h}\\
+&amp;= \lim_{h\rightarrow 0}\frac{\frac{\cos x-\cos(x+h)}{x-(x+h)}-0}{h}
+&amp;\qquad\text{(Recall that $h\ne 0$ in the limit.)}\\
+&amp;= \lim_{h\rightarrow 0}\frac{\cos(x+h)-\cos x}{h^2}
+\end{align*}
+</div>
+<p data-braille="continuation">Now we apply L'Hôpital's rule, remembering that, in this limit, \(x\) is a constant and \(h\) is the variable — so we differentiate with respect to \(h\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+f_y(x,y)  &amp;= \lim_{h\rightarrow 0}\frac{-\sin(x+h)}{2h}
+\end{align*}
+</div>
+<p data-braille="continuation">Note that if \(x\) is not an integer multiple of \(\pi\text{,}\) then the numerator \(-\sin(x+h)\) does <em class="emphasis">not</em> tend to zero as \(h\) tends to zero, and the limit giving \(f_y(x,y)\) does not exist. On the other hand, if \(x\) is an integer multiple of \(\pi\text{,}\) both the numerator and denominator tend to zero as \(h\) tends to zero, and we can apply  L'Hôpital's rule a second time. Then</p>
+<div class="displaymath">
+\begin{align*}
+f_y(x,y)  &amp;= \lim_{h\rightarrow 0}\frac{-\cos(x+h)}{2}\\
+&amp;=-\frac{\cos x}{2}
+\end{align*}
+</div>
+<p id="p-1247"><em class="emphasis">The conclusion:</em></p>
+<div class="displaymath">
+\begin{equation*}
+f_y(x,y)=\begin{cases}
+\frac{(x-y)\sin y
++ \cos x-\cos y }{(x-y)^2}&amp;\text{if } x\ne y\\
+-\frac{\cos x}{2}&amp;\text{if } x=y  \text{ with } x \text{ an integer multiple of }\pi\\
+DNE&amp;\text{if } x=y  \text{ with } x \text{ not an integer multiple of }\pi
+\end{cases}
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="eg_partials_DDD"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_DDD"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Optional — A Little Weirdness.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_DDD"><article class="example example-like"><p id="p-1248">In this example, we will see that the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}
+\frac{x^2}{x-y}&amp;\text{if } x\ne y \\
+0&amp;\text{if } x=y
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">is <em class="emphasis">not</em> continuous at \((0,0)\) and yet has both partial derivatives \(f_x(0,0)\) and \(f_y(0,0)\) perfectly well defined. We'll also see how that is possible. First let's compute the partial derivatives. By definition,</p>
+<div class="displaymath">
+\begin{align*}
+f_x(0,0)&amp;=\lim_{h\rightarrow 0}\frac{f(0+h,0)-f(0,0)}{h}
+=\lim_{h\rightarrow 0}\frac{\overbrace{\tfrac{h^2}{h-0}}^{h}-\,0}{h}
+=\lim_{h\rightarrow 0}1\\
+&amp;=1\\
+f_y(0,0)&amp;=\lim_{h\rightarrow 0}\frac{f(0,0+h)-f(0,0)}{h}
+=\lim_{h\rightarrow 0}\frac{\frac{0^2}{0-h}-0}{h}
+=\lim_{h\rightarrow 0}0\\
+&amp;=0
+\end{align*}
+</div>
+<p data-braille="continuation">So the first order partial derivatives \(f_x(0,0)\) and \(f_y(0,0)\) are perfectly well defined.</p>
+<p id="p-1249">To see that, nonetheless, \(f(x,y)\) is not continuous at \((0,0)\text{,}\) we take the limit of \(f(x,y)\) as \((x,y)\) approaches \((0,0)\) along the curve \(y=x-x^3\text{.}\) The limit is</p>
+<div class="displaymath">
+\begin{gather*}
+\lim_{x\rightarrow 0} f\big(x,x-x^3\big)
+=\lim_{x\rightarrow 0} \frac{x^2}{x-(x-x^3)}
+=\lim_{x\rightarrow 0} \frac{1}{x}
+\end{gather*}
+</div>
+<p data-braille="continuation">which does not exist. Indeed as \(x\) approaches \(0\) through positive numbers, \(\frac{1}{x}\) approaches \(+\infty\text{,}\) and as \(x\) approaches \(0\) through negative numbers, \(\frac{1}{x}\) approaches \(-\infty\text{.}\)</p>
+<p id="p-1250">So how is this possible? The answer is that \(f_x(0,0)\) only involves values of \(f(x,y)\) with \(y=0\text{.}\) As \(f(x,0)=x\text{,}\) for all values of \(x\text{,}\) we have that \(f(x,0)\) is a continuous, and indeed a differentiable, function. Similarly, \(f_y(0,0)\) only involves values of \(f(x,y)\) with \(x=0\text{.}\) As \(f(0,y)=0\text{,}\) for all values of \(y\text{,}\) we have that \(f(0,y)\) is a continuous, and indeed a differentiable, function. On the other hand, the bad behaviour of \(f(x,y)\) for \((x,y)\) near \((0,0)\) only happens for \(x\) and \(y\) both nonzero.</p></article></div>
+<p id="p-1251">Our next example uses implicit differentiation.</p>
+<article class="example example-like" id="eg_partials_E"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_E"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_E"><article class="example example-like"><p id="p-1252">The equation</p>
+<div class="displaymath">
+\begin{equation*}
+z^5 + y^2 e^z +e^{2x}=0
+\end{equation*}
+</div>
+<p data-braille="continuation">implicitly determines \(z\) as a function of \(x\) and \(y\text{.}\) That is, the function \(z(x,y)\) obeys</p>
+<div class="displaymath">
+\begin{equation*}
+z(x,y)^5 + y^2 e^{z(x,y)} +e^{2x}=0
+\end{equation*}
+</div>
+<p data-braille="continuation">For example, when \(x=y=0\text{,}\) the equation reduces to</p>
+<div class="displaymath">
+\begin{equation*}
+z(0,0)^5=-1
+\end{equation*}
+</div>
+<p data-braille="continuation">which forces<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-42" id="fn-42"><sup> 3 </sup></a> \(z(0,0)=-1\text{.}\) Let's find the partial derivative \(\pdiff{z}{x}(0,0)\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-42"><div class="fn">The only real number \(z\) which obeys \(z^5=-1\) is \(z=-1\text{.}\) However there are four other complex numbers which also obey \(z^5=-1\text{.}\)</div></div>
+<p id="p-1253">We are not going to be able to explicitly solve the equation for \(z(x,y)\text{.}\) All we know is that</p>
+<div class="displaymath">
+\begin{equation*}
+z(x,y)^5 + y^2 e^{z(x,y)} + e^{2x} =0
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(x\) and \(y\text{.}\) We can turn this into an equation for \(\pdiff{z}{x}(0,0)\) by differentiating<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-43" id="fn-43"><sup> 4 </sup></a> the whole equation with respect to \(x\text{,}\) giving</p>
+<div class="displaymath">
+\begin{equation*}
+5z(x,y)^4\ \pdiff{z}{x}(x,y) + y^2 e^{z(x,y)}\ \pdiff{z}{x}(x,y) +2e^{2x}  =0
+\end{equation*}
+</div>
+<p data-braille="continuation">and then setting \(x=y=0\text{,}\) giving</p>
+<div class="displaymath">
+\begin{equation*}
+5z(0,0)^4\ \pdiff{z}{x}(0,0) +2  =0
+\end{equation*}
+</div>
+<p data-braille="continuation">As we already know that \(z(0,0)=-1\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{z}{x}(0,0) = -\frac{2}{5z(0,0)^4} =-\frac{2}{5}
+\end{equation*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-43"><div class="fn">You should have already seen this technique, called implicit differentiation, in your first Calculus course. It is covered in Section 2.11 in the CLP-1 text.</div></div></article></div>
+<p id="p-1254">Next we have a partial derivative disguised as a limit.</p>
+<article class="example example-like" id="eg_partials_F"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_F"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_F"><article class="example example-like"><p id="p-1255">In this example we are going to evaluate the limit</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{z\rightarrow 0}\frac{(x+y+z)^3-(x+y)^3}{(x+y)z}
+\end{equation*}
+</div>
+<p data-braille="continuation">The critical observation is that, in taking the limit \(z\rightarrow 0\text{,}\) \(x\) and \(y\) are fixed. They do not change as \(z\) is getting smaller and smaller. Furthermore this limit is exactly of the form of the limits in the Definition <a class="xref" data-knowl="./knowl/def_partials.html" title="Definition 2.2.1: Partial Derivatives">2.2.1</a> of partial derivative, disguised by some obfuscating changes of notation.</p>
+<p id="p-1256">Set</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y,z) = \frac{(x+y+z)^3}{(x+y)}
+\end{equation*}
+</div>
+<p data-braille="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{z\rightarrow 0}\frac{(x+y+z)^3-(x+y)^3}{(x+y)z}
+&amp;=\lim_{z\rightarrow 0}\frac{f(x,y,z)-f(x,y,0)}{z}\\
+&amp;=\lim_{h\rightarrow 0}\frac{f(x,y,0+h)-f(x,y,0)}{h}\\
+&amp;=\pdiff{f}{z}(x,y,0)\\
+&amp;={\left[\pdiff{}{z}\frac{(x+y+z)^3}{x+y}\right]}_{z=0}
+\end{align*}
+</div>
+<p data-braille="continuation">Recalling that \(\pdiff{}{z}\) treats \(x\) and \(y\) as constants, we are evaluating the derivative of a function of the form \(\frac{({\rm const}+z)^3}{\rm const}\text{.}\) So</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{z\rightarrow 0}\frac{(x+y+z)^3-(x+y)^3}{(x+y)z}
+&amp;={\left.3\frac{(x+y+z)^2}{x+y}\right|}_{z=0}\\
+&amp;=3(x+y)
+\end{align*}
+</div></article></div>
+<p id="p-1257">The next example highlights a potentially dangerous difference between ordinary and partial derivatives.</p>
+<article class="example example-like" id="eg_partials_G"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_G"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_G"><article class="example example-like"><p id="p-1258">In this example we are going to see that, in contrast to the ordinary derivative case, \(\pdiff{r}{x}\) is not, in general, the same as \(\big(\pdiff{x}{r}\big)^{-1}\text{.}\)</p>
+<p id="p-1259">Recall that Cartesian and polar coordinates<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-44" id="fn-44"><sup> 5 </sup></a> (for \((x,y)\ne (0,0)\) and \(r \gt 0\)) are related by</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-44"><div class="fn">If you are not familiar with polar coordinates, don't worry about it. There will be an introduction to them in §<a href="sec_polars.html#sec_polar_coords" class="internal" title="Subsection 3.2.1: Polar Coordinates">3.2.1</a>.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;">
+<div class="sbspanel" style="width:28.5714285714286%;justify-content:center;"><div class="displaymath" id="p-1260">
+\begin{align*}
+x&amp;=r\cos\theta\\
+y&amp;=r\sin\theta\\
+r&amp;=\sqrt{x^2+y^2}\\
+\tan\theta&amp;=\frac{y}{x}
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:28.5714285714286%;justify-content:center;"><img src="figs/polar.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-1261">We will use the functions</p>
+<div class="displaymath">
+\begin{equation*}
+x(r,\theta) = r\cos\theta\qquad
+\text{and}\qquad
+r(x,y) = \sqrt{x^2+y^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">Fix any point \((x_0,y_0)\ne (0,0)\) and let \((r_0,\theta_0)\text{,}\) \(0\le\theta_0 \lt 2\pi\text{,}\) be the corresponding polar coordinates. Then</p>
+<div class="displaymath">
+\begin{gather*}
+\pdiff{x}{r}(r,\theta) = \cos\theta\qquad
+\pdiff{r}{x}(x,y) = \frac{x}{\sqrt{x^2+y^2}}
+\end{gather*}
+</div>
+<p data-braille="continuation">so that</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{x}{r}(r_0,\theta_0)=\left(\pdiff{r}{x}(x_0,y_0)\right)^{-1}
+&amp;\iff \cos\theta_0= \left(\frac{x_0}{\sqrt{x_0^2+y_0^2}}\right)^{-1}
+= \left(\cos\theta_0\right)^{-1}\\
+&amp;\iff \cos^2\theta_0= 1\\
+&amp;\iff \theta_0=0,\pi
+\end{align*}
+</div>
+<p id="p-1262">We can also see pictorially why this happens. By definition, the partial derivatives</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{x}{r}(r_0,\theta_0)
+&amp;= \lim_{\dee{r}\rightarrow 0}
+\frac{x(r_0+\dee{r},\theta_0) - x(r_0,\theta_0)}{\dee{r}}\\
+\pdiff{r}{x}(x_0,y_0)
+&amp;= \lim_{\dee{x}\rightarrow 0}
+\frac{r(x_0+\dee{x},y_0) - r(x_0,y_0)}{\dee{x}}
+\end{align*}
+</div>
+<p data-braille="continuation">Here we have just renamed the \(h\) of Definition <a class="xref" data-knowl="./knowl/def_partials.html" title="Definition 2.2.1: Partial Derivatives">2.2.1</a> to \(\dee{r}\) and to \(\dee{x}\) in the two definitions.</p>
+<p id="p-1263">In computing \(\pdiff{x}{r}(r_0,\theta_0)\text{,}\) \(\theta_0\) is held fixed, \(r\) is changed by a small amount \(\dee{r}\) and the resulting \(\dee{x}=x(r_0+\dee{r},\theta_0) - x(r_0,\theta_0)\) is computed. In the figure on the left below, \(\dee{r}\) is the length of the orange line segment and \(\dee{x}\) is the length of the blue line segment.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/dxdrdrdx1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/dxdrdrdx2.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-1264">On the other hand, in computing \(\pdiff{r}{x}\text{,}\) \(y\) is held fixed, \(x\) is changed by a small amount \(\dee{x}\) and the resulting \(\dee{r}=r(x_0+\dee{x},y_0) - r(x_0,y_0)\)  is computed. In the figure on the right above, \(\dee{x}\) is the length of the pink line segment and \(\dee{r}\) is the length of the orange line segment.</p>
+<p id="p-1265">Here are the two figures combined together. We have arranged that the same \(\dee{r}\) is used in both computations. In order for the \(\dee{r}\)'s to be the same in both computations, the two \(\dee{x}\)'s have to be different (unless \(\theta_0=0,\pi\)). So, in general, \(\pdiff{x}{r}(r_0,\theta_0)\ne \big(\pdiff{r}{x}(x_0,y_0)\big)^{-1}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dxdrdrdx3.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></div>
+<article class="example example-like" id="eg_partials_GG"><a data-knowl="" class="id-ref original" data-refid="hk-eg_partials_GG"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Optional — Example 2.2.12, continued.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_partials_GG"><article class="example example-like"><p id="p-1266">The inverse function theorem, for functions of one variable, says that, if \(y(x)\) and \(x(y)\) are inverse functions, meaning that \(y\big(x(y)\big)=y\) and \(x\big(y(x)\big)=x\text{,}\) and are differentiable with \(\diff{y}{x}\ne 0\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{x}{y}(y) = \frac{1}{\diff{y}{x}\big(x(y)\big)}
+\end{equation*}
+</div>
+<p data-braille="continuation">To see this, just apply \(\diff{}{y}\) to both sides of \(y\big(x(y)\big)=y\) to get \(\diff{y}{x}\big(x(y)\big)\ \diff{x}{y}(y)=1\text{,}\) by the chain rule (see Theorem 2.9.3 in the CLP-1 text). In the CLP-1 text, we used this to compute the derivatives of the logarithm (see Theorem 2.10.1 in the CLP-1 text) and of the inverse trig functions (see Theorem 2.12.7 in the CLP-1 text).</p>
+<p id="p-1267">We have just seen, in Example <a class="xref" data-knowl="./knowl/eg_partials_G.html" title="Example 2.2.12">2.2.12</a>, that we can't be too naive in extending the single variable inverse function theorem to functions of two (or more) variables. On the other hand, there is such an extension, which we will now illustrate, using Cartesian and polar coordinates. For simplicity, we'll restrict our attention to \(x \gt 0\text{,}\) \(y \gt 0\text{,}\) or equivalently, \(r \gt 0\text{,}\) \(0 \lt \theta \lt \frac{\pi}{2}\text{.}\) The functions which convert between Cartesian and polar coordinates are</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
+<div class="sbspanel" style="width:50%;justify-content:center;"><div class="displaymath" id="p-1268">
+\begin{alignat*}{2}
+x(r,\theta)&amp;=r\cos\theta\qquad&amp;
+r(x,y)&amp;=\sqrt{x^2+y^2}\\
+y(r,\theta)&amp;=r\sin\theta&amp;
+\theta(x,y)&amp;=\arctan\left(\frac{y}{x}\right)
+\end{alignat*}
+</div></div>
+<div class="sbspanel" style="width:25%;justify-content:center;"><img src="figs/polar.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-1269">The two functions on the left convert from polar to Cartesian coordinates and the two functions on the right convert from Cartesian to polar coordinates. The inverse function theorem (for functions of two variables) says that,</p>
+<ul class="disc">
+<li id="li-682">if you form the first order partial derivatives of the left hand functions into the matrix<div class="displaymath">
+\begin{equation*}
+\left[\begin{matrix}
+\pdiff{x}{r}(r,\theta) &amp; \pdiff{x}{\theta}(r,\theta) \\
+\pdiff{y}{r}(r,\theta) &amp; \pdiff{y}{\theta}(r,\theta)
+\end{matrix}\right]
+=\left[\begin{matrix}
+\cos\theta &amp; -r\sin\theta \\
+\sin\theta &amp;  r\cos\theta
+\end{matrix}\right]
+\end{equation*}
+</div>
+</li>
+<li id="li-683">and you form the first order partial derivatives of the right hand functions into the matrix<div class="displaymath">
+\begin{equation*}
+\left[\begin{matrix}
+\pdiff{r}{x}(x,y) &amp; \pdiff{r}{y}(x,y) \\
+\pdiff{\theta}{x}(x,y) &amp; \pdiff{\theta}{y}(x,y)
+\end{matrix}\right]
+=\left[\begin{matrix}
+\frac{x}{\sqrt{x^2+y^2}} &amp; \frac{y}{\sqrt{x^2+y^2}} \\
+\frac{-\frac{y}{x^2}}{1+(\frac{y}{x})^2} &amp;
+\frac{\frac{1}{x}}{1+(\frac{y}{x})^2}
+\end{matrix}\right]
+=\left[\begin{matrix}
+\frac{x}{\sqrt{x^2+y^2}} &amp; \frac{y}{\sqrt{x^2+y^2}} \\
+\frac{-y}{x^2+y^2} &amp;  \frac{x}{x^2+y^2}
+\end{matrix}\right]
+\end{equation*}
+</div>
+</li>
+<li id="li-684">and if you evaluate the second matrix at \(x=x(r,\theta)\text{,}\) \(y=y(r,\theta)\text{,}\)<div class="displaymath">
+\begin{equation*}
+\left[\begin{matrix}
+\pdiff{r}{x}\big(x(r,\theta),y(r,\theta)\big) &amp;
+\pdiff{r}{y}\big(x(r,\theta),y(r,\theta)\big) \\
+\pdiff{\theta}{x}\big(x(r,\theta),y(r,\theta)\big) &amp;
+\pdiff{\theta}{y}\big(x(r,\theta),y(r,\theta)\big)
+\end{matrix}\right]
+=\left[\begin{matrix}
+\cos\theta &amp; \sin\theta \\
+-\frac{\sin\theta}{r} &amp; \frac{\cos\theta}{r}
+\end{matrix}\right]
+\end{equation*}
+</div>
+</li>
+<li id="li-685">and if you multiply<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-45" id="fn-45"><sup> 6 </sup></a> the two matrices together<div class="displaymath">
+\begin{align*}
+&amp;\left[\begin{matrix}
+\pdiff{r}{x}\big(x(r,\theta),y(r,\theta)\big) &amp;
+\pdiff{r}{y}\big(x(r,\theta),y(r,\theta)\big) \\
+\pdiff{\theta}{x}\big(x(r,\theta),y(r,\theta)\big) &amp;
+\pdiff{\theta}{y}\big(x(r,\theta),y(r,\theta)\big)
+\end{matrix}\right]\ 
+\left[\begin{matrix}
+\pdiff{x}{r}(r,\theta) &amp; \pdiff{x}{\theta}(r,\theta) \\
+\pdiff{y}{r}(r,\theta) &amp; \pdiff{y}{\theta}(r,\theta)
+\end{matrix}\right]\\
+&amp;=\left[\begin{matrix}
+\cos\theta &amp; \sin\theta \\
+-\frac{\sin\theta}{r} &amp; \frac{\cos\theta}{r}
+\end{matrix}\right]\ 
+\left[\begin{matrix}
+\cos\theta &amp; -r\sin\theta \\
+\sin\theta &amp;  r\cos\theta
+\end{matrix}\right]\\\
+&amp;=\left[\begin{matrix}
+(\cos\theta)(\cos\theta) + (\sin\theta)(\sin\theta)
+&amp;(\cos\theta)(-r\sin\theta)+(\sin\theta)(r\cos\theta)
+\\
+(-\frac{\sin\theta}{r})(\cos\theta)+(\frac{\cos\theta}{r})(\sin\theta) &amp;
+(-\frac{\sin\theta}{r})(-r\sin\theta) + (\frac{\cos\theta}{r})(r\cos\theta)
+\end{matrix}\right]
+\end{align*}
+</div>
+</li>
+<li id="li-686">then the result is the identity matrix<div class="displaymath">
+\begin{equation*}
+\left[\begin{matrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{matrix}\right]
+\end{equation*}
+</div>and indeed it is!</li>
+</ul>
+<p data-braille="continuation">This two variable version of the inverse function theorem can be derived by applying the derivatives \(\pdiff{}{r}\) and \(\pdiff{}{\theta}\) to the equations</p>
+<div class="displaymath">
+\begin{align*}
+r\big(x(r,\theta),y(r,\theta)\big) &amp;=r \\
+\theta\big(x(r,\theta),y(r,\theta)\big) &amp;=\theta
+\end{align*}
+</div>
+<p data-braille="continuation">and using the two variable version of the chain rule, which we will see in §<a href="sec_chain_rule.html" class="internal" title="Section 2.4: The Chain Rule">2.4</a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-45"><div class="fn">Matrix multiplication is usually covered in courses on linear algebra, which you may or may not have taken. That's why this example is optional.</div></div></article></div></section><section class="exercises" id="exercises-9"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.2.2</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-24">
+<div class="introduction" id="introduction-31"><p id="p-1270"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-150"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1271">Let \(f(x,y) = e^x\cos y\text{.}\) The following table gives some values of \(f(x,y)\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines"></td>
+<td class="l m b1 r1 l0 t1 lines">\(x=0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(x=0.01\)</td>
+<td class="l m b1 r1 l0 t1 lines" data-braille="last-cell">\(x=0.1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y=-0.1\)</td>
+<td class="l m b1 r1 l0 t0 lines">0.99500</td>
+<td class="c m b1 r1 l0 t0 lines">1.00500</td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">1.09965</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y=-0.01\)</td>
+<td class="l m b1 r1 l0 t0 lines">0.99995</td>
+<td class="c m b1 r1 l0 t0 lines">1.01000</td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">1.10512</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y=0\)</td>
+<td class="l m b1 r1 l0 t0 lines">1.0</td>
+<td class="c m b1 r1 l0 t0 lines">1.01005</td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">1.10517</td>
+</tr>
+</table></div></div></div>
+<ol id="p-1272" class="lower-alpha">
+<li id="li-687">Find two different approximate values for \(\pdiff{f}{x}(0,0)\) using the data in the above table.</li>
+<li id="li-688">Find two different approximate values for \(\pdiff{f}{y}(0,0)\) using the data in the above table.</li>
+<li id="li-689">Evaluate \(\pdiff{f}{x}(0,0)\) and \(\pdiff{f}{y}(0,0)\) exactly.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-151"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1276">You are traversing an undulating landscape. Take the \(z\)-axis to be straight up towards the sky, the positive \(x\)-axis to be due south, and the positive \(y\)-axis to be due east. Then the landscape near you is described by the equation \(z=f(x,y)\text{,}\) with you at the point \((0,0,f(0,0))\text{.}\) The function \(f(x,y)\) is differentiable.</p>
+<p id="p-1277">Suppose \(f_y(0,0) \lt 0\text{.}\) Is it possible that you are at a summit? Explain.</p></article><article class="exercise exercise-like" id="exercise-152"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1281">Let</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}\frac{x^2y}{x^2+y^2}&amp; \text{if } (x,y)\ne (0,0)\\
+0 &amp; \text{if } (x,y)=(0,0)
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">Compute, directly from the definitions,</p>
+<ol class="lower-alpha">
+<li id="li-696">\(\displaystyle \pdiff{f}{x}(0,0)\)</li>
+<li id="li-697">\(\displaystyle \pdiff{f}{y}(0,0)\)</li>
+<li id="li-698">\(\displaystyle \diff{}{t} f(t,t)\Big|_{t=0}\)</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-25">
+<div class="introduction" id="introduction-32"><p id="p-1289"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-153"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1290">Find all first partial derivatives of the following functions and evaluate them at the given point.</p>
+<ol class="lower-alpha">
+<li id="li-699">\(\displaystyle f(x,y,z)=x^3y^4z^5\qquad (0,-1,-1)\)</li>
+<li id="li-700">\(\displaystyle w(x,y,z)=\ln\left(1+e^{xyz}\right)\qquad (2,0,-1)\)</li>
+<li id="li-701">\(\displaystyle f(x,y)=\frac{1}{\sqrt{x^2+y^2}}\qquad (-3,4)\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-154"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1297">Show that the function \(z(x,y)=\frac{x+y}{x-y}\) obeys</p>
+<div class="displaymath">
+\begin{equation*}
+x\pdiff{z}{x}(x,y)+y\pdiff{z}{y}(x,y) = 0
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-155"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1301">A surface \(z(x, y)\) is defined by \(zy - y + x = \ln(xyz)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-702">Compute \(\pdiff{z}{x}\text{,}\) \(\pdiff{z}{y}\) in terms of \(x\text{,}\) \(y\text{,}\) \(z\text{.}\)</li>
+<li id="li-703">Evaluate \(\pdiff{z}{x}\) and \(\pdiff{z}{y}\) at \((x, y, z) = (-1, -2, 1/2)\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-156"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1308">Find  \(\pdiff{U}{T}\) and \(\pdiff{T}{V}\) at \((1, 1, 2, 4)\) if \((T, U, V, W)\) are related by</p>
+<div class="displaymath">
+\begin{equation*}
+(TU-V)^2 \ln(W-UV) = \ln 2
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-157"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1314">Suppose that \(u = x^2 + yz\text{,}\) \(x = \rho r \cos(\theta)\text{,}\) \(y = \rho r \sin(\theta)\) and \(z = \rho r\text{.}\) Find \(\pdiff{u}{r}\) at the point \((\rho_0 , r_0 , \theta_0) = (2, 3, \pi/2)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-158"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-1317">Use the definition of the derivative to evaluate \(f_x(0,0)\) and \(f_y(0,0)\) for</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}
+\frac{x^2-2y^2}{x-y}&amp;\text{if } x\ne y\\
+0&amp;\text{if } x=y
+\end{cases}
+\end{equation*}
+</div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-26">
+<div class="introduction" id="introduction-33"><p id="p-1321"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-159"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
+<p id="p-1322">Let \(f\) be any differentiable function of one variable. Define \(z(x,y)=f(x^2+y^2)\text{.}\) Is the equation</p>
+<div class="displaymath">
+\begin{equation*}
+y\pdiff{z}{x}(x,y)-x\pdiff{z}{y}(x,y) = 0
+\end{equation*}
+</div>
+<p data-braille="continuation">necessarily satisfied?</p></article><article class="exercise exercise-like" id="exercise-160"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
+<p id="p-1326">Define the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}\frac{(x+2y)^2}{x+y}&amp; \text{if } x+y\ne 0 \\
+0 &amp;\text{if } x+y=0
+\end{cases}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-704">Evaluate, if possible, \(\pdiff{f}{x}(0,0)\) and \(\pdiff{f}{y}(0,0)\text{.}\)</li>
+<li id="li-705">Is \(f(x,y)\) continuous at \((0,0)\text{?}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-161"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
+<p id="p-1331">Consider the cylinder whose base is the radius-1 circle in the \(xy\)-plane centred at \((0,0)\text{,}\) and which slopes parallel to the line in the \(yz\)-plane given by \(z=y\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/image-278.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1332">When you stand at the point \((0,-1,0)\text{,}\) what is the slope of the surface if you look in the positive \(y\) direction? The positive \(x\) direction?</p></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

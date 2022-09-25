@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:42:36+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ISO Coordinate System Notation</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ap_3dcoord.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="app_parent.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="app_quadric.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ap_3dcoord.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="app_parent.html" title="Up">Up</a><a class="next-button button toolbar-item" href="app_quadric.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO" class="active">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="ap_ISO"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">A.7</span> <span class="title">ISO Coordinate System Notation</span>
+</h2>
+<section class="introduction" id="introduction-91"><p id="p-4165">In this text we have chosen symbols for the various polar, cylindrical and spherical coordinates that are standard for mathematics. There is another, different, set of symbols that are commonly used in the physical sciences and engineering. Indeed, there is an international convention, called ISO 80000-2, that specifies those symbols<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-157" id="fn-157"><sup> 1 </sup></a>. In this appendix, we summarize the definitions and standard properties of the polar, cylindrical and spherical coordinate systems using the ISO symbols.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-157"><div class="fn">It specifies more than just those symbols. See <a class="external" href="https://en.wikipedia.org/wiki/ISO_31-11" target="_blank">https://en.wikipedia.org/wiki/ISO_31-11</a> and <a class="external" href="https://en.wikipedia.org/wiki/ISO/IEC_80000" target="_blank">https://en.wikipedia.org/wiki/ISO/IEC_80000</a> The full ISO 80000-2 is available at <a class="external" href="https://www.iso.org/standard/64973.html" target="_blank">https://www.iso.org/standard/64973.html</a> — for $$.</div></div></section><section class="subsection" id="ap_ISOpolar"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">A.7.1</span> <span class="title">Polar Coordinates</span>
+</h3>
+<p id="p-4166">In the ISO convention the symbols \(\rho\) and \(\phi\) are used (instead of \(r\) and \(\theta\)) for polar coordinates.</p>
+<div class="displaymath">
+\begin{align*}
+\rho&amp;=\text{ the distance from }(0,0)\text{ to }(x,y)\\
+\phi&amp;=\text{ the (counter-clockwise) angle between the $x$-axis }\\
+&amp; \qquad \text{ and the line joining $(x,y)$ to $(0,0)$}
+\end{align*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:36.5%;margin-right:36.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOpolar.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-4167">Cartesian and polar coordinates are related by</p>
+<div class="displaymath">
+\begin{align*}
+x&amp;=\rho\cos\phi &amp;
+y&amp;=\rho\sin\phi  \\
+\rho&amp;=\sqrt{x^2+y^2} &amp;
+\phi&amp;=\arctan\frac{y}{x}
+\end{align*}
+</div>
+<p data-braille="continuation">The following two figures show a number of lines of constant \(\phi\text{,}\) on the left, and curves of constant \(\rho\text{,}\) on the right.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:9%;margin-right:9%;">
+<div class="sbspanel" style="width:39.0243902439024%;justify-content:center;"><img src="figs/ISOpolarTh.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:39.0243902439024%;justify-content:center;"><img src="figs/ISOpolarR.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-4168">Note that the polar angle \(\phi\) is only defined up to integer multiples of \(2\pi\text{.}\) For example, the point \((1,0)\) on the \(x\)-axis could have \(\phi=0\text{,}\) but could also have \(\phi=2\pi\) or \(\phi=4\pi\text{.}\) It is sometimes convenient to assign \(\phi\) negative values. When \(\phi\lt 0\text{,}\) the counter-clockwise angle \(\phi\) refers to the clockwise angle \(|\phi|\text{.}\) For example, the point \((0,-1)\) on the negative \(y\)-axis can have \(\phi=-\frac{\pi}{2}\) and can also have \(\phi=\frac{3\pi}{2}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:24%;margin-right:24%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOpolarNegTh.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-4169">It is also sometimes convenient to extend the above definitions by saying that \(x=\rho\cos\phi\) and \(y=\rho\sin\phi\) even when \(\rho\) is negative. For example, the following figure shows \((x,y)\) for \(\rho=1\text{,}\) \(\phi=\frac{\pi}{4}\) and for \(\rho=-1\text{,}\) \(\phi=\frac{\pi}{4}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:16.25%;margin-right:16.25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOpolarNeg.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-4170">Both points lie on the  line through the origin that makes an angle of \(45^\circ\) with the \(x\)-axis and both are a distance one from the origin. But they are on opposite sides of the the origin.</p>
+<p id="p-4171">The area element in polar coordinates is</p>
+<div class="displaymath">
+\begin{equation*}
+\dee{A} = \rho\,\dee{\rho}\,\dee{\phi}
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:31.5%;margin-right:31.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOpolarA.svg" style="width: 100%; height: auto;" alt=""></div></div></div></section><section class="subsection" id="ap_ISOcylCoord"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">A.7.2</span> <span class="title">Cylindrical Coordinates</span>
+</h3>
+<p id="p-4172">In the ISO convention the symbols \(\rho\text{,}\) \(\phi\) and \(z\) are used (instead of \(r\text{,}\) \(\theta\) and \(z\)) for cylindrical coordinates.</p>
+<div class="displaymath">
+\begin{align*}
+\rho&amp;=\text{ distance from }(0,0,0)\text{ to }(x,y,0)\\
+\phi&amp;=\text{ angle between the the $x$ axis and the line joining $(x,y,0)$ to $(0,0,0)$}\\
+z&amp;=\text{ signed distance from }(x,y,z)
+\text{ to the $xy$-plane}
+\end{align*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32%;margin-right:32%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOcyl1.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-4173">The cartesian and cylindrical coordinates are related by</p>
+<div class="displaymath">
+\begin{align*}
+x&amp;=\rho\cos\phi &amp;
+y&amp;=\rho\sin\phi &amp;
+z&amp;=z\\
+\rho&amp;=\sqrt{x^2+y^2} &amp;
+\phi&amp;=\arctan\frac{y}{x} &amp;
+z&amp;=z
+\end{align*}
+</div>
+<p data-braille="continuation">Here are three figures showing a surface of constant \(\rho\text{,}\) a surface of constant \(\phi\text{,}\) and a surface of constant \(z\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.333333333333333%;margin-right:1.333333333333333%;">
+<div class="sbspanel" style="width:31.8493150684931%;justify-content:center;"><img src="figs/ISOcyl3.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.8493150684931%;justify-content:center;"><img src="figs/ISOcyl4.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:30.8219178082192%;justify-content:center;"><img src="figs/ISOcyl2.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-4174">Finally here is a figure showing the volume element \(\dee{V}\) in cylindrical coordinates.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:26.5%;margin-right:26.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOcyl5.svg" style="width: 100%; height: auto;" alt=""></div></div></div></section><section class="subsection" id="ap_ISOspherCoord"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">A.7.3</span> <span class="title">Spherical Coordinates</span>
+</h3>
+<p id="p-4175">In the ISO convention the symbols \(r\) (instead of \(\rho\)), \(\phi\) (instead of \(\theta\)) and \(\theta\) (instead of \(\phi\)) are used for spherical coordinates.</p>
+<div class="displaymath">
+\begin{align*}
+r&amp;=\text{ distance from }(0,0,0)\text{ to }(x,y,z)\\
+\theta&amp;=\text{ angle between the $z$ axis and the line joining $(x,y,z)$ to $(0,0,0)$}\\
+\phi&amp;=\text{ angle between the $x$ axis and the line joining $(x,y,0)$ to $(0,0,0)$}
+\end{align*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:28%;margin-right:28%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOspherical.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-4176">Here are two more figures giving the side and top views of the previous figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
+<div class="sbspanel" style="width:45.9183673469388%;justify-content:center;"><img src="figs/ISOsphericalSide.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:52.0408163265306%;justify-content:center;"><img src="figs/ISOsphericalTop.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-4177">The cartesian and spherical coordinates are related by</p>
+<div class="displaymath">
+\begin{align*}
+x&amp;=r\sin\theta\cos\phi &amp;
+y&amp;=r\sin\theta\sin\phi &amp;
+z&amp;=r\cos\theta\\
+r&amp;=\sqrt{x^2+y^2+z^2} &amp;
+\phi&amp;=\arctan\frac{y}{x} &amp;
+\theta&amp;=\arctan\frac{\sqrt{x^2+y^2}}{z}
+\end{align*}
+</div>
+<p data-braille="continuation">Here are three figures showing a surface of constant \(r\text{,}\) a surface of constant \(\phi\text{,}\) and a surface of constant \(\theta\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
+<div class="sbspanel" style="width:32.6530612244898%;justify-content:center;"><img src="figs/ISOspher2.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.6326530612245%;justify-content:center;"><img src="figs/ISOspher3.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.6326530612245%;justify-content:center;"><img src="figs/ISOspher4.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-4178">Finally, here is a figure showing the volume element \(\dee{V}\) in spherical coordinates</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20.5%;margin-right:20.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ISOspher5.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-4179">and two extracts of the above figure to make it easier to see how the factors \(r\ \dee{\theta}\) and \(r\sin\theta\ \dee{\phi}\) arise.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
+<div class="sbspanel" style="width:48.9795918367347%;justify-content:center;"><img src="figs/ISOspher6.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:48.9795918367347%;justify-content:center;"><img src="figs/ISOspher7.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div></section></section></div></main>
+</div>
+</body>
+</html>

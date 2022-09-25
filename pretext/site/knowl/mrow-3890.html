@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:48:07+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="displaymath">
+\begin{align*}
+\tripInt_\cV (x^2+z^2)\ \dee{x}\,\dee{y}\,\dee{z}
+&amp;=\int_0^h\dee{z}\int_0^{2\pi}\dee{\theta}\int_0^{\frac{a}{h}z}\dee{r}\ r
+\overbrace{\big(r^2\cos^2\theta+z^2\big)}^{x^2+z^2}\\
+&amp;=\int_0^h\dee{z}\int_0^{2\pi}\dee{\theta}\left[
+\frac{1}{4}\left(\frac{a}{h}z\right)^4\cos^2\theta
++\frac{1}{2}\left(\frac{a}{h}z\right)^2z^2\right]\\
+&amp;=\int_0^h\dee{z}\left[
+\frac{1}{4}\frac{a^4}{h^4}
++\frac{a^2}{h^2}\right]\pi z^4\\
+&amp;\hskip0.5in\text{since } \int_0^{2\pi}\cos^2\theta\ \dee{\theta}=\pi
+\text{ by Remark } \knowl{./knowl/rem_sneaky.html}{\text{3.3.5}}\\
+&amp;=\frac{1}{5}\left[
+\frac{1}{4}\frac{a^4}{h^4}
++\frac{a^2}{h^2}\right]\pi h^5
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_cylindrical.html#mjx-eqn-mrow-3890">in-context</a></span>
+</body>
+</html>

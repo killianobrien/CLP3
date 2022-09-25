@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:42:19+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Triple Integrals</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_surface_area.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_cylindrical.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_surface_area.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_cylindrical.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals" class="active">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_3d_integrals"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">Triple Integrals</span>
+</h2>
+<p id="p-3527">Triple integrals, that is integrals over three dimensional regions, are just like double integrals, only more so. We decompose the domain of integration into tiny cubes, for example, compute the contribution from each cube and then use integrals to add up all of the different pieces. We'll go through the details now by means of a number of examples.</p>
+<article class="example example-like" id="eg_sphere_mass_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_sphere_mass_A"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_sphere_mass_A"><article class="example example-like"><p id="p-3528">Find the mass inside the sphere \(x^2+y^2+z^2=1\) if the density is \(\rho(x,y,z) = |xyz|\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-499" id="solution-499"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-499"><div class="solution solution-like">
+<p id="p-3529">The absolute values can complicate the computations. We can avoid those complications by exploiting the fact that, by symmetry, the total mass of the sphere will be eight times the mass in the first octant. We shall cut the first octant part of the sphere into tiny pieces using Cartesian coordinates. That is, we shall cut it up using planes of constant \(z\text{,}\) planes of constant \(y\text{,}\) and planes of constant \(x\text{,}\) which we recall look like</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
+<div class="sbspanel" style="width:29.2929292929293%;justify-content:center;"><img src="figs/cart2.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:34.3434343434343%;justify-content:center;"><img src="figs/cart4.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:34.3434343434343%;justify-content:center;"><img src="figs/cart3.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<ul id="p-3530" class="disc">
+<li id="li-1843">
+<p id="p-3531">First slice the (the first octant part of the) sphere into horizontal plates by inserting many planes of constant \(z\text{,}\) with the various values of \(z\) differing by \(\dee{z}\text{.}\) The figure on the left below shows the part of one plate in the first octant outlined in red. Each plate</p>
+<ul class="circle">
+<li id="li-1844">has thickness \(\dee{z}\text{,}\)</li>
+<li id="li-1845">has \(z\) almost constant throughout the plate (it only varies by \(\dee{z}\)), and</li>
+<li id="li-1846">has \((x,y)\) running over \(x\ge 0\text{,}\) \(y\ge 0\text{,}\) \(x^2+y^2\le 1-z^2\text{.}\)</li>
+<li id="li-1847">The bottom plate starts at \(z=0\) and the top plate ends at \(z=1\text{.}\) See the figure on the right below.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:50%;justify-content:center;"><img src="figs/sphereMass1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:38.8888888888889%;justify-content:center;"><img src="figs/sphereMass1a.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-1848">
+<p id="p-3532">Concentrate on any one plate. Subdivide it into long thin “square” beams by inserting many planes of constant \(y\text{,}\) with the various values of \(y\) differing by \(\dee{y}\text{.}\) The figure on the left below shows the part of one beam in the first octant outlined in blue. Each beam</p>
+<ul class="circle">
+<li id="li-1849">has cross-sectional area  \(\dee{y}\,\dee{z}\text{,}\)</li>
+<li id="li-1850">has \(z\)  and \(y\) essentially constant throughout the beam, and</li>
+<li id="li-1851">has \(x\) running over \(0\le x\le \sqrt{1-y^2-z^2}\text{.}\)</li>
+<li id="li-1852">The leftmost beam has, essentially, \(y=0\) and the rightmost beam has, essentially, \(y=\sqrt{1-z^2}\text{.}\)  See the figure on the right below.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:45%;justify-content:center;"><img src="figs/sphereMass2.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:55%;justify-content:center;"><img src="figs/sphereMass2a.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-1853">
+<p id="p-3533">Concentrate on any one beam. Subdivide it into tiny approximate cubes by inserting many planes of constant \(x\text{,}\) with the various values of \(x\) differing by \(\dee{x}\text{.}\) The figure on the left below shows the top of one approximate cube in black. Each cube</p>
+<ul class="circle">
+<li id="li-1854">has volume \(\dee{x}\,\dee{y}\,\dee{z}\text{,}\) and</li>
+<li id="li-1855">has \(x\text{,}\) \(y\) and \(z\) all essentially constant throughout the cube.</li>
+<li id="li-1856">The first cube has, essentially, \(x=0\) and the last cube has, essentially, \(x=\sqrt{1-y^2-z^2}\text{.}\)  See the figure on the right below.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:52.6315789473684%;justify-content:center;"><img src="figs/sphereMass3.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:42.1052631578947%;justify-content:center;"><img src="figs/sphereMass3a.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+</ul>
+<p id="p-3534">Now we can build up the mass.</p>
+<ul class="disc">
+<li id="li-1857">
+<p id="p-3535">Concentrate on one approximate cube. Let's say that it contains the point \((x,y,z)\text{.}\)</p>
+<ul class="circle">
+<li id="li-1858">The cube has volume essentially \(\dee{V} =  \dee{x}\,\dee{y}\,\dee{z}\) and</li>
+<li id="li-1859">essentially has density \(\rho(x,y,z) = xyz\) and so</li>
+<li id="li-1860">essentially has mass \(xyz\,\dee{x}\,\dee{y}\,\dee{z}\text{.}\)</li>
+</ul>
+</li>
+<li id="li-1861">To get the mass of any one beam, say the beam whose \(y\) coordinate runs from \(y\) to \(y+\dee{y}\text{,}\) we just add up the masses of the approximate cubes in that beam, by integrating \(x\) from its smallest value on the beam, namely \(0\text{,}\) to its largest value on the beam, namely \(\sqrt{1-y^2-z^2}\text{.}\) The mass of the beam is thus<div class="displaymath">
+\begin{gather*}
+\dee{y}\,\dee{z} \int_0^{\sqrt{1-y^2-z^2}}  \dee{x}\,xyz
+\end{gather*}
+</div>
+</li>
+<li id="li-1862">To get the mass of any one plate, say the plate whose \(z\) coordinate runs from \(z\) to \(z+\dee{z}\text{,}\) we just add up the masses of the beams in that plate, by integrating \(y\) from its smallest value on the plate, namely \(0\text{,}\) to its largest value on the plate, namely \(\sqrt{1-z^2}\text{.}\) The mass of the plate is thus<div class="displaymath">
+\begin{gather*}
+\dee{z}\int_0^{\sqrt{1-z^2}}\dee{y}\int_0^{\sqrt{1-y^2-z^2}}  \dee{x}\,xyz
+\end{gather*}
+</div>
+</li>
+<li id="li-1863">To get the mass of the part of the sphere in the first octant, we just add up the masses of the plates that it contains, by integrating \(z\) from its smallest value in the octant, namely \(0\text{,}\) to its largest value on the sphere, namely  \(1\text{.}\) The mass in the first octant is thus<div class="displaymath">
+\begin{align*}
+&amp;\int_0^1\dee{z}\int_0^{\sqrt{1-z^2}}\dee{y}\int_0^{\sqrt{1-y^2-z^2}}  \dee{x}\,xyz\\
+&amp;\hskip0.5in= \int_0^1\dee{z}\int_0^{\sqrt{1-z^2}}\dee{y}\ yz
+\left[\int_0^{\sqrt{1-y^2-z^2}}  \dee{x}\,x\right]\\
+&amp;\hskip0.5in= \int_0^1\dee{z}\int_0^{\sqrt{1-z^2}}\dee{y}\
+\frac{1}{2}yz \big(1-y^2-z^2\big)\\
+&amp;\hskip0.5in=\int_0^1\dee{z}\int_0^{\sqrt{1-z^2}}\dee{y}\
+\left[\frac{z(1-z^2)}{2}y-\frac{z}{2}y^3\right]\\
+&amp;\hskip0.5in=\int_0^1\dee{z}\ \left[\frac{z{(1-z^2)}^2}{4}-\frac{z{(1-z^2)}^2}{8}\right]\\
+&amp;\hskip0.5in=\int_0^1\dee{z}\ z\ \frac{{(1-z^2)}^2}{8}\\
+&amp;\hskip0.5in=\int_1^0\frac{\dee{u}}{-2}\ \frac{u^2}{8}
+\qquad\text{with }u=1-z^2,\ \dee{u}=-2z\,\dee{z}\\
+&amp;\hskip0.5in=\frac{1}{48}
+\end{align*}
+</div>
+</li>
+<li id="li-1864">So the mass of the total (eight octant) sphere is \(8\times\frac{1}{48}=\frac{1}{6}\text{.}\)</li>
+</ul>
+</div></div>
+</div></article></div>
+<p id="p-3536">Consider, for example, the limits of integration for the integral</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\int_0^1\dee{z}\int_0^{\sqrt{1-z^2}}\dee{y}\int_0^{\sqrt{1-y^2-z^2}}  \dee{x}\,xyz\\
+&amp;\hskip0.5in=\int_0^1\left(\int_0^{\sqrt{1-z^2}}\left(\int_0^{\sqrt{1-y^2-z^2}}  xyz\ \dee{x}\right)\dee{y} \right)\dee{z}
+\end{align*}
+</div>
+<p data-braille="continuation">that we have just evaluated in Example  <a class="xref" data-knowl="./knowl/eg_sphere_mass_A.html" title="Example 3.5.1">3.5.1</a>.</p>
+<ul class="disc">
+<li id="li-1865">When we are integrating over the innermost integral, with respect to \(x\text{,}\) the quantities \(y\) and \(z\) are treated as constants. In particular, \(y\) and \(z\) may appear in the limits of integration for the \(x\)-integral, but \(x\) may not appear in those limits.</li>
+<li id="li-1866">When we are integrating over \(y\text{,}\) we have already integrated out \(x\text{;}\) \(x\) no longer exists. The quantity \(z\) is treated as a constant. In particular, \(z\text{,}\) but neither \(x\) nor \(y\text{,}\) may appear in the limits of integration for the \(y\)-integral.</li>
+<li id="li-1867">Finally, when we are integrating over \(z\text{,}\) we have already integrated out \(x\) and \(y\text{;}\) they no longer exist. None of \(x\text{,}\) \(y\) or \(z\text{,}\) may appear in the limits of integration for the \(z\)-integral.</li>
+</ul>
+<article class="example example-like" id="eg_3d_limits_of_integration"><a data-knowl="" class="id-ref original" data-refid="hk-eg_3d_limits_of_integration"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_3d_limits_of_integration"><article class="example example-like"><p id="p-3537">In practice, often the hardest part of dealing with a triple integral is setting up the limits of integration. In this example, we'll concentrate on exactly that.</p>
+<p id="p-3538">Let \(\cV\) be the solid region in \(\bbbr^3\) bounded by the planes \(x = 0\text{,}\) \(y = 0\text{,}\) \(z=0\text{,}\) \(y = 4 - x\text{,}\) and the surface \(z = 4 - x^2\text{.}\) We are now going to write \(\tripInt_\cV f(x, y, z)\ \dee{V}\) as an iterated integral (i.e. find the limits of integration) in two different ways. Here \(f\) is just some general, unspecified, function.</p>
+<p id="p-3539">First, we'll figure out what \(\cV\) looks like. The following three figures show</p>
+<ul class="disc">
+<li id="li-1868">the part of the first octant with \(y \le 4 - x\)  (except that it continues vertically upward)</li>
+<li id="li-1869">the part of the first octant with \(z \le 4 - x^2\) (except that it continues to the right)</li>
+<li id="li-1870">the part of the first octant with both \(y\le 4-x\) and  \(z \le 4 - x^2\text{.}\) That's<div class="displaymath">
+\begin{equation*}
+\cV=\Set{(x,y,z)}{x\ge 0, y\ge 0,\  z\ge 0,\ x+y\le 4,\ z\le 4-x^2}
+\end{equation*}
+</div>
+</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/limits3dA.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/limits3dB.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/limits3dC.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3540"><em class="emphasis">The iterated integral \(\tripInt_\cV f(x, y, z)\ \dee{z}\,\dee{y} \,\dee{x}
+=\int\left(\int\left(\int f(x, y, z)\ \dee{z}\right)\dee{y}\right)\dee{x} \text{:}\)</em> For this iterated integral, the outside integral is with respect to \(x\text{,}\) so we first slice up \(\cV\) using planes of constant \(x\text{,}\) as in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/limits3dD.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3541">Observe from that figure that, on \(\cV\text{,}\)</p>
+<ul class="disc">
+<li id="li-1871">\(x\) runs from \(0\) to \(2\text{,}\) and</li>
+<li id="li-1872">for each fixed \(x\) in that range, \(y\) runs from \(0\) to \(4-x\) and</li>
+<li id="li-1873">for each fixed \((x,y)\) as above, \(z\) runs from \(0\) to \(4-x^2\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\tripInt_\cV f(x, y, z)\ \dee{z}\,\dee{y} \,\dee{x}
+&amp;=\int_0^2 \dee{x} \int_0^{4-x} \dee{y}\int_0^{4-x^2}\dee{z}\  f(x, y, z)\\
+&amp;=\int_0^2  \int_0^{4-x} \int_0^{4-x^2}f(x, y, z)\ \dee{z}\,\dee{y}\,\dee{x}
+\end{align*}
+</div>
+<p id="p-3542"><em class="emphasis">The iterated integral \(\tripInt_\cV f(x, y, z)\ \dee{y}\,\dee{x} \,\dee{z}
+=\int\left(\int\left(\int f(x, y, z)\ \dee{y}\right)\dee{x} \right)\dee{z}\text{:}\)</em> For this iterated integral, the outside integral is with respect to \(z\text{,}\) so we first slice up \(\cV\) using planes of constant \(z\text{,}\) as in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/limits3dE.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3543">Observe from that figure that, on \(\cV\text{,}\)</p>
+<ul class="disc">
+<li id="li-1874">\(z\) runs from \(0\) to \(4\text{,}\) and</li>
+<li id="li-1875">for each fixed \(z\) in that range, \(x\) runs from \(0\) to \(\sqrt{4-z}\) and</li>
+<li id="li-1876">for each fixed \((x,z)\) as above, \(y\) runs from \(0\) to \(4-x\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\tripInt_\cV f(x, y, z)\ \dee{y}\,\dee{x} \,\dee{z}
+&amp;=\int_0^4 \dee{z} \int_0^{\sqrt{4-z}} \dee{x}\int_0^{4-x}\dee{y}\  f(x, y, z)\\
+&amp;=\int_0^4  \int_0^{\sqrt{4-z}} \int_0^{4-x}f(x, y, z)
+\ \dee{y}\,\dee{x}\,\dee{z}
+\end{align*}
+</div></article></div>
+<article class="example example-like" id="eg_3d_integrals_exchange_of_order"><a data-knowl="" class="id-ref original" data-refid="hk-eg_3d_integrals_exchange_of_order"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_3d_integrals_exchange_of_order"><article class="example example-like"><p id="p-3544">As was said in the last example, in practice, often the hardest parts of dealing with a triple integral concern the limits of integration. In this example, we'll again concentrate on exactly that. This time, we will consider the integral</p>
+<div class="displaymath">
+\begin{equation*}
+I=\int_0^2\dee{y}\int_0^{2-y}\dee{z}\int_0^{\frac{2-y}{2}}\dee{x}\ f(x,y,z)
+\end{equation*}
+</div>
+<p data-braille="continuation">and we will re-express \(I\) with the outside integral being over \(z\text{.}\) We will figure out the limits of integration for both the order \(\int\dee{z}\int\dee{x}\int\dee{y}\ f(x,y,z)\) and for the order \(\int\dee{z}\int\dee{y}\int\dee{x}\ f(x,y,z)\text{.}\)</p>
+<p id="p-3545">Our first task is to get a good idea as to what the domain of integration looks like. We start by reading off of the given integral that</p>
+<ul class="disc">
+<li id="li-1877">the outside integral says that \(y\) runs from \(0\) to \(2\text{,}\) and</li>
+<li id="li-1878">the middle integral says that, for each fixed \(y\) in that range, \(z\) runs from \(0\) to \(2-y\) and</li>
+<li id="li-1879">the inside integral says that, for each fixed \((y,z)\) as above, \(x\) runs from \(0\) to \(\frac{2-y}{2}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the domain of integration is</p>
+<div class="displaymath">
+\begin{equation*}
+V=\Set{(x,y,z)}{ 0\le y\le 2,\
+0\le z\le 2-y,\
+0\le x\le \tfrac{2-y}{2}}
+\tag{$*$}
+\end{equation*}
+</div>
+<p data-braille="continuation">We'll sketch \(V\) shortly. Because it is generally easier to make 2d sketches than it is to make 3d sketches, we'll first make a 2d sketch of the part of \(V\) that lies in the vertical plane \(y=Y\text{.}\) Here \(Y\) is any constant between \(0\) and \(2\text{.}\) Looking at the definition of \(V\text{,}\) we see that the point \((x,Y,z)\) lies in \(V\) if and only if</p>
+<div class="displaymath">
+\begin{gather*}
+0\le z\le 2-Y\qquad   0\le x\le \frac{2-Y}{2}
+\end{gather*}
+</div>
+<p data-braille="continuation">Here, on the left, is a (2d) sketch of all \((x,z)\)'s that obey those inequalities, and, on the right, is a (3d) sketch of all \((x,Y,z)\)'s that obey those inequalities.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/xchange2.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/xchange5.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3546">So our solid \(V\) consists of a bunch of vertical rectangles stacked sideways along the \(y\)-axis. The rectangle in the plane \(y=Y\) has side lengths \(\frac{2-Y}{2}\) and \(2-Y\text{.}\) As we move from the plane \(y=Y=0\text{,}\) i.e. the \(xz\)-plane, to the plane \(y=Y=2\text{,}\) the rectangle decreases in size linearly from a one by two rectangle, when \(Y=0\text{,}\) to a zero by zero rectangle, i.e. a point, when \(Y=2\text{.}\) Here is a sketch of \(V\) together with a typical \(y=Y\) rectangle.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/xchange4.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3547">To re-express the given integral with the outside integral being with respect to \(z\text{,}\) we have to slice up \(V\) into horizontal plates by inserting planes of constant \(z\text{.}\) So we have to figure out what the part of \(V\) that lies in the horizontal plane \(z=Z\) looks like. From the figure above, we see that, in \(V\text{,}\) the smallest value of \(z\) is \(0\) and the biggest value of \(z\) is \(2\text{.}\) So \(Z\) is any constant between \(0\) and \(2\text{.}\) Again looking at the definition of \(V\) in \((*)\) above, we see that the point \((x,y,Z)\) lies in \(V\) if and only if</p>
+<div class="displaymath">
+\begin{gather*}
+y\ge 0\qquad y\le 2\qquad
+y\le 2-Z\qquad
+x\ge 0\qquad
+2x+y\le 2
+\end{gather*}
+</div>
+<p data-braille="continuation">Here, on the top, is a (2d) sketch showing the top view of all \((x,y)\)'s that obey those inequalities, and, on the bottom, is a (3d) sketch of all \((x,y,Z)\)'s that obey those inequalities.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/xchange3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/xchange6.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3548">To express \(I\) as an integral with the order of integration \(\int\dee{z}\int\dee{y}\int\dee{x}\ f(x,y,z)\text{,}\) we subdivide the plate at height \(z\) into vertical strips as in the figure</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/xchange3v.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3549">Since</p>
+<ul class="disc">
+<li id="li-1880">\(y\) is essentially constant on each strip with the leftmost strip having \(y=0\) and the rightmost strip having \(y=2-z\) and</li>
+<li id="li-1881">for each fixed \(y\) in that range, \(x\) runs from \(0\) to \(\tfrac{2-y}{2}\)</li>
+</ul>
+<p data-braille="continuation">we have</p>
+<div class="displaymath">
+\begin{equation*}
+I=\int_0^2\dee{z}\int_0^{2-z}\dee{y}\int_0^{\frac{2-y}{2}}\dee{x}\ f(x,y,z)
+\end{equation*}
+</div>
+<p data-braille="continuation">Alternatively, to express \(I\) as an integral with the order of integration \(\int\dee{z}\int\dee{x}\int\dee{y}\ f(x,y,z)\text{,}\) we subdivide the plate at height \(z\) into horizontal strips as in the figure</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/xchange3h.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3550">Since</p>
+<ul class="disc">
+<li id="li-1882">\(x\) is essentially constant on each strip with the first strip having \(x=0\) and the last strip having \(x=1\) and</li>
+<li id="li-1883">for each fixed \(x\) between \(0\) and \(z/2\text{,}\) \(y\) runs from \(0\) to \(2-z\) and</li>
+<li id="li-1884">for each fixed \(x\) between \(z/2\) and \(1\text{,}\) \(y\) runs from \(0\) to \(2-2x\)</li>
+</ul>
+<p data-braille="continuation">we have</p>
+<div class="displaymath">
+\begin{equation*}
+I=\int_0^2\dee{z}\int_0^{z/2}\dee{x}\int_0^{2-z}\dee{y}\ f(x,y,z)
++\int_0^2\dee{z}\int_{z/2}^{1}\dee{x}\int_0^{2-2x}\dee{y}\ f(x,y,z)
+\end{equation*}
+</div></article></div>
+<section class="exercises" id="exercises-22"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.5.1</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-62">
+<div class="introduction" id="introduction-80"><p id="p-3551"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-428"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-3552">Evaluate the integral</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_R \sqrt{b^2-y^2}\ \dee{x}\,\dee{y}
+\text{where $R$ is the rectangle  } 0\le x\le a,\ 0\le y\le b
+\end{equation*}
+</div>
+<p data-braille="continuation"><em class="emphasis">without</em> using iteration. Instead, interpret the integral geometrically.</p></article><article class="exercise exercise-like" id="exercise-429"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3555">Find the total mass of the rectangular box \([0, 1] \times [0, 2] \times [0, 3]\) (that is, the box defined by the inequalities \(0 \le x \le 1\text{,}\) \(0 \le y \le 2\text{,}\) \(0 \le z \le 3\)), with density function \(h(x, y, z) = x\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-63">
+<div class="introduction" id="introduction-81"><p id="p-3558"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-430"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-3559">Evaluate \(\ds\tripInt_R x\ \dee{V}\) where \(R\) is the tetrahedron bounded by the coordinate planes and the plane \(\frac{x}{a}+\frac{y}{b}+\frac{z}{c}=1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-431"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-3563">Evaluate \(\ds\tripInt_R y\ \dee{V}\) where \(R\) is the portion of the cube \(0\le x,y,z\le 1\) lying above the plane \(y+z=1\) and below the plane \(x+y+z=2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-432"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-3569">For each of the following, express the given iterated integral as an iterated integral in which the integrations are  performed in the order: first \(z\text{,}\) then \(y\text{,}\) then \(x\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1891">\(\displaystyle \ds\int_0^1\dee{z}\int_0^{1-z}\dee{y}\int_0^{1-z} \dee{x}\ f(x,y,z)\)</li>
+<li id="li-1892">\(\displaystyle \ds\int_0^1\dee{z}\int_{\sqrt z}^1\dee{y}\int_0^y \dee{x}\ f(x,y,z)\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-433"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3578">A triple integral \(\ds\tripInt_E f\ \dee{V}\) is given in iterated form by</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{y=-1}^{y=1} \int_{z=0}^{z=1-y^2} \int_{x=0}^{2-y-z} f(x,y,z)
+\ \dee{x}\,\dee{z}\,\dee{y}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1898">Draw a reasonably accurate picture of \(E\) in 3--dimensions. Be sure to show the units on the coordinate axes.</li>
+<li id="li-1899">Rewrite the triple integral \(\tripInt_E f\ \dee{V}\) as one or more iterated triple integrals in the order<div class="displaymath">
+\begin{equation*}
+\int_{y=}^{y=} \int_{x=}^{x=} \int_{z=}^{z=} f(x,y,z)
+\ \dee{z}\,\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-434"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3585">A triple integral \(\tripInt_E f(x,y,z)\ \dee{V}\) is given in the iterated form</p>
+<div class="displaymath">
+\begin{equation*}
+J = \int_0^1 \int_0^{1-\frac{x}{2}} \int_0^{4-2x-4z} f(x,y,z)
+\ \dee{y}\,\dee{z}\,\dee{x}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1910">Sketch the domain \(E\) in 3--dimensions. Be sure to show the units.</li>
+<li id="li-1911">Rewrite the integral as one or more iterated integrals in the form<div class="displaymath">
+\begin{equation*}
+J = \int_{y=}^{y=} \int_{x=}^{x=} \int_{z=}^{z=} f(x,y,z)
+\ \dee{z}\,\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-435"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3595">Write the integral given below \(5\) other ways, each with a different order of integration.</p>
+<div class="displaymath">
+\begin{equation*}
+I=\int_0^1 \int_{\sqrt{x}}^1 \int_0^{1-y}\!\! f(x,y,z)\,\dee{z}\,\dee{y}\,\dee{x}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-436"><h6 class="heading">
+<span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3605">Let \(\displaystyle I = \tripInt_E f(x,y,z)\ \dee{V}\) where \(E\) is the tetrahedron with vertices \((-1, 0, 0)\text{,}\) \((0, 0, 0)\text{,}\) \((0, 0, 3)\) and \((0, -2, 0)\text{.}\)</p>
+<ol id="p-3606" class="lower-alpha">
+<li id="li-1936">Rewrite the integral I in the form<div class="displaymath">
+\begin{equation*}
+I = \int_{x=}^{x=}\int_{y=}^{y=}\int_{z=}^{z=} f(x,y,z)\
+\dee{z}\,\dee{y}\,\dee{x}
+\end{equation*}
+</div>
+</li>
+<li id="li-1937">Rewrite the integral I in the form<div class="displaymath">
+\begin{equation*}
+I = \int_{z=}^{z=}\int_{x=}^{x=}\int_{y=}^{y=} f(x,y,z)\
+\dee{y}\,\dee{x}\,\dee{z}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-437"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3616">Let \(T\) denote the tetrahedron bounded by the coordinate planes \(x = 0\text{,}\) \(y = 0\text{,}\) \(z = 0\) and the plane \(x + y + z = 1\text{.}\) Compute</p>
+<div class="displaymath">
+\begin{equation*}
+K = \tripInt_T \frac{1}{ (1 + x + y + z)^4}\ \dee{V}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-438"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3620">Let \(E\) be the portion of the first octant which is above the plane \(z = x + y\) and below the plane \(z = 2\text{.}\) The density in \(E\) is \(\rho(x, y, z) = z\text{.}\) Find the mass of \(E\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-439"><h6 class="heading">
+<span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3624">Evaluate the triple integral \(\tripInt_E x\ \dee{V}\text{,}\) where \(E\) is the region in the first octant bounded by the parabolic cylinder \(y = x^2\) and the planes \(y + z = 1\text{,}\) \(x = 0\text{,}\) and \(z = 0\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-440"><h6 class="heading">
+<span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3629">Let \(E\) be the region in the first octant bounded by the coordinate planes, the plane \(x + y = 1\) and the surface \(z = y^2\) .  Evaluate \(\tripInt_E z\ \dee{V}\) .</p></article><article class="exercise exercise-like" id="exercise-441"><h6 class="heading">
+<span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3634">Evaluate  \(\tripInt_R yz^2 e^{-xyz}\ \dee{V}\) over the rectangular box</p>
+<div class="displaymath">
+\begin{equation*}
+R=\Set{(x,y,z)}{0\le x\le 1,\ 0\le y\le 2,\  0\le z\le 3}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-442"><h6 class="heading">
+<span class="codenumber">15<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-3637" class="lower-alpha">
+<li id="li-1953">Sketch the surface given by the equation \(z = 1 - x^2\text{.}\)</li>
+<li id="li-1954">Let \(E\) be the solid bounded by the plane \(y = 0\text{,}\) the cylinder \(z = 1 - x^2\text{,}\) and the plane \(y = z\text{.}\) Set up the integral<div class="displaymath">
+\begin{equation*}
+\tripInt_E f(x,y,z)\,\dee{V}
+\end{equation*}
+</div>as an iterated integral.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-443"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3643">Let</p>
+<div class="displaymath">
+\begin{equation*}
+J=\int_0^1 \int_0^x\int_0^y f(x,y,z)\ \dee{z}\,\dee{y}\,\dee{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">Express \(J\) as an integral where the integrations are to be performed in the order \(x\) first, then \(y\text{,}\) then \(z\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-444"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3646">Let \(E\) be the region bounded by \(z = 2x\text{,}\) \(z = y^2\text{,}\) and \(x = 3\text{.}\) The triple integral \(\tripInt f(x,y,z)\,\dee{V}\) can be expressed as an iterated integral in the following three orders of integration. Fill in the limits of integration in each case. No explanation required.</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\int_{y=}^{y=}\qquad\int_{x=}^{x=}\qquad\int_{z=}^{z=}\qquad
+f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y}\\
+&amp;\int_{y=}^{y=}\qquad\int_{z=}^{z=}\qquad\int_{x=}^{x=}\qquad
+f(x,y,z)\ \dee{x}\,\dee{z}\,\dee{y}\\
+&amp;\int_{z=}^{z=}\qquad\int_{x=}^{x=}\qquad\int_{y=}^{y=}\qquad
+f(x,y,z)\ \dee{y}\,\dee{x}\,\dee{z}
+\end{align*}
+</div></article><article class="exercise exercise-like" id="exercise-445"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3658">Let E be the region inside the cylinder \(x^2 + y^2 = 1\text{,}\) below the plane \(z = y\) and above the plane \(z = -1\text{.}\) Express the integral</p>
+<div class="displaymath">
+\begin{equation*}
+\tripInt_E f(x,y,z)\ \dee{V}
+\end{equation*}
+</div>
+<p data-braille="continuation">as three different iterated integrals corresponding to the orders of integration: (a) \(\dee{z}\, \dee{x}\, \dee{y}\text{,}\) (b) \(\dee{x}\, \dee{y}\, \dee{z}\text{,}\) and (c) \(\dee{y}\, \dee{z}\, \dee{x}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-446"><h6 class="heading">
+<span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3669">Let \(E\) be the region bounded by the planes \(y=0\text{,}\) \(y=2\text{,}\) \(y+z=3\) and the surface \(z=x^2\text{.}\) Consider the intergal</p>
+<div class="displaymath">
+\begin{gather*}
+I=\tripInt_E f(x,y,z)\ \dee{V}
+\end{gather*}
+</div>
+<p data-braille="continuation">Fill in the blanks below. In each part below, you may need only one integral to express your answer. In that case, leave the other blank.</p>
+<ol id="p-3670" class="lower-alpha">
+<li id="li-1968">\(\displaystyle \displaystyle I=\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\! f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y} +
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\! f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y} \)</li>
+<li id="li-1969">\(\displaystyle \displaystyle I=\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\! f(x,y,z)\ \dee{x}\,\dee{y}\,\dee{z} +
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\! f(x,y,z)\ \dee{x}\,\dee{y}\,\dee{z} \)</li>
+<li id="li-1970">\(\displaystyle \displaystyle I=\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\!  f(x,y,z)\ \dee{y}\,\dee{x}\,\dee{z} +
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\!  f(x,y,z)\ \dee{y}\,\dee{x}\,\dee{z} \)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-447"><h6 class="heading">
+<span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3681">Evaluate \(\tripInt_E z\,\dee{V}\text{,}\) where \(E\) is the region bounded by the planes \(y=0\text{,}\) \(z=0\) \(x+y=2\) and the cylinder \(y^2+z^2=1\) in the first octant.</p></article><article class="exercise exercise-like" id="exercise-448"><h6 class="heading">
+<span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3687">Find \(\ds\tripInt_D x\,\dee{V}\) where \(D\) is the tetrahedron bounded by the planes \(x=1\text{,}\) \(y=1\text{,}\) \(z=1\text{,}\) and \(x+y+z=2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-449"><h6 class="heading">
+<span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3693">The solid region \(T\) is bounded by the planes \(x=0\text{,}\) \(y=0\text{,}\) \(z=0\text{,}\) and \(x+y+z=2\) and the surface \(x^2+z=1\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1990">Draw the region indicating coordinates of all corners.</li>
+<li id="li-1991">Calculate \(\tripInt_T x\,\dee{V}\text{.}\)</li>
+</ol></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

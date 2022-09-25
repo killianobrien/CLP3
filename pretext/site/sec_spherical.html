@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:42:30+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Triple Integrals in Spherical Coordinates</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_cylindrical.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_Jacobian.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_cylindrical.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_Jacobian.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical" class="active">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_spherical"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.7</span> <span class="title">Triple Integrals in Spherical Coordinates</span>
+</h2>
+<section class="subsection" id="sec_spherical_coords"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.7.1</span> <span class="title">Spherical Coordinates</span>
+</h3>
+<p id="p-3833">In the event that we wish to compute, for example, the mass of an object that is invariant under rotations about the origin, it is advantageous to use another generalization of polar coordinates to three dimensions. The coordinate system is called <em class="emphasis">spherical coordinates</em>.</p>
+<article class="definition definition-like" id="def_spherical"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.7.1</span><span class="period">.</span>
+</h6>
+<p id="p-3834">Spherical coordinates are denoted<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-145" id="fn-145"><sup> 1 </sup></a> \(\rho\text{,}\) \(\theta\) and \(\varphi\) and are defined by</p>
+<div class="displaymath">
+\begin{align*}
+\rho&amp;=\text{ the distance from }(0,0,0)\text{ to }(x,y,z)\\
+\varphi&amp;=\text{ the angle between the $z$ axis and the line joining $(x,y,z)$ to $(0,0,0)$}\\
+\theta&amp;=\text{ the angle between the $x$ axis and the line joining $(x,y,0)$ to $(0,0,0)$}
+\end{align*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-145"><div class="fn">We are using the standard mathematics conventions for the spherical coordinates. Under the ISO conventions they are \((r,\phi,\theta)\text{.}\) See Appendix  <a href="ap_ISO.html" class="internal" title="Section A.7: ISO Coordinate System Notation">A.7</a>.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/spherical.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-3835">Here are two more figures giving the side and top views of the previous figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:42.1052631578947%;justify-content:center;"><img src="figs/sphericalSide.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:52.6315789473684%;justify-content:center;"><img src="figs/sphericalTop.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3836">The spherical coordinate \(\theta\) is the same as the cylindrical coordinate \(\theta\text{.}\) The spherical coordinate \(\varphi\) is new. It runs from \(0\) (on the positive \(z\)-axis) to \(\pi\) (on the negative \(z\)-axis). The Cartesian and spherical coordinates are related by</p>
+<article class="fact theorem-like" id="eqn_spherical"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.7.2</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-3837">
+\begin{align*}
+x&amp;=\rho\sin\varphi\cos\theta &amp;
+y&amp;=\rho\sin\varphi\sin\theta &amp;
+z&amp;=\rho\cos\varphi\\
+\rho&amp;=\sqrt{x^2+y^2+z^2} &amp;
+\theta&amp;=\arctan\frac{y}{x} &amp;
+\varphi&amp;=\arctan\frac{\sqrt{x^2+y^2}}{z}
+\end{align*}
+</div></article><p id="p-3838">Here are three figures showing</p>
+<ul class="disc">
+<li id="li-2090">a surface of constant \(\rho\text{,}\) i.e. a surface \(x^2+y^2+z^2=\rho^2\) with \(\rho\) a constant (which looks like an onion skin),</li>
+<li id="li-2091">a surface of constant \(\theta\text{,}\) i.e. a surface \(y= x\,\tan\theta\) with<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-146" id="fn-146"><sup> 2 </sup></a> \(\theta\) a constant (which looks like the page of a book), and</li>
+<li id="li-2092">a surface of constant \(\varphi\text{,}\) i.e. a surface \(z=\sqrt{x^2+y^2}\ \tan\varphi\) with \(\varphi\) a constant (which looks a conical funnel).</li>
+</ul>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-146"><div class="fn">and with the sign of \(x\) being the same as the sign of \(\cos\theta\)</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/spher2.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/spher3.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/spher4.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div></section><section class="subsection" id="sec_spherical_vol"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.7.2</span> <span class="title">The Volume Element in Spherical Coordinates</span>
+</h3>
+<p id="p-3839">If we cut up a solid<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-147" id="fn-147"><sup> 3 </sup></a> by</p>
+<ul class="disc">
+<li id="li-2093">
+<p id="p-3840">first slicing it into segments (like segments of an orange) by using planes of constant \(\theta\text{,}\) say with the difference between successive \(\theta\)'s being \(\dee{\theta}\text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sphereSph1.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-2094">
+<p id="p-3841">and then subdividing the segments into “searchlights” (like the searchlight outlined in blue in the figure below) using surfaces of constant \(\varphi\text{,}\) say with the difference between successive \(\varphi\)'s being \(\dee{\varphi}\text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sphereSph2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-2095">
+<p id="p-3842">and then subdividing the searchlights into approximate cubes using surfaces of  constant \(\rho\text{,}\) say with the difference between successive \(\rho\)'s being \(\dee{\rho}\text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sphereSph3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ul>
+<p data-braille="continuation">we end up with approximate cubes that look like</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-147"><div class="fn">You know the drill.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/spher5b.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3843">The dimensions of the approximate “cube” in spherical coordinates are (essentially) \(\dee{\rho}\) by \(\rho\dee{\varphi}\) by \(\rho\sin\varphi\,\dee{\theta}\text{.}\) (These dimensions are derived in more detail in the next section.) So the approximate cube has volume (essentially)</p>
+<article class="fact theorem-like" id="eq_dV_spherical"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.7.3</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-3844">
+\begin{equation*}
+\dee{V} = \rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}
+\end{equation*}
+</div></article></section><section class="subsection" id="sec_spherical_vol_details"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.7.3</span> <span class="title">The Details</span>
+</h3>
+<p id="p-3845">Here is an explanation of the edge lengths given in the above figure. Each of the 12 edges of the cube is formed by holding two of the three coordinates \(\rho\text{,}\) \(\theta\text{,}\) \(\varphi\) fixed and varying the third.</p>
+<ul class="disc">
+<li id="li-2096">
+<p id="p-3846">Four of the cube edges are formed by holding \(\theta\) and \(\varphi\) fixed and varying \(\rho\text{.}\) The intersection of a plane of fixed \(\theta\) with a cone of fixed \(\varphi\) is a straight line emanating from the origin. When we introduced slices using spheres of constant \(\rho\text{,}\) the difference between the successive \(\rho\)'s was \(\dee{\rho}\text{,}\) so those edges of the cube each have length \(\dee{\rho}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/sphereTh.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/spherePhi.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/sphereThPhiA.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-2097">
+<p id="p-3847">Four of the cube edges are formed by holding \(\theta\) and \(\rho\) fixed and varying \(\varphi\text{.}\) The intersection of a plane of fixed \(\theta\) (which contains the origin) with a sphere of fixed \(\rho\) (which is centred on the origin) is a circle of radius \(\rho\) centred on the origin. It is a line of longitude<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-148" id="fn-148"><sup> 4 </sup></a>.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/sphereRho.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/sphereTh.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/sphereRhoThB.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3848">When we introduced searchlights using surfaces of constant \(\varphi\text{,}\) the difference between the successive \(\varphi\)'s was \(\dee{\varphi}\text{.}\) Thus those four edges of the cube are circular arcs of radius essentially \(\rho\) that subtend an angle \(\dee{\varphi}\text{,}\) and so have length \(\rho\,\dee{\varphi}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/spher9.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-2098">
+<p id="p-3849">Four of the cube edges are formed by holding \(\varphi\) and \(\rho\) fixed and varying \(\theta\text{.}\) The intersection of a cone of fixed \(\varphi\) with a sphere of fixed \(\rho\) is a circle. As both \(\rho\) and \(\varphi\) are fixed, the circle of intersection lies in the plane \(z=\rho\cos\varphi\text{.}\) It is a line of latitude. The circle has radius \(\rho\sin\varphi\) and is centred on \(\big(0,0, \rho\cos\varphi\big)\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/sphereRho.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/spherePhi.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="figs/sphereRhoPhi.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3850">When we introduced segments using surfaces of constant \(\theta\text{,}\) the difference between the successive \(\theta\)'s was \(\dee{\theta}\text{.}\) Thus these four edge of the cube are circular arcs of radius essentially \(\rho\sin\varphi\) that subtend an angle \(\dee{\theta}\text{,}\) and so have length \(\rho\sin\varphi\,\dee{\theta}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/spher10.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ul>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-148"><div class="fn">The problem of finding a practical, reliable method for determining the longitude of a ship at sea was a very big deal for a period of several centuries. Among the scientists who worked in this were Galileo, Edmund Halley (of Halley's comet) and Robert Hooke (of Hooke's law).</div></div></section><section class="subsection" id="sec_spherical_eg"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.7.4</span> <span class="title">Sample Integrals in Spherical Coordinates</span>
+</h3>
+<article class="example example-like" id="eg_ice_cream_cone"><a data-knowl="" class="id-ref original" data-refid="hk-eg_ice_cream_cone"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.4</span><span class="period">.</span><span class="space"> </span><span class="title">Ice Cream Cone.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_ice_cream_cone"><article class="example example-like"><p id="p-3851">Find the volume of the ice cream<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-149" id="fn-149"><sup> 5 </sup></a> cone that consists of the part of the interior of the sphere \(x^2+y^2+z^2=a^2\) that is above the \(xy\)-plane and that is inside the cone \(x^2+y^2=b^2 z^2\text{.}\) Here \(a\) and \(b\) are any two strictly positive constants.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-149"><div class="fn">A very mathematical ice cream. Rocky-rho'd? Choculus?</div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-541" id="solution-541"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-541"><div class="solution solution-like">
+<p id="p-3852">Note that, in spherical coordinates</p>
+<div class="displaymath">
+\begin{equation*}
+x^2+y^2=\rho^2\sin^2\varphi\qquad
+z^2=\rho^2\cos^2\varphi\qquad
+x^2+y^2+z^2=\rho^2
+\end{equation*}
+</div>
+<p data-braille="continuation">Consequently, in spherical coordinates, the equation of the sphere is \(\rho=a\text{,}\) and the equation of the cone is \(\tan^2\varphi = b^2\text{.}\) Let's write \(\be=\arctan b\text{,}\) with \(0 \lt \be \lt \frac{\pi}{2}\text{.}\) Here is a sketch of the part of the ice cream cone in the first octant. The volume of the full ice cream cone will be four times the volume of the part in the first octant.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/iceCream.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3853">We shall cut the first octant part of the ice cream cone into tiny pieces using spherical coordinates. That is, we shall cut it up using planes of constant \(\theta\text{,}\) cones of constant \(\varphi\text{,}\) and spheres of constant \(\rho\text{.}\)</p>
+<ul class="disc">
+<li id="li-2099">
+<p id="p-3854">First slice the (the first octant part of the) ice cream cone into segments by inserting many planes of constant \(\theta\text{,}\) with the various values of \(\theta\) differing by \(\dee{\theta}\text{.}\) The figure on the left below shows one segment outlined in red. Each segment</p>
+<ul class="circle">
+<li id="li-2100">has \(\theta\) essentially constant on the segment, and</li>
+<li id="li-2101">has \(\varphi\) running from \(0\) to \(\beta\) and \(\rho\) running from \(0\) to \(a\text{.}\)</li>
+<li id="li-2102">The leftmost segment has, essentially, \(\theta=0\) and the rightmost segment has, essentially, \(\theta=\frac{\pi}{2}\text{.}\) See the figure on the right below.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/iceCream1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/iceCream1a.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-2103">
+<p id="p-3855">Concentrate on any one segment. A side view of the segment is sketched in the figure on the left below. Subdivide it into long thin searchlights by inserting many cones of constant \(\varphi\text{,}\) with the various values of \(\varphi\) differing by \(\dee{\varphi}\text{.}\) The figure on the left below shows one searchlight outlined in blue. Each searchlight</p>
+<ul class="circle">
+<li id="li-2104">has \(\theta\)  and \(\varphi\) essentially constant on the searchlight, and</li>
+<li id="li-2105">has \(\rho\) running over \(0\le \rho\le a\text{.}\)</li>
+<li id="li-2106">The leftmost searchlight has, essentially, \(\varphi=0\) and the rightmost searchlight has, essentially, \(\varphi=\beta\text{.}\)  See the figure on the right below.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/iceCream2.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/iceCream2b.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-2107">
+<p id="p-3856">Concentrate on any one searchlight. Subdivide it into tiny approximate cubes by inserting many spheres of constant \(\rho\text{,}\) with the various values of \(\rho\) differing by \(\dee{\rho}\text{.}\) The figure on the left below shows the side view of one approximate cube in black. Each cube</p>
+<ul class="circle">
+<li id="li-2108">has \(\rho\text{,}\) \(\theta\) and \(\varphi\) all essentially constant on the cube and</li>
+<li id="li-2109">has volume \(\rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\text{,}\) by <a class="xref" data-knowl="./knowl/eq_dV_spherical.html" title="Equation 3.7.3">3.7.3</a>.</li>
+<li id="li-2110">The first cube has, essentially, \(\rho=0\) and the last cube has, essentially, \(\rho=a\text{.}\)  See the figure on the right below.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/iceCream3.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/iceCream3b.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+</ul>
+<p id="p-3857">Now we can build up the volume.</p>
+<ul class="disc">
+<li id="li-2111">Concentrate on one approximate cube. Let's say that it contains the point with spherical coordinates \(\rho\text{,}\) \(\theta\text{,}\) \(\varphi\text{.}\) The cube has volume essentially \(\dee{V}
+= \rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\text{,}\) by <a class="xref" data-knowl="./knowl/eq_dV_spherical.html" title="Equation 3.7.3">3.7.3</a>.</li>
+<li id="li-2112">To get the volume any one searchlight, say the searchlight whose \(\varphi\) coordinate runs from \(\varphi\) to \(\varphi+\dee{\varphi}\text{,}\) we just add up the volumes of the approximate cubes in that searchlight, by integrating \(\rho\) from its smallest value on the searchlight, namely \(0\text{,}\) to its largest value on the searchlight, namely \(a\text{.}\) The volume of the searchlight is thus<div class="displaymath">
+\begin{gather*}
+\dee{\theta}\,\dee{\varphi}\int_0^a\dee{\rho}\  \rho^2\sin\varphi
+\end{gather*}
+</div>
+</li>
+<li id="li-2113">To get the volume of any one segment, say the segment whose \(\theta\) coordinate runs from \(\theta\) to \(\theta+\dee{\theta}\text{,}\) we just add up the volumes of the searchlights in that segment, by integrating \(\varphi\) from its smallest value on the segment, namely \(0\text{,}\) to its largest value on the segment, namely \(\beta\text{.}\) The volume of the segment is thus<div class="displaymath">
+\begin{gather*}
+\dee{\theta}\,\int_0^\beta \dee{\varphi}\ \sin\varphi
+\int_0^a\dee{\rho}\  \rho^2
+\end{gather*}
+</div>
+</li>
+<li id="li-2114">To get the volume of \(\cV_1\text{,}\) the part of the ice cream cone in the first octant, we just add up the volumes of the segments that it contains, by integrating \(\theta\) from its smallest value in the octant, namely \(0\text{,}\) to its largest value on the octant, namely  \(\frac{\pi}{2}\text{.}\)</li>
+<li id="li-2115">The volume in the first octant is thus<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\int_0^{\pi/2}\dee{\theta}\,\int_0^\beta \dee{\varphi}\ \sin\varphi
+\int_0^a\dee{\rho}\  \rho^2\\
+&amp;=\frac{a^3}{3}\int_0^{\pi/2}\dee{\theta}\,
+\int_0^\beta \dee{\varphi}\ \sin\varphi\\
+&amp;=\frac{a^3}{3}\big[1-\cos\be\big]\int_0^{\pi/2}\dee{\theta}\\
+&amp;=\frac{\pi a^3}{6}\big[1-\cos\be\big]
+\end{align*}
+</div>
+</li>
+<li id="li-2116">So the volume of \(\cV\text{,}\) the total (four octant) ice cream cone, is<div class="displaymath">
+\begin{equation*}
+\text{Volume}(\cV)=4\,\text{Volume}(\cV_1)
+=\frac{4\pi a^3}{6}\big[1-\cos\be\big]
+\end{equation*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">We can express \(\be\) (which was not given in the statement of the original problem) in terms of \(b\) (which was in the statement of the original problem), just by looking at the triangle</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:40%;margin-right:40%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/triangleIceCream.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3858">The right hand and bottom sides of the triangle have been chosen so that \(\tan\be=b\text{,}\) which was the definition of \(\beta\text{.}\) So \(\cos\beta=\frac{1}{\sqrt{1+b^2}}\) and the volume of the ice cream cone is</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Volume}(\cV)
+=\frac{2\pi a^3}{3}\left[1-\frac{1}{\sqrt{1+b^2}}\right]
+\end{equation*}
+</div>
+<p data-braille="continuation">Note that, as in Example <a class="xref" data-knowl="./knowl/eg_polar_volume.html" title="Example 3.2.11: Volumes Using Polar Coordinates">3.2.11</a>, we can easily apply a couple of sanity checks to our answer.</p>
+<ul class="disc">
+<li id="li-2117">If \(b=0\text{,}\) so that the cone is just \(x^2+y^2=0\text{,}\) which is the line \(x=y=0\text{,}\) the total volume should be zero. Our answer does indeed give \(0\) in this case.</li>
+<li id="li-2118">In the limit \(b\rightarrow\infty\text{,}\) the angle \(\beta\rightarrow\frac{\pi}{2}\) and the ice cream cone opens up into a hemisphere of radius \(a\text{.}\) Our answer does indeed give the volume of the hemisphere, which is \(\frac{1}{2}\times\frac{4}{3}\pi a^3\text{.}\)</li>
+</ul>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_cored_apple"><a data-knowl="" class="id-ref original" data-refid="hk-eg_cored_apple"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.5</span><span class="period">.</span><span class="space"> </span><span class="title">Cored Apple.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_cored_apple"><article class="example example-like"><p id="p-3859">A cylindrical hole of radius \(b\) is drilled symmetrically through a perfectly spherical apple of radius \(a\ge b\text{.}\) Find the volume of apple that remains.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-542" id="solution-542"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-542"><div class="solution solution-like">
+<p id="p-3860">In Example <a class="xref" data-knowl="./knowl/eg_polar_volume.html" title="Example 3.2.11: Volumes Using Polar Coordinates">3.2.11</a> we computed the volume removed, basically using cylindrical coordinates. So we could get the answer to this question just by subtracting the answer of Example <a class="xref" data-knowl="./knowl/eg_polar_volume.html" title="Example 3.2.11: Volumes Using Polar Coordinates">3.2.11</a> from \(\frac{4}{3}\pi a^3\text{.}\) Instead, we will evaluate the volume remaining as an exercise in setting up limits of integration when using spherical coordinates.</p>
+<p id="p-3861">As in Example <a class="xref" data-knowl="./knowl/eg_polar_volume.html" title="Example 3.2.11: Volumes Using Polar Coordinates">3.2.11</a>, let's use a coordinate system with the sphere centred on \((0,0,0)\) and with the centre of the drill hole following the \(z\)-axis. Here is a sketch of the apple that remains in the first octant. It is outlined in red. By symmetry the total amount of apple remaining will be eight times the amount from the first octant.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/appleCoreB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<ul id="p-3862" class="disc">
+<li id="li-2119">First slice the first octant part of the remaining apple into segments by inserting many planes of constant \(\theta\text{,}\) with the various values of \(\theta\) differing by \(\dee{\theta}\text{.}\) The leftmost segment has, essentially, \(\theta=0\) and the rightmost segment has, essentially, \(\theta=\frac{\pi}{2}\text{.}\)</li>
+<li id="li-2120">
+<p id="p-3863">Each segment, viewed from the side, looks like</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/appleCoreB2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3864">Subdivide it into long thin searchlights by inserting many cones of constant \(\varphi\text{,}\) with the various values of \(\varphi\) differing by \(\dee{\varphi}\text{.}\) The figure on below shows one searchlight outlined in blue. Each searchlight</p>
+<ul class="circle">
+<li id="li-2121">has \(\theta\)  and \(\varphi\) essentially constant on the searchlight.</li>
+<li id="li-2122">The top searchlight has, essentially, \(\varphi=\arcsin\frac{b}{a}\) and the bottom searchlight has, essentially, \(\varphi=\frac{\pi}{2}\text{.}\)</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/appleCoreB3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-2123">
+<p id="p-3865">Concentrate on any one searchlight. Subdivide it into tiny approximate cubes by inserting many spheres of constant \(\rho\text{,}\) with the various values of \(\rho\) differing by \(\dee{\rho}\text{.}\) The figure on the left below shows the side view of one approximate cube in black. Each cube</p>
+<ul class="circle">
+<li id="li-2124">has \(\rho\text{,}\) \(\theta\) and \(\varphi\) all essentially constant on the cube and</li>
+<li id="li-2125">has volume \(\dee{V}=\rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\text{,}\) by <a class="xref" data-knowl="./knowl/eq_dV_spherical.html" title="Equation 3.7.3">3.7.3</a>.</li>
+<li id="li-2126">The figure on the right below gives an expanded view of the searchlight. From it, we see (after a little trig) that the first cube has, essentially, \(\rho=\frac{b}{\sin\varphi}\) and the last cube has, essentially, \(\rho=a\) (the radius of the apple).</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
+<div class="sbspanel" style="width:38.3838383838384%;justify-content:center;"><img src="figs/appleCoreB3b.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:60.6060606060606%;justify-content:center;"><img src="figs/appleCoreB3c.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+</ul>
+<p id="p-3866">Now we can build up the volume.</p>
+<ul class="disc">
+<li id="li-2127">Concentrate on one approximate cube. Let's say that it contains the point with spherical coordinates \(\rho\text{,}\) \(\theta\text{,}\) \(\varphi\text{.}\) The cube has volume essentially \(\dee{V}
+= \rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\text{,}\) by <a class="xref" data-knowl="./knowl/eq_dV_spherical.html" title="Equation 3.7.3">3.7.3</a>.</li>
+<li id="li-2128">To get the volume any one searchlight, say the searchlight whose \(\varphi\) coordinate runs from \(\varphi\) to \(\varphi+\dee{\varphi}\text{,}\) we just add up the volumes of the approximate cubes in that searchlight, by integrating \(\rho\) from its smallest value on the searchlight, namely \(\frac{b}{\sin\varphi}\text{,}\) to its largest value on the searchlight, namely \(a\text{.}\) The volume of the searchlight is thus<div class="displaymath">
+\begin{gather*}
+\dee{\theta}\,\dee{\varphi}\int_{\frac{b}{\sin\varphi}}^a
+\dee{\rho}\  \rho^2\sin\varphi
+\end{gather*}
+</div>
+</li>
+<li id="li-2129">To get the volume of any one segment, say the segment whose \(\theta\) coordinate runs from \(\theta\) to \(\theta+\dee{\theta}\text{,}\) we just add up the volumes of the searchlights in that segment, by integrating \(\varphi\) from its smallest value on the segment, namely \(\arcsin\frac{b}{a}\text{,}\) to its largest value on the segment, namely \(\frac{\pi}{2}\text{.}\) The volume of the searchlight is thus<div class="displaymath">
+\begin{gather*}
+\dee{\theta}\,\int_{\arcsin\frac{b}{a}}^{\frac{\pi}{2}}
+\int_{\frac{b}{\sin\varphi}}^a
+\dee{\rho}\  \rho^2\sin\varphi
+\end{gather*}
+</div>
+</li>
+<li id="li-2130">To get the volume of the remaining part of the apple in the first octant, we just add up the volumes of the segments that it contains, by integrating \(\theta\) from its smallest value in the octant, namely \(0\text{,}\) to its largest value on the octant, namely  \(\frac{\pi}{2}\text{.}\) The volume in the first octant is thus<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\int_0^{\pi/2}\dee{\theta}
+\int_{\arcsin\frac{b}{a}}^{\frac{\pi}{2}} \dee{\varphi}
+\int_{\frac{b}{\sin\varphi}}^{a}
+\dee{\rho}\  \rho^2\sin\varphi
+\end{align*}
+</div>
+</li>
+<li id="li-2131">
+<p id="p-3867">Now we just have to integrate</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\frac{1}{3}\int_0^{\pi/2}\dee{\theta}\,
+\int_{\arcsin\frac{b}{a}}^{\frac{\pi}{2}}  \dee{\varphi}\
+\sin\varphi \left[a^3-\frac{b^3}{\sin^3\varphi}\right]\\
+&amp;=\frac{1}{3}\int_0^{\pi/2}\dee{\theta}\,
+\int_{\arcsin\frac{b}{a}}^{\frac{\pi}{2}}  \dee{\varphi}\
+\left[a^3 \sin\varphi- b^3\csc^2\varphi\right]\\
+&amp;=\frac{1}{3}\int_0^{\pi/2}\dee{\theta}\
+\left[-a^3 \cos\varphi + b^3\cot\varphi\right]
+_{\arcsin\frac{b}{a}}^{\frac{\pi}{2}}\\
+&amp;\hskip1in\text{since } \int \csc^2\varphi\ \dee{\varphi} =-\cot\varphi+C\\
+&amp;=\frac{\pi}{6}
+\left[-a^3 \cos\varphi + b^3\cot\varphi\right]
+_{\arcsin\frac{b}{a}}^{\frac{\pi}{2}}
+\end{align*}
+</div>
+<p data-braille="continuation">Now \(\cos\frac{\pi}{2} = \cot\frac{\pi}{2}=0\) and, if we write \(\al=\arcsin\frac{b}{a}\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\frac{\pi}{6}
+\left[a^3 \cos\al - b^3\cot\al\right]
+\end{align*}
+</div>
+<p data-braille="continuation">From the triangle below, we have \(\cos\al =\frac{\sqrt{a^2-b^2}}{a} \) and \(\cot\al=\frac{\sqrt{a^2-b^2}}{b}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:40%;margin-right:40%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/triangleApple.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3868">So</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\frac{\pi}{6}
+\left[a^2 \sqrt{a^2-b^2} - b^2\sqrt{a^2-b^2}\right]
+=\frac{\pi}{6}\big[a^2-b^2\big]^{3/2}
+\end{align*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">The full (eight octant) volume of the remaining apple is thus</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Volume}(\cV)
+=8 \text{Volume}(\cV_1)
+=\frac{4}{3}\pi\big[a^2-b^2\big]^{3/2}
+\end{equation*}
+</div>
+<p data-braille="continuation">We can, yet again, apply the sanity checks of Example <a class="xref" data-knowl="./knowl/eg_polar_volume.html" title="Example 3.2.11: Volumes Using Polar Coordinates">3.2.11</a> to our answer.</p>
+<ul class="disc">
+<li id="li-2132">If the radius of the drill bit \(b=0\text{,}\) no apple is removed at all. So the total volume remaining should be \(\frac{4}{3}\pi a^3\text{.}\) Our answer does indeed give this.</li>
+<li id="li-2133">If the radius of the drill bit \(b=a\text{,}\) the radius of the apple, then the entire apple disappears. So the remaining apple should have volume \(0\text{.}\) Again, our answer gives this.</li>
+</ul>
+<p data-braille="continuation">As a final check note that the sum of the answer to Example <a class="xref" data-knowl="./knowl/eg_polar_volume.html" title="Example 3.2.11: Volumes Using Polar Coordinates">3.2.11</a> and the answer to this Example is \(\frac{4}{3}\pi a^3\text{,}\) as it should be.</p>
+</div></div>
+</div></article></div></section><section class="exercises" id="exercises-24"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.7.5</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-67">
+<div class="introduction" id="introduction-86"><p id="p-3869"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-467"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-3870">Use \((\rho,\theta,\varphi)\) to denote spherical coordinates.</p>
+<ol class="lower-alpha">
+<li id="li-2134">Draw \(\varphi=0\text{.}\)</li>
+<li id="li-2135">Draw \(\varphi=\frac{\pi}{4}\text{.}\)</li>
+<li id="li-2136">Draw \(\varphi=\frac{\pi}{2}\text{.}\)</li>
+<li id="li-2137">Draw \(\varphi=\frac{3\pi}{4}\text{.}\)</li>
+<li id="li-2138">Draw \(\varphi=\pi\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-468"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-3872">Sketch the point with the specified spherical coordinates.</p>
+<ol class="lower-alpha">
+<li id="li-2139">\(\rho=0\text{,}\) \(\theta=0.1\pi\text{,}\) \(\varphi=0.7\pi\)</li>
+<li id="li-2140">\(\rho=1\text{,}\) \(\theta=0.3\pi\text{,}\) \(\varphi=0\)</li>
+<li id="li-2141">\(\rho=1\text{,}\) \(\theta=0\text{,}\) \(\varphi=\frac{\pi}{2}\)</li>
+<li id="li-2142">\(\rho=1\text{,}\) \(\theta=\frac{\pi}{3}\text{,}\) \(\varphi=\frac{\pi}{2}\)</li>
+<li id="li-2143">\(\rho=1\text{,}\) \(\theta=\frac{\pi}{2}\text{,}\) \(\varphi=\frac{\pi}{2}\)</li>
+<li id="li-2144">\(\rho=1\text{,}\) \(\theta=\frac{\pi}{3}\text{,}\) \(\varphi=\frac{\pi}{6}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-469"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-3874">Convert from Cartesian to spherical coordinates.</p>
+<ol class="lower-alpha">
+<li id="li-2147">\(\displaystyle (-2,0,0)\)</li>
+<li id="li-2148">\(\displaystyle (0,3,0)\)</li>
+<li id="li-2149">\(\displaystyle (0,0,-4)\)</li>
+<li id="li-2150">\(\displaystyle \left(-\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},\sqrt{3}\right)\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-470"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-3883">Convert from spherical to Cartesian coordinates.</p>
+<ol class="lower-alpha">
+<li id="li-2162">\(\rho=1\text{,}\) \(\theta=\frac{\pi}{3}\text{,}\) \(\varphi=\frac{\pi}{6}\)</li>
+<li id="li-2163">\(\rho=2\text{,}\) \(\theta=\frac{\pi}{2}\text{,}\) \(\varphi=\frac{\pi}{2}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-471"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-3888">Rewrite the following equations in spherical coordinates.</p>
+<ol class="lower-alpha">
+<li id="li-2166">\(\displaystyle z^2=3x^2+3y^2\)</li>
+<li id="li-2167">\(\displaystyle x^2+y^2+(z-1)^2=1\)</li>
+<li id="li-2168">\(\displaystyle x^2+y^2=4\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-472"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3895">Using spherical coordinates and integration, show that the volume of the sphere of radius \(1\) centred at the origin is \(4\pi/3\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-68">
+<div class="introduction" id="introduction-87"><p id="p-3898"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-473"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3899">Consider the region \(E\) in \(3\)-dimensions specified by the spherical inequalities</p>
+<div class="displaymath">
+\begin{equation*}
+1 \le \rho \le 1 + \cos \varphi
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-2169">Draw a reasonably accurate picture of \(E\) in 3-dimensions. Be sure to show the units on the coordinates axes.</li>
+<li id="li-2170">Find the volume of E.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-474"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3906">Use spherical coordinates to evaluate the integral</p>
+<div class="displaymath">
+\begin{equation*}
+I=\tripInt_D z\ \dee{V}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(D\) is the solid enclosed by the cone \(z = \sqrt{x^2 + y^2}\) and the sphere \(x^2 + y^2 + z^2 = 4\text{.}\) That is, \((x,y,z)\) is in \(D\) if and only if \(\sqrt{x^2 + y^2}\le z\) and \(x^2 + y^2 + z^2 \le 4\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-475"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-3910">Use spherical coordinates to find</p>
+<ol class="lower-alpha">
+<li id="li-2189">The volume inside the cone \(z=\sqrt{x^2+y^2}\) and inside the sphere \(x^2+y^2+z^2=a^2\text{.}\)</li>
+<li id="li-2190">\(\tripInt_R x\, \dee{V}\) and \(\tripInt_R z\, \dee{V}\) over the part of the sphere of radius \(a\) that lies in the first octant.</li>
+<li id="li-2191">The mass of a spherical planet of radius \(a\) whose density at distance \(\rho\) from the center is \(\de=A/(B+\rho^2)\text{.}\)</li>
+<li id="li-2192">The volume enclosed by \(\ \rho=a(1-\cos\varphi).\) Here \(\rho\) and \(\varphi\) refer to the usual spherical coordinates.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-476"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3921">Consider the hemispherical shell bounded by the spherical surfaces</p>
+<div class="displaymath">
+\begin{equation*}
+x^2 + y^2 + z^2 = 9\qquad\text{and}\qquad
+x^2 + y^2 + z^2 = 4
+\end{equation*}
+</div>
+<p data-braille="continuation">and above the plane \(z = 0\text{.}\) Let the shell have constant density \(D\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-2200">Find the mass of the shell.</li>
+<li id="li-2201">Find the location of the center of mass of the shell.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-477"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3929">Let</p>
+<div class="displaymath">
+\begin{equation*}
+I = \tripInt_T xz\ \dee{V}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(T\) is the eighth of the sphere \(x^2 + y^2 + z^2 \le 1\) with \(x,y,z \ge 0\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-2205">Sketch the volume \(T\text{.}\)</li>
+<li id="li-2206">Express \(I\) as a triple integral in spherical coordinates.</li>
+<li id="li-2207">Evaluate \(I\) by any method.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-478"><h6 class="heading">
+<span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3936">Evaluate \(W = \tripInt_Q xz\ \dee{V}\text{,}\) where \(Q\) is an eighth of the sphere \(x^2 + y^2 + z^2 \le 9\) with \(x\text{,}\) \(y\text{,}\) \(z \ge 0\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-479"><h6 class="heading">
+<span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3939">Evaluate \(\tripInt_{\bbbr^3}  {\big[1+{(x^2+y^2+z^2)}^3\big]}^{-1}\ \dee{V}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-480"><h6 class="heading">
+<span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3942">Evaluate</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-1}^1 \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}
+\int_{1-\sqrt{1-x^2-y^2}}^{1+\sqrt{1-x^2-y^2}}
+(x^2+y^2+z^2)^{5/2}  \ \dee{z}\,\dee{y}\,\dee{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">by changing to spherical coordinates.</p></article><article class="exercise exercise-like" id="exercise-481"><h6 class="heading"><span class="codenumber">15<span class="period">.</span></span></h6>
+<p id="p-3946">Evaluate the volume of a circular cylinder of radius \(a\) and height \(h\) by means of an integral in spherical coordinates.</p></article><article class="exercise exercise-like" id="exercise-482"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3950">Let \(B\) denote the region inside the sphere \(x^2+y^2+z^2=4\) and above the cone \(x^2+y^2=z^2\text{.}\) Compute the moment of inertia</p>
+<div class="displaymath">
+\begin{equation*}
+\tripInt_B z^2\,\dee{V}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-483"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-3953" class="lower-alpha">
+<li id="li-2218">Evaluate \(\ds\tripInt_\Om z\,\dee{V}\) where \(\Om\) is the three dimensional region in the first octant \(x\ge 0\text{,}\) \(y\ge 0\text{,}\) \(z\ge 0\text{,}\) occupying the inside of the sphere \(x^2+y^2+z^2=1\text{.}\)</li>
+<li id="li-2219">Use the result in part (a) to quickly determine the centroid of a hemispherical ball given by \(z\ge 0\text{,}\) \(x^2+y^2+z^2\le 1\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-484"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3958">Consider the top half of a ball of radius 2 centred at the origin. Suppose that the ball has variable density equal to \(9z\) units of mass per unit volume.</p>
+<ol class="lower-alpha">
+<li id="li-2224">Set up a triple integral giving the mass of this half-ball.</li>
+<li id="li-2225">Find out what fraction of that mass lies inside the cone<div class="displaymath">
+\begin{equation*}
+z=\sqrt{x^2+y^2}
+\end{equation*}
+</div>
+</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-69">
+<div class="introduction" id="introduction-88"><p id="p-3963"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-485"><h6 class="heading">
+<span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3964">Find the limit or show that it does not exist</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{(x,y,z)\to(0,0,0)}\frac{xy+yz^2+xz^2}{x^2+y^2+z^4}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-486"><h6 class="heading">
+<span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3968">A certain solid \(V\) is a right-circular cylinder. Its base is the disk of radius \(2\) centred at the origin in the \(xy\)-plane. It has height \(2\) and density \(\sqrt{x^2 + y^2}\text{.}\)</p>
+<p id="p-3969">A smaller solid \(U\) is obtained by removing the inverted cone, whose base is the top surface of \(V\) and whose vertex is the point \((0, 0, 0)\text{.}\)</p>
+<ol id="p-3970" class="lower-alpha">
+<li id="li-2226">Use cylindrical coordinates to set up an integral giving the mass of \(U\text{.}\)</li>
+<li id="li-2227">Use spherical coordinates to set up an integral giving the mass of \(U\text{.}\)</li>
+<li id="li-2228">Find that mass.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-487"><h6 class="heading">
+<span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3978">A solid is bounded below by the cone \(z\!=\!\sqrt{x^2\!+\!y^2}\ \) and above by the sphere \(x^2+y^2+z^2 = 2\text{.}\) It has density \(\de(x,y,z) = x^2 + y^2\text{.}\)</p>
+<ol id="p-3979" class="lower-alpha">
+<li id="li-2235">Express the mass \(M\) of the solid as a triple integral, with limits, in cylindrical coordinates.</li>
+<li id="li-2236">Same as (a) but in spherical coordinates.</li>
+<li id="li-2237">Evaluate \(M\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-488"><h6 class="heading">
+<span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3988">Let</p>
+<div class="displaymath">
+\begin{gather*}
+I = \tripInt_E xz\ \dee{V}
+\end{gather*}
+</div>
+<p data-braille="continuation">where \(E\) is the eighth of the sphere \(x^2+y^2+z^2\le 1\) with \(x,y,z\ge 0\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-2246">Express \(I\) as a triple integral in spherical coordinates.</li>
+<li id="li-2247">Express \(I\) as a triple integral in cylindrical coordinates.</li>
+<li id="li-2248">Evaluate \(I\) by any method.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-489"><h6 class="heading">
+<span class="codenumber">23<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3994">Let</p>
+<div class="displaymath">
+\begin{equation*}
+I = \tripInt_T  (x^2+y^2)\ \dee{V}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(T\) is the solid region bounded below by the cone \(z =\sqrt{3x^2+3y^2}\) and above by the sphere \(x^2 + y^2 + z^2 = 9\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-2257">Express \(I\) as a triple integral in spherical coordinates.</li>
+<li id="li-2258">Express \(I\) as a triple integral in cylindrical coordinates.</li>
+<li id="li-2259">Evaluate \(I\) by any method.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-490"><h6 class="heading">
+<span class="codenumber">24<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-4002">Let \(E\) be the “ice cream cone” \(x^2 + y^2 + z^2 \le 1\text{,}\) \(x^2 + y^2 \le z^2\) , \(z \ge 0\text{.}\) Consider</p>
+<div class="displaymath">
+\begin{equation*}
+J =\tripInt_E \sqrt{x^2+y^2+z^2}\ \dee{V}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-2268">Write \(J\) as an iterated integral, with limits, in cylindrical coordinates.</li>
+<li id="li-2269">Write \(J\) as an iterated integral, with limits, in spherical coordinates.</li>
+<li id="li-2270">Evaluate \(J\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-491"><h6 class="heading">
+<span class="codenumber">25<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-4010">The body of a snowman is formed by the snowballs \(x^2 + y^2 + z^2 = 12\) (this is its body) and \(x^2 + y^2 + (z - 4)^2 = 4\) (this is its head).</p>
+<ol class="lower-alpha">
+<li id="li-2277">Find the volume of the snowman by subtracting the intersection of the two snow balls from the sum of the volumes of the snow balls. [Recall that the volume of a sphere of radius \(r\) is \(\frac{4\pi}{3} r^3\text{.}\)]</li>
+<li id="li-2278">
+<p id="p-4011">We can also calculate the volume of the snowman as a sum of the following triple integrals:</p>
+<ol class="lower-roman">
+<li id="li-2279"><div class="displaymath">
+\begin{equation*}
+\int_0^{\frac{2\pi}{3}} \int_0^{2\pi}  \int_0^2 \rho^2\sin{\varphi}
+\  \dee{\rho}\,\dee{\theta}\,\dee{\varphi}
+\end{equation*}
+</div></li>
+<li id="li-2280"><div class="displaymath">
+\begin{equation*}
+\int_0^{2\pi} \int_0^{\sqrt{3}}  \int_{\sqrt{3}\,r}^{4-\frac{r}{\sqrt{3}}}
+r\ \dee{z}\,\dee{r}\,\dee{\theta}
+\end{equation*}
+</div></li>
+<li id="li-2281"><div class="displaymath">
+\begin{equation*}
+\int_{\frac{\pi}{6}}^\pi  \int_0^{2\pi} \int_0^{2\sqrt{3}}
+\rho^2\sin(\varphi)\ \dee{\rho}\,\dee{\theta}\,\dee{\varphi}
+\end{equation*}
+</div></li>
+</ol>
+<p data-braille="continuation">Circle the right answer from the underlined choices and fill in the blanks in the following descriptions of the region of integration for each integral. [Note: We have translated the axes in order to write down some of the integrals above. The equations you specify should be those before the translation is performed.]</p>
+<ol class="lower-roman">
+<li id="li-2282">The region of integration in (1) is a part of the snowman's<div class="displaymath">
+\begin{equation*}
+\underline{
+\text{ body / head / body and head}
+}
+\end{equation*}
+</div>It is the solid enclosed by the<div class="displaymath">
+\begin{equation*}
+\underline{\text{sphere / cone}}
+\end{equation*}
+</div>defined by the equation<div class="displaymath">
+\begin{equation*}
+\rule{30ex}{0.2ex}
+\end{equation*}
+</div>and the<div class="displaymath">
+\begin{equation*}
+\underline{\text{sphere / cone}}
+\end{equation*}
+</div>defined by the equation<div class="displaymath">
+\begin{equation*}
+\rule{30ex}{0.2ex}
+\end{equation*}
+</div>
+</li>
+<li id="li-2283">The region of integration in (2) is a part of the snowman's<div class="displaymath">
+\begin{equation*}
+\underline{
+\text{ body / head / body and head}
+}
+\end{equation*}
+</div>It is the solid enclosed by the<div class="displaymath">
+\begin{equation*}
+\underline{\text{sphere / cone}}
+\end{equation*}
+</div>defined by the equation<div class="displaymath">
+\begin{equation*}
+\rule{30ex}{0.2ex}
+\end{equation*}
+</div>and the<div class="displaymath">
+\begin{equation*}
+\underline{\text{sphere / cone}}
+\end{equation*}
+</div>defined by the equation<div class="displaymath">
+\begin{equation*}
+\rule{30ex}{0.2ex}
+\end{equation*}
+</div>
+</li>
+<li id="li-2284">The region of integration in (3) is a part of the snowman's<div class="displaymath">
+\begin{equation*}
+\underline{
+\text{ body / head / body and head}
+}
+\end{equation*}
+</div>It is the solid enclosed by the<div class="displaymath">
+\begin{equation*}
+\underline{\text{sphere / cone}}
+\end{equation*}
+</div>defined by the equation<div class="displaymath">
+\begin{equation*}
+\rule{30ex}{0.2ex}
+\end{equation*}
+</div>and the<div class="displaymath">
+\begin{equation*}
+\underline{\text{sphere / cone}}
+\end{equation*}
+</div>defined by the equation<div class="displaymath">
+\begin{equation*}
+\rule{30ex}{0.2ex}
+\end{equation*}
+</div>
+</li>
+</ol>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-492"><h6 class="heading">
+<span class="codenumber">26<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-4025" class="lower-alpha">
+<li id="li-2288">
+<p id="p-4026">Find the volume of the solid inside the surface defined by the equation \(\rho = 8 \sin(\varphi)\) in spherical coordinates.</p>
+<p id="p-4027">You may use that</p>
+<div class="displaymath">
+\begin{equation*}
+\int \sin^4(\varphi) =\frac{1}{32}\big(12\varphi -8\sin(2\varphi)
++\sin(4\varphi)\big) +C
+\end{equation*}
+</div>
+</li>
+<li id="li-2289">Sketch this solid or describe what it looks like.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-493"><h6 class="heading">
+<span class="codenumber">27<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-4033">Let \(E\) be the solid</p>
+<div class="displaymath">
+\begin{equation*}
+0 \le z \le \sqrt{x^2 + y^2},\qquad
+x^2 + y^2 \le 1,
+\end{equation*}
+</div>
+<p data-braille="continuation">and consider the integral</p>
+<div class="displaymath">
+\begin{equation*}
+I = \tripInt_E z \sqrt{x^2 + y^2 + z^2}\  \dee{V}.
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-2292">Write the integral \(I\) in cylindrical coordinates.</li>
+<li id="li-2293">Write the integral \(I\) in spherical coordinates.</li>
+<li id="li-2294">Evaluate the integral \(I\) using either form.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-494"><h6 class="heading">
+<span class="codenumber">28<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-4041">Consider the iterated integral</p>
+<div class="displaymath">
+\begin{equation*}
+I =\int_{-a}^0\int_{-\sqrt{a^2-x^2}}^0 \int_0^{\sqrt{a^2-x^2-y^2}}
+\big(x^2+y^2+z^2\big)^{2014}\ \dee{z}\,\dee{y}\,\dee{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(a\) is a positive constant.</p>
+<ol class="lower-alpha">
+<li id="li-2295">Write \(I\) as an iterated integral in cylindrical coordinates.</li>
+<li id="li-2296">Write \(I\) as an iterated integral in spherical coordinates.</li>
+<li id="li-2297">Evaluate I using whatever method you prefer.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-495"><h6 class="heading">
+<span class="codenumber">29<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-4050">The solid \(E\) is bounded below by the paraboloid \(z = x^2 + y^2\) and above by the cone \(z=\sqrt{x^2+y^2}\text{.}\) Let</p>
+<div class="displaymath">
+\begin{equation*}
+I = \tripInt_E z\big(x^2+y^2+z^2\big)\ \dee{V}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-2301">Write \(I\) in terms of cylindrical coordinates. Do not evaluate.</li>
+<li id="li-2302">Write \(I\) in terms of spherical coordinates. Do not evaluate.</li>
+<li id="li-2303">Calculate \(I\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-496"><h6 class="heading">
+<span class="codenumber">30<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-4058">Let \(S\) be the region on the first octant (so that \(x,y,z\ge 0\)) which lies above the cone \(z=\sqrt{x^2+y^2}\) and below the sphere \((z-1)^2 +x^2+y^2=1\text{.}\) Let \(V\) be its volume.</p>
+<ol class="lower-alpha">
+<li id="li-2304">Express \(V\) as a triple integral in cylindrical coordinates.</li>
+<li id="li-2305">Express \(V\) as an triple integral in spherical coordinates.</li>
+<li id="li-2306">Calculate \(V\) using either of the integrals above.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-497"><h6 class="heading">
+<span class="codenumber">31<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-4066">A solid is bounded below by the cone \(z=\sqrt{3x^2+3y^2}\) and above by the sphere \(x^2+y^2+z^2=9\text{.}\) It has density \(\de(x,y,z)=x^2+y^2\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-2316">Express the mass \(m\) of the solid as a triple integral in cylindrical coordinates.</li>
+<li id="li-2317">Express the mass \(m\) of the solid as a triple integral in spherical coordinates.</li>
+<li id="li-2318">Evaluate \(m\text{.}\)</li>
+</ol></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

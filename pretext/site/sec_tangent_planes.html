@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:41:17+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tangent Planes and Normal Lines</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_chain_rule.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_lin_approx.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_chain_rule.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_lin_approx.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes" class="active">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_tangent_planes"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">Tangent Planes and Normal Lines</span>
+</h2>
+<section class="introduction" id="introduction-42"><p id="p-1584">The tangent line to the curve \(y=f(x)\) at the point \(\big(x_0,f(x_0)\big)\) is the straight line that fits the curve best<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-47" id="fn-47"><sup> 1 </sup></a> at that point. Finding tangent lines was probably one of the first applications of derivatives that you saw. See, for example, Theorem 2.3.2 in the CLP-1 text. The analog of the tangent line one dimension up is the tangent plane. The tangent plane to a surface \(S\) at a point  \((x_0,y_0,z_0)\) is the plane that fits \(S\) best at \((x_0,y_0,z_0)\text{.}\) For example, the tangent plane to the hemisphere</p>
+<div class="displaymath">
+\begin{equation*}
+S=\Set{(x,y,z)}{x^2+y^2+(z-1)^2=1,\ 0\le z\le 1}
+\end{equation*}
+</div>
+<p data-braille="continuation">at the origin is the \(xy\)-plane, \(z=0\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-47"><div class="fn">It is possible, but beyond the scope of this text, to give a precise meaning to “fits best”.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sphereTanPlane.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1585">We are now going to determine, as our first application of partial derivatives, the tangent plane to a general surface \(S\) at a general point \((x_0,y_0,z_0)\) lying on the surface. We will also determine the line which passes through \((x_0,y_0,z_0)\) and whose direction is perpendicular to \(S\) at \((x_0,y_0,z_0)\text{.}\) It is called the normal line to \(S\) at \((x_0,y_0,z_0)\text{.}\)</p>
+<p id="p-1586">For example, the following figure shows the side view of the tangent plane (in black) and normal line (in blue) to the surface \(z=x^2+y^2\) (in red) at the point \((0,1,1)\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/tanPlaneNormalLine.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1587">Recall, from <a class="xref" data-knowl="./knowl/eqn_of_plane.html" title="Equation 1.4.1: The Equation of a Plane">1.4.1</a>, that to specify any plane, we need</p>
+<ul class="disc">
+<li id="li-791">one point on the plane and</li>
+<li id="li-792">a vector perpendicular to the plane, i.e. a normal vector,</li>
+</ul>
+<p data-braille="continuation">and recall, from <a class="xref" data-knowl="./knowl/par_eqn_of_line.html" title="Equation 1.5.1: Parametric Equations of a Line">1.5.1</a>, that to specify any line, we need</p>
+<ul class="disc">
+<li id="li-793">one point on the line and</li>
+<li id="li-794">a direction vector for the line.</li>
+</ul>
+<p data-braille="continuation">We already have one point that is on both the tangent plane of interest and the normal line of interest — namely \(\big(x_0,y_0,z_0\big)\text{.}\) Furthermore we can use any (nonzero) vector that is perpendicular to \(S\) at \((x_0,y_0,z_0)\) as both the normal vector to the tangent plane and the direction vector of the normal line.</p>
+<p id="p-1588">So our main task is to determine a normal vector to the surface \(S\) at \((x_0,y_0,z_0)\text{.}\) That's what we do now, first for surfaces of the form \(z=f(x,y)\) and then, more generally, for surfaces of the form \(G(x,y,z)=0\text{.}\)</p></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.1</span> <span class="title">Surfaces of the Form \(z=f(x,y)\)</span>
+</h3>
+<p id="p-1589">We construct a vector perpendicular to the surface \(z=f(x,y)\) at \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\) by, first, constructing two tangent vectors to the specified surface at the specified point, and, second, taking the cross product of those two tangent vectors. Consider the red curve in the figure below. It is the intersection of our surface \(z=f(x,y)\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/tanPlaneAA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1590">with the plane \(y=y_0\text{.}\) Here is a side view of the red curve.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/tanPlaneAAside.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1591">The vector from the point \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\text{,}\) on the red curve, to the point \(\big(x_0+h\,,\,y_0\,,\,f(x_0+h,y_0)\big)\text{,}\) also on the red curve, is almost tangent to the red curve, if \(h\) is very small. As \(h\) tends to \(0\text{,}\) that vector, which is</p>
+<div class="displaymath">
+\begin{equation*}
+\llt h\,,\, 0\,,\, f(x_0+h,y_0)-f(x_0,y_0)  \rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">becomes exactly tangent to the curve. However its length also tends to \(0\text{.}\) If we divide by \(h\text{,}\) and then take the limit \(h\rightarrow 0\text{,}\) we get</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{h\rightarrow 0}\frac{1}{h}
+\llt h\,,\, 0\,,\, f(x_0+h,y_0)-f(x_0,y_0)  \rgt
+&amp;=\lim_{h\rightarrow 0}
+\llt 1\,,\, 0\,,\, \frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}  \rgt
+\end{align*}
+</div>
+<p data-braille="continuation">Since the limit \(\lim_{h\rightarrow 0} \frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}\) is the definition of the partial derivative \(f_x(x_0,y_0)\text{,}\) we get that</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{h\rightarrow 0}\frac{1}{h}
+\llt h\,,\, 0\,,\, f(x_0+h,y_0)-f(x_0,y_0)  \rgt
+&amp;=\llt 1\,,\, 0\,,\, f_x(x_0,y_0)\rgt
+\end{align*}
+</div>
+<p data-braille="continuation">is a nonzero vector that is exactly tangent to the red curve and hence is also tangent to our surface \(z=f(x,y)\) at the point \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\text{.}\)</p>
+<p id="p-1592">For the second tangent vector, we repeat the process with the blue curve in the figure at the beginning of this subsection. That blue curve is the intersection of our surface \(z=f(x,y)\) with the plane \(x=x_0\text{.}\) Here is a front view of the blue curve.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/tanPlaneBBside.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1593">When \(h\) is very small, the vector</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{1}{h} \llt 0\,,\, h\,,\, f(x_0,y_0+h)-f(x_0,y_0)  \rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">from the point \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\text{,}\) on the blue curve, to \(\big(x_0\,,\,y_0+h\,,\,f(x_0,y_0+h)\big)\text{,}\) also on the blue curve, (and lengthened by a factor \(\frac{1}{h}\)) is almost tangent to the blue curve. Taking the limit \(h\rightarrow0\) gives the tangent vector</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{h\rightarrow 0}\frac{1}{h}
+\llt 0\,,\, h\,,\, f(x_0,y_0+h)-f(x_0,y_0)  \rgt
+&amp;=\lim_{h\rightarrow 0}
+\llt 0\,,\, 1\,,\, \frac{f(x_0,y_0+h)-f(x_0,y_0)}{h}  \rgt\\
+&amp;=\llt 0\,,\, 1\,,\, f_y(x_0,y_0)\rgt
+\end{align*}
+</div>
+<p data-braille="continuation">to the blue curve at the point  \(\big(a\,,\,b\,,\,f(a,b)\big)\text{.}\)</p>
+<p id="p-1594">Now that we have two vectors in the tangent plane to the surface \(z=f(x,y)\) at \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\text{,}\) we can find a normal vector to the tangent plane by taking their cross product. Their cross product is</p>
+<div class="displaymath">
+\begin{align*}
+\llt 1\,,\, 0\,,\, f_x(x_0,y_0)\rgt\times\llt 0\,,\, 1\,,\, f_y(x_0,y_0)\rgt
+&amp;=\det\left[\begin{matrix}\hi&amp; \hj &amp;\hk \\
+1 &amp; 0 &amp; f_x(x_0,y_0) \\
+0 &amp; 1 &amp; f_y(x_0,y_0)\end{matrix}\right]\\
+&amp;=-f_x(x_0,y_0)\,\hi - f_y(x_0,y_0)\,\hj +\hk
+\end{align*}
+</div>
+<p data-braille="continuation">and we have that the vector</p>
+<div class="displaymath">
+\begin{equation*}
+-f_x(x_0,y_0)\,\hi - f_y(x_0,y_0)\,\hj +\hk
+\end{equation*}
+</div>
+<p data-braille="continuation">is perpendicular to the surface \(z=f(x,y)\) at  \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\text{.}\)</p>
+<p id="p-1595">The tangent plane to the surface \(z=f(x,y)\) at \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\) is the plane through \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\) with normal vector \(-f_x(x_0,y_0)\,\hi - f_y(x_0,y_0)\,\hj +\hk\text{.}\) This plane has equation</p>
+<div class="displaymath">
+\begin{equation*}
+-f_x(x_0,y_0)\,(x-x_0) - f_y(x_0,y_0)\,(y-y_0) +\big(z-f(x_0,y_0)\big) =0
+\end{equation*}
+</div>
+<p data-braille="continuation">or, after a little rearrangement,</p>
+<div class="displaymath">
+\begin{equation*}
+z = f(x_0,y_0) + f_x(x_0,y_0)\,(x-x_0) + f_y(x_0,y_0)\,(y-y_0)
+\end{equation*}
+</div>
+<p data-braille="continuation">Now that we have the normal vector, finding the equation of the normal line to the surface \(z=f(x,y)\) at the point \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\) is straightforward. Writing it in parametric form,</p>
+<div class="displaymath">
+\begin{equation*}
+\llt x,y,z \rgt =  \llt x_0,y_0,f(x_0,y_0) \rgt
++t\llt -f_x(x_0,y_0)\,,\, - f_y(x_0,y_0)\,,\, 1 \rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">By way of summary</p>
+<article class="theorem theorem-like" id="thm_tan_plane_f"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Tangent Plane and Normal Line.</span>
+</h6>
+<ol id="p-1596" class="lower-alpha">
+<li id="li-795">The vector<div class="displaymath">
+\begin{equation*}
+-f_x(x_0,y_0)\,\hi - f_y(x_0,y_0)\,\hj +\hk
+\end{equation*}
+</div>is normal to the surface \(z=f(x,y)\) at  \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\text{.}\)</li>
+<li id="li-796">The equation of the tangent plane to the surface \(z=f(x,y)\) at the point \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\) may be written as<div class="displaymath">
+\begin{equation*}
+z = f(x_0,y_0) + f_x(x_0,y_0)\,(x-x_0) + f_y(x_0,y_0)\,(y-y_0)
+\end{equation*}
+</div>
+</li>
+<li id="li-797">The parametric equation of the normal line to the surface \(z=f(x,y)\) at the point \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\) is<div class="displaymath">
+\begin{equation*}
+\llt x,y,z \rgt =  \llt x_0,y_0,f(x_0,y_0) \rgt
++t\llt -f_x(x_0,y_0)\,,\, - f_y(x_0,y_0)\,,\, 1 \rgt
+\end{equation*}
+</div>or, writing it component by component,<div class="displaymath">
+\begin{align*}
+x&amp;= x_0 - t\,f_x(x_0,y_0) \qquad
+y= y_0 - t\,f_y(x_0,y_0) \qquad
+z= f(x_0,y_0) + t
+\end{align*}
+</div>
+</li>
+</ol></article><article class="example example-like" id="eg_tan_plane_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_A"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_A"><article class="example example-like"><p id="p-1597">As a warm-up example, we'll find the tangent plane and normal line to the surface \(z=x^2+y^2\) at the point \((1,0,1)\text{.}\) To do so, we just apply Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_f.html" title="Theorem 2.5.1: Tangent Plane and Normal Line">2.5.1</a> with \(x_0=1\text{,}\) \(y_0=0\) and</p>
+<div class="displaymath">
+\begin{align*}
+f(x,y)&amp;= x^2+y^2 &amp;  f(1,0)&amp;=1\\
+f_x(x,y)&amp;=2x &amp;  f_x(1,0)&amp;=2\\
+f_y(x,y)&amp;=2y &amp;  f_y(1,0)&amp;=0
+\end{align*}
+</div>
+<p data-braille="continuation">So the tangent plane is</p>
+<div class="displaymath">
+\begin{align*}
+z&amp;=f(x_0,y_0) + f_x(x_0,y_0)\,(x-x_0) + f_y(x_0,y_0)\,(y-y_0)\\
+&amp; = 1 +2(x-1) +0(y-0)\\
+&amp;= -1+2x
+\end{align*}
+</div>
+<p data-braille="continuation">and the normal line is</p>
+<div class="displaymath">
+\begin{align*}
+\llt x,y,z \rgt &amp;=  \llt x_0,y_0,f(x_0,y_0) \rgt
++t\llt -f_x(x_0,y_0)\,,\, - f_y(x_0,y_0)\,,\, 1 \rgt\\
+&amp;=  \llt 1,0,1 \rgt
++t\llt -2\,,\, 0\,,\, 1 \rgt\\
+&amp;=  \llt 1-2t\,,\,0\,,\,1+t \rgt
+\end{align*}
+</div></article></div>
+<p id="p-1598">That was pretty simple — find the partial derivatives and substitute in the coordinates. Let's do something a bit more challenging.</p>
+<article class="example example-like" id="eg_tan_plane_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_B"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Optional.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_B"><article class="example example-like"><p id="p-1599">Find the distance from \((0,3,0)\) to the surface \(z=x^2+y^2\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-203" id="solution-203"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-203"><div class="solution solution-like">
+<p id="p-1600">Write \(f(x,y)=x^2+y^2\text{.}\) Let's denote  by \(\big(a,b,f(a,b)\big)\) the point on \(z=f(x,y)\) that is nearest \((0,3,0)\text{.}\) Before we really get into the problem, let's make a simple sketch and think about what the lines from \((0,3,0)\) to the surface look like and, in particular, the angles between these lines and the surface.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/distanceBB.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/distanceB.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-1601">The line from \((0,3,0)\) to \(\big(a,b,f(a,b)\big)\text{,}\) the point on \(z=f(x,y)\) nearest \((0,3,0)\text{,}\) is distinguished from the other lines from \((0,3,0)\) to the surface, by being perpendicular to the surface. We will provide a detailed justification for this claim below.</p>
+<p id="p-1602">Let's first exploit the fact that the vector from \((0,3,0)\) to \(\big(a,b,f(a,b)\big)\) must be perpendicular to the surface to determine \(\big(a,b,f(a,b)\big)\text{,}\) and consequently the distance from \((0,3,0)\) to the surface. By Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_f.html" title="Theorem 2.5.1: Tangent Plane and Normal Line">2.5.1</a>.a, with \(x_0=a\) and \(y_0=b\text{,}\) the vector</p>
+<div class="displaymath">
+\begin{equation*}
+-f_x(a,b)\,\hi - f_y(a,b)\,\hj +\hk
+=-2a\,\hi -2b\,\hj +\hk
+\tag{$*$}
+\end{equation*}
+</div>
+<p data-braille="continuation">is normal to the surface \(z=f(x,y)\) at \(\big(a,b,f(a,b)\big)\text{.}\) So the vector from \((0,3,0)\) to \(\big(a,b,f(a,b)\big)\text{,}\) namely</p>
+<div class="displaymath">
+\begin{equation*}
+a\,\hi + (b-3)\,\hj + f(a,b)\,\hk
+=a\,\hi + (b-3)\,\hj + (a^2+b^2)\,\hk
+\tag{$**$}
+\end{equation*}
+</div>
+<p data-braille="continuation">must be parallel to \((*)\text{.}\) This does not force the vector \((*)\) to equal \((**)\text{,}\) but it does force the existence of some number \(t\) obeying</p>
+<div class="displaymath">
+\begin{equation*}
+a\,\hi + (b-3)\,\hj + (a^2+b^2)\,\hk
+=t\big(-2a\,\hi -2b\,\hj +\hk\big)
+\end{equation*}
+</div>
+<p data-braille="continuation">or equivalently</p>
+<div class="displaymath">
+\begin{equation*}
+\left\{\begin{aligned}
+a&amp;=-2a\,t\\
+b-3 &amp;= -2b\,t\\
+a^2+b^2 &amp;= t
+\end{aligned}\right.
+\end{equation*}
+</div>
+<p data-braille="continuation">We now have a system of three equations in the three unknowns \(a\text{,}\) \(b\) and \(t\text{.}\) If we can solve them, we will have found the point on the surface that we want.</p>
+<ul class="disc">
+<li id="li-798">The first equation is \(a(1+2t)=0\) so that either \(a=0\) or \(t=-\frac{1}{2}\text{.}\)</li>
+<li id="li-799">The third equation forces \(t\ge 0\text{,}\) so \(a=0\text{,}\) and the last equation reduces to \(t=b^2\text{.}\)</li>
+<li id="li-800">Substituting this into the middle equation gives<div class="displaymath">
+\begin{equation*}
+b-3=-2b^3\qquad\text{or equivalently}\qquad
+2b^3+b-3 = 0
+\end{equation*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">In general, cubic equations are very hard to solve<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-48" id="fn-48"><sup> 2 </sup></a>. But, in this case, we can guess one solution<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-49" id="fn-49"><sup> 3 </sup></a>, namely \(b=1\text{.}\) So \((b-1)\) must be a factor of \(2b^3+b-3\) and a little division then gives us</p>
+<div class="displaymath">
+\begin{equation*}
+0=2b^3+b-3
+=(b-1)(2b^2 +2b  +3)
+\end{equation*}
+</div>
+<p data-braille="continuation">We can now find the roots of the quadratic factor by using the high school formula</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{-2\pm\sqrt{2^2-4(2)(3)}}{4}
+\end{equation*}
+</div>
+<p data-braille="continuation">Since \(2^2-4(2)(3) \lt 0\text{,}\) the factor \(2b^2 +2b  +3\) has no real roots. So the only real solution to the cubic equation \(2b^3+b-3 = 0\) is \(b=1\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-48"><div class="fn">The method for solving cubics was developed in the 15th century by del Ferro, Cardano and Ferrari (Cardano's student). Ferrari then went on to discover a formula for the roots of a quartic. Both the cubic and quartic formulae are extremely cumbersome, and no such formula exists for polynomials of degree 5 and higher. This is the famous Abel-Ruffini theorem.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-49"><div class="fn">See Appendix A.16 in the CLP-2 text. There it is shown that any integer root of a polynomial with integer coefficients must divide the constant term exactly. So in this case only \(\pm 1\) and \(\pm 3\) could be integer roots. So it is good to check to see if any of these are solutions before moving on to more sophisticated techniques.</div></div>
+<p id="p-1603">In summary,</p>
+<ul class="disc">
+<li id="li-801">\(a=0\text{,}\) \(b=1\) and</li>
+<li id="li-802">the point on \(z=x^2+y^2\) nearest \((0,3,0)\) is \((0,1,1)\) and</li>
+<li id="li-803">the distance from \((0,3,0)\) to \(z=x^2+y^2\) is the distance from \((0,3,0)\) to \((0,1,1)\text{,}\) which is \(\sqrt{(-2)^2+1^2}=\sqrt{5}\text{.}\)</li>
+</ul>
+<p id="p-1604">Finally back to the claim that, because \(\big(a,b,f(a,b)\big)\) is the point on \(z=f(x,y)\) that is nearest<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-50" id="fn-50"><sup> 4 </sup></a> \((0,3,0)\text{,}\) the vector from \((0,3,0)\) to \(\big(a,b,f(a,b)\big)\) must be perpendicular to the surface \(z=f(x,y)\) at \(\big(a,b,f(a,b)\big)\text{.}\) Note that the square of the distance from \((0,3,0)\) to a general point \(\big(x,y,f(x,y)\big)\) on \(z=f(x,y)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+D(x,y) = x^2 + (y-3)^2 +f(x,y)^2
+\end{equation*}
+</div>
+<p data-braille="continuation">If \(x=a\text{,}\) \(y=b\) minimizes \(D(x,y)\) then, in particular,</p>
+<ul class="disc">
+<li id="li-804">restricting our attention to the slice \(y=b\) of the surface, \(x=a\) minimizes \(g(x) = D(x,b) =x^2 + (b-3)^2 +f(x,b)^2\) so that<div class="displaymath">
+\begin{align*}
+0 &amp;= g'(a) =\pdiff{}{x}\Big[x^2 + (b-3)^2 +f(x,b)^2\Big]\bigg|_{x=a}\\
+&amp;=2a +2 f(a,b)\ f_x(a,b)\\
+&amp;=2 \llt a\,,\,b-3\,,\, f(a,b)\rgt\cdot\llt 1\,,\,0\,,\, f_x(a,b)\rgt
+\end{align*}
+</div>and</li>
+<li id="li-805">restricting our attention to the slice \(x=a\) of the surface, \(y=b\) minimizes \(h(y) = D(a,y) =a^2 + (y-3)^2 +f(a,y)^2\) so that<div class="displaymath">
+\begin{align*}
+0 &amp;= h'(b) =\pdiff{}{y}\Big[a^2 + (y-3)^2 +f(a,y)^2\Big]\bigg|_{y=b}\\
+&amp;=2 (b-3) +2 f(a,b)\ f_y(a,b)\\
+&amp;=2 \llt a\,,\,b-3\,,\, f(a,b)\rgt\cdot\llt 0\,,\,1\,,\, f_y(a,b)\rgt
+\end{align*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">We have expressed the final right hand sides of both of the above bullets as the dot product of the vector \(\llt a\,,\,b-3\,,\, f(a,b)\rgt\) with something because</p>
+<ul class="disc">
+<li id="li-806">\(\llt a\,,\,b-3\,,\, f(a,b)\rgt\) is the vector from \((0,3,0)\) to the point \((a\,,\,b\,,\, f(a,b)\big)\) on the surface and</li>
+<li id="li-807">the vanishing of the dot product of two vectors implies that the two vectors are perpendicular.</li>
+</ul>
+<p data-braille="continuation">Thus, that</p>
+<div class="displaymath">
+\begin{align*}
+\llt a\,,\,b-3\,,\, f(a,b)\rgt\cdot\llt 1\,,\,0\,,\, f_x(a,b)\rgt
+&amp;=\llt a\,,\,b-3\,,\, f(a,b)\rgt\cdot\llt 0\,,\,1\,,\, f_y(a,b)\rgt\\
+&amp;=0
+\end{align*}
+</div>
+<p data-braille="continuation">tells us that the vector \(\llt a\,,\,b-3\,,\, f(a,b)\rgt\) from \((0,3,0)\) to \(\big(a,b,f(a,b)\big)\) is perpendicular to both \(\llt 1\,,\,0\,,\, f_x(a,b)\rgt\) and \(\llt 0\,,\,1\,,\, f_y(a,b)\rgt\) and hence is parallel to their cross product \(\llt 1\,,\, 0\,,\, f_x(a,b)\rgt\times\llt 0\,,\, 1\,,\, f_y(a,b)\rgt\text{,}\) which we already know is a normal vector to the surface \(z=f(x,y)\) at \(\big(a,b,f(a,b)\big)\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-50"><div class="fn">Note that we are assuming that \(\big(a,b,f(a,b)\big)\) is the point on the surface that is nearest \((0,3,0)\text{.}\) That there exists such a point is intuitively obvious from a sketch of the surface. The mathematical proof that there exists such a point is beyond the scope of this text.</div></div>
+<p id="p-1605">This shows that the point on the surface that minimises the distance to \((0,3,0)\) is joined to \((0,3,0)\) by a line that is parallel to the normal vector — just as we required.</p>
+</div></div>
+</div></article></div></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">Surfaces of the Form \(G(x,y,z)=0\)</span>
+</h3>
+<p id="p-1606">We now use  a little trickery to construct a vector perpendicular to the surface \(G(x,y,z)=0\) at the point \(\big(x_0\,,\,y_0\,,\,z_0\big)\text{.}\) Imagine that you are walking on the surface and that at time \(0\) you are at the point \(\big(x_0\,,\,y_0\,,\,z_0\big)\text{.}\) Let \(\vr(t)
+=\big(x(t)\,,\,y(t)\,,\,z(t)\big)\) denote your position at time \(t\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/tanPlaneG.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1607">Because you are walking along the surface, we know that \(\vr(t)\) always lies on the surface and so</p>
+<div class="displaymath">
+\begin{equation*}
+G\big( x(t)\,,\,y(t)\,,\,z(t)\big)=0
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(t\text{.}\) Differentiating this equation with respect to \(t\) gives, by the chain rule,</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{G}{x}\big( x(t)\,,\,y(t)\,,\,z(t)\big)\ x'(t)
+&amp;+\pdiff{G}{y}\big( x(t)\,,\,y(t)\,,\,z(t)\big)\ y'(t)\\
+&amp;+\pdiff{G}{z}\big( x(t)\,,\,y(t)\,,\,z(t)\big)\ z'(t) = 0
+\end{align*}
+</div>
+<p data-braille="continuation">Then setting \(t=0\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{G}{x}\big( x_0\,,\,y_0\,,\,z_0\big)\ x'(0)
++\pdiff{G}{y}\big( x_0\,,\,y_0\,,\,z_0\big)\ y'(0)
++\pdiff{G}{z}\big( x_0\,,\,y_0\,,\,z_0\big)\ z'(0) = 0
+\end{equation*}
+</div>
+<p data-braille="continuation">Expressing this as a dot product allows us to turn this into a statement about vectors.</p>
+<div class="displaymath">
+\begin{equation*}
+\llt \pdiff{G}{x}\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+\pdiff{G}{y}\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+\pdiff{G}{z}\big( x_0\,,\,y_0\,,\,z_0\big)\rgt \cdot \vr'(0) = 0
+\tag{$*$}
+\end{equation*}
+</div>
+<p data-braille="continuation">The first vector in this dot product is sufficiently important that it is given its own name.</p>
+<article class="definition definition-like" id="def_gradient"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">Gradient.</span>
+</h6>
+<p id="p-1608">The gradient<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-51" id="fn-51"><sup> 5 </sup></a> of the function \(G(x,y,z)\) at the point \(\big( x_0\,,\,y_0\,,\,z_0\big)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\llt \pdiff{G}{x}\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+\pdiff{G}{y}\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+\pdiff{G}{z}\big( x_0\,,\,y_0\,,\,z_0\big)\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">It is denoted \(\vnabla G(x_0,y_0,z_0)\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-51"><div class="fn">The gradient will also play a big role in Section <a href="sec_directional_derivatives.html" class="internal" title="Section 2.7: Directional Derivatives and the Gradient">2.7</a>.</div></div></article><p id="p-1609">So \((*)\) tells us that the gradient \(\vnabla G(x_0,y_0,z_0)\text{,}\) is perpendicular to the vector \(\vr'(0)\text{.}\)</p>
+<p id="p-1610">Now if \(t\) is very close to zero, the vector \(\vr(t)-\vr(0)\text{,}\) from \(\vr(0)\) to \(\vr(t)\text{,}\) is almost tangent to the path that we are walking on. The limit</p>
+<div class="displaymath">
+\begin{equation*}
+\vr'(0)=\lim_{t\rightarrow 0}\frac{\vr(t)-\vr(0)}{t}
+\end{equation*}
+</div>
+<p data-braille="continuation">is thus exactly tangent to our path, and consequently to the surface \(G(x,y,z)=0\) at \((x_0,y_0,z_0)\text{.}\) This is true for all paths on the surface that pass through \((x_0,y_0,z_0)\) at time \(t=0\text{,}\) which tells us that \(\vnabla G(x_0,y_0,z_0)\) is perpendicular to the surface at \((x_0,y_0,z_0)\text{.}\) We have just found a normal vector!</p>
+<p id="p-1611">The above argument goes through unchanged for surfaces of the form<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-52" id="fn-52"><sup> 6 </sup></a> \(G(x,y,z)=K\text{,}\) for any constant \(K\text{.}\) So we have</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-52"><div class="fn">Alternatively, one could rewrite \(G=K\) as \(G-K=0\) and replace \(G\) by \(G-K\) in the above argument.</div></div>
+<article class="theorem theorem-like" id="thm_tan_plane_G"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">Tangent Plane and Normal Line.</span>
+</h6>
+<p id="p-1612">Let \(K\) be a constant and \((x_0,y_0,z_0)\) be a point on the surface \(G(x,y,z)=K\text{.}\) Assume that the gradient</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla G(x_0,y_0,z_0)
+= \llt \pdiff{G}{x}\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+\pdiff{G}{y}\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+\pdiff{G}{z}\big( x_0\,,\,y_0\,,\,z_0\big)\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">of \(G\) at \((x_0,y_0,z_0)\) is nonzero.</p>
+<ol class="lower-alpha">
+<li id="li-808">The vector \(\vnabla G(x_0,y_0,z_0)\) is normal to the surface \(G(x,y,z)=K\) at \((x_0,y_0,z_0)\text{.}\)</li>
+<li id="li-809">The equation of the tangent plane to the surface \(G(x,y,z)=K\) at \((x_0,y_0,z_0)\) is<div class="displaymath">
+\begin{equation*}
+\vnabla G(x_0,y_0,z_0)\cdot\llt x-x_0\,,\,y-y_0\,,\,z-z_0\rgt =0
+\end{equation*}
+</div>
+</li>
+<li id="li-810">The parametric equation of the normal line to the surface \(G(x,y,z)=K\) at \((x_0,y_0,z_0)\) is<div class="displaymath">
+\begin{equation*}
+\llt x,y,z \rgt =  \llt x_0,y_0,z_0 \rgt
++t\,\vnabla G(x_0,y_0,z_0)
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="remark remark-like" id="rem_tan_plane"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.5.6</span><span class="period">.</span>
+</h6>
+<p id="p-1613">Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_f.html" title="Theorem 2.5.1: Tangent Plane and Normal Line">2.5.1</a> about the tangent planes and normal lines to the surface \(z=f(x,y)\) is actually a very simple consequence of Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a> about the tangent planes and normal lines to the surface \(G(x,y,z)=0\text{.}\) This is just because we can always rewrite the equation \(z=f(x,y)\) as \(z-f(x,y)=0\) and apply Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a> with \(G(x,y,z)=z-f(x,y)\text{.}\) Since</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla G(x_0,y_0,z_0) = -f_x(x_0,y_0)\,\hi -f_y(x_0,y_0)\,\hj +\hk
+\end{equation*}
+</div>
+<p data-braille="continuation">Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a> then gives<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-53" id="fn-53"><sup> 7 </sup></a> Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_f.html" title="Theorem 2.5.1: Tangent Plane and Normal Line">2.5.1</a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-53"><div class="fn">Indeed we could write Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_f.html" title="Theorem 2.5.1: Tangent Plane and Normal Line">2.5.1</a> as a corollary of Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a>. But in a textbook one tries to start with the concrete and move to the more general.</div></div></article><p id="p-1614">Here are a couple of routine examples.</p>
+<article class="example example-like" id="eg_tan_plane_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_C"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.7</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_C"><article class="example example-like"><p id="p-1615">Find the tangent plane and the normal line to the surface</p>
+<div class="displaymath">
+\begin{equation*}
+z= x^2+5xy-2y^2
+\end{equation*}
+</div>
+<p data-braille="continuation">at the point \((1,2,3)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-204" id="solution-204"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-204"><div class="solution solution-like">
+<p id="p-1616">As a preliminary check, note that</p>
+<div class="displaymath">
+\begin{equation*}
+1^2+5\times 1\times 2-2(2)^2=3
+\end{equation*}
+</div>
+<p data-braille="continuation">which verifies that the point \((1,2,3)\) is indeed on the surface. This is a good reality check and also increases our confidence that the question is asking what we think that it is asking. Rewrite the equation of the surface as \(G(x,y,z)=x^2+5xy-2y^2-z=0\text{.}\) Then the gradient</p>
+<div class="displaymath">
+\begin{gather*}
+\vnabla G(x,y,z) = (2x+5y)\,\hi +(5x-4y)\,\hj-\hk
+\end{gather*}
+</div>
+<p data-braille="continuation">so that, by Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+\vn = \vnabla G(1,2,3) = 12\,\hi -3\,\hj-\hk
+\end{equation*}
+</div>
+<p data-braille="continuation">is a normal vector to the surface at \((1,2,3)\text{.}\) Equipped<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-54" id="fn-54"><sup> 8 </sup></a> with the normal, it is easy to work out an equation for the tangent plane.</p>
+<div class="displaymath">
+\begin{equation*}
+\vn\cdot\llt x-1\,,\,y-2\,,\,z-3 \rgt
+=\llt 12\,,\,-3\,,\, -1\rgt\cdot\llt x-1\,,\,y-2\,,\,z-3 \rgt
+=0
+\end{equation*}
+</div>
+<p data-braille="continuation">or</p>
+<div class="displaymath">
+\begin{equation*}
+12x -3y -z = 3
+\end{equation*}
+</div>
+<p data-braille="continuation">We can quickly check that the point \((1,2,3)\) does indeed lie on the plane:</p>
+<div class="displaymath">
+\begin{equation*}
+12\times 1 -3\times 2 -3 = 3
+\end{equation*}
+</div>
+<p data-braille="continuation">The normal line is</p>
+<div class="displaymath">
+\begin{equation*}
+\llt x-1\,,\,y-2\,,\,z-3 \rgt
+=t\,\vn = t\llt 12\,,\,-3\,,\, -1\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">or</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{x-1}{12} = \frac{y-2}{-3} = \frac{z-3}{-1}\quad
+{\color{gray}{\Big(=t\Big)}}
+\end{equation*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-54"><div class="fn">The spelling “equipt” is a bit archaic. There must be a joke here about quips.</div></div>
+</div></div>
+</div></article></div>
+<p id="p-1617">Another warm-up example. This time the surface is a hyperboloid of one sheet.</p>
+<article class="example example-like" id="eg_tan_plane_D"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_D"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_D"><article class="example example-like"><p id="p-1618">Find the tangent plane and the normal line to the surface</p>
+<div class="displaymath">
+\begin{equation*}
+x^2+y^2-z^2 = 4
+\end{equation*}
+</div>
+<p data-braille="continuation">at the point \((2,-3,3)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-205" id="solution-205"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-205"><div class="solution solution-like">
+<p id="p-1619">As a preliminary check, note that the point \((2,-3,3)\) is indeed on the surface:</p>
+<div class="displaymath">
+\begin{equation*}
+2^2+(-3)^2-(3)^2=4
+\end{equation*}
+</div>
+<p data-braille="continuation">The equation of the surface is \(G(x,y,z)=x^2+y^2-z^2=4\text{.}\) Then the gradient of \(G\) is</p>
+<div class="displaymath">
+\begin{gather*}
+\vnabla G(x,y,z) = 2x\,\hi +2y\,\hj-2z\,\hk
+\end{gather*}
+</div>
+<p data-braille="continuation">so that, at \((2,-3,3)\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla G(2,-3,3) = 4\,\hi -6\,\hj-6\,\hk
+\end{equation*}
+</div>
+<p data-braille="continuation">and so, by Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+\vn = \frac{1}{2}\big(4\,\hi -6\,\hj-6\,\hk\big)=2\,\hi-3\,\hj-3\,\hk
+\end{equation*}
+</div>
+<p data-braille="continuation">is a normal vector to the surface at \((2,-3,3)\text{.}\) The tangent plane is</p>
+<div class="displaymath">
+\begin{equation*}
+\vn\cdot\llt x-2\,,\,y+3\,,\,z-3 \rgt
+=\llt 2\,,\,-3\,,\, -3\rgt\cdot\llt x-2\,,\,y+3\,,\,z-3 \rgt
+=0
+\end{equation*}
+</div>
+<p data-braille="continuation">or</p>
+<div class="displaymath">
+\begin{equation*}
+2x -3y -3z = 4
+\end{equation*}
+</div>
+<p data-braille="continuation">Again, as a check, we can verify that our point \((2,-3,3)\) is indeed on the plane:</p>
+<div class="displaymath">
+\begin{equation*}
+2\times 2 - 3\times(-3) -3\times 3 = 4
+\end{equation*}
+</div>
+<p data-braille="continuation">The normal line is</p>
+<div class="displaymath">
+\begin{equation*}
+\llt x-2\,,\,y+3\,,\,z-3 \rgt
+=t\,\vn = t\llt 2\,,\,-3\,,\, -3\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">or</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{x-2}{2} = \frac{y+3}{-3} = \frac{z-3}{-3}\quad
+{\color{gray}{\Big(=t\Big)}}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="warning remark-like" id="warn_tan_plane"><h6 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">2.5.9</span><span class="period">.</span>
+</h6>
+<p id="p-1620">The vector \(\vnabla G(x,y,z)\) is not a normal vector to the surface \(G(x,y,z)\!=\!K\) at \((x_0,y_0,z_0)\text{.}\) The vector  \(\vnabla G(x_0,y_0,z_0)\) is a normal vector to \(G(x,y,z)\!=\!K\) at \((x_0,y_0,z_0)\) (provided \(G(x_0,y_0,z_0)=K\)).</p>
+<p id="p-1621">As an example of the consequences of failing to evaluate \(\vnabla G(x,y,z)\) at the point \((x_0,y_0,z_0)\text{,}\) consider the problem</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Find the tangent plane to the surface }
+x^2+y^2+z^2=1
+\text{ at the point }
+(0,0,1).
+\end{equation*}
+</div>
+<p data-braille="continuation">In this case, the surface is \(G(x,y,z)=x^2+y^2+z^2=1\text{.}\) The gradient of \(G\) is \(\vnabla G(x,y,z) = 2x\,\hi +2y\,\hj +2z\,\hk\text{.}\) To correctly apply part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a>, we evaluate \(\vnabla G(0,0,1) = 2\,\hk\) and find that the tangent plane at \((0,0,1)\) is</p>
+<div class="displaymath">
+\begin{gather*}
+\vnabla G(0,0,1)\cdot\llt x-0\,,\,y-0\,,\,z-1\rgt =0
+\quad\text{or}\quad 2(z-1)=0
+\quad\text{or}\quad z=1
+\end{gather*}
+</div>
+<p data-braille="continuation">This is of course correct — the tangent plane to the unit sphere at the north pole is indeed horizontal.</p>
+<p id="p-1622">But if we were to incorrectly apply part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a> by failing to evaluate \(\vnabla G(x,y,z)\) at \((0,0,1)\text{,}\) we would find that the “tangent plane” is</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\vnabla G(x,y,z)\cdot\llt x-0\,,\,y-0\,,\,z-1\rgt =0\\
+\qquad\text{or}\qquad &amp;2x(x-0) +2y(y-0) + 2z(z-1)=0\\
+\qquad\text{or}\qquad &amp; x^2+y^2+z^2 -z = 0
+\end{align*}
+</div>
+<p data-braille="continuation">This is horribly wrong. It is not even a plane, as any plane has an equation of the form \(ax+by+cz=d\text{,}\) with \(a\text{,}\) \(b\text{,}\) \(c\) and \(d\) constants.</p></article><p id="p-1623">Now we'll move on to some more involved examples.</p>
+<article class="example example-like" id="eg_tan_plane_E"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_E"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_E"><article class="example example-like"><p id="p-1624">Suppose that we wish to find the highest and lowest points on the surface \(G(x,y,z) = x^2-2x +y^2-4y + z^2-6z = 2\text{.}\) That is, we wish to find the points on the surface with the maximum value of \(z\) and with the minimum<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-55" id="fn-55"><sup> 9 </sup></a> value of \(z\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-55"><div class="fn">Recall that “minimum” means the most negative, not the closest to zero.</div></div>
+<p id="p-1625">Completing three squares,</p>
+<div class="displaymath">
+\begin{align*}
+G(x,y,z) &amp;= x^2-2x +y^2-4y + z^2-6z\\
+&amp;=(x-1)^2 +(y-2)^2 +(z-3)^2 - 14.
+\end{align*}
+</div>
+<p data-braille="continuation">So the surface \(G(x,y,z)=2\) is a sphere, whose highest point is the north pole and whose lowest point is the south pole. But let's pretend that \(G(x,y,z)=2\) is some complicated surface that we can't easily picture.</p>
+<p id="p-1626">We'll find its highest and lowest points by exploiting the fact that the tangent plane to \(G=2\) is horizontal at the highest and lowest points. Equivalently, the normal vector to \(G=2\) is vertical at the highest and lowest points. To see that this is the case, look at the figure below. If the tangent plane at \((x_0,y_0,z_0)\) is not horizontal, then the tangent plane contains points near \((x_0,y_0,z_0)\) with \(z\) bigger than \(z_0\) and points near \((x_0,y_0,z_0)\) with \(z\) smaller than \(z_0\text{.}\) Near \((x_0,y_0,z_0)\text{,}\) the tangent plane is a good approximation to the surface. So the surface also contains<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-56" id="fn-56"><sup> 10 </sup></a> such points.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-56"><div class="fn">While this is intuitively obvious, proving it is beyond the scope of this text.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/highLowB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1627">The gradient is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla G(x,y,z) = (2x-2)\,\hi + (2y-4)\,\hj + (2z-6)\,\hk
+\end{equation*}
+</div>
+<p data-braille="continuation">It is vertical when the \(\hi\) and \(\hj\) components are both zero. This happens when \(2x-2=0\) and \(2y-4=0\text{,}\) i.e. when \(x=1\) and \(y=2\text{.}\) So the normal vector to the surface \(G=2\) at the point \((x,y,z)\) is vertical when \(x=1\text{,}\) \(y=2\) and (don't forget that \((x,y,z)\) has to be on \(G=2\))</p>
+<div class="displaymath">
+\begin{align*}
+&amp;G(1,2,z) = 1^2-2\times 1 +2^2-4\times 2 + z^2-6z = 2\\
+\iff &amp; z^2-6z-7=0\\
+\iff &amp; (z-7)(z+1)=0\\
+\iff &amp; z=7,\ -1
+\end{align*}
+</div>
+<p data-braille="continuation">The highest point is \((1,2,7)\) and the lowest point is \((1,2,-1)\text{,}\) as expected.</p></article></div>
+<p id="p-1628">We could have short-cut the last example by using that the surface was a sphere. Here is an example in the same spirit for which we don't have an easy short-cut.</p>
+<article class="example example-like" id="eg_tan_plane_F"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_F"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.11</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_F"><article class="example example-like"><p id="p-1629">In the last example, we found the points on a specified surface having the largest and smallest values of \(z\text{.}\) We'll now ramp up the level of difficulty a bit and find the points on the surface \(x^2+ 2y^2 +3z^2 = 72\) that have the largest and smallest values of \(x+y+3z\text{.}\)</p>
+<p id="p-1630">To develop a strategy for tackling this problem, consider the following sketch.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/bigSmall.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1631">The red ellipse in the sketch is intended to represent (schematically) our surface</p>
+<div class="displaymath">
+\begin{equation*}
+x^2+ 2y^2 +3z^2 = 72
+\end{equation*}
+</div>
+<p data-braille="continuation">which is an ellipsoid. The middle diagonal (black) line is intended to represent (schematically) the plane \(x+y+3z=C\) for some more or less randomly chosen value of the constant C. At each point on that plane, the function, \(x+y+3z\text{,}\) (that we are trying to maximize and minimize) takes the value \(C\text{.}\) In particular, for the \(C\) chosen in the figure, \(x+y+3z=C\) does intersect our surface, indicating that \(x+y+3z\) does indeed take the value \(C\) somewhere on our surface.</p>
+<p id="p-1632">To maximize \(x+y+3z\text{,}\) imagine slowly increasing the value of \(C\text{.}\) As we do so, the plane \(x+y+3z=C\) moves to the right. We want to stop increasing \(C\) at the biggest value of \(C\) for which the plane \(x+y+3z=C\) intersects our surface \(x^2+ 2y^2 +3z^2 = 72\text{.}\) For that value of \(C\) the plane \(x+y+3z=C\text{,}\) which is represented by the right hand blue line in the sketch, is tangent to our surface.</p>
+<p id="p-1633">Similarly, to minimize \(x+y+3z\text{,}\) imagine slowly decreasing the value of \(C\text{.}\) As we do so, the plane \(x+y+3z=C\) moves to the left. We want to stop decreasing \(C\) at the smallest value of \(C\) for which the plane \(x+y+3z=C\) intersects our surface \(x^2+ 2y^2 +3z^2 = 72\text{.}\) For that value of \(C\) the plane \(x+y+3z=C\text{,}\) which is represented by the left hand blue line in the sketch, is again tangent to our surface. The previous Example <a class="xref" data-knowl="./knowl/eg_tan_plane_E.html" title="Example 2.5.10">2.5.10</a> was similar, except that the plane was \(z=C\text{.}\)</p>
+<p id="p-1634">We are now ready to compute. We need to find the points \((a,b,c)\) (in the sketch, they are the black dot points of tangency) for which</p>
+<ul class="disc">
+<li id="li-811">\((a,b,c)\) is on the surface and</li>
+<li id="li-812">the normal vector to the surface \(x^2+ 2y^2 +3z^2 = 72\) at \((a,b,c)\) is parallel to \(\llt 1,1,3\rgt\text{,}\) which is a normal vector to the plane \(x+y+3z=C\)</li>
+</ul>
+<p data-braille="continuation">Since the gradient of \(x^2+ 2y^2 +3z^2\) is \(\llt 2x\,,\,4y\,,\,6z\rgt=2\llt x\,,\,2y\,,\,3z\rgt\text{,}\) these two conditions are, in equations,</p>
+<div class="displaymath">
+\begin{align*}
+a^2+ 2b^2 +3c^2 &amp;= 72\\
+\llt a\,,\,2b\,,\,3c\rgt &amp;=t \llt 1,1,3\rgt\qquad
+\text{for some number } t
+\end{align*}
+</div>
+<p data-braille="continuation">The second equation says that \(a=t\text{,}\) \(b=\frac{t}{2}\) and \(c=t\text{.}\) Substituting this into the first equation gives</p>
+<div class="displaymath">
+\begin{align*}
+t^2+ \frac{1}{2}t^2 +3t^2 &amp;= 72
+\iff \frac{9}{2}t^2=72
+\iff t^2 = 16
+\iff t=\pm 4
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<ul class="disc">
+<li id="li-813">the point on the surface  \(x^2+ 2y^2 +3z^2 = 72\) at which \(x+y+3z\) takes its maximum value is \((a,b,c) = \big(t,\frac{t}{2},t\big)\Big|_{t=4}=(4,2,4)\) and</li>
+<li id="li-814">\(x+y+3z\) takes the value \(4+2+3\times 4 =18\) there.</li>
+<li id="li-815">The point on the surface  \(x^2+ 2y^2 +3z^2 = 72\) at which \(x+y+3z\) takes its minimum value is \((a,b,c)
+=\big(t,\frac{t}{2},t\big)\Big|_{t=-4}= (-4,-2,-4)\) and</li>
+<li id="li-816">\(x+y+3z\) takes the value \(-4-2+3\times (-4) =-18\) there.</li>
+</ul></article></div>
+<article class="example example-like" id="eg_tan_plane_G"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_G"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.12</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_G"><article class="example example-like"><p id="p-1635">Find the distance from the point \((1,1,1)\) to the plane \(x+2y+3z=20\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-206" id="solution-206"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-206"><div class="solution solution-like">
+<p id="p-1636">First note that the point \((1,1,1)\) is not itself on the plane \(x+2y+3z=20\) because</p>
+<div class="displaymath">
+\begin{equation*}
+1+2\times 1 +3\times 1 =6\ne 20
+\end{equation*}
+</div>
+<p data-braille="continuation">Denote by \((a,b,c)\) the point on the plane \(x+2y+3z=20\) that is nearest \((1,1,1)\text{.}\) Then the vector from \((1,1,1)\) to \((a,b,c)\text{,}\) namely \(\llt a-1\,,\,b-1\,,\,c-1\rgt\text{,}\) must be perpendicular<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-57" id="fn-57"><sup> 11 </sup></a> to the plane. As the gradient of \(x+2y+3z\text{,}\) namely \(\llt 1\,,\,2\,,\,3\rgt\text{,}\) is a normal vector to the plane, \(\llt a-1\,,\,b-1\,,\,c-1\rgt\) must be parallel to \(\llt 1\,,\,2\,,\,3\rgt\text{.}\) So there must be some number \(t\) so that</p>
+<div class="displaymath">
+\begin{gather*}
+\llt a-1\,,\,b-1\,,\,c-1\rgt = t \llt 1\,,\,2\,,\,3\rgt
+\end{gather*}
+</div>
+<p data-braille="continuation">or</p>
+<div class="displaymath">
+\begin{gather*}
+a = t+1,\ b=2t+1,\ c=3t+1
+\end{gather*}
+</div>
+<p data-braille="continuation">As \((a,b,c)\) must be on the plane, we know that \(a+2b+3c=20\) and so</p>
+<div class="displaymath">
+\begin{gather*}
+(t+1) +2(2t+1) +3(3t+1)=20
+\implies 14t = 14
+\implies t=1
+\end{gather*}
+</div>
+<p data-braille="continuation">The distance from \((1,1,1)\) to the plane \(x+2y+3z=20\) is the length of the vector \(\llt a-1\,,\,b-1\,,\,c-1\rgt = t \llt 1\,,\,2\,,\,3\rgt
+= \llt 1\,,\,2\,,\,3\rgt\) which is \(\sqrt{14}\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-57"><div class="fn">We saw why this vector must be perpendicular to the plane in Example <a class="xref" data-knowl="./knowl/eg_tan_plane_B.html" title="Example 2.5.3: Optional">2.5.3</a>.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/distanceSideC.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-207" id="solution-207"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-207"><div class="solution solution-like">
+<p id="p-1637">Denote by \(P=(a,b,c)\) the point on the plane \(x+2y+3z=20\) that is nearest the point \(Q=(1,1,1)\text{.}\) Pick any other point on the plane and call it \(R\text{.}\) For example \((x,y,z) = (20,0,0)\) obeys \(x+2y+3z=20\)  and so \(R=(20,0,0)\) is a point on the plane.</p>
+<p id="p-1638">The triangle \(PQR\) is right angled. Denote by \(\theta\) the angle between the hypotenuse \(QR\) and the side \(QP\text{.}\) The distance from \(Q=(1,1,1)\) to the plane is the length of the line segment \(QP\text{,}\) which is</p>
+<div class="displaymath">
+\begin{align*}
+\text{distance} &amp;= |QP| = |QR|\cos\theta
+\end{align*}
+</div>
+<p data-braille="continuation">Now, the dot product between the vector from \(Q\) to \(R\text{,}\) which is \(\llt 19,-1,-1\rgt\text{,}\) with the vector \(\llt 1,2,3\rgt\text{,}\) which is normal to the plane and hence parallel to the side \(QP\) is</p>
+<div class="displaymath">
+\begin{align*}
+\llt 19,-1,-1\rgt\cdot \llt 1,2,3\rgt &amp;=14\\
+&amp;= |\llt 19,-1,-1\rgt|\  |\llt 1,2,3\rgt|\ \cos\theta\\
+&amp;= |QR|\  \sqrt{14}\ \cos\theta
+\end{align*}
+</div>
+<p data-braille="continuation">so that, finally,</p>
+<div class="displaymath">
+\begin{gather*}
+\text{distance} = |QR|\cos\theta =\frac{14}{\sqrt{14}}=\sqrt{14}
+\end{gather*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_tan_plane_H"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_H"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.13</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_H"><article class="example example-like"><p id="p-1639">Let \(F(x,y,z)=0\) and \(G(x,y,z)=0\) be two surfaces. These two surfaces intersect along a curve. Find a tangent vector to this curve at the point \((x_0,y_0,z_0)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-208" id="solution-208"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-208"><div class="solution solution-like">
+<p id="p-1640">Call the tangent vector \(\vT\text{.}\) Then \(\vT\) has to be</p>
+<ul class="disc">
+<li id="li-817">tangent to the surface  \(F(x,y,z)=0\) at \((x_0,y_0,z_0)\) and</li>
+<li id="li-818">tangent to the surface  \(G(x,y,z)=0\) at \((x_0,y_0,z_0)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Consequently \(\vT\) has to be</p>
+<ul class="disc">
+<li id="li-819">perpendicular to the vector \(\vnabla F(x_0,y_0,z_0)\text{,}\) which is normal to  \(F(x,y,z)=0\) at \((x_0,y_0,z_0)\text{,}\) and at the same time has to be</li>
+<li id="li-820">perpendicular to the vector \(\vnabla G(x_0,y_0,z_0)\text{,}\) which is normal to  \(G(x,y,z)=0\) at \((x_0,y_0,z_0)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Recall that an easy way to construct a vector that is perpendicular to two other vectors is to take their cross product. So we take</p>
+<div class="displaymath">
+\begin{align*}
+\vT &amp;= \vnabla F(x_0,y_0,z_0)\times \vnabla G(x_0,y_0,z_0)
+=\det\left[\begin{matrix}
+\hi &amp; \hj &amp; \hk \\
+F_x &amp; F_y &amp; F_z \\
+G_x &amp; G_y &amp; G_z \end{matrix}\right]\\
+&amp; =\big(F_yG_z-F_z G_y\big)\,\hi + \big(F_zG_x-F_x G_z\big)\,\hj
++\big(F_xG_y-F_y G_x\big)\,\hk
+\end{align*}
+</div>
+<p data-braille="continuation">where all partial derivatives are evaluated at \((x,y,z)=(x_0,y_0,z_0)\text{.}\)</p>
+</div></div>
+</div></article></div>
+<p id="p-1641">Let's put Example <a class="xref" data-knowl="./knowl/eg_tan_plane_H.html" title="Example 2.5.13">2.5.13</a> into action.</p>
+<article class="example example-like" id="eg_tan_plane_I"><a data-knowl="" class="id-ref original" data-refid="hk-eg_tan_plane_I"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.14</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_tan_plane_I"><article class="example example-like"><p id="p-1642">Consider the curve that is the intersection of the surfaces</p>
+<div class="displaymath">
+\begin{equation*}
+x^2+y^2+z^2=5\qquad\text{and}\qquad
+x^2+y^2=4z
+\end{equation*}
+</div>
+<p data-braille="continuation">Find a tangent vector to this curve at the point \(\big(\sqrt{3}\,,\,1\,,\,1\big)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-209" id="solution-209"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-209"><div class="solution solution-like">
+<p id="p-1643">As a preliminary check, we verify that the point \(\big(\sqrt{3}\,,\,1\,,\,1\big)\) really is on the curve. To do so, we check that \(\big(\sqrt{3}\,,\,1\,,\,1\big)\) satisfies both equations:</p>
+<div class="displaymath">
+\begin{equation*}
+\big(\sqrt{3}\big)^2+1^2+1^2=5\qquad
+\big(\sqrt{3}\big)^2+1^2=4\times 1
+\end{equation*}
+</div>
+<p data-braille="continuation">We'll find the specified tangent vector by using the strategy of Example <a class="xref" data-knowl="./knowl/eg_tan_plane_H.html" title="Example 2.5.13">2.5.13</a>.</p>
+<p id="p-1644">Write \(F(x,y,z) = x^2+y^2+z^2\) and \(G(x,y,z) = x^2+y^2-4z\text{.}\) Then</p>
+<ul class="disc">
+<li id="li-821">the vector<div class="displaymath">
+\begin{equation*}
+\vnabla F(\sqrt{3},1,1)
+=\llt 2x\,,\,2y\,,\,2z \rgt\Big|_{(x,y,z)=(\sqrt{3},1,1)}
+= 2\llt \sqrt{3}\,,\,1\,,\,1 \rgt
+\end{equation*}
+</div>is normal to the surface \(F(x,y,z)=5\) at \(\big(\sqrt{3}\,,\,1\,,\,1\big)\text{,}\) and</li>
+<li id="li-822">the vector<div class="displaymath">
+\begin{equation*}
+\vnabla G(\sqrt{3},1,1)
+=\llt 2x\,,\,2y\,,\,-4 \rgt\Big|_{(x,y,z)=(\sqrt{3},1,1)}
+= 2\llt \sqrt{3}\,,\,1\,,\,-2 \rgt
+\end{equation*}
+</div>is normal to the surface \(G(x,y,z)=0\) at \(\big(\sqrt{3}\,,\,1\,,\,1\big)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So a tangent vector is</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\llt \sqrt{3}\,,\,1\,,\,1 \rgt\times \llt \sqrt{3}\,,\,1\,,\,-2 \rgt
+=\det\left[\begin{matrix}
+\hi &amp; \hj &amp; \hk \\
+\sqrt{3} &amp;  1  &amp; 1 \\
+\sqrt{3} &amp;  1  &amp; -2 \end{matrix}\right]\\
+&amp;\hskip0.5in =\big(-2-1\big)\,\hi + \big(\sqrt{3}+2\sqrt{3}\big)\,\hj
++\big(\sqrt{3}-\sqrt{3}\big)\,\hk\\
+&amp;\hskip0.5in= -3\,\hi + 3\sqrt{3}\,\hj
+\end{align*}
+</div>
+<p data-braille="continuation">There is an easy common factor of \(3\) in both components. So we can create a slightly neater tangent vector by dividing the length of \(-3\,\hi + 3\sqrt{3}\,\hj\) by \(3\text{,}\) giving  \(\llt -1\,,\,\sqrt{3}\,,\,0\rgt\text{.}\)</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_hidden_surface"><a data-knowl="" class="id-ref original" data-refid="hk-eg_hidden_surface"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.15</span><span class="period">.</span><span class="space"> </span><span class="title">(Optional) computer graphics hidden-surface elimination.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_hidden_surface"><article class="example example-like"><p id="p-1645">When you look at a solid three dimensional object, you do not see all of the surface of the object — parts of the surface are hidden from your view by other parts of the object. For example, the following sketch shows, schematically, a ray of light leaving your eye and hitting the surface of the object at the light dot. The object is solid, so the light cannot penetrate any further. But, if it could, it would follow the dotted line, hitting the surface of the object three more times. Your eye can see the light dot,  but cannot see the other three dark dots.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hiddenA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1646">Recreating this effect in computer generated graphics is called “hidden-surface elimination”.  In general, implementing hidden-surface elimination can be quite complicated. Often a technique called “ray tracing” is used<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-58" id="fn-58"><sup> 12 </sup></a>. However, it is easy if you know about vectors and gradients, and you are only looking at a single convex body. By definition, a solid is convex if, whenever two points are in the solid, then the line segment joining the two points is also contained in the solid.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-58"><div class="fn">You can find out more about it by plugging “ray tracing” into the search engine of your choice.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:9.15%;margin-right:9.15%;">
+<div class="sbspanel" style="width:38.8004895960832%;justify-content:center;"><img src="figs/hiddenB.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:38.8004895960832%;justify-content:center;"><img src="figs/hiddenC.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-1647">So suppose that we are looking at a convex solid, that the equation of the surface of the solid is \(G(x,y,z)=0\text{,}\) and that our eye is at \((x_e,y_e,z_e)\text{.}\)</p>
+<ul id="p-1648" class="disc"><li id="li-823">
+<p id="p-1649">First consider a light ray that leaves our eye and then just barely nicks the solid at the point \((x,y,z)\text{,}\) as in the figure on the left below. The light ray is a tangent line to the surface at \((x,y,z)\text{.}\) So the direction vector of the light ray, \(\llt x-x_e,y-y_e,z-z_e \rgt\text{,}\) is tangent to the surface at \((x,y,z)\)  and consequently is perpendicular to the normal vector, \(\vn=\vnabla G(x,y,z)\text{,}\) of the surface at \((x,y,z)\text{.}\) Thus</p>
+<div class="displaymath">
+\begin{equation*}
+\llt x-x_e,y-y_e,z-z_e \rgt\cdot \vnabla G(x,y,z)=0
+\end{equation*}
+</div>
+</li></ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.175000000000001%;margin-right:1.175000000000001%;">
+<div class="sbspanel" style="width:44.6492575524834%;justify-content:center;"><img src="figs/hiddenD.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:52.9441884280594%;justify-content:center;"><img src="figs/hiddenE.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<ul id="p-1650" class="disc"><li id="li-824">
+<p id="p-1651">Now consider a light ray that leaves our eye and then passes through the solid, as in the figure on the right above. Call the point at which the light ray first enters the solid \((x,y,z)\) and the point at which the light ray leaves the solid \((x',y,'z')\text{.}\)</p>
+<ul class="circle">
+<li id="li-825">Let \(\vv\) be a vector that has the same direction as, i.e. is a positive multiple of, the vector \(\llt x-x_e, y-y_e, z-z_e\rgt\text{.}\)</li>
+<li id="li-826">Let \(\vn\) be an outward pointing normal to the solid at \((x,y,z)\text{.}\) It will be either \(\vnabla G(x,y,z)\) or \(-\vnabla G(x,y,z)\text{.}\)</li>
+<li id="li-827">Let \(\vn'\) be an outward pointing normal to the solid at \((x',y',z')\text{.}\) It will be either \(\vnabla G(x',y',z')\) or \(-\vnabla G(x',y',z')\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Then</p>
+<ul class="circle">
+<li id="li-828">at the point \((x,y,z)\) where the ray enters the solid, which is a visible point, the direction vector \(\vv\) points into the solid. The angle \(\theta\) between \(\vv\) and the outward pointing normal \(\vn\) is greater than \(90^\circ\text{,}\) so that the dot product \(\vv\cdot\vn=|\vv|\,|\vn|\,\cos\theta \lt 0\text{.}\) But</li>
+<li id="li-829">at the point \((x',y',z')\) where the ray leaves the solid, which is a hidden point, the direction vector \(\vv\) points out of the solid. The angle \(\theta\) between \(\vv\) and the outward pointing normal \(\vn'\) is less than \(90^\circ\text{,}\) so that the dot product \(\vv\cdot\vn'=|\vv|\,|\vn'|\,\cos\theta\gt 0\text{.}\)</li>
+</ul>
+</li></ul>
+<p id="p-1652">Our conclusion is that, if we are looking in the direction \(\vv\text{,}\) and if the outward pointing normal<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-59" id="fn-59"><sup> 13 </sup></a> to the surface of the solid at \((x,y,z)\) is \(\vnabla G(x,y,z)\) then the point \((x,y,z)\) is hidden if and only if \(\vv\cdot\vnabla G(x,y,z)\gt 0\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-59"><div class="fn">If \(\vnabla G(x,y,z)\) is the inward pointing normal, just replace \(G\) by \(-G\text{.}\)</div></div>
+<p id="p-1653">This method was used by the computer graphics program that created the shaded figures<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-60" id="fn-60"><sup> 14 </sup></a> in Examples  <a class="xref" data-knowl="./knowl/eg_hyperboloid.html" title="Example 1.7.1: \(4x^2+y^2-z^2=1\)">1.7.1</a> and <a class="xref" data-knowl="./knowl/eg_hyperboloid_two.html" title="Example 1.7.2: \(4x^2+y^2-z^2=-1\)">1.7.2</a>, which are reproduced here.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-60"><div class="fn">Those figures are not convex. But it was still possible to use the method discussed above because any light ray from our eye that passes through the figure intersects the figure at most twice. It first enters the figure at a visible point and then exits the figure at a hidden point.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10.075%;margin-right:10.075%;">
+<div class="sbspanel" style="width:35.0657482780213%;justify-content:center;"><img src="figs/hyperboloid1sheetDD.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:39.6994364433313%;justify-content:center;"><img src="figs/hyperboloid2sheetDD.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div></article></div>
+<p id="p-1654">Tangent planes, in addition to being geometric objects, provide a simple but powerful tool for approximating functions of two variables near a specified point. We saw something very similar in the CLP-1 text where we approximated functions of one variable by their tangent lines. This brings us to our next topic — approximating functions.</p></section><section class="exercises" id="exercises-12"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.5.3</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-33">
+<div class="introduction" id="introduction-43"><p id="p-1655"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-196"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1656">Is it reasonable to say that the surfaces \(x^2+y^2+(z-1)^2=1\) and \(x^2+y^2+(z+1)^2=1\) are tangent to each other at \((0,0,0)\text{?}\)</p></article><article class="exercise exercise-like" id="tan_line_plane"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1660">Let the point \(\vr_0= (x_0,y_0,z_0)\) lie on the surface \(G(x,y,z)=0\text{.}\) Assume that \(\vnabla G(x_0,y_0,z_0)\ne\vZero\text{.}\) Suppose that the parametrized curve \(\vr(t)=\big(x(t),y(t),z(t)\big)\) is contained in the surface and that \(\vr(t_0)=\vr_0\text{.}\) Show that the tangent line to the curve at \(\vr_0\) lies in the tangent plane to \(G=0\) at \(\vr_0\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-198"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1664">Let \(F(x_0,y_0,z_0)=G(x_0,y_0,z_0)=0\) and let the vectors \(\vnabla F(x_0,y_0,z_0)\) and \(\vnabla G(x_0,y_0,z_0)\) be nonzero and not be parallel to each other. Find the equation of the normal plane to the curve of intersection of the surfaces \(F(x,y,z)=0\) and \(G(x,y,z)=0\) at \((x_0,y_0,z_0)\text{.}\) By definition, that normal plane is the plane through \((x_0,y_0,z_0)\) whose normal vector is the tangent vector to the curve of intersection at \((x_0,y_0,z_0)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-199"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1668">Let \(f(x_0,y_0)=g(x_0,y_0)\) and let \(\llt f_x(x_0,y_0), f_y(x_0,y_0)\rgt\ne \llt g_x(x_0,y_0), g_y(x_0,y_0)\rgt\text{.}\) Find the equation of the tangent line to the curve of intersection of the surfaces \(z=f(x,y)\) and \(z=g(x,y)\) at \((x_0\,,\,y_0\,,\,z_0=f(x_0,y_0))\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-34">
+<div class="introduction" id="introduction-44"><p id="p-1672"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-200"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1673">Let \(\displaystyle f(x,y)=\frac{x^2y}{x^4+2y^2}\text{.}\) Find the tangent plane to the surface \(z = f(x,y)\) at the point \(\left( -1\,,\,1\,,\,\frac{1}{3}\right)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-201"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1677">Find the tangent plane to</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{27}{\sqrt{x^2+y^2+z^2+3}}=9
+\end{equation*}
+</div>
+<p data-braille="continuation">at the point \((2, 1, 1)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-202"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-1680">Find the equations of the tangent plane and the normal line to the graph of the specified function at the specified point.</p>
+<ol class="lower-alpha">
+<li id="li-836">\(f(x,y)=x^2-y^2\) at \((-2,1)\)</li>
+<li id="li-837">\(f(x,y)=e^{xy}\) at \((2,0)\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-203"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1685">Consider the surface \(z = f(x,y)\) defined implicitly by the equation \(xyz^2 + y^2 z^3 = 3 + x^2\text{.}\) Use a 3--dimensional gradient vector to find the equation of the tangent plane to this surface at the point \((-1, 1, 2)\text{.}\) Write your answer in the form \(z = ax + by + c\text{,}\) where \(a\text{,}\) \(b\) and \(c\) are constants.</p></article><article class="exercise exercise-like" id="exercise-204"><h6 class="heading">
+<span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1688">A surface is given by</p>
+<div class="displaymath">
+\begin{equation*}
+z = x^2 - 2xy + y^2 .
+\end{equation*}
+</div>
+<ol id="p-1689" class="lower-alpha">
+<li id="li-838">Find the equation of the tangent plane to the surface at \(x = a\text{,}\) \(y = 2a\text{.}\)</li>
+<li id="li-839">For what value of \(a\) is the tangent plane parallel to the plane \(x - y + z = 1\text{?}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-205"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1694">Find the tangent plane and normal line to the surface \(z=f(x,y)=\frac{2y}{x^2+y^2}\) at \((x,y)=(-1,2)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-206"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1698">Find all the points on the surface \(x^2 + 9y^2 + 4z^2 = 17\) where the tangent plane is parallel to the plane \(x - 8z = 0\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-207"><h6 class="heading">
+<span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1702">Let \(S\) be the surface \(z = x^2 + 2y^2 + 2y - 1\text{.}\) Find all points \(P (x_0,y_0,z_0)\) on \(S\) with \(x_0 \ne 0\) such that the normal line at \(P\) contains the origin \((0,0,0)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-208"><h6 class="heading">
+<span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1706">Find all points on the hyperboloid \(z^2=4x^2+y^2-1\) where the tangent plane is parallel to the plane \(2x-y+z=0\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-209"><h6 class="heading"><span class="codenumber">14<span class="period">.</span></span></h6>
+<p id="p-1710">Find a vector of length \(\sqrt{3}\) which is tangent to the curve of intersection of the surfaces \(\ z^2=4x^2+9y^2\ \) and \(\ 6x+3y+2z=5\ \) at \(\ (2,1,-5)\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-35">
+<div class="introduction" id="introduction-45"><p id="p-1715"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-210"><h6 class="heading"><span class="codenumber">15<span class="period">.</span></span></h6>
+<p id="p-1716">Find all horizontal planes that are tangent to the surface with equation</p>
+<div class="displaymath">
+\begin{equation*}
+z=xy e^{-(x^2+y^2)/2}
+\end{equation*}
+</div>
+<p data-braille="continuation">What are the largest and smallest values of \(z\) on this surface?</p></article><article class="exercise exercise-like" id="exercise-211"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1720">Let \(S\) be the surface</p>
+<div class="displaymath">
+\begin{equation*}
+xy-2x+yz+x^2+y^2+z^3=7
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-845">Find the tangent plane and normal line to the surface \(S\) at the point \((0,2,1)\text{.}\)</li>
+<li id="li-846">The equation defining \(S\) implicitly defines \(z\) as a function of \(x\) and \(y\) for \((x,y,z)\) near \((0,2,1)\text{.}\) Find expressions for \(\pdiff{z}{x}\) and \(\pdiff{z}{y}\text{.}\) Evaluate \(\pdiff{z}{y}\) at \((x,y,z)=(0,2,1)\text{.}\)</li>
+<li id="li-847">Find an expression for \(\frac{\partial^2 z \,}{\partial x\partial y}\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-212"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-1730" class="lower-alpha">
+<li id="li-848">Find a vector perpendicular at the point \((1,1,3)\) to the surface with equation \(x^2+z^2=10\text{.}\)</li>
+<li id="li-849">Find a vector tangent at the same point to the curve of intersection of the surface in part (a) with surface \(y^2+z^2=10\text{.}\)</li>
+<li id="li-850">Find parametric equations for the line tangent to that curve at that point.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-213"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1738">Let \(P\) be the point where the curve</p>
+<div class="displaymath">
+\begin{equation*}
+\vr(t) = t^3\,\hi + t\,\hj + t^2\,\hk,\qquad (0 \le t  \lt \infty)
+\end{equation*}
+</div>
+<p data-braille="continuation">intersects the surface</p>
+<div class="displaymath">
+\begin{equation*}
+z^3 + xyz -2 = 0
+\end{equation*}
+</div>
+<p data-braille="continuation">Find the (acute) angle between the curve and the surface at \(P\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-214"><h6 class="heading"><span class="codenumber">19<span class="period">.</span></span></h6>
+<p id="p-1742">Find the distance from the point \((1,1,0)\) to the circular paraboloid with equation \(z=x^2+y^2\text{.}\)</p></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

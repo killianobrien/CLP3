@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:45:28+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>(a) Substituting \(u(x,t)= X(x)\,T(t)\) into the given PDE yields</p>
+<div class="displaymath">
+\begin{equation*}
+X(x)\,T'(t) = u_t=x\,u_x=x\, X'(x)\,T(t)
+\end{equation*}
+</div>
+<p data-braille="continuation">Then dividing both sides by \(X(x)\,T(t)\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{T'(t)}{T(t)} = x\,\frac{X'(x)}{X(x)}
+\end{equation*}
+</div>
+<p data-braille="continuation">as desired.</p>
+<p>(b) The left hand side \(\frac{T'(t)}{T(t)}\) is independent of \(x\text{,}\) and the right hand side \(x\,\frac{X'(x)}{X(x)}\) is independent of \(t\text{.}\) The left and right hand sides are equal to each other, so both are independent of both \(t\) and \(x\text{,}\) i.e. are constant. If we call the constant \(\la\text{,}\) then</p>
+<div class="displaymath">
+\begin{align*}
+\frac{T'(t)}{T(t)} \amp= x\,\frac{X'(x)}{X(x)}=\la \\
+\implies T'(t)\amp=\la\,T(t),\qquad X'(x)=\frac{\la}{x} X(x)
+\end{align*}
+</div>
+<p>(c) The equation \(T'(t)=\la\,T(t)\) is the type of ordinary differential equation that we studied in Section 3.3, on exponential growth and decay, in the CLP-1 text. We found in Theorem 3.3.2 there that the general solution to this ODE is \(T(t) = Ce^{\la t}\) with \(C\) being an arbitrary constant, which we require to be positive to make \(T&gt;0\text{.}\) The equation \(X'(x)=\frac{\la}{x} X(x)\) is a separable ODE. We studied such ODE's in Section 2.4 in the CLP-2 text. To solve it, we divide across by \(X(x)\text{,}\) giving</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+\frac{X'(x)}{X(x)} = \frac{\la}{x}
+\amp\implies \diff{}{x} \ln X(x) = \frac{\la}{x} 
+\qquad\amp\amp\text{assuming }X,x&gt;0 \\
+\amp\implies \ln X(x) = \la\ln x+K'\qquad\amp\amp\text{with }K'\text{ constant} \\
+\amp\implies X(x) = K x^\la \qquad\amp\amp\text{with }K=e^{K'}&gt;0\text{ constant} 
+\end{alignat*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{equation*}
+u(x,t)= X(x)\,T(t)
+= D\,e^{\la t}\,x^\la\qquad
+\text{with }D=CK&gt;0\text{ a constant}
+\end{equation*}
+</div>
+<p data-braille="continuation">solves the PDE \(u_t=xu_x\) for \(x&gt;0\text{.}\)</p>
+</div></body>
+</html>

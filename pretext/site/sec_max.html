@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:41:37+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Maximum and Minimum Values</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_pde.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_Lagrange.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_pde.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_Lagrange.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max" class="active">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_max"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.9</span> <span class="title">Maximum and Minimum Values</span>
+</h2>
+<section class="introduction" id="introduction-58"><p id="p-2280">One of the core topics in single variable calculus courses is finding the maxima and minima of functions of one variable. We'll now extend that discussion to functions of more than one variable<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-75" id="fn-75"><sup> 1 </sup></a>. Rather than leaping into the deep end, we'll not be too ambitious and concentrate on functions of two variables. That being said, many of the techniques work more generally. To start, we have the following natural extensions to some familiar definitions.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-75"><div class="fn">Life is not (always) one-dimensional and sometimes we have to embrace it.</div></div>
+<article class="definition definition-like" id="def_local_max_min"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.9.1</span><span class="period">.</span>
+</h6>
+<p id="p-2281">Let the function \(f(x,y)\) be defined for all \((x,y)\) in some subset \(R\) of \(\bbbr^2\text{.}\) Let \((a,b)\) be a point in \(R\text{.}\)</p>
+<ul class="disc">
+<li id="li-1022">\((a,b)\) is a <em class="emphasis">local maximum</em> of \(f(x,y)\) if \(f(x,y)\le f(a,b)\) for all \((x,y)\) close to \((a,b)\text{.}\) More precisely, \((a,b)\) is a local maximum of \(f(x,y)\) if there is an \(r \gt 0\) such that \(f(x,y)\le f(a,b)\) for all points \((x,y)\) within a distance \(r\) of \((a,b)\text{.}\)</li>
+<li id="li-1023">\((a,b)\) is a <em class="emphasis">local minimum</em> of \(f(x,y)\) if \(f(x,y)\ge f(a,b)\) for all \((x,y)\) close to \((a,b)\text{.}\)</li>
+<li id="li-1024">Local maximum and minimum values are also called extremal values.</li>
+<li id="li-1025">\((a,b)\) is an <em class="emphasis">absolute maximum</em> or <em class="emphasis">global maximum</em> of \(f(x,y)\) if \(f(x,y)\le f(a,b)\) for all \((x,y)\) in \(R\text{.}\)</li>
+<li id="li-1026">\((a,b)\) is an <em class="emphasis">absolute minimum</em> or <em class="emphasis">global minimum</em> of \(f(x,y)\) if \(f(x,y)\ge f(a,b)\) for all \((x,y)\) in \(R\text{.}\)</li>
+</ul></article></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.9.1</span> <span class="title">Local Maxima and Minima</span>
+</h3>
+<p id="p-2282">One of the first things you did when you were developing the techniques used to find the maximum and minimum values of \(f(x)\) was ask yourself<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-76" id="fn-76"><sup> 2 </sup></a></p>
+<ul class="disc"><li id="li-1027">Suppose that the largest value of \(f(x)\) is \(f(a)\text{.}\) What does that tell us about \(a\text{?}\)</li></ul>
+<p data-braille="continuation">After a little thought you answered</p>
+<ul class="disc"><li id="li-1028">If the largest value of \(f(x)\) is \(f(a)\) and \(f\) is differentiable at \(a\text{,}\) then \(f'(a)=0\text{.}\)</li></ul>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-76"><div class="fn">Or perhaps your instructor asked you.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/localMaxA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2283">Let's recall why that's true. Suppose that the largest value of \(f(x)\) is \(f(a)\text{.}\) Then for all \(h \gt 0\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+f(a\!+\!h)\le f(a)
+\implies f(a\!+\!h)-f(a)\le 0
+\implies \frac{f(a\!+\!h)-f(a)}{h}\le 0\quad\text{if } h \gt 0
+\end{equation*}
+</div>
+<p data-braille="continuation">Taking the limit \(h\rightarrow 0\) tells us that \(f'(a)\le 0\text{.}\) Similarly<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-77" id="fn-77"><sup> 3 </sup></a>,  for all \(h \lt 0\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+f(a\!+\!h)\le f(a)
+\implies f(a\!+\!h)-f(a)\le 0
+\implies \frac{f(a\!+\!h)-f(a)}{h}\ge 0\quad\text{if } h \lt 0
+\end{equation*}
+</div>
+<p data-braille="continuation">Taking the limit \(h\rightarrow 0\) now tells us that \(f'(a)\ge 0\text{.}\) So we have both \(f'(a)\ge 0\) and \(f'(a)\le 0\) which forces \(f'(a)=0\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-77"><div class="fn">Recall that if \(h\lt 0\) and \(A\le B\text{,}\) then \(hA\ge hB\text{.}\) This is because the product of any two negative numbers is positive, so that \(h\lt 0,\ A\le B
+\implies A-B\le 0
+\implies h(A-B)\ge 0
+\implies hA\ge hB\text{.}\)</div></div>
+<p id="p-2284">You also observed at the time that for this argument to work, you only need \(f(x)\le f(a)\) for all \(x\)'s close to \(a\text{,}\) not necessarily for all \(x\)'s in the whole world. (In the above inequalities, we only used \(f(a+h)\) with \(h\) small.) Since we care only about \(f(x)\) for \(x\) near \(a\text{,}\) we can refine the above statement.</p>
+<ul class="disc"><li id="li-1029">If \(f(a)\) is a local maximum for \(f(x)\) and \(f\) is differentiable at \(a\text{,}\) then \(f'(a)=0\text{.}\)</li></ul>
+<p data-braille="continuation">Precisely the same reasoning applies to minima.</p>
+<ul class="disc"><li id="li-1030">If \(f(a)\) is a local minimum for \(f(x)\) and \(f\) is differentiable at \(a\text{,}\) then \(f'(a)=0\text{.}\)</li></ul>
+<p id="p-2285">Let's use the ideas of the above discourse to extend the study of local maxima and local minima to functions of more than one variable. Suppose that the function \(f(x,y)\) is defined for all \((x,y)\) in some subset \(R\) of \(\bbbr^2\text{,}\) that \((a,b)\) is point of \(R\) that is not on the boundary of \(R\text{,}\) and that \(f\) has a local maximum at \((a,b)\text{.}\) See the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/max.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2286">Then the function \(f(x,y)\) must decrease in value as \((x,y)\) moves away from \((a,b)\) in <em class="emphasis">any</em> direction. No matter which direction \(\vd\) we choose, the directional derivative of \(f\) at \((a,b)\) in direction \(\vd\) must be zero or smaller. Writing this in mathematical symbols, we get</p>
+<div class="displaymath">
+\begin{gather*}
+D_\vd f(a,b) = \vnabla f(a,b)\cdot\frac{\vd}{|\vd|}\le 0
+\end{gather*}
+</div>
+<p data-braille="continuation">And the directional derivative of \(f\) at \((a,b)\) in the direction \(-\vd\) also must be zero or negative.</p>
+<div class="displaymath">
+\begin{gather*}
+D_{-\vd} f(a,b) = \vnabla f(a,b)\cdot\frac{-\vd}{|\vd|}\le 0
+\quad\text{which implies that}\quad \vnabla f(a,b)\cdot\frac{\vd}{|\vd|}\ge 0
+\end{gather*}
+</div>
+<p data-braille="continuation">As \(\vnabla f(a,b)\cdot\frac{\vd}{|\vd|}\) must be both positive (or zero) and negative (or zero) at the same time, it must be zero. In particular, choosing \(\vd=\hi\) forces the \(x\) component of \(\vnabla f(a,b)\) to be zero, and  choosing \(\vd=\hj\) forces the \(y\) component of \(\vnabla f(a,b)\) to be zero. We have thus shown that  \(\vnabla f(a,b)=\vZero\text{.}\) The same argument shows that \(\vnabla f(a,b)=\vZero\) when \((a,b)\) is a local minimum too. This is an important and useful result, so let's theoremise it.</p>
+<article class="theorem theorem-like" id="thm_stationary_point"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.9.2</span><span class="period">.</span>
+</h6>
+<p id="p-2287">Let the function \(f(x,y)\) be defined for all \((x,y)\) in some subset \(R\) of \(\bbbr^2\text{.}\) Assume that</p>
+<ul class="disc">
+<li id="li-1031">\((a,b)\) is a point of \(R\) that is not on the boundary of \(R\) and</li>
+<li id="li-1032">\((a,b)\) is a local maximum or local minimum of \(f\) and that</li>
+<li id="li-1033">the partial derivatives of \(f\) exist at \((a,b)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Then</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(a,b) = \vZero.
+\end{equation*}
+</div></article><article class="definition definition-like" id="def_critical_point"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.9.3</span><span class="period">.</span>
+</h6>
+<p id="p-2288">Let \(f(x,y)\) be a function and let \((a,b)\) be a point in its domain. Then</p>
+<ul class="disc">
+<li id="li-1034">if \(\vnabla f(a,b)\) exists and is zero we call \((a,b)\) a critical point (or a stationary point) of the function, and</li>
+<li id="li-1035">if \(\vnabla f(a,b)\) does not exist then we call \((a,b)\) a singular point of the  function.</li>
+</ul></article><article class="warning remark-like" id="warn_critical_point"><h6 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">2.9.4</span><span class="period">.</span>
+</h6>
+<p id="p-2289">Note that some people (and texts) combine both of these cases and call \((a,b)\) a critical point when either the gradient is zero or does not exist.</p></article><article class="warning remark-like" id="warn_saddle"><h6 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">2.9.5</span><span class="period">.</span>
+</h6>
+<p id="p-2290">Theorem <a class="xref" data-knowl="./knowl/thm_stationary_point.html" title="Theorem 2.9.2">2.9.2</a> tells us that every local maximum or minimum (in the interior of the domain of a function whose partial derivatives exist) is a critical point.  Beware that it does <em class="emphasis">not</em><a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-78" id="fn-78"><sup> 4 </sup></a> tell us that every critical point is either a local maximum or a local minimum.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-78"><div class="fn">A very common error of logic that people make is “Affirming the consequent”. “If P then Q” is true, does not imply that “If Q then P” is true . The statement “If he is Shakespeare then he is dead” is true. But concluding from “That man is dead” that “He must be Shakespeare” is just silly.</div></div></article><p id="p-2291">In fact, we shall see later<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-79" id="fn-79"><sup> 5 </sup></a>, in Examples <a class="xref" data-knowl="./knowl/eg_maxminA.html" title="Example 2.9.13: \(f(x,y)=x^2-y^2\)">2.9.13</a> and <a class="xref" data-knowl="./knowl/eg_maxminC.html" title="Example 2.9.15: \(f(x,y)= x^2-2xy-y^2+4y-2\)">2.9.15</a>, critical points that are neither local maxima nor a local minima. None-the-less, Theorem <a class="xref" data-knowl="./knowl/thm_stationary_point.html" title="Theorem 2.9.2">2.9.2</a> is very useful because often functions have only a small number of critical points. To find local maxima and minima of such functions, we only need to consider its critical and singular points. We'll return later to the question of how to tell if a critical point is a local maximum, local minimum or neither. For now, we'll just practice finding critical points.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-79"><div class="fn">And you also saw, for example in Example 3.6.4 of the CLP-1 text, that critical points that are also inflection points are neither local maxima nor local minima.</div></div>
+<article class="example example-like" id="eg_MXMNlocalA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNlocalA"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.6</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y)=x^2-2xy+2y^2+2x-6y+12\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNlocalA"><article class="example example-like"><p id="p-2292">Find all critical points of \(f(x,y)=x^2-2xy+2y^2+2x-6y+12\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-316" id="solution-316"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-316"><div class="solution solution-like">
+<p id="p-2293">To find the critical points, we need to find the gradient. To find the gradient we need to find the first order partial derivatives. So, as a preliminary calculation, we find the two first order partial derivatives of \(f(x,y)\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+f_x(x,y)&amp;= 2x-2y+2\\
+f_y(x,y)&amp;= -2x+4y-6
+\end{align*}
+</div>
+<p data-braille="continuation">So the critical points are the solutions of the pair of equations</p>
+<div class="displaymath">
+\begin{equation*}
+2x-2y+2=0\qquad -2x+4y-6=0
+\end{equation*}
+</div>
+<p data-braille="continuation">or equivalently (dividing by two and moving the constants to the right hand side)</p>
+<div class="displaymath">
+\begin{align*}
+x-y&amp;=-1 \tag{E1}\\
+-x+2y&amp;=3 \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">This is a system of two equations in two unknowns (\(x\) and \(y\)). One strategy for a solving system like this is to</p>
+<ul class="disc">
+<li id="li-1036">First use one of the equations to solve for one of the unknowns in terms of the other unknown. For example, (E1) tells us that \(y= x+1\text{.}\) This expresses \(y\) in terms of \(x\text{.}\) We say that we have solved for \(y\) in terms of \(x\text{.}\)</li>
+<li id="li-1037">Then substitute the result, \(y= x+1\) in our case, into the other equation, (E2). In our case, this gives<div class="displaymath">
+\begin{equation*}
+-x+2(x+1)=3
+\iff x+2=3
+\iff x=1
+\end{equation*}
+</div>
+</li>
+<li id="li-1038">We have now found that \(x=1\text{,}\) \(y=x+1=2\) is the only solution. So the only critical point is \((1,2)\text{.}\) Of course it only takes a moment to verify that \(\vnabla f(1,2) =\llt 0,0\rgt\text{.}\) It is a good idea to do this as a simple check of our work.</li>
+</ul>
+<p data-braille="continuation">An alternative strategy for solving a system of two equations in two unknowns, like (E1) and (E2), is to</p>
+<ul class="disc">
+<li id="li-1039">add equations (E1) and (E2) together. This gives<div class="displaymath">
+\begin{equation*}
+(E1) + (E2):\ \
+(1-1)x+(-1+2)y = -1+3
+\iff y=2
+\end{equation*}
+</div>The point here is that adding equations (E1) and (E2) together eliminates the unknown \(x\text{,}\) leaving us with one equation in the unknown \(y\text{,}\) which is easily solved. For other systems of equations you might have to multiply the equations by some numbers before adding them together.</li>
+<li id="li-1040">We now know that \(y=2\text{.}\) Substituting it into (E1) gives us<div class="displaymath">
+\begin{equation*}
+x-2=-1
+\implies x=1
+\end{equation*}
+</div>
+</li>
+<li id="li-1041">Once again (thankfully) we have found that the only critical point is \((1,2)\text{.}\)</li>
+</ul>
+</div></div>
+</div></article></div>
+<p id="p-2294">This was pretty easy because we only had to solve linear equations, which in turn was a consequence of the fact that \(f(x,y)\) was a polynomial of degree two. Here is an example with some slightly more challenging algebra.</p>
+<article class="example example-like" id="eg_MXMNlocalB"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNlocalB"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.7</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y)=2x^3 - 6xy + y^2 +4y \).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNlocalB"><article class="example example-like"><p id="p-2295">Find all critical points of \(f(x,y)=2x^3 - 6xy + y^2 +4y \text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-317" id="solution-317"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-317"><div class="solution solution-like">
+<p id="p-2296">As in the last example, we need to find where the gradient is zero, and to find the gradient we need the first order partial derivatives.</p>
+<div class="displaymath">
+\begin{equation*}
+f_x=6x^2-6y   \qquad
+f_y=-6x+2y+4
+\end{equation*}
+</div>
+<p data-braille="continuation">So the critical points are the solutions of</p>
+<div class="displaymath">
+\begin{equation*}
+6x^2-6y=0   \qquad
+-6x+2y+4 = 0
+\end{equation*}
+</div>
+<p data-braille="continuation">We can rewrite the first equation as \(y=x^2\text{,}\) which expresses \(y\) as a function of \(x\text{.}\) We can then substitute \(y=x^2\) into the second equation, giving</p>
+<div class="displaymath">
+\begin{align*}
+-6x+2y+4 = 0
+&amp;\iff -6x+2x^2+4 = 0
+\iff x^2-3x+2=0\\
+&amp;\iff (x-1)(x-2)=0\\
+&amp;\iff x=1\text{ or }2
+\end{align*}
+</div>
+<p data-braille="continuation">When \(x=1\text{,}\) \(y=1^2=1\) and when \(x=2\text{,}\) \(y=2^2=4\text{.}\) So, there are two critical points: \((1,1),\ (2,4)\text{.}\)</p>
+<p id="p-2297">Alternatively, we could have also used the second equation to write \(y=3x-2\text{,}\) and then substituted that into the first equation to get</p>
+<div class="displaymath">
+\begin{equation*}
+6x^2-6(3x-2) =0
+\iff x^2-3x+2=0
+\end{equation*}
+</div>
+<p data-braille="continuation">just as above.</p>
+</div></div>
+</div></article></div>
+<p id="p-2298">And here is an example for which the algebra requires a bit more thought.</p>
+<article class="example example-like" id="eg_MXMNlocalC"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNlocalC"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.8</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y) = xy(5x+y-15)\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNlocalC"><article class="example example-like"><p id="p-2299">Find all critical points of \(f(x,y)=xy(5x+y-15) \text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-318" id="solution-318"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-318"><div class="solution solution-like">
+<p id="p-2300">The first order partial derivatives of \(f(x,y)=xy(5x+y-15)\) are</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+f_x(x,y)
+&amp;\ =\ y(5x+y-15)+xy(5)
+&amp;&amp;\ =\ y(5x+y-15)+y(5x)\\
+&amp;\ =\  y(10x+y-15)\\
+f_y(x,y)
+&amp;\ =\ x(5x+y-15)+xy(1)
+&amp;&amp;\ =\ x(5x+y-15)+ x(y)\\
+&amp;\ =\ x(5x+2y-15)
+\end{alignat*}
+</div>
+<p data-braille="continuation">The critical points are the solutions of \(f_x(x,y)=f_y(x,y)=0\text{.}\) That is, we need to find all \(x,y\) that satisfy the pair of equations</p>
+<div class="displaymath">
+\begin{align*}
+y(10x+y-15)&amp;=0\tag{E1}\\
+x(5x+2y-15)&amp;=0\tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">The first equation, \(y(10x+y-15)=0\text{,}\) is satisfied if at least one of the two factors \(y\text{,}\) \((10x+y-15)\) is zero. So the first equation is satisfied if at least one of the two equations</p>
+<div class="displaymath">
+\begin{align*}
+y&amp;=0 \tag{E1a}\\
+10x+y&amp;=15 \tag{E1b}
+\end{align*}
+</div>
+<p data-braille="continuation">is satisfied. The second equation, \(x(5x+2y-15)=0\text{,}\) is satisfied if at least one of the two factors \(x\text{,}\) \((5x+2y-15)\) is zero. So the second equation is satisfied if at least one of the two equations</p>
+<div class="displaymath">
+\begin{align*}
+x&amp;=0 \tag{E2a}\\
+5x+2y&amp;=15 \tag{E2b}
+\end{align*}
+</div>
+<p data-braille="continuation">is satisfied.</p>
+<p id="p-2301">So both critical point equations (E1) and (E2) are satisfied if and only if at least one of (E1a), (E1b) is satisfied and in addition at least one of (E2a), (E2b) is satisfied. So both critical point equations (E1) and (E2) are satisfied if and only if at least one of the following four possibilities hold.</p>
+<ul class="disc">
+<li id="li-1042">(E1a) and (E2a) are satisfied if and only if \(x=y=0\)</li>
+<li id="li-1043">(E1a) and (E2b) are satisfied if and only if \(y=0,\ 5x+2y=15 \iff y=0,\ 5x=15\)</li>
+<li id="li-1044">(E1b) and (E2a) are satisfied if and only if \(10x+y=15,\ x=0 \iff y=15,\ x=0\)</li>
+<li id="li-1045">(E1b) and (E2b) are satisfied if and only if \(10x+y=15,\ 5x+2y=15\text{.}\) We can use, for example, the second of these equations to solve for \(x\) in terms of \(y\text{:}\) \(x =\frac{1}{5}(15-2y)\text{.}\) When we substitute this into the first equation we get \(2(15-2y)+y=15\text{,}\) which we can solve for \(y\text{.}\) This gives \(-3y=15-30\) or \(y=5\) and then \(x=\frac{1}{5}(15-2\times 5)=1\text{.}\)</li>
+</ul>
+<p data-braille="continuation">In conclusion, the critical points are \((0,0)\text{,}\) \((3,0)\text{,}\) \((0,15)\) and \((1,5)\text{.}\)</p>
+<p id="p-2302">A more compact way to write what we have just done is</p>
+<div class="displaymath">
+\begin{alignat*}{1}
+&amp;f_x(x,y)=0\hskip6.75em
+\text{and}\hskip1.5em
+f_y(x,y)=0\\
+\iff\qquad  &amp;y(10x+y-15)=0\hskip3.25em
+\text{and}\hskip1.5em
+x(5x+2y-15)=0\\
+\iff\qquad &amp; \big\{y=0\text{  or  }10x+y=15\big\}\hskip1.5em
+\text{and}\hskip1.5em
+\big\{x=0\text{ or }5x+2y=15\big\}\\
+\iff\qquad &amp; \big\{y=0,\ x=0\big\}\text{ or }
+\big\{y=0,\ 5x+2y=15\big\}\\
+&amp;\text{ or }\big\{10x+y=15,\ x=0\big\}\text{ or }
+\big\{10x+y=15,\ 5x+2y=15\big\}\\
+\iff\qquad &amp; \big\{x=y=0\big\}\text{ or }
+\big\{y=0,\ x=3\big\}\\
+&amp;\text{ or }\big\{x=0,\ y=15\big\}\text{ or }
+\big\{x=1,\ y=5\big\}
+\end{alignat*}
+</div>
+</div></div>
+</div></article></div>
+<p id="p-2303">Let's try a more practical example — something from the real world. Well, a mathematician's “real world”. The interested reader should search-engine their way to a discussion of “idealisation”, “game theory” “Cournot models” and “Bertrand models”. But don't spend too long there. A discussion of breweries is about to take place.</p>
+<article class="example example-like" id="eg_MXMNbrewery"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNbrewery"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.9</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNbrewery"><article class="example example-like"><p id="p-2304">In a certain community, there are two breweries in competition<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-80" id="fn-80"><sup> 6 </sup></a>, so that sales of each negatively affect the profits of the other. If brewery A produces \(x\) litres of beer per month and brewery B produces \(y\) litres per month, then the profits of the two breweries are given by</p>
+<div class="displaymath">
+\begin{equation*}
+P=2x-\frac{2x^2+y^2}{10^6}\qquad
+Q=2y-\frac{4y^2+x^2}{2\times 10^6}
+\end{equation*}
+</div>
+<p data-braille="continuation">respectively. Find the sum of the two profits if each brewery independently sets its own production level to maximize its own profit and assumes that its competitor does likewise. Then, assuming cartel behaviour, find the sum of the two profits if the two breweries cooperate so as to maximize that sum<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-81" id="fn-81"><sup> 7 </sup></a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-80"><div class="fn">We have both types of music here — country and western.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-81"><div class="fn">This sort of thing is generally illegal.</div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-319" id="solution-319"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-319"><div class="solution solution-like">
+<p id="p-2305">If \(A\) adjusts \(x\) to maximize \(P\) (for \(y\) held fixed) and \(B\) adjusts \(y\) to maximize \(Q\) (for \(x\) held fixed) then \(x\) and \(y\) are determined by the equations</p>
+<div class="displaymath">
+\begin{align*}
+P_x&amp;=2-\tfrac{4x}{10^6}=0 \tag{E1}\\
+Q_y&amp;=2-\tfrac{8y}{2\times 10^6}=0 \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">Equation (E1) yields  \(x=\half 10^6\) and equation (E2) yields  \(y=\half 10^6\text{.}\) Knowing \(x\) and \(y\) we can determine \(P\text{,}\) \(Q\)  and the total profit</p>
+<div class="displaymath">
+\begin{align*}
+P+Q&amp;=2(x+y)-\tfrac{1}{10^6}\big(\tfrac{5}{2}x^2+3y^2\big)\\
+&amp;=10^6\big(1+1-\tfrac{5}{8}-\tfrac{3}{4}\big)
+=\tfrac{5}{8}10^6
+\end{align*}
+</div>
+<p data-braille="continuation">On the other hand if \((A,B)\) adjust \((x,y)\) to maximize \(P+Q
+=2(x+y)-\tfrac{1}{10^6}\big(\tfrac{5}{2}x^2+3y^2\big)\text{,}\)  then \(x\) and \(y\) are determined by</p>
+<div class="displaymath">
+\begin{align*}
+(P+Q)_x&amp;=2-\tfrac{5x}{10^6}=0 \tag{E1}\\
+(P+Q)_y&amp;=2-\tfrac{6y}{10^6}=0 \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">Equation (E1) yields  \(x=\tfrac{2}{5} 10^6\) and equation (E2) yields  \(y=\tfrac{1}{3} 10^6\text{.}\) Again knowing \(x\) and \(y\) we can determine the total profit</p>
+<div class="displaymath">
+\begin{align*}
+P+Q&amp;=2(x+y)-\tfrac{1}{10^6}\big(\tfrac{5}{2}x^2+3y^2\big)\\
+&amp;=10^6\big(\tfrac{4}{5}+\tfrac{2}{3}-\tfrac{2}{5}-\tfrac{1}{3}\big)
+=\tfrac{11}{15}10^6
+\end{align*}
+</div>
+<p data-braille="continuation">So cooperating really does help their profits. Unfortunately, like a very small tea-pot, consumers will be a little poorer<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-82" id="fn-82"><sup> 8 </sup></a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-82"><div class="fn">Sorry about the pun.</div></div>
+</div></div>
+</div></article></div>
+<p id="p-2306">Moving swiftly away from the last pun, let's do something a little more geometric.</p>
+<article class="example example-like" id="eg_MXMNtapezoidalFence"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNtapezoidalFence"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNtapezoidalFence"><article class="example example-like"><p id="p-2307">Equal angle bends are made at equal distances from the two ends of a 100 metre long fence so the resulting three segment fence can be placed along an existing wall to make an enclosure of trapezoidal shape. What is the largest possible area for such an enclosure?</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/fenceA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-320" id="solution-320"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-320"><div class="solution solution-like">
+<p id="p-2308">This is a very geometric problem (fenced off from pun opportunities), and as such we should start by drawing a sketch and introducing some variable names.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/fence.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/fenceB.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2309">The area enclosed by the fence is the area inside the blue rectangle (in the figure on the right above) plus the area inside the two blue triangles.</p>
+<div class="displaymath">
+\begin{align*}
+A(x,\theta)
+&amp;=(100-2x)x\sin\theta+2\cdot\half\cdot x\sin\theta\cdot x\cos\theta\\
+&amp;=(100x-2x^2)\sin\theta+ x^2\sin\theta\ \cos\theta
+\end{align*}
+</div>
+<p data-braille="continuation">To maximize the area, we need to solve</p>
+<div class="displaymath">
+\begin{align*}
+0=\pdiff{A}{x}&amp;=(100-4x)\sin\theta+2x\sin\theta\cos\theta\\
+0=\pdiff{A}{\theta}
+&amp;=(100x-2x^2)\cos\theta+x^2\big\{\cos^2\theta-\sin^2\theta\big\}
+\end{align*}
+</div>
+<p data-braille="continuation">Note that both terms in the first equation contain the factor \(\sin\theta\) and all terms in the second equation contain the factor \(x\text{.}\) If either \(\sin\theta\) or \(x\) are zero the area \(A(x,\theta)\) will also  be zero, and so will certainly not be maximal. So we may divide the first equation by \(\sin\theta\) and the second equation by \(x\text{,}\) giving</p>
+<div class="displaymath">
+\begin{align*}
+(100-4x)+2x\cos\theta&amp;=0 \tag{E1}\\
+(100-2x)\cos\theta+x\big\{\cos^2\theta-\sin^2\theta\big\}&amp;=0 \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">These equations might look a little scary. But there is no need to panic. They are not as bad as they look because \(\theta\) enters only through \(\cos\theta\) and \(\sin^2\theta\text{,}\) which we can easily write in terms of \(\cos\theta\text{.}\) Furthermore we can eliminate \(\cos\theta\) by observing that the first equation forces \(\cos\theta=-\frac{100-4x}{2x}\) and hence \(\sin^2\theta=1-\cos^2\theta=1-\frac{(100-4x)^2}{4x^2}\text{.}\) Substituting these into the second equation gives</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+&amp; &amp; -(100-2x)\frac{100-4x}{2x}+x\left[\frac{(100-4x)^2}{2x^2}-1\right]&amp;=0\\
+&amp;\implies\quad &amp; -(100-2x)(100-4x)+(100-4x)^2-2x^2&amp;=0\\
+&amp;\implies &amp; 6x^2-200x&amp;=0\\
+&amp;\implies &amp; x=\frac{100}{3}
+\quad\cos\theta=-\frac{-100/3}{200/3}=\frac{1}{2}\quad
+\theta&amp;=60^\circ
+\end{alignat*}
+</div>
+<p data-braille="continuation">and the maximum area enclosed is</p>
+<div class="displaymath">
+\begin{equation*}
+A= \Big(100\frac{100}{3}-2\frac{100^2}{3^2}\Big)\frac{\sqrt{3}}{2}
+\ +\ \frac{1}{2} \frac{100^2}{3^2}\frac{\sqrt{3}}{2}
+\ =\ \frac{2500}{\sqrt{3}}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<p id="p-2310">Now here is a very useful (even practical!) statistical example — finding the line that best fits a given collection of points.</p>
+<article class="example example-like" id="eg_MXMNlinReg"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNlinReg"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.11</span><span class="period">.</span><span class="space"> </span><span class="title">Linear regression.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNlinReg"><article class="example example-like"><p id="p-2311">An experiment yields \(n\) data points \(\ (x_i,y_i),\ i=1,2,\cdots,n.\) We wish to find the straight line \(\ y=mx+b\ \) which “best” fits the data.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/regression.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2312">The definition of “best” is “minimizes the root mean square error”, i.e. minimizes</p>
+<div class="displaymath">
+\begin{equation*}
+E(m,b)=\sum_{i=1}^n (mx_i+b-y_i)^2
+\end{equation*}
+</div>
+<p data-braille="continuation">Note that</p>
+<ul class="disc">
+<li id="li-1046">term number \(i\) in \(E(m,b)\) is the square of the difference between \(y_i\text{,}\) which is the \(i^{\rm th}\) measured value of \(y\text{,}\) and \(\Big[mx+b\Big]_{x=x_i}\text{,}\) which is the approximation to \(y_i\) given by the line \(y=mx+b\text{.}\)</li>
+<li id="li-1047">All terms in the sum are positive, regardless of whether the points \((x_i,y_i)\) are above or below the line.</li>
+</ul>
+<p data-braille="continuation">Our problem is to find the \(m\) and \(b\) that minimizes \(E(m,b)\text{.}\) This technique for drawing a line through a bunch of data points is called “linear regression”. It is used <em class="emphasis">a lot</em><a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-83" id="fn-83"><sup> 9 </sup></a> <a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-84" id="fn-84"><sup> 10 </sup></a>. Even in the real world — and not just the real world that you find in mathematics problems. The actual real world that involves jobs.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-83"><div class="fn">Proof by search engine.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-84"><div class="fn">And has been used for a long time. It was introduced by the French mathematician Adrien-Marie Legendre, 1752--1833, in 1805, and by the German mathematician and physicist Carl Friedrich Gauss, 1777--1855, in 1809.</div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-321" id="solution-321"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-321"><div class="solution solution-like">
+<p id="p-2313">We wish to choose \(m\) and \(b\) so as to minimize \(E(m,b)\text{.}\) So we need to determine where the partial derivatives of \(E\) are zero.</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+0&amp;=\frac{\partial E}{\partial m}&amp;&amp;=\sum_{i=1}^n 2(mx_i+b-y_i)x_i
+&amp;&amp;=m\Big[\smsum_{i=1}^n 2x^2_i\Big]+b\Big[\smsum_{i=1}^n 2x_i\Big]
+-\Big[\smsum_{i=1}^n 2x_iy_i\Big]\\
+0&amp;=\frac{\partial E}{\partial b}&amp;&amp;=\sum_{i=1}^n 2(mx_i+b-y_i)
+&amp;&amp;=m\Big[\smsum_{i=1}^n 2x_i\Big]+b\Big[\smsum_{i=1}^n 2\Big]
+-\Big[\smsum_{i=1}^n 2y_i\Big]
+\end{alignat*}
+</div>
+<p data-braille="continuation">There are a lot of symbols here. But remember that all of the \(x_i\)'s and \(y_i\)'s are given constants. They come from, for example, experimental data. The only unknowns are \(m\) and \(b\text{.}\) To emphasize this, and to save some writing, define the constants</p>
+<div class="displaymath">
+\begin{equation*}
+S_x=\smsum_{i=1}^n x_i\qquad
+S_y=\smsum_{i=1}^n y_i\qquad
+S_{x^2}=\smsum_{i=1}^n x^2_i\qquad
+S_{xy}=\smsum_{i=1}^n x_iy_i
+\end{equation*}
+</div>
+<p data-braille="continuation">The equations which determine the critical points are (after dividing by two)</p>
+<div class="displaymath">
+\begin{align*}
+S_{x^2}\, m+S_x\, b&amp;=S_{xy} \tag{E1}\\
+S_{x}\, m+n\, b&amp;=S_{y}      \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">These are two linear equations on the unknowns \(m\) and \(b\text{.}\) They may be solved in any of the usual ways. One is to use (E2) to solve for \(b\) in terms of \(m\)</p>
+<div class="displaymath">
+\begin{equation*}
+b=\frac{1}{n}\big(S_y-S_xm\big)\tag{E3}
+\end{equation*}
+</div>
+<p data-braille="continuation">and then substitute this into (E1) to get the equation</p>
+<div class="displaymath">
+\begin{equation*}
+S_{x^2}\, m+\frac{1}{n}S_x\, \big(S_y-S_xm\big)=S_{xy}\quad\implies\quad
+\big(nS_{x^2} -S_x^2\big) m = nS_{xy}-S_xS_y
+\end{equation*}
+</div>
+<p data-braille="continuation">for \(m\text{.}\) We can then solve this equation for \(m\) and substitute back into (E3) to get \(b\text{.}\) This gives</p>
+<div class="displaymath">
+\begin{align*}
+m\amp=\frac{nS_{xy}-S_xS_y}{nS_{x^2} -S_x^2}\\
+b\amp=\frac{S_y}{n}\,\frac{nS_{x^2} -S_x^2}{nS_{x^2} -S_x^2}
+-\frac{S_x}{n}\,\frac{nS_{xy}-S_xS_y}{nS_{x^2} -S_x^2}
+=\frac{nS_yS_{x^2}-nS_xS_{xy}}{n(nS_{x^2} -S_x^2)}\\
+\amp=-\frac{S_xS_{xy}-S_yS_{x^2}}{nS_{x^2} -S_x^2}
+\end{align*}
+</div>
+<p data-braille="continuation">Another way to solve the system of equations is</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+n\text{(E1)}-S_x\text{(E2)}:&amp;\quad \Big[nS_{x^2} -S_x^2\Big]m&amp;&amp;=nS_{xy}-S_xS_y\\
+-S_x\text{(E1)}+S_{x^2}\text{(E2)}:&amp;\quad
+\Big[nS_{x^2} -S_x^2\Big]b&amp;&amp;=-S_xS_{xy}+S_yS_{x^2}
+\end{alignat*}
+</div>
+<p data-braille="continuation">which gives the same solution.</p>
+<p id="p-2314">So given a bunch of data points, it only takes a quick bit of arithmetic — no calculus required — to apply the above formulae and so to find the best fitting line. Of course while you don't need any calculus to apply the formulae, you do need calculus to understand where they came from. The same technique can be extended to other types of curve fitting problems. For example, polynomial regression.</p>
+</div></div>
+</div></article></div></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.9.2</span> <span class="title">The Second Derivative Test</span>
+</h3>
+<p id="p-2315">Now let's start thinking about how to tell if a critical point is a local minimum or maximum. Remember what happens for functions of one variable. Suppose that \(x=a\) is a critical point of the function \(f(x)\text{.}\) Any (sufficiently smooth) function is well approximated, when \(x\) is close to \(a\text{,}\) by the first few terms of its Taylor expansion</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = f(a) + f'(a)\,(x-a) + \tfrac{1}{2} f''(a)\,(x-a)^2
++\tfrac{1}{3!} f^{(3)}(a)\, (x-a)^3 + \cdots
+\end{equation*}
+</div>
+<p data-braille="continuation">As \(a\) is a critical point, we know that \(f'(a)=0\) and</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = f(a) + \tfrac{1}{2} f''(a)\,(x-a)^2
++\tfrac{1}{3!} f^{(3)}(a)\, (x-a)^3 + \cdots
+\end{equation*}
+</div>
+<p data-braille="continuation">If \(f''(a)\ne 0\text{,}\) \(f(x)\) is going to look a lot like \(f(a) + \tfrac{1}{2} f''(a)\,(x-a)^2 \) when \(x\) is really close to \(a\text{.}\) In particular</p>
+<ul class="disc">
+<li id="li-1048">if \(f''(a) \gt 0\text{,}\) then we will have \(f(x) \gt f(a)\) when \(x\) is close to (but not equal to) \(a\text{,}\) so that \(a\) will be a local minimum and</li>
+<li id="li-1049">if \(f''(a) \lt 0\text{,}\) then we will have \(f(x) \lt f(a)\) when \(x\) is close to (but not equal to) \(a\text{,}\) so that \(a\) will be a local maximum, but</li>
+<li id="li-1050">if \(f''(a)=0\text{,}\) then we cannot draw any conclusions without more work.</li>
+</ul>
+<p data-braille="continuation">A similar, but messier, analysis is possible for functions of two variables. Here are some simple quadratic examples that provide a warmup for that messier analysis.</p>
+<article class="example example-like" id="eg_maxminB"><a data-knowl="" class="id-ref original" data-refid="hk-eg_maxminB"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.12</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y)= x^2+3xy+3y^2-6x-3y-6\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_maxminB"><article class="example example-like"><p id="p-2316">Consider \(f(x,y)= x^2+3xy+3y^2-6x-3y-6\text{.}\) The gradient of \(f\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(x,y) = \big(2x+3y-6\big)\,\hi +\big(3x+6y-3\big)\,\hj
+\end{equation*}
+</div>
+<p data-braille="continuation">So \((x,y)\) is a critical point of \(f\) if and only if</p>
+<div class="displaymath">
+\begin{align*}
+2x+3y&amp;=6\tag{E1}\\
+3x+6y&amp;=3\tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">Multiplying the first equation by 2 and subtracting the second equation gives</p>
+<div class="displaymath">
+\begin{equation*}
+x=9\tag{2(E1) - (E2)}
+\end{equation*}
+</div>
+<p data-braille="continuation">Then substituting \(x=9\) back into the first equation gives</p>
+<div class="displaymath">
+\begin{equation*}
+2\times 9+3y=6\implies
+y=-4
+\end{equation*}
+</div>
+<p data-braille="continuation">So \(f(x,y)\) has precisely one critical point, namely \((9\,,\,-4)\text{.}\)</p>
+<p id="p-2317">Now let's try to determine if \(f(x,y)\) has a local minimum, or a local maximum, or neither, at \((9,-4)\text{.}\) A good way to determine the behaviour of \(f(x,y)\) for \((x,y)\) near \((9,-4)\) is to make the change of variables<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-85" id="fn-85"><sup> 11 </sup></a></p>
+<div class="displaymath">
+\begin{equation*}
+x=9+\De x\qquad
+y=-4+\De y
+\end{equation*}
+</div>
+<p data-braille="continuation">and study the behaviour of \(f\) for \(\De x\) and \(\De y\) near zero.</p>
+<div class="displaymath">
+\begin{align*}
+f\big(9+\De x\,,\,-4+\De y\big)
+&amp;=(9+\De x)^2+3(9+\De x)(-4+\De y)+3(-4+\De y)^2\\
+&amp;\hskip1in-6(9+\De x)-3(-4+\De y)-6\\
+&amp;= (\De x)^2 +3\De x\,\De y+3(\De y)^2 - 27
+\end{align*}
+</div>
+<p data-braille="continuation">And a good way to study the sign of quadratic expressions like \((\De x)^2 +3\De x\,\De y+3(\De y)^2\) is to complete the square. So far you have probably just completed the square for quadratic expressions that involve only a single variable. For example</p>
+<div class="displaymath">
+\begin{equation*}
+x^2 +3x +3 = \left(x+\frac{3}{2}\right)^2 - \frac{9}{4} +3
+\end{equation*}
+</div>
+<p data-braille="continuation">When there are two variables around, like \(\De x\) and \(\De y\text{,}\) you can just pretend that one of them is a constant and complete the square as before. For example, if you pretend that \(\De y\) is a constant,</p>
+<div class="displaymath">
+\begin{align*}
+(\De x)^2 +3\De x\,\De y+3(\De y)^2
+&amp;=\left(\De x +\frac{3}{2}\De y\right)^2
++ \left(3-\frac{9}{4}\right)(\De y)^2\\
+&amp;=\left(\De x +\frac{3}{2}\De y\right)^2  + \frac{3}{4}(\De y)^2
+\end{align*}
+</div>
+<p data-braille="continuation">To this point, we have expressed</p>
+<div class="displaymath">
+\begin{equation*}
+f\big(9+\De x\,,\,-4+\De y\big)
+= \left(\De x +\frac{3}{2}\De y\right)^2  + \frac{3}{4}(\De y)^2 -27
+\end{equation*}
+</div>
+<p data-braille="continuation">As the smallest values of \(\left(\De x +\frac{3}{2}\De y\right)^2\) and \(\frac{3}{4}(\De y)^2\) are both zero, we have that</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=f\big(9+\De x\,,\,-4+\De y\big)\ge -27 =f(9,-4)
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \((x,y)\) so that \((9,-4)\) is both a local minimum and a global minimum for \(f\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-85"><div class="fn">This is equivalent to translating the graph so that the critical point lies at \((0,0)\text{.}\)</div></div></article></div>
+<p id="p-2318">You have already encountered single variable functions that have a critical point which is neither a local max nor a local min. See Example 3.5.9 in the CLP-1 text. Here are a couple of examples which show that this can also happen for functions of two variables. We'll start with the simplest possible such example.</p>
+<article class="example example-like" id="eg_maxminA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_maxminA"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.13</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y)=x^2-y^2\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_maxminA"><article class="example example-like"><p id="p-2319">The first partial derivatives of \(f(x,y)=x^2-y^2\) are \(f_x(x,y)=2x\) and \(f_y(x,y)=-2y\text{.}\) So the only critical point of this function is \((0,0)\text{.}\) Is this a local minimum or maximum? Well let's start with \((x,y)\) at \((0,0)\) and then move \((x,y)\) away from \((0,0)\) and see if \(f(x,y)\) gets bigger or smaller. At the origin \(f(0,0)=0\text{.}\) Of course we can move \((x,y)\) away from \((0,0)\) in many different directions.</p>
+<ul class="disc">
+<li id="li-1051">First consider moving \((x,y)\) along the \(x\)-axis. Then \((x,y)=(x,0)\) and  \(f(x,y)=f(x,0)=x^2\text{.}\)   So when we start with \(x=0\) and then increase \(x\text{,}\) the value of the function \(f\) increases — which means that \((0,0)\) cannot be a local maximum for \(f\text{.}\)</li>
+<li id="li-1052">Next let's move \((x,y)\) away from \((0,0)\) along the \(y\)-axis. Then \((x,y)=(0,y)\) and  \(f(x,y)=f(0,y)=-y^2\text{.}\) So when we start with \(y=0\) and then increase \(y\text{,}\) the value of the function \(f\) decreases — which means that  \((0,0)\) cannot be a local minimum for \(f\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So moving away from \((0,0)\) in one direction causes the value of \(f\) to increase, while moving away from \((0,0)\) in a second direction causes the value of \(f\) to decrease. Consequently \((0,0)\) is neither a local minimum or maximum for \(f\text{.}\) It is called a saddle point, because the graph of \(f\) looks like a saddle. (The full definition of “saddle point” is given immediately after this example.) Here are some figures showing the graph of \(f\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/hyperbolic_paraboloid.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/hypPara.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2320">The figure below show some level curves of \(f\text{.}\) Observe from the level curves that</p>
+<ul class="disc">
+<li id="li-1053">\(f\) increases as you leave \((0,0)\) walking along the \(x\) axis</li>
+<li id="li-1054">\(f\) decreases as you leave \((0,0)\) walking along the \(y\) axis</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hypParaLevel.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></div>
+<p id="p-2321">Approximately speaking, if a critical point \((a,b)\) is neither a local minimum nor a local maximum, then it is a saddle point. For \((a,b)\) to not be a local minimum, \(f\) has to take values bigger than \(f(a,b)\) at some points nearby \((a,b)\text{.}\) For \((a,b)\) to not be a local maximum, \(f\) has to take values smaller than \(f(a,b)\) at some points nearby \((a,b)\text{.}\)  Writing this more mathematically we get the following definition.</p>
+<article class="definition definition-like" id="def_saddle_point"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.9.14</span><span class="period">.</span>
+</h6>
+<p id="p-2322">The critical point \((a,b)\) is called a saddle point for the function \(f(x,y)\) if, for each \(r \gt 0\text{,}\)</p>
+<ul class="disc">
+<li id="li-1055">there is at least one point \((x,y)\text{,}\) within a distance \(r\) of \((a,b)\text{,}\) for which \(f(x,y) \gt f(a,b)\) and</li>
+<li id="li-1056">there is at least one point \((x,y)\text{,}\) within a distance \(r\) of \((a,b)\text{,}\) for which \(f(x,y) \lt f(a,b)\text{.}\)</li>
+</ul></article><p id="p-2323">Here is another example of a saddle point. This time we have to work a bit to see it.</p>
+<article class="example example-like" id="eg_maxminC"><a data-knowl="" class="id-ref original" data-refid="hk-eg_maxminC"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.15</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y)= x^2-2xy-y^2+4y-2\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_maxminC"><article class="example example-like"><p id="p-2324">Consider \(f(x,y)= x^2-2xy-y^2+4y-2\text{.}\) The gradient of \(f\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(x,y) = \big(2x-2y\big)\,\hi +\big(-2x-2y+4\big)\,\hj
+\end{equation*}
+</div>
+<p data-braille="continuation">So \((x,y)\) is a critical point of \(f\) if and only if</p>
+<div class="displaymath">
+\begin{align*}
+2x-2y&amp;=0\\
+-2x-2y&amp;=-4
+\end{align*}
+</div>
+<p data-braille="continuation">The first equation gives that \(x=y\text{.}\) Substituting \(y=x\) into the second equation gives</p>
+<div class="displaymath">
+\begin{equation*}
+-2y-2y=-4\implies
+x=y=1
+\end{equation*}
+</div>
+<p data-braille="continuation">So \(f(x,y)\) has precisely one critical point, namely \((1,1)\text{.}\)</p>
+<p id="p-2325">To determine if \(f(x,y)\) has a local minimum, or a local maximum, or neither, at \((1,1)\text{,}\) we proceed as in Example <a class="xref" data-knowl="./knowl/eg_maxminB.html" title="Example 2.9.12: \(f(x,y)= x^2+3xy+3y^2-6x-3y-6\)">2.9.12</a>. We make the change of variables</p>
+<div class="displaymath">
+\begin{equation*}
+x=1+\De x\qquad
+y=1+\De y
+\end{equation*}
+</div>
+<p data-braille="continuation">to give</p>
+<div class="displaymath">
+\begin{align*}
+&amp;f\big(1+\De x\,,\,1+\De y\big)\\
+&amp;\hskip0.5in=(1+\De x)^2-2(1+\De x)(1+\De y)-(1+\De y)^2 + 4(1+\De y)-2\\
+&amp;\hskip0.5in= (\De x)^2 -2\De x\,\De y-(\De y)^2
+\end{align*}
+</div>
+<p data-braille="continuation">Completing the square,</p>
+<div class="displaymath">
+\begin{equation*}
+f\big(1+\De x\,,\,1+\De y\big)
+=(\De x)^2 -2\De x\,\De y-(\De y)^2
+=\left(\De x - \De y\right)^2  -2 (\De y)^2
+\end{equation*}
+</div>
+<p data-braille="continuation">Notice that \(f\) has now been written as the difference of two squares, much like the \(f\) in the saddle point Example <a class="xref" data-knowl="./knowl/eg_maxminA.html" title="Example 2.9.13: \(f(x,y)=x^2-y^2\)">2.9.13</a>.</p>
+<ul class="disc">
+<li id="li-1057">If \(\De x\) and \(\De y\) are such that the first square \(\left(\De x - \De y\right)^2\) is nonzero, but the second square  \((\De y)^2\) is zero, then \(f\big(1+\De x\,,\,1+\De y\big)=\left(\De x - \De y\right)^2   \gt  0 = f(1,1)\text{.}\) That is, whenever \(\De y=0\) and \(\De x\ne \De y\text{,}\) then \(f\big(1+\De x\,,\,1+\De y\big)=\left(\De x - \De y\right)^2   \gt  0 = f(1,1)\text{.}\)</li>
+<li id="li-1058">On the other hand, if \(\De x\) and \(\De y\) are such that the first square \(\left(\De x - \De y\right)^2\) is zero but the second square  \((\De y)^2\) is nonzero, then \(f\big(1+\De x\,,\,1+\De y\big)=- 2(\De y)^2    \lt  0 = f(1,1)\text{.}\) That is, whenever \(\De x=\De y\ne 0\text{,}\)  then \(f\big(1+\De x\,,\,1+\De y\big) =- 2(\De y)^2  \lt  0 = f(1,1)\text{.}\)</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/saddle.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2326">So</p>
+<ul class="disc">
+<li id="li-1059">\(f(x,y) \gt f(1,1)\) at all points on the blue line in the figure above, and</li>
+<li id="li-1060">\(f(x,y) \lt f(1,1)\) at all point on the red line.</li>
+</ul>
+<p data-braille="continuation">We conclude that \((1,1)\) is the only critical point for \(f(x,y)\text{,}\) and furthermore that it is a saddle point.</p></article></div>
+<p id="p-2327">The above three examples show that we can find all critical points of quadratic functions of two variables. We can also classify each critical point as either a minimum, a maximum or a saddle point.</p>
+<p id="p-2328">Of course not every function is quadratic. But by using the quadratic approximation <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a> we can apply the same ideas much more generally. Suppose that \((a,b)\) is a critical point of some function \(f(x,y)\text{.}\) For \(\De x\) and \(\De y\) small, the quadratic approximation <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a> gives</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{split}
+&amp;f\big(a + \De x\,,\,b+\De y\big) \\
+&amp;\hskip0.25in\approx f\big(a\,,\,b\big)
++ f_x\big(a\,,\,b\big)\,\De x
++ f_y\big(a\,,\,b\big)\,\De y \\
+&amp;\hskip0.75in +\frac{1}{2}\left\{
+f_{xx}\big(a,b\big)\,\De x^2
++2f_{xy}\big(a,b\big) \,\De x\De y
++ f_{yy}\big(a,b\big)\,\De y^2 \right\}\\
+&amp;\hskip0.25in= f\big(a\,,\,b\big)
++\frac{1}{2}\left\{
+f_{xx}\big(a,b\big)\,\De x^2
++2f_{xy}\big(a,b\big) \,\De x\De y
++ f_{yy}\big(a,b\big)\,\De y^2 \right\}
+\end{split}\tag{$*$}
+\end{equation*}
+</div>
+<p data-braille="continuation">since \((a,b)\) is a critical point so that \(f_x(a,b)=f_y(a,b)=0\text{.}\) Then using the technique of Examples <a class="xref" data-knowl="./knowl/eg_maxminB.html" title="Example 2.9.12: \(f(x,y)= x^2+3xy+3y^2-6x-3y-6\)">2.9.12</a> and <a class="xref" data-knowl="./knowl/eg_maxminC.html" title="Example 2.9.15: \(f(x,y)= x^2-2xy-y^2+4y-2\)">2.9.15</a>, we get<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-86" id="fn-86"><sup> 12 </sup></a> (details below).</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-86"><div class="fn">There are analogous results in higher dimensions that are accessible to people who have learned some linear algebra. They are derived by diagonalizing the matrix of second derivatives, which is called the Hessian matrix.</div></div>
+<article class="theorem theorem-like" id="thm_second_deriv_test"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.9.16</span><span class="period">.</span><span class="space"> </span><span class="title">Second Derivative Test.</span>
+</h6>
+<p id="p-2329">Let \(r \gt 0\) and assume that all second order derivatives of the function \(f(x,y)\) are continuous at all points \((x,y)\) that are within a distance \(r\) of \((a,b)\text{.}\) Assume that \(f_x(a,b)=f_y(a,b)=0\text{.}\) Define</p>
+<div class="displaymath">
+\begin{equation*}
+D(x,y) = f_{xx}(x,y)\,f_{yy}(x,y) - f_{xy}(x,y)^2
+\end{equation*}
+</div>
+<p data-braille="continuation">It is called the discriminant of \(f\text{.}\) Then</p>
+<ul class="disc">
+<li id="li-1061">if \(D(a,b) \gt 0\) and \(f_{xx}(a,b) \gt 0\text{,}\) then \(f(x,y)\) has a local minimum at \((a,b)\text{,}\)</li>
+<li id="li-1062">if \(D(a,b) \gt 0\) and \(f_{xx}(a,b) \lt 0\text{,}\) then \(f(x,y)\) has a local maximum at \((a,b)\text{,}\)</li>
+<li id="li-1063">if \(D(a,b) \lt 0\text{,}\) then \(f(x,y)\) has a saddle point at \((a,b)\text{,}\) but</li>
+<li id="li-1064">if \(D(a,b)=0\text{,}\) then we cannot  draw any conclusions without more work.</li>
+</ul></article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref original" data-refid="hk-proof-9"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><p id="p-2330">We are putting quotation marks around the word “Proof”, because we are not going to justify the fact that it suffices to analyse the quadratic approximation in equation \((*)\text{.}\) Let's temporarily suppress the arguments \((a,b)\text{.}\) If \(f_{xx}(a,b)\ne 0\text{,}\) then by completing the square we can write</p>
+<div class="displaymath">
+\begin{align*}
+&amp;f_{xx}\,\De x^2
++2f_{xy}\,\De x\De y
++ f_{yy}\,\De y^2\\
+&amp;\hskip0.5in=f_{xx}\left(\De x
++\frac{f_{xy}}{f_{xx}}\De y\right)^2
++\left(f_{yy}-\frac{f_{xy}^2}{f_{xx}}\right)\,\De y^2\\
+&amp;\hskip0.5in=\frac{1}{f_{xx}}\left\{\big(f_{xx}\,\De x+f_{xy}\,\De y\big)^2
++\big(f_{xx}f_{yy}-f_{xy}^2\big)\,\De y^2\right\}
+\end{align*}
+</div>
+<p data-braille="continuation">Similarly, if \(f_{yy}(a,b)\ne 0\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+&amp;f_{xx}\,\De x^2
++2f_{xy}\,\De x\De y
++ f_{yy}\,\De y^2\\
+&amp;\hskip0.5in=\frac{1}{f_{yy}}\left\{\big(f_{xy}\,\De x+f_{yy}\,\De y\big)^2
++\big(f_{xx}f_{yy}-f_{xy}^2\big)\,\De x^2\right\}
+\end{align*}
+</div>
+<p data-braille="continuation">Note that this algebra breaks down if \(f_{xx}(a,b)=f_{yy}(a,b)=0\text{.}\) We'll deal with that case shortly. More importantly, note that</p>
+<ul class="disc">
+<li id="li-1065">
+<p id="p-2331">if \(\big(f_{xx}f_{yy}-f_{xy}^2\big) \gt 0\) then both \(f_{xx}\) and \(f_{yy}\) must be nonzero and of the same sign and furthermore, whenever \(\De x\) or \(\De y\) are nonzero,</p>
+<div class="displaymath">
+\begin{align*}
+\left\{\big(f_{xx}\,\De x+f_{xy}\,\De y\big)^2
++\big(f_{xx}f_{yy}-f_{xy}^2\big)\,\De y^2\right\}
+&amp; \gt 0\quad\text{and}\\
+\left\{\big(f_{xy}\,\De x+f_{yy}\,\De y\big)^2
++\big(f_{xx}f_{yy}-f_{xy}^2\big)\,\De x^2\right\}
+&amp; \gt 0
+\end{align*}
+</div>
+<p data-braille="continuation">so that, recalling \((*)\text{,}\)</p>
+<ul class="circle">
+<li id="li-1066">if \(f_{xx}(a,b) \gt 0\text{,}\) then \((a,b)\) is a local minimum and</li>
+<li id="li-1067">if \(f_{xx}(a,b) \lt 0\text{,}\) then \((a,b)\) is a local maximum.</li>
+</ul>
+</li>
+<li id="li-1068">If \(\big(f_{xx}f_{yy}-f_{xy}^2\big) \lt 0\) and \(f_{xx}\) is nonzero then<div class="displaymath">
+\begin{equation*}
+\left\{\big(f_{xx}\,\De x+f_{xy}\,\De y\big)^2
++\big(f_{xx}f_{yy}-f_{xy}^2\big)\,\De y^2\right\}
+\end{equation*}
+</div>is strictly positive whenever \(\De x\ne 0\text{,}\) \(\De y= 0\) and is strictly negative whenever \(f_{xx}\,\De x+f_{xy}\,\De y=0\text{,}\) \(\De y\ne 0\text{,}\) so that \((a,b)\) is a saddle point. Similarly, \((a,b)\) is also a saddle point if \(\big(f_{xx}f_{yy}-f_{xy}^2\big) \lt 0\) and \(f_{yy}\) is nonzero.</li>
+<li id="li-1069">Finally, if \(f_{xy}\ne 0\) and \(f_{xx}=f_{yy}=0\text{,}\) then<div class="displaymath">
+\begin{equation*}
+f_{xx}\,\De x^2
++2f_{xy}\,\De x\,\De y
++ f_{yy}\,\De y^2
+=2f_{xy}\,\De x\,\De y
+\end{equation*}
+</div>is strictly positive for one sign of \(\De x\,\De y\) and is strictly negative for the other sign of \(\De x\,\De y\text{.}\) So \((a,b)\) is again a saddle point.</li>
+</ul></article></div>
+<p id="p-2332">You might wonder why, in the local maximum/local minimum cases of Theorem <a class="xref" data-knowl="./knowl/thm_second_deriv_test.html" title="Theorem 2.9.16: Second Derivative Test">2.9.16</a>, \(f_{xx}(a,b)\) appears rather than \(f_{yy}(a,b)\text{.}\) The answer is only that \(x\) is before \(y\) in the alphabet<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-87" id="fn-87"><sup> 13 </sup></a>. You can use \(f_{yy}(a,b)\) just as well as \(f_{xx}(a,b)\text{.}\) The reason is that if \(D(a,b) \gt 0\) (as in the first two bullets of the theorem), then because \(D(a,b) = f_{xx}(a,b)\,f_{yy}(a,b) - f_{xy}(a,b)^2 \gt 0\text{,}\) we necessarily have \(f_{xx}(a,b)\,f_{yy}(a,b) \gt 0\) so that \(f_{xx}(a,b)\) and \(f_{yy}(a,b)\) must have the same sign — either both are positive or both are negative.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-87"><div class="fn">The shackles of convention are not limited to mathematics. Election ballots often have the candidates listed in alphabetic order.</div></div>
+<p id="p-2333">You might also wonder why we cannot draw any conclusions when \(D(a,b)=0\) and what happens then. The second derivative test for functions of two variables was derived in precisely the same way as the second derivative test for functions of one variable is derived — you approximate the function by a polynomial that is of degree two in \((x-a)\text{,}\) \((y-b)\) and then you analyze the behaviour of the quadratic polynomial near \((a,b)\text{.}\) For this to work, the contributions to \(f(x,y)\) from terms that are of degree two in  \((x-a)\text{,}\) \((y-b)\) had better be bigger than the contributions to \(f(x,y)\) from terms that are of degree three and higher in  \((x-a)\text{,}\) \((y-b)\) when \((x-a)\text{,}\) \((y-b)\) are really small. If this is not the case, for example when the terms in \(f(x,y)\) that are of degree two in  \((x-a)\text{,}\) \((y-b)\) all have coefficients that are exactly zero, the analysis will certainly break down. That's exactly what happens when \(D(a,b)=0\text{.}\) Here are some examples. The functions</p>
+<div class="displaymath">
+\begin{align*}
+f_1(x,y)&amp;=x^4+y^4&amp;
+f_2(x,y)&amp;=-x^4-y^4\\
+f_3(x,y)&amp;=x^3+y^3&amp;
+f_4(x,y)=x^4-y^4
+\end{align*}
+</div>
+<p data-braille="continuation">all have \((0,0)\) as the only critical point and all have \(D(0,0)=0\text{.}\) The first, \(f_1\) has its minimum there. The second, \(f_2\text{,}\) has its maximum there. The third and fourth have a saddle point there.</p>
+<p id="p-2334">Here are sketches of some level curves for each of these four functions (with all renamed to simply \(f\)).</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/f1Level.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/f2Level.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/f3Level.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/f4Level.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<article class="example example-like" id="eg_MXMNlocalBb"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNlocalBb"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.17</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y)=2x^3 - 6xy + y^2 +4y \).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNlocalBb"><article class="example example-like"><p id="p-2335">Find and classify all critical points of \(f(x,y)=2x^3 - 6xy + y^2 +4y \text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-322" id="solution-322"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-322"><div class="solution solution-like">
+<p id="p-2336">Thinking a little way ahead, to find the critical points we will need the gradient and to apply the second derivative test of Theorem <a class="xref" data-knowl="./knowl/thm_second_deriv_test.html" title="Theorem 2.9.16: Second Derivative Test">2.9.16</a> we will need all second order partial derivatives. So we need all partial derivatives of order up to two. Here they are.</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+f&amp;=2x^3 - 6xy + y^2 +4y\\
+f_x&amp;=6x^2-6y   &amp; f_{xx}&amp;=12x \qquad &amp; f_{xy}&amp;= -6\\
+f_y&amp;=-6x+2y+4 \qquad &amp; f_{yy}&amp;=2\qquad &amp; f_{yx}&amp;= -6
+\end{alignat*}
+</div>
+<p data-braille="continuation">(Of course, \(f_{xy}\) and \(f_{yx}\) have to be the same. It is still useful to compute both, as a way to catch some mechanical errors.)</p>
+<p id="p-2337">We have already found, in Example <a class="xref" data-knowl="./knowl/eg_MXMNlocalB.html" title="Example 2.9.7: \(f(x,y)=2x^3 - 6xy + y^2 +4y \)">2.9.7</a>, that the critical points are \((1,1),\ (2,4)\text{.}\) The classification is</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(\Atop{\text{critical}}{\text{point}}\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f_{xx}f_{yy}-f_{xy}^2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f_{xx}\)</td>
+<td class="l m b1 r1 l0 t1 lines" data-braille="last-cell">type</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((1,1)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12\times 2-(-6)^2 \lt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">saddle point</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((2,4)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\times 2-(-6)^2 \gt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines">24</td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">local min</td>
+</tr>
+</table></div></div></div>
+<p id="p-2338">We were able to leave the \(f_{xx}\) entry in the top row blank, because</p>
+<ul class="disc">
+<li id="li-1070">we knew that \(f_{xx}(1,1) f_{yy}(1,1)-f_{xy}^2(1,1) \lt 0\text{,}\) and</li>
+<li id="li-1071">we knew, from Theorem <a class="xref" data-knowl="./knowl/thm_second_deriv_test.html" title="Theorem 2.9.16: Second Derivative Test">2.9.16</a>, that \(f_{xx}(1,1) f_{yy}(1,1)-f_{xy}^2(1,1) \lt 0\text{,}\) by itself, was enough to ensure that \((1,1)\) was a saddle point.</li>
+</ul>
+<p data-braille="continuation">Here is a sketch of some level curves of our \(f(x,y)\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/fALevel.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2339">They are not needed to answer this question, but can give you some idea as to what the graph of \(f\) looks like.</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_MXMNlocalCc"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNlocalCc"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.18</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y) = xy(5x+y-15)\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNlocalCc"><article class="example example-like"><p id="p-2340">Find and classify all critical points of \(f(x,y)=xy(5x+y-15)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-323" id="solution-323"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-323"><div class="solution solution-like">
+<p id="p-2341">We have already computed the first order partial derivatives</p>
+<div class="displaymath">
+\begin{equation*}
+f_x(x,y)= y(10x+y-15)\qquad\qquad
+f_y(x,y)= x(5x+2y-15)
+\end{equation*}
+</div>
+<p data-braille="continuation">of \(f(x,y)\) in Example <a class="xref" data-knowl="./knowl/eg_MXMNlocalC.html" title="Example 2.9.8: \(f(x,y) = xy(5x+y-15)\)">2.9.8</a>. Again, to classify the critical points we need the second order partial derivatives. They  are</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+f_{xx}(x,y)&amp;= 10y\\
+f_{yy}(x,y)&amp;= 2x\\
+f_{xy}(x,y)&amp;= (1)(10x+y-15)+y(1) &amp;= 10x+2y-15\\
+f_{yx}(x,y)&amp;= (1)(5x+2y-15)+x(5) &amp;= 10x+2y-15
+\end{alignat*}
+</div>
+<p data-braille="continuation">(Once again, we have computed both \(f_{xy}\) and \(f_{yx}\) to guard against mechanical errors.) We have already found, in Example <a class="xref" data-knowl="./knowl/eg_MXMNlocalC.html" title="Example 2.9.8: \(f(x,y) = xy(5x+y-15)\)">2.9.8</a>, that the critical points are \((0,0),\ (0,15),\ (3,0)\) and \((1,5)\text{.}\) The classification is</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(\Atop{\text{critical}}{\text{point}}\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f_{xx}f_{yy}-f_{xy}^2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f_{xx}\)</td>
+<td class="l m b1 r1 l0 t1 lines" data-braille="last-cell">type</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((0,0)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\times0-(-15)^2 \lt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">saddle point</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((0,15)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(150\times0-15^2 \lt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">saddle point</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((3,0)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\times 6-15^2 \lt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">saddle point</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((1,5)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(50\times 2-5^2 \gt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines">75</td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">local min</td>
+</tr>
+</table></div></div></div>
+<p id="p-2342">Here is a sketch of some level curves of our \(f(x,y)\text{.}\) \(f\) is negative in the shaded regions and \(f\) is positive in the unshaded regions.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/fBLevel.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2343">Again this is not needed to answer this question, but can give you some idea as to what the graph of \(f\) looks like.</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_max_min_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_max_min_A"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.19</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_max_min_A"><article class="example example-like"><p id="p-2344">Find and classify all of the critical points of \(f(x,y)=x^3+xy^2-3x^2-4y^2+4\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-324" id="solution-324"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-324"><div class="solution solution-like">
+<p id="p-2345">We know the drill now. We start by computing all of the partial derivatives of \(f\) up to order 2.</p>
+<div class="displaymath">
+\begin{align*}
+f&amp;=x^3+xy^2-3x^2-4y^2+4\\
+f_x&amp;=3x^2+y^2-6x &amp; f_{xx}&amp;=6x-6 &amp; f_{xy}&amp;= 2y\\
+f_y&amp;=2xy-8y &amp; f_{yy}&amp;=2x-8  &amp; f_{yx}&amp;= 2y
+\end{align*}
+</div>
+<p data-braille="continuation">The critical points are then the solutions of \(f_x=0\text{,}\) \(f_y=0\text{.}\) That is</p>
+<div class="displaymath">
+\begin{align*}
+f_x&amp;=3x^2+y^2-6x=0 \tag{E1}\\
+f_y&amp;=2y(x-4)=0 \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">The second equation, \(2y(x-4)=0 \text{,}\) is satisfied if and only if at least one of the two equations \(y=0\) and \(x=4\) is satisfied.</p>
+<ul class="disc">
+<li id="li-1072">When \(y=0\text{,}\) equation (E1) forces \(x\) to obey<div class="displaymath">
+\begin{equation*}
+0=3x^2+0^2-6x=3x(x-2)
+\end{equation*}
+</div>so that \(x=0\) or \(x=2\text{.}\)</li>
+<li id="li-1073">When \(x=4\text{,}\) equation (E1) forces \(y\) to obey<div class="displaymath">
+\begin{equation*}
+0=3\times 4^2+y^2-6\times 4=24+y^2
+\end{equation*}
+</div>which is impossible.</li>
+</ul>
+<p data-braille="continuation">So, there are two critical points: \((0,0),\ (2,0)\text{.}\) Here is a table that classifies the critical points.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(\Atop{\rm critical}{\rm point}\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f_{xx}f_{yy}-f_{xy}^2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f_{xx}\)</td>
+<td class="l m b1 r1 l0 t1 lines" data-braille="last-cell">type</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((0,0)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((-6)\times (-8)-0^2 \gt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-6 \lt 0\)</td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">local max</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\((2,0)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6\times(-4)-0^2 \lt 0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">saddle point</td>
+</tr>
+</table></div></div></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_max_min_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_max_min_B"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.20</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_max_min_B"><article class="example example-like"><p id="p-2346">A manufacturer wishes to make an open rectangular box of given volume \(V\) using the least possible material. Find the design specifications.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-325" id="solution-325"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-325"><div class="solution solution-like">
+<p id="p-2347">Denote by \(x\text{,}\) \(y\) and \(z\text{,}\) the length, width and height, respectively, of the box.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/box.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2348">The box has two sides of area \(xz\text{,}\) two sides of area \(yz\) and a bottom of area \(xy\text{.}\) So the total surface area of material used is</p>
+<div class="displaymath">
+\begin{equation*}
+S = 2xz + 2yz + xy
+\end{equation*}
+</div>
+<p data-braille="continuation">However the three dimensions \(x\text{,}\) \(y\) and \(z\) are not independent. The requirement that the box have volume \(V\) imposes the constraint</p>
+<div class="displaymath">
+\begin{equation*}
+xyz = V
+\end{equation*}
+</div>
+<p data-braille="continuation">We can use this constraint to eliminate one variable. Since \(z\) is at the end of the alphabet (poor \(z\)), we eliminate \(z\) by substituting \(z=\frac{V}{xy}\text{.}\) So we have find the values of \(x\) and \(y\) that minimize the function</p>
+<div class="displaymath">
+\begin{equation*}
+S(x,y) = \frac{2V}{y} + \frac{2V}{x} + xy
+\end{equation*}
+</div>
+<p data-braille="continuation">Let's start by finding the critical points of \(S\text{.}\) Since</p>
+<div class="displaymath">
+\begin{align*}
+S_x(x,y) &amp;= -\frac{2V}{x^2} + y\\
+S_y(x,y) &amp;= -\frac{2V}{y^2} + x
+\end{align*}
+</div>
+<p data-braille="continuation">\((x,y)\) is a critical point if and only if</p>
+<div class="displaymath">
+\begin{align*}
+x^2y&amp;=2V \tag{E1}\\
+xy^2&amp;=2V \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">Solving (E1) for \(y\) gives \(y=\frac{2V}{x^2}\text{.}\) Substituting this into (E2) gives</p>
+<div class="displaymath">
+\begin{equation*}
+x\frac{4V^2}{x^4}=2V \implies
+x^3 = 2V \implies  x = \root{3}\of{2V}\quad\text{and}\quad
+y = \frac{2V}{(2V)^{2/3}} = \root{3}\of{2V}
+\end{equation*}
+</div>
+<p data-braille="continuation">As there is only one critical point, we would expect it to give the minimum<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-88" id="fn-88"><sup> 14 </sup></a>. But let's use the second derivative test to verify that at least the critical point is a local minimum. The various second partial derivatives are</p>
+<div class="displaymath">
+\begin{align*}
+S_{xx}(x,y)&amp;=\frac{4V}{x^3} &amp;
+S_{xx}\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)&amp;=2\\
+S_{xy}(x,y)&amp;=1&amp;
+S_{xy}\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)&amp;=1\\
+S_{yy}(x,y)&amp;=\frac{4V}{y^3} &amp;
+S_{yy}\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)&amp;=2
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+S_{xx}\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)\
+S_{yy}\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)
+-S_{xy}\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)^2
+&amp;=3 \gt 0\\
+S_{xx}\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)&amp;=2 \gt 0
+\end{align*}
+</div>
+<p data-braille="continuation">and, by Theorem <a class="xref" data-knowl="./knowl/thm_second_deriv_test.html" title="Theorem 2.9.16: Second Derivative Test">2.9.16</a>.b, \(\big(\root{3}\of{2V}\,,\,\root{3}\of{2V}\big)\) is a local minimum and the desired dimensions are</p>
+<div class="displaymath">
+\begin{equation*}
+x=y=\root{3}\of{2V}\qquad
+z=\root{3}\of{\frac{V}{4}}
+\end{equation*}
+</div>
+<p data-braille="continuation">Note that our solution has \(x=y\text{.}\) That's a good thing — the function \(S(x,y)\) is symmetric in \(x\) and \(y\text{.}\) Because the box has no top, the symmetry does not extend to \(z\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-88"><div class="fn">Indeed one can use the facts that \(0 \lt x \lt \infty\text{,}\) that \(0 \lt y \lt \infty\text{,}\) and that \(S\rightarrow\infty\) as \(x\rightarrow 0\) and as \(y\rightarrow 0\) and as \(x\rightarrow \infty\) and as \(y\rightarrow\infty\) to prove that the single critical point gives the global minimum.</div></div>
+</div></div>
+</div></article></div></section><section class="subsection" id="sec_global"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.9.3</span> <span class="title">Absolute Minima and Maxima</span>
+</h3>
+<p id="p-2349">Of course a local maximum or minimum of a function need not be the absolute maximum of minimum. We'll now consider how to find the absolute maximum and minimum. Let's start by reviewing how one finds the absolute maximum and minimum of a function of one variable on an interval.</p>
+<p id="p-2350">For concreteness, let's suppose that we want to find the extremal<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-89" id="fn-89"><sup> 15 </sup></a> values of a function \(f(x)\) on the interval \(0\le x\le 1\text{.}\) If an extremal value is attained at some \(x=a\) which is in the interior of the interval, i.e. if \(0 \lt a \lt 1\text{,}\) then \(a\) is also a local maximum or minimum and so has to be a critical point of \(f\text{.}\) But if an extremal value is attained at a boundary point \(a\) of the interval, i.e. if \(a=0\) or \(a=1\text{,}\) then \(a\) need not be a critical point of \(f\text{.}\) This happens, for example, when \(f(x)=x\text{.}\) The largest value of \(f(x)\) on the interval \(0\le x\le 1\) is \(1\) and is attained at \(x=1\text{,}\) but \(f'(x)=1\) is never zero, so that \(f\) has no critical points.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-89"><div class="fn">Recall that “extremal value” means “either maximum value or minimum value”.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/absMaxMin.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2351">So to find the maximum and minimum of the function \(f(x)\) on the interval \([0,1]\text{,}\) you</p>
+<ol class="decimal">
+<li id="li-1074">
+<p id="p-2352">build up a list of all candidate points \(0\le a\le 1\) at which the maximum or minimum could be attained, by finding all \(a\)'s for which either</p>
+<ol class="lower-alpha">
+<li id="li-1075">\(0 \lt a \lt 1\) and \(f'(a)=0\) or</li>
+<li id="li-1076">\(0 \lt a \lt 1\) and \(f'(a)\) does not exist<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-90" id="fn-90"><sup> 16 </sup></a> or</li>
+<li id="li-1077">\(a\) is a boundary point, i.e. \(a=0\) or \(a=1\text{,}\)</li>
+</ol>
+</li>
+<li id="li-1078">and then you evaluate \(f(a)\) at each \(a\) on the list of candidates. The biggest of these candidate values of \(f(a)\) is the absolute maximum and the smallest of these candidate values is the absolute minimum.</li>
+</ol>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-90"><div class="fn">Recall that if \(f'(a)\) does not exist, then \(a\) is called a singular point of \(f\text{.}\)</div></div>
+<p id="p-2353">The procedure for finding the maximum and minimum of a function of two variables, \(f(x,y)\) in a set like, for example, the unit disk \(x^2+y^2\le 1\text{,}\) is similar.  You again</p>
+<ol class="decimal">
+<li id="li-1079">
+<p id="p-2354">build up a list of all candidate points \((a,b)\) in the set at which the maximum or minimum could be attained, by finding all \((a,b)\)'s for which either<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-91" id="fn-91"><sup> 17 </sup></a></p>
+<ol class="lower-alpha">
+<li id="li-1080">\((a,b)\) is in the interior of the set (for our example, \(a^2+b^2 \lt 1\)) and \(f_x(a,b)=f_y(a,b)=0\) or</li>
+<li id="li-1081">\((a,b)\) is in the interior of the set and  \(f_x(a,b)\) or \(f_y(a,b)\) does not exist or</li>
+<li id="li-1082"><p id="p-2355">\((a,b)\) is a boundary<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-92" id="fn-92"><sup> 18 </sup></a> point, (for our example, \(a^2+b^2=1\)), and could give the maximum or minimum on the boundary — more about this shortly —</p></li>
+</ol>
+</li>
+<li id="li-1083">and then you evaluate \(f(a,b)\) at each \((a,b)\) on the list of candidates. The biggest of these candidate values of \(f(a,b)\) is the absolute maximum and the smallest of these candidate values is the absolute minimum.</li>
+</ol>
+<p data-braille="continuation">The boundary of a set, like \(x^2+y^2\le 1\text{,}\) in \(\bbbr^2\) is a curve, like \(x^2+y^2=1\text{.}\) This curve is a one dimensional set, meaning that it is like a deformed \(x\)-axis. We can find the maximum and minimum of \(f(x,y)\) on this curve by converting \(f(x,y)\) into a function of one variable (on the curve) and using the standard function of one variable techniques. This is best explained by some examples.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-91"><div class="fn">This is probably a good time to review the statement of Theorem <a class="xref" data-knowl="./knowl/thm_stationary_point.html" title="Theorem 2.9.2">2.9.2</a>.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-92"><div class="fn">It should intuitively obvious from a sketch that the boundary of the disk \(x^2+y^2\le 1\) is the circle \(x^2+y^2=1\text{.}\) But if you really need a formal definition, here it is. A point \((a,b)\) is on the boundary of a set \(S\) if there is a sequence of points in \(S\) that converges to \((a,b)\) and there is also a sequence of points in the  complement of \(S\) that converges to \((a,b)\text{.}\)</div></div>
+<article class="example example-like" id="eg_MXMNabsA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNabsA"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.21</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNabsA"><article class="example example-like"><p id="p-2356">Find the maximum and minimum of \(T(x,y)=(x+y)e^{-x^2-y^2}\) on the region defined by \(x^2+y^2\le 1\) (i.e. on the unit disk).</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-326" id="solution-326"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-326"><div class="solution solution-like">
+<p id="p-2357">Let's follow our checklist. First critical points, then points where the partial derivatives don't exist, and finally the boundary.</p>
+<p id="p-2358"><em class="emphasis">Interior Critical Points:</em> If \(T\) takes its maximum or minimum value at a point in the interior, \(x^2+y^2 \lt 1\text{,}\) then that point must be either a critical point of \(T\) or a singular point of \(T\text{.}\) To find the critical points we compute the first order derivatives.</p>
+<div class="displaymath">
+\begin{equation*}
+T_x(x,y)=(1-2x^2-2xy)e^{-x^2-y^2}\qquad
+T_y(x,y)=(1-2xy-2y^2)e^{-x^2-y^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">Because the exponential \(e^{-x^2-y^2}\) is never zero, the critical points are the solutions of</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+T_x&amp;=0 &amp;\quad&amp;\iff\quad &amp; 2x(x+y)&amp;=1\\
+T_y&amp;=0 &amp; &amp;\iff &amp; 2y(x+y)&amp;=1
+\end{alignat*}
+</div>
+<ul class="disc">
+<li id="li-1084">As both \(2x(x+y)\) and \(2y(x+y)\) are nonzero, we may divide the two equations, which gives \(\frac{x}{y}=1\text{,}\) forcing \(x=y\text{.}\)</li>
+<li id="li-1085">Substituting this into either equation gives \(2x(2x)=1\) so that \(x=y=\pm\frac{1}{2}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the only critical points are \((\frac{1}{2},\frac{1}{2})\) and \((-\frac{1}{2},-\frac{1}{2})\text{.}\) Both are in \(x^2+y^2 \lt 1\text{.}\)</p>
+<p id="p-2359"><em class="emphasis">Singular points:</em>  In this problem, there are no singular points.</p>
+<p id="p-2360"><em class="emphasis">Boundary:</em> Points on the boundary satisfy \(x^2+y^2=1\text{.}\) That is they lie on a circle. We may use the figure below to express \(x=\cos t\) and \(y=\sin t\text{,}\) in terms of the angle \(t\text{.}\) This will make the formula for \(T\) on the boundary quite a bit easier to deal with. On the boundary,</p>
+<div class="displaymath">
+\begin{equation*}
+T = (\cos t+\sin t)e^{-\cos^2 t -\sin^2 t}
+=(\cos t+\sin t)e^{-1}
+\end{equation*}
+</div>
+<p data-braille="continuation">As all \(t\)'s are allowed, this function takes its max and min at zeroes of</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/optExampleAa.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<div class="displaymath" id="p-2361">
+\begin{equation*}
+\frac{dT}{dt}=\big(-\sin t+\cos t\big)e^{-1}
+\end{equation*}
+</div>
+<p data-braille="continuation">That is, \((\cos t+\sin t)e^{-1}\) takes its max and min</p>
+<ul class="disc">
+<li id="li-1086">when \(\sin t=\cos t\text{,}\)</li>
+<li id="li-1087">that is, when \(x=y\) and \(x^2+y^2=1\text{,}\)</li>
+<li id="li-1088">which forces \(x^2+x^2=1\) and hence \(x=y=\pm\tfrac{1}{\sqrt{2}}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">All together, we have the following candidates for max and min, with the max and min indicated.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">point</td>
+<td class="c m b1 r1 l0 t1 lines">\((\half,\half)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((-\half,-\half)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((\tfrac{1}{\sqrt{2}},\tfrac{1}{\sqrt{2}})\)</td>
+<td class="c m b1 r1 l0 t1 lines" data-braille="last-cell">\((-\tfrac{1}{\sqrt{2}},-\tfrac{1}{\sqrt{2}})\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">value of \(T\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\tfrac{1}{\sqrt{e}}\approx0.61\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-\tfrac{1}{\sqrt{e}}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\tfrac{\sqrt{2}}{e}\approx0.52\)</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(-\tfrac{\sqrt{2}}{e}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">max</td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+</table></div></div></div>
+<p id="p-2362">The following sketch shows all of the critical points. It is a good idea to make such a sketch so that you don't accidentally include a critical point that is outside of the allowed region.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/optExampleA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</div></div>
+</div></article></div>
+<p id="p-2363">In the last example, we analyzed the behaviour of \(f\) on the boundary of the region of interest by using the parametrization \(x=\cos t\text{,}\) \(y=\sin t\) of the circle \(x^2+y^2=1\text{.}\) Sometimes using this parametrization is not so clean. And worse, some curves don't have such a simple parametrization. In the next problem we'll look at the boundary a little differently.</p>
+<article class="example example-like" id="eg_MXMNabsB"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNabsB"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.22</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNabsB"><article class="example example-like"><p id="p-2364">Find the maximum and minimum values of \(f(x,y)=x^3+xy^2-3x^2-4y^2+4\) on the disk \(x^2+y^2\le 1\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-327" id="solution-327"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-327"><div class="solution solution-like">
+<p id="p-2365">Again, we first find all critical points, then find all singular points and, finally, analyze the boundary.</p>
+<p id="p-2366"><em class="emphasis">Interior Critical Points:</em> If \(f\) takes its maximum or minimum value at a point in the interior, \(x^2+y^2 \lt 1\text{,}\) then that point must be either a critical point of \(f\) or a singular point of \(f\text{.}\) To find the critical points<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-93" id="fn-93"><sup> 19 </sup></a> we compute the first order derivatives.</p>
+<div class="displaymath">
+\begin{gather*}
+f_x=3x^2+y^2-6x \qquad
+f_y=2xy-8y
+\end{gather*}
+</div>
+<p data-braille="continuation">The critical points are the solutions of</p>
+<div class="displaymath">
+\begin{align*}
+f_x&amp;=3x^2+y^2-6x=0 \tag{E1}\\
+f_y&amp;=2y(x-4)=0 \tag{E2}
+\end{align*}
+</div>
+<p data-braille="continuation">The second equation, \(2y(x-4)=0 \text{,}\) is satisfied if and only if at least one of the two equations \(y=0\) and \(x=4\) is satisfied.</p>
+<ul class="disc">
+<li id="li-1089">When \(y=0\text{,}\) equation (E1) forces \(x\) to obey<div class="displaymath">
+\begin{equation*}
+0=3x^2+0^2-6x=3x(x-2)
+\end{equation*}
+</div>so that \(x=0\) or \(x=2\text{.}\)</li>
+<li id="li-1090">When \(x=4\text{,}\) equation (E1) forces \(y\) to obey<div class="displaymath">
+\begin{equation*}
+0=3\times 4^2+y^2-6\times 4=24+y^2
+\end{equation*}
+</div>which is impossible.</li>
+</ul>
+<p data-braille="continuation">So, there are only two critical points: \((0,0),\ (2,0)\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-93"><div class="fn">We actually found the critical points in Example <a class="xref" data-knowl="./knowl/eg_max_min_A.html" title="Example 2.9.19">2.9.19</a>. But, for the convenience of the reader, we'll repeat that here.</div></div>
+<p id="p-2367"><em class="emphasis">Singular points:</em>  In this problem, there are no singular points.</p>
+<p id="p-2368"><em class="emphasis">Boundary:</em> On the boundary, \(x^2+y^2=1\text{,}\) we could again take advantage of having a circle and write \(x=\cos t\) and \(y=\sin t\text{.}\) But, for practice, we'll use another method<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-94" id="fn-94"><sup> 20 </sup></a>. We know that \((x,y)\) satisfies \(x^2+y^2=1\text{,}\) and hence \(y^2=1-x^2\text{.}\) Examining the formula for \(f(x,y)\text{,}\) we see that it contains only even<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-95" id="fn-95"><sup> 21 </sup></a> powers of \(y\text{,}\) so we can eliminate \(y\) by substituting \(y^2=1-x^2\) into the formula.</p>
+<div class="displaymath">
+\begin{equation*}
+f=x^3+x(1-x^2)-3x^2-4(1-x^2)+4=x+x^2
+\end{equation*}
+</div>
+<p data-braille="continuation">The max and min of \(x+x^2\) for \(-1\le x\le 1\) must occur either</p>
+<ul class="disc">
+<li id="li-1091">when \(x=-1\) (\(\Rightarrow y=f=0\)) or</li>
+<li id="li-1092">when \(x=+1\) (\(\Rightarrow y=0\text{,}\) \(f=2\)) or</li>
+<li id="li-1093">when \(0=\frac{d}{dx}(x+x^2)=1+2x\) (\(\Rightarrow x=-\half\text{,}\) \(y=\pm\sqrt{\frac{3}{4}}\text{,}\) \(f=-\frac{1}{4}\)).</li>
+</ul>
+<p data-braille="continuation">Here is a sketch showing all of the points that we have identified.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-94"><div class="fn">Even if you don't believe that “you can't have too many tools”, it is pretty dangerous to have to rely on just one tool.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-95"><div class="fn">If it contained odd powers too, we could consider the cases \(y\ge 0\) and \(y\le 0\) separately and substitute \(y=\sqrt{1-x^2}\) in the former case and \(y=-\sqrt{1-x^2}\) in the latter case.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/optExampleB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2369">Note that the point \((2,0)\) is outside the allowed region<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-96" id="fn-96"><sup> 22 </sup></a>. So all together, we have the following candidates for max and min, with the max and min indicated.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-96"><div class="fn">We found \((2,0)\) as a solution to the critical point equations (E1), (E2). That's because, in the course of solving those equations, we ignored the constraint that \(x^2+y^2\le 1\text{.}\)</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">point</td>
+<td class="c m b1 r1 l0 t1 lines">\((0,0)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((-1,0)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((1,0)\)</td>
+<td class="c m b1 r1 l0 t1 lines" data-braille="last-cell">\(\big(-\half,\pm\tfrac{\sqrt{3}}{2}\big)\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">value of \(f\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(-\tfrac{1}{4}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">max</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">min</td>
+</tr>
+</table></div></div></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_MXMNabsC"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNabsC"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.23</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNabsC"><article class="example example-like"><p id="p-2370">Find the maximum and minimum values of \(f(x,y)=xy-x^3y^2\) when \((x,y)\) runs over the square \(0\le x\le 1,\ 0\le y\le 1\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-328" id="solution-328"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-328"><div class="solution solution-like">
+<p id="p-2371">As usual, let's examine the critical points, singular points and boundary in turn.</p>
+<p id="p-2372"><em class="emphasis">Interior Critical Points:</em> If \(f\) takes its maximum or minimum value at a point in the interior, \(0 \lt x \lt 1\text{,}\) \(0 \lt y \lt 1\text{,}\) then that point must be either a critical point of \(f\) or a singular point of \(f\text{.}\) To find the critical points we compute the first order derivatives.</p>
+<div class="displaymath">
+\begin{equation*}
+f_x(x,y)=y-3x^2y^2\qquad
+f_y(x,y)=x-2x^3y
+\end{equation*}
+</div>
+<p data-braille="continuation">The critical points are the solutions of</p>
+<div class="displaymath">
+\begin{alignat*}{5}
+f_x&amp;=0 &amp; &amp;\quad\iff\quad  &amp;y(1-3x^2y)=0 &amp;
+&amp;\quad\iff\quad &amp; &amp;y=0 \ \text{ or }\  3x^2y=1\\
+f_y&amp;=0 &amp; &amp;\quad\iff\quad  &amp;x(1-2x^2y)=0 &amp;
+&amp;\quad\iff\quad &amp; &amp;x=0 \ \text{ or }\  2x^2y=1
+\end{alignat*}
+</div>
+<ul class="disc">
+<li id="li-1094">If \(y=0\text{,}\) we cannot have \(2x^2y=1\text{,}\) so we must have \(x=0\text{.}\)</li>
+<li id="li-1095">If \(3x^2y=1\text{,}\) we cannot have \(x=0\text{,}\) so we must have \(2x^2y=1\text{.}\) Dividing gives \(1=\tfrac{3x^2y}{2x^2y}=\tfrac{3}{2}\) which is impossible.</li>
+</ul>
+<p data-braille="continuation">So the only critical point in the square is \((0,0)\text{.}\) There \(f=0\text{.}\)</p>
+<p id="p-2373"><em class="emphasis">Singular points:</em>  Yet again there are no singular points in this problem.</p>
+<p id="p-2374"><em class="emphasis">Boundary:</em> The region is a square, so its boundary consists of its four sides.</p>
+<ul class="disc">
+<li id="li-1096">First, we look at the part of the boundary with \(x=0\text{.}\) On that entire side \(f=0\text{.}\)</li>
+<li id="li-1097">Next, we look at the part of the boundary with \(y=0\text{.}\) On that entire side \(f=0\text{.}\)</li>
+<li id="li-1098">
+<p id="p-2375">Next, we look at the part of the boundary with \(y=1\text{.}\) There \(f=f(x,1)=x-x^3\text{.}\) To find the maximum and minimum of \(f(x,y)\) on the part of the boundary with \(y=1\text{,}\) we must find the maximum and minimum of \(x-x^3\) when \(0\le x\le 1\text{.}\)</p>
+<p id="p-2376">Recall that, in general, the maximum and minimum of a function \(h(x)\) on the interval \(a\le x\le b\text{,}\) must occur either at \(x=a\) or at \(x=b\) or at an \(x\) for which either \(h'(x)=0\) or \(h'(x)\) does not exist. In this case, \(\tfrac{d}{dx}(x-x^3)=1-3x^2\text{,}\) so the max and min of \(x-x^3\) for \(0\le x\le 1\) must occur</p>
+<ul class="circle">
+<li id="li-1099">either at \(x=0\text{,}\) where \(f=0\text{,}\)</li>
+<li id="li-1100">or at \(x=\tfrac{1}{\sqrt{3}}\text{,}\) where \(f=\tfrac{2}{3\sqrt{3}}\text{,}\)</li>
+<li id="li-1101">or at \(x=1\text{,}\) where \(f=0\text{.}\)</li>
+</ul>
+</li>
+<li id="li-1102">
+<p id="p-2377">Finally, we look at the part of the boundary with \(x=1\text{.}\) There \(f=f(1,y)=y-y^2\text{.}\) As \(\tfrac{d}{dy}(y-y^2)=1-2y\text{,}\) the only critical point of \(y-y^2\) is at \(y=\frac{1}{2}\text{.}\) So the the max and min of \(y-y^2\) for \(0\le y\le 1\) must occur</p>
+<ul class="circle">
+<li id="li-1103">either at \(y=0\text{,}\) where \(f=0\text{,}\)</li>
+<li id="li-1104">or at \(y=\half\text{,}\)  where \(f=\tfrac{1}{4}\text{,}\)</li>
+<li id="li-1105">or at \(y=1\text{,}\) where \(f=0\text{.}\)</li>
+</ul>
+</li>
+</ul>
+<p data-braille="continuation">All together, we have the following candidates for max and min, with the max and min indicated.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">point</td>
+<td class="c m b1 r1 l0 t1 lines">\((0,0)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\({\scriptstyle(0,0\le y\le 1)}\)</td>
+<td class="c m b1 r1 l0 t1 lines">\({\scriptstyle(0\le x\le 1,0)}\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((1,0)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((1,\half)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((1,1)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((0,1)\)</td>
+<td class="c m b1 r1 l0 t1 lines" data-braille="last-cell">\((\tfrac{1}{\sqrt{3}},1)\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">value of \(f\)</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">\(\tfrac{1}{4}\)</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(\tfrac{2}{3\sqrt{3}}\approx0.385\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">max</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/optExampleC.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_MXMNabsCC"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNabsCC"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.24</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNabsCC"><article class="example example-like"><p id="p-2378">Find the maximum and minimum values of \(f(x,y)=xy+2x+y\) when \((x,y)\) runs over the triangular region with vertices \((0,0)\text{,}\) \((1,0)\) and \((0,2)\text{.}\) The triangular region is sketched in</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/optExampleCCa.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-329" id="solution-329"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-329"><div class="solution solution-like">
+<p id="p-2379">As usual, let's examine the critical points, singular points and boundary in turn.</p>
+<p id="p-2380"><em class="emphasis">Interior Critical Points:</em> If \(f\) takes its maximum or minimum value at a point in the interior, then that point must be either a critical point of \(f\) or a singular point of \(f\text{.}\) The critical points are the solutions of</p>
+<div class="displaymath">
+\begin{equation*}
+f_x(x,y)=y+2=0\qquad
+f_y(x,y)=x+1=0
+\end{equation*}
+</div>
+<p data-braille="continuation">So there is exactly one critical point, namely \((-1,-2)\text{.}\) This is well outside the triangle and so is not a candidate for the location of the max and min.</p>
+<p id="p-2381"><em class="emphasis">Singular points:</em>  Yet again there are no singular points for this \(f\text{.}\)</p>
+<p id="p-2382"><em class="emphasis">Boundary:</em> The region is a triangle, so its boundary consists of its three sides.</p>
+<ul class="disc">
+<li id="li-1106">First, we look at the side that runs from \((0,0)\) to \((0,2)\text{.}\) On that entire side \(x=0\text{,}\) so that \(f(0,y)=y\text{.}\) The smallest value of \(f\) on that side is \(f=0\) at \((0,0)\) and the largest value of \(f\) on that side is \(f=2\) at \((0,2)\text{.}\)</li>
+<li id="li-1107">Next, we look at the side that runs from \((0,0)\) to \((1,0)\text{.}\) On that entire side \(y=0\text{,}\) so that \(f(x,0)=2x\text{.}\) The smallest value of \(f\) on that side is \(f=0\) at \((0,0)\) and the largest value of \(f\) on that side is \(f=2\) at \((1,0)\text{.}\)</li>
+<li id="li-1108">
+<p id="p-2383">Finally,  we look at the side that runs from \((0,2)\) to \((1,0)\text{.}\) Or first job is to find the equation of the line that contains \((0,2)\) and \((1,0)\text{.}\) By way of review, we'll find the equation using three different methods.</p>
+<ul class="circle">
+<li id="li-1109">
+<p id="p-2384"><em class="emphasis">Method 1:</em> You (probably) learned in high school that any line in the \(xy\)-plane<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-97" id="fn-97"><sup> 23 </sup></a> has equation \(y=mx + b\) where \(b\) is the \(y\) intercept and \(m\) is the slope. In this case, the line crosses the \(y\) axis at \(y=2\) and so has \(y\) intercept \(b=2\text{.}\) The line passes through \((0,2)\) and \((1,0)\) and so, as we see in the figure below, has slope \(m=\frac{\De y}{\De x}=\frac{0-2}{1-0}=-2\text{.}\) Thus the side of the triangle that runs from \((0,2)\) to \((1,0)\) is \(y=2-2x\) with \(0\le x\le 1\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/optExampleCCc.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1110">
+<em class="emphasis">Method 2:</em>  Every line in the \(xy\)-plane has an equation of the form \(ax+by=c\text{.}\) In this case \((0,0)\) is <em class="emphasis">not</em> on the line so that \(c\ne 0\) and we can divide the equation by \(c\text{,}\) giving \(\frac{a}{c}x+\frac{b}{c}y=1\text{.}\) Rename \(\frac{a}{c}=A\) and \(\frac{b}{c}=B\text{.}\) Thus, because the line does not pass through the origin, it has an equation of the form \(Ax+By=1\text{,}\) for some constants \(A\) and \(B\text{.}\) In order for \((0,2)\) to lie on the line, \(x=0\text{,}\) \(y=2\) has to be a solution of \(Ax+By=1\text{.}\) That is, \(Ax\big|_{x=0}+By\big|_{y=2}=1\text{,}\) so that \(B=\frac{1}{2}\text{.}\) In order for \((1,0)\) to lie on the line, \(x=1\text{,}\) \(y=0\) has to be a solution of \(Ax+By=1\text{.}\) That is \(Ax\big|_{x=1}+By\big|_{y=0}=1\text{,}\) so that \(A=1\text{.}\) Thus the line has equation \(x+\frac{1}{2}y=1\text{,}\) or equivalently, \(y=2-2x\text{.}\)</li>
+<li id="li-1111">
+<em class="emphasis">Method 3:</em> The vector from \((0,2)\) to \((1,0)\) is \(\llt 1-0\,,\,0-2\rgt = \llt 1,-2\rgt\text{.}\) As we see from the figure above, it is a direction vector for the line. One point on the line is \((0,2)\text{.}\) So a parametric equation for the line (see Equation <a class="xref" data-knowl="./knowl/eqn_par_line.html" title="Equation 1.3.1: Parametric Equations">1.3.1</a>) is<div class="displaymath">
+\begin{equation*}
+\llt x-0\,,\,y-2\rgt = t\llt 1,-2\rgt\qquad\text{or}\qquad
+x=t,\ y=2-2t
+\end{equation*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">By any of these three methods<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-98" id="fn-98"><sup> 24 </sup></a>, we have that the side of the triangle that runs from \((0,2)\) to \((1,0)\) is \(y=2-2x\) with \(0\le x\le 1\text{.}\) On that side of the triangle</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,2-2x) = x(2-2x)+2x+(2-2x)
+= -2x^2 +2x+2
+\end{equation*}
+</div>
+<p data-braille="continuation">Write \(g(x) = -2x^2 +2x+2\text{.}\) The maximum and minimum of \(g(x)\) for \(0\le x\le 1\text{,}\) and hence the maximum and minimum values of \(f\) on the hypotenuse of the triangle, must be achieved either at</p>
+<ul class="circle">
+<li id="li-1112">\(x=0\text{,}\) where \(f(0,2)=g(0)=2\text{,}\) or at</li>
+<li id="li-1113">\(x=1\text{,}\) where \(f(1,0)=g(1)=2\text{,}\) or when</li>
+<li id="li-1114">\(0=g'(x) = -4x+2\) so that \(x=\frac{1}{2}\text{,}\) \(y=2-\frac{2}{2}=1\) and<div class="displaymath">
+\begin{equation*}
+f(\frac{1}{2},1)=g(\frac{1}{2})=-\frac{2}{4}+\frac{2}{2}+2
+=\frac{5}{2}
+\end{equation*}
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<p data-braille="continuation">All together, we have the following candidates for max and min, with the max and min indicated.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-97"><div class="fn">To be picky, any line the \(xy\)-plane that is not parallel to the \(y\) axis.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-98"><div class="fn">In the third method, \(x\) has just be renamed to \(t\text{.}\)</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">point</td>
+<td class="c m b1 r1 l0 t1 lines">\((0,0)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((0,2)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\((1,0)\)</td>
+<td class="c m b1 r1 l0 t1 lines" data-braille="last-cell">\((\frac{1}{2},1)\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">value of \(f\)</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(\frac{5}{2}\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">min</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">max</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/optExampleCCb.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_MXMNabsD"><a data-knowl="" class="id-ref original" data-refid="hk-eg_MXMNabsD"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.9.25</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_MXMNabsD"><article class="example example-like"><p id="p-2385">Find the high and low points of the surface \(\ z=\sqrt{x^2+y^2}\ \) with \((x,y)\) varying over the square \(\ |x|\le 1\text{,}\) \(|y|\le 1\ \text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-330" id="solution-330"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-330"><div class="solution solution-like">
+<p id="p-2386">The function \(\ f(x,y)=\sqrt{x^2+y^2}\ \) has a particularly simple geometric interpretation — it is the distance from the point \((x,y)\) to the origin. So</p>
+<ul class="disc">
+<li id="li-1115">the minimum of \(f(x,y)\) is achieved at the point in the square that is nearest the origin — namely the origin itself. So \((0,0,0)\) is the lowest point on the surface and is at height \(0\text{.}\)</li>
+<li id="li-1116">The maximum of \(f(x,y)\) is achieved at the points in the square that are farthest from the origin — namely the four corners of the square \(\big(\pm 1,\pm 1\big)\text{.}\) At those four points \(z=\sqrt{2}\text{.}\) So the highest points on the surface are \((\pm 1,\pm 1,\sqrt{2})\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Even though we have already answered this question, it will be instructive to see what we would have found if we had followed our usual protocol. The partial derivatives of \(f(x,y)=\sqrt{x^2+y^2}\) are defined for \((x,y)\ne (0,0)\) and are</p>
+<div class="displaymath">
+\begin{equation*}
+f_x(x,y) =\frac{x}{\sqrt{x^2+y^2}}\qquad
+f_y(x,y) =\frac{y}{\sqrt{x^2+y^2}}
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-1117">
+<p id="p-2387">There are no critical points because</p>
+<ul class="circle">
+<li id="li-1118">\(f_x=0\) only for \(x=0\text{,}\) and</li>
+<li id="li-1119">\(f_y=0\) only for \(y=0\text{,}\) but</li>
+<li id="li-1120">\((0,0)\) is not a critical point because \(f_x\) and \(f_y\) are not defined there.</li>
+</ul>
+</li>
+<li id="li-1121">There is one singular point — namely \((0,0)\text{.}\) The minimum value of \(f\) is achieved at the singular point.</li>
+<li id="li-1122">The boundary of the square consists of its four sides. One side is<div class="displaymath">
+\begin{equation*}
+\Set{(x,y)}{x=1,\ -1\le y\le 1}
+\end{equation*}
+</div>On this side \(f=\sqrt{1+y^2}\text{.}\) As \(\sqrt{1+y^2}\) increases with \(|y|\text{,}\) the smallest value of \(f\) on that side is \(1\) (when \(y=0\)) and the largest value of \(f\) is \(\sqrt{2}\) (when \(y=\pm 1\)). The same thing happens on the other three sides. The maximum value of \(f\) is achieved at the four corners. Note that \(f_x\) and \(f_y\) are both nonzero at all four corners.</li>
+</ul>
+</div></div>
+</div></article></div></section><section class="exercises" id="exercises-16"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.9.4</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-45">
+<div class="introduction" id="introduction-59"><p id="p-2388"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-290"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-2389" class="lower-alpha">
+<li id="li-1123">
+<p id="p-2390">Some level curves of a function \(f(x,y)\) are plotted in the \(xy\)--plane below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/OE16D_2a.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2391">For each of the four statements below, circle the letters of <em class="alert">all</em> points in the diagram where the situation applies. For example, if the statement were “These points are on the \(y\)--axis”, you would circle both \(P\) and \(U\text{,}\) but none of the other letters. You may assume that a local maximum occurs at point \(T\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\text{(i) }&amp; \vnabla f\text{ is zero} &amp; &amp;\text{P R S T U}\\
+\text{(ii) }&amp; f \text{ has a saddle point} &amp; &amp;\text{P R S T U}\\
+\text{(iii) }&amp; \text{ the partial derivative $f_y$ is positive} &amp; &amp;\text{P R S T U}\\
+\text{(iv) }&amp; \text{ the directional derivative of $f$ in the
+direction $\llt 0,-1\rgt$ is} &amp; &amp;\text{P R S T U}\\
+&amp; \text{ negative} &amp; &amp;
+\end{align*}
+</div>
+</li>
+<li id="li-1124">
+<p id="p-2392">The diagram below shows three “\(y\) traces” of a graph \(z=F(x,y)\) plotted on \(xz\)--axes. (Namely the intersections of the surface  \(z=F(x,y)\) with the three planes (\(y=1.9\text{,}\) \(y=2\text{,}\) \(y=2.1\)). For each statement below, circle the correct word.</p>
+<div class="displaymath">
+\begin{align*}
+\text{(i) }&amp; \text{ the first order partial derivative $F_x(1,2)$ is} &amp; &amp;
+\text{positive/negative/zero}\\
+\text{(ii) }&amp; F \text{ has a critical point at } (2,2) &amp;
+&amp;\text{true/false}\\
+\text{(iii) }&amp; \text{ the second order partial derivative $F_{xy}(1,2)$ is} &amp; &amp;\text{positive/negative/zero}
+\end{align*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/OE16D_2b.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-291"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-2407">Find the high and low points of the surface \(\ z=\sqrt{x^2+y^2}\ \) with \((x,y)\) varying over the square \(\ |x|\le 1\text{,}\) \(|y|\le 1\ \text{.}\) Discuss the values of \(\ z_x,\ z_y\ \) there. Do not evaluate any derivatives in answering this question.</p></article><article class="exercise exercise-like" id="exercise-292"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-2411">If \(t_0\) is a local minimum or maximum of the smooth function \(\ f(t)\ \) of one variable (\(t\) runs over all real numbers) then \(\ f'(t_0)=0.\) Derive an analogous necessary condition for \(\vx_0\) to be a local minimum or maximium of the smooth function \(\ g(\vx)\ \) <em class="alert">restricted</em> to points on the line \(\ \vx=\va+t\vd\ .\) The test should involve the gradient of \(g(\vx)\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-46">
+<div class="introduction" id="introduction-60"><p id="p-2415"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-293"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2416">Let \(z = f(x,y) = {(y^2 - x^2)}^2\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1125">Make a reasonably accurate sketch of the level curves in the \(xy\)--plane of \(z = f(x,y)\) for \(z = 0\text{,}\) \(1\) and \(16\text{.}\) Be sure to show the units on the coordinate axes.</li>
+<li id="li-1126">Verify that \((0,0)\) is a critical point for \(z = f(x,y)\text{,}\) and determine from part (a) or directly from the formula for \(f(x,y)\) whether \((0, 0)\) is a local minimum, a local maximum or a saddle point.</li>
+<li id="li-1127">Can you use the Second Derivative Test to determine whether the critical point \((0, 0)\) is a local minimum, a local maximum or a saddle point? Give reasons for your answer.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-294"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2424">Use the Second Derivative Test to find all values of the constant \(c\) for which the function \(z = x^2 + cxy + y^2\) has a saddle point at \((0,0)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-295"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2428">Find and classify all critical points of the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x, y) = x^3 - y^3 - 2xy + 6.
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-296"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2431">Find all critical points for \(f(x,y) = x(x^2 + xy + y^2 - 9)\text{.}\) Also find out which of these points give local maximum values for \(f(x,y)\text{,}\) which give local minimum values, and which give saddle points.</p></article><article class="exercise exercise-like" id="exercise-297"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2435">Find the largest and smallest values of \(x^2 y^2 z\) in the part of the plane \(2x + y + z = 5\) where \(x \ge 0\text{,}\) \(y \ge 0\) and \(z \ge 0\text{.}\) Also find all points where those extreme values occur.</p></article><article class="exercise exercise-like" id="exercise-298"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-2440">Find and classify all the critical points of \(f(x,y)=x^2+y^2+x^2y+4\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-299"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2443">Find all saddle points, local minima and local maxima of the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y) = x^3 + x^2 - 2xy + y^2 - x.
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-300"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2447">For the surface</p>
+<div class="displaymath">
+\begin{equation*}
+z = f (x, y) = x^3 + xy^2 - 3x^2 - 4y^2 + 4
+\end{equation*}
+</div>
+<p data-braille="continuation">Find and classify [as local maxima, local minima, or saddle points] all critical points of \(f(x,y)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-301"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
+<p id="p-2451">Find the maximum and minimum values of \(f(x,y)=xy-x^3y^2\) when \((x,y)\) runs over the square \(0\le x\le 1\text{,}\) \(0\le y\le 1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-302"><h6 class="heading"><span class="codenumber">13<span class="period">.</span></span></h6>
+<p id="p-2456">The temperature at all points in the disc \(x^2+y^2\le 1\) is given by \(T(x,y)=(x+y)e^{-x^2-y^2}\text{.}\) Find the maximum and minimum temperatures at points of the disc.</p></article><article class="exercise exercise-like" id="exercise-303"><h6 class="heading">
+<span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2461">The images below depict level sets \(f (x, y) = c\) of the functions in the list at heights \(c = 0, 0.1, 0.2, \ldots , 1.9, 2\text{.}\) Label the pictures with the corresponding function and mark the critical points in each picture. (Note that in some cases, the critical points might not be drawn on the images already. In those cases you should add them to the picture.)</p>
+<ol class="lower-roman">
+<li id="li-1145">\(\displaystyle f(x, y) = (x^2 + y^2 - 1)(x - y) + 1\)</li>
+<li id="li-1146">\(\displaystyle f(x, y) = \sqrt{x^2 + y^2}\)</li>
+<li id="li-1147">\(\displaystyle f(x, y) = y(x + y)(x - y) + 1\)</li>
+<li id="li-1148">\(\displaystyle f(x, y) = x^2 + y^2\)</li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
+<div class="sbspanel" style="width:22.680412371134%;justify-content:flex-start;"><img src="pfigs/level3.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:22.680412371134%;justify-content:flex-start;"><img src="pfigs/level1.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:22.680412371134%;justify-content:flex-start;"><img src="pfigs/level4.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:22.680412371134%;justify-content:flex-start;"><img src="pfigs/level2.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div></article><article class="exercise exercise-like" id="exercise-304"><h6 class="heading">
+<span class="codenumber">15<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2473">Let the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y) = x^3+3xy+3y^2-6x-3y-6
+\end{equation*}
+</div>
+<p data-braille="continuation">Classify as \(\big[\)local maxima, minima or saddle points\(\big]\) all critical points of \(f(x,y)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-305"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2477">Let \(h(x, y) = y(4 - x^2 - y^2)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1151">Find and classify the critical points of \(h(x, y)\) as local maxima, local minima or saddle points.</li>
+<li id="li-1152">Find the maximum and minimum values of \(h(x, y)\) on the disk \(x^2 + y^2 \le 1\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-306"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2484">Find the absolute maximum and minimum values of the function \(f(x, y) = 5 + 2x - x^2 - 4y^2\) on the rectangular region</p>
+<div class="displaymath">
+\begin{equation*}
+R = \Set{(x, y)}{ -1 \le x \le 3,\  -1 \le y \le 1}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-307"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2488">Find the minimum of the function \(h(x,y) = -4x - 2y + 6\) on the closed bounded domain defined by \(x^2 + y^2 \le 1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-308"><h6 class="heading">
+<span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2491">Let \(f(x,y) = xy(x + y - 3)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1161">Find all critical points of \(f\text{,}\) and classify each one as a local maximum, a local minimum, or saddle point.</li>
+<li id="li-1162">Find the location and value of the absolute maximum and minimum of \(f\) on the triangular region \(x \ge 0\text{,}\) \(y \ge 0\text{,}\) \(x + y \le 8\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-309"><h6 class="heading">
+<span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2499">Find and classify the critical points of \(f(x,y) = 3x^2 y + y^3 - 3x^2 - 3y^2 + 4\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-310"><h6 class="heading">
+<span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2506">Consider the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=2x^3 - 6xy + y^2 +4y
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1171">Find and classify all of the critical points of \(f(x,y)\text{.}\)</li>
+<li id="li-1172">Find the maximum and minimum values of \(f(x,y)\) in the triangle with vertices \((1,0)\text{,}\) \((0,1)\) and \((1,1)\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-311"><h6 class="heading">
+<span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2512">Find all critical points of the function \(f(x,y)=x^4+y^4-4xy+2\text{,}\) and for each determine whether it is a local minimum, maximum or saddle point.</p></article><article class="exercise exercise-like" id="exercise-312"><h6 class="heading">
+<span class="codenumber">23<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2515">Let</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=xy(x+2y-6)
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1176">Find every critical point of \(f(x,y)\) and classify each one.</li>
+<li id="li-1177">Let \(D\) be the region in the plane between the hyperbola \(xy=4\) and the line \(x+2y-6=0\text{.}\) Find the maximum and minimum values of \(f(x,y)\) on \(D\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-313"><h6 class="heading">
+<span class="codenumber">24<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2522">Find all the critical points of the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=x^4+y^4-4xy
+\end{equation*}
+</div>
+<p data-braille="continuation">defined in the \(xy\)-plane. Classify each critical point as a local minimum, maximum or saddle point.</p></article><article class="exercise exercise-like" id="exercise-314"><h6 class="heading">
+<span class="codenumber">25<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2525">A metal plate is in the form of a semi-circular disc bounded by the \(x\)-axis and the upper half of \(x^2+y^2=4\text{.}\) The temperature at the point \((x,y)\) is given by \(T(x,y)=\ln\big(1+x^2+y^2\big)-y\text{.}\) Find the coldest point on the plate, explaining your steps carefully. (Note: \(\ln 2\approx 0.693\text{,}\) \(\ln 5\approx 1.609\))</p></article><article class="exercise exercise-like" id="exercise-315"><h6 class="heading">
+<span class="codenumber">26<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2528">Find all the critical points of the function</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=x^3+xy^2-x
+\end{equation*}
+</div>
+<p data-braille="continuation">defined in the \(xy\)-plane. Classify each critical point as a local minimum, maximum or saddle point. Explain your reasoning.</p></article><article class="exercise exercise-like" id="exercise-316"><h6 class="heading">
+<span class="codenumber">27<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2531">Consider the function \(g(x,y)=x^2-10y-y^2
+.\)</p>
+<ol class="lower-alpha">
+<li id="li-1181">Find and classify  all critical points of \(g\text{.}\)</li>
+<li id="li-1182">Find the absolute extrema of \(g\) on the bounded region given by<div class="displaymath">
+\begin{equation*}
+x^2+4y^2\le 16,\ y\le 0
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-317"><h6 class="heading">
+<span class="codenumber">28<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2537">Find and classify all critical points of</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=x^3-3xy^2-3x^2-3y^2
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-318"><h6 class="heading">
+<span class="codenumber">29<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2540">Find the maximum value of</p>
+<div class="displaymath">
+\begin{equation*}
+f(x, y) = xye^{-(x^2 + y^2) / 2}
+\end{equation*}
+</div>
+<p data-braille="continuation">on the quarter-circle \(D = \Set{(x, y)} { x^2 + y^2 \le 4,\ x\ge0,\ y\ge 0}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-319"><h6 class="heading"><span class="codenumber">30<span class="period">.</span></span></h6>
+<p id="p-2544">Equal angle bends are made at equal distances from the two ends of a 100 metre long fence, so that the resulting three segment fence can be placed along an existing wall to make an enclosure of trapezoidal shape. What is the largest possible area for such an enclosure?</p></article><article class="exercise exercise-like" id="exercise-320"><h6 class="heading"><span class="codenumber">31<span class="period">.</span></span></h6>
+<p id="p-2549">Find the most economical shape of a rectangular box that has a fixed volume \(V\) and that has no top.</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-47">
+<div class="introduction" id="introduction-61"><p id="p-2554"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-321"><h6 class="heading">
+<span class="codenumber">32<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2555">The temperature \(T(x,y)\) at a point of the \(xy\)--plane is given by</p>
+<div class="displaymath">
+\begin{equation*}
+T(x,y) = 20 - 4x^2 - y^2
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1189">Find the maximum and minimum values of \(T(x,y)\) on the disk \(D\) defined by \(x^2 + y^2 \le 4\text{.}\)</li>
+<li id="li-1190">Suppose an ant lives on the disk \(D\text{.}\) If the ant is initially at point \((1, 1)\text{,}\) in which direction should it move so as to increase its temperature as quickly as possible?</li>
+<li id="li-1191">Suppose that the ant moves at a velocity \(\vv = \llt -2, -1\rgt\text{.}\) What is its rate of increase of temperature as it passes through \((1, 1)\text{?}\)</li>
+<li id="li-1192">Suppose the ant is constrained to stay on the curve \(y = 2 - x^2\text{.}\) Where should the ant go if it wants to be as warm as possible?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-322"><h6 class="heading">
+<span class="codenumber">33<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2564">Consider the function</p>
+<div class="displaymath">
+\begin{equation*}
+f (x,y) = 3kx^2 y + y^3 - 3x^2 - 3y^2 + 4
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(k  \gt  0\) is a constant. Find and classify all critical points of \(f(x,y)\) as local minima, local maxima, saddle points or points of indeterminate type. Carefully distinguish the cases \(k  \lt  \frac{1}{2}\text{,}\) \(k = \frac{1}{2}\) and \(k  \gt  \frac{1}{2}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-323"><h6 class="heading">
+<span class="codenumber">34<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-2573" class="lower-alpha">
+<li id="li-1197">Show that the function \(f(x,y)=2x+4y+\frac{1}{xy}\) has exactly one critical point in the first quadrant \(x \gt 0\text{,}\) \(y \gt 0\text{,}\) and find its value at that point.</li>
+<li id="li-1198">Use the second derivative test to classify the critical point in part (a).</li>
+<li id="li-1199">Hence explain why the inequality \(2x+4y+\frac{1}{xy}\ge 6\) is valid for all positive real numbers \(x\) and \(y\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-324"><h6 class="heading"><span class="codenumber">35<span class="period">.</span></span></h6>
+<p id="p-2580">An experiment yields data points \(\ (x_i,y_i),\ i=1,2,\cdots,n.\) We wish to find the straight line \(\ y=mx+b\ \) which “best” fits the data. The definition of “best” is “minimizes the root mean square error”, i.e. minimizes \(\ \sum_{i=1}^n (mx_i+b-y_i)^2\text{.}\) Find \(m\) and \(b\text{.}\)</p></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

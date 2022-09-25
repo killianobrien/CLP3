@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:41:55+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Double Integrals</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap_integrals.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_polars.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap_integrals.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_polars.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals" class="active">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_2d_integrals"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Double Integrals</span>
+</h2>
+<section class="subsection" id="sec_vertical_slices"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Vertical Slices</span>
+</h3>
+<p id="p-2774">Suppose that you want to compute the mass of a plate that fills the region \(\cR\) in the \(xy\)-plane. Suppose further that the density of the plate, say in kilograms per square meter, depends on position. Call the density \(f(x,y)\text{.}\) For simplicity we'll assume that \(\cR\) is the region between the bottom curve \(y=B(x)\) and the top curve \(y=T(x)\) with \(x\) running from \(a\) to \(b\text{.}\) That is,</p>
+<div class="displaymath">
+\begin{gather*}
+\cR=\big\{\ (x,y)\ \big|\ a\le x\le b,\ B(x)\le y\le T(x)\ \big\}
+\end{gather*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/vSliceA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2775">We'll shortly express that mass as a two dimensional integral. As a warmup, recall the procedure that we used  to set up a (one dimensional) integral representing the area of \(\cR\) in Example 1.5.1 of the CLP-2 text.</p>
+<ul class="disc">
+<li id="li-1284">Pick a natural number \(n\) (that we will later send to infinity), and then</li>
+<li id="li-1285">
+<p id="p-2776">subdivide \(\cR\) into \(n\) narrow vertical slices, each of width \(\De x=\frac{b-a}{n}\text{.}\) Denote by \(x_i = a + i\,\De x\) the \(x\)-coordinate of the right hand edge of slice number \(i\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/vSliceB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1286">
+<p id="p-2777">For each \(i=1,2,\dots,n\text{,}\) slice number \(i\) has \(x\) running from \(x_{i-1}\) to \(x_i\text{.}\) We approximate its area by the area of a rectangle. We pick a number \(x_i^*\) between \(x_{i-1}\) and \(x_i\) and approximate the slice by a rectangle whose top is at \(y=T(x_i^*)\) and whose bottom is at \(y=B(x_i^*)\text{.}\) The rectangle is outlined in blue in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/vSliceC.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1287">Thus the area of slice \(i\) is approximately \(\big[T(x_i^*)-B(x_i^*)\big]\De x\text{.}\)</li>
+<li id="li-1288">So the Riemann sum approximation of the area of \(\cR\) is<div class="displaymath">
+\begin{align*}
+\text{Area} &amp;\approx \sum_{i=1}^n  \big[T(x_i^*)-B(x_i^*)\big]\De x
+\end{align*}
+</div>
+</li>
+<li id="li-1289">By taking the limit as \(n \to \infty\) (i.e. taking the limit as the width of the rectangles goes to zero), we convert the Riemann sum into a definite integral (see Definition 1.1.9 in the CLP-2 text) and at the same time our approximation of the area becomes the exact area:<div class="displaymath">
+\begin{gather*}
+\text{Area}
+=\lim_{n\rightarrow\infty}\sum_{i=1}^n  \big[T(x_i^*)-B(x_i^*)\big]\De x
+=\int_a^b \big[T(x)-B(x)\big]\dee{x}
+\end{gather*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">Now we can expand that procedure to yield the mass of \(\cR\) rather than the area of \(\cR\text{.}\) We just have to replace our approximation \(\big[T(x_i^*)-B(x_i^*)\big]\De x\) of the area of slice \(i\) by an approximation to the mass of slice \(i\text{.}\) To do so, we</p>
+<ul class="disc">
+<li id="li-1290">Pick a natural number \(m\) (that we will later send to infinity), and then</li>
+<li id="li-1291">
+<p id="p-2778">subdivide slice number \(i\) into \(m\) tiny rectangles, each of width \(\De x\) and of height \(\De y=\frac{1}{m}\big[T(x_i^*)-B(x_i^*)\big]\text{.}\) Denote by \(y_j = B(x_i^*) + j\,\De y\) the \(y\)-coordinate of the top of rectangle number \(j\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/vSliceD.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1292">At this point we approximate the density inside each rectangle by a constant. For each \(j=1,2,\dots,m\text{,}\) rectangle number \(j\) has \(y\) running from \(y_{j-1}\) to \(y_j\text{.}\)  We pick a number \(y_j^*\) between \(y_{j-1}\) and \(y_j\) and approximate the density on rectangle number \(j\) in slice number \(i\) by the constant \(f\big(x_i^*,y_j^*\big)\text{.}\)</li>
+<li id="li-1293">Thus the mass of rectangle number \(j\) in slice number \(i\) is approximately \(f\big(x_i^*,y_j^*\big)\,\De x\,\De y\text{.}\)</li>
+<li id="li-1294">So the Riemann sum approximation of the mass of slice number \(i\) is<div class="displaymath">
+\begin{align*}
+\text{Mass of slice } i
+&amp;\approx \sum_{j=1}^m  f\big(x_i^*,y_j^*\big)\,\De x\,\De y
+\end{align*}
+</div>Note that the \(y_j^*\)'s depend on \(i\) and \(m\text{.}\)</li>
+<li id="li-1295">By taking the limit as \(m \to \infty\) (i.e. taking the limit as the height of the rectangles goes to zero), we convert the Riemann sum into a definite integral:<div class="displaymath">
+\begin{align*}
+\text{Mass of slice } i
+&amp;\approx \De x \int_{B(x_i^*)}^{T(x_i^*)} f\big(x_i^*,y\big)\,\dee{y}
+= F(x_i^*)\,\De x
+\end{align*}
+</div>where<div class="displaymath">
+\begin{equation*}
+F(x) = \int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}
+\end{equation*}
+</div>Notice that, while we started with the density \(f(x,y)\) being a function of both \(x\) and \(y\text{,}\) by taking the limit of this Riemann sum, we have “integrated out” the dependence on \(y\text{.}\) As a result, \(F(x)\) is a function of \(x\) only, not of \(x\) and \(y\text{.}\)</li>
+<li id="li-1296">Finally taking the limit as \(n \to \infty\) (i.e. taking the limit as the slice width goes to zero), we get<div class="displaymath">
+\begin{align*}
+\text{Mass}
+&amp;=\lim_{n\rightarrow\infty}\sum_{i=1}^n
+\De x \int_{B(x_i^*)}^{T(x_i^*)} f\big(x_i^*,y\big)\,\dee{y}
+= \lim_{n\rightarrow\infty}\sum_{i=1}^n  F(x_i^*)\,\De x
+\end{align*}
+</div>Now we are back in familiar 1-variable territory. The sum \(\sum\limits_{i=1}^n  F(x_i^*)\,\De x\) is a Riemann sum approximation to the integral \(\int_a^b F(x)\,\dee{x}\text{.}\) So<div class="displaymath">
+\begin{align*}
+\text{Mass}
+&amp;= \int_a^b F(x)\,\dee{x}
+=\int_a^b \left[\int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\right]\dee{x}
+\end{align*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">This is our first double integral. There are a couple of different standard notations for this integral.</p>
+<article class="definition definition-like" id="notn_dbl_int"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-2779">
+\begin{align*}
+\dblInt_\cR f\big(x,y\big)\,\dee{x}\,\dee{y}
+&amp;= \int_a^b \left[\int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\right]\dee{x}\\
+&amp;=\int_a^b \int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\,\dee{x}
+=\int_a^b \dee{x} \int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)
+\end{align*}
+</div>
+<p data-braille="continuation">The last three integrals here are called iterated integrals, for obvious reasons.</p></article><p id="p-2780">Note that</p>
+<ul class="disc">
+<li id="li-1297">
+<p id="p-2781">to evaluate the integral \(\displaystyle\int_a^b \int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\,\dee{x}\text{,}\)</p>
+<ul class="circle">
+<li id="li-1298">first evaluate the inside integral \(\int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\) using the inside limits of integration, and by treating \(x\) as a constant and using standard single variable integration techniques, such as those in the CLP-2 text. The result of the inside integral is a function of \(x\) only.  Call it \(F(x)\text{.}\)</li>
+<li id="li-1299">Then evaluate the outside integral \(\int_a^b F(x)\,\dee{x}\text{,}\) whose integrand is the answer to the inside integral. Again, this integral is evaluated using standard single variable integration techniques.</li>
+</ul>
+</li>
+<li id="li-1300">
+<p id="p-2782">To evaluate the integral \(\displaystyle\int_a^b \dee{x} \int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)\text{,}\)</p>
+<ul class="circle">
+<li id="li-1301">first evaluate the inside integral \(\int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)\) using the limits of integration that are directly beside the \(\dee{y}\text{.}\) Indeed the \(\dee{y}\) is written directly beside \(\int_{B(x)}^{T(x)}\) to make it clear that the limits of integration \(B(x)\) and \(T(x)\) are for the \(y\)-integral. In the past you probably wrote this integral as \(\int_{B(x)}^{T(x)} f\big(x,y\big)\ \dee{y}\text{.}\) The result of the inside integral is again a function of \(x\) only.  Call it \(F(x)\text{.}\)</li>
+<li id="li-1302">Then evaluate the outside integral \(\int_a^b \dee{x}\,F(x)\text{,}\) whose integrand is the answer to the inside integral and whose limits of integration are directly beside the \(\dee{x}\text{.}\)</li>
+</ul>
+</li>
+</ul>
+<p id="p-2783">At this point you may be wondering “Do we always have to use vertical slices?” and “Do we always have to integrate with respect to \(y\) first?” The answer is “no”. This brings us to consider “horizontal slices”.</p></section><section class="subsection" id="sec_horizontal_slices"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Horizontal Slices</span>
+</h3>
+<p id="p-2784">We found, when computing areas of regions in the \(xy\)-plane, that it is often advantageous to use horizontal slices, rather than vertical slices. See, for example, Example 1.5.4 in the CLP-2 text. The same is true when setting up multidimensional integrals. So we now repeat the setup procedure of the last section, but starting with horizontal slices, rather than vertical slices. This procedure will be useful when dealing with regions of the form</p>
+<div class="displaymath">
+\begin{equation*}
+\cR = \big\{\ (x,y)\ \big|\ c\le y\le d,\ L(y)\le x\le R(y)\ \big\}
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hSliceA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2785">Here \(L(y)\) (“\(L\)” stands for “left”) is the smallest<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-106" id="fn-106"><sup> 1 </sup></a> allowed value of \(x\text{,}\) when the \(y\)-coordinate is \(y\text{,}\) and \(R(y)\) (“\(R\)” stands for “right”) is the largest allowed value of \(x\text{,}\) when the \(y\)-coordinate is \(y\text{.}\) Suppose that we wish to evaluate the mass of a plate that fills the region \(\cR\text{,}\) and that the density of the plate is \(f(x,y)\text{.}\) We follow essentially the same the procedure as we used with vertical slices, but with the roles of \(x\) and \(y\) swapped.</p>
+<ul class="disc">
+<li id="li-1303">Pick a natural number \(n\) (that we will later send to infinity). Then</li>
+<li id="li-1304">subdivide the interval \(c\le y\le d\) into \(n\) narrow subintervals, each of width \(\De y=\frac{d-c}{n}\text{.}\) Each subinterval cuts a thin horizontal slice from the region (see the figure below).</li>
+<li id="li-1305">We approximate slice number \(i\) by a thin horizontal rectangle (indicated by the long darker gray rectangle in the figure below). On this slice, the \(y\)-coordinate runs over a very narrow range. We pick a number \(y_i^*\text{,}\) somewhere in that range. We approximate slice \(i\) by a rectangle whose left side is at \(x=L(y_i^*)\) and whose right side is at \(x=R(y_i^*)\text{.}\)</li>
+<li id="li-1306">If we were computing the area of \(\cR\text{,}\) we would now approximate the area of slice \(i\) by \(\big[R(x_i^*)-L(x_i^*)\big]\De y\text{,}\) which is the area of the rectangle with width \(\big[R(x_i^*)-L(x_i^*)\big]\) and height \(\De y\text{.}\)</li>
+<li id="li-1307">
+<p id="p-2786">To get the mass, just as we did above with vertical slices, we</p>
+<ul class="circle">
+<li id="li-1308">pick another natural number \(m\) (that we will later send to infinity), and then</li>
+<li id="li-1309">subdivide slice number \(i\) into \(m\) tiny rectangles, each of height \(\De y\) and of width \(\De x=\frac{1}{m}\big[R(y_i^*)-L(y_i^*)\big]\text{.}\)</li>
+<li id="li-1310">
+<p id="p-2787">For each \(j=1,2,\dots,m\text{,}\) rectangle number \(j\) has \(x\) running over a very narrow range.  We pick a number \(x_j^*\) somewhere in that range. See the small black rectangle in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hSliceB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2788">Here is a magnified sketch of slice number \(i\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hSliceBB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1311">On rectangle number \(j\) in slice number \(i\text{,}\) we approximate the density by \(f\big(x_j^*,y_i^*\big)\text{,}\) giving us that the mass of rectangle number \(j\) in slice number \(i\) is approximately \(f\big(x_j^*,y_i^*\big)\,\De x\,\De y\text{.}\)</li>
+<li id="li-1312">So the Riemann sum approximation of the mass of (horizontal) slice number \(i\) is<div class="displaymath">
+\begin{align*}
+\text{Mass of slice } i
+&amp;\approx \sum_{j=1}^m  f\big(x_j^*,y_i^*\big)\,\De x\,\De y
+\end{align*}
+</div>
+</li>
+<li id="li-1313">By taking the limit as \(m \to \infty\) (i.e. taking the limit as the width of the rectangles goes to zero), we convert the Riemann sum into a definite integral:<div class="displaymath">
+\begin{align*}
+\text{Mass of slice }i
+&amp;\approx \De y \int_{L(y_i^*)}^{R(y_i^*)} f\big(x,y_i^*\big)\,\dee{x}
+= F(y_i^*)\,\De y
+\end{align*}
+</div>where<div class="displaymath">
+\begin{equation*}
+F(y) = \int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}
+\end{equation*}
+</div>Observe that, as \(x\) has been integrated out, \(F(y)\) is a function of \(y\) only, not of \(x\) and \(y\text{.}\)</li>
+</ul>
+</li>
+<li id="li-1314">Finally taking the limit as \(n \to \infty\) (i.e. taking the limit as the slice width goes to zero), we get<div class="displaymath">
+\begin{align*}
+\text{Mass}
+&amp;=\lim_{n\rightarrow\infty}\sum_{i=1}^n
+\De y \int_{L(y_i^*)}^{R(y_i^*)} f\big(x,y_i^*\big)\,\dee{x}
+= \lim_{n\rightarrow\infty}\sum_{i=1}^n  F(y_i^*)\,\De y
+\end{align*}
+</div>Now \(\sum\limits_{i=1}^n  F(y_i^*)\,\De y\) is a Riemann sum approximation to the integral \(\int_c^d F(y)\,\dee{y}\text{.}\) So<div class="displaymath">
+\begin{align*}
+\text{Mass}
+&amp;= \int_c^d F(y)\,\dee{y}
+=\int_c^d \left[\int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\right]\dee{y}
+\end{align*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">The standard notations of Notation <a class="xref" data-knowl="./knowl/notn_dbl_int.html" title="Definition 3.1.1">3.1.1</a> also apply to this integral.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-106"><div class="fn">By the “smallest” \(x\) we mean the \(x\) farthest to the left along the number line, not the \(x\) closest to \(0\text{.}\)</div></div>
+<article class="definition definition-like" id="notn_dbl_int_again"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-2789">
+\begin{align*}
+\dblInt_\cR f\big(x,y\big)\,\dee{x}\,\dee{y}
+&amp;=\int_c^d \left[\int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\right]\dee{y}\\
+&amp;=\int_c^d \int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\,\dee{y}
+=\int_c^d \dee{y} \int_{L(y)}^{R(y)} \dee{x}\, f\big(x,y\big)
+\end{align*}
+</div></article><p id="p-2790">Note that</p>
+<ul class="disc">
+<li id="li-1315">
+<p id="p-2791">to evaluate the integral \(\displaystyle\int_c^d \int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\,\dee{y}\text{,}\)</p>
+<ul class="circle">
+<li id="li-1316">first evaluate the inside integral \(\int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\) using the inside limits of integration. The result of the inside integral is a function of \(y\) only.  Call it \(F(y)\text{.}\)</li>
+<li id="li-1317">Then evaluate the outside integral \(\int_c^d F(y)\,\dee{y}\text{,}\) whose integrand is the answer to the inside integral.</li>
+</ul>
+</li>
+<li id="li-1318">
+<p id="p-2792">To evaluate the integral \(\displaystyle\int_c^d \dee{y} \int_{L(y)}^{R(y)} \dee{x}\, f\big(x,y\big)\text{,}\)</p>
+<ul class="circle">
+<li id="li-1319">first evaluate the inside integral \(\int_{L(y)}^{R(y)} \dee{x}\, f\big(x,y\big)\) using the limits of integration that are directly beside the \(\dee{x}\text{.}\) Again, the \(\dee{x}\) is written directly beside \(\int_{L(y)}^{R(y)}\) to make it clear that the limits of integration \(L(y)\) and \(R(y)\) are for the \(x\)-integral. In the past you probably wrote this integral as \(\int_{L(y)}^{R(y)} f\big(x,y\big)\ \dee{x}\text{.}\) The result of the inside integral is again a function of \(y\) only. Call it \(F(y)\text{.}\)</li>
+<li id="li-1320">Then evaluate the outside integral \(\int_c^d \dee{y}\,F(y)\text{,}\) whose integrand is the answer to the inside integral and whose limits of integration are directly beside the \(\dee{y}\text{.}\)</li>
+</ul>
+</li>
+</ul>
+<p id="p-2793">By way of summary, we now have two integral representations for the mass of regions in the \(xy\)-plane.</p>
+<article class="theorem theorem-like" id="thm_xy_mass"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-2794">Let \(\cR\) be a region in the \(xy\)-plane and let the function \(f(x,y)\) be defined and continuous on \(\cR\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1321">If<div class="displaymath">
+\begin{gather*}
+\cR=\big\{\ (x,y)\ \big|\ a\le x\le b,\ B(x)\le y\le T(x)\ \big\}
+\end{gather*}
+</div>with \(B(x)\) and \(T(x)\) being continuous, and if the mass density in \(\cR\) is \(f(x,y)\text{,}\) then the mass of \(\cR\) is<div class="displaymath">
+\begin{align*}
+\int_a^b \left[\int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\right]\dee{x}
+&amp;=\int_a^b \int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\,\dee{x}\\
+&amp;=\int_a^b \dee{x} \int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)
+\end{align*}
+</div>
+</li>
+<li id="li-1322">If<div class="displaymath">
+\begin{equation*}
+\cR = \big\{\ (x,y)\ \big|\ c\le y\le d,\ L(y)\le x\le R(y)\ \big\}
+\end{equation*}
+</div>with \(L(y)\) and \(R(y)\) being continuous, and if the mass density in \(\cR\) is \(f(x,y)\text{,}\) then the mass of \(\cR\) is<div class="displaymath">
+\begin{align*}
+\int_c^d \left[\int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\right]\dee{y}
+&amp;=\int_c^d \int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\,\dee{y}\\
+&amp;=\int_c^d \dee{y} \int_{L(y)}^{R(y)} \dee{x}\, f\big(x,y\big)
+\end{align*}
+</div>
+</li>
+</ol></article><p id="p-2795">Implicit in Theorem  <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a> is the statement that, if</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\big\{\ (x,y)\ \big|\ a\le x\le b,\ B(x)\le y\le T(x)\ \big\}\\
+=&amp; \big\{\ (x,y)\ \big|\ c\le y\le d,\ L(y)\le x\le R(y)\ \big\}
+\end{align*}
+</div>
+<p data-braille="continuation">and if \(f(x,y)\) is continuous, then</p>
+<div class="displaymath">
+\begin{equation*}
+\int_a^b \int_{B(x)}^{T(x)} f\big(x,y\big)\,\dee{y}\,\dee{x}
+=\int_c^d \int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">This is called Fubini's theorem<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-107" id="fn-107"><sup> 2 </sup></a>. It will be discussed more in the optional §<a href="sec_2d_integrals.html#sec_def_int_more" class="internal" title="Subsection 3.1.5: Optional — More about the Definition of \(\ \dblInt_\cR f(x,y)\ \dee{x}\dee{y}\)">3.1.5</a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-107"><div class="fn">This theorem is named after the Italian mathematician Guido Fubini (1879--1943).</div></div>
+<article class="definition definition-like" id="notn_double_integral_yet_again"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h6>
+<p id="p-2796">The integrals of Theorem <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a> are often denoted</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_\cR f(x,y)\,\dee{x}\dee{y} \qquad\text{or}\qquad
+\dblInt_\cR f(x,y)\,\dee{A}
+\end{equation*}
+</div>
+<p data-braille="continuation">The symbol \(\dee{A}\) represents the area of an “infinitesimal” piece of \(\cR\text{.}\)</p></article><p id="p-2797">Here is a simple example. We'll do some more complicated examples in §<a href="sec_2d_integrals.html#sec_int_examples" class="internal" title="Subsection 3.1.4: Examples">3.1.4</a>.</p>
+<article class="example example-like" id="eg_dblInt_0"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_0"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_0"><article class="example example-like"><p id="p-2798">Let \(\cR\) be the triangular region above the \(x\)-axis, to the right of the \(y\)-axis and to the left of the line \(x+y=1\text{.}\) Find the mass of \(\cR\) if it has density \(f(x,y)=y\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-403" id="solution-403"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-403"><div class="solution solution-like">
+<p id="p-2799">We'll do this problem twice — once using vertical strips and once using horizontal strips. First, here is a sketch of \(\cR\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblInt0a.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2800"><em class="emphasis">Solution using vertical strips.</em>\(\ \ \ \) We'll now set up a double integral for the mass using vertical strips. Note, from the figure</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblInt0b.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2801">that</p>
+<ul class="disc">
+<li id="li-1323">the leftmost points in \(\cR\) have \(x=0\) and the rightmost point in \(\cR\) has \(x=1\) and</li>
+<li id="li-1324">for each fixed \(x\) between \(0\) and \(1\text{,}\) the point \((x,y)\) in \(\cR\) with the smallest \(y\) has \(y=0\) and the point \((x,y)\) in \(\cR\) with the largest \(y\) has \(y=1-x\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Thus</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{0=a\le x\le b=1,\
+0= B(x)\le y\le T(x) = 1-x}
+\end{equation*}
+</div>
+<p data-braille="continuation">and, by part (a) of Theorem  <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a></p>
+<div class="displaymath">
+\begin{align*}
+\text{Mass} &amp;= \int_a^b \dee{x} \int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)
+= \int_0^1 \dee{x} \int_0^{1-x} \dee{y}\, y
+\end{align*}
+</div>
+<p data-braille="continuation">Now the inside integral is</p>
+<div class="displaymath">
+\begin{gather*}
+\int_0^{1-x}  y \ \dee{y}
+=\left[ \frac{y^2}{2} \right]_0^{1-x}
+=\frac{1}{2}(1-x)^2
+\end{gather*}
+</div>
+<p data-braille="continuation">so that the</p>
+<div class="displaymath">
+\begin{align*}
+\text{Mass} &amp;= \int_0^1 \dee{x}\  \frac{(1-x)^2}{2}
+=\left[-\frac{(1-x)^3}{6}\right]_0^1
+= \frac{1}{6}
+\end{align*}
+</div>
+<p id="p-2802"><em class="emphasis">Solution using horizontal strips.</em>\(\ \ \ \) This time we'll set up a double integral for the mass using horizontal strips. Note, from the figure</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblInt0c.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2803">that</p>
+<ul class="disc">
+<li id="li-1325">the lowest points in \(\cR\) have \(y=0\) and the topmost point in \(\cR\) has \(y=1\) and</li>
+<li id="li-1326">for each fixed \(y\) between \(0\) and \(1\text{,}\) the point \((x,y)\) in \(\cR\) with the smallest \(x\) has \(x=0\) and the point \((x,y)\) in \(\cR\) with the largest \(x\) has \(x=1-y\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Thus</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{0=c\le y\le d=1,\
+0= L(y)\le x\le R(y) = 1-y}
+\end{equation*}
+</div>
+<p data-braille="continuation">and, by part (b) of Theorem  <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a></p>
+<div class="displaymath">
+\begin{align*}
+\text{Mass} &amp;= \int_c^d \dee{y} \int_{L(y)}^{R(y)} \dee{x}\, f\big(x,y\big)
+= \int_0^1 \dee{y} \int_0^{1-y} \dee{x}\, y
+\end{align*}
+</div>
+<p data-braille="continuation">Now the inside integral is</p>
+<div class="displaymath">
+\begin{gather*}
+\int_0^{1-y}  y \ \dee{x}
+=\left[ xy \right]_0^{1-y}
+=y-y^2
+\end{gather*}
+</div>
+<p data-braille="continuation">since the \(y\) integral treats \(x\) as a constant. So the</p>
+<div class="displaymath">
+\begin{align*}
+\text{Mass} &amp;= \int_0^1 \dee{y}\  \big[y-y^2\big]
+=\left[\frac{y^2}{2}-\frac{y^3}{3}\right]_0^1
+= \frac{1}{2}-\frac{1}{3}
+=\frac{1}{6}
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<p id="p-2804">Double integrals share the usual basic properties that we are used to from integrals of functions of one variable. See, for example, Theorem 1.2.1 and Theorem 1.2.12 in the CLP-2 text. Indeed the following theorems follow from them.</p>
+<article class="theorem theorem-like" id="thm_Int2darith"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Arithmetic of Integration.</span>
+</h6>
+<p id="p-2805">Let \(A,B,C\) be real numbers. Under the hypotheses of Theorem <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a>,</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR \left( f(x,y) + g(x,y) \right)\,\dee{x}\dee{y}
+&amp;= \dblInt_\cR f(x,y)\,\dee{x}\dee{y} + \dblInt_\cR g(x,y)\,\dee{x}\dee{y}
+\tag{a}\\
+\dblInt_\cR\left(f(x,y)-g(x,y)\right)\,\dee{x}\dee{y}
+&amp;= \dblInt_\cR f(x,y)\,\dee{x}\dee{y} - \dblInt_\cR g(x,y)\,\dee{x}\dee{y}
+\tag{b}\\
+\dblInt_\cR C f(x,y)\,\dee{x}\dee{y}
+&amp;= C\,\dblInt_\cR f(x,y)\,\dee{x}\dee{y}
+\tag{c}
+\end{align*}
+</div>
+<p data-braille="continuation">Combining these three rules we have</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR\left( Af(x,y) + Bg(x,y) \right)\,\dee{x}\dee{y}
+&amp;= A\dblInt_\cR f(x,y)\,\dee{x}\dee{y}\\
+&amp;\hskip0.25in  + B\dblInt_\cR g(x,y)\,\dee{x}\dee{y}
+\tag{d}
+\end{align*}
+</div>
+<p data-braille="continuation">That is, integrals depend linearly on the integrand.</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR \,\dee{x}\dee{y} &amp;= \text{Area}(\cR)
+\tag{e}
+\end{align*}
+</div>
+<p data-braille="continuation">If the region \(\cR\) in the \(xy\)-plane is the union of regions \(\cR_1\) and \(\cR_2\) that do not overlap (except possibly on their boundaries), then</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR f(x,y)\,\dee{x}\dee{y}
+&amp;= \dblInt_{\cR_1} f(x,y)\,\dee{x}\dee{y}
++\dblInt_{\cR_2} f(x,y)\,\dee{x}\dee{y}
+\tag{f}
+\end{align*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:6.75%;margin-right:6.75%;">
+<div class="sbspanel" style="width:38.150289017341%;justify-content:center;"><img src="figs/union.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:46.242774566474%;justify-content:center;"><img src="figs/unionB.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div></article><p id="p-2806">In the very special (but not that uncommon) case that \(\cR\) is the rectangle</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{a\le x\le b,\ c\le y\le d}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the integrand is the product \(f(x,y)=g(x)h(y)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR f(x,y)\,\dee{x}\dee{y}
+&amp;=\int_a^b\dee{x} \int_c^d\dee{y}\ g(x) h(y)\\
+&amp;=\int_a^b\dee{x}\ g(x) \int_c^d\dee{y}\  h(y)\\
+&amp;\hskip0.25in\text{since $g(x)$ is a constant as far as the $y$-integral is concerned}\\
+&amp;=\left[ \int_a^b\dee{x}\ g(x)\right]\ \left[\int_c^d\dee{y}\  h(y)\right]
+\end{align*}
+</div>
+<p data-braille="continuation">since \(\int_c^d\dee{y}\  h(y)\) is a constant as far as the $x$-integral is concerned.</p>
+<p id="p-2807">This is worth stating as a theorem</p>
+<article class="theorem theorem-like" id="thm_factorize"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
+</h6>
+<p id="p-2808">If the domain of integration</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{a\le x\le b,\ c\le y\le d}
+\end{equation*}
+</div>
+<p data-braille="continuation">is a rectangle and the integrand is the product \(f(x,y)=g(x)h(y)\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_\cR f(x,y)\,\dee{x}\dee{y}
+=\left[ \int_a^b\dee{x}\ g(x)\right]\ \left[\int_c^d\dee{y}\  h(y)\right]
+\end{equation*}
+</div></article><p id="p-2809">Just as was the case for single variable integrals, sometimes we don't actually need to know the value of a double integral exactly. We are instead interested in bounds on its value. The following theorem provides some simple tools for generating such bounds. They are the multivariable analogs of the single variable tools in Theorem 1.2.12 of the CLP-2 text.</p>
+<article class="theorem theorem-like" id="thm_INT2dineq"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Inequalities for Integrals.</span>
+</h6>
+<p id="p-2810">Under the hypotheses of Theorem <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a>,</p>
+<ol class="lower-alpha">
+<li id="li-1327">If \(f(x,y)\ge 0\) for all \((x,y)\) in \(\cR\text{,}\) then<div class="displaymath">
+\begin{gather*}
+\dblInt_\cR f(x,y)\,\dee{x}\dee{y} \ge 0
+\end{gather*}
+</div>
+</li>
+<li id="li-1328">If there are constants \(m\) and \(M\) such that  \(m\le f(x,y)\le M\) for all \((x,y)\) in \(\cR\text{,}\) then<div class="displaymath">
+\begin{gather*}
+m\,\text{Area}(\cR)\le \dblInt_\cR f(x,y)\,\dee{x}\dee{y}
+\le M\,\text{Area}(\cR)
+\end{gather*}
+</div>
+</li>
+<li id="li-1329">If \(f(x,y)\le g(x,y)\) for all \((x,y)\) in \(\cR\text{,}\) then<div class="displaymath">
+\begin{gather*}
+\dblInt_\cR f(x,y)\,\dee{x}\dee{y} \le \dblInt_\cR g(x,y)\,\dee{x}\dee{y}
+\end{gather*}
+</div>
+</li>
+<li id="li-1330">We have<div class="displaymath">
+\begin{gather*}
+\left|\dblInt_\cR f(x,y)\,\dee{x}\dee{y}\right|
+\le \dblInt_\cR |f(x,y)|\,\dee{x}\dee{y}
+\end{gather*}
+</div>
+</li>
+</ol></article></section><section class="subsection" id="subsection-32"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">Volumes</span>
+</h3>
+<p id="p-2811">Now that we have defined double integrals, we should start putting them to use. One of the most immediate applications arises from interpreting \(f(x,y)\text{,}\) not as a density, but rather as the height of the part of a solid above the point \((x,y)\) in the \(xy\)-plane. Then Theorem <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a> gives the volume between the \(xy\)-plane and the surface \(z=f(x,y)\text{.}\)</p>
+<p id="p-2812">We'll now see how this goes in the case of part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a>. The case of part (a) works in the same way. So we assume that the solid \(\cV\) lies above the base region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR = \big\{\ (x,y)\ \big|\ c\le y\le d,\ L(y)\le x\le R(y)\ \big\}
+\end{equation*}
+</div>
+<p data-braille="continuation">and that</p>
+<div class="displaymath">
+\begin{equation*}
+\cV = \big\{\ (x,y,z)\ \big|\ (x,y)\in\cR,\  0\le z\le f(x,y)\ \big\}
+\end{equation*}
+</div>
+<p data-braille="continuation">The base region \(\cR\) (which is also the top view of \(\cV\)) is sketched in the figure on the left below and the part of \(\cV\) in the first octant is sketched in the figure on the right below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:52.6315789473684%;justify-content:center;"><img src="figs/volSliceB.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:42.1052631578947%;justify-content:center;"><img src="figs/volSliceA.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2813">To find the volume of \(\cV\) we shall</p>
+<ul class="disc">
+<li id="li-1331">Pick a natural number \(n\) and slice \(\cR\) into strips of width \(\De y=\frac{d-c}{n}\text{.}\)</li>
+<li id="li-1332">Subdivide slice number \(i\) into \(m\) tiny rectangles, each of height \(\De y\) and of width \(\De x=\frac{1}{m}\cdots\text{.}\)</li>
+<li id="li-1333">Compute, approximately, the volume of the part of \(\cV\) that is above each rectangle.</li>
+<li id="li-1334">Take the limit \(m\rightarrow\infty\) and then the limit \(n\rightarrow\infty\text{.}\)</li>
+</ul>
+<p data-braille="continuation">We have just been through this type of argument twice. So we'll abbreviate the argument and just say</p>
+<ul class="disc">
+<li id="li-1335">slice the base region \(\cR\) into long “infinitesimally” thin strips of width \(\dee{y}\text{.}\)</li>
+<li id="li-1336">Subdivide each strip into “infinitesimal” rectangles each of height \(\dee{y}\) and of width \(\dee{x}\text{.}\) See the figure on the left above.</li>
+<li id="li-1337">The volume of the part of \(\cV\) that is above the rectangle centred on \((x,y)\) is essentially \(f(x,y)\,\dee{x}\,\dee{y}\text{.}\) See the figure on the right above.</li>
+<li id="li-1338">So the volume of the part of \(\cV\) that is above the strip centred on \(y\) is essentially<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-108" id="fn-108"><sup> 3 </sup></a> \(\dee{y}\int_{L(y)}^{R(y)}\dee{x}\ f(x,y)\) and</li>
+<li id="li-1339">we arrive at the following conclusion.</li>
+</ul>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-108"><div class="fn">Think of the part of \(\cV\) that is above the strip as being a thin slice of bread. Then the factor \(\dee{y}\) in \(\dee{y}\int_{L(y)}^{R(y)}\dee{x}\ f(x,y)\) is the thickness of the slice of bread. The factor \(\int_{L(y)}^{R(y)}\dee{x}\ f(x,y)\) is the surface area of the constant \(y\) cross-section \(\Set{(x,z)}{L(y)\le x\le R(y),\ 0\le z\le f(x,y)}\text{,}\) i.e. the surface area of the slice of bread.</div></div>
+<article class="fact theorem-like" id="eqn_Volume_y_slice"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.1.9</span><span class="period">.</span>
+</h6>
+<p id="p-2814">If</p>
+<div class="displaymath">
+\begin{equation*}
+\cV = \big\{\ (x,y,z)\ \big|\ (x,y)\in\cR,\  0\le z\le f(x,y)\ \big\}
+\end{equation*}
+</div>
+<p data-braille="continuation">where</p>
+<div class="displaymath">
+\begin{equation*}
+\cR = \big\{\ (x,y)\ \big|\ c\le y\le d,\ L(y)\le x\le R(y)\ \big\}
+\end{equation*}
+</div>
+<p data-braille="continuation">then</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Volume}(\cV)
+=\int_c^d \dee{y}\int_{L(y)}^{R(y)} \dee{x}\ f(x,y)
+\end{equation*}
+</div></article><p id="p-2815">Similarly</p>
+<article class="fact theorem-like" id="eqn_Volume_x_slice"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span>
+</h6>
+<p id="p-2816">If</p>
+<div class="displaymath">
+\begin{equation*}
+\cV = \big\{\ (x,y,z)\ \big|\ (x,y)\in\cR,\  0\le z\le f(x,y)\ \big\}
+\end{equation*}
+</div>
+<p data-braille="continuation">where</p>
+<div class="displaymath">
+\begin{equation*}
+\cR = \big\{\ (x,y)\ \big|\ a\le x\le b,\ B(x)\le y\le T(x)\ \big\}
+\end{equation*}
+</div>
+<p data-braille="continuation">then</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Volume}(\cV)
+=\int_a^b \dee{x}\int_{B(x)}^{T(x)} \dee{y}\ f(x,y)
+\end{equation*}
+</div></article></section><section class="subsection" id="sec_int_examples"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.4</span> <span class="title">Examples</span>
+</h3>
+<p id="p-2817">Oof — we have had lots of equations and theory. It's time to put all of this to work. Let's start with a mass example and then move on to a volume example. You will notice that the mathematics is really very similar. Just the interpretation changes.</p>
+<article class="example example-like" id="eg_dblInt_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_A"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.11</span><span class="period">.</span><span class="space"> </span><span class="title">Mass.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_A"><article class="example example-like"><p id="p-2818">Let \(\nu \gt 0\) be a constant and let \(\cR\) be the region above the curve \(x^2=4\nu y\) and to the right of the curve \(y^2=\frac{1}{2}\nu x\text{.}\) Find the mass of \(\cR\) if it has density \(f(x,y)=xy\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-404" id="solution-404"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-404"><div class="solution solution-like">
+<p id="p-2819">For practice, we'll do this problem twice — once using vertical strips and once using horizontal strips. We'll start by sketching \(\cR\text{.}\) First note that, since \(y\ge\frac{x^2}{4\nu}\) and \(x\ge \frac{2y^2}{\nu}\text{,}\) both \(x\) and \(y\) are positive throughout \(\cR\text{.}\) The two curves intersect at points \((x,y)\) that satisfy both</p>
+<div class="displaymath">
+\begin{align*}
+x = \frac{2y^2}{\nu}\text{ and }y=\frac{x^2}{4\nu}
+&amp;\implies\quad x  = \frac{2y^2}{\nu} = \frac{2}{\nu}\left(\frac{x^2}{4\nu}\right)^2
+= \frac{x^4}{8\nu^3}\\
+&amp;\iff\quad \left(\frac{x^3}{8\nu^3}-1\right)x=0
+\end{align*}
+</div>
+<p data-braille="continuation">This equation has only two real<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-109" id="fn-109"><sup> 4 </sup></a> solutions — \(x=0\) and \(x=2\nu\text{.}\) So the upward opening parabola \(y = \frac{x^2}{4\nu}\) and the rightward opening parabola \(x=\frac{2y^2}{\nu}\)  intersect at \((0,0)\) and \((2\nu,\nu)\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-109"><div class="fn">It also has two complex solutions that play no role here.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblIntAa.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2820"><em class="emphasis">Solution using vertical strips.</em>\(\ \ \ \) We'll now set up a double integral for the mass using vertical strips and using the abbreviated argument of the end of the last section (on volumes).  Note, from the figure above, that</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\bigg\{(x,y)\ \bigg|\ 0=a\le x\le b=2\nu,\
+\frac{x^2}{4\nu}= B(x)\le y\le T(x) = \sqrt{\frac{\nu x}{2}}\ \bigg\}
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-1340">Slice \(\cR\) into long “infinitesimally” thin vertical strips of width \(\dee{x}\text{.}\)</li>
+<li id="li-1341">
+<p id="p-2821">Subdivide each strip into “infinitesimal” rectangles each of height \(\dee{y}\) and of width \(\dee{x}\text{.}\) See the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblIntAb.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1342">The mass of the rectangle centred on \((x,y)\) is essentially \(f(x,y)\,\dee{x}\,\dee{y}=xy\,\dee{x}\,\dee{y}\text{.}\)</li>
+<li id="li-1343">So the mass of the strip centred on \(x\) is essentially \(\ \dee{x}\, \int_{B(x)}^{T(x)}\dee{y}\ f(x,y) \) (the integral over \(y\) adds up the masses of all of the different rectangles     on the single vertical strip in question) and</li>
+<li id="li-1344">
+<p id="p-2822">we conclude that the</p>
+<div class="displaymath">
+\begin{align*}
+\text{Mass}(\cR)
+&amp;=\int_a^b \dee{x}\int_{B(x)}^{T(x)} \dee{y}\ f(x,y)
+=\int_0^{2\nu} \dee{x}\int_{x^2/(4\nu)}^{\sqrt{\nu x/2}} \dee{y}\ xy
+\end{align*}
+</div>
+<p data-braille="continuation">Here the integral over \(x\) adds up the masses of all of the different strips.</p>
+<p id="p-2823">Recall that, when integrating \(y\text{,}\) \(x\) is held constant, so we may factor the constant \(x\) out of the inner \(y\) integral.</p>
+<div class="displaymath">
+\begin{align*}
+\int_{x^2/(4\nu)}^{\sqrt{\nu x/2}} \dee{y}\ xy
+&amp;= x\int_{x^2/(4\nu)}^{\sqrt{\nu x/2}} \dee{y}\ y\\
+&amp;= x\left[\frac{y^2}{2}\right]_{x^2/(4\nu)}^{\sqrt{\nu x/2}}\\
+&amp;=\frac{\nu x^2}{4}-\frac{x^5}{32\nu^2}
+\end{align*}
+</div>
+<p data-braille="continuation">and the</p>
+<div class="displaymath">
+\begin{align*}
+\text{Mass}(\cR)
+&amp;=\int_0^{2\nu} \dee{x}\
+\left[\frac{\nu x^2}{4}-\frac{x^5}{32\nu^2}\right]\\
+&amp;= \frac{\nu (2\nu)^3}{3\times 4}-\frac{(2\nu)^6}{6\times 32\nu^2}
+=\frac{\nu^4}{3}
+\end{align*}
+</div>
+</li>
+</ul>
+<p id="p-2824"><em class="emphasis">Solution using horizontal strips.</em>\(\ \ \ \) We'll now set up a double integral for the mass using horizontal strips, again using the abbreviated argument of the end of the last section (on volumes).  Note, from the figure at the beginning of this example, that</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\bigg\{(x,y)\ \bigg|\ 0=c\le y\le d=\nu,\
+\frac{2 y^2}{\nu} = L(y)\le x\le R(y) = \sqrt{4\nu y} \ \bigg\}
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-1345">Slice \(\cR\) into long “infinitesimally” thin horizontal strips of width \(\dee{y}\text{.}\)</li>
+<li id="li-1346">
+<p id="p-2825">Subdivide each strip into “infinitesimal” rectangles each of height \(\dee{y}\) and of width \(\dee{x}\text{.}\) See the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblIntAc.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1347">The mass of the rectangle centred on \((x,y)\) is essentially \(f(x,y)\,\dee{x}\,\dee{y}=xy\,\dee{x}\,\dee{y}\text{.}\)</li>
+<li id="li-1348">So the mass of the strip centred on \(y\) is essentially \(\ \dee{y}\, \int_{L(y)}^{R(y)}\dee{x}\ f(x,y) \) (the integral over \(x\) adds up the masses of all of the different rectangles     on the single horizontal strip in question) and</li>
+<li id="li-1349">we conclude that the<div class="displaymath">
+\begin{align*}
+\text{Mass}(\cR)
+&amp;=\int_c^d \dee{y}\int_{L(y)}^{R(y)} \dee{x}\ f(x,y)
+=\int_0^{\nu} \dee{y}\int_{2y^2/\nu}^{\sqrt{4\nu y}} \dee{x}\ xy
+\end{align*}
+</div>Here the integral over \(y\) adds up the masses of all of the different strips. Recalling that, when integrating \(x\text{,}\) \(y\) is held constant<div class="displaymath">
+\begin{align*}
+\text{Mass}(\cR)
+&amp;=\int_0^{\nu} \dee{y}\  y\left[
+\int_{2y^2/\nu}^{\sqrt{4\nu y}} \dee{x}\ x\right]\\
+&amp;=\int_0^{\nu} \dee{y}\  y\left[\frac{x^2}{2}\right]
+_{2y^2/\nu}^{\sqrt{4\nu y}}\\
+&amp;=\int_0^{\nu} \dee{y}\
+\left[2\nu y^2-\frac{2y^5}{\nu^2}\right]\\
+&amp;= \frac{2\nu (\nu)^3}{3}-\frac{2\nu^6}{6\nu^2}
+=\frac{\nu^4}{3}
+\end{align*}
+</div>
+</li>
+</ul>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_dblInt_V0"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_V0"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.12</span><span class="period">.</span><span class="space"> </span><span class="title">Volume.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_V0"><article class="example example-like"><p id="p-2826">Let \(\cR\) be the part of the \(xy\)-plane above the \(x\)-axis and below the parabola \(y=1-x^2\text{.}\) Find the volume between \(\cR\) and the surface \(z=x^2\sqrt{1-y}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-405" id="solution-405"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-405"><div class="solution solution-like">
+<p id="p-2827">Yet again, for practice, we'll do this problem twice — once using vertical strips and once using horizontal strips. First, here is a sketch of \(\cR\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblIntV0a.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2828"><em class="emphasis">Solution using vertical strips.</em>\(\ \ \ \) We'll now set up a double integral for the volume using vertical strips. Note, from the figure</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblIntV0b.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2829">that</p>
+<ul class="disc">
+<li id="li-1350">the leftmost point in \(\cR\) has \(x=-1\) and the rightmost point in \(\cR\) has \(x=1\) and</li>
+<li id="li-1351">for each fixed \(x\) between \(-1\) and \(1\text{,}\) the point \((x,y)\) in \(\cR\) with the smallest \(y\) has \(y=0\) and the point \((x,y)\) in \(\cR\) with the largest \(y\) has \(y=1-x^2\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Thus</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{-1=a\le x\le b=1,\
+0= B(x)\le y\le T(x) = 1-x^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">and, by <a class="xref" data-knowl="./knowl/eqn_Volume_x_slice.html" title="Equation 3.1.10">3.1.10</a></p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume} &amp;= \int_a^b \dee{x} \int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)
+= \int_{-1}^1 \dee{x} \int_0^{1-x^2} \dee{y}\  x^2\sqrt{1-y}\\
+&amp;=2\int_0^1 \dee{x} \int_0^{1-x^2} \dee{y}\  x^2\sqrt{1-y}
+\end{align*}
+</div>
+<p data-braille="continuation">since the inside integral \(F(x) =  \int_0^{1-x^2} \dee{y}\  x^2\sqrt{1-y}\) is an even function of \(x\text{.}\) Now, for \(x\ge 0\text{,}\) the inside integral is</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^{1-x^2}  x^2\sqrt{1-y} \ \dee{y}
+&amp;= x^2 \int_0^{1-x^2}  \sqrt{1-y} \ \dee{y}
+=x^2 \left[ -\frac{2}{3}(1-y)^{3/2} \right]_0^{1-x^2}\\
+&amp;=\frac{2}{3}x^2\big(1-x^3\big)
+\end{align*}
+</div>
+<p data-braille="continuation">so that the</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume} &amp;= 2\int_0^1 \dee{x}\ \frac{2}{3}x^2\big(1-x^3\big)
+=\frac{4}{3}\left[\frac{x^3}{3}-\frac{x^6}{6}\right]_0^1
+=\frac{2}{9}
+\end{align*}
+</div>
+<p id="p-2830"><em class="emphasis">Solution using horizontal strips.</em>\(\ \ \ \) This time we'll set up a double integral for the volume using horizontal strips. Note, from the figure</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dblIntV0c.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2831">that</p>
+<ul class="disc">
+<li id="li-1352">the lowest points in \(\cR\) have \(y=0\) and the topmost point in \(\cR\) has \(y=1\) and</li>
+<li id="li-1353">for each fixed \(y\) between \(0\) and \(1\text{,}\) the point \((x,y)\) in \(\cR\) with the leftmost \(x\) has \(x=-\sqrt{1-y}\) and the point \((x,y)\) in \(\cR\) with the rightmost \(x\) has \(x=\sqrt{1-y}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Thus</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{0=c\le y\le d=1,\
+-\sqrt{1-y}= L(y)\le x\le R(y) = \sqrt{1-y}}
+\end{equation*}
+</div>
+<p data-braille="continuation">and, by <a class="xref" data-knowl="./knowl/eqn_Volume_y_slice.html" title="Equation 3.1.9">3.1.9</a></p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume} &amp;= \int_c^d \dee{y} \int_{L(y)}^{R(y)} \dee{x}\, f\big(x,y\big)
+= \int_0^1 \dee{y} \int_{-\sqrt{1-y}}^{\sqrt{1-y}} \dee{x}\, x^2\sqrt{1-y}
+\end{align*}
+</div>
+<p data-braille="continuation">Now the inside integral has an even integrand (in \(x\)) and so is</p>
+<div class="displaymath">
+\begin{align*}
+\int_{-\sqrt{1-y}}^{\sqrt{1-y}} \dee{x}\, x^2\sqrt{1-y}
+&amp;=2\sqrt{1-y}\int_0^{\sqrt{1-y}} x^2\ \dee{x}
+=2\sqrt{1-y} \left[ \frac{x^3}{3} \right]_0^{\sqrt{1-y}}\\
+&amp;=\frac{2}{3}(1-y)^2
+\end{align*}
+</div>
+<p data-braille="continuation">So the</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume} &amp;= \frac{2}{3}\int_0^1 \dee{y}\  (1-y)^2
+=\frac{2}{3}\left[-\frac{(1-y)^3}{3}\right]_0^1
+=\frac{2}{9}
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_dblInt_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_B"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.13</span><span class="period">.</span><span class="space"> </span><span class="title">Volume.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_B"><article class="example example-like"><p id="p-2832">Find the volume common to the two cylinders \(x^2+y^2=a^2\) and \(x^2+z^2=a^2\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-406" id="solution-406"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-406"><div class="solution solution-like">
+<p id="p-2833">Our first job is figure out what the specified solid looks like. Note that</p>
+<ul class="disc">
+<li id="li-1354">The variable \(z\) does not appear in the equation \(x^2+y^2=a^2\text{.}\) So, for every value of the constant \(z_0\text{,}\) the part of the cylinder \(x^2+y^2=a^2\) in the plane \(z=z_0\text{,}\) is the circle \(x^2+y^2=a^2\text{,}\) \(z=z_0\text{.}\) So the cylinder \(x^2+y^2=a^2\) consists of many circles stacked vertically, one on top of the other. The part of the cylinder \(x^2+y^2=a^2\) that lies above the \(xy\)-plane is sketched in the figure on the left below.</li>
+<li id="li-1355">
+<p id="p-2834">The variable \(y\) does not appear in the equation \(x^2+z^2=a^2\text{.}\) So, for every value of the constant \(y_0\text{,}\) the part of the cylinder \(x^2+z^2=a^2\) in the plane \(y=y_0\text{,}\) is the circle \(x^2+z^2=a^2\text{,}\) \(y=y_0\text{.}\) So the cylinder \(x^2+z^2=a^2\) consists of many circles stacked horizontally, one beside the other. The part of the cylinder \(x^2+z^2=a^2\) that lies to the right of the \(xz\)-plane is sketched in the figure on the right below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
+<div class="sbspanel" style="width:43.2432432432432%;justify-content:center;"><img src="figs/cylinderA.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:48.6486486486486%;justify-content:center;"><img src="figs/cylinderB.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+</ul>
+<p data-braille="continuation">We have to compute the volume common to these two intersecting cylinders.</p>
+<ul id="p-2835" class="disc">
+<li id="li-1356">The equations \(x^2+y^2=a^2\) and \(x^2+z^2=a^2\) do not change at all if \(x\) is replaced by \(-x\text{.}\) Consequently both cylinders, and hence our solid, is symmetric about the \(yz\)-plane. In particular the volume of the part of the solid in the octant \(x\le 0\text{,}\) \(y\ge 0\text{,}\) \(z\ge 0\) is the same as the volume in the first octant \(x\ge 0\text{,}\) \(y\ge 0\text{,}\) \(z\ge 0\text{.}\) Similarly, the equations do not change at all if \(y\) is replaced by \(-y\) or if \(z\) is replaced by \(-z\text{.}\) Our solid is also symmetric about both the \(xz\)-plane and the \(xy\)-plane. Hence the volume of the part of our solid in each of the eight octants is the same.</li>
+<li id="li-1357">So we will compute the volume of the part of the solid in the first octant, i.e. with \(x\ge 0\text{,}\) \(y\ge 0\text{,}\) \(z\ge 0\text{.}\) The total volume of the solid is eight times that.</li>
+</ul>
+<p data-braille="continuation">The part of the solid in the first octant is sketched in the figure on the left below. A point \((x,y,z)\) lies in the first cylinder if and only if \(x^2+y^2\le a^2\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:40%;justify-content:center;"><img src="figs/cylinderC.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:60%;justify-content:center;"><img src="figs/cylinderD.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2836">It lies in the second cylinder if and only if \(x^2+z^2\le a^2\text{.}\) So the part of the solid in the first octant is</p>
+<div class="displaymath">
+\begin{align*}
+\cV_1&amp;=\Set{(x,y,z)}{x\ge 0,\ y\ge 0,\ z\ge 0,\ x^2+y^2\le a^2,\ x^2+z^2\le a^2}
+\end{align*}
+</div>
+<p data-braille="continuation">Notice that, in \(\cV_1\text{,}\) \(z^2\le a^2-x^2\) so that \(z\le\sqrt{a^2-x^2}\) and</p>
+<div class="displaymath">
+\begin{align*}
+\cV_1
+&amp;=\Set{(x,y,z)}{x\ge 0,\ y\ge 0,\ x^2+y^2\le a^2,\ 0\le z\le \sqrt{a^2-x^2}}
+\end{align*}
+</div>
+<p data-braille="continuation">The top view of the part of the solid in the first octant is sketched in the figure on the right above. In that top view, \(x\) runs from \(0\) to \(a\text{.}\) For each fixed \(x\text{,}\) \(y\) runs from \(0\) to \(\sqrt{a^2-x^2}\text{.}\) So we may rewrite</p>
+<div class="displaymath">
+\begin{gather*}
+\cV_1=\Set{(x,y,z)}{(x,y)\in\cR,\ 0\le z\le f(x,y)}
+\end{gather*}
+</div>
+<p data-braille="continuation">where</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Big\{\ (x,y)\ \Big|\ 0\le x\le a,\ 0\le y\le \sqrt{a^2-x^2}\ \Big\}
+\quad\text{and}\quad f(x,y) = \sqrt{a^2-x^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">and “\((x,y)\in\cR\)” is read “\((x,y)\) is an element of \(\cR\text{.}\)”. Note that \(f(x,y)\) is actually independent of \(y\text{.}\) This will make things a bit easier below.</p>
+<p id="p-2837">We can now compute the volume of \(\cV_1\) using our usual abbreviated protocol.</p>
+<ul class="disc">
+<li id="li-1358">Slice \(\cR\) into long “infinitesimally” thin horizontal strips of height \(\dee{x}\text{.}\)</li>
+<li id="li-1359">
+<p id="p-2838">Subdivide each strip into “infinitesimal” rectangles each of width \(\dee{y}\) and of height \(\dee{x}\text{.}\) See the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cylinderE.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1360">The volume of the part of \(\cV_1\) above rectangle centred on \((x,y)\) is essentially<div class="displaymath">
+\begin{equation*}
+f(x,y)\,\dee{x}\,\dee{y}=\sqrt{a^2-x^2}\ \dee{x}\,\dee{y}
+\end{equation*}
+</div>
+</li>
+<li id="li-1361">So the volume of the part of \(\cV_1\) above the strip centred on \(x\) is essentially<div class="displaymath">
+\begin{equation*}
+\dee{x}\, \int_0^{\sqrt{a^2-x^2}} \sqrt{a^2-x^2}\ \dee{y}
+\end{equation*}
+</div>(the integral over \(y\) adds up the volumes over all of the different rectangles on the single horizontal strip in question) and</li>
+<li id="li-1362">we conclude that the<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\int_0^a \dee{x}\, \int_0^{\sqrt{a^2-x^2}}\dee{y}\ \sqrt{a^2-x^2}
+\end{align*}
+</div>Here the integral over \(x\) adds up the volumes over all of the different strips. Recalling that, when integrating \(y\text{,}\) \(x\) is held constant<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV_1)
+&amp;=\int_0^a \dee{x}\  \sqrt{a^2-x^2}\left[
+\int_0^{\sqrt{a^2-x^2}} \dee{y} \right]\\
+&amp;=\int_0^a \dee{x}\  \big(a^2-x^2\big)\\
+&amp;=\left[a^2x-\frac{x^3}{3}\right]_0^a\\
+&amp;=\frac{2a^3}{3}
+\end{align*}
+</div>and the total volume of the solid in question is<div class="displaymath">
+\begin{equation*}
+\text{Volume}(\cV)
+=8\,\text{Volume}(\cV_1)
+=\frac{16a^3}{3}
+\end{equation*}
+</div>
+</li>
+</ul>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_dblInt_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_C"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">Geometric Interpretation.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_C"><article class="example example-like"><p id="p-2839">Evaluate \(\displaystyle\int_0^2\int_0^a \sqrt{a^2-x^2}\ \dee{x}\,\dee{y}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-407" id="solution-407"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-407"><div class="solution solution-like">
+<p id="p-2840">This integral represents the volume of a simple geometric figure and so can be evaluated without using any calculus at all. The domain of integration is</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{0\le y\le 2,\  0\le x\le a}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the integrand is \(f(x,y) = \sqrt{a^2-x^2}\text{,}\) so the integral represents the volume between the \(xy\)-plane and the surface \(z=\sqrt{a^2-x^2}\text{,}\) with \((x,y)\) running over \(\cR\text{.}\) We can rewrite the equation of the surface as \(x^2+z^2=a^2\text{,}\) which, as in Example <a class="xref" data-knowl="./knowl/eg_dblInt_B.html" title="Example 3.1.13: Volume">3.1.13</a>, we recognize as the equation of a cylinder of radius \(a\) centred on the \(y\)-axis. We want the volume of the part of this cylinder that lies above \(\cR\text{.}\) It is sketched in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/qCylinder.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2841">The constant \(y\) cross-sections of this volume are quarter circles of radius \(a\) and hence of area \(\frac{1}{4}\pi a^2\text{.}\) The inside integral, \(\int_0^a \sqrt{a^2-x^2}\ \dee{x}\text{,}\) is exactly this area. So, as \(y\) runs from \(0\) to \(2\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^2\int_0^a \sqrt{a^2-x^2}\ \dee{x}\,\dee{y}
+=\frac{1}{4}\pi a^2\times 2
+=\frac{\pi a^2}{2}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_dblInt_CC"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_CC"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">Example 3.1.14, the hard way.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_CC"><article class="example example-like"><p id="p-2842">It is possible, but very tedious, to evaluate the integral \(\int_0^2\int_0^a \sqrt{a^2-x^2}\ \dee{x}\,\dee{y}\) of Example <a class="xref" data-knowl="./knowl/eg_dblInt_C.html" title="Example 3.1.14: Geometric Interpretation">3.1.14</a>, using single variable calculus techniques. We do so now as a review of a couple of those techniques.</p>
+<p id="p-2843">The inside integral is \(\int_0^a \sqrt{a^2-x^2}\ \dee{x}\text{.}\) The standard procedure for eliminating square roots like \(\sqrt{a^2-x^2}\) from integrands is the method of trigonometric substitution, that was covered in §1.9 of the CLP-2 text. In this case, the appropriate substitution is</p>
+<div class="displaymath">
+\begin{equation*}
+x=a\sin\theta\qquad \dee{x}=a\cos\theta\ \dee{\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">The lower limit of integration \(x=0\text{,}\) i.e. \(a\sin\theta=0\text{,}\) corresponds to \(\theta=0\text{,}\) and the upper limit  \(x=a\text{,}\) i.e. \(a\sin\theta=a\text{,}\) corresponds to \(\theta=\frac{\pi}{2}\text{,}\) so that</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^a \sqrt{a^2-x^2}\ \dee{x}
+&amp;=\int_0^{\pi/2} \sqrt{\underbrace{a^2-a^2\sin^2\theta}_{a^2\cos^2\theta}}
+\ a\cos\theta\ \dee{\theta}
+=a^2\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}
+\end{align*}
+</div>
+<p id="p-2844">The orthodox procedure for evaluating the resulting trigonometric integral \(\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}\text{,}\) covered in §1.8 of the CLP-2 text, uses the trigonometric double angle formula</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(2\theta) = 2\cos^2\theta -1\qquad\text{to write}\qquad
+\cos^2\theta =\frac{1+\cos(2\theta)}{2}
+\end{equation*}
+</div>
+<p data-braille="continuation">and then</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^a \sqrt{a^2-x^2}\ \dee{x}
+&amp;=a^2\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}
+=\frac{a^2}{2} \int_0^{\pi/2} \big[1+\cos(2\theta)\big]\ \dee{\theta}\\
+&amp;=\frac{a^2}{2}\left[\theta+\frac{\sin(2\theta)}{2}\right]_0^{\pi/2}\\
+&amp;=\frac{\pi a^2}{4}
+\end{align*}
+</div>
+<p id="p-2845">However we remark that there is also an efficient, sneaky, way to evaluate definite integrals like \(\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}\text{.}\) Looking at the figures</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/cos2Agraph.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/sin2Agraph.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2846">we see that</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}
+=\int_0^{\pi/2} \sin^2\theta\ \dee{\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">Thus</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}
+&amp;=\int_0^{\pi/2} \sin^2\theta\ \dee{\theta}
+=\int_0^{\pi/2} \frac{1}{2}\big[\sin^2\theta+\cos^2\theta\big]\,\dee{\theta}\\
+&amp;=\frac{1}{2}\int_0^{\pi/2} \dee{\theta}
+=\frac{\pi}{4}
+\end{align*}
+</div>
+<p id="p-2847">In any event, the inside integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^a \sqrt{a^2-x^2}\ \dee{x}
+=\frac{\pi a^2}{4}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the full integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^2\int_0^a \sqrt{a^2-x^2}\ \dee{x}\,\dee{y}
+=\frac{\pi a^2}{4}\int_0^2\dee{y}
+=\frac{\pi a^2}{2}
+\end{equation*}
+</div>
+<p data-braille="continuation">just as we saw in Example <a class="xref" data-knowl="./knowl/eg_dblInt_C.html" title="Example 3.1.14: Geometric Interpretation">3.1.14</a>.</p></article></div>
+<article class="example example-like" id="eg_dblInt_D"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_D"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Order of Integration.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_D"><article class="example example-like"><p id="p-2848">The integral \(\displaystyle\int_{-1}^2\int_{x^2}^{x+2}\dee{y}\,\dee{x}\) represents the area of a region in the \(xy\)-plane. Express the same area as a double integral with the order of integration reversed.</p>
+<p id="p-2849">\soln The critical step in reversing the order of integration is to sketch the region in the \(xy\)-plane. Rewrite the given integral as</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-1}^2\int_{x^2}^{x+2}\dee{y}\,\dee{x}
+=\int_{-1}^2\left[\int_{x^2}^{x+2}\dee{y}\right]\,\dee{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">From this we see that, on the domain of integration,</p>
+<ul class="disc">
+<li id="li-1363">\(x\) runs from \(-1\) to \(2\) and</li>
+<li id="li-1364">for each fixed \(x\text{,}\) \(y\) runs from the parabola \(y=x^2\) to the straight line \(y=x+2\text{.}\)</li>
+</ul>
+<p data-braille="continuation">The given iterated integral corresponds to the (vertical) slicing in the figure on the left below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/reverseA.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:50%;justify-content:flex-start;"><img src="figs/reverseB.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2850">To reverse the order of integration we have to switch to horizontal slices as in the figure on the right above.</p>
+<p id="p-2851">There we see a new wrinkle: the formula giving the value of \(x\) at the left hand end of a slice depends on whether the \(y\) coordinate of the slice is bigger than, or smaller than \(y=1\text{.}\) Looking at the figure on the right, we see that, on the domain of integration,</p>
+<ul class="disc">
+<li id="li-1365">\(y\) runs from \(0\) to \(4\) and</li>
+<li id="li-1366">for each fixed \(0\le y\le 1\text{,}\) \(x\) runs from \(x=-\sqrt{y}\) to \(x=+\sqrt{y}\text{.}\)</li>
+<li id="li-1367">for each fixed \(1\le y\le 4\text{,}\) \(x\) runs from \(x=y-2\) to \(x=+\sqrt{y}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{gather*}
+\int_{-1}^2\dee{x}\int_{x^2}^{x+2}\dee{y}
+=\int_0^1\dee{y}\int_{-\sqrt{y}}^{\sqrt{y}}\dee{x}
++ \int_1^4\dee{y}\int_{y-2}^{\sqrt{y}}\dee{x}
+\end{gather*}
+</div></article></div>
+<p id="p-2852">There was a moral to the last example. Just because both orders of integration have to give the same answer doesn't mean that they are equally easy to evaluate. Here is an extreme example illustrating that moral.</p>
+<article class="example example-like" id="eg_dblInt_E"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_E"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.17</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_E"><article class="example example-like"><p id="p-2853">Evaluate the integral of \(\frac{\sin x}{x}\) over the region in the \(xy\)-plane that is above the \(x\)-axis, to the right of the line \(y=x\) and to the left of the line \(x=1\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-408" id="solution-408"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-408"><div class="solution solution-like">
+<p id="p-2854">Here is a sketch of the specified domain.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/reverse2A.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2855">We'll try to evaluate the specified integral twice — once using horizontal strips (the impossibly hard way) and once using vertical strips (the easy way).</p>
+<p id="p-2856"><em class="emphasis">Solution using horizontal strips.</em>\(\ \ \ \) To set up the integral using horizontal strips, as in the figure on the left below, we observe that, on the domain of integration,</p>
+<ul class="disc">
+<li id="li-1368">\(y\) runs from \(0\) to \(1\) and</li>
+<li id="li-1369">for each fixed \(y\text{,}\) \(x\) runs from \(x=y\) to \(1\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the iterated integral is</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1\dee{y}\int_y^1\dee{x}\ \frac{\sin x}{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">And we have a problem. The integrand \(\frac{\sin x}{x}\) does not have an antiderivative that can be expressed in terms of elementary functions<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-110" id="fn-110"><sup> 5 </sup></a>. It is impossible to evaluate \(\int_y^1\dee{x}\ \frac{\sin x}{x}\) without resorting to, for example, numerical methods or infinite series<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-111" id="fn-111"><sup> 6 </sup></a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-110"><div class="fn">Perhaps the best known function whose antiderivative cannot be expressed in terms of elementary functions is \(e^{-x^2}
+\text{.}\) It is the integrand of the error function \(\erf(x) =\frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\ dt\) that is used in computing “bell curve” probabilities. See Example 3.6.10 in the CLP-2 text.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-111"><div class="fn">See, for example, Example 3.6.10 in the CLP-2 text.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/reverse2B.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/reverse2C.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2857"><em class="emphasis">Solution using vertical strips.</em>\(\ \ \ \) To set up the integral using vertical strips, as in the figure on the right above, we observe that, on the domain of integration,</p>
+<ul class="disc">
+<li id="li-1370">\(x\) runs from \(0\) to \(1\) and</li>
+<li id="li-1371">for each fixed \(x\text{,}\) \(y\) runs from \(0\) to \(y=x\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the iterated integral is</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{\sin x}{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">This time, because \(x\) is treated as a constant in the inner integral, it is trivial to evaluate the iterated integral.</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{\sin x}{x}
+&amp;=\int_0^1\dee{x}\ \frac{\sin x}{x}\int_0^x\dee{y}
+=\int_0^1\dee{x}\ \sin x
+=1-\cos 1
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<p id="p-2858">Here is an example which is included as an excuse to review some integration technique from CLP-2.</p>
+<article class="example example-like" id="eg_dblInt_F"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dblInt_F"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.18</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dblInt_F"><article class="example example-like"><p id="p-2859">Find the volume under the surface \(z=1-3x^2-2y^2\) and above the \(xy\)-plane.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-409" id="solution-409"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-409"><div class="solution solution-like">
+<p id="p-2860">Before leaping into integration, we should try to understand what the surface and volume look like. For each constant \(z_0\text{,}\) the part of the surface \(z=1-3x^2-2y^2\) that lies in the horizontal plane \(z=z_0\) is the ellipse \(3x^2+2y^2=1-z_0\text{.}\) The biggest of these ellipses is that in the \(xy\)-plane, where \(z_0=0\text{.}\) It is the ellipse \(3x^2+2y^2=1\text{.}\) As \(z_0\) increases the ellipse shrinks, degenerating to a single point, namely \((0,0,1)\text{,}\) when \(z_0=1\text{.}\) So the surface consists of a stack of ellipses and our solid is</p>
+<div class="displaymath">
+\begin{equation*}
+\cV =\Set{(x,y,z)}{3x^2+2y^2\le 1,\ 0\le z\le 1-3x^2-2y^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">This is sketched in the figure below</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/egDblIntEa.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2861">The top view of the base region</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{3x^2+2y^2\le 1}
+\end{equation*}
+</div>
+<p data-braille="continuation">is sketched in the figure below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/egDblIntEb.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2862">Considering that the \(x\)-dependence in \(z=1-3x^2-2y^2\) is almost identical to the \(y\)-dependence in \(z=1-3x^2-2y^2\) (only the coefficients \(2\) and \(3\) are interchanged), using vertical slices is likely to lead to exactly the same level of difficulty as using horizontal slices. So we'll just pick one — say vertical slices.</p>
+<p id="p-2863">The fattest part of \(\cR\) is on the \(y\)-axis. The intersection points of the ellipse with the \(y\)-axis have \(x=0\) and \(y\) obeying \(3(0)^2+2y^2 =1 \) or \(y=\pm\frac{1}{\sqrt{2}}\text{.}\) So in \(\cR\text{,}\) \(-\frac{1}{\sqrt{2}}\le y\le \frac{1}{\sqrt{2}}\) and, for each such \(y\text{,}\) \(3x^2\le 1-2y^2\) or \(-\sqrt{\frac{1-2y^2}{3}}\le x\le \sqrt{\frac{1-2y^2}{3}}\text{.}\) So using vertical strips as in the figure above</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV) &amp;=\dblInt_\cR \big(1-3x^2-2y^2\big)\,\dee{x}\,\dee{y}\\
+&amp;=\int_{-\frac{1}{\sqrt{2}}}^{\frac{1}{\sqrt{2}}}\dee{y}
+\int_{-\sqrt{\frac{1-2y^2}{3}}}^{\sqrt{\frac{1-2y^2}{3}}}\dee{x}\
+\big(1-3x^2-2y^2\big)\\
+&amp;=4\int_0^{\frac{1}{\sqrt{2}}}\dee{y}
+\int_0^{\sqrt{\frac{1-2y^2}{3}}}\dee{x}\
+\big(1-3x^2-2y^2\big)\\
+&amp;=4\int_0^{\frac{1}{\sqrt{2}}}\dee{y}\
+\Big[(1-2y^2)x-x^3\Big]_0^{\sqrt{\frac{1-2y^2}{3}}}\\
+&amp;=4\int_0^{\frac{1}{\sqrt{2}}}\dee{y}\
+\sqrt{\frac{1-2y^2}{3}}\ \Big[(1-2y^2)-\frac{1-2y^2}{3}\Big]\\
+&amp;=8\int_0^{\frac{1}{\sqrt{2}}}\dee{y}\
+\left[\frac{1-2y^2}{3}\right]^{3/2}
+\end{align*}
+</div>
+<p data-braille="continuation">To evaluate this integral, we use the trig substitution<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-112" id="fn-112"><sup> 7 </sup></a> \(2y^2=\sin^2\theta\text{,}\) or</p>
+<div class="displaymath">
+\begin{equation*}
+y=\frac{\sin\theta}{\sqrt{2}}\qquad
+\dee{y}=\frac{\cos\theta}{\sqrt{2}}\,\dee{\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">to give</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume}(\cV) &amp;= 8\int_0^{\frac{\pi}{2}}
+\overbrace{\dee{\theta}\ \frac{\cos\theta}{\sqrt{2}} }^{\dee{y}}
+\left[\frac{\cos^2\theta}{3}\right]^{3/2}
+=\frac{8}{\sqrt{54}}\int_0^{\frac{\pi}{2}}\dee{\theta}\
+\cos^4\theta
+\end{align*}
+</div>
+<p data-braille="continuation">Then to integrate \(\cos^4\theta\text{,}\) we use the double angle formula<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-113" id="fn-113"><sup> 8 </sup></a></p>
+<div class="displaymath">
+\begin{align*}
+\cos^2\theta &amp;=\frac{\cos(2\theta)+1}{2}\\
+\implies \cos^4\theta &amp;= \frac{\big(\cos(2\theta)+1\big)^2}{4}
+=\frac{\cos^2(2\theta)+2\cos(2\theta)+1}{4}\\
+&amp;=\frac{\frac{\cos(4\theta)+1}{2}+2\cos(2\theta)+1}{4}\\
+&amp;=\frac{3}{8} +\frac{1}{2}\cos(2\theta) +\frac{1}{8}\cos(4\theta)
+\end{align*}
+</div>
+<p data-braille="continuation">Finally, since \(\int_0^{\frac{\pi}{2}} \cos(4\theta)\,\dee{\theta}
+=\int_0^{\frac{\pi}{2}} \cos(2\theta)\,\dee{\theta}
+=0\text{,}\)</p>
+<div class="displaymath">
+\begin{gather*}
+\text{Volume}(\cV) = \frac{8}{\sqrt{54}}\ \frac{3}{8}\ \frac{\pi}{2}
+=\frac{\pi}{2\sqrt{6}}
+\end{gather*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-112"><div class="fn">See §1.9 in the CLP-2 text for a general discussion of trigonometric substitution.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-113"><div class="fn">We weren't joking about his being a good review of single variable integration techniques. See Example 1.8.8 in the CLP-2 text.</div></div>
+</div></div>
+</div></article></div></section><section class="subsection" id="sec_def_int_more"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.5</span> <span class="title">Optional — More about the Definition of \(\ \dblInt_\cR f(x,y)\ \dee{x}\dee{y}\)</span>
+</h3>
+<p id="p-2864">Technically, the integral \(\dblInt_\cR f(x,y)\ \dee{x}\,\dee{y}\text{,}\) where \(\cR\) is a bounded region in \(\bbbr^2\text{,}\) is defined as follows.</p>
+<ul id="p-2865" class="disc">
+<li id="li-1372">
+<p id="p-2866">Subdivide \(\cR\) by drawing lines parallel to the \(x\) and \(y\) axes.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/intDecomp2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1373">Number the resulting rectangles contained in \(\cR\text{,}\) \(1\) through \(n\text{.}\) Notice that we are numbering all of the rectangles in \(\cR\text{,}\) not just those in one particular row or column.</li>
+<li id="li-1374">Denote by \(\De A_i\) the area of rectangle \(\# i\text{.}\)</li>
+<li id="li-1375">Select an arbitrary point \((x_i^*,y_i^*)\) in rectangle \(\# i\text{.}\)</li>
+<li id="li-1376">Form the sum \(\sum\limits_{i=1}^n f(x_i^*,y_i^*) \De A_i \text{.}\) Again note that the sum runs over all of the rectangles in \(\cR\text{,}\) not just those  in one particular row or column.</li>
+</ul>
+<p data-braille="continuation">Now repeat this construction over and over again, using finer and finer grids. If, as the size<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-114" id="fn-114"><sup> 9 </sup></a> of the rectangles approaches zero, this sum approaches a unique limit (independent of the choice of parallel lines and of points \((x_i^*,y_i^*)\)),  then we define</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_\cR f(x,y)\ \dee{x}\,\dee{y}
+=\lim \sum_{i=1}^n f(x_i^*,y_i^*)\,\De A_i
+\end{equation*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-114"><div class="fn">For example, let \(p_i\) be the perimeter of rectangle number \(i\) and require that \(\max_{1\le i\le n}
+p_i\) tends to zero. This way both the heights and widths of all rectangles also tend to zero.</div></div>
+<article class="theorem theorem-like" id="theorem-19"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.19</span><span class="period">.</span>
+</h6>
+<p id="p-2867">If \(f(x,y)\) is continuous in a region \(\cR\) described by</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+a&amp;\le x&amp;&amp;\le b\\
+B(x)&amp;\le y&amp;&amp;\le T(x)
+\end{alignat*}
+</div>
+<p data-braille="continuation">for continuous functions \(B(x)\text{,}\) \(T(x)\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_\cR f(x,y)\ \dee{x}\,\dee{y}\qquad\text{and}\qquad
+\int_a^b \dee{x} \bigg[\int_{B(x)}^{T(x)}\dee{y}\  f(x,y)\bigg]
+\end{equation*}
+</div>
+<p data-braille="continuation">both exist and are equal. Similarly, if \(\cR\) is described by</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+c&amp;\le y&amp;&amp;\le d\\
+L(y)&amp;\le x&amp;&amp;\le R(y)
+\end{alignat*}
+</div>
+<p data-braille="continuation">for continuous functions \(L(y)\text{,}\) \(R(y)\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_R f(x,y)\ \dee{x}\,\dee{y}\qquad\text{and}\qquad
+\int_c^d \dee{y} \bigg[\int_{L(y)}^{R(y)}\dee{x}\  f(x,y)\bigg]
+\end{equation*}
+</div>
+<p data-braille="continuation">both exist and are equal.</p></article><p id="p-2868">The proof of this theorem is not particularly difficult, but is still beyond the scope of this text. The main ideas in the proof can already be seen in §1.1.6 of the CLP-2 text. An important consequence of this theorem is</p>
+<article class="theorem theorem-like" id="theorem-20"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.20</span><span class="period">.</span><span class="space"> </span><span class="title">Fubini.</span>
+</h6>
+<p id="p-2869">If \(f(x,y)\) is continuous in a region \(\cR\) described by both</p>
+<div class="displaymath">
+\begin{equation*}
+\left\{\begin{aligned}
+a&amp;\le x\le b \\
+B(x)&amp;\le y\le T(x)
+\end{aligned}\right\}
+\qquad\text{and}\qquad
+\left\{
+\begin{aligned}
+c&amp;\le y\le d\\
+L(y)&amp;\le x\le R(y)
+\end{aligned}
+\right\}
+\end{equation*}
+</div>
+<p data-braille="continuation">for continuous functions \(B(x)\text{,}\) \(T(x)\text{,}\) \(L(y)\text{,}\) \(R(y)\text{,}\) then both</p>
+<div class="displaymath">
+\begin{equation*}
+\int_a^b \dee{x} \bigg[\int_{B(x)}^{T(x)}\dee{y}\  f(x,y)\bigg]
+\qquad\text{and}\qquad
+\int_c^d \dee{y} \bigg[\int_{L(y)}^{R(y)}\dee{x}\  f(x,y)\bigg]
+\end{equation*}
+</div>
+<p data-braille="continuation">exist and are equal.</p></article><p id="p-2870">The hypotheses of both of these theorems can be relaxed a bit, but not too much. For example, if</p>
+<div class="displaymath">
+\begin{align*}
+\cR&amp;=\Set{(x,y)}{0\le x\le 1,\ 0\le y\le 1}\\
+f(x,y)&amp;=\begin{cases}
+1&amp;\text{if } x,y \text{ are both rational numbers} \\
+0&amp;\text{otherwise}
+\end{cases}
+\end{align*}
+</div>
+<p data-braille="continuation">then the integral \(\dblInt_\cR f(x,y)\ \dee{x}\,\dee{y}\) does not exist. This is easy to see. If all of the \(x_i^*\)'s and \(y_i^*\)'s are chosen to be rational numbers, then</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{i=1}^n f(x_i^*,y_i^*)\,\De A_i
+=\sum_{i=1}^n \,\De A_i
+=\text{Area}(\cR)
+\end{equation*}
+</div>
+<p data-braille="continuation">But if we choose all  the \(x_i^*\)'s and \(y_i^*\)'s to be irrational numbers, then</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{i=1}^n f(x_i^*,y_i^*)\,\De A_i
+=\sum_{i=1}^n 0\,\De A_i
+=0
+\end{equation*}
+</div>
+<p data-braille="continuation">So the limit of \(\sum\limits_{i=1}^n f(x_i^*,y_i^*)\,\De A_i\text{,}\) as the maximum diagonal of the rectangles approaches zero, depends on the choice of points \((x_i^*,y_i^*)\text{.}\) So the integral \(\dblInt_\cR f(x,y)\ \dee{x}\,\dee{y}\) does not exist.</p>
+<p id="p-2871">Here is an even more pathological<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-115" id="fn-115"><sup> 10 </sup></a> example.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-115"><div class="fn">For mathematicians, “pathological” is a synonym for “cool”.</div></div>
+<article class="example example-like" id="eg_bad_Fubini"><a data-knowl="" class="id-ref original" data-refid="hk-eg_bad_Fubini"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.21</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_bad_Fubini"><article class="example example-like"><p id="p-2872">In this example, we relax exactly one of the hypotheses of Fubini's Theorem, namely the continuity of \(f\text{,}\) and construct an example in which both of the integrals in Fubini's Theorem exist, but are <em class="alert">not equal</em>. In fact, we choose \(\cR=\Set{(x,y)}{0\le x\le 1,\ 0\le y\le 1}\) and we use a function \(f(x,y)\) that is continuous on \(\cR\text{,}\) except at exactly one point — the origin.</p>
+<p id="p-2873">First, let \(\de_1,\de_2,\de_3,\ \cdots\) be any sequence of real numbers obeying</p>
+<div class="displaymath">
+\begin{equation*}
+1=\de_1 \gt \de_2 \gt \de_3\gt\ \cdots\ \gt\de_n\rightarrow 0
+\end{equation*}
+</div>
+<p data-braille="continuation">For example \(\de_n=\frac{1}{n}\) or \(\de_n=\frac{1}{2^{n-1}}\) are both acceptable. For each positive integer \(n\text{,}\) let \(I_n=(\de_{n+1},\de_n]=\Set{t}{\de_{n+1} \lt t\le \de_n}\) and let \(g_n(t)\) be any nonnegative continuous function obeying</p>
+<ul class="disc">
+<li id="li-1377">\(g_n(t)=0\) if \(t\) is not in \(I_n\) and</li>
+<li id="li-1378">\(\displaystyle \int_{I_n}g(t)\,dt=1\)</li>
+</ul>
+<p data-braille="continuation">There are many such functions. For example</p>
+<div class="displaymath">
+\begin{equation*}
+g_n(t)=\left(\frac{2}{\de_n-\de_{n+1}}\right)^2\begin{cases}
+\de_n-t&amp; \text{if } \half(\de_{n+1}+\de_n)\le t\le \de_n\\
+t-\de_{n+1}&amp; \text{if }\de_{n+1}\le t\le \half(\de_{n+1}+\de_n)\\
+0&amp; \text{otherwise}
+\end{cases}
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/g_n.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2874">Here is a summary of what we have done so far.</p>
+<ul class="disc">
+<li id="li-1379">We subdivided the interval \(0 \lt  x\le 1\) into infinitely many subintervals \(I_n\text{.}\) As \(n\) increases, the subinterval \(I_n\) gets smaller and smaller and also gets closer and closer to zero.</li>
+<li id="li-1380">We defined, for each \(n\text{,}\) a nonnegative continuous function \(g_n\) that is zero everywhere outside of \(I_n\) and whose integral over \(I_n\) is one.</li>
+</ul>
+<p id="p-2875">Now we define the integrand \(f(x,y)\) in terms of these subintervals \(I_n\) and functions \(g_n\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}
+0&amp; \text{if } x=0 \\
+0&amp; \text{if } y=0 \\
+g_m(x)g_n(y)&amp; \text{if } x\in I_m,\ y\in I_n \text{ with } m=n\\
+-g_m(x)g_n(y)&amp; \text{if } x\in I_m,\ y\in I_n \text{ with } m=n+1\\
+0&amp; \text{otherwise}
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">You should think of \((0,1]\times(0,1]\) as a union of a bunch of small rectangles \(I_m\times I_n\text{,}\) as in the figure below. On most of these rectangles, \(f(x,y)\) is just zero. The exceptions are the darkly shaded rectangles \(I_n\times I_n\) on the “diagonal” of the figure and the lightly shaded rectangles \(I_{n+1}\times I_n\) just to the left of the “diagonal”.</p>
+<p id="p-2876">On each darkly shaded rectangle, \(f(x,y)\ge 0\) and the graph of \(f(x,y)\) is the graph of \(g_n(x)g_n(y)\) which looks like a pyramid. On each lightly shaded rectangle, \(f(x,y)\le 0\) and the graph of \(f(x,y)\) is the graph of \(-g_{n+1}(x)g_n(y)\) which looks like a pyramidal hole in the ground.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/fubini.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2877">Now fix any \(0\le y\le 1\) and let's compute \(\int_0^1 f(x,y)\ \dee{x}\text{.}\) That is, we are integrating \(f\) along a line that is parallel to the \(x\)-axis. If \(y=0\text{,}\) then \(f(x,y)=0\) for all \(x\text{,}\) so \(\int_0^1 f(x,y)\,\dee{x} = 0\text{.}\) If \(0 \lt y\le 1\text{,}\) then there is exactly one positive integer \(n\) with \(y\in I_n\) and \(f(x,y)\) is zero, except for \(x\) in \(I_n\) or \(I_{n+1}\text{.}\) So for \(y\in I_n\)</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1 f(x,y)\,\dee{x}&amp;=\sum_{m=n,n+1}\int_{I_m} f(x,y)\,\dee{x}\\
+&amp;=\int_{I_n} g_n(x)g_n(y)\,\dee{x}-\int_{I_{n+1}} g_{n+1}(x)g_n(y)\,\dee{x}\\
+&amp;=g_n(y)\int_{I_n} g_n(x)\,\dee{x}-g_n(y)\int_{I_{n+1}} g_{n+1}(x)\,\dee{x}\\
+&amp;=g_n(y)-g_n(y)=0
+\end{align*}
+</div>
+<p data-braille="continuation">Here we have twice used that \(\int_{I_m}g(t)\,dt=1\) for all \(m\text{.}\) Thus \(\int_0^1 f(x,y)\,\dee{x}=0\) for all \(y\) and hence \(\int_0^1\dee{y}\Big[\int_0^1
+\dee{x}\ f(x,y)\Big]=0\text{.}\)</p>
+<p id="p-2878">Finally, fix any \(0\le x\le 1\) and let's compute \(\int_0^1 f(x,y)\ \dee{y}\text{.}\) That is, we are integrating \(f\) along a line that is parallel to the \(y\)-axis. If \(x=0\text{,}\) then \(f(x,y)=0\) for all \(y\text{,}\) so \(\int_0^1 f(x,y)\,\dee{y} = 0\text{.}\) If \(0 \lt x\le 1\text{,}\) then there is exactly one positive integer \(m\) with \(x\in I_m\text{.}\) If \(m\ge 2\text{,}\) then \(f(x,y)\) is zero, except for \(y\) in \(I_m\) and \(I_{m-1}\text{.}\) But, if \(m=1\text{,}\) then \(f(x,y)\) is zero, except for \(y\) in \(I_1\text{.}\) (Take another look at the figure above.) So for \(x\in I_m\text{,}\) with \(m\ge 2\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1 f(x,y)\,\dee{y}&amp;=\sum_{n=m,m-1}\int_{I_n} f(x,y)\,\dee{y}\\
+&amp;=\int_{I_m} g_m(x)g_m(y)\,\dee{y}-\int_{I_{m-1}} g_{m}(x)g_{m-1}(y)\,\dee{y}\\
+&amp;=g_m(x)\int_{I_m} g_m(y)\,\dee{y}-g_m(x)\int_{I_{m-1}} g_{m-1}(y)\,\dee{y}\\
+&amp;=g_m(x)-g_m(x)=0
+\end{align*}
+</div>
+<p data-braille="continuation">But for \(x\in I_1\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1 f(x,y)\,\dee{y}&amp;=\int_{I_1} f(x,y)\,\dee{y}
+=\int_{I_1} g_1(x)g_1(y)\,\dee{y}
+=g_1(x)\int_{I_1} g_1(y)\,\dee{y}\\
+&amp;=g_1(x)
+\end{align*}
+</div>
+<p data-braille="continuation">Thus</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1 f(x,y)\,\dee{y}=\begin{cases}
+0&amp;\text{if } x\le \de_2 \\
+g_1(x)&amp;\text{if }  x\in I_1
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">and hence</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1\dee{x}\bigg[\int_0^1 \dee{y}\ f(x,y)\bigg]
+=\int_{I_1}g_1(x)\,\dee{x}=1
+\end{equation*}
+</div>
+<p data-braille="continuation">The conclusion is that for the \(f(x,y)\) above, which is defined for all \(0\le x\le 1\text{,}\) \(0\le y\le 1\) and is continuous except at \((0,0)\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1\dee{y}\bigg[\int_0^1 \dee{x}\ f(x,y)\bigg]=0
+\qquad
+\int_0^1\dee{x}\bigg[\int_0^1 \dee{y}\ f(x,y)\bigg]=1
+\end{equation*}
+</div></article></div></section><section class="subsection" id="sec_int_symmetry"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.6</span> <span class="title">Even and Odd Functions</span>
+</h3>
+<p id="p-2879">During the course of our study of integrals of functions of one variable, we found that the evaluation of certain integrals could be substantially simplified by exploiting symmetry properties of the integrand. Concretely, in Section  1.2.1 of the CLP-2 text, we gave the</p>
+<article class="definition definition-like" id="def_evenodd_one_variable"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.22</span><span class="period">.</span><span class="space"> </span><span class="title">(Definition 1.2.8 in the CLP-2 text).</span>
+</h6>
+<p id="p-2880">Let \(f(x)\) be a function of one variable. Then,</p>
+<ul class="disc">
+<li id="li-1381">we say that \(f(x)\) is even when \(f(x)=f(-x)\) for all \(x\text{,}\) and</li>
+<li id="li-1382">we say that \(f(x)\) is odd when \(f(x)=-f(-x)\) for all \(x\text{.}\)</li>
+</ul></article><p id="p-2881">We also saw that</p>
+<ul class="disc">
+<li id="li-1383">\(f(x)=|x|\text{,}\) \(f(x)=\cos x\) and \(f(x)=x^2\) are even functions and</li>
+<li id="li-1384">\(f(x)=\sin x\text{,}\) \(f(x)=\tan x\) and  \(f(x)=x^3\) are odd functions.</li>
+<li id="li-1385">In fact, if \(f(x)\) is any even power of \(x\text{,}\) then \(f(x)\) is an even function and if \(f(x)\) is any odd power of \(x\text{,}\) then \(f(x)\) is an odd function.</li>
+</ul>
+<p data-braille="continuation">We also learned how to exploit evenness and oddness to simplify integration.</p>
+<article class="theorem theorem-like" id="thm_INTevenodd"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.23</span><span class="period">.</span><span class="space"> </span><span class="title">(Theorem 1.2.11 in the CLP-2 text).</span>
+</h6>
+<p id="p-2882">Let \(a&gt;0\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1386">If \(f(x)\) is an even function, then<div class="displaymath">
+\begin{equation*}
+\int_{-a}^a f(x) \dee{x} = 2\int_0^a f(x) \dee{x}
+\end{equation*}
+</div>
+</li>
+<li id="li-1387">If \(f(x)\) is an odd function, then<div class="displaymath">
+\begin{equation*}
+\int_{-a}^a f(x) \dee{x} = 0
+\end{equation*}
+</div>
+</li>
+</ol></article><p id="p-2883">We will now see that we can similarly exploit evenness and oddness of functions of more than one variable. But for functions of more than one variable there is also more than one kind of oddness and evenness. In the Definition <a class="xref" data-knowl="./knowl/def_evenodd_one_variable.html" title="Definition 3.1.22: (Definition 1.2.8 in the CLP-2 text)">3.1.22</a> (Definition 1.2.8 in the CLP-2 text) of evenness and oddness of the function \(f(x)\text{,}\) we compared the value of \(f\) at \(x\) with the value of \(f\) at \(-x\text{.}\) The points \(x\) and \(-x\) are the same distance from the origin, \(0\text{,}\) and are on opposite sides of \(0\text{.}\) The point \(-x\) is called the reflection of \(x\) across the origin. To prepare for our definitions of evenness and oddness of functions of two variables, we now define three different reflections in the two dimensional world of the \(xy\)-plane.</p>
+<article class="definition definition-like" id="def_reflection_twod"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.24</span><span class="period">.</span>
+</h6>
+<p id="p-2884">Let \(x\) and \(y\) be two real numbers.</p>
+<ul class="disc">
+<li id="li-1388">The reflection of \((x,y)\) across the \(y\)-axis is \((-x,y)\text{.}\)</li>
+<li id="li-1389">The reflection of \((x,y)\) across the \(x\)-axis is \((x,-y)\text{.}\)</li>
+<li id="li-1390">The reflection of \((x,y)\) across the origin is \((-x,-y)\text{.}\)</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/refl2d.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><ul id="p-2885" class="disc">
+<li id="li-1391">
+<p id="p-2886">To get from the point \((x,y)\) to its image reflected across the \(y\)-axis, you</p>
+<ul class="circle">
+<li id="li-1392">start from \((x,y)\text{,}\) and</li>
+<li id="li-1393">walk horizontally straight to the \(y\)-axis, and</li>
+<li id="li-1394">cross the \(y\)-axis, and</li>
+<li id="li-1395">continue horizontally the same distance as you have already travelled to \((-x,y)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Here are four examples.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25.5%;margin-right:25.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/refl2dX.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1396">
+<p id="p-2887">To get from the point \((x,y)\) to its image reflected across the \(x\)-axis, you</p>
+<ul class="circle">
+<li id="li-1397">start from \((x,y)\text{,}\) and</li>
+<li id="li-1398">walk vertically straight to the \(x\)-axis, and</li>
+<li id="li-1399">cross the \(x\)-axis, and</li>
+<li id="li-1400">continue vertically the same distance as you have already travelled to the reflected image \((x,-y)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Here are four examples.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/refl2dY.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-1401">
+<p id="p-2888">To get from the point \((x,y)\) to its image reflected across the origin, you</p>
+<ul class="circle">
+<li id="li-1402">start from \((x,y)\text{,}\) and</li>
+<li id="li-1403">walk radially straight to the origin, and</li>
+<li id="li-1404">cross the origin, and</li>
+<li id="li-1405">continue radially in the same direction the same distance as you have already travelled to the reflected image \((-x,-y)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Here are three examples.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25.5%;margin-right:25.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/refl2dXY.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ul>
+<p id="p-2889">For each of these three types of reflection, there is a corresponding kind of oddness and evenness.</p>
+<article class="definition definition-like" id="def_evenodd_two_variables"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.25</span><span class="period">.</span>
+</h6>
+<p id="p-2890">Let \(f(x,y)\) be a function of two variables. Then,</p>
+<ul class="disc">
+<li id="li-1406">we say that \(f(x,y)\) is even (under reflection across the origin) when \(f(-x,-y)=f(x,y)\) for all \(x\) and \(y\text{,}\) and</li>
+<li id="li-1407">we say that \(f(x,y)\) is odd (under reflection across the origin) when \(f(-x,-y)=-f(x,y)\) for all \(x\) and \(y\)</li>
+</ul>
+<p data-braille="continuation">and</p>
+<ul class="disc">
+<li id="li-1408">we say that \(f(x,y)\) is even under \(x\rightarrow -x\) (i.e. under reflection across the \(y\)-axis) when \(f(-x,y)=f(x,y)\) for all \(x\) and \(y\text{,}\) and</li>
+<li id="li-1409">we say that \(f(x,y)\) is odd  under \(x\rightarrow -x\) (i.e. under reflection across the \(y\)-axis) when \(f(-x,y)=-f(x,y)\) for all \(x\) and \(y\)</li>
+</ul>
+<p data-braille="continuation">and</p>
+<ul class="disc">
+<li id="li-1410">we say that \(f(x,y)\) is even under \(y\rightarrow -y\) (i.e. under reflection across the \(x\)-axis) when \(f(x,-y)=f(x,y)\) for all \(x\) and \(y\text{,}\) and</li>
+<li id="li-1411">we say that \(f(x,y)\) is odd  under \(y\rightarrow -y\) (i.e. under reflection across the \(x\)-axis) when \(f(x,-y)=-f(x,y)\) for all \(x\) and \(y\text{.}\)</li>
+</ul></article><article class="example example-like" id="eg_evenodd_two_variables"><a data-knowl="" class="id-ref original" data-refid="hk-eg_evenodd_two_variables"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.26</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_evenodd_two_variables"><article class="example example-like"><p id="p-2891">Let \(m\) and \(n\) be two integers and set \(f(x,y)=x^m y^n\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+f(-x,y)&amp;= (-x)^my^n = (-1)^m x^m y^n = (-1)^m f(x,y) \\
+f(x,-y)&amp;= x^m(-y)^n = (-1)^n x^m y^n= (-1)^n f(x,y) \\
+f(-x,-y)&amp;= (-x)^m(-y)^n = (-1)^{m+n} x^m y^n = (-1)^{m+n} f(x,y) 
+\end{align*}
+</div>
+<p data-braille="continuation">Consequently</p>
+<ul class="disc">
+<li id="li-1412">if \(m\) is even, then \(f(x,y)\) is even under \(x\rightarrow -x\) and</li>
+<li id="li-1413">if \(m\) is odd, then \(f(x,y)\) is odd under \(x\rightarrow -x\) and</li>
+<li id="li-1414">if \(n\) is even, then \(f(x,y)\) is even under \(y\rightarrow -y\) and</li>
+<li id="li-1415">if \(n\) is odd, then \(f(x,y)\) is odd under \(y\rightarrow -y\) and</li>
+<li id="li-1416">if \(m+n\) is even, then \(f(x,y)\) is even  (under reflection across the origin) and</li>
+<li id="li-1417">if \(m+n\) is odd, then \(f(x,y)\) is odd  (under reflection across the origin).</li>
+</ul></article></div>
+<p id="p-2892">Recall from  Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a> (or Theorem 1.2.11 in the CLP-2 text) that we can exploit the evenness or oddness of the integrand, \(f(x)\text{,}\) of the integral \(\int_b^a f(x)\,\dee{x}\) to simplify the evaluation of the integral  when \(b=-a\text{,}\) i.e. when the domain of integration is invariant under reflection across the origin. Similarly, we will be able to simplify the evaluation of the double integral \(\dblInt_\cR f\big(x,y\big)\,\dee{x}\,\dee{y}\) when the integrand is even or odd and the domain of integration \(\cR\) is invariant under the corresponding reflection — meaning that the reflected \(\cR\) is identical to the original \(\cR\text{.}\) Here are some details for “reflection across the \(y\)-axis”. The details for the other reflections are similar.</p>
+<ul class="disc">
+<li id="li-1418">If \(\cR\) is any subset of the \(xy\)-plane,<div class="displaymath">
+\begin{equation*}
+\text{the reflection of }\cR\text{ across the }y\text{-axis} =\Set{(-x,y)}{(x,y)\in\cR} 
+\end{equation*}
+</div>The set notation on the right hand side means “the set of all points \((-x,y)\) with \((x,y)\) a point of \(\cR\)”.</li>
+<li id="li-1419">
+<p id="p-2893">In the special case<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-116" id="fn-116"><sup> 11 </sup></a> that</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
+\end{equation*}
+</div>
+<p data-braille="continuation">(see §<a href="sec_2d_integrals.html#sec_horizontal_slices" class="internal" title="Subsection 3.1.2: Horizontal Slices">3.1.2</a> on horizontal slices) then</p>
+<div class="displaymath">
+\begin{equation*}
+\text{the reflection of }\cR\text{ across the }y\text{-axis} =\Set{(x,y)}{c\le y\le d,
+-R(y)\le x\le -L(y)} 
+\end{equation*}
+</div>
+<p data-braille="continuation">In the sketch below  \(\cR_y\) is the reflection of \(\cR\) across the \(y\)-axis.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
+<div class="sbspanel" style="width:47.4747474747475%;justify-content:flex-start;"><img src="figs/hSliceA.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:51.5151515151515%;justify-content:flex-start;"><img src="figs/hSliceAry.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-1420">A subset \(\cR\) of the \(xy\)-plane is invariant under reflection across the \(y\)-axis (or is also known as “symmetric about the \(y\)-axis”) when<div class="displaymath">
+\begin{equation*}
+(-x,y)\text{ is in }\cR
+\iff
+(x,y)\text{ is in }\cR
+\end{equation*}
+</div>Recall that the symbol \(\iff\) is read “if and only if”. In the special case that<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
+\end{equation*}
+</div>\(\cR\) is is invariant under reflection across the \(y\)-axis when \(L(y)=-R(y)\text{.}\)</li>
+</ul>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-116"><div class="fn">Here \(L(y)\) (“\(L\)” stands for “left”) is the leftmost allowed value of \(x\) when the \(y\)-coordinate is \(y\text{,}\) and \(R(y)\) (“\(R\)” stands for “right”) is the rightmost allowed value of \(x\text{,}\) when the \(y\)-coordinate is \(y\text{.}\)</div></div>
+<p id="p-2894">Here are some more sketches. The first sketch is of a rectangle that is invariant under reflection across the \(y\)-axis, but is not invariant under reflection across the \(x\)-axis. The remaining three sketches show a triangle and its reflections across the \(y\)-axis, across the \(x\)-axis and across the origin.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.75%;margin-right:1.75%;">
+<div class="sbspanel" style="width:46.6321243523316%;justify-content:flex-start;"><img src="figs/reflDySym.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:49.740932642487%;justify-content:flex-start;"><img src="figs/reflDy.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.75%;margin-right:1.75%;">
+<div class="sbspanel" style="width:47.6683937823834%;justify-content:flex-start;"><img src="figs/reflDx.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:48.7046632124352%;justify-content:flex-start;"><img src="figs/reflDo.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-2895">We are finally ready for the analog of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a> (Theorem 1.2.11 in the CLP-2 text) for functions of two variables. By way of motivation for that theorem, consider the integral \(\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y}\text{,}\) with the integrand, \(f(x,y)\text{,}\) odd under \(x\rightarrow -x\text{,}\) and the domain of integration, \(\cR\text{,}\) symmetric about the \(y\)-axis. Slice up \(\cR\) into tiny (think “infinitesmal”) squares, either by subdividing vertical slices into tiny squares, as in §<a href="sec_2d_integrals.html#sec_vertical_slices" class="internal" title="Subsection 3.1.1: Vertical Slices">3.1.1</a>, or by subdividing horizontal slices into tiny squares, as in §<a href="sec_2d_integrals.html#sec_horizontal_slices" class="internal" title="Subsection 3.1.2: Horizontal Slices">3.1.2</a>. Concentrate on any point \((x_0,y_0)\) in \(\cR\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32%;margin-right:32%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/oddSymmetric.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2896">The contribution to the integral coming from the square that contains \((x_0,y_0)\) is (essentially<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-117" id="fn-117"><sup> 12 </sup></a>) \(f(x_0,y_0)\,\De x\,\De y\text{.}\) That contribution is cancelled by the contribution coming from the square containing (the reflected point) \((-x_0,y_0)\text{,}\) which is</p>
+<div class="displaymath">
+\begin{equation*}
+f(-x_0,y_0)\,\De x\,\De y = -f(x_0,y_0)\,\De x\,\De y
+\end{equation*}
+</div>
+<p data-braille="continuation">This is the case for all points \((x_0,y_0)\) in \(\cR\text{.}\) Consequently</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y} = 0
+\end{equation*}
+</div>
+<p data-braille="continuation">Here is the analog of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a> for functions of two variables.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-117"><div class="fn">In this motivation, we suppress the \(\De x\rightarrow 0\) and \(\De y\rightarrow 0\) limits.</div></div>
+<article class="theorem theorem-like" id="thm_INTevenodd2d"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.27</span><span class="period">.</span><span class="space"> </span><span class="title">2d Even and Odd.</span>
+</h6>
+<ol id="p-2897" class="lower-alpha">
+<li id="li-1421">Let \(\cR\) be a subset of the \(xy\)-plane that is symmetric about the \(y\)-axis. If \(f(x,y)\) is odd under \(x\rightarrow -x\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y} = 0
+\end{equation*}
+</div>Denote by \(\cR_+\) the set of all points in \(\cR\) that have \(x\ge 0\text{.}\) If \(f(x,y)\) is even under \(x\rightarrow -x\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y} = 2\dblInt_{\cR_+} f(x,y)\,\dee{x}\dee{y}
+\end{equation*}
+</div>
+</li>
+<li id="li-1422">Let \(\cR\) be a subset of the \(xy\)-plane that is symmetric about the \(x\)-axis. If \(f(x,y)\) is odd under \(y\rightarrow -y\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y} = 0
+\end{equation*}
+</div>Denote by \(\cR_+\) the set of all points in \(\cR\) that have \(y\ge 0\text{.}\) If \(f(x,y)\) is even under \(y\rightarrow -y\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y} = 2\dblInt_{\cR_+} f(x,y)\,\dee{x}\dee{y}
+\end{equation*}
+</div>
+</li>
+<li id="li-1423">Let \(\cR\) be a subset of the \(xy\)-plane that is invariant under reflection across the origin. If \(f(x,y)\) is odd (under reflection across the origin), then<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y} = 0
+\end{equation*}
+</div>Denote by \(\cR_+\) either the set of all points in \(\cR\) that have \(x\ge 0\) or the set of all points in \(\cR\) that have \(y\ge 0\text{.}\) If \(f(x,y)\) is even (under reflection across the origin), then<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y} = 2\dblInt_{\cR_+} f(x,y)\,\dee{x}\dee{y}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref original" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><p id="p-2898">We will give only the proof for part (a) in the special case that</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
+\end{equation*}
+</div>
+<p data-braille="continuation">In part (a), we are assuming that \(\cR\) is symmetric about the \(y\)-axis, so that \(L(y)=-R(y)\text{.}\) So, using horizontal strips, as described in §<a href="sec_2d_integrals.html#sec_horizontal_slices" class="internal" title="Subsection 3.1.2: Horizontal Slices">3.1.2</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y}
+=\int_c^d \dee{y} \int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)
+\end{equation*}
+</div>
+<p data-braille="continuation">Fix any \(c\le y\le d\text{.}\)</p>
+<ul class="disc">
+<li id="li-1424">If \(f(x,y)\) is odd under \(x\rightarrow -x\text{,}\) then \(f(-x,y)=-f(x,y)\) for all \(-R(y)\le x\le R(y)\) and<div class="displaymath">
+\begin{equation*}
+\int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)=0
+\end{equation*}
+</div>by part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a> (Theorem 1.2.11 in the CLP-2 text).</li>
+<li id="li-1425">If \(f(x,y)\) is even under \(x\rightarrow -x\text{,}\) then \(f(-x,y)=f(x,y)\) for all \(-R(y)\le x\le R(y)\) and<div class="displaymath">
+\begin{equation*}
+\int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)=2\int_0^{R(y)} \dee{x}\ f(x,y)
+\end{equation*}
+</div>by part (a) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a>.</li>
+</ul>
+<p data-braille="continuation">As the statements of the two bullets are true for each fixed \(c\le y\le d\text{,}\) we have that</p>
+<ul class="disc">
+<li id="li-1426">if \(f(x,y)\) is odd under \(x\rightarrow -x\text{,}\) then<div class="displaymath">
+\begin{align*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y}
+&amp;=\int_c^d \dee{y} \int_{-R(y)}^{R(y)} \dee{x}\ f(x,y) 
+=\int_c^d \dee{y}\ 0 \\
+&amp;=0
+\end{align*}
+</div>
+</li>
+<li id="li-1427">and if \(f(x,y)\) is even under \(x\rightarrow -x\text{,}\) then<div class="displaymath">
+\begin{align*}
+\dblInt_{\cR} f(x,y)\,\dee{x}\dee{y}
+&amp;=\int_c^d \dee{y} \int_{-R(y)}^{R(y)} \dee{x}\ f(x,y)
+=\int_c^d \dee{y}\ 2\int_0^{R(y)} \dee{x}\ f(x,y) \\
+&amp;=2\dblInt_{\cR_+} f(x,y)\,\dee{x}\dee{y}
+\end{align*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">The proof of part (a) when \(\cR\) is not of the form</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
+\end{equation*}
+</div>
+<p data-braille="continuation">(for example if \(\cR\) has holes in it) is most easily done using the change of variables \(x=-u\text{,}\) \(y=v\) in Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a>, which is part of the optional §<a href="sec_Jacobian.html" class="internal" title="Section 3.8: Optional— Integrals in General Coordinates">3.8</a>.</p>
+<p id="p-2899">The proof of part (b) is similar to the proof of part (a).</p>
+<p id="p-2900">The proof of part (c) is most easily done using the change of variables \(x=-u\text{,}\) \(y=-v\) in Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a>, which is part of the optional §<a href="sec_Jacobian.html" class="internal" title="Section 3.8: Optional— Integrals in General Coordinates">3.8</a>.</p></article></div>
+<article class="example example-like" id="eg_odd_integralA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_odd_integralA"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.28</span><span class="period">.</span><span class="space"> </span><span class="title">\(\dblInt_{\cR} e^x\sin(y+y^3)\,\dee{x}\dee{y}\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_odd_integralA"><article class="example example-like"><p id="p-2901">Evaluate the integral</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} e^x\sin(y+y^3)\,\dee{x}\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">over the triangular region \(\cR\) in the sketch</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25.5%;margin-right:25.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/reflDxSym.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-410" id="solution-410"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-410"><div class="solution solution-like">
+<p id="p-2902">Start by checking the evenness and oddness properties of the integrand \(f(x,y) =  e^x\sin(y+y^3)\text{.}\) Since</p>
+<div class="displaymath">
+\begin{align*}
+f(-x,y)&amp;=e^{-x}\sin(y+y^3) \\
+f(x,-y)&amp;=e^{x}\sin\big(-y+(-y)^3\big)
+=e^{x}\sin(-y-y^3)
+=-e^{x}\sin(y+y^3) \\
+&amp;=-f(x,y) \\
+f(-x,-y)&amp;=-e^{-x}\sin(y+y^3) 
+\end{align*}
+</div>
+<p data-braille="continuation">the integrand is odd under \(y\rightarrow-y\) but is neither even nor odd under \(x\rightarrow -x\) and \((x,y)\rightarrow-(x,y)\text{.}\) Fortunately (or by rigging), the domain of integration \(\cR\) is invariant under \(y\rightarrow -y\) (i.e. is symmetric about the \(x\)-axis) and so</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR} e^x\sin(y+y^3)\,\dee{x}\dee{y}=0
+\end{equation*}
+</div>
+<p data-braille="continuation">by part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd2d.html" title="Theorem 3.1.27: 2d Even and Odd">3.1.27</a> (Theorem 1.2.11 in the CLP-2 text).</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_odd_integralB"><a data-knowl="" class="id-ref original" data-refid="hk-eg_odd_integralB"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.29</span><span class="period">.</span><span class="space"> </span><span class="title">\(\dblInt_{\cR}(xe^y + ye^x + xe^{xy} + 7)\,\dee{x}\dee{y}\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_odd_integralB"><article class="example example-like"><p id="p-2903">Evaluate the integral</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR}(xe^y + ye^x + xe^{xy} + 7)\,\dee{x}\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">over the region \(\cR\) whose outer boundary is the ellipse \(x^2+4y^2=1\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-411" id="solution-411"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-411"><div class="solution solution-like">
+<p id="p-2904">First, let's sketch the ellipse \(x^2+4y^2=1\text{.}\) Notice that its \(x\) intercepts are the points \((x,0)\) that obey \(x^2+4(0)^2=1\text{.}\) So the \(x\)-intercepts are \((\pm 1,0)\text{.}\) Similarly its \(y\) intercepts are the points \((0,y)\) that obey \(0^2+4y^2=1\text{.}\) So the \(y\)-intercepts are \((0,\pm 1/2)\text{.}\) Here is a sketch of \(\cR\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:28.5%;margin-right:28.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ellipticalDomain.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-2905">From the sketch, it looks like \(\cR\) is invariant under \(x\rightarrow-x\) (i.e. is symmetric about the \(y\)-axis) and is also invariant under \(y\rightarrow-y\) (i.e. is symmetric about the \(x\)-axis) and is also invariant under \((x,y)\rightarrow-(x,y)\text{.}\) It is easy to check analytically that this is indeed the case. The point \((x,y)\) is in \(\cR\) if and only if it is inside \(x^2+4y^2=1\text{.}\) That is the case if and only if \(x^2+4y^2\le 1\text{.}\) Since</p>
+<div class="displaymath">
+\begin{equation*}
+(-x)^2+4y^2 = x^2+(-4y)^2 = (-x)^2+4(-y)^2 = x^2+4y^2
+\end{equation*}
+</div>
+<p data-braille="continuation">we have</p>
+<div class="displaymath">
+\begin{align*}
+(x,y)\text{ is in $\cR$} &amp;\iff (-x,y)\text{ is in $\cR$} \\
+&amp;\iff (x,-y)\text{ is in $\cR$} \\
+&amp;\iff (-x,-y)\text{ is in $\cR$} 
+\end{align*}
+</div>
+<p data-braille="continuation">Now let's check the evenness and oddness properties of the integrand.</p>
+<div class="displaymath">
+\begin{alignat*}{4}
+f(x,y) &amp;= xe^y &amp;&amp;+ ye^x &amp;&amp;+ xe^{xy} &amp;&amp;+ 7 \\
+f(-x,y) &amp;= -xe^y &amp;&amp;+ ye^{-x} &amp;&amp;- xe^{-xy} &amp;&amp;+ 7 \\
+f(x,-y) &amp;= xe^{-y} &amp;&amp;- ye^x &amp;&amp;+ xe^{-xy} &amp;&amp;+ 7 \\
+f(-x,-y) &amp;= -xe^{-y} &amp;&amp;- ye^{-x} &amp;&amp;- xe^{xy} &amp;&amp;+ 7 
+\end{alignat*}
+</div>
+<p data-braille="continuation">So \(f(x,y)\) is neither even nor odd under any of \(x\rightarrow-x\text{,}\) \(y\rightarrow-y\text{,}\) and \((x,y)\rightarrow-(x,y)\text{.}\) BUT, look at the four terms of \(f(x,y)\) separately.</p>
+<ul class="disc">
+<li id="li-1428">The first term of \(f(x,y)\text{,}\) namely \(xe^y\text{,}\) is odd under \(x\rightarrow-x\text{.}\)</li>
+<li id="li-1429">The second term of \(f(x,y)\text{,}\) namely \(ye^x\text{,}\) is odd under \(y\rightarrow-y\text{.}\)</li>
+<li id="li-1430">The third term of \(f(x,y)\text{,}\) namely \(xe^{xy}\text{,}\) is odd under \((x,y)\rightarrow-(x,y)\text{.}\)</li>
+<li id="li-1431">The fourth term of \(f(x,y)\text{,}\) namely \(7\text{,}\) is even under all of \(x\rightarrow-x\text{,}\) \(y\rightarrow-y\text{,}\) and \((x,y)\rightarrow-(x,y)\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So, by parts (a), (b) and (c) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd2d.html" title="Theorem 3.1.27: 2d Even and Odd">3.1.27</a>, in order,</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\dblInt_{\cR}(xe^y + ye^x + xe^{xy} + 7)\,\dee{x}\dee{y}\\
+&amp;\hskip0.5in= \dblInt_{\cR}xe^y\,\dee{x}\dee{y}
++ \dblInt_{\cR}ye^x\,\dee{x}\dee{y}
++ \dblInt_{\cR}xe^{xy}\,\dee{x}\dee{y}
++ 7 \dblInt_{\cR} \dee{x}\dee{y} \\
+&amp;\hskip0.5in= 0 + 0 +0 + 7\,\text{Area}(\cR)
+\end{align*}
+</div>
+<p data-braille="continuation">Since \(\cR\) is an ellipse with semi-major axis \(a=1\) and semi-minor axis \(b=\frac{1}{2}\text{,}\) it has area \(\pi a b = \tfrac{1}{2}\pi\) and</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_{\cR}(xe^y + ye^x + xe^{xy} + 7)\,\dee{x}\dee{y}
+= \tfrac{7}{2}\pi
+\end{equation*}
+</div>
+</div></div>
+</div></article></div></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.1.7</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-51">
+<div class="introduction" id="introduction-67"><p id="p-2906"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-355"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-2907">For each of the following, evaluate the given double integral <em class="emphasis">without</em> using iteration. Instead, interpret the integral as, for example, an area or a volume.</p>
+<ol class="lower-alpha">
+<li id="li-1432">\(\displaystyle \ds\int_{-1}^3\int_{-4}^1 \dee{y}\,\dee{x}\)</li>
+<li id="li-1433">\(\displaystyle \ds\int_0^2\int_0^{\sqrt{4-y^2}} \dee{x}\,\dee{y}\)</li>
+<li id="li-1434">\(\displaystyle \ds\int_{-3}^3\int_0^{\sqrt{9-y^2}}\sqrt{9-x^2-y^2}\ \dee{x}\,\dee{y}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-356"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-2914">Let \(f(x,y)= 12 x^2y^3\text{.}\) Evaluate</p>
+<ol class="lower-alpha">
+<li id="li-1435">\(\displaystyle \ds\int_0^3 f(x,y)\,\dee{x}\)</li>
+<li id="li-1436">\(\displaystyle \ds\int_0^2 f(x,y)\,\dee{y}\)</li>
+<li id="li-1437">\(\displaystyle \ds\int_0^2\int_0^3 f(x,y)\,\dee{x}\,\dee{y}\)</li>
+<li id="li-1438">\(\displaystyle \ds\int_0^3\int_0^2 f(x,y)\,\dee{y}\,\dee{x}\)</li>
+<li id="li-1439">\(\displaystyle \ds\int_0^3\int_0^2 f(x,y)\,\dee{x}\,\dee{y}\)</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-52">
+<div class="introduction" id="introduction-68">
+<p id="p-2925"><em class="alert">Exercises — Stage 2</em></p>
+<p id="p-2926">Questions <a class="xref" data-knowl="./knowl/prob_s3_1a.html" title="Exercise 3.1.7.3">3.1.7.3</a> through <a class="xref" data-knowl="./knowl/prob_s3_1f.html" title="Exercise 3.1.7.8: ✳">3.1.7.8</a> provide practice with limits of integration for double integrals in Cartesian coordinates.</p>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="prob_s3_1a"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-2927">For each of the following, evaluate the given double integral <em class="emphasis">using</em> iteration.</p>
+<ol class="lower-alpha">
+<li id="li-1440">\(\displaystyle\dblInt_R (x^2+y^2)\,\dee{x}\,\dee{y}\) where \(R\) is the rectangle \(0\le x\le a,\ 0\le y\le b\) where \(a \gt 0\) and \(b \gt 0\text{.}\)</li>
+<li id="li-1441">\(\displaystyle\dblInt_T (x-3y)\,\dee{x}\,\dee{y}\) where \(T\) is the triangle with vertices \((0,0),\ (a,0),\ (0,b)\text{.}\)</li>
+<li id="li-1442">\(\displaystyle\dblInt_R xy^2\,\dee{x}\,\dee{y}\) where \(R\) is the finite region in the first quadrant bounded by the curves \(y=x^2\) and \(x=y^2\text{.}\)</li>
+<li id="li-1443">\(\displaystyle\dblInt_D x\cos y\,\dee{x}\,\dee{y}\) where \(D\) is the finite region in the first quadrant bounded by the coordinate axes and the curve \(y=1-x^2\text{.}\)</li>
+<li id="li-1444">\(\displaystyle\dblInt_R {x\over y}e^y\,\dee{x}\,\dee{y}\) where \(R\) is the region \(0\le x\le 1,\ x^2\le y\le x\text{.}\)</li>
+<li id="li-1445">\(\displaystyle\dblInt_T {xy\over 1+x^4}\,\dee{x}\,\dee{y}\)  where \(T\) is the triangle with vertices \((0,0),\ (0,1),\ (1,1)\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-358"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-2942">For each of the following integrals (i) sketch the region of integration, (ii) write an equivalent double integral with the order of integration reversed and (iii) evaluate both double integrals.</p>
+<ol class="lower-alpha">
+<li id="li-1446">\(\displaystyle \displaystyle\int_0^2\dee{x}\int_1^{e^x}\dee{y}\)</li>
+<li id="li-1447">\(\displaystyle \displaystyle\int_0^{\sqrt{2}}\dee{y}
+\int_{-\sqrt{4-2y^2}}^{\sqrt{4-2y^2}}\dee{x}\ y\)</li>
+<li id="li-1448">\(\displaystyle \displaystyle\int_{-2}^1 \dee{x}\int_{x^2+4x}^{3x+2}\dee{y}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-359"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2951">Combine the sum of the two iterated double integrals</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{y=0}^{y=1}\int_{x=0}^{x=y} f(x,y)\ \dee{x}\,\dee{y}
++\int_{y=1}^{y=2}\int_{x=0}^{x=2-y} f(x,y)\ \dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">into a single iterated double integral with the order of integration reversed.</p></article><article class="exercise exercise-like" id="exercise-360"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2955">Consider the integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1\int_x^1 e^{x/y}\ \dee{y}\ \dee{x}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1454">Sketch the domain of integration.</li>
+<li id="li-1455">Evaluate the integral by reversing the order of integration.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-361"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2960">The integral \(I\) is defined as</p>
+<div class="displaymath">
+\begin{equation*}
+I =\dblInt_R f(x,y)\ \dee{A}
+= \int_1^{\sqrt{2}} \int_{1/y}^{\sqrt{y}} f(x,y)\,\dee{x}\,\dee{y}
++\int_{\sqrt{2}}^4 \int_{y/2}^{\sqrt{y}} f(x,y)\,\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<ol id="p-2961" class="lower-alpha">
+<li id="li-1460">Sketch the region \(R\text{.}\)</li>
+<li id="li-1461">Re--write the integral \(I\) by reversing the order of integration.</li>
+<li id="li-1462">Compute the integral \(I\) when \(f(x,y)= x/y\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="prob_s3_1f"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2968">A region \(E\) in the \(xy\)--plane has the property that for all continuous functions f</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_E f(x,y)\,\dee{A}
+= \int_{x=-1}^{x=3}\left[\int_{y=x^2}^{y=2x+3} f(x,y) \dee{y}\right] \dee{x}
+\end{equation*}
+</div>
+<ol id="p-2969" class="lower-alpha">
+<li id="li-1469">Compute \(\dblInt_E x\,\dee{A}\text{.}\)</li>
+<li id="li-1470">Sketch the region E.</li>
+<li id="li-1471">Set up \(\dblInt_E x\,\dee{A}\) as an integral or sum of integrals in the opposite order.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-363"><h6 class="heading">
+<span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2976">Calculate the integral:</p>
+<div class="displaymath">
+\begin{equation*}
+\dblInt_D \sin(y^2)\ \dee{A}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(D\) is the region bounded by \(x + y = 0\text{,}\) \(2x - y = 0\text{,}\) and \(y = 4\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-364"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2981">Consider the integral</p>
+<div class="displaymath">
+\begin{equation*}
+I = \int_0^1 \int_{\sqrt{y}}^1 \frac{\sin(\pi x^2)}{x}\ \dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<ol id="p-2982" class="lower-alpha">
+<li id="li-1479">Sketch the region of integration.</li>
+<li id="li-1480">Evaluate I.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-365"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2988">Let \(I\) be the double integral of the function \(f(x,y) = y^2 \sin xy\) over the triangle with vertices \((0, 0)\text{,}\) \((0, 1)\) and \((1, 1)\) in the \(xy\)--plane.</p>
+<ol id="p-2989" class="lower-alpha">
+<li id="li-1485">Write \(I\) as an iterated integral in two different ways.</li>
+<li id="li-1486">Evaluate \(I\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-366"><h6 class="heading">
+<span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2996">Find the volume \((V)\) of the solid bounded above by the surface</p>
+<div class="displaymath">
+\begin{equation*}
+z = f (x,y) = e^{-x^2},
+\end{equation*}
+</div>
+<p data-braille="continuation">below by the plane \(z = 0\) and over the triangle in the \(xy\)--plane formed by the lines \(x = 1\text{,}\) \(y = 0\) and \(y = x\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-367"><h6 class="heading">
+<span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3000">Consider the integral \(\displaystyle I=\int_0^1 \int_y^{2-y}\frac{y}{x} \ \dee{x}\,\dee{y}\text{.}\)</p>
+<ol id="p-3001" class="lower-alpha">
+<li id="li-1493">Sketch the region of integration.</li>
+<li id="li-1494">Interchange the order of integration.</li>
+<li id="li-1495">Evaluate \(I\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-368"><h6 class="heading">
+<span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3008">For the integral</p>
+<div class="displaymath">
+\begin{equation*}
+I = \int_0^1 \int_{\sqrt{x}}^1 \sqrt{1+y^3}\ \dee{y}\,\dee{x}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1501">Sketch the region of integration.</li>
+<li id="li-1502">Evaluate \(I\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-369"><h6 class="heading">
+<span class="codenumber">15<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-3014" class="lower-alpha">
+<li id="li-1507">\(D\) is the region bounded by the parabola \(y^2 = x\) and the line \(y = x - 2\text{.}\) Sketch \(D\) and evaluate \(J\) where<div class="displaymath">
+\begin{equation*}
+J = \dblInt_D 3y\ \dee{A}
+\end{equation*}
+</div>
+</li>
+<li id="li-1508">Sketch the region of integration and then evaluate the integral \(I\) :<div class="displaymath">
+\begin{equation*}
+I = \int_0^4  \int_{\frac{1}{2}\sqrt{x}}^1  e^{y^3}\ \dee{y}\,\dee{x}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-370"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3022">Consider the iterated integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-4}^0\int_{\sqrt{-y}}^2 \cos(x^3)\,\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1515">Draw the region of integration.</li>
+<li id="li-1516">Evaluate the integral.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-371"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-3028" class="lower-alpha">
+<li id="li-1521">Combine the sum of the iterated integrals<div class="displaymath">
+\begin{equation*}
+I = \int_0^1\int_{-\sqrt{y}}^{\sqrt{y}} f(x,y)\ \dee{x}\,\dee{y}
++ \int_1^4\int_{y-2}^{\sqrt{y}} f(x,y)\ \dee{x}\,\dee{y}
+\end{equation*}
+</div>into a single iterated integral with the order of integration reversed.</li>
+<li id="li-1522">Evaluate \(I\) if \(f(x,y)=\frac{e^x}{2-x}\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-372"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3034">Let</p>
+<div class="displaymath">
+\begin{equation*}
+I=\int_0^4\int_{\sqrt{y}}^{\sqrt{8-y}} f(x,y)\,\dee{x}\,\dee{y}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-1528">Sketch the domain of integration.</li>
+<li id="li-1529">Reverse the order of integration.</li>
+<li id="li-1530">Evaluate the integral for \(f(x,y)=\frac{1}{(1+y)^2}\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-373"><h6 class="heading">
+<span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3042">Evaluate</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-1}^0 \int_{-2}^{2x} e^{y^2}\ \dee{y}\,\dee{x}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-374"><h6 class="heading">
+<span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3047">Let</p>
+<div class="displaymath">
+\begin{equation*}
+I = \int_0^2 \int_0^x f(x,y)\ \dee{y}\,\dee{x}
++ \int_2^6 \int_0^{\sqrt{6-x}} f(x,y)\ \dee{y}\,\dee{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">Express \(I\) as an integral where we integrate first with respect to \(x\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-375"><h6 class="heading">
+<span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3052">Consider the domain \(D\) above the \(x\)--axis and below parabola \(y = 1-x^2\) in the \(xy\)--plane.</p>
+<ol class="lower-alpha">
+<li id="li-1538">Sketch \(D\text{.}\)</li>
+<li id="li-1539">Express<div class="displaymath">
+\begin{equation*}
+\dblInt_D f(x,y)\ \dee{A}
+\end{equation*}
+</div>as an iterated integral corresponding to the order \(\dee{x}\,\dee{y}\text{.}\) Then express this integral as an iterated integral corresponding to the order \(\dee{y}\,\dee{x}\text{.}\)</li>
+<li id="li-1540">Compute the integral in the case \(f(x,y) = e^{x-(x^3/3)}\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-376"><h6 class="heading">
+<span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3059">Let \(I=\int_0^1 \int_{x^2}^1 x^3\ \sin(y^3)\ \dee{y}\ \dee{x}\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1541">Sketch the region of integration in the \(xy\)--plane. Label your sketch sufficiently well that one could use it to determine the limits of double integration.</li>
+<li id="li-1542">Evaluate \(I\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-377"><h6 class="heading">
+<span class="codenumber">23<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3065">Consider the solid under the surface \(z=6-xy\text{,}\) bounded by the five planes \(x=0\text{,}\) \(x=3\text{,}\) \(y=0\text{,}\) \(y=3\text{,}\) \(z=0\text{.}\) Note that no part of the solid lies below the \(x\)--\(y\) plane.</p>
+<ol class="lower-alpha">
+<li id="li-1547">Sketch the base of the solid in the \(xy\)--plane. Note that it is <em class="emphasis">not</em> a square!</li>
+<li id="li-1548">Compute the volume of the solid.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-378"><h6 class="heading">
+<span class="codenumber">24<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3070">Evaluate the following integral:</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-2}^2\int_{x^2}^4\cos\big(y^{3/2}\big)\ \dee{y}\,\dee{x}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-379"><h6 class="heading">
+<span class="codenumber">25<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3075">Consider the volume above the \(xy\)-plane that is inside the circular cylinder \(x^2+y^2=2y\) and underneath the surface \(z=8+2xy\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1556">Express this volume as a double integral \(I\text{,}\) stating clearly the domain over which I is to be taken.</li>
+<li id="li-1557">Express in Cartesian coordinates, the double integral \(I\) as an iterated intergal in two different ways, indicating clearly the limits of integration in each case.</li>
+<li id="li-1558">How much is this volume?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-380"><h6 class="heading">
+<span class="codenumber">26<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3083">Evaluate the following integral:</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^9\int_{\sqrt{y}}^3\sin(\pi x^3)\ \dee{x}\dee{y}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-381"><h6 class="heading">
+<span class="codenumber">27<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3088">The iterated integral</p>
+<div class="displaymath">
+\begin{equation*}
+I=\int_0^1\bigg[\int_{-\sqrt{x}}^{\sqrt{x}} \sin\big(y^3-3y\big)\,\dee{y}\bigg]
+\ \dee{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">is equal to \(\dblInt_R\sin\big(y^3-3y)\ dA\) for a suitable region \(R\) in the \(xy\)-plane.</p>
+<ol class="lower-alpha">
+<li id="li-1567">Sketch the region \(R\text{.}\)</li>
+<li id="li-1568">Write the integral \(I\) with the orders of integration reversed, and with suitable limits of integration.</li>
+<li id="li-1569">Find \(I\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-382"><h6 class="heading">
+<span class="codenumber">28<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3095">Find the double integral of the function \(f(x, y) = xy\) over the region bounded by \(y = x - 1\) and \(y^2 = 2x + 6\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-53">
+<div class="introduction" id="introduction-69"><p id="p-3099"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises"><article class="exercise exercise-like" id="exercise-383"><h6 class="heading"><span class="codenumber">29<span class="period">.</span></span></h6>
+<p id="p-3100">Find the volume of the solid inside the cylinder \(x^2+2y^2=8\text{,}\) above the plane \(z=y-4\) and below the plane \(z=8-x\text{.}\)</p></article></div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

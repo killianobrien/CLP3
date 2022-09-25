@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:47:27+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>rotation (i.e. the \(x\)-axis) is \(|y|\text{.}\) So the moment of inertia of the interior of the disk about the \(x\)-axis is</p>
+<div class="displaymath">
+\begin{equation*}
+I_x = \dblInt_\cR y^2\ \dee{x}\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">Switching to polar coordinates<a class="fn-knowl" data-knowl="./knowl/fn-131-hidden.html" title="Footnote 3.3.4"><sup> 4 </sup></a>,</p>
+<div class="displaymath">
+\begin{align*}
+I_x &amp;= \int_0^{2\pi}\dee{\theta}\int_0^{a}\dee{r}\ r
+\overbrace{(r\sin\theta)^2}^{y^2}
+= \int_0^{2\pi}\dee{\theta}\ \sin^2\theta\int_0^a\dee{r}\ r^3\\
+&amp;=\frac{a^4}{4}\int_0^{2\pi}\dee{\theta}\ \sin^2\theta
+=\frac{a^4}{4} \int_0^{2\pi}\dee{\theta}\ \frac{1-\cos(2\theta)}{2}\\
+&amp;=\frac{a^4}{8} \left[\theta-\frac{\sin(2\theta)}{2}\right]_0^{2\pi}\\
+&amp;=\frac{1}{4}\pi a^4
+\end{align*}
+</div>
+<p data-braille="continuation">For an efficient, sneaky, way to evaluate \(\int_0^{2\pi} \sin^2\theta\ \dee{\theta}\text{,}\) see Remark <a class="xref" data-knowl="./knowl/rem_sneaky.html" title="Remark 3.3.5">3.3.5</a>.</p>
+<span class="incontext"><a href="sec_int_2d_applications.html#p-3396">in-context</a></span>
+</body>
+</html>

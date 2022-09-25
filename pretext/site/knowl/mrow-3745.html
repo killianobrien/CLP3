@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:47:47+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="displaymath">
+\begin{align*}
+\tripInt_R x\ \dee{V}
+&amp;=\int_0^c \dee{z} \dblInt_{D_z} \dee{x}\,\dee{y}\ x
+= \int_0^c \dee{z}\int_0^{b(1-{z\over c})}\dee{y}\int_{D_{y,z}}\dee{x}\ x\\
+&amp;=\int_0^c \dee{z}\int_0^{b(1-{z\over c})}\dee{y}
+\int_0^{a(1-{y\over b}-{z\over c})} \dee{x}\ x\\
+&amp;=\int_0^c \dee{z}\int_0^{b(1-{z\over c})} \dee{y}\ \frac{a^2}{2}
+\left(1-\frac{y}{b}-\frac{z}{c}\right)^2\\
+&amp;=\int_0^c \dee{z}\ \left[-\frac{a^2b}{6}
+\left(1-\frac{y}{b}-\frac{z}{c}\right)^3
+\right]_0^{b(1-{z\over c})}\\
+&amp;=\int_0^c \dee{z}\ \frac{a^2b}{6}\left(1-\frac{z}{c}\right)^3\\
+&amp;=\left[-\frac{a^2bc}{24}\left(1-\frac{z}{c}\right)^4  \right]_0^c
+=\frac{a^2bc}{24}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_3d_integrals.html#mjx-eqn-mrow-3745">in-context</a></span>
+</body>
+</html>

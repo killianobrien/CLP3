@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:40:50+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Points</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap_geometry.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_geometry.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_vectors.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap_geometry.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_geometry.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_vectors.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points" class="active">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-points"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Points</span>
+</h2>
+<p id="p-6">Each point in two dimensions may be labeled by two coordinates<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-2" id="fn-2"><sup> 1 </sup></a>\((x,y)\) which specify the position of the point in some units with respect to some axes as in the figure below.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-2"><div class="fn">This is why the \(xy\)-plane is called “two dimensional” — the name of each point consists of two real numbers.</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:36%;margin-right:36%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/point2d.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-7">The set of all points in two dimensions is denoted<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-3" id="fn-3"><sup> 2 </sup></a> \(\bbbr^2\text{.}\) Observe that</p>
+<ul class="disc">
+<li id="li-8">the distance from the point \((x,y)\) to the \(x\)-axis is \(|y|\)</li>
+<li id="li-9">if \(y\gt 0\text{,}\) then \((x,y)\) is above the \(x\)-axis and if \(y\lt 0\text{,}\) then \((x,y)\) is below the \(x\)-axis</li>
+<li id="li-10">the distance from the point \((x,y)\) to the \(y\)-axis is \(|x|\)</li>
+<li id="li-11">if \(x\gt 0\text{,}\) then \((x,y)\) is to the right of the \(y\)-axis and if \(x\lt 0\text{,}\) then \((x,y)\) is to the left of the \(y\)-axis</li>
+<li id="li-12">the distance from the point \((x,y)\) to the origin \((0,0)\) is \(\sqrt{x^2+y^2}\)</li>
+</ul>
+<p data-braille="continuation">Similarly, each point in three dimensions may be labeled by three coordinates \((x,y,z)\text{,}\) as in the two figures below.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-3"><div class="fn">Not surprisingly, the \(2\) in \(\bbbr^2\) signifies that each point is labelled by two numbers and the \(\bbbr\) in \(\bbbr^2\) signifies that the numbers in question are real numbers. There are more advanced applications (for example in signal analysis and in quantum mechanics) where complex numbers are used. The space of all pairs \((z_1,z_2)\text{,}\) with \(z_1\) and \(z_2\) complex numbers is denoted  \(\bbbc^2\text{.}\)</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:8.5%;margin-right:8.5%;">
+<div class="sbspanel" style="width:39.7590361445783%;justify-content:flex-start;"><img src="figs/point3d.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:39.7590361445783%;justify-content:flex-start;"><img src="figs/point3db.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-8">The set of all points in three dimensions is denoted \(\bbbr^3\text{.}\) The plane that contains, for example, the \(x\)- and \(y\)-axes is called the \(xy\)-plane.</p>
+<ul class="disc">
+<li id="li-13">The \(xy\)-plane is the set of all points \((x,y,z)\) that satisfy \(z=0\text{.}\)</li>
+<li id="li-14">The \(xz\)-plane is the set of all points \((x,y,z)\) that satisfy \(y=0\text{.}\)</li>
+<li id="li-15">The \(yz\)-plane is the set of all points \((x,y,z)\) that satisfy \(x=0\text{.}\)</li>
+</ul>
+<p data-braille="continuation">More generally,</p>
+<ul class="disc">
+<li id="li-16">The set of all points \((x,y,z)\) that obey \(z=c\) is a plane that is parallel to the \(xy\)-plane and is a distance \(|c|\) from it. If \(c \gt 0\text{,}\) the plane \(z=c\) is above the \(xy\)-plane. If \(c \lt 0\text{,}\) the plane \(z=c\) is below the \(xy\)-plane. We say that the plane \(z=c\) is a signed distance \(c\) from the \(xy\)-plane.</li>
+<li id="li-17">The set of all points \((x,y,z)\) that obey \(y=b\) is a plane that is parallel to the \(xz\)-plane and is a signed distance \(b\) from it.</li>
+<li id="li-18">The set of all points \((x,y,z)\) that obey \(x=a\) is a plane that is parallel to the \(yz\)-plane and is a signed distance \(a\) from it.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:33.3333333333333%;justify-content:flex-start;"><img src="figs/xyplaneN.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:33.3333333333333%;justify-content:flex-start;"><img src="figs/xzplaneN.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:33.3333333333333%;justify-content:flex-start;"><img src="figs/yzplaneN.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-9">Observe that our 2d distances extend quite easily to 3d.</p>
+<ul class="disc">
+<li id="li-19">the distance from the point \((x,y,z)\) to the \(xy\)-plane is \(|z|\)</li>
+<li id="li-20">the distance from the point \((x,y,z)\) to the \(xz\)-plane is \(|y|\)</li>
+<li id="li-21">the distance from the point \((x,y,z)\) to the \(yz\)-plane is \(|x|\)</li>
+<li id="li-22">the distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is \(\sqrt{x^2+y^2+z^2}\)</li>
+</ul>
+<p data-braille="continuation">To see that the distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is indeed  \(\sqrt{x^2+y^2+z^2}\text{,}\)</p>
+<ul class="disc">
+<li id="li-23">apply Pythagoras to the right-angled triangle with vertices \((0,0,0)\text{,}\) \((x,0,0)\) and \((x,y,0)\) to see that the distance from \((0,0,0)\) to \((x,y,0)\) is \(\sqrt{x^2+y^2}\) and then</li>
+<li id="li-24">apply Pythagoras to the right-angled triangle with vertices \((0,0,0)\text{,}\) \((x,y,0)\) and \((x,y,z)\) to see that the distance from \((0,0,0)\) to \((x,y,z)\) is \(\sqrt{{\big(\sqrt{x^2+y^2}\big)}^2+z^2}
+=\sqrt{x^2+y^2+z^2}\text{.}\)</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/pythag3d.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-10">More generally, the distance from the point \((x,y,z)\) to the point \((x',y',z')\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">Notice that this gives us the equation for a sphere quite directly. All the points on a sphere are equidistant from the centre of the sphere. So, for example, the equation of the sphere centered on \((1,2,3)\) with radius \(4\text{,}\) that is, the set of all points \((x,y,z)\) whose distance from \((1,2,3)\) is \(4\text{,}\) is</p>
+<div class="displaymath">
+\begin{equation*}
+(x-1)^2+(y-2)^2+(z-3)^2=16
+\end{equation*}
+</div>
+<p id="p-11">Here is an example in which we sketch a region in the \(xy\)-plane that is specified using inequalities.</p>
+<article class="example example-like" id="example-1"><a data-knowl="" class="id-ref original" data-refid="hk-example-1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-1"><article class="example example-like"><p id="p-12">In this example, we sketch the region</p>
+<div class="displaymath">
+\begin{equation*}
+\Set{(x,y)}{ -12\le x^2-6x +y^2-4y \le -9,\ \ y\ge 1}
+\end{equation*}
+</div>
+<p data-braille="continuation">in the \(xy\)-plane.</p>
+<p id="p-13">We do so in two steps. In the first step, we sketch the curves \(x^2-6x +y^2-4y=-12\text{,}\) \(x^2-6x +y^2-4y=-9\text{,}\) and \(y=1\text{.}\)</p>
+<ul class="disc">
+<li id="li-25">By completing squares, we see that the equation  \(x^2-6x +y^2-4y=-12\) is equivalent to \((x-3)^2 +(y-2)^2 =1\text{,}\) which is the circle of radius \(1\) centred on \((3,2)\text{.}\) It is sketched in the figure below.</li>
+<li id="li-26">By completing squares, we see that the equation  \(x^2-6x +y^2-4y=-9\) is equivalent to \((x-3)^2 +(y-2)^2 =4\text{,}\) which is the circle of radius \(2\) centred on \((3,2)\text{.}\) It is sketched in the figure below.</li>
+<li id="li-27">The point \((x,y)\) obeys \(y=1\) if and only if it is a distance \(1\) vertically above the \(x\)-axis. So \(y=1\) is the line that is parallel to the \(x\)-axis and is one unit above it. This line is also  sketched in the figure below.</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:18.5%;margin-right:18.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/annulusPart.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-14">In the second step we determine the impact that the inequalities have.</p>
+<ul class="disc">
+<li id="li-28">The inequality \(x^2-6x +y^2-4y\ge -12\) is equivalent to \((x-3)^2 +(y-2)^2 \ge 1\) and hence is equivalent to \(\sqrt{(x-3)^2 +(y-2)^2} \ge 1\text{.}\) So the point \((x,y)\) satisfies \(x^2-6x +y^2-4y\ge -12\) if and only if the distance from \((x,y)\) to \((3,2)\) is at least \(1\text{,}\) i.e. if and only if \((x,y)\) is outside (or on) the circle \((x-3)^2 +(y-2)^2 = 1\text{.}\)</li>
+<li id="li-29">The inequality \(x^2-6x +y^2-4y\le -9\) is equivalent to \((x-3)^2 +(y-2)^2 \le 4\) and hence is equivalent to \(\sqrt{(x-3)^2 +(y-2)^2} \le 2\text{.}\) So the point \((x,y)\) satisfies the inequality \(x^2-6x +y^2-4y\le -9\) if and only if the distance from \((x,y)\) to \((3,2)\) is at most \(2\text{,}\) i.e. if and only if \((x,y)\) is inside (or on) the circle \((x-3)^2 +(y-2)^2 = 4\text{.}\)</li>
+<li id="li-30">The point \((x,y)\) obeys \(y\ge 1\) if and only if \((x,y)\) is a vertical distance at least \(1\) above the \(x\)-axis, i.e. is above (or on) the line \(y=1\text{.}\)</li>
+<li id="li-31">
+<p id="p-15">So the region</p>
+<div class="displaymath">
+\begin{equation*}
+\Set{(x,y)}{ -12\le x^2-6x +y^2-4y \le -9,\ \ y\ge 1}
+\end{equation*}
+</div>
+<p data-braille="continuation">consists of all points \((x,y)\) that</p>
+<ul class="circle">
+<li id="li-32">are inside or on the circle \((x-3)^2 +(y-2)^2 = 4\) and</li>
+<li id="li-33">are also outside or on the circle \((x-3)^2 +(y-2)^2 = 1\) and</li>
+<li id="li-34">are also above or on the line \(y=1\text{.}\)</li>
+</ul>
+<p data-braille="continuation">It is the shaded region in the figure below.</p>
+</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:18.5%;margin-right:18.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/annulusPartB.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></div>
+<p id="p-16">Here are a couple of examples that involve spheres.</p>
+<article class="example example-like" id="example-2"><a data-knowl="" class="id-ref original" data-refid="hk-example-2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"><p id="p-17">In this example, we are going to find the curve formed by the intersection of the \(xy\)-plane and the sphere of radius \(5\) centred on \((0,0,4)\text{.}\)</p>
+<p id="p-18">The point \((x,y,z)\) lies on the \(xy\)-plane if and only if \(z=0\text{,}\) and lies on the sphere of radius \(5\) centred on \((0,0,4)\) if and only if \(x^2+y^2+(z-4)^2=25\text{.}\) So the point \((x,y,z)\) lies on the curve of intersection if and only if both \(z=0\) and \(x^2+y^2+(z-4)^2=25\text{,}\) or equivalently</p>
+<div class="displaymath">
+\begin{equation*}
+z=0,\quad x^2+y^2+(0-4)^2=25
+\iff
+z=0,\quad x^2+y^2 = 9
+\end{equation*}
+</div>
+<p data-braille="continuation">This is the circle in the \(xy\)-plane that is centred on the origin and has radius \(3\text{.}\) Here is a sketch that show the parts of the sphere and the circle of intersection that are in the first octant. That is, that have \(x\ge 0\text{,}\) \(y\ge 0\) and \(z\ge 0\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33%;margin-right:33%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sphereCircle.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></div>
+<article class="example example-like" id="example-3"><a data-knowl="" class="id-ref original" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like"><p id="p-19">In this example, we are going to find all points \((x,y,z)\) for which the distance from \((x,y,z)\) to \((9,-12,15)\) is twice the distance from \((x,y,z)\) to the origin \((0,0,0)\text{.}\)</p>
+<p id="p-20">The distance from \((x,y,z)\) to \((9,-12,15)\) is \(\sqrt{(x-9)^2+(y+12)^2+(z-15)^2}\text{.}\) The distance from \((x,y,z)\) to \((0,0,0)\) is \(\sqrt{x^2+y^2+z^2}\text{.}\) So we want to find all points \((x,y,z)\) for which</p>
+<div class="displaymath">
+\begin{equation*}
+\sqrt{(x-9)^2+(y+12)^2+(z-15)^2}
+=2\sqrt{x^2+y^2+z^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">Squaring both sides of this equation gives</p>
+<div class="displaymath">
+\begin{equation*}
+x^2-18x+81 +y^2+24y+144 +z^2-30z+225 = 4\big(x^2+y^2+z^2)
+\end{equation*}
+</div>
+<p data-braille="continuation">Collecting up terms gives</p>
+<div class="displaymath">
+\begin{alignat*}{1}
+3x^2+18x +3y^2-24y +3z^2+30z \amp= 450\ \text{and, dividing by 3,} \\
+x^2+6x +y^2-8y +z^2+10z \amp= 150\ \text{and, completing squares,}\\
+x^2+6x +9 +y^2-8y +16  +z^2+10z +25 \amp= 200\ \text{or}\\
+(x+3)^2+(y-4)^2+(z+5)^2 \amp=200 
+\end{alignat*}
+</div>
+<p data-braille="continuation">This is the sphere of radius \(10\sqrt{2}\) centred on \((-3,4,-5)\text{.}\)</p></article></div>
+<section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">1.1.1</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-1">
+<div class="introduction" id="introduction-2"><p id="p-21"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-22">Describe the set of all points \((x,y,z)\) in \(\bbbr^3\) that satisfy</p>
+<ol class="lower-alpha">
+<li id="li-35">\(\displaystyle x^2 +y^2+z^2= 2x-4y+4\)</li>
+<li id="li-36">\(\displaystyle x^2 +y^2+z^2 \lt  2x-4y+4\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-25">Describe and sketch the set of all points \((x,y)\) in \(\bbbr^2\) that satisfy</p>
+<ol class="lower-alpha">
+<li id="li-41">\(\displaystyle x=y\)</li>
+<li id="li-42">\(\displaystyle x+y=1\)</li>
+<li id="li-43">\(\displaystyle x^2+y^2=4\)</li>
+<li id="li-44">\(\displaystyle x^2+y^2=2y\)</li>
+<li id="li-45">\(\displaystyle x^2+y^2 \lt 2y\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-36">Describe the set of all points \((x,y,z)\) in \(\bbbr^3\) that satisfy the following conditions. Sketch the part of the set that is in the first octant.</p>
+<ol class="lower-alpha">
+<li id="li-56">\(\displaystyle z = x\)</li>
+<li id="li-57">\(\displaystyle x + y + z = 1\)</li>
+<li id="li-58">\(\displaystyle x^2 + y^2 + z^2 = 4\)</li>
+<li id="li-59">\(x^2 + y^2 + z^2 = 4\text{,}\) \(z = 1\)</li>
+<li id="li-60">\(\displaystyle x^2+y^2=4\)</li>
+<li id="li-61">\(\displaystyle z = x^2 + y^2\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-51">Let \(A\) be the point \((2,1,3)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-74">Find the distance from \(A\) to the \(xy\)-plane.</li>
+<li id="li-75">Find the distance from \(A\) to the \(xz\)-plane.</li>
+<li id="li-76">Find the distance from \(A\) to the point \((x,0,0)\) on the \(x\)-axis.</li>
+<li id="li-77">Find the point on the \(x\)-axis that is closest to \(A\text{.}\)</li>
+<li id="li-78">What is the distance from \(A\) to the \(x\)-axis?</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-2">
+<div class="introduction" id="introduction-3"><p id="p-55"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-56">Consider any triangle. Pick a coordinate system so that one vertex is at the origin and a second vertex is on the positive \(x\)-axis. Call the coordinates of the second vertex \((a,0)\) and those of the third vertex \((b,c)\text{.}\) Find the circumscribing circle (the circle that goes through all three vertices).</p></article><article class="exercise exercise-like" id="exercise-6"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-59">A certain surface consists of all points \(P=(x,y,z)\) such that the distance from \(P\) to the point \((0,0,1)\) is equal to the distance from \(P\) to the plane \(z+1=0\text{.}\) Find an equation for the surface, sketch and describe it verbally.</p></article><article class="exercise exercise-like" id="exercise-7"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-62">Show that the set of all points \(P\) that are twice as far from \((3,-2,3)\) as from \((3/2,1,0)\) is a sphere. Find its centre and radius.</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-3">
+<div class="introduction" id="introduction-4"><p id="p-65"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises"><article class="exercise exercise-like" id="exercise-8"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-66">The pressure \(p(x,y)\) at the point \((x,y)\)  is at least zero and is determined by the equation \(x^2-2px+y^2=3p^2\text{.}\) Sketch several isobars. An isobar is a curve with equation \(p(x,y)=c\) for some constant \(c\ge 0\text{.}\)</p></article></div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

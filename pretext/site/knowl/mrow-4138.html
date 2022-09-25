@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:48:33+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="displaymath">
+\begin{align*}
+&amp;\tripInt_{\bbbr^3}  {\big[1+{(x^2+y^2+z^2)}^3\big]}^{-1}\ \dee{V}\\
+&amp;\hskip0.5in=\lim_{R\rightarrow\infty}
+\int_0^R \dee{\rho} \int_0^{2\pi}\dee{\theta} \int_0^\pi\dee{\varphi}\
+\rho^2\sin\varphi\ \frac{1}{1+\rho^6}\\
+&amp;\hskip0.5in=\lim_{R\rightarrow\infty}
+\int_0^R  \dee{\rho} \int_0^{2\pi}\dee{\theta} \
+\frac{\rho^2}{1+\rho^6}\Big[-\cos\varphi\Big]_0^\pi\\
+&amp;\hskip0.5in=4\pi \lim_{R\rightarrow\infty}
+\int_0^R  \dee{\rho} \ \frac{\rho^2}{1+\rho^6}\\
+&amp;\hskip0.5in=\frac{4\pi}{3} \lim_{R\rightarrow\infty}
+\int_0^{R^3}  \dee{u} \ \frac{1}{1+u^2}\qquad
+\text{with }u=\rho^3,\ \dee{u}=3\rho^2\,\dee{\rho}\\
+&amp;\hskip0.5in=\frac{4\pi}{3}\lim_{R\rightarrow\infty}\Big[\arctan u\Big]_0^{R^3}\\
+&amp;\hskip0.5in=\frac{2\pi^2}{3}\qquad\text{since }
+\lim_{R\rightarrow\infty}\arctan R^3=\frac{\pi}{2}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_spherical.html#mjx-eqn-mrow-4138">in-context</a></span>
+</body>
+</html>

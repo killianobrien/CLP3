@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:47:35+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>To find its area, we will apply <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a> to</p>
+<div class="displaymath">
+\begin{equation*}
+z=f(x,y) = \sqrt{x^2+y^2}
+\qquad\text{with $(x,y)$ running over } x^2+y^2\le a^2
+\end{equation*}
+</div>
+<p data-braille="continuation">That forces us to compute the first order partial derivatives</p>
+<div class="displaymath">
+\begin{align*}
+f_x(x,y) &amp; = \frac{x}{\sqrt{x^2+y^2}}\\
+f_y(x,y) &amp; = \frac{y}{\sqrt{x^2+y^2}}
+\end{align*}
+</div>
+<p data-braille="continuation">Substituting them into the first formula in <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a> yields</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}&amp;= \sqrt{1 + f_x(x,y)^2 + f_y(x,y)^2}\  \dee{x}\,\dee{y}\\
+&amp;=\sqrt{1+\Big(\frac{x}{\sqrt{x^2+y^2}}\Big)^2
++\Big(\frac{y}{\sqrt{x^2+y^2}}\Big)^2} \ \dee{x}\,\dee{y}\\
+&amp;=\sqrt{1+\frac{x^2+y^2}{x^2+y^2}} \ \dee{x}\,\dee{y}\\
+&amp;=\sqrt{2} \ \dee{x}\,\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\text{Area}
+&amp;= \dblInt_{x^2+y^2\le a^2} \sqrt{2}\ \dee{x}\,\dee{y}
+= \sqrt{2} \dblInt_{x^2+y^2\le a^2} \dee{x}\,\dee{y}
+= \sqrt{2} \pi a^2
+\end{align*}
+</div>
+<p data-braille="continuation">because \(\dblInt_{x^2+y^2\le a^2} \dee{x}\,\dee{y}\) is exactly the area of a circular disk of radius \(a\text{.}\)</p>
+<span class="incontext"><a href="sec_surface_area.html#p-3469">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:45:25+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>We evaluate both sides of the given PDE with \(u=u(x,t) = e^{t+ax} + e^{t-ax}\text{.}\) Since</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+u(x,t) \amp=  e^{t+ax} + e^{t-ax} \\
+u_t(x,t) \amp =  e^{t+ax} + e^{t-ax} \\
+u_x(x,t) \amp=  ae^{t+ax} - ae^{t-ax}\qquad \amp
+u_{xx}(x,t) \amp=  a^2e^{t+ax} + a^2e^{t-ax}
+\end{alignat*}
+</div>
+<p data-braille="continuation">the left hand side of the PDE is</p>
+<div class="displaymath">
+\begin{equation*}
+5u_t = 5e^{t+ax} + 5e^{t-ax}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the right hand side of the PDE is</p>
+<div class="displaymath">
+\begin{align*}
+u_{xx} + u
+\amp=\big(a^2e^{t+ax} + a^2e^{t-ax}\big)+\big(e^{t+ax} + e^{t-ax}\big) \\
+\amp= (a^2+1)e^{t+ax} + (a^2+1)e^{t-ax}
+\end{align*}
+</div>
+<p data-braille="continuation">The left and right hand sides are equal if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+5=(a^2+1) \iff a^2=4 \iff a=\pm 2
+\end{equation*}
+</div>
+</div></body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:45:26+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>We simply evaluate the two terms on the left hand side  when \(z=z(x,y)=F\big(x^2+y^2\big)\text{.}\) By the chain rule,</p>
+<div class="displaymath">
+\begin{align*}
+y\pdiff{z}{x}\amp= y\pdiff{}{x}F\big(x^2+y^2\big)
+=yF'\big(x^2+y^2\big) \pdiff{}{x}\,\big(x^2+y^2\big)
+=yF'\big(x^2+y^2\big)\left(2x\right) \\
+\amp=2xy\,F'\big(x^2+y^2\big)\\
+x\pdiff{z}{y}\amp= x\pdiff{}{y}F\big(x^2+y^2\big)
+=xF'\big(x^2+y^2\big)  \pdiff{}{y}\,\big(x^2+y^2\big)
+=xF'\big(x^2+y^2\big)\left(2y\right) \\
+\amp=2xyF'\big(x^2+y^2\big)
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{equation*}
+y\pdiff{z}{x} - x\pdiff{z}{y}
+=2xy\,F'\big(x^2+y^2\big) - 2xy\,F'\big(x^2+y^2\big) 
+=0
+\end{equation*}
+</div>
+<p data-braille="continuation">and \(z(x,y)=F\big(x^2+y^2\big)\) really does solve the PDE \(y\pdiff{z}{x} - x\pdiff{z}{y}=0\) for any differentiable function \(F\text{.}\)</p>
+</div></body>
+</html>

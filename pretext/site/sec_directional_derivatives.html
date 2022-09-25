@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:41:25+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Directional Derivatives and the Gradient</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_lin_approx.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_pde.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_lin_approx.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_pde.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives" class="active">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_directional_derivatives"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.7</span> <span class="title">Directional Derivatives and the Gradient</span>
+</h2>
+<section class="subsection" id="subsection-23"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.7.1</span> <span class="title">Directional Derivatives and the Gradient</span>
+</h3>
+<section class="introduction" id="introduction-50"><p id="p-1929">The principal interpretation of \(\diff{f}{x}(a)\) is the rate of change of \(f(x)\text{,}\) per unit change of \(x\text{,}\) at \(x=a\text{.}\) The natural analog of this interpretation for multivariable functions is the directional derivative, which we now introduce through a question.</p></section><section class="subsubsection" id="subsubsection-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.7.1.1</span> <span class="title">A Question</span>
+</h4>
+<p id="p-1930">Suppose that you are standing at \((a,b)\) near a campfire. The temperature you feel at \((x,y)\) is \(f(x,y)\text{.}\) You start to move with velocity \(\vv=\llt v_1,v_2\rgt \text{.}\) What rate of change of temperature do you feel?</p></section><section class="subsubsection" id="subsubsection-4"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.7.1.2</span> <span class="title">The Answer</span>
+</h4>
+<p id="p-1931">Let's set the beginning of time, \(t=0\text{,}\) to the time at which you leave \((a,b)\text{.}\) Then</p>
+<ul class="disc">
+<li id="li-886">at time \(0\) you are at \((a, b)\) and feel the temperature \(f(a, b)\) and</li>
+<li id="li-887">at time \(t\) you are at \((a+v_1t\,,\, b+v_2t)\) and feel the temperature \(f(a+v_1t\,,\, b+v_2t)\text{.}\)  So</li>
+<li id="li-888">the change in temperature between time \(0\) and time \(t\) is \(f(a+v_1t\,,\, b+v_2t)-f(a,b)\text{,}\)</li>
+<li id="li-889">the average rate of change of temperature, per unit time, between time \(0\) and time \(t\) is \(\frac{f(a+v_1t\,,\, b+v_2t)-f(a,b)}{t}\) and the</li>
+<li id="li-890">instantaneous rate of change of temperature per unit time as you leave \((a,b)\) is \(\lim\limits_{t\rightarrow 0}\frac{f(a+v_1t\,,\, b+v_2t)-f(a,b)}{t}
+\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Concentrate on the \(t\) dependence in this limit by writing \(f(a+v_1t\,,\, b+v_2t)=g(t)\text{.}\)  Then</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{t\rightarrow 0}\frac{f(a+v_1t\,,\, b+v_2t)-f(a,b)}{t}
+&amp;=\lim_{t\rightarrow 0}\frac{g(t)-g(0)}{t}\\
+&amp;=\diff{g}{t}(0)\\
+&amp;=\diff{}{t}\big[f(a+v_1t\,,\, b+v_2t)\big]\Big|_{t=0}
+\end{align*}
+</div>
+<p data-braille="continuation">By the chain rule, we can write the right hand side in terms of partial derivatives of \(f\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{}{t}\big[f(a+v_1t\,,\, b+v_2t)\big]
+=f_x(a+v_1t\,,\, b+v_2t)\,v_1 + f_y(a+v_1t\,,\, b+v_2t)\,v_2
+\end{equation*}
+</div>
+<p data-braille="continuation">So, the instantaneous rate of change per unit time as you leave \((a,b)\) is</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\lim_{t\rightarrow 0}\frac{f(a+v_1t\,,\, b+v_2t)-f(a,b)}{t}\\
+&amp;\hskip0.5in=\big[f_x(a+v_1t\,,\, b+v_2t)\,v_1 + f_y(a+v_1t\,,\, b+v_2t)\,v_2
+\big]\Big|_{t=0}\\
+&amp;\hskip0.5in=f_x(a,b)\,v_1+f_y(a,b)\,v_2\\
+&amp;\hskip0.5in=\llt f_x(a,b)\,,\,f_y(a,b)\rgt \cdot\llt v_1,v_2\rgt
+\end{align*}
+</div>
+<p data-braille="continuation">Notice that we have expressed the rate of change as the dot product of the velocity vector with a vector of partial derivatives of \(f\text{.}\) We have seen such a vector of partial derivatives of \(f\) before; in Definition <a class="xref" data-knowl="./knowl/def_gradient.html" title="Definition 2.5.4: Gradient">2.5.4</a>, we defined the gradient of the three variable function \(G(x,y,z)\) at the point \(\big( x_0\,,\,y_0\,,\,z_0\big)\) to be \(\llt G_x\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+G_y\big( x_0\,,\,y_0\,,\,z_0\big)\,,\,
+G_z\big( x_0\,,\,y_0\,,\,z_0\big)\rgt
+\text{.}\) Here we see the natural two dimensional analog.</p>
+<article class="definition definition-like" id="def_gradient_2d"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+</h6>
+<p id="p-1932">The vector \(\llt f_x(a,b)\,,\,f_y(a,b)\rgt \) is denoted \(\vnabla f(a,b)\) and is called “the <em class="alert">gradient</em> of the function \(f\) at the point \((a,b)\)”.</p></article><p id="p-1933">In general, the gradient of \(f\) is a vector with one component for each variable of \(f\text{.}\) The \(j^{\rm th}\) component is the partial derivative of \(f\) with respect to the \(j^{\rm th}\) variable.</p>
+<p id="p-1934">Now because the dot product \(\vnabla f(a,b)\cdot\vv\) appears frequently, we introduce some handy notation.</p>
+<article class="definition definition-like" id="def_dir_deriv"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
+</h6>
+<p id="p-1935">Given any vector \(\vv=\llt v_1,v_2\rgt\text{,}\) the expression</p>
+<div class="displaymath">
+\begin{equation*}
+\llt f_x(a,b),f_y(a,b)\rgt \cdot\llt v_1,v_2\rgt  =\vnabla f(a,b)\cdot\vv
+\end{equation*}
+</div>
+<p data-braille="continuation">is denoted \(D_{\vv}f(a,b)\text{.}\)</p></article><p id="p-1936">Armed with this useful notation we can answer our question very succinctly.</p>
+<article class="fact theorem-like" id="eqn_dir_deriv_time"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
+</h6>
+<p id="p-1937">The rate of change of \(f\) per unit time as you leave \((a,b)\) moving with velocity \(\vv\) is</p>
+<div class="displaymath">
+\begin{equation*}
+D_{\vv}f(a,b)=\vnabla f(a,b)\cdot\vv
+\end{equation*}
+</div></article><p id="p-1938">We can compute the rate of change of temperature per unit distance (as opposed to per unit time) in a similar way.  The change in temperature between time \(0\) and time \(t\) is \(f(a+v_1t, b+v_2t)-f(a,b)\text{.}\) Between time \(0\) and time \(t\text{,}\) you have travelled a distance \(|\vv|t\text{.}\) So the instantaneous rate of change of temperature per unit distance as you leave \((a,b)\) is</p>
+<div class="displaymath">
+\begin{gather*}
+\lim_{t\rightarrow 0}\frac{f(a+v_1t, b+v_2t)-f(a,b)}{t|\vv|}
+\end{gather*}
+</div>
+<p data-braille="continuation">This is exactly \(\frac{1}{|\vv|}\) times \(\lim\limits_{t\rightarrow 0}\frac{f(a+v_1t, b+v_2t)-f(a,b)}{t}\) which we computed above to be \(D_{\vv}f(a,b)\text{.}\) So</p>
+<article class="fact theorem-like" id="eqn_dir_deriv_space"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
+</h6>
+<p id="p-1939">Given any nonzero vector \(\vv\text{,}\) the rate of change of \(f\) per unit distance as you leave \((a,b)\) moving in direction \(\vv\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(a,b)\cdot\frac{\vv}{|\vv|}
+=D_{\frac{\vv}{|\vv|}}\ f(a,b)
+\end{equation*}
+</div></article><article class="definition definition-like" id="def_dri_deriv"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
+</h6>
+<p id="p-1940">\(D_{\frac{\vv}{|\vv|}}\ f(a,b)\) is called the <em class="emphasis">directional derivative</em> of the function \(f(x,y)\) at the point \((a,b)\) in the direction<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-65" id="fn-65"><sup> 1 </sup></a> \(\vv\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-65"><div class="fn">Some people require direction vectors to have unit length. We don't.</div></div></article></section><section class="subsubsection" id="subsubsection-5"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.7.1.3</span> <span class="title">The Implications</span>
+</h4>
+<p id="p-1941">We have just seen that the instantaneous rate of change of \(f\) per unit distance as we leave \((a,b)\) moving in direction \(\vv\) is a dot product, which we can write as</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(a,b)\cdot\frac{\vv}{|\vv|}
+=|\vnabla f(a,b)| \cos \theta
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(\theta\) is the angle between the gradient vector \(\vnabla f(a,b)\) and the direction vector \(\vv\text{.}\) Writing it in this way allows us to make some useful observations. Since \(\cos \theta\) is always between \(-1\) and \(+1\)</p>
+<ul class="disc">
+<li id="li-891">the direction of maximum rate of increase is that having \(\theta=0\text{.}\) So to get maximum rate of increase per unit distance, as you leave \((a,b)\text{,}\) you should move in the same direction as the gradient \(\vnabla f(a,b)\text{.}\) Then the rate of increase per unit distance is \(|\vnabla f(a,b)|\text{.}\)</li>
+<li id="li-892">The direction of minimum (i.e. most negative) rate of increase  is that having \(\theta=180^\circ\text{.}\) To get minimum rate of increase per unit distance you should move in the direction opposite  \(\vnabla f(a,b)\text{.}\) Then the rate of increase per unit distance is \(-|\vnabla f(a,b)|\text{.}\)</li>
+<li id="li-893">The directions giving zero rate of increase are those perpendicular to \(\vnabla f(a,b)\text{.}\) If you move in a direction perpendicular to \(\vnabla f(a,b)\text{,}\) then \(f(x,y)\) remains constant as you leave \((a,b)\text{.}\) At that instant, you are moving so that \(f(x,y)\) remains constant and consequently you are moving along the level curve \(f(x,y)=f(a,b)\text{.}\)  So \(\vnabla f(a,b)\) is perpendicular to the level curve \(f(x,y)=f(a,b)\) at \((a,b)\text{.}\) The corresponding statement in three dimensions is that \(\vnabla F(a,b,c)\) is perpendicular to the level surface \(F(x,y,z)=F(a,b,c)\) at \((a,b,c)\text{.}\) Hence a good way to find a vector normal to the surface \(F(x,y,z)=F(a,b,c)\) at the point \((a,b,c\)) is to compute the gradient \(\vnabla F(a,b,c)\text{.}\) This is precisely what we saw back in Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a>.</li>
+</ul>
+<p id="p-1942">Now that we have defined the directional derivative, here are some examples.</p>
+<article class="example example-like" id="eg_dir_deriv_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dir_deriv_A"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dir_deriv_A"><article class="example example-like"><p id="p-1943">Find the directional derivative of the function \(f(x,y)=e^{x+y^2}\) at the point \((0,1)\) in the direction \(-\hi + \hj\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-260" id="solution-260"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-260"><div class="solution solution-like">
+<p id="p-1944">To compute the directional derivative, we need the gradient. To compute the gradient, we need some partial derivatives. So we start with the partial derivatives of \(f\) at \((0,1)\text{:}\)</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+f_x(0,1) &amp;= e^{x+y^2}\Big|_{x=0\atop y=1} &amp;&amp;=e\\
+f_y(0,1) &amp;= 2ye^{x+y^2}\Big|_{x=0\atop y=1} &amp;&amp;=2e
+\end{alignat*}
+</div>
+<p data-braille="continuation">So the gradient of \(f\) at \((0,1)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(0,1) = f_x(0,1)\,\hi + f_y(0,1)\,\hj
+= e\,\hi + 2e\,\hj
+\end{equation*}
+</div>
+<p data-braille="continuation">and the direction derivative in the direction \(-\hi + \hj\) is</p>
+<div class="displaymath">
+\begin{equation*}
+D_{\frac{-\hi+\hj}{|-\hi+\hj|}} f(0,1)
+= \vnabla f(0,1)\cdot\frac{-\hi+\hj}{|-\hi+\hj|}
+= \big(e\,\hi + 2e\,\hj\big)\cdot \frac{-\hi+\hj}{\sqrt{2}}
+= \frac{e}{\sqrt{2}}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_dir_deriv_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dir_deriv_B"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dir_deriv_B"><article class="example example-like"><p id="p-1945">Find the directional derivative of the function \(w(x,y,z)=xyz +\ln(xz)\) at the point \((1,3,1)\) in the direction \(\llt 1\,,\,0\,,\,1\rgt\text{.}\) In what directions is the directional derivative zero?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-261" id="solution-261"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-261"><div class="solution solution-like">
+<p id="p-1946">First, the partial derivatives of \(w\) at \((1,3,1)\) are</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+w_x(1,3,1) &amp;= \left[yz+\frac{1}{x}\right]\bigg|_{(1,3,1)}
+&amp;&amp;=3\times 1+\frac{1}{1}&amp;&amp;=4\\
+w_y(1,3,1) &amp;= xz\bigg|_{(1,3,1)} &amp;&amp;=1\times 1&amp;&amp;=1\\
+w_z(1,3,1) &amp;= \left[xy+\frac{1}{z}\right]\bigg|_{(1,3,1)} &amp;&amp;=1\times 3 +\frac{1}{1} &amp;&amp;=4
+\end{alignat*}
+</div>
+<p data-braille="continuation">so the gradient of \(w\) at \((1,3,1)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla w(1,3,1) = \llt w_x(1,3,1)\,,\,w_y(1,3,1)\,,\,w_z(1,3,1)\rgt
+= \llt 4\,,\,1\,,\,4\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">and the direction derivative in the direction \(\llt 1\,,\,0\,,\,1\rgt\) is</p>
+<div class="displaymath">
+\begin{align*}
+D_{\frac{\llt 1\,,\,0\,,\,1\rgt}{|\llt 1\,,\,0\,,\,1\rgt|}} w(1,3,1)
+&amp;= \vnabla w(1,3,1)\cdot
+\frac{\llt 1\,,\,0\,,\,1\rgt}{|\llt 1\,,\,0\,,\,1\rgt|}
+= \llt 4\,,\,1\,,\,4\rgt\cdot \frac{\llt 1\,,\,0\,,\,1\rgt}{\sqrt{2}}\\
+&amp;= \frac{8}{\sqrt{2}}=4\sqrt{2}
+\end{align*}
+</div>
+<p data-braille="continuation">The directional derivative of \(w\) at \((1,3,1)\) in the direction \(\vt\ne\vZero\) is zero if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+0 = D_{\frac{\vt}{|\vt|}} w(1,3,1)
+= \vnabla w(1,3,1)\cdot\frac{\vt}{|\vt|}
+= \llt 4\,,\,1\,,\,4\rgt\cdot \frac{\vt}{|\vt|}
+\end{equation*}
+</div>
+<p data-braille="continuation">which is the case if and only if \(\vt\) is perpendicular to \(\llt 4\,,\,1\,,\,4\rgt\text{.}\) So if we walk in the direction of any vector in the plane, \(4x+y+4z=0\) (which has normal vector \(\llt 4\,,\,1\,,\,4\rgt\)) then the directional derivative is zero.</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_dir_deriv_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dir_deriv_C"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dir_deriv_C"><article class="example example-like"><p id="p-1947">Let</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=5-x^2-2y^2\qquad
+(a,b)=\big(-1,-1\big)
+\end{equation*}
+</div>
+<p data-braille="continuation">In this example, we'll explore the behaviour of the function \(f(x,y)\) near the point \((a,b)\text{.}\)</p>
+<p id="p-1948">Note that for any fixed \(f_0 \lt 5\text{,}\) \(f(x,y)=f_0\) is the ellipse \(x^2+2y^2=5-f_0\text{.}\) So the graph \(z=f(x,y)\) consists of a bunch of horizontal ellipses stacked one on top of each other.</p>
+<ul class="disc">
+<li id="li-894">
+<p id="p-1949">Since the  ellipse \(x^2+2y^2=5-f_0\)  has \(x\)-semi-axis \(\sqrt{5-f_0}\) and \(y\)-semi-axis \(\sqrt{\frac{5-f_0}{2}}\text{,}\)</p>
+<ul class="circle">
+<li id="li-895">the ellipses start with a point on the \(z\) axis when \(f_0=5\) and</li>
+<li id="li-896">increase in size as \(f_0\) decreases.</li>
+</ul>
+</li>
+<li id="li-897">The part of the graph \(z=f(x,y)\) in the first octant is sketched in the left hand figure below.</li>
+<li id="li-898">Several level curves, \(f(x,y)=f_0\text{,}\) are sketched in the right hand figure below.</li>
+<li id="li-899">The gradient vector<div class="displaymath">
+\begin{equation*}
+\vnabla f(a,b)=\llt -2x,-4y\rgt \big|_{(-1,-1)}=\llt 2,4\rgt
+=2\llt 1,2\rgt
+\end{equation*}
+</div>at \((-1,-1)\) is also illustrated in the righ hand sketch.</li>
+</ul>
+<p data-braille="continuation">We have that, at \((a,b)=(-1,-1)\text{,}\)</p>
+<ul class="disc">
+<li id="li-900">the unit vector giving the direction of maximum rate of increase is the unit vector in the direction of the gradient vector \(2\llt 1,2\rgt\text{,}\) which is \(\frac{1}{\sqrt{5}}\llt 1,2\rgt\text{.}\) The maximum rate of  increase is  \(|\llt 2,4\rgt |=2\sqrt{5}\text{.}\)</li>
+<li id="li-901">The unit vector giving the direction of minimum rate of increase is \(-\frac{1}{\sqrt{5}}\llt 1,2\rgt \) and that minimum rate is \(-|\llt 2,4\rgt |=-2\sqrt{5}\text{.}\)</li>
+<li id="li-902"><p id="p-1950">The directions giving zero rate of increase are perpendicular to \(\vnabla f(a,b)\text{.}\) One vector perpendicular<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-66" id="fn-66"><sup> 2 </sup></a> to \(\llt 1,2\rgt\) is \(\llt 2,-1\rgt\text{.}\)  So the unit vectors giving the direction of zero rate of increase are the  \(\pm\frac{1}{\sqrt{5}}(2,-1)\text{.}\) These are the directions of the tangent vector at \((a,b)\) to the level curve of \(f\) through \((a,b)\text{,}\) which is the curve \(f(x,y)=f(a,b)\text{.}\)</p></li>
+</ul>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-66"><div class="fn">Check this by taking the dot product of \(\llt 1,2\rgt\) and \(\llt 2,-1\rgt\text{.}\)</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:33.3333333333333%;justify-content:center;"><img src="figs/dderivB.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:55.5555555555556%;justify-content:center;"><img src="figs/dderivC.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div></article></div>
+<article class="example example-like" id="eg_dir_deriv_D"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dir_deriv_D"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.9</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dir_deriv_D"><article class="example example-like"><p id="p-1951">What is the rate of change of \(f(x,y,z)=x^2+y^2+z^2\) at \((3,5,4)\) moving in the positive \(x\)-direction along the curve of intersection of the surfaces \(G(x,y,z)=25\) and \(H(x,y,z)=0\) where</p>
+<div class="displaymath">
+\begin{equation*}
+G(x,y,z)=2x^2-y^2+2z^2 \qquad\text{and}\qquad
+H(x,y,z)=x^2-y^2+z^2
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-262" id="solution-262"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-262"><div class="solution solution-like">
+<p id="p-1952">As a first check note that \((3,5,4)\) really does lie on both surfaces because</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+G(3,5,4)&amp;= 2\big(3^2\big)-5^2+2\big(4^2\big) &amp;&amp;= 18-25+32=25\\
+H(3,5,4)&amp;=\phantom{2*\ }3^2-5^2+\phantom{2*}4^2&amp;&amp;=\phantom{1}9-25+16 =0
+\end{alignat*}
+</div>
+<p data-braille="continuation">We compute gradients to get the normal vectors to the surfaces \(G(x,y,z)=25\) and \(H(x,y,z)=0\) at \((3,5,4)\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\vnabla G(3,5,4) &amp;=\Big[4x\,\hi-2y\,\hj+4z\,\hk\Big]_{(3,5,4)}\\
+&amp;= 12\,\hi-10\,\hj+16\,\hk
+= 2\big(6\,\hi-5\,\hj+8\,\hk\big)\\
+\vnabla H(3,5,4) &amp;=\Big[2x\,\hi-2y\,\hj+2z\,\hk\Big]_{(3,5,4)}\\
+&amp;= 6\,\hi-10\,\hj+8\,\hk
+= 2\big(3\,\hi-5\,\hj+4\,\hk\big)
+\end{align*}
+</div>
+<p data-braille="continuation">The direction of interest is tangent to the curve of intersection. So the direction of interest is tangent to both surfaces and hence is perpendicular to both gradients. Consequently one tangent vector to the curve at \((3,5,4)\) is</p>
+<div class="displaymath">
+\begin{align*}
+\vnabla G(3,5,4)\,\times  \vnabla H(3,5,4)
+&amp;=4\big(6\,\hi-5\,\hj+8\,\hk\big)\times\big(3\,\hi-5\,\hj+4\,\hk\big)\\
+&amp;=4\ \det\left[\begin{matrix}
+\hi &amp; \hj &amp; \hk \\
+6   &amp; -5  &amp; 8 \\
+3   &amp; -5  &amp; 4 \\
+\end{matrix}\right]\\
+&amp;= 4\ \big(20\,\hi -15\,\hk\big)
+= 20\ \big(4\,\hi -3\,\hk\big)
+\end{align*}
+</div>
+<p data-braille="continuation">and the unit tangent vector to the curve at \((3,5,4)\) that has positive \(x\) component is</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{4\,\hi -3\,\hk}{|4\,\hi -3\,\hk|}
+=\frac{4}{5}\,\hi -\frac{3}{5}\,\hk
+\end{equation*}
+</div>
+<p data-braille="continuation">The desired rate of change is</p>
+<div class="displaymath">
+\begin{align*}
+D_{\frac{4}{5}\,\hi -\frac{3}{5}\,\hk} f(3,5,4)
+&amp;= \vnabla f(3,5,4)\cdot\left(\frac{4}{5}\,\hi -\frac{3}{5}\,\hk\right)\\
+&amp;= \overbrace{\big( 6\,\hi +10\, \hj + 8\,\hk\big)}^
+{[2x\,\hi+2y\,\hj+2z\,\hk]_{(x,y,z)=(3,5,4)}}\hskip-0.15in\cdot\,
+\left(\frac{4}{5}\,\hi -\frac{3}{5}\,\hk\right)\\
+&amp;=0
+\end{align*}
+</div>
+<p data-braille="continuation">Actually, we could have known that the rate of change would be zero.</p>
+<ul class="disc">
+<li id="li-903">indent=-0.1in</li>
+<li id="li-904">Any point \((x,y,z)\) on the curve obeys both \(y^2=x^2+z^2\) and \(2x^2-y^2+2z^2=25\text{.}\)</li>
+<li id="li-905">Substituting \(y^2=x^2+z^2\) into \(2x^2-y^2+2z^2=25\) gives \(x^2+z^2=25\text{.}\)</li>
+<li id="li-906">So, at any point on the curve, \(x^2+z^2=25\) and \(y^2=x^2+z^2=25\) so that \(x^2+y^2+z^2=50\text{.}\)</li>
+<li id="li-907">That is, \(f(x,y,z)=x^2+y^2+z^2\) takes the value 50 at every point of the curve.</li>
+<li id="li-908">So of course the rate of change of \(f\) along the curve is \(0\text{.}\)</li>
+</ul>
+</div></div>
+</div></article></div>
+<p id="p-1953">Let's change things up a little. In the next example, we are told the rates of change in two different directions. From this we are to determine the rate of change in a third direction.</p>
+<article class="example example-like" id="eg_dir_deriv_E"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dir_deriv_E"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dir_deriv_E"><article class="example example-like"><p id="p-1954">The rate of change of a given function \(f(x,y)\) at the point \(P_0=(1,2)\) in the direction towards \(P_1=(2,3)\) is \(2\sqrt{2}\) and in the direction towards \(P_2=(1,0)\) is \(-3\text{.}\) What is the rate of change of \(f\) at \(P_0\) towards the origin \(P_3=(0,0)\text{?}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-263" id="solution-263"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-263"><div class="solution solution-like">
+<p id="p-1955">We can easily determine the rate of change of \(f\) at the point \(P_0\) in any direction once we know the gradient \(\vnabla f(1,2) =a\,\hi+b\,\hj\text{.}\) So we will first use the two given rates of change to determine \(a\) and \(b\text{,}\) and then we determine the rate of change towards \((0,0)\text{.}\)</p>
+<p id="p-1956">The two rates of change that we are given are those in the directions of the vectors</p>
+<div class="displaymath">
+\begin{gather*}
+\overrightarrow{P_0P_1} = \llt 1,1\rgt \qquad
+\overrightarrow{P_0P_2} = \llt 0,-2\rgt
+\end{gather*}
+</div>
+<p data-braille="continuation">As you might guess, the notation \(\overrightarrow{PQ}\) means the vector whose tail is at \(P\) and whose head is at \(Q\text{.}\) So the given rates of change tell us that</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+2\sqrt{2}&amp;=D_{\frac{\llt 1,1\rgt}{|\llt 1,1\rgt|}} f(1,2)
+&amp;&amp;= \vnabla f(1,2)\cdot\frac{\llt 1,1\rgt}{|\llt 1,1\rgt|}
+&amp;&amp;= \llt a,b\rgt\cdot\frac{\llt 1,1\rgt}{\sqrt{2}}\\
+&amp;=\frac{a}{\sqrt{2}} +\frac{b}{\sqrt{2}}\\
+-3&amp;=D_{\frac{\llt 0,-2\rgt}{|\llt 0,-2\rgt|}} f(1,2)
+&amp;&amp;= \vnabla f(1,2)\cdot\frac{\llt 0,-2\rgt}{|\llt 0,-2\rgt|}
+&amp;&amp;= \llt a,b\rgt\cdot\frac{\llt 0,-2\rgt}{2}\\
+&amp;=-b
+\end{alignat*}
+</div>
+<p data-braille="continuation">These two lines give us two linear equations in the two unknowns \(a\) and \(b\text{.}\) The second equation directly gives us \(b=3\text{.}\) Substituting \(b=3\) into the first equation gives</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{a}{\sqrt{2}} +\frac{3}{\sqrt{2}} = 2\sqrt{2} \implies
+a+3=4 \implies
+a=1
+\end{gather*}
+</div>
+<p data-braille="continuation">A direction vector from \(P_0=(1,2)\) towards \(P_3=(0,0)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\overrightarrow{P_0P_3} = \llt -1,-2\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">and the rate of change (per unit distance) in that direction is</p>
+<div class="displaymath">
+\begin{align*}
+D_{\frac{\llt -1,-2\rgt}{|\llt -1,-2\rgt|}} f(1,2)
+&amp;= \vnabla f(1,2)\cdot\frac{\llt -1,-2\rgt}{|\llt -1,-2\rgt|}
+= \llt a,b\rgt\cdot\frac{\llt -1,-2\rgt}{\sqrt{5}}\\
+&amp;= \llt 1,3\rgt\cdot\frac{\llt -1,-2\rgt}{\sqrt{5}}
+=-\frac{7}{\sqrt{5}}
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_dir_deriv_F"><a data-knowl="" class="id-ref original" data-refid="hk-eg_dir_deriv_F"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.11</span><span class="period">.</span><span class="space"> </span><span class="title">Optional.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_dir_deriv_F"><article class="example example-like"><p id="p-1957">Find all points \((a,b,c)\) for which the spheres \((x-a)^2+(y-b)^2+(z-c)^2 =1\) and \(x^2+y^2+z^2=1\) intersect orthogonally. That is, the tangent planes to the two spheres are to be perpendicular at each point of intersection.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-264" id="solution-264"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-264"><div class="solution solution-like">
+<p id="p-1958">Let \((x_0,y_0,z_0)\) be a point of intersection. That is</p>
+<div class="displaymath">
+\begin{align*}
+(x_0-a)^2+(y_0-b)^2+(z_0-c)^2 &amp; = 1\\
+x_0^2+y_0^2+z_0^2&amp;=1
+\end{align*}
+</div>
+<p data-braille="continuation">A normal vector to \(G(x,y,z)=(x-a)^2+(y-b)^2+(z-c)^2 =1\) at \((x_0,y_0,z_0)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vN = \vnabla G(x_0,y_0,z_0)
+= \llt 2(x_0-a)\,,\,2(y_0-b)\,,\,2(z_0-c)\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">A normal vector to \(g(x,y,z)=x^2+y^2+z^2 =1\) at \((x_0,y_0,z_0)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vn = \vnabla g(x_0,y_0,z_0)
+= \llt 2x_0\,,\,2y_0\,,\,2z_0\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">The two tangent planes are perpendicular if and only if \(\hN\) and \(\hn\) are perpendicular, which is the case if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+0=\hN\cdot\hn = 4x_0(x_0-a) + 4y_0(y_0-b) +4z_0(z_0-c)
+\end{equation*}
+</div>
+<p data-braille="continuation">or, dividing the equation by \(4\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+x_0(x_0-a) + y_0(y_0-b) +z_0(z_0-c)=0
+\end{equation*}
+</div>
+<p id="p-1959">Let's pause to take stock. We need to find all \((a,b,c)\)'s such that the statement</p>
+<div class="displaymath">
+\begin{equation*}
+(x_0,y_0,z_0)\text{ is a point of intersection of the two spheres}
+\tag{S1}
+\end{equation*}
+</div>
+<p data-braille="continuation">implies the statement</p>
+<div class="displaymath">
+\begin{equation*}
+\text{the normal vectors $\hN$ and $\hn$ are perpendicular}
+\tag{S2}
+\end{equation*}
+</div>
+<p data-braille="continuation">In equations, we need to find all \((a,b,c)\)'s such that the statement</p>
+<div class="displaymath">
+\begin{align*}
+(x_0,y_0,z_0)\quad\text{obeys}\quad
+&amp;x_0^2+y_0^2+z_0^2 = 1\\
+&amp;\text{ and }(x_0-a)^2+(y_0-b)^2+(z_0-c)^2 = 1
+\tag{S1}
+\end{align*}
+</div>
+<p data-braille="continuation">implies the statement</p>
+<div class="displaymath">
+\begin{equation*}
+(x_0,y_0,z_0)\quad\text{obeys}\quad
+x_0(x_0-a) + y_0(y_0-b) +z_0(z_0-c)=0
+\tag{S2}
+\end{equation*}
+</div>
+<p data-braille="continuation">Now if we expand (S2) then we can, with a little care, massage it into something that looks more like (S1).</p>
+<div class="displaymath">
+\begin{align*}
+&amp;x_0(x_0-a) + y_0(y_0-b) +z_0(z_0-c)
+=x_0^2+y_0^2+z_0^2 -ax_0 -by_0 - cz_0\\
+&amp;=\frac{1}{2}\left\{\big[x_0^2+y_0^2+z_0^2\big]
++\big[(x_0-a)^2+(y_0-b)^2+(z_0-c)^2\big]
+-a^2-b^2-c^2\right\}
+\end{align*}
+</div>
+<p data-braille="continuation">If (S1) is true, then \(\big[x_0^2+y_0^2+z_0^2\big]=1\) and \(\big[(x_0-a)^2+(y_0-b)^2+(z_0-c)^2\big]=1\) so that</p>
+<div class="displaymath">
+\begin{equation*}
+x_0(x_0-a) + y_0(y_0-b) +z_0(z_0-c)
+=\frac{1}{2}\left\{1 \ +\  1\  -a^2-b^2-c^2 \right\}
+\end{equation*}
+</div>
+<p data-braille="continuation">and statement (S2) is true if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+a^2+b^2+c^2=2
+\end{equation*}
+</div>
+<p id="p-1960">Our conclusion is that the set of allowed points \((a,b,c)\) is the sphere of radius \(\sqrt{2}\) centred on the origin.</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_chainRuleF"><a data-knowl="" class="id-ref original" data-refid="hk-eg_chainRuleF"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.12</span><span class="period">.</span><span class="space"> </span><span class="title">Optional — The gradient in polar coordinates.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_chainRuleF"><article class="example example-like"><p id="p-1961">What is the gradient of a function in polar coordinates?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-265" id="solution-265"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-265"><div class="solution solution-like">
+<p id="p-1962">As was the case in Examples <a class="xref" data-knowl="./knowl/eg_chainRuleD.html" title="Example 2.4.9: Equation of state">2.4.9</a> and <a class="xref" data-knowl="./knowl/eg_chainRuleE.html" title="Example 2.4.10">2.4.10</a>, figuring out what the question is asking is half the battle. By Definition <a class="xref" data-knowl="./knowl/def_gradient.html" title="Definition 2.5.4: Gradient">2.5.4</a>, the gradient of a function \(g(x,y)\) is the vector \(\llt g_x(x,y),g_y(x,y)\rgt\text{.}\) In this question we are told that we are given some function \(f(r,\theta)\) of the polar coordinates<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-67" id="fn-67"><sup> 3 </sup></a> \(r\) and \(\theta\text{.}\) We are supposed to convert this function to Cartesian  coordinates.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-67"><div class="fn">Polar coordinates were defined in Example <a class="xref" data-knowl="./knowl/ex_LIMtwodB.html" title="Example 2.1.8">2.1.8</a>.</div></div>
+<p id="p-1963">This means that we are to consider the function</p>
+<div class="displaymath">
+\begin{equation*}
+g(x,y)=f\big(r(x,y),\theta(x,y)\big)
+\end{equation*}
+</div>
+<p data-braille="continuation">with</p>
+<div class="displaymath">
+\begin{align*}
+r(x,y)&amp;=\sqrt{x^2+y^2}\cr
+\theta(x,y)&amp;= \arctan\,\frac{y}{x}
+\end{align*}
+</div>
+<p data-braille="continuation">Then we are to compute the gradient of \(g(x,y)\) and express the answer in terms of \(r\) and \(\theta\text{.}\) By the chain rule,</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{g}{x}
+&amp;=\pdiff{f}{r}\ \pdiff{r}{x}
++\pdiff{f}{\theta}\  \pdiff{\theta}{x}\\
+&amp;=\pdiff{f}{r}\ \frac{1}{2}\frac{2x}{\sqrt{x^2+y^2}}
++\pdiff{f}{\theta}\ \frac{-y/x^2}{1+(y/x)^2}\\
+&amp;=\pdiff{f}{r}\ \frac{x}{\sqrt{x^2+y^2}}
+-\pdiff{f}{\theta}\ \frac{y}{x^2+y^2}\\
+&amp;=\pdiff{f}{r}\ \frac{r\cos\theta}{r}
+-\pdiff{f}{\theta}\ \frac{r\sin\theta}{r^2}\\
+\end{align*}
+<p class="intertext">since \(x=r\cos\theta\) and \(y=r\sin\theta\)</p>
+\begin{align*}
+&amp;=\pdiff{f}{r}\ \cos\theta
+-\pdiff{f}{\theta}\ \frac{\sin\theta}{r}
+\end{align*}
+</div>
+<p data-braille="continuation">Similarly</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{g}{y}
+&amp;=\pdiff{f}{r}\ \pdiff{r}{y}
++\pdiff{f}{\theta}\ \pdiff{\theta}{y}\\
+&amp;=\pdiff{f}{r}\ \frac{1}{2}\frac{2y}{\sqrt{x^2+y^2}}
++\pdiff{f}{\theta}\ \frac{1/x}{1+(y/x)^2}\\
+&amp;=\pdiff{f}{r}\ \frac{y}{\sqrt{x^2+y^2}}
++\pdiff{f}{\theta}\ \frac{x}{x^2+y^2}\\
+&amp;=\pdiff{f}{r}\ \sin\theta
++\pdiff{f}{\theta}\ \frac{\cos\theta}{r}
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{equation*}
+\llt g_x,g_y\rgt= f_r\ \llt\cos\theta,\sin\theta\rgt
++\frac{f_\theta}{r}\llt-\sin\theta,\cos\theta\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">or, with all the arguments written explicitly,</p>
+<div class="displaymath">
+\begin{align*}
+\llt g_x(x,y),g_y(x,y)\rgt
+&amp;=
+f_r\big(r(x,y),\theta(x,y)\big)\ \llt\cos\theta(x,y)\,,\,\sin\theta(x,y)\rgt\\
+&amp;\ \ +\frac{1}{r(x,y)}f_\theta\big(r(x,y),\theta(x,y)\big)\
+\llt-\sin\theta(x,y)\,,\,\cos\theta(x,y)\rgt
+\end{align*}
+</div>
+</div></div>
+</div></article></div></section></section><section class="exercises" id="exercises-14"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.7.2</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-39">
+<div class="introduction" id="introduction-51"><p id="p-1964"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-242"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1965">Find the directional derivative of \(f(x,y,z) = e^{xyz}\) in the \(\llt 0,1,1\rgt\) direction at the point \((0,1,1)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-243"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1968">Find \(\vnabla\big(y^2 + \sin(xy)\big)\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-40">
+<div class="introduction" id="introduction-52"><p id="p-1971"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-244"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1972">Find the rate of change of the given function at the given point in the given direction.</p>
+<ol class="lower-alpha">
+<li id="li-909">\(f(x,y)=3x-4y\) at the point \((0,2)\) in the direction \(-2\hi\text{.}\)</li>
+<li id="li-910">\(f(x,y,z)=x^{-1}+y^{-1}+z^{-1}\) at \((2,-3,4)\) in the direction \(\hi+\hj+\hk\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-245"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1977">In what directions at the point \((2,0)\) does the function \(f(x,y)=xy\) have the specified rates of change?</p>
+<ol class="lower-alpha">
+<li id="li-911">\(\displaystyle -1\)</li>
+<li id="li-912">\(\displaystyle -2\)</li>
+<li id="li-913">\(\displaystyle -3\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-246"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1986">Find \(\vnabla f(a,b)\) given the directional derivatives</p>
+<div class="displaymath">
+\begin{equation*}
+D_{(\hi+\hj)/\sqrt{2}}f(a,b)=3\sqrt{2}\qquad
+D_{(3\hi-4\hj)/5}f(a,b)=5
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-247"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1990">You are standing at a location where the surface of the earth is smooth. The slope in the southern direction is \(4\) and the slope in the south-eastern direction is \(\sqrt{2}\text{.}\) Find the slope in the eastern direction.</p></article><article class="exercise exercise-like" id="exercise-248"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1994">Assume that the directional derivative of \(w = f(x,y,z)\) at a point \(P\) is a maximum in the direction of the vector \(2\hi - \hj + \hk\text{,}\) and the value of the directional derivative in that direction is \(3\sqrt{6}\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-914">Find the gradient vector of \(w = f(x,y,z)\) at \(P\text{.}\)</li>
+<li id="li-915">Find the directional derivative of \(w = f(x,y,z)\) at \(P\) in the direction of the vector \(\hi + \hj\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-249"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1999">A hiker is walking on a mountain with height above the \(z = 0\) plane given by</p>
+<div class="displaymath">
+\begin{equation*}
+z = f(x,y) = 6 - xy^2
+\end{equation*}
+</div>
+<p data-braille="continuation">The positive \(x\)-axis points east and the positive \(y\)-axis points north, and the hiker starts from the point \(P(2, 1, 4)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-918">In what direction should the hiker proceed from \(P\) to ascend along the steepest path? What is the slope of the path?</li>
+<li id="li-919">Walking north from \(P\text{,}\) will the hiker start to ascend or descend? What is the slope?</li>
+<li id="li-920">In what direction should the hiker walk from \(P\) to remain at the same height?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-250"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-2006">Two hikers are climbing a (small) mountain whose height is \(\ z=1000-2x^2-3y^2.\) They start at \(\ (1,1,995)\ \) and follow the path of steepest ascent. Their \((x,y)\) coordinates obey \(\ y=ax^b\ \) for some constants \(a, b\text{.}\) Determine \(a\) and \(b\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-251"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2010">A mosquito is at the location \((3, 2, 1)\) in \(\bbbr^3\text{.}\) She knows that the temperature \(T\) near there is given by \(T = 2x^2 + y^2 - z^2\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-921">She wishes to stay at the same temperature, but must fly in some initial direction. Find a direction in which the initial rate of change of the temperature is \(0\text{.}\)</li>
+<li id="li-922">If you and another student both get correct answers in part (a), must the directions you give be the same? Why or why not?</li>
+<li id="li-923">What initial direction or directions would suit the mosquito if she wanted to cool down as fast as possible?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-252"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2017">The air temperature \(T(x,y,z)\) at a location \((x,y,z)\) is given by:</p>
+<div class="displaymath">
+\begin{equation*}
+T(x,y,z) = 1 + x^2 + yz.
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-924">A bird passes through \((2,1,3)\) travelling towards \((4,3,4)\) with speed \(2\text{.}\) At what rate does the air temperature it experiences change at this instant?</li>
+<li id="li-925">If instead the bird maintains constant altitude (\(z = 3\)) as it passes through \((2,1,3)\) while also keeping at a fixed air temperature, \(T = 8\text{,}\) what are its two possible directions of travel?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-253"><h6 class="heading">
+<span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2023">Let \(f(x,y) = 2x^2 + 3xy + y^2\) be a function of \(x\) and \(y\text{.}\)</p>
+<ol id="p-2024" class="lower-alpha">
+<li id="li-926">Find the maximum rate of change of \(f(x,y)\) at the point \(P\left(1, -\frac{4}{3}\right)\text{.}\)</li>
+<li id="li-927">Find the directions in which the directional derivative of \(f(x,y)\) at the point \(P\left(1, -\frac{4}{3}\right)\) has the value \(\frac{1}{5}\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-254"><h6 class="heading">
+<span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2030">The temperature \(T(x, y)\) at a point of the \(xy\)-plane is given by</p>
+<div class="displaymath">
+\begin{equation*}
+T(x, y) = ye^{x^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">A bug travels from left to right along the curve \(y = x^2\) at a speed of \(0.01\)m/sec. The bug monitors \(T(x, y)\) continuously. What is the rate of change of \(T\) as the bug passes through the point \((1, 1)\text{?}\)</p></article><article class="exercise exercise-like" id="exercise-255"><h6 class="heading">
+<span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2034">Suppose the function \(T=F(x,y,z)=3+xy-y^2+z^2-x\) describes the temperature at a point \((x,y,z)\) in space, with \(F(3,2,1)=3\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-928">Find the directional derivative of \(T\) at \((3, 2, 1)\text{,}\) in the direction of the point \((0,1,2)\text{.}\)</li>
+<li id="li-929">At the point \((3, 2, 1)\text{,}\) in what direction does the temperature <em class="emphasis">decrease</em>  most rapidly?</li>
+<li id="li-930">Moving along the curve given by \(x=3e^t\text{,}\)  \(y = 2 \cos t\text{,}\) \(z= \sqrt{1 + t}\text{,}\) find \(\diff{T}{t}\text{,}\) the rate of change of temperature with respect to \(t\text{,}\) at \(t = 0\text{.}\)</li>
+<li id="li-931">Suppose \(\hi+5\hj+a\hk\) is a vector that is tangent to the temperature level surface \(T(x, y, z) = 3\) at \((3, 2, 1)\text{.}\) What is \(a\text{?}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-256"><h6 class="heading">
+<span class="codenumber">15<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2043">Let</p>
+<div class="displaymath">
+\begin{align*}
+f(x, y, z) &amp;= (2x + y)e^{-(x^2 +y^2 +z^2)}\\
+g(x, y, z) &amp;= xz + y^2 + yz + z^2
+\end{align*}
+</div>
+<ol class="lower-alpha">
+<li id="li-932">Find the gradients of \(f\) and \(g\) at \((0,1,-1)\text{.}\)</li>
+<li id="li-933">A bird at \((0,1,-1)\) flies at speed \(6\) in the direction in which \(f(x, y, z)\) increases most rapidly. As it passes through \((0,1,-1)\text{,}\) how quickly does \(g(x, y, z)\) appear (to the bird) to be changing?</li>
+<li id="li-934">A bat at \((0,1,-1)\) flies in the direction in which \(f (x, y, z)\) and \(g(x, y, z)\) do not change, but \(z\) increases. Find a vector in this direction.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-257"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2050">A bee is flying along the curve of intersection of the surfaces \(3z + x^2 + y^2 = 2\) and \(z = x^2 - y^2\) in the direction for which \(z\) is increasing. At time \(t = 2\text{,}\) the bee passes through the point \((1, 1, 0)\) at speed \(6\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-935">Find the velocity (vector) of the bee at time \(t = 2\text{.}\)</li>
+<li id="li-936">The temperature \(T\) at position \((x, y, z)\) at time \(t\) is given by \(T = xy - 3x+2yt+z\text{.}\) Find the rate of change of temperature experienced by the bee at time \(t = 2\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-258"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2056">The temperature at a point \((x, y, z)\) is given by \(T(x, y, z) = 5e^{-2x^2-y^2-3z^2}\text{,}\) where \(T\) is measured in centigrade and \(x\text{,}\) \(y\text{,}\) \(z\) in meters.</p>
+<ol class="lower-alpha">
+<li id="li-940">Find the rate of change of temperature at the point \(P(1, 2, -1)\) in the direction toward the point \((1, 1, 0)\text{.}\)</li>
+<li id="li-941">In which direction does the temperature decrease most rapidly?</li>
+<li id="li-942">Find the maximum rate of decrease at \(P\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-259"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2063">The directional derivative of a function \(w = f(x, y, z)\) at a point \(P\) in the direction of the vector \(\hi\) is 2, in the direction of the vector \(\hi+\hj\) is \(-\sqrt{2}\text{,}\) and in the direction of the vector \(\hi+\hj+\hk\) is \(-\frac{5}{\sqrt{3}}\text{.}\) Find the direction in which the function \(w = f(x, y, z)\)  has the maximum rate of change at the point \(P\) . What is this maximum rate of change?</p></article><article class="exercise exercise-like" id="exercise-260"><h6 class="heading">
+<span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2066">Suppose it is known that the direction of the fastest increase of the function \(f(x,y)\) at the origin is given by the vector \(\llt 1, 2\rgt\text{.}\) Find a unit vector \(u\) that is tangent to the level curve of \(f(x,y)\) that passes through the origin.</p></article><article class="exercise exercise-like" id="exercise-261"><h6 class="heading">
+<span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2069">The shape of a hill is given by \(z = 1000 - 0.02x^2 - 0.01y^2\text{.}\) Assume that the \(x\)-axis is pointing East, and the \(y\)-axis is pointing North, and all distances are in metres.</p>
+<ol class="lower-alpha">
+<li id="li-943">What is the direction of the steepest ascent at the point \((0, 100, 900)\text{?}\) (The answer should be in terms of directions of the compass).</li>
+<li id="li-944">What is the slope of the hill at the point \((0, 100, 900)\) in the direction from (a)?</li>
+<li id="li-945">If you ride a bicycle on this hill in the direction of the steepest descent at \(5\) m/s, what is the rate of change of your altitude (with respect to time) as you pass through the point (0, 100, 900)?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-262"><h6 class="heading">
+<span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2077">Let the pressure \(P\) and temperature \(T\) at a point \((x, y, z)\) be</p>
+<div class="displaymath">
+\begin{equation*}
+P(x,y,z) = \frac{x^2+2y^2}{1+z^2},\qquad
+T(x,y,z) = 5 + xy - z^2
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-949">If the position of an airplane at time \(t\) is<div class="displaymath">
+\begin{equation*}
+(x(t), y(t), z(t)) = (2t, t^2 - 1, \cos t)
+\end{equation*}
+</div>find \(\diff{}{t} (PT)^2\) at time \(t = 0\) as observed from the airplane.</li>
+<li id="li-950">In which direction should a bird at the point \((0,-1,1)\) fly if it wants to keep both \(P\) and \(T\) constant. (Give one possible direction vector. It does not need to be a unit vector.)</li>
+<li id="li-951">An ant crawls on the surface \(z^3 + zx + y^2 = 2\text{.}\) When the ant is at the point \((0,-1,1)\text{,}\) in which direction should it go for maximum increase of the temperature \(T = 5 + xy - z^2\text{?}\) Your answer should be a vector \(\llt a, b, c\rgt\text{,}\) not necessarily of unit length. (Note that the ant cannot crawl in the direction of the gradient because that leads off the surface. The direction vector \(\llt a, b, c\rgt\) has to be on the tangent plane to the surface.)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-263"><h6 class="heading">
+<span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2087">Suppose that \(f(x,y,z)\) is a function of three variables and let \(\vu = \frac{1}{\sqrt{6}} \llt 1, 1, 2\rgt\) and \(\vv = \frac{1}{\sqrt{3}} \llt 1, -1, -1\rgt\) and \(\vw = \frac{1}{\sqrt{3}} \llt 1, 1, 1\rgt\text{.}\) Suppose that at a point \((a,b,c)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+D_\vu f&amp;=0\\
+D_\vv f&amp;=0\\
+D_\vw f&amp;=4
+\end{align*}
+</div>
+<p data-braille="continuation">Find \(\vnabla f\) at \((a,b,c)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-264"><h6 class="heading">
+<span class="codenumber">23<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2090">The elevation of a hill is given by the equation \(f(x,y)=x^2y^2e^{-x-y}\text{.}\) An ant sits at the point \((1,1,e^{-2})\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-955">Find the unit vector \(\vu=\llt u_1,u_2\rgt\) that maximizes<div class="displaymath">
+\begin{equation*}
+\lim_{t\rightarrow 0}\frac{f\big((1,1)+t\vu\big)-f(1,1)}{t}
+\end{equation*}
+</div>
+</li>
+<li id="li-956">Find a vector \(\vv=\llt v_1,v_2,v_3\rgt\) pointing in the direction of the path that the ant could take in order to stay on the same elevation level \(e^{-2}\text{.}\)</li>
+<li id="li-957">Find a vector \(\vv=\llt v_1,v_2,v_3\rgt\) pointing in the direction of the path that the ant should take in order to maximize its instantaneous rate of level increase.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-265"><h6 class="heading">
+<span class="codenumber">24<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2097">Let the temperature in a region of space be given by \(T(x,y,z)=3x^2+\half y^2+2z^2\) degrees.</p>
+<ol class="lower-alpha">
+<li id="li-958">A sparrow is flying along the curve \(\vr(s)=\big(\frac{1}{3}s^3,2s,s^2\big)\) at a constant speed of \(3{\rm ms}^{-1}\text{.}\) What is the velocity of the sparrow when \(s=1\text{?}\)</li>
+<li id="li-959">At what rate does the sparrow feel the temperature is changing at the point \(A\big(\frac{1}{3},2,1\big)\) for which \(s=1\text{.}\)</li>
+<li id="li-960">At the point \(A\big(\frac{1}{3},2,1\big)\) in what direction will the temperature be decreasing at maximum rate?</li>
+<li id="li-961">An eagle crosses the path of the sparrow at \(A\big(\frac{1}{3},2,1\big)\text{,}\) is moving at right angles to the path of the sparrow, and is also moving in a direction in which the temperature remains constant. In what directions could the eagle be flying as it passes through the point \(A\text{?}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-266"><h6 class="heading">
+<span class="codenumber">25<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2106">Assume that the temperature \(T\) at a point \((x,y,z)\) near a flame at the origin is given by</p>
+<div class="displaymath">
+\begin{equation*}
+T(x,y,z)=\frac{200}{1+x^2+y^2+z^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">where the coordinates are given in meters and the temperature is in degrees Celsius. Suppose that at some moment in time, a moth is at the point \((3,4,0)\) and is flying at a constant speed of \(1 {\rm m/s}\) in the direction of maximum increase of temperature.</p>
+<ol class="lower-alpha">
+<li id="li-962">Find the velocity vector \(\vv\) of the moth at this moment.</li>
+<li id="li-963">What rate of change of temperature does the moth feel at that moment?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-267"><h6 class="heading">
+<span class="codenumber">26<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2111">We say that \(u\) is inversely proportional to \(v\) if there is a constant \(k\) so that \(u=k/v\text{.}\) Suppose that the temperature \(T\) in a metal ball is inversely proportional to the distance from the centre of the ball, which we take to be the origin. The temperature at the point \((1,2,2)\) is \(120^\circ\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-964">Find the constant of proportionality.</li>
+<li id="li-965">Find the rate of change of \(T\) at \((1,2,2)\) in the direction towards the point \((2,1,3)\text{.}\)</li>
+<li id="li-966">Show that at most points in the ball, the direction of greatest increase is towards the origin.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-268"><h6 class="heading">
+<span class="codenumber">27<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2118">The depth of a lake in the \(xy\)-plane is equal to \(f(x, y) = 32-x^2-4x-4y^2\) meters.</p>
+<ol class="lower-alpha"><li id="li-967">Sketch the shoreline of the lake in the \(xy\)-plane.</li></ol>
+<p data-braille="continuation">Your calculus instructor is in the water at the point \((-1, 1)\text{.}\) Find a unit vector which indicates in which direction he should swim in order to:</p>
+<ol class="lower-alpha">
+<li id="li-968">[(b)] stay at a constant depth?</li>
+<li id="li-969">[(c)] increase his depth as rapidly as possible (i.e. be most likely to drown)?</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-41">
+<div class="introduction" id="introduction-53"><p id="p-2124"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-269"><h6 class="heading"><span class="codenumber">28<span class="period">.</span></span></h6>
+<p id="p-2125">The temperature \(T(x,y)\) at points of the \(xy\)-plane is given by \(T(x,y)=x^2-2y^2\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-970">Draw a contour diagram for \(T\) showing some isotherms (curves of constant temperature).</li>
+<li id="li-971">In what direction should an ant at position \((2,-1)\) move if it wishes to cool off as quickly as possible?</li>
+<li id="li-972">If the ant moves in that direction at speed \(v\) at what rate does its temperature decrease?</li>
+<li id="li-973">What would the rate of decrease of temperature of the ant be if it moved from \((2,-1)\) at speed \(v\) in direction \(\llt -1,-2\rgt\text{?}\)</li>
+<li id="li-974">Along what curve through \((2,-1)\) should the ant move to continue experiencing maximum rate of cooling?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-270"><h6 class="heading">
+<span class="codenumber">29<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2139">Consider the function \(f(x,y,z) = x^2 + \cos(yz)\text{.}\)</p>
+<ol id="p-2140" class="lower-alpha">
+<li id="li-975">Give the direction in which \(f\) is increasing the fastest at the point \((1, 0, \pi/2)\text{.}\)</li>
+<li id="li-976">Give an equation for the plane \(T\) tangent to the surface<div class="displaymath">
+\begin{equation*}
+S = \Set{(x,y,z)}{f(x,y,z) = 1}
+\end{equation*}
+</div>at the point \((1, 0, \pi/2)\text{.}\)</li>
+<li id="li-977">Find the distance between \(T\) and the point \((0, 1, 0)\text{.}\)</li>
+<li id="li-978">Find the angle between the plane \(T\) and the plane<div class="displaymath">
+\begin{equation*}
+P = \Set{(x,y,z)}{x + z = 0}.
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-271"><h6 class="heading">
+<span class="codenumber">30<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2150">A function \(T(x,y,z)\) at \(P = (2,1,1)\) is known to have \(T(P) = 5\text{,}\) \(T_x (P) = 1\text{,}\) \(T_y(P) = 2\text{,}\) and \(T_z(P) = 3\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-979">A bee starts flying at \(P\) and flies along the unit vector pointing towards the point \(Q = (3,2,2)\text{.}\) What is the rate of change of \(T(x,y,z)\) in this direction?</li>
+<li id="li-980">Use the linear approximation of \(T\) at the point \(P\) to approximate \(T(1.9,1,1.2)\text{.}\)</li>
+<li id="li-981">Let \(S(x,y,z) = x + z\text{.}\) A bee starts flying at \(P\text{;}\) along which unit vector direction should the bee fly so that the rate of change of \(T(x,y,z)\) and of \(S(x,y,z)\) are both zero in this direction?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-272"><h6 class="heading">
+<span class="codenumber">31<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2157">Consider the functions \(F(x,y,z) = z^3 +xy^2 +xz\) and \(G(x,y,z)=3x-y+4z\text{.}\) You are standing at the point \(P(0,1,2)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-982">You jump from \(P\) to \(Q(0.1\,,\,0.9\,,\,1.8)\text{.}\) Use the linear approximation to determine approximately the amount by which \(F\) changes.</li>
+<li id="li-983">You jump from \(P\) in the direction along which \(G\) increases most rapidly. Will \(F\) increase or decrease?</li>
+<li id="li-984">You jump from \(P\) in a direction \(\llt a\,,\,b\,,\,c\rgt\) along which the rates of change of \(F\) and \(G\) are both zero. Give an example of such a direction (need not be a unit vector).</li>
+</ol></article><article class="exercise exercise-like" id="exercise-273"><h6 class="heading">
+<span class="codenumber">32<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2167">A meteor strikes the ground in the heartland of Canada. Using satellite photographs, a model</p>
+<div class="displaymath">
+\begin{equation*}
+z=f(x,y)=-\frac{100}{x^2+2x+4y^2+11}
+\end{equation*}
+</div>
+<p data-braille="continuation">of the resulting crater is made and a plan is drawn up to convert the site into a tourist attraction. A car park is to be built at  \((4,5)\) and a hiking trail is to be made. The trail is to start at the car park and take the steepest route to the bottom of the crater.</p>
+<ol class="lower-alpha">
+<li id="li-985">Sketch a map of the proposed site clearly marking the car park, a few level curves for the function \(f\)  and the trail.</li>
+<li id="li-986">In which direction does the trail leave the car park?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-274"><h6 class="heading">
+<span class="codenumber">33<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2172">You are standing at a lone palm tree in the middle of the Exponential Desert. The height of the sand dunes around you is given in meters by</p>
+<div class="displaymath">
+\begin{equation*}
+h(x,y)=100 e^{-(x^2+2y^2)}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(x\) represents the number of meters east of the palm tree (west if \(x\) is negative) and \(y\) represents the number of meters north of the palm tree (south if \(y\) is negative).</p>
+<ol class="lower-alpha">
+<li id="li-987">Suppose that you walk \(3\) meters east and 2 meters north. At your new location, \((3,2)\text{,}\) in what direction is the sand dune sloping most steeply downward?</li>
+<li id="li-988">If you walk north from the location described in part (a), what is the instantaneous rate of change of height of the sand dune?</li>
+<li id="li-989">If you are standing at \((3,2)\) in what direction should you walk to ensure that you remain at the same height?</li>
+<li id="li-990">Find the equation of the curve through \((3,2)\) that you should move along in order that you are always pointing in a steepest descent direction at each point of this curve.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-275"><h6 class="heading">
+<span class="codenumber">34<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-2182">Let \(f(x,y)\) be a differentiable function with \(f(1,2)=7\text{.}\) Let</p>
+<div class="displaymath">
+\begin{equation*}
+\vu=\frac{3}{5}\,\hi+\frac{4}{5}\,\hj,\qquad
+\vv=\frac{3}{5}\,\hi-\frac{4}{5}\,\hj
+\end{equation*}
+</div>
+<p data-braille="continuation">be unit vectors. Suppose it is known that the directional derivatives \(D_\vu f(1,2)\) and \(D_\vv f(1,2)\) are equal to \(10\) and \(2\) respectively.</p>
+<ol class="lower-alpha">
+<li id="li-991">Show that the gradient vector \(\vnabla f\) at \((1,2)\) is \(10\hi+5\hj\text{.}\)</li>
+<li id="li-992">Determine the rate of change of \(f\) at \((1,2)\) in the direction of the vector \(\hi+2\hj\text{.}\)</li>
+<li id="li-993">Using the tangent plane approximation, estimate the value of \(f(1.01,2.05)\text{.}\)</li>
+</ol></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

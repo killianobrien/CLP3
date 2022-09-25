@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:41:12+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Chain Rule</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_higher_order.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_tangent_planes.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_higher_order.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_tangent_planes.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule" class="active">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_chain_rule"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">The Chain Rule</span>
+</h2>
+<section class="introduction" id="introduction-38"><p id="p-1399">You already routinely use the one dimensional chain rule</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{}{t}f\big(x(t)\big)
+= \diff{f}{x}\big(x(t)\big)\ \diff{x}{t}(t)
+\end{equation*}
+</div>
+<p data-braille="continuation">in doing computations like</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{}{t}\sin(t^2) = \cos(t^2)\ 2t
+\end{equation*}
+</div>
+<p data-braille="continuation">In this example, \(f(x)=\sin(x)\) and \(x(t)=t^2\text{.}\)</p>
+<p id="p-1400">We now generalize the chain rule to functions of more than one variable. For concreteness, we concentrate on the case in which all functions are functions of two variables. That is, we find the partial derivatives \(\pdiff{F}{s}\) and \(\pdiff{F}{t}\) of a function \(F(s,t)\) that is defined as a composition</p>
+<div class="displaymath">
+\begin{equation*}
+F(s,t)=f\big(x(s,t)\,,\,y(s,t)\big)
+\end{equation*}
+</div>
+<p data-braille="continuation">We are using the name \(F\) for the new function \(F(s,t)\) as a reminder that it is closely related to, though not the same as, the function \(f(x,y)\text{.}\) The partial derivative \(\pdiff{F}{s}\) is the rate of change of \(F\) when \(s\) is varied with \(t\) held constant. When \(s\) is varied, both the \(x\)-argument, \(x(s,t)\text{,}\) and the \(y\)-argument, \(y(s,t)\text{,}\) in \(f\big(x(s,t)\,,\,y(s,t)\big)\) vary. Consequently, the chain rule for \(f\big(x(s,t)\,,\,y(s,t)\big)\) is a sum of two terms — one resulting from the variation of the \(x\)-argument and the other resulting from the variation of the \(y\)-argument.</p>
+<article class="theorem theorem-like" id="thm_chainRule"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Chain Rule.</span>
+</h6>
+<p id="p-1401">Assume that all first order partial derivatives of \(f(x,y)\text{,}\) \(x(s,t)\) and \(y(s,t)\) exist and are continuous. Then the same is true for \(F(s,t)=f\big(x(s,t)\,,\,y(s,t)\big)\) and</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{F}{s}(s,t)
+&amp;=  \pdiff{f}{x}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{x}{s}(s,t)
++\pdiff{f}{y}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{y}{s}(s,t)\\
+\pdiff{F}{t}(s,t)
+&amp;=  \pdiff{f}{x}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{x}{t}(s,t)
++\pdiff{f}{y}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{y}{t}(s,t)
+\end{align*}
+</div></article><p id="p-1402">We will give the proof of this theorem in §<a href="sec_chain_rule.html#subsec_higher_d_chain_rule" class="internal" title="Subsection 2.4.4: Proof of Theorem 2.4.1">2.4.4</a>, below. It is common to state this chain rule as</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{F}{s}
+&amp;=  \pdiff{f}{x}\, \pdiff{x}{s}
++\pdiff{f}{y}\, \pdiff{y}{s}\\
+\pdiff{F}{t}
+&amp;=  \pdiff{f}{x}\, \pdiff{x}{t}
++\pdiff{f}{y}\, \pdiff{y}{t}
+\end{align*}
+</div>
+<p data-braille="continuation">That is, it is common to suppress the function arguments. But you should make sure that you understand what the arguments are before doing so.</p>
+<p id="p-1403">Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a> is given for the case that \(F\) is the composition of a function of two variables, \(f(x,y)\text{,}\) with two functions, \(x(s,t)\) and \(y(s,t)\text{,}\)  of two variables each. There is nothing magical about the number two. There are obvious variants for any numbers of variables. For example,</p>
+<article class="fact theorem-like" id="eqn_chain_rule_A"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
+</h6>
+<p id="p-1404">If \(F(t) = f\big(x(t),y(t),z(t)\big)\text{,}\) then</p>
+<div class="displaymath">
+\begin{align*}
+\diff{F}{t}(t) &amp;= \pdiff{f}{x}\big(x(t)\,,\,y(t)\,,\,z(t)\big)\, \diff{x}{t}(t)
++\pdiff{f}{y}\big(x(t)\,,\,y(t)\,,\,z(t)\big)\, \diff{y}{t}(t)\\
+&amp;\hskip1in   +\pdiff{f}{z}\big(x(t)\,,\,y(t)\,,\,z(t)\big)\, \diff{z}{t}(t)
+\end{align*}
+</div></article><p id="p-1405">and</p>
+<article class="fact theorem-like" id="eqn_chain_rule_B"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
+</h6>
+<p id="p-1406">if \(F(s,t) = f\big(x(s,t)\big)\text{,}\) then</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{F}{t}(s,t) &amp;= \diff{f}{x}\big(x(s,t)\big)\, \pdiff{x}{t}(s,t)
+\end{align*}
+</div></article><p id="p-1407">There will be a large number of examples shortly. First, here is a memory aid.</p></section><section class="subsection" id="subsec_memory_aid"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Memory Aids for the Chain Rule</span>
+</h3>
+<p id="p-1408">We recommend strongly that you use the following procedure, without leaving out any steps, the first couple of dozen times that you use the chain rule.</p>
+<ul class="disc">
+<li id="li-731">Step 1: List <em class="alert">explicitly</em> all the functions involved and specify the arguments of each function. Ensure that all different functions have different names. Invent new names for some of the functions if necessary. In the case of the chain rule in Theorem  <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>, the list would be<div class="displaymath">
+\begin{equation*}
+f(x,y)\qquad\qquad
+x(s,t)\qquad\qquad
+y(s,t)\qquad\qquad
+F(s,t)=f\big(x(s,t),y(s,t)\big)
+\end{equation*}
+</div>While the functions \(f\) and \(F\) are closely related, they are not the same. One is a function of \(x\) and \(y\) while the other is a function of \(s\) and \(t\text{.}\)</li>
+<li id="li-732">
+<p id="p-1409">Step 2: Write down the template</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{s}=\frac{\partial f}{ }\frac{ }{\partial s}
+\end{equation*}
+</div>
+<p data-braille="continuation">Note that</p>
+<ul class="circle">
+<li id="li-733">The function \(F\) appears once in the numerator on the left. The function \(f\text{,}\) from which \(F\) is constructed by a change of variables, appears once in the numerator on the right.</li>
+<li id="li-734">The variable in the denominator on the left appears once in the denominator on the right.</li>
+</ul>
+</li>
+<li id="li-735">Step 3: Fill in the blanks with every variable that makes sense. In particular, since \(f\) is a function of \(x\) and \(y\text{,}\) it may only be differentiated with respect to \(x\) and \(y\text{.}\) So we add together two copies of our template — one for \(x\) and one for \(y\text{:}\)<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{s}
+=\pdiff{f}{x }\pdiff{x }{s}
++\pdiff{f}{y }\pdiff{y }{s}
+\end{equation*}
+</div>Note that \(x\) and \(y\) are functions of \(s\) so that the derivatives \(\pdiff{x }{s}\) and \(\pdiff{y }{s}\) make sense. The first term, \(\pdiff{f}{x }\pdiff{x }{s}\text{,}\) arises from the variation of \(x\) with respect to \(s\) and the second term, \(\pdiff{f}{y }\pdiff{y }{s}\text{,}\) arises from the variation of \(y\) with respect to \(s\text{.}\)</li>
+<li id="li-736">Step 4: Put in the functional dependence <em class="alert">explicitly</em>. Fortunately, there is only one functional dependence that makes sense. The left hand side is a function of \(s\) and \(t\text{.}\) Hence the right hand side must also be a function of \(s\) and \(t\text{.}\) As \(f\) is a function of \(x\) and \(y\text{,}\) this is achieved by evaluating \(f\) at \(x=x(s,t)\) and \(y=y(s,t)\text{.}\)<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{s}(s,t)=
+\pdiff{f}{x}\big(x(s,t),y(s,t)\big)
+\pdiff{x}{s}(s,t)
++\pdiff{f}{y}\big(x(s,t),y(s,t)\big)
+\pdiff{y}{s}(s,t)
+\end{equation*}
+</div>If you fail to put in the arguments, or at least if you fail to remember what the arguments are, you may forget that \(\pdiff{f}{x}\) and \(\pdiff{f}{y}\) depend on \(s\) and \(t\text{.}\) Then, if you have to compute a second derivative of \(F\text{,}\) you will probably fail to differentiate the factors  \(\pdiff{f}{x}\big(x(s,t),y(s,t)\big)\) and \(\pdiff{f}{y}\big(x(s,t),y(s,t)\big)\text{.}\)</li>
+</ul>
+<p id="p-1410">To help remember the formulae of Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>, it is sometimes also useful to pretend that our variables are physical quantities with \(f,F\) having units of grams, \(x,y\) having units of meters and \(s,t\) having units of seconds. Note that</p>
+<ul class="disc">
+<li id="li-737">the left hand side, \(\pdiff{F}{s}\text{,}\) has units grams per second.</li>
+<li id="li-738">Each term on the right hand side contains the partial derivative of \(f\) with respect to a different independent variable. That independent variable appears once in the denominator and once in the numerator, so that its units (in this case meters) cancel out. Thus both of the terms \(\pdiff{f}{x }\pdiff{x }{s}\) and \(\pdiff{f}{y }\pdiff{y }{s}\) on the right hand side also have the units grams per second.</li>
+<li id="li-739">Hence both sides of the equation have the same units.</li>
+</ul>
+<p id="p-1411">Here is a pictorial procedure that uses a <em class="emphasis">tree diagram</em> to help remember the chain rule \(\pdiff{}{s}f\big(x(s,t),y(s,t)\big)=
+\pdiff{f}{x}
+\pdiff{x}{s}
++\pdiff{f}{y}
+\pdiff{y}{s}
+\text{.}\) As in the figure on the left below,</p>
+<ul class="disc">
+<li id="li-740">write, on the top row, “\(f\)”.</li>
+<li id="li-741">Write, on the middle row, each of the variables that the function \(f(x,y)\) depends on, namely“\(x\)” and “\(y\)”.</li>
+<li id="li-742">
+<p id="p-1412">Write, on the bottom row,</p>
+<ul class="circle">
+<li id="li-743">below \(x\text{,}\) each of the variables that the function \(x(s,t)\) depends on, namely “\(s\)” and “\(t\)”, and</li>
+<li id="li-744">below \(y\text{,}\) each of the variables that the function \(y(s,t)\) depends on, namely “\(s\)” and “\(t\)”.</li>
+</ul>
+</li>
+<li id="li-745">Draw a line joining each function with each of the variables that it depends on.</li>
+<li id="li-746">
+<p id="p-1413">Then, as in the figure on the right below, write beside each line, the partial derivative of the function at the top of the line with respect to the variable at the bottom of the line.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/decTreeA.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/decTreeB.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+</li>
+<li id="li-747">
+<p id="p-1414">Finally</p>
+<ul class="circle">
+<li id="li-748">observe, from the figure below, that there are two paths from \(f\text{,}\) on the top, to \(s\text{,}\) on the bottom. One path goes from \(f\) at the top, through \(x\) in the middle to \(s\) at the bottom.  The other path goes from \(f\) at the top, through \(y\) in the middle to \(s\) at the bottom.</li>
+<li id="li-749">For each such path, multiply together the partial derivatives beside the lines of the path. In this example, the two products are \(\pdiff{f}{x}\,\pdiff{x}{s}\text{,}\) for the first path, and \(\pdiff{f}{y}\,\pdiff{y}{s}\text{,}\) for the second path.</li>
+<li id="li-750">Then add together those products, giving, in this example, \(\pdiff{f}{x}\,\pdiff{x}{s}+\pdiff{f}{y}\,\pdiff{y}{s}\text{.}\)</li>
+<li id="li-751">Put in the arguments, as in Step 4, above.</li>
+</ul>
+</li>
+<li id="li-752">
+<p id="p-1415">That's it. We have</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{}{s}f\big(x(s,t),y(s,t)\big)
+&amp;=  \pdiff{f}{x}\big(x(s,t),y(s,t)\big)
+\pdiff{x}{s}(s,t)\\
+&amp;\hskip0.5in  +\pdiff{f}{y}\big(x(s,t),y(s,t)\big)
+\pdiff{y}{s}(s,t)
+\end{align*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/decTreeS.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ul>
+<article class="example example-like" id="eg_decTree"><a data-knowl="" class="id-ref original" data-refid="hk-eg_decTree"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_decTree"><article class="example example-like"><p id="p-1416">The right hand side of the chain rule</p>
+<div class="displaymath">
+\begin{align*}
+\diff{}{t}f\big(x(t)\,,\,y(t)\,,\,z(t)\big) &amp;= \pdiff{f}{x}\big(x(t)\,,\,y(t)\,,\,z(t)\big)\, \diff{x}{t}(t)
++\pdiff{f}{y}\big(x(t)\,,\,y(t)\,,\,z(t)\big)\, \diff{y}{t}(t)\\
+&amp;\hskip1in   +\pdiff{f}{z}\big(x(t)\,,\,y(t)\,,\,z(t)\big)\, \diff{z}{t}(t)
+\end{align*}
+</div>
+<p data-braille="continuation">of Equation <a class="xref" data-knowl="./knowl/eqn_chain_rule_A.html" title="Equation 2.4.2">2.4.2</a>, without arguments, is \(\pdiff{f}{x}\, \diff{x}{t}
++\pdiff{f}{y}\, \diff{y}{t}
++\pdiff{f}{z}\, \diff{z}{t}\text{.}\) The corresponding tree diagram is</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/decTreeTT.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1417">Because \(x(t)\text{,}\) \(y(t)\) and \(z(t)\) are each functions of just one variable, the derivatives beside the lower lines in the tree are ordinary, rather than partial, derivatives.</p></article></div></section><section class="subsection" id="subsec_chain_rule_examples"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Chain Rule Examples</span>
+</h3>
+<p id="p-1418">Let's do some routine examples first and work our way to some trickier ones.</p>
+<article class="example example-like" id="eg_chainRuleAA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_chainRuleAA"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">\(\pdiff{}{s}f\big(x(s,t),y(s,t)\big)\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_chainRuleAA"><article class="example example-like"><p id="p-1419">In this example we find \(\pdiff{}{s}f\big(x(s,t),y(s,t)\big)\) for</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=e^{xy}\qquad x(s,t)=s \qquad y(s,t)=\cos t
+\end{equation*}
+</div>
+<p data-braille="continuation">Define \(F(s,t)=f\big(x(s,t)\,,\,y(s,t)\big)\text{.}\) The appropriate chain rule for this example is the upper equation of Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>.</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{s}(s,t)
+=  \pdiff{f}{x}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{x}{s}(s,t)
++\pdiff{f}{y}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{y}{s}(s,t)
+\end{equation*}
+</div>
+<p data-braille="continuation">For the given functions</p>
+<div class="displaymath">
+\begin{align*}
+f(x,y)&amp;=e^{xy}\\
+\pdiff{f}{x}(x,y)&amp;= ye^{xy}  &amp;
+\pdiff{f}{x}\big(x(s,t),y(s,t)\big)&amp;= y(s,t) e^{x(s,t)\,y(s,t)}
+= \cos t\ e^{s\cos t}\\
+\pdiff{f}{y}(x,y)&amp;= xe^{xy}  &amp;
+\pdiff{f}{y}\big(x(s,t),y(s,t)\big)&amp;= x(s,t) e^{x(s,t)\,y(s,t)}
+= s\ e^{s\cos t}\\
+\pdiff{x}{s}&amp;=1 &amp;
+\pdiff{y}{s}&amp;=0
+\end{align*}
+</div>
+<p data-braille="continuation">so that</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{s}(s,t)=\overbrace{\left\{\cos t\ e^{s\cos t}\right\}}^{\pdiff{f}{x}}
+\overbrace{(1) }^{\pdiff{x}{s}}
++\overbrace{\left\{s\ e^{s\cos t}\right\}}^{\pdiff{f}{y}}
+\overbrace{(0) }^{\pdiff{y}{s}}
+= \cos t\ e^{s\cos t}
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="eg_chainRuleA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_chainRuleA"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">\(\diff{}{t}f\big(x(t),y(t)\big)\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_chainRuleA"><article class="example example-like"><p id="p-1420">In this example we find \(\diff{}{t}f\big(x(t),y(t)\big)\) for</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=x^2-y^2\qquad x(t)=\cos t \qquad y(t)=\sin t
+\end{equation*}
+</div>
+<p id="p-1421">Define \(F(t)=f\big(x(t),y(t)\big)\text{.}\) Since \(F(t)\) is a function of one variable its derivative is denoted \(\diff{F}{t}\) rather than \(\pdiff{F}{t}\text{.}\) The appropriate chain rule for this example (see <a class="xref" data-knowl="./knowl/eqn_chain_rule_A.html" title="Equation 2.4.2">2.4.2</a>) is</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{F}{t}(t)=
+\pdiff{f}{x}\big(x(t),y(t)\big) \diff{x}{t}(t)
++\pdiff{f}{y}\big(x(t),y(t)\big) \diff{y}{t}(t)
+\end{equation*}
+</div>
+<p data-braille="continuation">For the given functions</p>
+<div class="displaymath">
+\begin{align*}
+f(x,y)&amp;=x^2-y^2\\
+\pdiff{f}{x}(x,y)&amp;= 2x  &amp;
+\pdiff{f}{x}\big(x(t),y(t)\big)&amp;= \phantom{-}2x(t) =\phantom{-}2\cos t\\
+\pdiff{f}{y}(x,y)&amp;= -2y  &amp;
+\pdiff{f}{y}\big(x(t),y(t)\big)&amp;= -2y(t)  =-2\sin t\\
+\diff{x}{t}&amp;=-\sin t &amp;
+\diff{y}{t}&amp;=\cos t
+\end{align*}
+</div>
+<p data-braille="continuation">so that</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{F}{t}(t)=(2\cos t)(-\sin t) +(-2\sin t)(\cos t) = -4\sin t\cos t
+\end{equation*}
+</div>
+<p data-braille="continuation">Of course, in this example we can compute \(F(t)\) explicitly</p>
+<div class="displaymath">
+\begin{equation*}
+F(t)=f\big(x(t),y(t)\big)=x(t)^2-y(t)^2=\cos^2t-\sin^2t
+\end{equation*}
+</div>
+<p data-braille="continuation">and then differentiate</p>
+<div class="displaymath">
+\begin{equation*}
+F'(t)=2(\cos t)(-\sin t)-2(\sin t)(\cos t) = -4 \sin t\cos t
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="eg_chainRuleB"><a data-knowl="" class="id-ref original" data-refid="hk-eg_chainRuleB"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">\(\pdiff{}{t}f(x+ct)\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_chainRuleB"><article class="example example-like"><p id="p-1422">Define \(u(x,t)=x+ct\) and \(w(x,t)=f(x+ct)=f\big(u(x,t)\big)\text{.}\) Then</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{}{t}f(x+ct)
+=\pdiff{w}{t}(x,t)
+=\diff{f}{u}\big(u(x,t)\big)  \pdiff{u}{t}(x,t)
+=c\, f'(x+ct)
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="eg_chainRuleC"><a data-knowl="" class="id-ref original" data-refid="hk-eg_chainRuleC"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.8</span><span class="period">.</span><span class="space"> </span><span class="title">\(\frac{\partial^2}{\partial t^2}f(x+ct)\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_chainRuleC"><article class="example example-like"><p id="p-1423">Define  \(w(x,t)=f(x+ct)\) and \(W(x,t)=\pdiff{w}{t}(x,t)=cf'(x+ct)=F\big(u(x,t)\big)\) where \(F(u)=cf'(u)\) and \(u(x,t)=x+ct\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\partial^2}{\partial t^2}f(x+ct)
+&amp;=\pdiff{W}{t}(x,t)
+=\diff{F}{u}\big(u(x,t)\big)  \pdiff{u}{t}(x,t)
+=c\,f''(x+ct)\,c\\
+&amp;=c^2\,f''(x+ct)
+\end{align*}
+</div></article></div>
+<article class="example example-like" id="eg_chainRuleD"><a data-knowl="" class="id-ref original" data-refid="hk-eg_chainRuleD"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.9</span><span class="period">.</span><span class="space"> </span><span class="title">Equation of state.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_chainRuleD"><article class="example example-like"><p id="p-1424">Suppose that we are told that \(F(P,V,T)=0\) and that we are to find  \(\pdiff{P}{T}\text{.}\)</p>
+<p id="p-1425">Before we can find \(\pdiff{P}{T}\text{,}\) we first have to decide what it means. This happens regularly in applications. In fact, this particular problem comes from thermodynamics. The variables \(P,\ V,\ T\) are the pressure, volume and temperature, respectively, of some gas. These three variables are not independent. They are related by an equation of state, here denoted \(F(P,V,T)=0\text{.}\) Given values for any two of \(P,\ V,\ T\text{,}\) the third can be found by solving \(F(P,V,T)=0\text{.}\) We are being asked to find \(\pdiff{P}{T}\text{.}\) This implicitly instructs us to treat \(P\text{,}\) in this problem, as the dependent variable. So a careful wording of this problem (which you will never encounter in the “real world”) would be the following. The function \(P(V,T)\) is defined by \(F\big(P(V,T),V,T)=0\text{.}\) Find \(\big(\pdiff{P}{T}\big)_V\text{.}\) That is, find the rate of change of pressure as the temperature is varied, while holding the volume fixed.</p>
+<p id="p-1426">Since we are not told explicitly what \(F\) is, we cannot solve explicitly for \(P(V,T)\text{.}\) So, instead we differentiate both sides of</p>
+<div class="displaymath">
+\begin{equation*}
+F\big(P(V,T),V,T\big)=0
+\end{equation*}
+</div>
+<p data-braille="continuation">with respect to \(T\text{,}\) while holding \(V\) fixed. Think of the left hand side, \(F\big(P(V,T),V,T\big)\text{,}\) as being \(F\big(P(V,T),Q(V,T),R(V,T)\big)\) with \(Q(V,T)=V\) and \(R(V,T)=T\text{.}\) By the chain rule,</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{}{T}F\big(P(V,T),Q(V,T),R(V,T)\big)
+=F_1\pdiff{P}{T}
++F_2\pdiff{Q}{T}
++F_3\pdiff{R}{T}=0
+\end{equation*}
+</div>
+<p data-braille="continuation">with \(F_j\) referring to the partial derivative of \(F\) with respect to its \(j^{\rm th}\) argument. Experienced chain rule users never introduce \(Q\) and \(R\text{.}\) Instead, they just write</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{P}\pdiff{P}{T}
++\pdiff{F}{V}\pdiff{V}{T}
++\pdiff{F}{T}\pdiff{T}{T}=0
+\end{equation*}
+</div>
+<p data-braille="continuation">Recalling that \(V\) and \(T\) are the independent variables and that, in computing \(\pdiff{}{T}\text{,}\) \(V\) is to be treated as a constant,</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{V}{T}=0\qquad\qquad \pdiff{T}{T} = 1
+\end{equation*}
+</div>
+<p data-braille="continuation">Now putting in the functional dependence</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{P}\big(P(V,T),V,T\big)
+\pdiff{P}{T}(V,T)
++\pdiff{F}{T}\big(P(V,T),V,T\big)=0
+\end{equation*}
+</div>
+<p data-braille="continuation">and solving</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{P}{T}(V,T)
+=-\frac{\pdiff{F}{T}\big(P(V,T),V,T\big)}
+{\pdiff{F}{P}\big(P(V,T),V,T\big)}
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="eg_chainRuleE"><a data-knowl="" class="id-ref original" data-refid="hk-eg_chainRuleE"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_chainRuleE"><article class="example example-like"><p id="p-1427">Suppose that \(f(x,y)=0\) and that we are to find \(\difftwo{y}{x}\text{.}\)</p>
+<p id="p-1428">Once again, \(x\) and \(y\) are not independent variables. Given a value for either \(x\) or \(y\text{,}\) the other is determined by solving \(f(x,y)=0\text{.}\) Since we are asked to find \(\difftwo{y}{x}\text{,}\) it is \(y\) that is to be viewed as a function of \(x\text{,}\) rather than the other way around. So \(f(x,y)=0\) really means that, in this problem, \(f\big(x,y(x)\big)=0\) for all \(x\text{.}\) Differentiating both sides of this equation with respect to \(x\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\phantom{\implies a} f\big(x,y(x)\big) = 0\qquad\text{for all }x\\
+&amp;\implies \diff{}{x}f\big(x,y(x)\big) = 0
+\end{align*}
+</div>
+<p id="p-1429">Note that \(\diff{}{x}f\big(x,y(x)\big)\) is not the same as \(f_x\big(x,y(x)\big)\text{.}\) The former is, by definition, the rate of change with respect to \(x\) of \(g(x)=f\big(x,y(x)\big)\text{.}\) Precisely,</p>
+<div class="displaymath">
+\begin{align*}
+\diff{g}{x}&amp;=\lim_{\De x\rightarrow 0}\frac{g(x+\De x)-g(x)}{\De x}\notag\\
+&amp;=\lim_{\De x\rightarrow 0}\frac{f\big(x+\De x\,,\,y(x+\De x)\big)
+-f\big(x\,,\,y(x)\big)}{\De x}
+\tag{$*$}
+\end{align*}
+</div>
+<p data-braille="continuation">On the other hand, by definition,</p>
+<div class="displaymath">
+\begin{align*}
+f_x(x,y)&amp;=\lim_{\De x\rightarrow 0}\frac{f(x+\De x,y)-f(x,y)}{\De x}\notag\\
+\implies f_x\big(x,y(x)\big)
+&amp;=\lim_{\De x\rightarrow 0}\frac{f\big(x+\De x\,,\,y(x)\big)
+-f\big(x\,,\,y(x)\big)}
+{\De x}
+\tag{$**$}
+\end{align*}
+</div>
+<p data-braille="continuation">The right hand sides of \((*)\) and \((**)\) are not the same. In \(\diff{g}{x}\text{,}\) as \(\De x\) varies the value of \(y\) that is substituted into the  first \(f(\cdots)\) on the right hand side, namely \(y(x+\De x)\text{,}\) changes as \(\De x\) changes. That is, we are computing the rate of change of \(f\) along the (curved) path \(y=y(x)\text{.}\) In \((**)\text{,}\) the corresponding value of \(y\) is \(y(x)\) and is independent of \(\De x\text{.}\) That is, we are computing the rate of change of \(f\) along a horizontal straight line. As a concrete example, suppose that \(f(x,y)=x+y\text{.}\) Then, \(0=f\big(x\,,\,y(x)\big)=x+y(x)\) gives \(y(x)=-x\) so that</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{}{x}f\big(x,y(x)\big)
+=\diff{}{x}f(x,-x)
+=\diff{}{x}[x+(-x)]
+=\diff{}{x}0 =0
+\end{equation*}
+</div>
+<p data-braille="continuation">But \(f(x,y)=x+y\) implies that \(f_x(x,y)=1\) for all \(x\) and \(y\) so that</p>
+<div class="displaymath">
+\begin{equation*}
+f_x(x,y(x))=f_x(x,y)\Big|_{y=-x}=1\Big|_{y=-x}=1
+\end{equation*}
+</div>
+<p id="p-1430">Now back to</p>
+<div class="displaymath">
+\begin{align*}
+\amp \phantom{\implies a} f\big(x,y(x)\big) = 0\qquad\text{for all }x\\
+\amp \implies \diff{}{x}f\big(x,y(x)\big) = 0\\
+\amp \implies f_x\big(x,y(x)\big)\diff{x}{x}
++f_y\big(x,y(x)\big)\diff{y}{x}(x) = 0\qquad\text{by the chain rule}\\
+\amp \implies \diff{y}{x}(x) = -\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\\
+\amp \implies \difftwo{y }{x}(x) = -\diff{}{x}\left[\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\right]\\
+\amp \phantom{\implies}\qquad= -\frac{f_y\big(x,y(x)\big)\diff{}{x}[f_x\big(x,y(x)\big)]
+-f_x\big(x,y(x)\big)\diff{}{x}[f_y\big(x,y(x)\big)]}
+{f_y\big(x,y(x)\big)^2}
+\tag{$\dagger$}
+\end{align*}
+</div>
+<p data-braille="continuation">by the quotient rule. Now it suffices to substitute in \(\diff{}{x}\big[f_x\big(x,y(x)\big)\big]\) and \(\diff{}{x}\big[f_y\big(x,y(x)\big)\big]\text{.}\) For the former apply the chain rule to \(h(x) = u\big(x,y(x)\big)\) with \(u(x,y)=f_x\big(x,y\big)\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\diff{}{x}\big[f_x\big(x,y(x)\big)\big]&amp;=\diff{h}{x}(x)\cr
+&amp;=u_x\big(x,y(x)\big)\diff{x}{x}
++u_y\big(x,y(x)\big)\diff{y}{x}(x)\cr
+&amp;=f_{xx}\big(x,y(x)\big)\diff{x}{x}
++f_{xy}\big(x,y(x)\big)\diff{y}{x}(x)\cr
+&amp;=f_{xx}\big(x,y(x)\big)
+-f_{xy}\big(x,y(x)\big)
+\left[\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\right]
+\end{align*}
+</div>
+<p data-braille="continuation">Substituting this and</p>
+<div class="displaymath">
+\begin{align*}
+\diff{}{x}\big[f_y\big(x,y(x)\big)\big]
+&amp;=f_{yx}\big(x,y(x)\big)\diff{x}{x}
++f_{yy}\big(x,y(x)\big)\diff{y}{x}(x)\cr
+&amp;=f_{yx}\big(x,y(x)\big)
+-f_{yy}\big(x,y(x)\big)
+\left[\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\right]
+\end{align*}
+</div>
+<p data-braille="continuation">into the right hand side of \((\dagger)\) gives the final answer.</p>
+<div class="displaymath">
+\begin{align*}
+\difftwo{y}{x}(x)
+&amp;= -\frac{
+f_y f_{xx}
+-  f_y f_{xy} \frac{f_x}{f_y}
+- f_x f_{yx}
++ f_x f_{yy}\frac{f_x}{f_y}}
+{f_y^2}\\
+&amp;= -\frac{
+f_y^2 f_{xx}
+- 2 f_x f_y f_{xy}
++ f_x^2 f_{yy}}
+{f_y^3}
+\end{align*}
+</div>
+<p data-braille="continuation">with all of \(f_x\text{,}\) \(f_y\text{,}\) \(f_{xx}\text{,}\) \(f_{xy}\text{,}\) \(f_{yy}\) having arguments \(\big(x\,,\,y(x)\big)\text{.}\)</p></article></div>
+<p id="p-1431">We now move on to the proof of Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>. To give you an idea of how the proof will go, we first review the proof of the familiar one dimensional chain rule.</p></section><section class="subsection" id="subsec_1d_chain_rule"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.3</span> <span class="title">Review of the Proof of \(\diff{}{t}f\big(x(t)\big)  = \diff{f}{x}\big(x(t)\big)\ \diff{x}{t}(t)\)</span>
+</h3>
+<p id="p-1432">As a warm up, let's review the proof of the one dimensional chain rule</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{}{t}f\big(x(t)\big) = \diff{f}{x}\big(x(t)\big)\ \diff{x}{t}(t)
+\end{equation*}
+</div>
+<p data-braille="continuation">assuming that \(\diff{x}{t}\) exists and that \(\diff{f}{x}\) is continuous. We wish to find the derivative of \(F(t) = f\big(x(t)\big)\text{.}\) By definition</p>
+<div class="displaymath">
+\begin{align*}
+F'(t) &amp;= \lim_{h\rightarrow 0}\frac{F(t+h)-F(t)}{h}\\
+&amp;= \lim_{h\rightarrow 0}\frac{f\big(x(t+h)\big)-f\big(x(t)\big)}{h}
+\end{align*}
+</div>
+<p data-braille="continuation">Notice that the numerator is the difference of \(f(x)\) evaluated at two nearby values of \(x\text{,}\) namely \(x_1=x(t+h)\) and \(x_0=x(t)\text{.}\) The mean value theorem is a good tool for studying the difference in the values of \(f(x)\) at two nearby points. Recall that the mean value theorem says that, for any given \(x_0\) and  \(x_1\text{,}\) there exists an (in general unknown) \(c\) between them so that</p>
+<div class="displaymath">
+\begin{equation*}
+f(x_1) - f(x_0) = f'(c)\ (x_1-x_0)
+\end{equation*}
+</div>
+<p data-braille="continuation">For this proof, we choose \(x_0=x(t)\) and \(x_1=x(t+h)\text{.}\) The the mean value theorem tells us that there exists a \(c_h\) so that</p>
+<div class="displaymath">
+\begin{align*}
+f\big(x(t+h)\big)-f\big(x(t)\big)
+&amp;= f(x_1)-f(x_0)
+= f'(c_h)\ \big[x(t+h)-x(t)\big]
+\end{align*}
+</div>
+<p data-braille="continuation">We have put the subscript \(h\) on \(c_h\) to emphasise that \(c_h\text{,}\) which is between \(x_0=x(t)\) and \(x_1=x(t+h)\text{,}\) may depend on \(h\text{.}\) Now since  \(c_h\) is trapped between \(x(t)\) and \(x(t+h)\) and since \(x(t+h)\rightarrow x(t)\) as \(h\rightarrow 0\text{,}\) we have that \(c_h\) must also tend to \(x(t)\) as \(h\rightarrow 0\text{.}\) Plugging this into the definition of \(F'(t)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+F'(t)  &amp;= \lim_{h\rightarrow 0}\frac{f\big(x(t+h)\big)-f\big(x(t)\big)}{h}\\
+&amp;= \lim_{h\rightarrow 0}\frac{f'(c_h)\ \big[x(t+h)-x(t)\big]}{h}\\
+&amp;= \lim_{h\rightarrow 0}f'(c_h)\
+\lim_{h\rightarrow 0}\frac{x(t+h)-x(t)}{h}\\
+&amp;= f'\big(x(t)\big)\ x'(t)
+\end{align*}
+</div>
+<p data-braille="continuation">as desired.</p></section><section class="subsection" id="subsec_higher_d_chain_rule"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.4</span> <span class="title">Proof of Theorem 2.4.1</span>
+</h3>
+<p id="p-1433">We'll now prove the formula for \(\pdiff{}{s} f\big( x(s,t)\,,\,y(s,t)\big)\) that is given in Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>. The proof uses the same ideas as the proof of the one variable chain rule, that we have just reviewed.</p>
+<p id="p-1434">We wish to find the partial derivative with respect to \(s\) of \(F(s,t)=f\big(x(s,t)\,,\,y(s,t)\big)\text{.}\) By definition</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{F}{s}(s,t)
+&amp;=\lim_{h\rightarrow 0}\frac{F(s+h,t)-F(s,t)}{h}\\
+&amp;=\lim_{h\rightarrow 0}\frac{f\big(x(s+h,t)\,,\,y(s+h,t)\big)
+-f\big(x(s,t)\,,\,y(s,t)\big)}{h}
+\end{align*}
+</div>
+<p data-braille="continuation">The numerator is the difference of \(f(x,y)\) evaluated at two nearby values of \((x,y)\text{,}\) namely \((x_1,y_1)=\big(x(s+h,t)\,,\,y(s+h,t)\big)\) and \((x_0,y_0)=\big(x(s,t)\,,\,y(s,t)\big)\text{.}\) In going from \((x_0,y_0)\) to \((x_1,y_1)\text{,}\) both the \(x\) and \(y\)-coordinates change. By adding and subtracting we can separate the change in the \(x\)-coordinate from the change in the \(y\)-coordinate.</p>
+<div class="displaymath">
+\begin{gather*}
+f(x_1,y_1) - f(x_0,y_0)
+=\big\{f(x_1,y_1) - f(x_0,y_1)\big\}  + \big\{f(x_0,y_1) - f(x_0,y_0)\big\}
+\end{gather*}
+</div>
+<p data-braille="continuation">The first half, \(\big\{f(x_1,y_1) - f(x_0,y_1)\big\}\text{,}\) has the same \(y\) argument in both terms and so is the difference of the function of one variable \(g(x) = f(x,y_1)\) (viewing \(y_1\) just as a constant) evaluated at the two nearby values, \(x_0\text{,}\) \(x_1\text{,}\) of \(x\text{.}\) Consequently, we can make use of the mean value theorem as we did in §<a href="sec_chain_rule.html#subsec_1d_chain_rule" class="internal" title="Subsection 2.4.3: Review of the Proof of \(\diff{}{t}f\big(x(t)\big)  = \diff{f}{x}\big(x(t)\big)\ \diff{x}{t}(t)\)">2.4.3</a> above. There is a \(c_{x,h}\) between \(x_0=x(s,t)\) and \(x_1=x(s+h,t)\) such that</p>
+<div class="displaymath">
+\begin{align*}
+f(x_1,y_1) - f(x_0,y_1)
+&amp;=g(x_1) - g(x_0)
+=g'(c_{x,h}) [x_1-x_0]
+=\pdiff{f}{x}(c_{x,h}\,,\,y_1)\,[x_1-x_0]\\
+&amp;=\pdiff{f}{x}\big(c_{x,h}\,,\,y(s+h,t)\big)\,\big[x(s+h,t)-x(s,t)\big]
+\end{align*}
+</div>
+<p data-braille="continuation">We have introduced the two subscripts in \(c_{x,h}\) to remind ourselves that it may depend on \(h\) and that it lies between the two \(x\)-values \(x_0\) and \(x_1\text{.}\)</p>
+<p id="p-1435">Similarly, the second half, \(\big\{f(x_0,y_1) - f(x_0,y_0)\big\}\text{,}\) is the difference of the function of one variable  \(h(y) = f(x_0,y)\) (viewing \(x_0\) just as a constant) evaluated at the two nearby values, \(y_0\text{,}\) \(y_1\text{,}\) of \(y\text{.}\) So, by the mean value theorem,</p>
+<div class="displaymath">
+\begin{align*}
+f(x_0,y_1) - f(x_0,y_0)
+&amp;=h(y_1) - h(y_0)
+=h'(c_{y,h}) [y_1-y_0]
+=\pdiff{f}{y}(x_0,c_{y,h})\,[y_1-y_0]\\
+&amp;=\pdiff{f}{y}\big(x(s,t)\,,\,c_{y,h}\big)\,\big[y(s+h,t)-y(s,t)\big]
+\end{align*}
+</div>
+<p data-braille="continuation">for some (unknown) \(c_{y,h}\) between \(y_0=y(s,t)\) and \(y_1=y(s+h,t)\text{.}\) Again, the two subscripts in \(c_{y,h}\) remind ourselves that it may depend on \(h\) and that it lies between the two \(y\)-values \(y_0\) and \(y_1\text{.}\) So, noting that, as \(h\) tends to zero, \(c_{x,h}\text{,}\) which is trapped between \(x(s,t)\) and \(x(s+h,t)\text{,}\) must tend to \(x(s,t)\text{,}\) and \(c_{y,h}\text{,}\) which is trapped between \(y(s,t)\) and \(y(s+h,t)\text{,}\) must tend to \(y(s,t)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{F}{s}(s,t))
+&amp;= \lim_{h\rightarrow 0}\frac{f\big(x(s+h,t)\,,\,y(s+h,t)\big)
+-f\big(x(s,t)\,,\,y(s,t)\big)}{h}\\
+&amp;= \lim_{h\rightarrow 0}\frac{
+\pdiff{f}{x}\big(c_{x,h}\,,\,y(s+h,t)\big)\,\big[x(s+h,t)-x(s,t)\big]
+}{h}\\
+&amp;\hskip0.75in+ \lim_{h\rightarrow 0}\frac{
+\pdiff{f}{y}\big(x(s,t)\,,\,c_{y,h}\big)\,\big[y(s+h,t)-y(s,t)\big] }{h}\\
+&amp;= \lim_{h\rightarrow 0}
+\pdiff{f}{x}\big(c_{x,h}\,,\,y(s+h,t)\big)\
+\lim_{h\rightarrow 0}\frac{x(s+h,t)-x(s,t)}{h}\\
+&amp;\hskip0.75in+ \lim_{h\rightarrow 0}
+\pdiff{f}{y}\big(x(s,t)\,,\,c_{y,h}\big)
+\lim_{h\rightarrow 0}\frac{y(s+h,t)-y(s,t) }{h}\\
+&amp;=  \pdiff{f}{x}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{x}{s}(s,t)
++\pdiff{f}{y}\big(x(s,t)\,,\,y(s,t)\big)\, \pdiff{y}{s}(s,t)
+\end{align*}
+</div>
+<p data-braille="continuation">We can of course follow the same procedure to evaluate the partial derivative with respect to \(t\text{.}\) This concludes the proof of Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>.</p></section><section class="exercises" id="exercises-11"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.4.5</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-30">
+<div class="introduction" id="introduction-39"><p id="p-1436"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-169"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1437">Write out the chain rule for each of the following functions.</p>
+<ol class="lower-alpha">
+<li id="li-753">\(\pdiff{h}{x}\) for \(h(x,y)=f\big(x,u(x,y)\big)\)</li>
+<li id="li-754">\(\diff{h}{x}\) for \(h(x)=f\big(x,u(x),v(x)\big)\)</li>
+<li id="li-755">\(\pdiff{h}{x}\) for \(h(x,y,z)=f\big(u(x,y,z),v(x,y),w(x)\big)\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-170"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1445">A piece of the surface \(z=f(x,y)\) is shown below for some continuously differentiable function \(f(x,y)\text{.}\) The level curve \(f(x,y)=z_1\) is marked with a blue line. The three points \(P_0\text{,}\) \(P_1\text{,}\) and \(P_2\) lie on the surface.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/partialTotalX.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1446">On the level curve \(z=z_1\text{,}\) we can think of \(y\) as a function of \(x\text{.}\) Let \(w(x)=f(x,y(x))=z_1\text{.}\) We approximate, at \(P_0\text{,}\) \(f_x(x,y) \approx \frac{\Delta f}{\Delta x}\) and \(\frac{dw}{dx}(x)\approx\frac{\Delta w}{\Delta x}\text{.}\) Identify the quantities \(\Delta f\text{,}\) \(\Delta w\text{,}\) and \(\Delta x\) from the diagram.</p></article><article class="exercise exercise-like" id="exercise-171"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1455">Let \(w=f(x,y,t)\) with \(x\) and \(y\) depending on \(t\text{.}\) Suppose that at some point \((x,y)\) and at some time \(t\text{,}\) the partial derivatives \(f_x\text{,}\) \(f_y\) and \(f_t\) are equal to \(2\text{,}\) \(-3\) and \(5\) respectively, while \(\diff{x}{t}=1\) and \(\diff{y}{t}=2\text{.}\) Find and explain the difference between \(\diff{w}{t}\) and \(f_t\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-172"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1459">Thermodynamics texts use the relationship</p>
+<div class="displaymath">
+\begin{equation*}
+\left(\pdiff{y}{x}\right)
+\left(\pdiff{z}{y}\right)
+\left(\pdiff{x}{z}\right)=-1
+\end{equation*}
+</div>
+<p data-braille="continuation">Explain the meaning of this equation and prove that it is true.</p></article><article class="exercise exercise-like" id="exercise-173"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1463">What is wrong with the following argument? Suppose that \(w=f(x,y,z)\) and \(z=g(x,y)\text{.}\) By the chain rule,</p>
+<div class="displaymath">
+\begin{gather*}
+\pdiff{w}{x}
+=\pdiff{w}{x}\pdiff{x}{x}
++\pdiff{w}{y}\pdiff{y}{x}
++\pdiff{w}{z}\pdiff{z}{x}
+=\pdiff{w}{x}
++\pdiff{w}{z}\pdiff{z}{x}
+\end{gather*}
+</div>
+<p data-braille="continuation">Hence \(0=\pdiff{w}{z}\pdiff{z}{x}\) and so \(\pdiff{w}{z}=0\) or \(\pdiff{z}{x}=0\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-31">
+<div class="introduction" id="introduction-40"><p id="p-1467"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-174"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-1468">Use two methods (one using the chain rule) to evaluate \(\pdiff{w}{s}\) and \(\pdiff{w}{t}\) given that the function \(w=x^2+y^2+z^2\text{,}\) with \(x=st,\ y=s\cos t\) and \(z=s\sin t\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-175"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-1474">Evaluate \(\frac{\partial^3}{\partial x\partial y^2}f(2x+3y,xy)\) in terms of partial derivatives of \(f\text{.}\) You may assume that \(f\) is a smooth function so that the Chain Rule and Clairaut's Theorem on the equality of the mixed partial derivatives apply.</p></article><article class="exercise exercise-like" id="exercise-176"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-1478">Find all second order derivatives of \(g(s,t)=f(2s+3t,3s-2t)\text{.}\) You may assume that \(f(x,y)\) is a smooth function so that the Chain Rule and Clairaut's Theorem on the equality of the mixed partial derivatives apply.</p></article><article class="exercise exercise-like" id="exercise-177"><h6 class="heading">
+<span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1481">Assume that \(f(x,y)\) satisfies Laplace's equation \(\frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2}=0\text{.}\) Show that this is also the case for the composite function \(g(s,t) = f (s - t, s + t)\text{.}\) That is, show that \(\frac{\partial^2 g}{\partial s^2}+\frac{\partial^2 g}{\partial t^2}=0\text{.}\) You may assume that \(f(x,y)\) is a smooth function so that the Chain Rule and Clairaut's Theorem on the equality of the mixed partial derivatives apply.</p></article><article class="exercise exercise-like" id="exercise-178"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1485">Let \(z = f(x,y)\) where \(x = 2s + t\) and \(y = s - t\text{.}\) Find the values of the constants \(a\text{,}\) \(b\) and \(c\) such that</p>
+<div class="displaymath">
+\begin{equation*}
+a\frac{\partial^2 z}{\partial x^2}
++b\frac{\partial^2 z}{\partial x\,\partial y}
++c\frac{\partial^2 z}{\partial y^2}
+=\frac{\partial^2 z}{\partial s^2}
++\frac{\partial^2 z}{\partial t^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">You may assume that \(z = f(x,y)\) is a smooth function so that the Chain Rule and Clairaut's Theorem on the equality of the mixed partial derivatives apply.</p></article><article class="exercise exercise-like" id="exercise-179"><h6 class="heading">
+<span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1491">Let \(F\) be a function on \(\bbbr^2\text{.}\) Denote points in \(\bbbr^2\) by \((u, v)\) and the corresponding partial derivatives of \(F\) by \(F_u(u, v)\text{,}\) \(F_v (u, v)\text{,}\) \(F_{uu}(u, v)\text{,}\) \(F_{uv}(u, v)\text{,}\) etc.. Assume those derivatives are all continuous. Express</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{\partial^2}{\partial x\, \partial y} F(x^2 - y^2 , 2xy)
+\end{gather*}
+</div>
+<p data-braille="continuation">in terms of partial derivatives of the function \(F\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-180"><h6 class="heading">
+<span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1495">\(u(x,y)\) is defined as</p>
+<div class="displaymath">
+\begin{equation*}
+u(x,y) = e^y\, F\big(xe^{-y^2}\big)
+\end{equation*}
+</div>
+<p data-braille="continuation">for an arbitrary function \(F(z)\text{.}\)</p>
+<ol id="p-1496" class="lower-alpha">
+<li id="li-769">If \(F(z) = \ln(z)\text{,}\) find \(\pdiff{u}{x}\) and \(\pdiff{u}{y}\text{.}\)</li>
+<li id="li-770">For an arbitrary \(F(z)\) show that \(u(x,y)\) satisfies<div class="displaymath">
+\begin{equation*}
+2xy\pdiff{u}{x} + \pdiff{u}{y} = u
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-181"><h6 class="heading">
+<span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1503">Let \(f(x)\) and \(g(x)\) be two functions of \(x\) satisfying \(f''(7) = -2\) and \(g''(-4) = -1\text{.}\) If \(z = h(s,t) = f(2s + 3t) + g(s - 6t)\) is a function of \(s\) and \(t\text{,}\) find the value of \(\frac{\partial^2 z}{\partial t^2}\) when \(s = 2\) and \(t = 1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-182"><h6 class="heading">
+<span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1507">Suppose that \(w = f (xz, yz)\text{,}\) where \(f\) is a differentiable function. Show that</p>
+<div class="displaymath">
+\begin{equation*}
+x\pdiff{w}{x} + y\pdiff{w}{y} = z\pdiff{w}{z}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-183"><h6 class="heading">
+<span class="codenumber">15<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1511">Suppose \(z = f (x, y)\) has continuous second order partial derivatives, and \(x = r \cos t\text{,}\) \(y = r \sin t\text{.}\) Express the following partial derivatives in terms \(r\text{,}\) \(t\text{,}\) and partial derivatives of \(f\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-771">\(\displaystyle \pdiff{z}{t}\)</li>
+<li id="li-772">\(\displaystyle \frac{\partial^2 z}{\partial t^2}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-184"><h6 class="heading">
+<span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1518">Let \(z = f(x, y)\text{,}\) where \(f(x, y)\) has continuous second-order partial derivatives, and</p>
+<div class="displaymath">
+\begin{gather*}
+f_x (2, 1) = 5, \qquad
+f_y(2, 1) =-2, \\
+f_{xx}(2, 1) = 2,\qquad
+f_{xy}(2, 1) = 1, \qquad
+f_{yy}(2, 1) = -4
+\end{gather*}
+</div>
+<p data-braille="continuation">Find \(\difftwo{}{t} z\big(x(t),y(t)\big)\) when \(x(t)=2t^2\text{,}\) \(y(t)=t^3\) and \(t=1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-185"><h6 class="heading">
+<span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1521">Assume that the function \(F(x,y,z)\) satisfies the equation \(\frac{\partial F}{\partial z} = \frac{\partial^2 F}{\partial x^2}
++ \frac{\partial^2 F}{\partial y^2}\) and the mixed partial derivatives \(\frac{\partial^2 F}{\partial x \partial y}\) and \(\frac{\partial^2 F}{\partial y \partial x}\) are equal. Let \(A\) be some constant and let \(G(\gamma, s, t) = F (\gamma + s, \gamma-s, At)\text{.}\) Find the value of \(A\) such that \(\frac{\partial G}{\partial t} = \frac{\partial^2 G}{\partial \gamma^2}
++ \frac{\partial^2 G}{\partial s^2}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-186"><h6 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1525">Let \(f(x)\) be a differentiable function, and suppose it is given that \(f'(0) = 10\text{.}\) Let \(g(s,t) = f (as - bt)\text{,}\) where \(a\) and \(b\) are constants. Evaluate \(\pdiff{g}{s}\) at the point \((s,t) = (b,a)\text{,}\) that is, find \(\pdiff{g}{s}\big|_{(b,a)}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-187"><h6 class="heading">
+<span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1528">Let \(f(u,v)\) be a differentiable function of two variables, and let \(z\) be a differentiable function of \(x\) and \(y\) defined implicitly by \(f(xz,yz) = 0\text{.}\) Show that</p>
+<div class="displaymath">
+\begin{equation*}
+x\pdiff{z}{x}+y\pdiff{z}{y} = -z
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-188"><h6 class="heading">
+<span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1533">Let \(w(s,t) = u(2s + 3t, 3s - 2t)\) for some twice differentiable function \(u = u(x, y)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-773">Find \(w_{ss}\) in terms of \(u_{xx}\text{,}\) \(u_{xy}\) , and \(u_{yy}\text{.}\) You can assume that \(u_{xy} = u_{yx}\text{.}\)</li>
+<li id="li-774">Suppose \(u_{xx} + u_{yy} = 0\text{.}\) For what constant \(A\) will \(w_{ss} = Aw_{tt}\text{?}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-189"><h6 class="heading">
+<span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1538">Suppose that \(f(x,y)\) is twice differentiable (with \(f_{xy}=f_{yx}\)), and \(x=r\cos\theta\) and \(y=r\sin\theta\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-775">Evaluate \(f_\theta\text{,}\) \(f_r\) and \(f_{r\theta}\) in terms of \(r\text{,}\) \(\theta\) and partial derivatives of \(f\) with respect to \(x\) and \(y\text{.}\)</li>
+<li id="li-776">Let \(g(x,y)\) be another function satisfying \(g_x=f_y\) and \(g_y=-f_x\text{.}\) Express \(f_r\) and \(f_\theta\) in terms of \(r\text{,}\) \(\theta\) and \(g_r\text{,}\) \(g_\theta\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-190"><h6 class="heading">
+<span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1545">By definition, the gradient of the differentiable function \(f(x,y)\) at the point \(\big( x_0\,,\,y_0\big)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(x_0,y_0)
+=\llt \pdiff{f}{x}\big( x_0\,,\,y_0\big)\,,\,
+\pdiff{f}{y}\big( x_0\,,\,y_0\big)\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">Suppose that we know</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla f(3,6)=\llt 7,8\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">Suppose also that</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla g(1,2)=\llt -1,4\rgt,
+\end{equation*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla h(1,2)=\llt -5,10\rgt.
+\end{equation*}
+</div>
+<p data-braille="continuation">Assuming \(g(1,2)=3\text{,}\) \(h(1,2)=6\text{,}\) and \(z(s,t)=f\big(g(s,t),h(s,t)\big)\text{,}\) find</p>
+<div class="displaymath">
+\begin{equation*}
+\vnabla z(1,2)
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-191"><h6 class="heading">
+<span class="codenumber">23<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-1548" class="lower-alpha">
+<li id="li-779">Let \(f\) be an arbitrary differentiable function defined on the entire real line. Show that the function \(w\) defined on the entire plane as<div class="displaymath">
+\begin{equation*}
+w(x,y)=e^{-y}f(x-y)
+\end{equation*}
+</div>satisfies the partial differential equation:<div class="displaymath">
+\begin{equation*}
+w+\pdiff{w}{x}+\pdiff{w}{y}=0
+\end{equation*}
+</div>
+</li>
+<li id="li-780">The equations \(x=u^3-3uv^2\text{,}\) \(y=3u^2v-v^3\) and \(z=u^2-v^2\) define \(z\) as a function of \(x\) and \(y\text{.}\) Determine \(\pdiff{z}{x}\) at the point \((u,v)=(2,1)\) which corresponds to the point \((x,y)=(2,11)\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-192"><h6 class="heading">
+<span class="codenumber">24<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1554">The equations</p>
+<div class="displaymath">
+\begin{align*}
+x^2-y\cos(uv)&amp;=v\\
+x^2+y^2-\sin(uv)&amp;=\frac{4}{\pi}u
+\end{align*}
+</div>
+<p data-braille="continuation">define \(x\) and \(y\) implicitly as functions of \(u\) and \(v\) (i.e. \(x=x(u,v)\text{,}\) and \(y=y(u,v)\)) near the point \((x,y)=(1,1)\) at which \((u,v)=\big(\frac{\pi}{2},0\big)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-781">Find<div class="displaymath">
+\begin{equation*}
+\pdiff{x}{u}\text{ and }
+\pdiff{y}{u}
+\end{equation*}
+</div>at \((u,v)=\big(\frac{\pi}{2},0\big)\text{.}\)</li>
+<li id="li-782">If \(z=x^4+y^4\text{,}\) determine \(\pdiff{z}{u}\) at the point \((u,v)=\big(\frac{\pi}{2},0\big)\text{.}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-193"><h6 class="heading">
+<span class="codenumber">25<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1560">Let \(f(u,v)\) be a differentiable function, and let \(u=x+y\) and \(v=x-y\text{.}\) Find a constant, \(\al\text{,}\) such that</p>
+<div class="displaymath">
+\begin{gather*}
+(f_x)^2+(f_y)^2=\al\big((f_u)^2+(f_v)^2\big)
+\end{gather*}
+</div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-32">
+<div class="introduction" id="introduction-41"><p id="p-1564"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-194"><h6 class="heading"><span class="codenumber">26<span class="period">.</span></span></h6>
+<p id="p-1565">The wave equation</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\partial^2u}{\partial x^2}
+-\frac{1}{c^2}\,\frac{\partial^2u}{\partial t^2}
+=0
+\end{equation*}
+</div>
+<p data-braille="continuation">arises in many models involving wave-like phenomena. Let \(u(x,t)\) and \(v(\xi,\eta)\) be related by the change of variables</p>
+<div class="displaymath">
+\begin{align*}
+u(x,t)&amp;=v\big(\xi(x,t),\eta(x,t)\big)\cr
+\xi(x,t)&amp;=x-ct\cr
+\eta(x,t)&amp;=x+ct
+\end{align*}
+</div>
+<ol id="p-1566" class="lower-alpha">
+<li id="li-785">Show that \(\ \frac{\partial^2u}{\partial x^2}
+-\frac{1}{c^2}\frac{\partial^2u}{\partial t^2}
+=0\ \) if and only if \(\ \frac{\partial^2 v}{\partial\xi\partial\eta}=0\text{.}\)</li>
+<li id="li-786">Show that \(\ \frac{\partial^2u}{\partial x^2}
+-\frac{1}{c^2}\frac{\partial^2u}{\partial t^2}
+=0\ \) if and only if \(\ u(x,t)=F(x-ct)+G(x+ct)\ \) for some functions \(F\) and \(G\text{.}\)</li>
+<li id="li-787">Interpret \(\ F(x-ct)+G(x+ct)\ \) in terms of travelling waves. Think of \(u(x,t)\) as the height, at position \(x\) and time \(t\text{,}\) of a wave that is travelling along the \(x\)-axis.</li>
+</ol>
+<p id="p-1567"><em class="emphasis">Remark:</em> Don't be thrown by the strange symbols \(\xi\) and \(\eta\text{.}\) They are just two harmless letters from the Greek alphabet, called “xi” and “eta” respectively.</p></article><article class="exercise exercise-like" id="exercise-195"><h6 class="heading"><span class="codenumber">27<span class="period">.</span></span></h6>
+<p id="p-1575">Evaluate</p>
+<ol class="lower-alpha">
+<li id="li-788">\(\pdiff{y}{z}\)  if \(e^{yz}-x^2 z \ln y = \pi\)</li>
+<li id="li-789">\(\diff{y}{x}\) if \(F(x,y,x^2-y^2)=0\)</li>
+<li id="li-790">\(\left(\pdiff{y}{x}\right)_u\) if \(xyuv=1\) and \(x+y+u+v=0\)</li>
+</ol></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

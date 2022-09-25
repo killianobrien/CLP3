@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:43:35+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>In general it can be quite difficult to compute arc lengths. So, as an easy warmup example, we will compute the circumference of the circle<a class="fn-knowl" data-knowl="./knowl/fn-24-hidden.html" title="Footnote 1.6.3"><sup> 3 </sup></a> \(x^2+y^2=a^2\text{.}\) We'll also find a unit tangent to the circle at any point on the circle. We'll use the parametrization</p>
+<div class="displaymath">
+\begin{equation*}
+\vr(\theta) = \big(a\cos\theta\,,\,a\sin\theta\big)\qquad
+0\le \theta\le 2\pi
+\end{equation*}
+</div>
+<p data-braille="continuation">of Example <a class="xref" data-knowl="./knowl/eg_paramCircle.html" title="Example 1.6.1: Parametrization of  \(x^2+y^2=a^2\)">1.6.1</a>. Using Lemma <a class="xref" data-knowl="./knowl/lem_CVtanArclen.html" title="Lemma 1.6.12">1.6.12</a>, but with the parameter \(t\) renamed to \(\theta\)</p>
+<div class="displaymath">
+\begin{align*}
+\vr'(\theta) &amp;= -a\sin\theta\hi + a\cos\theta\hj\\
+\hat\vT(\theta) &amp;= \frac{\vr'(\theta)}{|\vr'(\theta)|}
+=  -\sin\theta\hi + \cos\theta\hj\\
+\diff{s}{\theta}(\theta)&amp;=\big|\vr'(\theta)\big| = a\\
+s(\Theta)-s(0)&amp;= \int_{0}^\Theta \big|\vr'(\theta)\big|\,\dee{\theta}
+=a\Theta
+\end{align*}
+</div>
+<p data-braille="continuation">As<a class="fn-knowl" data-knowl="./knowl/fn-25-hidden.html" title="Footnote 1.6.4"><sup> 4 </sup></a> \(s(\Theta)\) is the arc length of the part of the circle with \(0\le\theta\le\Theta\text{,}\) the circumference of the whole circle is</p>
+<div class="displaymath">
+\begin{equation*}
+s(2\pi) = 2\pi a
+\end{equation*}
+</div>
+<p data-braille="continuation">which is reassuring, since this formula has been known<a class="fn-knowl" data-knowl="./knowl/fn-26-hidden.html" title="Footnote 1.6.5"><sup> 5 </sup></a> for thousands of years.</p>
+<span class="incontext"><a href="sec_curves.html#p-738">in-context</a></span>
+</body>
+</html>

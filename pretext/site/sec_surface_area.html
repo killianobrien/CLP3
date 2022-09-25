@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:42:16+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Surface Area</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_int_2d_applications.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_3d_integrals.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_int_2d_applications.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_integrals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_3d_integrals.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area" class="active">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_surface_area"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Surface Area</span>
+</h2>
+<p id="p-3458">Suppose that we wish to find the area of part, \(S\text{,}\) of the surface \(z=f(x,y)\text{.}\) We start by cutting \(S\) up into tiny pieces. To do so,</p>
+<ul class="disc">
+<li id="li-1827">we draw a bunch of curves of constant \(x\) (the blue curves in the figure below). Each such curve is the intersection of \(S\) with the plane \(x=x_0\) for some constant \(x_0\text{.}\)  And we also</li>
+<li id="li-1828">draw a bunch of curves of constant \(y\) (the red curves in the figure below). Each such curve is the intersection of \(S\) with the plane \(y=y_0\) for some constant \(y_0\text{.}\)</li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/sphericaldSxy.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3459">Concentrate on any one the tiny pieces. Here is a greatly magnified sketch of it, looking at it from above.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dSfxy.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3460">We wish to compute its area, which we'll call \(\dee{S}\text{.}\) Now this little piece of surface need not be parallel to the \(xy\)-plane, and indeed need not even be flat. But if the piece is really tiny, it's almost flat. We'll now approximate it by something that is flat, and whose area we know. To start, we'll determine the corners of the piece. To do so, we first determine the bounding curves of the piece. Look at the figure above, and recall that, on the surface \(z=f(x,y)\text{.}\)</p>
+<ul class="disc">
+<li id="li-1829">The  upper blue curve was constructed by holding \(x\) fixed at the value \(x_0\text{,}\) and sketching the curve swept out by \(x_0\,\hi+y\,\hj + f(x_0,y)\,\hk\) as \(y\) varied, and</li>
+<li id="li-1830">the  lower blue curve was constructed by holding \(x\) fixed at the slightly larger value \(x_0+\dee{x}\text{,}\) and sketching the curve swept out by  \((x_0+\dee{x})\,\hi+y\,\hj + f(x_0+\dee{x},y)\,\hk\) as \(y\) varied.</li>
+<li id="li-1831">The red curves were constructed similarly, by holding \(y\) fixed and varying \(x\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the four intersection points in the figure are</p>
+<div class="displaymath">
+\begin{alignat*}{1}
+P_0&amp;=x_0\,\hi+y_0\,\hj + f(x_0,y_0)\,\hk\\
+P_1&amp;=x_0\,\hi+(y_0+\dee{y})\,\hj + f(x_0,y_0+\dee{y})\,\hk\\
+P_2&amp;=(x_0+\dee{x})\,\hi+y_0\,\hj + f(x_0+\dee{x},y_0)\,\hk\\
+P_3&amp;=(x_0+\dee{x})\,\hi+(y_0+\dee{y})\,\hj + f(x_0+\dee{x},y_0+\dee{y})\,\hk
+\end{alignat*}
+</div>
+<p data-braille="continuation">Now, for any small constants \(\dee{X}\) and \(\dee{Y}\text{,}\) we have the linear approximation<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-132" id="fn-132"><sup> 1 </sup></a></p>
+<div class="displaymath">
+\begin{align*}
+f(x_0+\dee{X},y_0+\dee{Y})
+&amp;\approx f(x_0\,,\,y_0)
++\pdiff{f}{x}(x_0\,,\,y_0)\,\dee{X}
++\pdiff{f}{y}(x_0\,,\,y_0)\,\dee{Y}
+\end{align*}
+</div>
+<p data-braille="continuation">Applying this three times, once with \(\dee{X}=0\text{,}\) \(\dee{Y}=\dee{y}\) (to approximate \(P_1\)), once with \(\dee{X}=\dee{x}\text{,}\) \(\dee{Y}=0\) (to approximate \(P_2\)), and once with  \(\dee{X}=\dee{x}\text{,}\) \(\dee{Y}=\dee{y}\) (to approximate \(P_3\)),</p>
+<div class="displaymath">
+\begin{alignat*}{1}
+P_1&amp;\approx P_0 \phantom{\ +\ \dee{x}\,\hi}
+\ +\ \dee{y}\,\hj\ \ +\   \pdiff{f}{y}(x_0\,,\,y_0)\,\dee{y}\,\hk\\
+P_2&amp;\approx P_0
+\ +\ \dee{x}\,\hi  \phantom{\ +\  \dee{y}\,\hj}
+\ \ +\  \pdiff{f}{x}(x_0\,,\,y_0)\,\dee{x}\,\hk\\
+P_3&amp;\approx P_0
+\ +\ \dee{x}\,\hi\ +\ \dee{y}\,\hj \ +\
+\Big[ \pdiff{f}{x}(x_0\,,\,y_0)\,\dee{x}
++  \pdiff{f}{y}(x_0\,,\,y_0)\,\dee{y}\Big]\,\hk
+\end{alignat*}
+</div>
+<p data-braille="continuation">Of course we have only approximated the positions of the corners and so have introduced errors. However, with more work, one can bound those errors (like we in the optional §<a href="sec_polars.html#sec_integral_error" class="internal" title="Subsection 3.2.4: Optional— Error Control for the Polar Area Formula&gt;">3.2.4</a>) and show that in the limit \(\dee{x},\dee{y}\rightarrow 0\text{,}\) all of the error terms that we dropped contribute exactly \(0\) to the integral.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-132"><div class="fn">Recall <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a>.</div></div>
+<p id="p-3461">The small piece of our surface with corners \(P_0\text{,}\) \(P_1\text{,}\) \(P_2\text{,}\) \(P_3\)  is approximately a parallelogram with sides</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:8.75%;margin-right:8.75%;">
+<div class="sbspanel" style="width:48.4848484848485%;justify-content:center;"><div class="displaymath" id="p-3462">
+\begin{align*}
+\overrightarrow{P_0P_1}
+\approx \overrightarrow{P_2P_3}
+&amp;\approx \dee{y}\,\hj\ +\   \pdiff{f}{y}(x_0\,,\,y_0)\,\dee{y}\,\hk\\
+\overrightarrow{P_0P_2}
+\approx \overrightarrow{P_1P_3}
+&amp;\approx \dee{x}\,\hi\ +\  \pdiff{f}{x}(x_0\,,\,y_0)\,\dee{x}\,\hk
+\qquad\qquad
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:30.3030303030303%;justify-content:center;"><img src="figs/dS2fxy.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3463">Denote by \(\theta\) the angle between the vectors \(\overrightarrow{P_0P_1}\) and \(\overrightarrow{P_0P_2}\text{.}\) The base of the parallelogram, \(\overrightarrow{P_0P_1}\text{,}\) has length \(\big|\overrightarrow{P_0P_1}\big|\text{,}\) and the height of the parallelogram is \(\big|\overrightarrow{P_0P_2}\big|\,\sin\theta\text{.}\) So the area of the parallelogram is<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-133" id="fn-133"><sup> 2 </sup></a>, by Theorem <a class="xref" data-knowl="./knowl/thm_crossPppties.html" title="Theorem 1.2.23: Properties of the Cross Product">1.2.23</a>,</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}
+=|\overrightarrow{P_0P_1}|\ |\overrightarrow{P_0P_2}| \ \sin\theta
+&amp;= \big|\overrightarrow{P_0P_1}\times\overrightarrow{P_0P_2}\big|\\
+&amp;\hskip-0.5in\approx \bigg|\left(\hj\ +\   \pdiff{f}{y}(x_0\,,\,y_0)\,\hk\right)\times
+\left(\hi\ +\   \pdiff{f}{x}(x_0\,,\,y_0)\,\hk\right)\bigg|
+\dee{x}\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">The cross product is easily evaluated:</p>
+<div class="displaymath">
+\begin{align*}
+\left(\hj\ +\   \pdiff{f}{y}(x_0\,,\,y_0)\,\hk\right)\times
+\left(\hi\ +\   \pdiff{f}{x}(x_0\,,\,y_0)\,\hk\right)
+&amp;=\det\left[\begin{matrix}
+\hi &amp; \hj &amp; \hk \\
+0 &amp; 1 &amp; \frac{\partial f}{\partial y}(x_0,y_0) \\
+1 &amp; 0 &amp; \frac{\partial f}{\partial x}(x_0,y_0)
+\end{matrix}\right]\\
+&amp;\hskip-0.5in= f_x(x_0,y_0)\,\hi + f_y(x_0,y_0)\,\hj - \hk
+\end{align*}
+</div>
+<p data-braille="continuation">as is its length:</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\left|\left(\hj\ +\   \pdiff{f}{y}(x_0\,,\,y_0)\,\hk\right)\times
+\left(\hi\ +\   \pdiff{f}{x}(x_0\,,\,y_0)\,\hk\right)\right|\\
+&amp;\hskip1in= \sqrt{1 + f_x(x_0,y_0)^2 + f_y(x_0,y_0)^2}
+\end{align*}
+</div>
+<p data-braille="continuation">Throughout this computation, \(x_0\) and \(y_0\) were arbitrary. So we have found the area of each tiny piece of the surface \(S\text{.}\)</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-133"><div class="fn">As we mentioned above, the approximation below becomes exact when the limit \(\dee{x}
+,\dee{y}\rightarrow 0\) is taken in the definition of the integral. See §3.3.5 in the CLP-4 text.</div></div>
+<article class="fact theorem-like" id="eq_dSgraph"><h6 class="heading">
+<span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h6>
+<p id="p-3464">For the surface \(z=f(x,y)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}&amp;= \sqrt{1 + f_x(x,y)^2 + f_y(x,y)^2}\
+\dee{x}\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">Similarly, for the surface \(x=g(y,z)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}&amp;= \sqrt{1 + g_y(y,z)^2 + g_z(y,z)^2}\
+\dee{y}\dee{z}
+\end{align*}
+</div>
+<p data-braille="continuation">and for the surface \(y=h(x,z)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}&amp;= \sqrt{1 + h_x(x,z)^2 + h_z(x,z)^2}\
+\dee{x}\dee{z}
+\end{align*}
+</div></article><p id="p-3465">Consequently, we have</p>
+<article class="theorem theorem-like" id="thm_surface_area"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
+</h6>
+<ol id="p-3466" class="lower-alpha">
+<li id="li-1832">The area of the part of the surface \(z=f(x,y)\) with \((x,y)\) running over the region \(\cD\) in the \(xy\)-plane is<div class="displaymath">
+\begin{equation*}
+\dblInt_\cD \sqrt{1 + f_x(x,y)^2 + f_y(x,y)^2}\
+\dee{x}\dee{y}
+\end{equation*}
+</div>
+</li>
+<li id="li-1833">The area of the part of the surface \(x=g(y,z)\) with \((y,z)\) running over the region \(\cD\) in the \(yz\)-plane is<div class="displaymath">
+\begin{equation*}
+\dblInt_\cD \sqrt{1 + g_y(y,z)^2 + g_z(y,z)^2}\
+\dee{y}\dee{z}
+\end{equation*}
+</div>
+</li>
+<li id="li-1834">The area of the part of the surface \(y=h(x,z)\) with \((x,z)\) running over the region \(\cD\) in the \(xz\)-plane is<div class="displaymath">
+\begin{equation*}
+\dblInt_\cD \sqrt{1 + h_x(x,z)^2 + h_z(x,z)^2}\
+\dee{x}\dee{z}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="example example-like" id="eg_area_cone"><a data-knowl="" class="id-ref original" data-refid="hk-eg_area_cone"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Area of a cone.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_area_cone"><article class="example example-like"><p id="p-3467">As a first example, we compute the area of the part of the cone</p>
+<div class="displaymath">
+\begin{equation*}
+z=\sqrt{x^2+y^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">with \(0\le z\le a\) or, equivalently, with \(x^2+y^2\le a^2\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:40%;margin-right:40%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cone.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-3468">Note that \(z=\sqrt{x^2+y^2}\) is the side of the cone. It does not include the top.</p>
+<p id="p-3469">To find its area, we will apply <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a> to</p>
+<div class="displaymath">
+\begin{equation*}
+z=f(x,y) = \sqrt{x^2+y^2}
+\qquad\text{with $(x,y)$ running over } x^2+y^2\le a^2
+\end{equation*}
+</div>
+<p data-braille="continuation">That forces us to compute the first order partial derivatives</p>
+<div class="displaymath">
+\begin{align*}
+f_x(x,y) &amp; = \frac{x}{\sqrt{x^2+y^2}}\\
+f_y(x,y) &amp; = \frac{y}{\sqrt{x^2+y^2}}
+\end{align*}
+</div>
+<p data-braille="continuation">Substituting them into the first formula in <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a> yields</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}&amp;= \sqrt{1 + f_x(x,y)^2 + f_y(x,y)^2}\  \dee{x}\,\dee{y}\\
+&amp;=\sqrt{1+\Big(\frac{x}{\sqrt{x^2+y^2}}\Big)^2
++\Big(\frac{y}{\sqrt{x^2+y^2}}\Big)^2} \ \dee{x}\,\dee{y}\\
+&amp;=\sqrt{1+\frac{x^2+y^2}{x^2+y^2}} \ \dee{x}\,\dee{y}\\
+&amp;=\sqrt{2} \ \dee{x}\,\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\text{Area}
+&amp;= \dblInt_{x^2+y^2\le a^2} \sqrt{2}\ \dee{x}\,\dee{y}
+= \sqrt{2} \dblInt_{x^2+y^2\le a^2} \dee{x}\,\dee{y}
+= \sqrt{2} \pi a^2
+\end{align*}
+</div>
+<p data-braille="continuation">because \(\dblInt_{x^2+y^2\le a^2} \dee{x}\,\dee{y}\) is exactly the area of a circular disk of radius \(a\text{.}\)</p></article></div>
+<article class="example example-like" id="eg_area_cylinder"><a data-knowl="" class="id-ref original" data-refid="hk-eg_area_cylinder"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Area of a cylinder.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_area_cylinder"><article class="example example-like"><p id="p-3470">Let \(a,b \gt 0\text{.}\) Find the surface area of</p>
+<div class="displaymath">
+\begin{equation*}
+\cS = \Set{(x,y,z)}{x^2+z^2=a^2,\ 0\le y\le b}
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-487" id="solution-487"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-487"><div class="solution solution-like">
+<p id="p-3471">The intersection of \(x^2+z^2=a^2\) with any plane of constant \(y\) is the circle of radius \(a\) centred on \(x=z=0\text{.}\) So \(\cS\) is a bunch of circles stacked sideways. It is a cylinder on its side (with both ends open). By symmetry, the area of \(\cS\) is four times the area of the part of \(\cS\) that is in the first octanct, which is</p>
+<div class="displaymath">
+\begin{equation*}
+\cS_1 = \Big\{(x,y,z)\ \Big|\ z=f(x,y)=\sqrt{a^2-x^2},\ 0\le x\le a,\
+0\le y\le b\Big\}
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/cylinderF.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="figs/cylinderG.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p id="p-3472">Since</p>
+<div class="displaymath">
+\begin{equation*}
+f_x(x,y)=-\frac{x}{\sqrt{a^2-x^2}}\qquad
+f_y(x,y)=0
+\end{equation*}
+</div>
+<p data-braille="continuation">the first formula in <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a> yields</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}&amp;= \sqrt{1 + f_x(x,y)^2 + f_y(x,y)^2}\  \dee{x}\,\dee{y}\\
+&amp;=\sqrt{1+\Big(-\frac{x}{\sqrt{a^2-x^2}}\Big)^2} \ \dee{x}\,\dee{y}\\
+&amp;=\sqrt{1+\frac{x^2}{a^2-x^2}} \ \dee{x}\dee{y}\\
+&amp;=\frac{a}{\sqrt{a^2-x^2}} \ \dee{x}\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\text{Area}(\cS_1)
+&amp;= \int_0^a\dee{x}\int_0^b\dee{y}\ \frac{a}{\sqrt{a^2-x^2}}
+=ab \int_0^a\dee{x} \frac{1}{\sqrt{a^2-x^2}}
+\end{align*}
+</div>
+<p data-braille="continuation">The indefinite integral of \(\frac{1}{\sqrt{a^2-x^2}}\) is \(\arcsin\frac{x}{a}+C\text{.}\) (See the table of integrals in Appendix <a href="app_integral.html" class="internal" title="Section A.4: Table of Integrals">A.4</a>. Alternatively, use the trig substitution \(x=a\sin\theta\text{.}\)) So</p>
+<div class="displaymath">
+\begin{gather*}
+\text{Area}(\cS_1)
+= ab\left[\arcsin\frac{x}{a}\right]_0^a
+= ab\big[\arcsin 1 -\arcsin 0\big]
+=\frac{\pi}{2} ab
+\end{gather*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{gather*}
+\text{Area}(\cS)
+=4\text{Area}(\cS_1)
+=2\pi ab
+\end{gather*}
+</div>
+<p id="p-3473">We could have also come to this conclusion by using a little geometry, rather than using calculus. Cut open the cylinder by cutting along a line parallel to the \(y\)-axis, and then flatten out the cylinder. This gives a rectangle. One side of the rectangle is just a circle of radius \(a\text{,}\) straightened out. So the rectangle has sides of lengths \(2\pi a\) and \(b\) and has area \(2\pi ab\text{.}\)</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="eg_area_hemisphere"><a data-knowl="" class="id-ref original" data-refid="hk-eg_area_hemisphere"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Area of a hemisphere.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_area_hemisphere"><article class="example example-like"><p id="p-3474">This time we compute the surface area of the hemisphere</p>
+<div class="displaymath">
+\begin{equation*}
+x^2+y^2+z^2=a^2\qquad z\ge 0
+\end{equation*}
+</div>
+<p data-braille="continuation">(with \(a \gt 0\)). You probably know, from high school, that the answer is \(\frac{1}{2}\times 4\pi a^2=2\pi a^2\text{.}\) But you have probably not seen a derivation<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-134" id="fn-134"><sup> 3 </sup></a> of this answer. Note that, since \(x^2+y^2 = a^2-z^2\) on the hemisphere, the set of \((x,y)\)'s for which there is a \(z\) with \((x,y,z)\) on the  hemisphere is exactly \(\Set{(x,y)\in\bbbr^2}{x^2+y^2\le a^2}\text{.}\) So the hemisphere is</p>
+<div class="displaymath">
+\begin{align*}
+S &amp;= \Big\{(x,y,z)\ \Big|\ z=\sqrt{a^2-x^2-y^2},\ x^2+y^2\le a^2\Big\}
+\end{align*}
+</div>
+<p data-braille="continuation">We will compute the area of \(S\) by applying <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a> to</p>
+<div class="displaymath">
+\begin{equation*}
+z=f(x,y) = \sqrt{a^2-x^2-y^2}
+\qquad\text{with $(x,y)$ running over } x^2+y^2\le a^2
+\end{equation*}
+</div>
+<p data-braille="continuation">The first formula in <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a> yields</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S}&amp;= \sqrt{1 + f_x(x,y)^2 + f_y(x,y)^2}\  \dee{x}\dee{y}\\
+&amp;=\sqrt{1+\Big(\frac{-x}{\sqrt{a^2-x^2-y^2}}\Big)^2
++\Big(\frac{-y}{\sqrt{a^2-x^2-y^2}}\Big)^2} \ \dee{x}\dee{y}\\
+&amp;=\sqrt{1+\frac{x^2+y^2}{a^2-x^2-y^2}} \ \dee{x}\dee{y}\\
+&amp;=\sqrt{\frac{a^2}{a^2-x^2-y^2}} \ \dee{x}\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">So the area is \(\dblInt_{x^2+y^2\le a^2}\frac{a}{\sqrt{a^2-x^2-y^2}}
+\ \dee{x}\dee{y}
+\text{.}\) To evaluate this integral, we switch to polar coordinates, substituting \(x=r\cos\theta\text{,}\) \(y=r\sin\theta\text{.}\) This gives</p>
+<div class="displaymath">
+\begin{align*}
+\text{area}
+&amp;=\dblInt_{x^2+y^2\le a^2}\frac{a}{\sqrt{a^2-x^2-y^2}}
+\ \dee{x}\dee{y}
+=\int_0^a\dee{r}\ r\int_0^{2\pi}\dee{\theta}\  \frac{a}{\sqrt{a^2-r^2}}\\
+&amp;=2\pi a \int_0^a\dee{r}\ \frac{r}{\sqrt{a^2-r^2}}\\
+&amp;=2\pi a\int_{a^2}^0 \frac{-\dee{u}/2}{\sqrt{u}}
+\qquad\text{with } u=a^2-r^2,\ \dee{u} = -2r\,\dee{r}\\
+&amp;=2\pi a\Big[-\sqrt{u}\Big]_{a^2}^0\\
+&amp;=2\pi a^2
+\end{align*}
+</div>
+<p data-braille="continuation">as it should be.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-134"><div class="fn">There is a pun hidden here, because you can (with a little thought) also get the surface area by differentiating the volume with respect to the radius.</div></div></article></div>
+<article class="example example-like" id="eg_area_paraboloid"><a data-knowl="" class="id-ref original" data-refid="hk-eg_area_paraboloid"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.6</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_area_paraboloid"><article class="example example-like"><p id="p-3475">Find the surface area of the part of the paraboloid \(z=2-x^2-y^2\) lying above the \(xy\)-plane.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-488" id="solution-488"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-488"><div class="solution solution-like">
+<p id="p-3476">The equation of the surface is of the form \(z=f(x,y)\) with \(f(x,y)=2-x^2-y^2\text{.}\) So</p>
+<div class="displaymath">
+\begin{gather*}
+f_x(x,y) =-2x\qquad
+f_y(x,y) =-2y
+\end{gather*}
+</div>
+<p data-braille="continuation">and, by the first part of <a class="xref" data-knowl="./knowl/eq_dSgraph.html" title="Equation 3.4.1">3.4.1</a>,</p>
+<div class="displaymath">
+\begin{align*}
+\dee{S} &amp;= \sqrt{1 + f_x(x,y)^2 + f_y(x,y)^2}\  \dee{x}\dee{y}\\
+&amp;=\sqrt{1+4x^2+4y^2} \ \dee{x}\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">The point \((x,y,z)\text{,}\) with \(z=2-x^2-y^2\text{,}\) lies above the \(xy\)-plane if and only if \(z\ge 0\text{,}\) or, equivalently, \(2-x^2-y^2\ge 0\text{.}\) So the domain of integration is \(\Set{(x,y)}{x^2+y^2\le 2}\) and</p>
+<div class="displaymath">
+\begin{equation*}
+\text{Surface Area} = \dblInt_{x^2+y^2\le 2}\ \sqrt{1+4x^2+4y^2} \ \dee{x}\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">Switching to polar coordinates,</p>
+<div class="displaymath">
+\begin{align*}
+\text{Surface Area}
+&amp;=\int_0^{2\pi}\int_0^{\sqrt{2}}\sqrt{1+4r^2}\  r\,\dee{r}\, \dee{\theta}\\
+&amp;=2\pi\left[\frac{1}{12}{\big(1+4r^2\big)}^{3/2}\right]_0^{\sqrt{2}}
+=\frac{\pi}{6}[27-1]\\
+&amp;=\frac{13}{3}\pi
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<section class="exercises" id="exercises-21"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.4.1</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-60">
+<div class="introduction" id="introduction-78"><p id="p-3477"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-418"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-3478">Let \(0 \lt \theta \lt \frac{\pi}{2}\text{,}\) and \(a,b \gt 0\text{.}\) Denote by \(S\) the part of the surface \(z=y\,\tan\theta\) with \(0\le x\le a\text{,}\) \(0\le y\le b\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1835">Find the surface area of \(S\) without using any calculus.</li>
+<li id="li-1836">Find the surface area of \(S\) by using Theorem <a class="xref" data-knowl="./knowl/thm_surface_area.html" title="Theorem 3.4.2">3.4.2</a>.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-419"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-3483">Let \(c  \gt  0\text{.}\) Denote by \(S\) the part of the surface \(ax+by+cz=d\) with \((x,y)\) running over the region \(D\) in the \(xy\)-plane. Find the surface area of \(S\text{,}\) in terms of \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(d\) and \(A(D)\text{,}\) the area of the region \(D\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-420"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-3486">Let \(a,b,c  \gt  0\text{.}\) Denote by \(S\) the triangle with vertices \((a,0,0)\text{,}\) \((0,b,0)\) and \((0,0,c)\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1837">Find the surface area of \(S\) in three different ways, each using Theorem <a class="xref" data-knowl="./knowl/thm_surface_area.html" title="Theorem 3.4.2">3.4.2</a>.</li>
+<li id="li-1838">Denote by \(T_{xy}\) the projection of \(S\) onto the \(xy\)-plane. (It is the triangle with vertices \((0,0,0)\) \((a,0,0)\) and \((0,b,0)\text{.}\)) Similarly use \(T_{xz}\) to denote the projection of \(S\) onto the \(xz\)-plane and \(T_{yz}\) to denote the projection of \(S\) onto the \(yz\)-plane. Show that<div class="displaymath">
+\begin{equation*}
+\text{Area}(S) =\sqrt{\text{Area}(T_{xy})^2
++\text{Area}(T_{xz})^2
++\text{Area}(T_{yz})^2
+}
+\end{equation*}
+</div>
+</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-61">
+<div class="introduction" id="introduction-79"><p id="p-3495"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-421"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3496">Find the area of the part of the surface \(z=y^{3/2}\) that lies above \(0\le x,y\le 1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-422"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3499">Find the surface area of the part of the paraboloid \(z = a^2 - x^2 - y^2\) which lies above the \(xy\)--plane.</p></article><article class="exercise exercise-like" id="exercise-423"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3502">Find the area of the portion of the cone \(z^2 = x^2 + y^2\) lying between the planes \(z = 2\) and \(z = 3\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-424"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3506">Determine the surface area of the surface given by \(z = \frac{2}{3}\big(x^{3/2} + y^{3/2}\big)\text{,}\) over the square \(0 \le  x \le  1\text{,}\) \(0 \le  y \le  1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-425"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<ol id="p-3509" class="lower-alpha">
+<li id="li-1839">To find the surface area of the surface \(z = f (x,y)\) above the region \(D\text{,}\) we integrate \(\dblInt_D F(x,y)\ \dee{A}\text{.}\) What is \(F(x,y)\text{?}\)</li>
+<li id="li-1840">
+<p id="p-3510">Consider a “Death Star”,  a ball of radius \(2\) centred at the origin with another ball of radius \(2\) centred at \((0, 0, 2\sqrt{3})\) cut out of it. The diagram below shows the slice where \(y = 0\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/OE253_16D_2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<ol id="p-3511" class="lower-roman">
+<li id="li-1841">The Rebels want to paint part of the surface of Death Star hot pink; specifically, the concave part (indicated with a thick line in the diagram). To help them determine how much paint is needed, carefully fill in the missing parts of this integral:<div class="displaymath">
+\begin{equation*}
+\text{surface area} =
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\int_{\underline{\ \ \ \ }}^{\underline{\ \ \ \ }}
+\underline{\ \ \ \ \ \ \ \ \ \ }\ \dee{r}\,\dee{\theta}
+\end{equation*}
+</div>
+</li>
+<li id="li-1842">What is the total surface area of the Death Star?</li>
+</ol>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-426"><h6 class="heading">
+<span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3520">Find the area of the cone \(z^2=x^2+y^2\) between \(z=1\) and \(z=16\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-427"><h6 class="heading">
+<span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-3523">Find the surface area of that part of the hemisphere \(z=\sqrt{a^2-x^2-y^2}\) which lies within the cylinder \(\big(x-\frac{a}{2}\big)^2+y^2=\big(\frac{a}{2}\big)^2\text{.}\)</p></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:47:36+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="displaymath">
+\begin{align*}
+\text{area}
+&amp;=\dblInt_{x^2+y^2\le a^2}\frac{a}{\sqrt{a^2-x^2-y^2}}
+\ \dee{x}\dee{y}
+=\int_0^a\dee{r}\ r\int_0^{2\pi}\dee{\theta}\  \frac{a}{\sqrt{a^2-r^2}}\\
+&amp;=2\pi a \int_0^a\dee{r}\ \frac{r}{\sqrt{a^2-r^2}}\\
+&amp;=2\pi a\int_{a^2}^0 \frac{-\dee{u}/2}{\sqrt{u}}
+\qquad\text{with } u=a^2-r^2,\ \dee{u} = -2r\,\dee{r}\\
+&amp;=2\pi a\Big[-\sqrt{u}\Big]_{a^2}^0\\
+&amp;=2\pi a^2
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_surface_area.html#mjx-eqn-mrow-3656">in-context</a></span>
+</body>
+</html>

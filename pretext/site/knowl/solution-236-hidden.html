@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:44:52+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>We are going to need the first order derivatives of \(f(x,y)\) at \((x,y)=(-1,1)\text{.}\) So we find them first.</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+f_x(x,y)&amp;=\frac{2xy}{x^4+2y^2}-\frac{x^2y(4x^3)}{{(x^4+2y^2)}^2}\qquad &amp;
+f_x(-1,1)&amp;=-\frac{2}{3} +\frac{4}{3^2}=-\frac{2}{9}\\
+f_y(x,y)&amp;=\frac{x^2}{x^4+2y^2}-\frac{x^2y(4y)}{{(x^4+2y^2)}^2}\qquad &amp;
+f_y(-1,1)&amp;=\frac{1}{3} -\frac{4}{3^2}=-\frac{1}{9}
+\end{alignat*}
+</div>
+<p>The linear approximation to \(f(x,y)\) about \((-1,1)\) is</p>
+<div class="displaymath">
+\begin{align*}
+f(x,y)&amp;\approx f(-1,1) + f_x(-1,1)\,(x+1) + f_y(-1,1)\,(y-1)\\
+&amp; =\frac{1}{3} -\frac{2}{9}\,(x+1) -\frac{1}{9}\,(y-1)
+\end{align*}
+</div>
+<p data-braille="continuation">In particular</p>
+<div class="displaymath">
+\begin{gather*}
+f(-0.9,1.1)\approx \frac{1}{3} -\frac{2}{9}\,(0.1) -\frac{1}{9}\,(0.1)
+=\frac{27}{90}=0.3
+\end{gather*}
+</div>
+</div></body>
+</html>

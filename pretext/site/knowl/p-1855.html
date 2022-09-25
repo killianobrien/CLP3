@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:44:55+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>By definition, the differential at \(x=a\text{,}\) \(y=b\) is</p>
+<div class="displaymath">
+\begin{equation*}
+f_x(a,b)\,\dee{x} + f_y(a,b)\,\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">so we have to determine the partial derivatives \(f_x(a,b)\) and \(f_y(a,b)\text{.}\) We are told that</p>
+<div class="displaymath">
+\begin{equation*}
+e^{f(x,y)} + y\,f(x,y) = x + y
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(x\) and \(y\text{.}\) Differentiating this equation with respect to \(x\) and with respect to \(y\) gives, by the chain rule,</p>
+<div class="displaymath">
+\begin{gather*}
+e^{f(x,y)}f_x(x,y) + y\,f_x(x,y) = 1\\
+e^{f(x,y)}f_y(x,y) + f(x,y) +y\,f_y(x,y) = 1
+\end{gather*}
+</div>
+<p data-braille="continuation">Solving the first equation for \(f_x\) and the second for \(f_y\) gives</p>
+<div class="displaymath">
+\begin{align*}
+f_x(x,y) &amp;=  \frac{1}{e^{f(x,y)}+y}\\
+f_y(x,y) &amp;= \frac{1-f(x,y)}{e^{f(x,y)}+y}
+\end{align*}
+</div>
+<p data-braille="continuation">So the differential at \(x=a\text{,}\) \(y=b\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\dee{x}}{e^{f(a,b)}+b} + \frac{1-f(a,b)}{e^{f(a,b)}+b} \,\dee{y}
+\end{equation*}
+</div>
+<p data-braille="continuation">Since we can't solve explicitly for \(f(a,b)\) for general \(a\) and \(b\text{.}\) There's not much more that we can do with this.</p>
+<span class="incontext"><a href="sec_lin_approx.html#p-1855">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:48:12+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>Note that the paraboloids \(z=x^2+y^2\) and \(z=2-x^2-y^2\) intersect when \(z=x^2+y^2=1\text{.}\) We'll use cylindrical coordinates. Then \(x^2+y^2=r^2\text{,}\) \(\dee{V}=r \ \dee{r}\,\dee{\theta}\,\dee{z}\text{,}\) and</p>
+<div class="displaymath">
+\begin{equation*}
+E=\Set{(r\cos\theta\,,\,r\sin\theta\,,\,z))}{0\le r\le 1,\
+r^2\le z\le 2-r^2,\ 0\le\theta\le 2\pi}
+\end{equation*}
+</div>
+<p data-braille="continuation">so that</p>
+<div class="displaymath">
+\begin{align*}
+\tripInt_E f(x,y,z)\ \dee{V}
+&amp;=\int_0^1\dee{r}\int_{r^2}^{2-r^2}\dee{z}\int_0^{2\pi}\dee{\theta}\
+r\ \overbrace{r^3}^{f}\\
+&amp;=2\pi \int_0^1\dee{r}\ r^4\big(2-r^2-r^2\big)\\
+&amp;=2\pi \left[2\frac{1^5}{5}-2\frac{1^7}{7}\right]\\
+&amp;=\frac{8\pi}{35}
+\end{align*}
+</div>
+</div></body>
+</html>

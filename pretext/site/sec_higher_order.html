@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:41:09+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Higher Order Derivatives</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel} \newcommand{\dee}[1]{\mathrm{d}#1}
+ \newcommand{\half}{ \frac{1}{2} }
+ \newcommand{\veps}{\varepsilon}
+ \newcommand{\ds}{\displaystyle}
+ \newcommand{\ts}{\textstyle}
+ \newcommand{\es}{ {\varnothing}}
+ \newcommand{\st}{ {\mbox{ s.t. }} }
+ \newcommand{\pow}[1]{ \mathcal{P}\left(#1\right) }
+ \newcommand{\set}[1]{ \left\{#1\right\} }
+ \newcommand{\lin}{{\text{LIN}}}
+ \newcommand{\quot}{{\text{QR}}}
+ \newcommand{\simp}{{\text{SMP}}}
+ \newcommand{\diff}[2]{ \frac{\mathrm{d}#1}{\mathrm{d}#2}}
+ \newcommand{\pdiff}[2]{ \frac{\partial #1}{\partial #2}}
+ \newcommand{\bdiff}[2]{ \frac{\mathrm{d}}{\mathrm{d}#2} \left( #1 \right)}
+ \newcommand{\ddiff}[3]{ \frac{\mathrm{d}^#1#2}{\mathrm{d}{#3}^#1}}
+ \newcommand{\difftwo}[2]{ \frac{\mathrm{d^2}#1}{\mathrm{d}{#2}^2}}
+
+ \newcommand{\eqf}[1]{{\buildrel \rm #1 \over =}}
+
+ \renewcommand{\neg}{ {\sim} }
+ \newcommand{\limp}{ {\;\Rightarrow\;} }
+ \newcommand{\nimp}{ {\;\not\Rightarrow\;} }
+ \newcommand{\liff}{ {\;\Leftrightarrow\;} }
+ \newcommand{\niff}{ {\;\not\Leftrightarrow\;} }
+ \newcommand{\De}{\Delta}
+ \newcommand{\bbbn}{\mathbb{N}}
+ \newcommand{\bbbr}{\mathbb{R}}
+ \newcommand{\bbbp}{\mathbb{P}}
+ \newcommand{\cD}{\mathcal{D}}
+ \newcommand{\cI}{\mathcal{I}}
+ \newcommand{\Si}{\Sigma}
+
+ \newcommand{\arccsc}{\mathop{\mathrm{arccsc}}}
+ \newcommand{\arcsec}{\mathop{\mathrm{arcsec}}}
+ \newcommand{\arccot}{\mathop{\mathrm{arccot}}}
+ \newcommand{\erf}{\mathop{\mathrm{erf}}}
+ \newcommand{\smsum}{\mathop{{\ts \sum}}}
+ \newcommand{\atp}[2]{ \genfrac{}{}{0in}{}{#1}{#2} }
+
+ \newcommand{\ave}{\mathrm{ave}}
+ \newcommand{\llt}{\left \lt }
+ \newcommand{\rgt}{\right \gt }
+
+
+ \newcommand{\vd}{\mathbf{d}}
+ \newcommand{\he}{\mathbf{e}}
+ \newcommand{\vg}{\mathbf{g}}
+ \newcommand{\vt}{\mathbf{t}}
+ \newcommand{\vw}{\mathbf{w}}
+ \def\eqover#1{\ {\buildrel #1 \over =}\ }
+ \newcommand{\impliesover}[1]{ {\buildrel #1 \over\implies} }
+
+
+
+ \newcommand{\vr}{\mathbf{r}}
+ \newcommand{\vR}{\mathbf{R}}
+ \newcommand{\vs}{\mathbf{s}}
+ \newcommand{\vv}{\mathbf{v}}
+ \newcommand{\va}{\mathbf{a}}
+ \newcommand{\vb}{\mathbf{b}}
+ \newcommand{\vc}{\mathbf{c}}
+ \newcommand{\ve}{\mathbf{e}}
+ \newcommand{\vC}{\mathbf{C}}
+ \newcommand{\vp}{\mathbf{p}}
+ \newcommand{\vq}{\mathbf{q}}
+ \newcommand{\vn}{\mathbf{n}}
+ \newcommand{\vu}{\mathbf{u}}
+ 
+ \newcommand{\vV}{\mathbf{V}}
+ \newcommand{\vx}{\mathbf{x}}
+ \newcommand{\vX}{\mathbf{X}}
+ \newcommand{\vy}{\mathbf{y}}
+ \newcommand{\vz}{\mathbf{z}}
+ \newcommand{\vF}{\mathbf{F}}
+ \newcommand{\vG}{\mathbf{G}}
+ \newcommand{\vH}{\mathbf{H}}
+ \newcommand{\vT}{\mathbf{T}}
+ \newcommand{\vN}{\mathbf{N}}
+ \newcommand{\vL}{\mathbf{L}}
+ \newcommand{\vA}{\mathbf{A}}
+ \newcommand{\vB}{\mathbf{B}}
+ \newcommand{\vD}{\mathbf{D}}
+ \newcommand{\vE}{\mathbf{E}}
+ \newcommand{\vJ}{\mathbf{J}}
+ \newcommand{\vZero}{\mathbf{0}}
+ \newcommand{\vPhi}{\mathbf{\Phi}}
+ \newcommand{\vOmega}{\mathbf{\Omega}}
+ \newcommand{\vTheta}{\mathbf{\Theta}}
+ \newcommand{\cA}{\mathcal{A}}
+ \newcommand{\cB}{\mathcal{B}}
+ \newcommand{\cL}{\mathcal{L}}
+ \newcommand{\cM}{\mathcal{M}}
+ \newcommand{\cO}{\mathcal{O}}
+ \newcommand{\cP}{\mathcal{P}}
+ \newcommand{\cR}{\mathcal{R}}
+ \newcommand{\cS}{\mathcal{S}}
+ \newcommand{\cT}{\mathcal{T}}
+ \newcommand{\cU}{\mathcal{U}}
+ \newcommand{\cV}{\mathcal{V}}
+ \newcommand{\cW}{\mathcal{W}}
+ \newcommand{\cX}{\mathcal{X}}
+
+ 
+ 
+ \newcommand{\hi}{\hat{\pmb{\imath}}}
+ \newcommand{\hj}{\hat{\pmb{\jmath}}}
+ \newcommand{\hk}{\hat{\mathbf{k}}}
+ \newcommand{\hn}{\hat{\mathbf{n}}}
+ \newcommand{\hr}{\hat{\mathbf{r}}}
+ \newcommand{\hvt}{\hat{\mathbf{t}}}
+ \newcommand{\hN}{\hat{\mathbf{N}}}
+ \newcommand{\vth}{{\pmb{\theta}}}
+ \newcommand{\vTh}{{\pmb{\Theta}}}
+ 
+ \newcommand{\vnabla}{   { \mathchoice{\pmb{\nabla}}
+                             {\pmb{\nabla}}
+                             {\pmb{\scriptstyle\nabla}}
+                             {\pmb{\scriptscriptstyle\nabla}} }   }
+ \newcommand{\ha}[1]{\mathbf{\hat e}^{(#1)}}
+
+ \newcommand{\bbbc}{\mathbb{C}}
+
+ \newcommand{\Om}{\Omega}
+ \newcommand{\om}{\omega}
+ \newcommand{\vOm}{\pmb{\Omega}}
+ \newcommand{\svOm}{\pmb{\scriptsize\Omega}}
+ \newcommand{\al}{\alpha}
+ \newcommand{\be}{\beta}
+ \newcommand{\de}{\delta}
+ \newcommand{\ga}{\gamma}
+ \newcommand{\ka}{\kappa}
+ \newcommand{\la}{\lambda}
+
+ \newcommand{\cC}{\mathcal{C}}
+ \newcommand{\bbbone}{\mathbb{1}}
+
+ \DeclareMathOperator{\sgn}{sgn}
+ \def\tr{\mathop{\rm tr}}
+ \newcommand{\Atop}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+
+ \newcommand{\dblInt}{\iint}
+ \newcommand{\tripInt}{\iiint}
+
+ \newcommand{\Set}[2]{\big\{ \ #1\ \big|\ #2\ \big\}}
+ \newcommand{\rhof}{{\rho_{\!{\scriptscriptstyle f}}}}
+ \newcommand{\rhob}{{\rho_{{\scriptscriptstyle b}}}}
+
+
+ \newcommand{\YEaxis}[2]{\draw[help lines] (-#1,0)--(#1,0) node[right]{$x$};\draw[help lines] (0,-#2)--(0,#2) node[above]{$y$};}
+
+\newcommand{\YEaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$x$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YEtaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$};\draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+\newcommand{\YEtaaxis}[4]{\draw[help lines] (-#1,0)--(#2,0) node[right]{$t$}; \draw[help lines] (0,-#3)--(0,#4) node[above]{$y$};}
+
+\newcommand{\YExcoord}[2]{\draw (#1,.2)--(#1,-.2) node[below]{$#2$};}
+\newcommand{\YEycoord}[2]{\draw (.2,#1)--(-.2,#1) node[left]{$#2$};}
+\newcommand{\YEnxcoord}[2]{\draw (#1,-.2)--(#1,.2) node[above]{$#2$};}
+\newcommand{\YEnycoord}[2]{\draw (-.2,#1)--(.2,#1) node[right]{$#2$};}
+
+\newcommand{\YEstickfig}[3]{
+\draw (#1,#2) arc(-90:270:2mm);
+\draw (#1,#2)--(#1,#2-.5) (#1-.25,#2-.75)--(#1,#2-.5)--(#1+.25,#2-.75) (#1-.2,#2-.2)--(#1+.2,#2-.2);}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="clp_3_mc.html"><span class="title">CLP-3 Multivariable Calculus</span></a></h1>
+<p class="byline">Joel Feldman, Andrew Rechnitzer, Elyse Yeager</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_partials.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_chain_rule.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_partials.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_partials.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_chain_rule.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+<li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_geometry.html" data-scroll="chap_geometry"><span class="codenumber">1</span> <span class="title">Vectors and Geometry in Two and Three Dimensions</span></a><ul>
+<li><a href="sec-points.html" data-scroll="sec-points">Points</a></li>
+<li><a href="sec_vectors.html" data-scroll="sec_vectors">Vectors</a></li>
+<li><a href="sec_lines_2d.html" data-scroll="sec_lines_2d">Equations of Lines in 2d</a></li>
+<li><a href="sec_planes_3d.html" data-scroll="sec_planes_3d">Equations of Planes in 3d</a></li>
+<li><a href="sec_lines_3d.html" data-scroll="sec_lines_3d">Equations of Lines in 3d</a></li>
+<li><a href="sec_curves.html" data-scroll="sec_curves">Curves and their Tangent Vectors</a></li>
+<li><a href="sec_sketching.html" data-scroll="sec_sketching">Sketching Surfaces in 3d</a></li>
+<li><a href="sec_cylinders.html" data-scroll="sec_cylinders">Cylinders</a></li>
+<li><a href="sec_quadrics.html" data-scroll="sec_quadrics">Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_partials.html" data-scroll="chap_partials"><span class="codenumber">2</span> <span class="title">Partial Derivatives</span></a><ul>
+<li><a href="sec_limits.html" data-scroll="sec_limits">Limits</a></li>
+<li><a href="sec_partials.html" data-scroll="sec_partials">Partial Derivatives</a></li>
+<li><a href="sec_higher_order.html" data-scroll="sec_higher_order" class="active">Higher Order Derivatives</a></li>
+<li><a href="sec_chain_rule.html" data-scroll="sec_chain_rule">The Chain Rule</a></li>
+<li><a href="sec_tangent_planes.html" data-scroll="sec_tangent_planes">Tangent Planes and Normal Lines</a></li>
+<li><a href="sec_lin_approx.html" data-scroll="sec_lin_approx">Linear Approximations and Error</a></li>
+<li><a href="sec_directional_derivatives.html" data-scroll="sec_directional_derivatives">Directional Derivatives and the Gradient</a></li>
+<li><a href="sec_pde.html" data-scroll="sec_pde">A First Look at Partial Differential Equations</a></li>
+<li><a href="sec_max.html" data-scroll="sec_max">Maximum and Minimum Values</a></li>
+<li><a href="sec_Lagrange.html" data-scroll="sec_Lagrange">Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap_integrals.html" data-scroll="chap_integrals"><span class="codenumber">3</span> <span class="title">Multiple Integrals</span></a><ul>
+<li><a href="sec_2d_integrals.html" data-scroll="sec_2d_integrals">Double Integrals</a></li>
+<li><a href="sec_polars.html" data-scroll="sec_polars">Double Integrals in Polar Coordinates</a></li>
+<li><a href="sec_int_2d_applications.html" data-scroll="sec_int_2d_applications">Applications of Double Integrals</a></li>
+<li><a href="sec_surface_area.html" data-scroll="sec_surface_area">Surface Area</a></li>
+<li><a href="sec_3d_integrals.html" data-scroll="sec_3d_integrals">Triple Integrals</a></li>
+<li><a href="sec_cylindrical.html" data-scroll="sec_cylindrical">Triple Integrals in Cylindrical Coordinates</a></li>
+<li><a href="sec_spherical.html" data-scroll="sec_spherical">Triple Integrals in Spherical Coordinates</a></li>
+<li><a href="sec_Jacobian.html" data-scroll="sec_Jacobian">Optional— Integrals in General Coordinates</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
+<li><a href="app_trig.html" data-scroll="app_trig">Trigonometry</a></li>
+<li><a href="app_power_log.html" data-scroll="app_power_log">Powers and Logarithms</a></li>
+<li><a href="app_deriv.html" data-scroll="app_deriv">Table of Derivatives</a></li>
+<li><a href="app_integral.html" data-scroll="app_integral">Table of Integrals</a></li>
+<li><a href="app_taylor.html" data-scroll="app_taylor">Table of Taylor Expansions</a></li>
+<li><a href="ap_3dcoord.html" data-scroll="ap_3dcoord">3d Coordinate Systems</a></li>
+<li><a href="ap_ISO.html" data-scroll="ap_ISO">ISO Coordinate System Notation</a></li>
+<li><a href="app_quadric.html" data-scroll="app_quadric">Conic Sections and Quadric Surfaces</a></li>
+</ul>
+</li>
+<li class="link"><a href="app_hint.html" data-scroll="app_hint"><span class="codenumber">B</span> <span class="title">Hints for Exercises</span></a></li>
+<li class="link"><a href="app_answ.html" data-scroll="app_answ"><span class="codenumber">C</span> <span class="title">Answers to Exercises</span></a></li>
+<li class="link"><a href="app_soln.html" data-scroll="app_soln"><span class="codenumber">D</span> <span class="title">Solutions to Exercises</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_higher_order"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Higher Order Derivatives</span>
+</h2>
+<section class="introduction" id="introduction-34"><p id="p-1338">You have already observed, in your first Calculus course, that if \(f(x)\) is a function of \(x\text{,}\) then its derivative, \(\diff{f}{x}(x)\text{,}\) is also a function of \(x\text{,}\) and can be differentiated to give the second order derivative \(\difftwo{f}{x}(x)\text{,}\) which can in turn be differentiated yet again to give the third order derivative, \(f^{(3)}(x)\text{,}\) and so on.</p>
+<p id="p-1339">We can do the same for functions of more than one variable. If \(f(x,y)\) is a function of \(x\) and \(y\text{,}\) then both of its partial derivatives, \(\pdiff{f}{x}(x,y)\) and \(\pdiff{f}{y}(x,y)\) are also functions of \(x\) and \(y\text{.}\) They can both be differentiated with respect to \(x\) and they can both be differentiated with respect to \(y\text{.}\) So there are four possible second order derivatives. Here they are, together with various alternate notations.</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+\pdiff{}{x}\left(\pdiff{f}{x}\right)(x,y)
+&amp;=\frac{\partial^2 f}{\partial x^2}(x,y) &amp;= f_{xx}(x,y)\\
+\pdiff{}{y}\left(\pdiff{f}{x}\right)(x,y)
+&amp;=\frac{\partial^2\ f}{\partial y\partial x}(x,y) &amp;= f_{xy}(x,y)\\
+\pdiff{}{x}\left(\pdiff{f}{y}\right)(x,y)
+&amp;=\frac{\partial^2\ f}{\partial x\partial y}(x,y) &amp;= f_{yx}(x,y)\\
+\pdiff{}{y}\left(\pdiff{f}{y}\right)(x,y)
+&amp;=\frac{\partial^2 f}{\partial y^2}(x,y) &amp;= f_{yy}(x,y)
+\end{alignat*}
+</div>
+<p data-braille="continuation">In \(\frac{\partial^2\ f}{\partial y\,\partial x}
+=\frac{\partial^2}{\partial y\,\partial x}f\text{,}\) the derivative closest to \(f\text{,}\) in this case \(\pdiff{}{x}\text{,}\) is applied first.</p>
+<p id="p-1340">In \(f_{xy}\text{,}\) the derivative with respect to the variable closest to \(f\text{,}\) in this case \(x\text{,}\) is applied first.</p>
+<article class="example example-like" id="eg_higher_order_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_higher_order_A"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_A"><article class="example example-like"><p id="p-1341">Let \(f(x,y) = e^{my}\cos(nx)\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+f_x &amp;=  -n e^{my}\sin(nx) &amp;
+f_y &amp;=   m e^{my}\cos(nx)\\
+f_{xx}  &amp;=   -n^2 e^{my}\cos(nx) &amp;
+f_{yx} &amp;=   -m n e^{my}\sin(nx)\\
+f_{xy}  &amp;=   -m n e^{my}\sin(nx) &amp;
+f_{yy} &amp;=   m^2 e^{my}\cos(nx)
+\end{align*}
+</div></article></div>
+<article class="example example-like" id="eg_higher_order_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_higher_order_B"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_B"><article class="example example-like"><p id="p-1342">Let \(f(x,y) = e^{\al x+\be y}\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+f_x &amp;=  \al e^{\al x+\be y} &amp;
+f_y &amp;=  \be e^{\al x+\be y}\\
+f_{xx}  &amp;= \al^2  e^{\al x+\be y} &amp;
+f_{yx} &amp;=   \be \al e^{\al x+\be y}\\
+f_{xy}  &amp;=  \al \be  e^{\al x+\be y} &amp;
+f_{yy} &amp;=  \be^2 e^{\al x+\be y}
+\end{align*}
+</div>
+<p data-braille="continuation">More generally, for any integers \(m,n\ge 0\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\partial^{m+n} f}{\partial x^m\, \partial y^n}
+= \al^m\be^n e^{\al x+\be y}
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="eg_higher_order_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_higher_order_C"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_C"><article class="example example-like"><p id="p-1343">If \(f(x_1,x_2,x_3,x_4) = x_1^4\, x_2^3\, x_3^2\, x_4\text{,}\) then</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\partial^4\  f}
+{\partial x_1\, \partial x_2\,\partial x_3\,\partial x_4}
+&amp;=  \frac{\partial^3 \ }
+{\partial x_1\, \partial x_2\,\partial x_3}
+\left( x_1^4\, x_2^3\, x_3^2\right)\\
+&amp;=  \frac{\partial^2 \ }
+{\partial x_1\, \partial x_2}
+\left( 2\ x_1^4\, x_2^3\, x_3\right)\\
+&amp;=  \pdiff{}{x_1}
+\left( 6\ x_1^4\, x_2^2\, x_3\right)\\
+&amp;=   24\ x_1^3\, x_2^2\, x_3
+\end{align*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\partial^4\ f}
+{\partial x_4\, \partial x_3\,\partial x_2\,\partial x_1}
+&amp;=  \frac{\partial^3 \ }
+{\partial x_4\, \partial x_3\,\partial x_2}
+\left( 4 x_1^3\, x_2^3\, x_3^2\,x_4\right)\\
+&amp;=  \frac{\partial^2 \ }
+{\partial x_4\, \partial x_3}
+\left( 12\ x_1^3\, x_2^2\, x_3^2\,x_4\right)\\
+&amp;=  \pdiff{}{x_4}
+\left( 24\ x_1^3\, x_2^2\, x_3\,x_4\right)\\
+&amp;=   24\ x_1^3\, x_2^2\, x_3
+\end{align*}
+</div></article></div>
+<p id="p-1344">Notice that in Example <a class="xref" data-knowl="./knowl/eg_higher_order_A.html" title="Example 2.3.1">2.3.1</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+f_{xy}= f_{yx} = -m n e^{my}\sin(nx)
+\end{equation*}
+</div>
+<p data-braille="continuation">and in Example <a class="xref" data-knowl="./knowl/eg_higher_order_B.html" title="Example 2.3.2">2.3.2</a></p>
+<div class="displaymath">
+\begin{equation*}
+f_{xy}= f_{yx} = \al \be  e^{\al x+\be y}
+\end{equation*}
+</div>
+<p data-braille="continuation">and in Example <a class="xref" data-knowl="./knowl/eg_higher_order_C.html" title="Example 2.3.3">2.3.3</a></p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\partial^4\  f}
+{\partial x_1\, \partial x_2\,\partial x_3\,\partial x_4}
+= \frac{\partial^4\ f}
+{\partial x_4\, \partial x_3\,\partial x_2\,\partial x_1}
+= 24\ x_1^3\, x_2^2\, x_3
+\end{equation*}
+</div>
+<p data-braille="continuation">In all of these examples, it didn't matter what order we took the derivatives in. The following theorem<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-46" id="fn-46"><sup> 1 </sup></a> shows that this was no accident.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-46"><div class="fn">The history of this important theorem is pretty convoluted. See “A note on the history of mixed partial derivatives” by Thomas James Higgins which was published in Scripta Mathematica <em class="alert">7</em> (1940), 59-62. The Theorem is named for Alexis Clairaut (1713--1765), a French mathematician, astronomer, and geophysicist, and Hermann Schwarz (1843--1921), a German mathematician.</div></div>
+<article class="theorem theorem-like" id="thm_mixed_partials"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Clairaut's Theorem or Schwarz's Theorem.</span>
+</h6>
+<p id="p-1345">If the partial derivatives \(\frac{\partial^2  f }{\partial x\partial y}\) and \(\frac{\partial^2 f}{\partial y\partial x}\) exist and are continuous at \((x_0,y_0)\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\partial^2 f}{\partial x\partial y}(x_0,y_0)
+=\frac{\partial^2 f}{\partial y\partial x}(x_0,y_0)
+\end{equation*}
+</div></article></section><section class="subsection" id="subsec_mixed_partial_proof"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.3.1</span> <span class="title">Optional — The Proof of Theorem 2.3.4</span>
+</h3>
+<section class="subsubsection" id="subsubsection-1"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.3.1.1</span> <span class="title">Outline</span>
+</h4>
+<p id="p-1346">Here is an outline of the proof of Theorem <a class="xref" data-knowl="./knowl/thm_mixed_partials.html" title="Theorem 2.3.4: Clairaut's Theorem or Schwarz's Theorem">2.3.4</a>. The (numbered) details are in the subsection below. Fix real numbers \(x_0\) and \(y_0\) and define</p>
+<div class="displaymath">
+\begin{equation*}
+F(h,k)
+=\frac{1}{hk}\big[f(x_0+h,y_0+k)-f(x_0,y_0+k)-f(x_0+h,y_0)+f(x_0,y_0)\big]
+\end{equation*}
+</div>
+<p data-braille="continuation">We define \(F(h,k)\) in this way because both partial derivatives \(\frac{\partial^2 f}{\partial x\partial y}(x_0,y_0)\) and \(\frac{\partial^2 f}{\partial y\partial x}(x_0,y_0)\) are limits of \(F(h,k)\) as \(h,k\rightarrow 0\text{.}\) Precisely, we show in item (1) in the details below that</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{}{y}
+\pdiff{f}{x}(x_0,y_0)
+&amp;= \lim_{k\rightarrow 0}\lim_{h\rightarrow 0}F(h,k)\\
+\pdiff{}{x}
+\pdiff{f}{y}(x_0,y_0)
+&amp;= \lim_{h\rightarrow 0}\lim_{k\rightarrow 0}F(h,k)
+\end{align*}
+</div>
+<p data-braille="continuation">Note that the two right hand sides here are identical except for the order in which the limits are taken.</p>
+<p id="p-1347">Now, by the mean value theorem (four times),</p>
+<div class="displaymath">
+\begin{align*}
+F(h,k)\ &amp;\eqf{(2)}\ \frac{1}{h}
+\left[\pdiff{f}{y}(x_0+h,y_0+\theta_1k)
+-\pdiff{f}{y}(x_0,y_0+\theta_1k)\right]\cr
+\ &amp;\eqf{(3)}\ \pdiff{}{x}
+\pdiff{f}{y}(x_0+\theta_2 h,y_0+\theta_1k)\cr
+F(h,k)\ &amp;\eqf{(4)}\ \frac{1}{k}
+\left[\pdiff{f}{x}(x_0+\theta_3h,y_0+k)
+-\pdiff{f}{x}(x_0+\theta_3h,y_0)\right]\cr
+\ &amp;\eqf{(5)}\ \pdiff{}{y}
+\pdiff{f}{x}(x_0+\theta_3 h,y_0+\theta_4k)\cr
+\end{align*}
+</div>
+<p data-braille="continuation">for some numbers \(0 \lt \theta_1,\theta_2,\theta_3,\theta_4 \lt 1\text{.}\) All of the numbers \(\theta_1,\theta_2,\theta_3,\theta_4\) depend on \(x_0,y_0,h,k\text{.}\) Hence</p>
+<div class="displaymath">
+\begin{equation*}
+\pdiff{}{x}
+\pdiff{f}{y}(x_0+\theta_2 h,y_0+\theta_1k)
+=\pdiff{}{y}
+\pdiff{f}{x}(x_0+\theta_3 h,y_0+\theta_4k)
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(h\) and \(k\text{.}\) Taking the limit \((h,k)\rightarrow(0,0)\) and using the assumed continuity of both partial derivatives at \((x_0,y_0)\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{(h,k)\rightarrow (0,0)} F(h,k)
+=\pdiff{}{x}
+\pdiff{f}{y}(x_0,y_0)
+=\pdiff{}{y}
+\pdiff{f}{x}(x_0,y_0)
+\end{equation*}
+</div>
+<p data-braille="continuation">as desired. To complete the proof we just have to justify the details (1), (2), (3), (4) and (5).</p></section><section class="subsubsection" id="subsubsection-2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.3.1.2</span> <span class="title">The Details</span>
+</h4>
+<ol id="p-1348" class="decimal">
+<li id="li-708">By definition,<div class="displaymath">
+\begin{align*}
+&amp;\pdiff{}{y}
+\pdiff{f}{x}(x_0,y_0)
+=\lim_{k\rightarrow 0}\frac{1}{k}
+\left[\pdiff{f}{x}(x_0,y_0+k)
+-\pdiff{f}{x}(x_0,y_0)\right]\cr
+&amp;=\lim_{k\rightarrow 0}\frac{1}{k}
+\left[\lim_{h\rightarrow 0}\frac{f(x_0+h,y_0+k)-f(x_0,y_0+k)}{h}
+-\lim_{h\rightarrow 0}\frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}\right]\cr
+&amp;=\lim_{k\rightarrow 0}\lim_{h\rightarrow 0}
+\frac{f(x_0+h,y_0+k)-f(x_0,y_0+k)-f(x_0+h,y_0)+f(x_0,y_0)}{hk}\cr
+&amp;= \lim_{k\rightarrow 0}\lim_{h\rightarrow 0}F(h,k)
+\end{align*}
+</div>Similarly,<div class="displaymath">
+\begin{align*}
+&amp;\pdiff{}{x}
+\pdiff{f}{y}(x_0,y_0)
+=\lim_{h\rightarrow 0}\frac{1}{h}
+\left[\pdiff{f}{y}(x_0+h,y_0)
+-\pdiff{f}{y}(x_0,y_0)\right]\cr
+&amp;=\lim_{h\rightarrow 0}\frac{1}{h}
+\left[\lim_{k\rightarrow 0}\frac{f(x_0+h,y_0+k)-f(x_0+h,y_0)}{k}
+-\lim_{k\rightarrow 0}\frac{f(x_0,y_0+k)-f(x_0,y_0)}{k}\right]\cr
+&amp;=\lim_{h\rightarrow 0}\lim_{k\rightarrow 0}
+\frac{f(x_0+h,y_0+k)-f(x_0+h,y_0)-f(x_0,y_0+k)+f(x_0,y_0)}{hk}\cr
+&amp;= \lim_{h\rightarrow 0}\lim_{k\rightarrow 0}F(h,k)
+\end{align*}
+</div>
+</li>
+<li id="li-709">
+<p id="p-1349">The mean value theorem (Theorem 2.13.4 in the CLP-1 text) says that, for any differentiable function \(\varphi(x)\text{,}\)</p>
+<ul class="disc"><li id="li-710">the slope of the line joining the points \(\big(x_0,\varphi(x_0)\big)\) and \(\big(x_0+k,\varphi(x_0+k)\big)\) on the graph of \(\varphi\)</li></ul>
+<p data-braille="continuation">is the same as</p>
+<ul class="disc"><li id="li-711">the slope of the tangent to the graph at some point between \(x_0\) and \(x_0+k\text{.}\)</li></ul>
+<p data-braille="continuation">That is, there is some \(0 \lt \theta_1 \lt 1\) such that</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\varphi(x_0+k)-\varphi(x_0)}{k}=\frac{d\varphi}{dx}(x_0+\theta_1 k)
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/mvt.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1350">Applying this with \(x\) replaced by \(y\) and \(\varphi\) replaced by \(G(y)=f(x_0+h,y)-f(x_0,y)\) gives</p>
+<div class="displaymath">
+\begin{align*}
+\frac{G(y_0+k)-G(y_0)}{k}
+&amp;=\diff{G}{y}(y_0+\theta_1 k)
+\qquad\text{for some } 0 \lt \theta_1 \lt 1\\
+&amp;=\pdiff{f}{y}(x_0+h,y_0+\theta_1k)
+-\pdiff{f}{y}(x_0,y_0+\theta_1k)
+\end{align*}
+</div>
+<p data-braille="continuation">Hence, for some \(0 \lt \theta_1 \lt 1\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+F(h,k)\ &amp;=\ \frac{1}{h}
+\left[\frac{G(y_0+k)-G(y_0)}{k}\right]\\
+&amp;=\frac{1}{h}
+\left[\pdiff{f}{y}(x_0+h,y_0+\theta_1k)
+-\pdiff{f}{y}(x_0,y_0+\theta_1k)\right]
+\end{align*}
+</div>
+</li>
+<li id="li-712">Define \(H(x)=\pdiff{f}{y}(x,y_0+\theta_1k)\text{.}\) By the mean value theorem,<div class="displaymath">
+\begin{align*}
+F(h,k)\ &amp;=\ \frac{1}{h}\left[H(x_0+h)-H(x_0)\right]\\
+&amp;=\ \diff{H}{x}(x_0+\theta_2 h)
+\qquad\text{for some } 0 \lt \theta_2 \lt 1\\
+&amp;=\pdiff{}{x}
+\pdiff{f}{y}(x_0+\theta_2 h,y_0+\theta_1k)
+\end{align*}
+</div>
+</li>
+<li id="li-713">Define \(A(x)=f(x,y_0+k)-f(x,y_0)\text{.}\) By the mean value theorem,<div class="displaymath">
+\begin{align*}
+F(h,k)\ &amp;=\ \frac{1}{k} \left[\frac{A(x_0+h)-A(x_0)}{h}\right]\\
+&amp;=\ \frac{1}{k}\diff{A}{x}(x_0+\theta_3 h)
+\qquad\text{for some } 0 \lt \theta_3 \lt 1\\
+&amp;=\frac{1}{k}
+\left[\pdiff{f}{x}(x_0+\theta_3h,y_0+k)
+-\pdiff{f}{x}(x_0+\theta_3h,y_0)\right]
+\end{align*}
+</div>
+</li>
+<li id="li-714">Define \(B(y)=\pdiff{f}{x}(x_0+\theta_3h,y)\text{.}\) By the mean value theorem<div class="displaymath">
+\begin{align*}
+F(h,k)\ &amp;=\ \frac{1}{k}\left[B(y_0+k)-B(y_0)\right]\\
+&amp;=\ \diff{B}{y}(y_0+\theta_4 k)
+\qquad\text{for some } 0 \lt \theta_4 \lt 1\\
+&amp;=\pdiff{}{y}
+\pdiff{f}{x}(x_0+\theta_3 h,y_0+\theta_4k)
+\end{align*}
+</div>
+</li>
+</ol>
+<p data-braille="continuation">This completes the proof of Theorem <a class="xref" data-knowl="./knowl/thm_mixed_partials.html" title="Theorem 2.3.4: Clairaut's Theorem or Schwarz's Theorem">2.3.4</a>.</p></section></section><section class="subsection" id="subsec_mixed_partials_counterexample"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.3.2</span> <span class="title">Optional — An Example of \(\frac{\partial^2\ f}{\partial x\partial y}(x_0,y_0)
+\ne\frac{\partial^2\ f}{\partial y\partial x}(x_0,y_0)\)</span>
+</h3>
+<p id="p-1351">In Theorem <a class="xref" data-knowl="./knowl/thm_mixed_partials.html" title="Theorem 2.3.4: Clairaut's Theorem or Schwarz's Theorem">2.3.4</a>, we showed that \(\frac{\partial^2 f }{\partial x\partial y}(x_0,y_0)
+=\frac{\partial^2 f }{\partial y\partial x}(x_0,y_0)\) <em class="alert">if</em> the partial derivatives \(\frac{\partial^2 f }{\partial x\partial y}\) and \(\frac{\partial^2 f }{\partial y\partial x}\) exist and are continuous at \((x_0,y_0)\text{.}\) Here is an example which shows that if the partial derivatives \(\frac{\partial^2 f }{\partial x\partial y}\) and \(\frac{\partial^2 f }{\partial y\partial x}\) are not continuous at \((x_0,y_0)\text{,}\) then it is possible that \(\frac{\partial^2 f }{\partial x\partial y}(x_0,y_0)
+\ne\frac{\partial^2 f }{\partial y\partial x}(x_0,y_0)\text{.}\)</p>
+<p id="p-1352">Define</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}
+xy\frac{x^2-y^2}{x^2+y^2} &amp; \text{if } (x,y)\ne (0,0) \\
+0                   &amp; \text{if } (x,y)=(0,0)
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">This function is continuous everywhere. Note that \(f(x,0)=0\) for all \(x\) and \(f(0,y)=0\) for all \(y\text{.}\) We now compute the first order partial derivatives. For \((x,y)\ne (0,0)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{f}{x}(x,y)
+&amp;= {\color{blue}{y\frac{x^2-y^2}{x^2+y^2}}} +xy\frac{2x}{x^2+y^2}
+- xy\frac{2x(x^2-y^2)}{{(x^2+y^2)}^2}\\
+&amp;\ = {\color{blue}{y\frac{x^2-y^2}{x^2+y^2}}}  + xy\frac{4xy^2}{{(x^2+y^2)}^2}\\
+\pdiff{f}{y}(x,y)
+&amp;= {\color{blue}{x\frac{x^2-y^2}{x^2+y^2}}} -xy\frac{2y}{x^2+y^2}
+- xy\frac{2y(x^2-y^2)}{{(x^2+y^2)}^2}\\
+&amp;\ = {\color{blue}{x\frac{x^2-y^2}{x^2+y^2}}}  - xy\frac{4yx^2}{{(x^2+y^2)}^2}
+\end{align*}
+</div>
+<p data-braille="continuation">For \((x,y)= (0,0)\text{,}\)</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+\pdiff{f}{x}(0,0)
+&amp;= \left[\diff{}{x}f(x,0)\right]_{x=0}
+&amp;= \left[\diff{}{x} 0\right]_{x=0}
+&amp;=0\\
+\pdiff{f}{y}(0,0)
+&amp;= \left[\diff{}{y}f(0,y)\right]_{y=0}
+&amp;= \left[\diff{}{y} 0\right]_{y=0}
+&amp;=0
+\end{alignat*}
+</div>
+<p data-braille="continuation">By way of summary, the two first order partial derivatives are</p>
+<div class="displaymath">
+\begin{align*}
+f_x(x,y)&amp;=\begin{cases}
+y\frac{x^2-y^2}{x^2+y^2}  + \frac{4x^2y^3}{{(x^2+y^2)}^2}
+&amp; \text{if } (x,y)\ne (0,0)\\
+0                          &amp; \text{if } (x,y)=(0,0)
+\end{cases}\\
+f_y(x,y)&amp;=\begin{cases}
+x\frac{x^2-y^2}{x^2+y^2}  - \frac{4x^3y^2}{{(x^2+y^2)}^2}
+&amp; \text{if } (x,y)\ne (0,0)\\
+0                          &amp; \text{if } (x,y)=(0,0)
+\end{cases}
+\end{align*}
+</div>
+<p data-braille="continuation">Both \(\pdiff{f}{x}(x,y)\) and  \(\pdiff{f}{y}(x,y)\) are continuous. Finally, we compute</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\partial^2\ f}{\partial x\partial y}(0,0)
+&amp;=\left[\diff{}{x} f_y(x,0)\right]_{x=0}
+=\lim_{h\rightarrow 0}\frac{1}{h}\left[f_y(h,0)-f_y(0,0)\right]\\
+&amp;=\lim_{h\rightarrow 0}\frac{1}{h}\left[h\frac{h^2-0^2}{h^2+0^2}-0\right]
+=1\\
+\frac{\partial^2\ f}{\partial y\partial x}(0,0)
+&amp;=\left[\diff{}{y} f_x(0,y)\right]_{y=0}
+=\lim_{k\rightarrow 0}\frac{1}{k}\left[f_x(0,k)-f_x(0,0)\right]\\
+&amp;=\lim_{k\rightarrow 0}\frac{1}{k}\left[k\frac{0^2-k^2}{0^2+k^2}-0\right]
+=-1
+\end{align*}
+</div></section><section class="exercises" id="exercises-10"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.3.3</span> <span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-27">
+<div class="introduction" id="introduction-35"><p id="p-1353"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-162"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1354">Let all of the third order partial derivatives of the function \(f(x,y,z)\) exist and be continuous. Show that</p>
+<div class="displaymath">
+\begin{align*}
+f_{xyz}(x,y,z)
+&amp;=f_{xzy}(x,y,z)
+=f_{yxz}(x,y,z)
+=f_{yzx}(x,y,z)\\
+&amp;=f_{zxy}(x,y,z)
+=f_{zyx}(x,y,z)
+\end{align*}
+</div></article><article class="exercise exercise-like" id="exercise-163"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1358">Find, if possible, a function \(f(x,y)\) for which \(f_x(x,y)=e^y\) and \(f_y(x,y)=e^x\text{.}\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-28">
+<div class="introduction" id="introduction-36"><p id="p-1362"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-164"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1363">Find the specified partial derivatives.</p>
+<ol class="lower-alpha">
+<li id="li-720">\(f(x,y) = x^2y^3\text{;}\) \(f_{xx}(x,y)\text{,}\) \(f_{xyy}(x,y)\text{,}\) \(f_{yxy}(x,y)\)</li>
+<li id="li-721">\(f(x,y) = e^{xy^2}\text{;}\) \(f_{xx}(x,y)\text{,}\) \(f_{xy}(x,y)\text{,}\) \(f_{xxy}(x,y)\text{,}\) \(f_{xyy}(x,y)\)</li>
+<li id="li-722">\(\displaystyle f(u,v,w) = \frac{1}{u+2v+3w}\ \text{,}\) \(\displaystyle \frac{\partial^3 f}{\partial u\partial v\partial w}(u,v,w)\ \text{,}\) \(\displaystyle \frac{\partial^3 f}{\partial u\partial v\partial w}(3,2,1)\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-165"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1375">Find all second partial derivatives of \(f(x,y)=\sqrt{x^2+5y^2}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-166"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1380">Find the specified partial derivatives.</p>
+<ol class="lower-alpha">
+<li id="li-723">\(f(x,y,z) = \arctan\big(e^{\sqrt{xy}}\big)\text{;}\) \(f_{xyz}(x,y,z)\)</li>
+<li id="li-724">\(f(x,y,z) = \arctan\big(e^{\sqrt{xy}}\big)
++\arctan\big(e^{\sqrt{xz}}\big)
++\arctan\big(e^{\sqrt{yz}}\big)\text{;}\) \(f_{xyz}(x,y,z)\)</li>
+<li id="li-725">\(f(x,y,z) = \arctan\big(e^{\sqrt{xyz}}\big)\text{;}\) \(f_{xx}(1,0,0)\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-167"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
+</h6>
+<p id="p-1390">Let \(f(r,\theta)=r^m\cos m\theta\) be a function of \(r\) and \(\theta\text{,}\) where \(m\) is a positive integer.</p>
+<ol class="lower-alpha">
+<li id="li-729">Find the second order partial derivatives \(f_{rr}\text{,}\) \(f_{r\theta}\text{,}\) \(f_{\theta\theta}\) and evaluate their respective values at \((r,\theta)=(1,0)\text{.}\)</li>
+<li id="li-730">Determine the value of the real number \(\la\) so that \(f(r,\theta)\) satisfies the differential equation<div class="displaymath">
+\begin{equation*}
+f_{rr}+\frac{\la}{r}f_r+\frac{1}{r^2}f_{\theta\theta}=0
+\end{equation*}
+</div>
+</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-29">
+<div class="introduction" id="introduction-37"><p id="p-1395"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="exercisegroup-exercises"><article class="exercise exercise-like" id="exercise-168"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-1396">Let \(\al \gt 0\) be a constant. Show that \(\displaystyle u(x,y,z,t) =\frac{1}{t^{3/2}}
+e^{-(x^2+y^2+z^2)/(4\al t)}\) satisfies the heat equation</p>
+<div class="displaymath">
+\begin{equation*}
+u_t =  \al\big(u_{xx} + u_{yy} + u_{zz} \big)
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(t \gt 0\)</p></article></div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

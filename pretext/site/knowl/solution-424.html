@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:46:44+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.1.7.13.1</span><span class="period">.</span>
+</h6>
+<p>(a) On the domain of integration</p>
+<ul class="disc">
+<li>\(y\) runs from \(0\) to \(1\) and</li>
+<li>for each \(y\) in that range \(x\) runs from \(y\) to \(2-y\text{.}\) So the left hand side of the domain is the line \(x=y\) and the right hand side of the domain is \(x=2-y\text{.}\)</li>
+</ul>
+<p data-braille="continuation">The figure on the left below is a sketch of that domain, together with a generic horizontal strip as was used in setting up the integral.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><img src="pfigs/OE09D_6h.svg" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><img src="pfigs/OE09D_6v.svg" style="width: 100%; height: auto;" alt=""></div>
+</div></div>
+<p>(b) To reverse the order of integration we use vertical, rather than horizontal, strips. Looking at the figure on the right above, we see that, in the domain of integration</p>
+<ul class="disc">
+<li>\(x\) runs from \(0\) to \(2\) and</li>
+<li>for each \(x\) between \(0\) and \(1\text{,}\) \(y\) runs from \(0\) to \(x\text{,}\) while</li>
+<li>for each \(x\) between \(1\) and \(2\text{,}\) \(y\) runs from \(0\) to \(2-x\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the integral</p>
+<div class="displaymath">
+\begin{gather*}
+I=\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{y}{x}
++\int_1^2\dee{x}\int_0^{2-x}\dee{y}\ \frac{y}{x}
+\end{gather*}
+</div>
+<p>(c) Using the answer to part (b)</p>
+<div class="displaymath">
+\begin{align*}
+I&amp;=\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{y}{x}
++\int_1^2\dee{x}\int_0^{2-x}\dee{y}\ \frac{y}{x}\\
+&amp;=\frac{1}{2}\int_0^1\dee{x}\ x
++\frac{1}{2}\int_1^2\dee{x}\ \frac{(2-x)^2}{x}\\
+&amp;=\frac{1}{4} +\frac{1}{2}\int_1^2\dee{x}\ \left(\frac{4}{x}-4+x\right)\\
+&amp;=\frac{1}{4} +\frac{1}{2}\left[4\ln 2 -4 + \frac{4-1}{2}\right]\\
+&amp;=2\ln 2 -1
+\end{align*}
+</div>
+</div>
+<span class="incontext"><a href="sec_2d_integrals.html#solution-424">in-context</a></span>
+</body>
+</html>

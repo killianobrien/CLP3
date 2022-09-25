@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:45:22+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>We again simply evaluate the two terms on the left hand side  when \(z=z(x,y)=G\big(\frac{y}{x}\big)\text{.}\) By the chain rule</p>
+<div class="displaymath">
+\begin{align*}
+x\pdiff{z}{x}\amp= x\pdiff{}{x}\left(G\Big(\frac{y}{x}\Big)\right)
+=xG'\left(\frac{y}{x}\right)\left(\pdiff{}{x}\,\frac{y}{x}\right)
+=xG'\left(\frac{y}{x}\right)\left(-\frac{y}{x^2}\right)\\
+\amp=-G'\left(\frac{y}{x}\right)\frac{y}{x} \\
+y\pdiff{z}{y}\amp= y\pdiff{}{y}\left(G\Big(\frac{y}{x}\Big)\right)
+=yG'\left(\frac{y}{x}\right)\left(\pdiff{}{y}\,\frac{y}{x}\right)
+=yG'\left(\frac{y}{x}\right)\left(\frac{1}{x}\right)\\
+\amp=G'\left(\frac{y}{x}\right)\frac{y}{x} 
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{equation*}
+x\pdiff{z}{x} + y\pdiff{z}{y}
+=-G'\left(\frac{y}{x}\right)\frac{y}{x} + G'\left(\frac{y}{x}\right)\frac{y}{x} 
+=0
+\end{equation*}
+</div>
+<p data-braille="continuation">and \(z(x,y)=G\big(\frac{y}{x}\big)\) really does solve the PDE \(x\pdiff{z}{x}+ y\pdiff{z}{y}=0
+\text{.}\) Note that we can rewrite the solution \(\frac{x+y}{x-y}\) of Example <a class="xref" data-knowl="./knowl/eg_check_PDF_A.html" title="Example 2.8.1: \(x\pdiff{z}{x}+ y\pdiff{z}{y}=0\)">2.8.1</a> as \(\frac{1+y/x}{1-y/x}\text{,}\) which is of the form \(G\big(\frac{y}{x}\big)\text{.}\)</p>
+</div></body>
+</html>

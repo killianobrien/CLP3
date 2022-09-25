@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:47:01+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="displaymath">
+\begin{align*}
+\left[\int_0^\infty e^{-x^2}\ \dee{x}\right]^2
+&amp;=\lim_{R\rightarrow\infty}
+\int_0^{\pi/2}\dee{\theta}\int_0^R \dee{r}\ r\, e^{-r^2}\\
+&amp;=\lim_{R\rightarrow\infty}
+\int_0^{\pi/2}\dee{\theta}\int_0^{R^2} \frac{\dee{u}}{2}\ e^{-u} \qquad
+\text{where } u= r^2,\ \dee{u} =2r\,\dee{r}\\
+&amp;=\lim_{R\rightarrow\infty}
+\int_0^{\pi/2}\dee{\theta}\ \left[-\frac{e^{-u}}{2}\right]_0^{R^2}\\
+&amp;=\lim_{R\rightarrow\infty} \frac{\pi}{2}
+\left[\frac{1}{2}-\frac{e^{-R^2}}{2}\right]\\
+&amp;=\frac{\pi}{4}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_polars.html#mjx-eqn-mrow-3268">in-context</a></span>
+</body>
+</html>

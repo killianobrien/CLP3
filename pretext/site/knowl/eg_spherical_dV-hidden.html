@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2022-09-25T12:48:52+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="example example-like"><p>Spherical coordinates have</p>
+<div class="displaymath">
+\begin{align*}
+x(\rho,\theta,\varphi) &amp;= \rho\,\cos\theta\,\sin\varphi\\
+y(\rho,\theta,\varphi) &amp;= \rho\,\sin\theta\,\sin\varphi\\
+z(\rho,\theta,\varphi) &amp; =  \rho\,\cos\varphi
+\end{align*}
+</div>
+<p data-braille="continuation">Since</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{x}{\rho}&amp;=\cos\theta\,\sin\varphi
+&amp;\pdiff{y}{\rho}&amp;=\sin\theta\,\sin\varphi
+&amp;\pdiff{z}{\rho}&amp;=\cos\varphi\\
+\pdiff{x}{\theta}&amp;=-\rho\,\sin\theta\,\sin\varphi
+&amp;\pdiff{y}{\theta}&amp;=\rho\,\cos\theta\,\sin\varphi
+&amp;\pdiff{z}{\theta}&amp;=0\\
+\pdiff{x}{\varphi}&amp;= \rho\,\cos\theta\,\cos\varphi
+&amp;\pdiff{y}{\varphi}&amp;=\rho\,\sin\theta\,\cos\varphi
+&amp;\pdiff{z}{\varphi}&amp;=-\rho\,\sin\varphi
+\end{align*}
+</div>
+<p data-braille="continuation">(<a class="xref" data-knowl="./knowl/eq_dV.html" title="Equation 3.8.8">3.8.8</a>), but with \(u\) renamed to \(\rho\text{,}\) \(v\) renamed to \(\theta\) and \(w\) renamed to \(\varphi\text{,}\) gives</p>
+<div class="displaymath">
+\begin{align*}
+\dee{V} &amp;= \left|\det\left[\begin{matrix}\cos\theta\,\sin\varphi
+&amp; \sin\theta\,\sin\varphi
+&amp;\cos\varphi \\
+-\rho\,\sin\theta\,\sin\varphi
+&amp;\rho\,\cos\theta\,\sin\varphi
+&amp;0 \\
+\rho\,\cos\theta\,\cos\varphi
+&amp;\rho\,\sin\theta\,\cos\varphi
+&amp;-\rho\,\sin\varphi
+\end{matrix}\right]\right| \dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
+&amp;= \left|\cos\theta\,\sin\varphi\det\left[\begin{matrix}
+\rho\,\cos\theta\,\sin\varphi&amp;0 \\
+\rho\,\sin\theta\,\cos\varphi  &amp;-\rho\,\sin\varphi
+\end{matrix}\right] \right.\\
+&amp;\hskip1in\left.
+-\sin\theta\,\sin\varphi\det\left[\begin{matrix}
+-\rho\,\sin\theta\,\sin\varphi &amp;0 \\
+\rho\,\cos\theta\,\cos\varphi &amp;-\rho\,\sin\varphi
+\end{matrix}\right] \right.\\
+&amp;\hskip1in\left.
++\cos\varphi\det\left[\begin{matrix}
+-\rho\,\sin\theta\,\sin\varphi
+&amp;\rho\,\cos\theta\,\sin\varphi  \\
+\rho\,\cos\theta\,\cos\varphi
+&amp;\rho\,\sin\theta\,\cos\varphi
+\end{matrix}\right]
+\right| \dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
+&amp;=\rho^2 \big|-\cos^2\theta \sin^3\varphi
+- \sin^2\theta\sin^3\varphi
+-\sin\varphi\cos^2\varphi
+\big|\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
+&amp;=\rho^2 \big|-\sin\varphi \sin^2\varphi
+-\sin\varphi\cos^2\varphi
+\big|\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
+&amp;= \rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}
+\end{align*}
+</div>
+<p data-braille="continuation">which is exactly what we found in (<a class="xref" data-knowl="./knowl/eq_dV_spherical.html" title="Equation 3.7.3">3.7.3</a>).</p></article></body>
+</html>
