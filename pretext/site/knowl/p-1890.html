@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:58+01:00    *-->
+<!--*    on 2022-09-26T13:31:24+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) The equation of the graph is \(g(x,y,z) = f(x,y) -z =0\text{.}\) Any vector that is a nonzero constant times</p>
+<p>(a) The linear approximation to \(f(x,y)\) at \((x,y)=(1,e)\) is</p>
+<div class="displaymath">
+\begin{align*}
+f(x,y) &amp;\approx f(1,e) + f_x(1,e)\,(x-1) +f_y(1,e)\,(y-e)\\
+&amp;= 1 -(x-1) +e^{-1}(y-e)
+\end{align*}
+</div>
+<p data-braille="continuation">The maximum error is then approximately</p>
 <div class="displaymath">
 \begin{gather*}
-\vnabla g(1,e,1) =\llt f_x(1,e)\,,\,f_y(1,e)\,,\,-1\rgt
-=\llt -1\,,\,e^{-1}\,,\,-1\rgt
+-1(-0.1) +e^{-1}(0.1) =\frac{1+e^{-1}}{10}
 \end{gather*}
 </div>
-<p data-braille="continuation">is perpendicular to \(g=0\) at \((1,e,1)\text{.}\)</p>
 <span class="incontext"><a href="sec_lin_approx.html#p-1890">in-context</a></span>
 </body>
 </html>

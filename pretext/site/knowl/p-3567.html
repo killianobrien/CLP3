@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:48+01:00    *-->
+<!--*    on 2022-09-26T13:34:49+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,6 +13,9 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
+<ul class="disc">
+<li>In \(R\text{,}\) \(z\) runs from \(0\) (for example \((0,1,0)\) is in \(R\)) to \(1\) (for example \((0,0,1)\) is in \(R\)).</li>
+<li>
 <p>For each fixed \(0\le z\le 1\text{,}\) \((x,y)\) runs over</p>
 <div class="displaymath">
 \begin{equation*}
@@ -20,6 +23,25 @@ D_z = \Set{(x,y)}{0\le x,y\le 1,\ y\ge 1-z,\ x+y\le2-z}
 \end{equation*}
 </div>
 <p data-braille="continuation">Here is a sketch of a top view of \(D_z\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/domainPartCube2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p>On \(D_z\text{,}\) \(y\) runs from \(1-z\) to \(1\text{.}\)</p>
+</li>
+<li>For each fixed \(0\le z\le 1\) and \(1-z\le y\le 1\text{,}\) \(x\) runs from \(0\) to \(2-y-z\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the specified integral is</p>
+<div class="displaymath">
+\begin{align*}
+\tripInt_R y\ \dee{V}
+&amp;=\int_0^1\dee{z}\dblInt_{D_z} \dee{x}\dee{y}\ y
+=\int_0^1 \dee{z}\int_{1-z}^1 \dee{y}\int_0^{2-y-z} \dee{x}\ y\\
+&amp;=\int_0^1 \dee{z}\int_{1-z}^1 \dee{y}\ y(2-y-z)\\
+&amp;=-\int_0^1 \dee{z}\int_z^0 du\ (1-u)(1+u-z)\qquad\text{ where }  u=1-y\\
+&amp;=\int_0^1 \dee{z}\int_0^z du\ (1-u^2-z+uz)\\
+&amp;=\int_0^1 \dee{z}\ \big(z-\frac{z^3}{3}-z^2+\frac{z^3}{2})\\
+&amp;=\frac{1}{2}-\frac{1}{12}-\frac{1}{3}+\frac{1}{8}
+=\frac{5}{24}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3567">in-context</a></span>
 </body>
 </html>

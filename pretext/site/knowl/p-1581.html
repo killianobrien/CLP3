@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:34+01:00    *-->
+<!--*    on 2022-09-26T13:30:52+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,25 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) We are told to evaluate \(\diff{y}{x}\text{.}\) So \(y\) has to be a function of the single variable \(x\text{.}\) We are also told that \(x\) and \(y\) are related by \(F(x,y,x^2-y^2)=0\text{.}\) So the function \(y(x)\) has to obey</p>
+<p>(a) We are told to evaluate \(\pdiff{y}{z}\text{.}\) So \(y\) has to be a function of \(z\) and possibly some other variables. We are also told that \(x\text{,}\) \(y\text{,}\) and \(z\) are related by the single equation \(e^{yz}-x^2 z \ln y = \pi\text{.}\) So we are to think of \(x\) and \(z\) as being independent variables and think of \(y(x,z)\) as being determined by solving \(e^{yz}-x^2 z \ln y = \pi\) for \(y\) as a function of \(x\) and \(z\text{.}\) That is, the function \(y(x,z)\) obeys</p>
 <div class="displaymath">
 \begin{equation*}
-F\big(x,y(x),x^2-y(x)^2\big)=0
+e^{y(x,z)\,z}-x^2 z \ln y(x,z) = \pi
 \end{equation*}
 </div>
-<p data-braille="continuation">for all \(x\text{.}\) Applying \(\diff{}{x}\) to both sides of that equation and using the chain rule gives</p>
+<p data-braille="continuation">for all \(x\) and \(z\text{.}\) Applying \(\pdiff{}{z}\) to both sides of this equation gives</p>
 <div class="displaymath">
 \begin{align*}
-&amp;F_1\big(x,y(x),x^2-y(x)^2\big)\,\ \diff{x}{x}
-+F_2\big(x,y(x),x^2-y(x)^2\big)\ \diff{y}{x}(x)\\
-&amp;\hskip1in
-+F_3\big(x,y(x),x^2-y(x)^2\big)\,\diff{}{x}\left[x^2-y(x)^2\right]= 0\\
-\implies &amp;F_1\big(x,y(x),x^2-y(x)^2\big) +F_2\big(x,y(x),x^2-y(x)^2\big)\ \diff{y}{x}(x)\\
-&amp;\hskip1in
-+F_3\big(x,y(x),x^2-y(x)^2\big)\,\left[2x-2y(x)\diff{y}{x}(x)\right]= 0\\
-\implies &amp; \diff{y}{x}(x)
-=-\frac{F_1\big(x,y(x),x^2-y(x)^2\big)+2x\,F_3\big(x,y(x),x^2-y(x)^2\big)}
-{F_2\big(x,y(x),x^2-y(x)^2\big)-2y(x)\,F_3\big(x,y(x),x^2-y(x)^2\big)}
+&amp;\left[y(x,z)+z\pdiff{y}{z}(x,z)\right]e^{y(x,z)\,z}-x^2 \ln y(x,z)
+-x^2 z\frac{1}{y(x,z)}\pdiff{y}{z}(x,z) = 0\\
+&amp; \implies  \pdiff{y}{z}(x,z)
+=\frac{x^2 \ln y(x,z)-y(x,z)e^{y(x,z)\,z}}{ze^{y(x,z)\,z}-\frac{x^2 z}{y(x,z)}}
 \end{align*}
 </div>
 <span class="incontext"><a href="sec_chain_rule.html#p-1581">in-context</a></span>

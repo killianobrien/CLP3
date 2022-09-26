@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:21+01:00    *-->
+<!--*    on 2022-09-26T13:30:36+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,63 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We now move on to the proof of Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>. To give you an idea of how the proof will go, we first review the proof of the familiar one dimensional chain rule.</p>
+<p>Now back to</p>
+<div class="displaymath">
+\begin{align*}
+\amp \phantom{\implies a} f\big(x,y(x)\big) = 0\qquad\text{for all }x\\
+\amp \implies \diff{}{x}f\big(x,y(x)\big) = 0\\
+\amp \implies f_x\big(x,y(x)\big)\diff{x}{x}
++f_y\big(x,y(x)\big)\diff{y}{x}(x) = 0\qquad\text{by the chain rule}\\
+\amp \implies \diff{y}{x}(x) = -\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\\
+\amp \implies \difftwo{y }{x}(x) = -\diff{}{x}\left[\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\right]\\
+\amp \phantom{\implies}\qquad= -\frac{f_y\big(x,y(x)\big)\diff{}{x}[f_x\big(x,y(x)\big)]
+-f_x\big(x,y(x)\big)\diff{}{x}[f_y\big(x,y(x)\big)]}
+{f_y\big(x,y(x)\big)^2}
+\tag{$\dagger$}
+\end{align*}
+</div>
+<p data-braille="continuation">by the quotient rule. Now it suffices to substitute in \(\diff{}{x}\big[f_x\big(x,y(x)\big)\big]\) and \(\diff{}{x}\big[f_y\big(x,y(x)\big)\big]\text{.}\) For the former apply the chain rule to \(h(x) = u\big(x,y(x)\big)\) with \(u(x,y)=f_x\big(x,y\big)\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\diff{}{x}\big[f_x\big(x,y(x)\big)\big]&amp;=\diff{h}{x}(x)\cr
+&amp;=u_x\big(x,y(x)\big)\diff{x}{x}
++u_y\big(x,y(x)\big)\diff{y}{x}(x)\cr
+&amp;=f_{xx}\big(x,y(x)\big)\diff{x}{x}
++f_{xy}\big(x,y(x)\big)\diff{y}{x}(x)\cr
+&amp;=f_{xx}\big(x,y(x)\big)
+-f_{xy}\big(x,y(x)\big)
+\left[\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\right]
+\end{align*}
+</div>
+<p data-braille="continuation">Substituting this and</p>
+<div class="displaymath">
+\begin{align*}
+\diff{}{x}\big[f_y\big(x,y(x)\big)\big]
+&amp;=f_{yx}\big(x,y(x)\big)\diff{x}{x}
++f_{yy}\big(x,y(x)\big)\diff{y}{x}(x)\cr
+&amp;=f_{yx}\big(x,y(x)\big)
+-f_{yy}\big(x,y(x)\big)
+\left[\frac{f_x\big(x,y(x)\big)}{f_y\big(x,y(x)\big)}\right]
+\end{align*}
+</div>
+<p data-braille="continuation">into the right hand side of \((\dagger)\) gives the final answer.</p>
+<div class="displaymath">
+\begin{align*}
+\difftwo{y}{x}(x)
+&amp;= -\frac{
+f_y f_{xx}
+-  f_y f_{xy} \frac{f_x}{f_y}
+- f_x f_{yx}
++ f_x f_{yy}\frac{f_x}{f_y}}
+{f_y^2}\\
+&amp;= -\frac{
+f_y^2 f_{xx}
+- 2 f_x f_y f_{xy}
++ f_x^2 f_{yy}}
+{f_y^3}
+\end{align*}
+</div>
+<p data-braille="continuation">with all of \(f_x\text{,}\) \(f_y\text{,}\) \(f_{xx}\text{,}\) \(f_{xy}\text{,}\) \(f_{yy}\) having arguments \(\big(x\,,\,y(x)\big)\text{.}\)</p>
 <span class="incontext"><a href="sec_chain_rule.html#p-1431">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:29+01:00    *-->
+<!--*    on 2022-09-26T13:32:02+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,20 +13,25 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Suppose that \(u(x,y)\) obeys the PDE</p>
+<p>(c) The equation \(T'(t)=\la\,T(t)\) is the type of ordinary differential equation that we studied in Section 3.3, on exponential growth and decay, in the CLP-1 text. We found in Theorem 3.3.2 there that the general solution to this ODE is \(T(t) = Ce^{\la t}\) with \(C\) being an arbitrary constant, which we require to be positive to make \(T&gt;0\text{.}\) The equation \(X'(x)=\frac{\la}{x} X(x)\) is a separable ODE. We studied such ODE's in Section 2.4 in the CLP-2 text. To solve it, we divide across by \(X(x)\text{,}\) giving</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+\frac{X'(x)}{X(x)} = \frac{\la}{x}
+\amp\implies \diff{}{x} \ln X(x) = \frac{\la}{x} 
+\qquad\amp\amp\text{assuming }X,x&gt;0 \\
+\amp\implies \ln X(x) = \la\ln x+K'\qquad\amp\amp\text{with }K'\text{ constant} \\
+\amp\implies X(x) = K x^\la \qquad\amp\amp\text{with }K=e^{K'}&gt;0\text{ constant} 
+\end{alignat*}
+</div>
+<p data-braille="continuation">So</p>
 <div class="displaymath">
 \begin{equation*}
-\al(x,y)\,u_x(x,y) +\be(x,y)\,u_y(x,y)=0
+u(x,t)= X(x)\,T(t)
+= D\,e^{\la t}\,x^\la\qquad
+\text{with }D=CK&gt;0\text{ a constant}
 \end{equation*}
 </div>
-<p data-braille="continuation">where \(\al(x,y)\) and \(\be(x,y)\) are given functions. Let \(\big(X(t),Y(t)\big)\) be a curve<a class="fn-knowl" data-knowl="./knowl/fn-74-hidden.html" title="Footnote 2.8.7"><sup> 7 </sup></a> in the \(xy\)-plane that obeys</p>
-<div class="displaymath">
-\begin{align*}
-\diff{X}{t}(t)\amp=\al\big(X(t),Y(t)\big) \\
-\diff{Y}{t}(t)\amp=\be\big(X(t),Y(t)\big) 
-\end{align*}
-</div>
-<p data-braille="continuation">Show that \(u\) is constant along that curve. That is, show that \(u\big(X(t),Y(t)\big)\) is independent of \(t\text{.}\)</p>
+<p data-braille="continuation">solves the PDE \(u_t=xu_x\) for \(x&gt;0\text{.}\)</p>
 <span class="incontext"><a href="sec_pde.html#p-2270">in-context</a></span>
 </body>
 </html>

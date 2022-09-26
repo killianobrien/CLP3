@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:49+01:00    *-->
+<!--*    on 2022-09-26T13:36:00+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(c) <em class="emphasis">Solution 1:</em> Making the change of variables \(s=\cos\varphi\text{,}\) \(\dee{s}=-\sin\varphi\ \dee{\varphi}\text{,}\) in the integral of part (b),</p>
+<p>(b) In spherical coordinates, the density of is \(\de=x^2+y^2=\rho^2\sin^2\varphi\text{,}\) the bottom of the solid is at</p>
 <div class="displaymath">
-\begin{align*}
-m&amp;=\int_0^{2\pi}\dee{\theta}\int_0^{\pi/6}\dee{\varphi}
-\int_0^3\dee{\rho}\ \rho^4\sin\varphi \big(1-\cos^2\varphi\big)\\
-&amp;=\frac{3^5}{5}\int_0^{2\pi}\dee{\theta}\int_0^{\pi/6}\dee{\varphi}\ \sin\varphi
-\big(1-\cos^2\varphi\big)\\
-&amp;=-\frac{3^5}{5}\int_0^{2\pi}\dee{\theta}\int_1^{\sqrt{3}/2}\dee{s}\  (1-s^2)\\
-&amp;=-\frac{3^5}{5}\int_0^{2\pi}\dee{\theta}\ \left[s-\frac{s^3}{3}\right]_1^{\sqrt{3}/2}\\
-&amp;=2\pi \frac{3^5}{5} \left[1-\frac{1}{3}-\frac{\sqrt{3}}{2}+\frac{\sqrt{3}}{8}\right]\\
-&amp;=2\pi \frac{3^5}{5} \left[\frac{2}{3}-\frac{3\sqrt{3}}{8}\right]
-\end{align*}
+\begin{equation*}
+z=\sqrt{3}\,r\iff \rho\cos\varphi=\sqrt{3}\,\rho\sin\varphi\iff
+\tan\varphi=\frac{1}{\sqrt{3}}\iff\varphi=\frac{\pi}{6}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the top of the solid is at \(x^2+y^2+z^2=\rho^2=9\text{.}\) The mass is</p>
+<div class="displaymath">
+\begin{equation*}
+m=\int_0^{2\pi}\dee{\theta}\int_0^{\pi/6}\dee{\varphi}\int_0^3\dee{\rho}\ \big(\rho^2\sin\varphi\big)
+\overbrace{\big(\rho^2\sin^2\varphi\big)}^{\de}
+\end{equation*}
 </div>
 <span class="incontext"><a href="sec_spherical.html#p-4072">in-context</a></span>
 </body>

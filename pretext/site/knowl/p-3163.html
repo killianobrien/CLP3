@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:00+01:00    *-->
+<!--*    on 2022-09-26T13:33:59+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,24 +13,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>So our main task is to sketch the domain of integration. To prepare for the sketch, note that in the integral</p>
+<p>First recall that in polar coordinates \(x=r\cos\theta\text{,}\) \(y=r\sin\theta\) and \(\dee{x}\,\dee{y}=\dee{A}=r\,\dee{r}\,\dee{\theta}\) so that the integrand (and \(\dee{A}\))</p>
 <div class="displaymath">
-\begin{equation*}
-\int_0^1\int_0^x y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}
-=\int_0^1\dee{x}  \left[\int_0^x \dee{y}\ y\sqrt{x^2+y^2}\right]
-\end{equation*}
+\begin{gather*}
+y\sqrt{x^2+y^2}\ \dee{y}\,\dee{x}
+=(r\sin\theta)\ r\ r\, \dee{r}\,\dee{\theta}
+=r^3\sin\theta\,\dee{r}\,\dee{\theta}
+\end{gather*}
 </div>
-<ul class="disc">
-<li>the variable \(x\) runs from \(0\) to \(1\) and</li>
-<li>for each fixed \(0\le x\le 1\text{,}\) \(y\) runs from \(0\) to \(x\text{.}\)</li>
-</ul>
-<p data-braille="continuation">So the domain of integration is</p>
-<div class="displaymath">
-\begin{equation*}
-\cD=\Set{(x,y)}{0\le x\le 1,\ 0\le y\le x}
-\end{equation*}
-</div>
-<p data-braille="continuation">which is sketched in the figure on the left below. It is a right angled triangle.</p>
+<p data-braille="continuation">is very simple. So whether or not this integral will be easy to evaluate using polar coordinates will be largely determined by the domain of integration.</p>
 <span class="incontext"><a href="sec_polars.html#p-3163">in-context</a></span>
 </body>
 </html>

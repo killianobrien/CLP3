@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:21+01:00    *-->
+<!--*    on 2022-09-26T13:30:36+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,33 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We wish to find the partial derivative with respect to \(s\) of \(F(s,t)=f\big(x(s,t)\,,\,y(s,t)\big)\text{.}\) By definition</p>
-<div class="displaymath">
-\begin{align*}
-\pdiff{F}{s}(s,t)
-&amp;=\lim_{h\rightarrow 0}\frac{F(s+h,t)-F(s,t)}{h}\\
-&amp;=\lim_{h\rightarrow 0}\frac{f\big(x(s+h,t)\,,\,y(s+h,t)\big)
--f\big(x(s,t)\,,\,y(s,t)\big)}{h}
-\end{align*}
-</div>
-<p data-braille="continuation">The numerator is the difference of \(f(x,y)\) evaluated at two nearby values of \((x,y)\text{,}\) namely \((x_1,y_1)=\big(x(s+h,t)\,,\,y(s+h,t)\big)\) and \((x_0,y_0)=\big(x(s,t)\,,\,y(s,t)\big)\text{.}\) In going from \((x_0,y_0)\) to \((x_1,y_1)\text{,}\) both the \(x\) and \(y\)-coordinates change. By adding and subtracting we can separate the change in the \(x\)-coordinate from the change in the \(y\)-coordinate.</p>
-<div class="displaymath">
-\begin{gather*}
-f(x_1,y_1) - f(x_0,y_0)
-=\big\{f(x_1,y_1) - f(x_0,y_1)\big\}  + \big\{f(x_0,y_1) - f(x_0,y_0)\big\}
-\end{gather*}
-</div>
-<p data-braille="continuation">The first half, \(\big\{f(x_1,y_1) - f(x_0,y_1)\big\}\text{,}\) has the same \(y\) argument in both terms and so is the difference of the function of one variable \(g(x) = f(x,y_1)\) (viewing \(y_1\) just as a constant) evaluated at the two nearby values, \(x_0\text{,}\) \(x_1\text{,}\) of \(x\text{.}\) Consequently, we can make use of the mean value theorem as we did in §<a href="sec_chain_rule.html#subsec_1d_chain_rule" class="internal" title="Subsection 2.4.3: Review of the Proof of \(\diff{}{t}f\big(x(t)\big)  = \diff{f}{x}\big(x(t)\big)\ \diff{x}{t}(t)\)">2.4.3</a> above. There is a \(c_{x,h}\) between \(x_0=x(s,t)\) and \(x_1=x(s+h,t)\) such that</p>
-<div class="displaymath">
-\begin{align*}
-f(x_1,y_1) - f(x_0,y_1)
-&amp;=g(x_1) - g(x_0)
-=g'(c_{x,h}) [x_1-x_0]
-=\pdiff{f}{x}(c_{x,h}\,,\,y_1)\,[x_1-x_0]\\
-&amp;=\pdiff{f}{x}\big(c_{x,h}\,,\,y(s+h,t)\big)\,\big[x(s+h,t)-x(s,t)\big]
-\end{align*}
-</div>
-<p data-braille="continuation">We have introduced the two subscripts in \(c_{x,h}\) to remind ourselves that it may depend on \(h\) and that it lies between the two \(x\)-values \(x_0\) and \(x_1\text{.}\)</p>
+<p>We'll now prove the formula for \(\pdiff{}{s} f\big( x(s,t)\,,\,y(s,t)\big)\) that is given in Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>. The proof uses the same ideas as the proof of the one variable chain rule, that we have just reviewed.</p>
 <span class="incontext"><a href="sec_chain_rule.html#p-1434">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:42:57+01:00    *-->
+<!--*    on 2022-09-26T13:28:51+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>There is a much better way to remember this definition. Recall that a \(2\times 2\) matrix is an array of numbers having two rows and two columns and that the determinant of a \(2\times 2\) matrix is  defined by</p>
+<p>Note that each component has the form \(a_ib_j-a_jb_i\text{.}\) The index \(i\) of the first \(a\) in component number \(k\) of \(\va\times\vb\) is just after \(k\) in the list \(1,2,3,1,2,3,1,2,3,\cdots\text{.}\) The index \(j\) of the first \(b\) is just before \(k\) in the list.</p>
 <div class="displaymath">
-\begin{align*}
-\det \left[\begin{matrix}a&amp; b \\ c&amp;d\end{matrix}\right]=ad-bc
-\end{align*}
+\begin{gather*}
+(\va\times\vb)_k
+=a_{{\rm just\  after\  }k}\ b_{{\rm just\  before\  }k}
+-a_{{\rm just\  before\  }k}\ b_{{\rm just\  after\  }k}
+\end{gather*}
 </div>
-<p data-braille="continuation">It is the product of the entries on the diagonal minus the product of the entries not on the diagonal.</p>
+<p data-braille="continuation">For example, for component number \(k=3\text{,}\)</p>
+<div class="displaymath">
+\begin{gather*}
+\left.{\text{''just after 3'' is 1}}\atop{\text{''just before 3'' is 2}}\right\}
+\implies (\va\times\vb)_3= a_1b_2-a_2b_1
+\end{gather*}
+</div>
 <span class="incontext"><a href="sec_vectors.html#p-146">in-context</a></span>
 </body>
 </html>

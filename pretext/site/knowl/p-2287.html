@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:30+01:00    *-->
+<!--*    on 2022-09-26T13:32:03+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Let the function \(f(x,y)\) be defined for all \((x,y)\) in some subset \(R\) of \(\bbbr^2\text{.}\) Assume that</p>
-<ul class="disc">
-<li>\((a,b)\) is a point of \(R\) that is not on the boundary of \(R\) and</li>
-<li>\((a,b)\) is a local maximum or local minimum of \(f\) and that</li>
-<li>the partial derivatives of \(f\) exist at \((a,b)\text{.}\)</li>
-</ul>
-<p data-braille="continuation">Then</p>
+<p>Then the function \(f(x,y)\) must decrease in value as \((x,y)\) moves away from \((a,b)\) in <em class="emphasis">any</em> direction. No matter which direction \(\vd\) we choose, the directional derivative of \(f\) at \((a,b)\) in direction \(\vd\) must be zero or smaller. Writing this in mathematical symbols, we get</p>
 <div class="displaymath">
-\begin{equation*}
-\vnabla f(a,b) = \vZero.
-\end{equation*}
+\begin{gather*}
+D_\vd f(a,b) = \vnabla f(a,b)\cdot\frac{\vd}{|\vd|}\le 0
+\end{gather*}
 </div>
+<p data-braille="continuation">And the directional derivative of \(f\) at \((a,b)\) in the direction \(-\vd\) also must be zero or negative.</p>
+<div class="displaymath">
+\begin{gather*}
+D_{-\vd} f(a,b) = \vnabla f(a,b)\cdot\frac{-\vd}{|\vd|}\le 0
+\quad\text{which implies that}\quad \vnabla f(a,b)\cdot\frac{\vd}{|\vd|}\ge 0
+\end{gather*}
+</div>
+<p data-braille="continuation">As \(\vnabla f(a,b)\cdot\frac{\vd}{|\vd|}\) must be both positive (or zero) and negative (or zero) at the same time, it must be zero. In particular, choosing \(\vd=\hi\) forces the \(x\) component of \(\vnabla f(a,b)\) to be zero, and  choosing \(\vd=\hj\) forces the \(y\) component of \(\vnabla f(a,b)\) to be zero. We have thus shown that  \(\vnabla f(a,b)=\vZero\text{.}\) The same argument shows that \(\vnabla f(a,b)=\vZero\) when \((a,b)\) is a local minimum too. This is an important and useful result, so let's theoremise it.</p>
 <span class="incontext"><a href="sec_max.html#p-2287">in-context</a></span>
 </body>
 </html>

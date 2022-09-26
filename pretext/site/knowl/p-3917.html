@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:30+01:00    *-->
+<!--*    on 2022-09-26T13:35:37+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,26 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) The part of the sphere in question is</p>
+<p>Looking at the figure above, we see that, on that region,</p>
+<ul class="disc">
+<li>\(\varphi\) runs from \(0\) (the positive \(z\)-axis) to \(\frac{\pi}{4}\) (on the cone), and</li>
+<li>for each \(\varphi\) is that range, \(\rho\) runs from \(0\)  to \(a\) and \(\theta\) runs from \(0\) to \(2\pi\text{.}\)</li>
+</ul>
+<p data-braille="continuation">so that</p>
 <div class="displaymath">
 \begin{align*}
-R&amp;=\Set{(x,y,z)}{x^2+y^2+z^2\le a^2,\ x\ge0,\ y\ge 0,\ z\ge 0}\\
-&amp;=\Set{(\rho\sin\varphi\cos\theta\,,\,
-\rho\sin\varphi\sin\theta\,,\,
-\rho\cos\varphi)}{\rho\le a,\ 0\le\varphi\le\tfrac{\pi}{2},
-\ 0\le\theta\le\tfrac{\pi}{2}}
-\end{align*}
-</div>
-<p data-braille="continuation">By symmetry, the two specified integrals are equal, and are</p>
-<div class="displaymath">
-\begin{align*}
-\int_{0}^{a}\dee{\rho}\ \rho^2 \int_0^{{\pi\over 2}}\dee{\varphi}\ \sin\varphi
-\int_{0}^{{\pi\over 2}} \dee{\theta}\ \overbrace{\rho\cos\varphi}^{z}
-&amp;=\frac{a^4}{4}\frac{\pi}{2} \int_0^{{\pi\over 2}}\dee{\varphi}\
-\sin\varphi\cos\varphi\\
-&amp;=\frac{\pi a^4}{8} \int_0^{1}\dee{t}\ t\\
-&amp;\hskip0.5in\text{ where } t=\sin\varphi, \dee{t}=\cos\varphi\,\dee{\varphi}\\
-&amp;=\frac{\pi a^4}{16}
+\text{Volume}
+&amp;= \int_{0}^{a}\dee{\rho}  \int_{0}^{2\pi} \dee{\theta}
+\int_0^{{\pi\over 4}}\dee{\varphi}\ \rho^2\sin\varphi\\
+&amp;= \Big\{\int_{0}^{a}\dee{\rho}\ \rho^2  \Big\}\Big\{\int_{0}^{2\pi} \dee{\theta}\Big\}\Big\{
+\int_0^{{\pi\over 4}}\dee{\varphi}\ \sin\varphi\Big\}\\
+&amp;= \frac{a^3}{3}\ 2\pi\ \Big[-\cos\varphi\Big]_0^{{\pi\over 4}}
+=2\pi\frac{a^3}{3}\left(1-\frac{1}{\sqrt{2}}\right)
 \end{align*}
 </div>
 <span class="incontext"><a href="sec_spherical.html#p-3917">in-context</a></span>

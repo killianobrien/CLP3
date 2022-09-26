@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:47+01:00    *-->
+<!--*    on 2022-09-26T13:29:51+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) To test for orthogonality, we compute the dot product</p>
+<p>(a) By definition,</p>
+<div class="displaymath">
+\begin{equation*}
+\vv'(t)=\va(t)=\llt \cos t,\sin t,0\rgt
+\implies \vv(t)=\llt \sin t+c_1, -\cos t+c_2, c_3\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">for some constants \(c_1\text{,}\) \(c_2\text{,}\) \(c_3\text{.}\) To satisfy \(\vv(0)=\llt 0,-1,1\rgt\text{,}\) we need \(c_1=0\text{,}\) \(c_2=0\) and \(c_3=1\text{.}\) So \(\vv(t)=\llt \sin t, -\cos t, 1\rgt\text{.}\) Similarly,</p>
 <div class="displaymath">
 \begin{align*}
-\vv(t)\cdot\va(t)&amp;=\llt \sin t, -\cos t, 1\rgt\cdot\llt \cos t,\sin t,0\rgt\\
-&amp;=\sin t\cos t-\cos t \sin t+1\times 0=0
+\vr'(t)=\vv(t)&amp;=\llt \sin t,-\cos t,1\rgt\\
+&amp;\implies \vr(t)=\llt -\cos t+d_1, -\sin t+d_2, t+d_3\rgt
 \end{align*}
 </div>
-<p data-braille="continuation">so \(\vv(t)\perp\va(t)\) for all \(t\text{.}\)</p>
+<p data-braille="continuation">for some constants \(d_1\text{,}\) \(d_2\text{,}\) \(d_3\text{.}\) To satisfy \(\vr(0)=\llt -1,0,0\rgt\text{,}\) we need \(d_1=0\text{,}\) \(d_2=0\) and \(d_3=0\text{.}\) So \(\vr(t)=\llt -\cos t, -\sin t, t\rgt\text{.}\)</p>
 <span class="incontext"><a href="sec_curves.html#p-911">in-context</a></span>
 </body>
 </html>

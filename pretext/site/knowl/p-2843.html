@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:27+01:00    *-->
+<!--*    on 2022-09-26T13:33:23+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,21 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The inside integral is \(\int_0^a \sqrt{a^2-x^2}\ \dee{x}\text{.}\) The standard procedure for eliminating square roots like \(\sqrt{a^2-x^2}\) from integrands is the method of trigonometric substitution, that was covered in §1.9 of the CLP-2 text. In this case, the appropriate substitution is</p>
-<div class="displaymath">
-\begin{equation*}
-x=a\sin\theta\qquad \dee{x}=a\cos\theta\ \dee{\theta}
-\end{equation*}
-</div>
-<p data-braille="continuation">The lower limit of integration \(x=0\text{,}\) i.e. \(a\sin\theta=0\text{,}\) corresponds to \(\theta=0\text{,}\) and the upper limit  \(x=a\text{,}\) i.e. \(a\sin\theta=a\text{,}\) corresponds to \(\theta=\frac{\pi}{2}\text{,}\) so that</p>
-<div class="displaymath">
-\begin{align*}
-\int_0^a \sqrt{a^2-x^2}\ \dee{x}
-&amp;=\int_0^{\pi/2} \sqrt{\underbrace{a^2-a^2\sin^2\theta}_{a^2\cos^2\theta}}
-\ a\cos\theta\ \dee{\theta}
-=a^2\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}
-\end{align*}
-</div>
+<p>It is possible, but very tedious, to evaluate the integral \(\int_0^2\int_0^a \sqrt{a^2-x^2}\ \dee{x}\,\dee{y}\) of Example <a class="xref" data-knowl="./knowl/eg_dblInt_C.html" title="Example 3.1.14: Geometric Interpretation">3.1.14</a>, using single variable calculus techniques. We do so now as a review of a couple of those techniques.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2843">in-context</a></span>
 </body>
 </html>

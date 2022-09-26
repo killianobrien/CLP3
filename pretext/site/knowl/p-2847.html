@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:27+01:00    *-->
+<!--*    on 2022-09-26T13:33:23+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,22 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In any event, the inside integral</p>
+<p>we see that</p>
 <div class="displaymath">
 \begin{equation*}
-\int_0^a \sqrt{a^2-x^2}\ \dee{x}
-=\frac{\pi a^2}{4}
+\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}
+=\int_0^{\pi/2} \sin^2\theta\ \dee{\theta}
 \end{equation*}
 </div>
-<p data-braille="continuation">and the full integral</p>
+<p data-braille="continuation">Thus</p>
 <div class="displaymath">
-\begin{equation*}
-\int_0^2\int_0^a \sqrt{a^2-x^2}\ \dee{x}\,\dee{y}
-=\frac{\pi a^2}{4}\int_0^2\dee{y}
-=\frac{\pi a^2}{2}
-\end{equation*}
+\begin{align*}
+\int_0^{\pi/2} \cos^2\theta\ \dee{\theta}
+&amp;=\int_0^{\pi/2} \sin^2\theta\ \dee{\theta}
+=\int_0^{\pi/2} \frac{1}{2}\big[\sin^2\theta+\cos^2\theta\big]\,\dee{\theta}\\
+&amp;=\frac{1}{2}\int_0^{\pi/2} \dee{\theta}
+=\frac{\pi}{4}
+\end{align*}
 </div>
-<p data-braille="continuation">just as we saw in Example <a class="xref" data-knowl="./knowl/eg_dblInt_C.html" title="Example 3.1.14: Geometric Interpretation">3.1.14</a>.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2847">in-context</a></span>
 </body>
 </html>

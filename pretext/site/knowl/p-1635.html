@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:37+01:00    *-->
+<!--*    on 2022-09-26T13:30:56+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,36 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Find the distance from the point \((1,1,1)\) to the plane \(x+2y+3z=20\text{.}\)</p>
+<p>We are now ready to compute. We need to find the points \((a,b,c)\) (in the sketch, they are the black dot points of tangency) for which</p>
+<ul class="disc">
+<li>\((a,b,c)\) is on the surface and</li>
+<li>the normal vector to the surface \(x^2+ 2y^2 +3z^2 = 72\) at \((a,b,c)\) is parallel to \(\llt 1,1,3\rgt\text{,}\) which is a normal vector to the plane \(x+y+3z=C\)</li>
+</ul>
+<p data-braille="continuation">Since the gradient of \(x^2+ 2y^2 +3z^2\) is \(\llt 2x\,,\,4y\,,\,6z\rgt=2\llt x\,,\,2y\,,\,3z\rgt\text{,}\) these two conditions are, in equations,</p>
+<div class="displaymath">
+\begin{align*}
+a^2+ 2b^2 +3c^2 &amp;= 72\\
+\llt a\,,\,2b\,,\,3c\rgt &amp;=t \llt 1,1,3\rgt\qquad
+\text{for some number } t
+\end{align*}
+</div>
+<p data-braille="continuation">The second equation says that \(a=t\text{,}\) \(b=\frac{t}{2}\) and \(c=t\text{.}\) Substituting this into the first equation gives</p>
+<div class="displaymath">
+\begin{align*}
+t^2+ \frac{1}{2}t^2 +3t^2 &amp;= 72
+\iff \frac{9}{2}t^2=72
+\iff t^2 = 16
+\iff t=\pm 4
+\end{align*}
+</div>
+<p data-braille="continuation">So</p>
+<ul class="disc">
+<li>the point on the surface  \(x^2+ 2y^2 +3z^2 = 72\) at which \(x+y+3z\) takes its maximum value is \((a,b,c) = \big(t,\frac{t}{2},t\big)\Big|_{t=4}=(4,2,4)\) and</li>
+<li>\(x+y+3z\) takes the value \(4+2+3\times 4 =18\) there.</li>
+<li>The point on the surface  \(x^2+ 2y^2 +3z^2 = 72\) at which \(x+y+3z\) takes its minimum value is \((a,b,c)
+=\big(t,\frac{t}{2},t\big)\Big|_{t=-4}= (-4,-2,-4)\) and</li>
+<li>\(x+y+3z\) takes the value \(-4-2+3\times (-4) =-18\) there.</li>
+</ul>
 <span class="incontext"><a href="sec_tangent_planes.html#p-1635">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:31+01:00    *-->
+<!--*    on 2022-09-26T13:33:28+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,44 +13,22 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Recall from  Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd.html" title="Theorem 3.1.23: (Theorem 1.2.11 in the CLP-2 text)">3.1.23</a> (or Theorem 1.2.11 in the CLP-2 text) that we can exploit the evenness or oddness of the integrand, \(f(x)\text{,}\) of the integral \(\int_b^a f(x)\,\dee{x}\) to simplify the evaluation of the integral  when \(b=-a\text{,}\) i.e. when the domain of integration is invariant under reflection across the origin. Similarly, we will be able to simplify the evaluation of the double integral \(\dblInt_\cR f\big(x,y\big)\,\dee{x}\,\dee{y}\) when the integrand is even or odd and the domain of integration \(\cR\) is invariant under the corresponding reflection — meaning that the reflected \(\cR\) is identical to the original \(\cR\text{.}\) Here are some details for “reflection across the \(y\)-axis”. The details for the other reflections are similar.</p>
+<p>Let \(m\) and \(n\) be two integers and set \(f(x,y)=x^m y^n\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+f(-x,y)&amp;= (-x)^my^n = (-1)^m x^m y^n = (-1)^m f(x,y) \\
+f(x,-y)&amp;= x^m(-y)^n = (-1)^n x^m y^n= (-1)^n f(x,y) \\
+f(-x,-y)&amp;= (-x)^m(-y)^n = (-1)^{m+n} x^m y^n = (-1)^{m+n} f(x,y) 
+\end{align*}
+</div>
+<p data-braille="continuation">Consequently</p>
 <ul class="disc">
-<li>If \(\cR\) is any subset of the \(xy\)-plane,<div class="displaymath">
-\begin{equation*}
-\text{the reflection of }\cR\text{ across the }y\text{-axis} =\Set{(-x,y)}{(x,y)\in\cR} 
-\end{equation*}
-</div>The set notation on the right hand side means “the set of all points \((-x,y)\) with \((x,y)\) a point of \(\cR\)”.</li>
-<li>
-<p>In the special case<a class="fn-knowl" data-knowl="./knowl/fn-116-hidden.html" title="Footnote 3.1.11"><sup> 11 </sup></a> that</p>
-<div class="displaymath">
-\begin{equation*}
-\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
-\end{equation*}
-</div>
-<p data-braille="continuation">(see §<a href="sec_2d_integrals.html#sec_horizontal_slices" class="internal" title="Subsection 3.1.2: Horizontal Slices">3.1.2</a> on horizontal slices) then</p>
-<div class="displaymath">
-\begin{equation*}
-\text{the reflection of }\cR\text{ across the }y\text{-axis} =\Set{(x,y)}{c\le y\le d,
--R(y)\le x\le -L(y)} 
-\end{equation*}
-</div>
-<p data-braille="continuation">In the sketch below  \(\cR_y\) is the reflection of \(\cR\) across the \(y\)-axis.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
-<div class="sbspanel" style="width:47.4747474747475%;justify-content:flex-start;"><img src="figs/hSliceA.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:51.5151515151515%;justify-content:flex-start;"><img src="figs/hSliceAry.svg" style="width: 100%; height: auto;" alt=""></div>
-</div></div>
-</li>
-<li>A subset \(\cR\) of the \(xy\)-plane is invariant under reflection across the \(y\)-axis (or is also known as “symmetric about the \(y\)-axis”) when<div class="displaymath">
-\begin{equation*}
-(-x,y)\text{ is in }\cR
-\iff
-(x,y)\text{ is in }\cR
-\end{equation*}
-</div>Recall that the symbol \(\iff\) is read “if and only if”. In the special case that<div class="displaymath">
-\begin{equation*}
-\cR=\Set{(x,y)}{c\le y\le d, L(y)\le x\le R(y)}
-\end{equation*}
-</div>\(\cR\) is is invariant under reflection across the \(y\)-axis when \(L(y)=-R(y)\text{.}\)</li>
+<li>if \(m\) is even, then \(f(x,y)\) is even under \(x\rightarrow -x\) and</li>
+<li>if \(m\) is odd, then \(f(x,y)\) is odd under \(x\rightarrow -x\) and</li>
+<li>if \(n\) is even, then \(f(x,y)\) is even under \(y\rightarrow -y\) and</li>
+<li>if \(n\) is odd, then \(f(x,y)\) is odd under \(y\rightarrow -y\) and</li>
+<li>if \(m+n\) is even, then \(f(x,y)\) is even  (under reflection across the origin) and</li>
+<li>if \(m+n\) is odd, then \(f(x,y)\) is odd  (under reflection across the origin).</li>
 </ul>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2892">in-context</a></span>
 </body>

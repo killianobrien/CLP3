@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:22+01:00    *-->
+<!--*    on 2022-09-26T13:33:18+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,41 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>that</p>
-<ul class="disc">
-<li>the leftmost points in \(\cR\) have \(x=0\) and the rightmost point in \(\cR\) has \(x=1\) and</li>
-<li>for each fixed \(x\) between \(0\) and \(1\text{,}\) the point \((x,y)\) in \(\cR\) with the smallest \(y\) has \(y=0\) and the point \((x,y)\) in \(\cR\) with the largest \(y\) has \(y=1-x\text{.}\)</li>
-</ul>
-<p data-braille="continuation">Thus</p>
-<div class="displaymath">
-\begin{equation*}
-\cR=\Set{(x,y)}{0=a\le x\le b=1,\
-0= B(x)\le y\le T(x) = 1-x}
-\end{equation*}
-</div>
-<p data-braille="continuation">and, by part (a) of Theorem  <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a></p>
-<div class="displaymath">
-\begin{align*}
-\text{Mass} &amp;= \int_a^b \dee{x} \int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)
-= \int_0^1 \dee{x} \int_0^{1-x} \dee{y}\, y
-\end{align*}
-</div>
-<p data-braille="continuation">Now the inside integral is</p>
-<div class="displaymath">
-\begin{gather*}
-\int_0^{1-x}  y \ \dee{y}
-=\left[ \frac{y^2}{2} \right]_0^{1-x}
-=\frac{1}{2}(1-x)^2
-\end{gather*}
-</div>
-<p data-braille="continuation">so that the</p>
-<div class="displaymath">
-\begin{align*}
-\text{Mass} &amp;= \int_0^1 \dee{x}\  \frac{(1-x)^2}{2}
-=\left[-\frac{(1-x)^3}{6}\right]_0^1
-= \frac{1}{6}
-\end{align*}
-</div>
+<p><em class="emphasis">Solution using vertical strips.</em>\(\ \ \ \) We'll now set up a double integral for the mass using vertical strips. Note, from the figure</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2801">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:05+01:00    *-->
+<!--*    on 2022-09-26T13:30:13+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,29 +13,29 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(c) Switching to polar coordinates,</p>
+<p>(b) Switching to polar coordinates,</p>
 <div class="displaymath">
 \begin{align*}
-\lim_{(x,y)\rightarrow(0,0)}\ \frac{x^2}{x^2+y^2}
-&amp;=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ \frac{r^2\cos^2\theta}{r^2}
-=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ \cos^2\theta
+\lim_{(x,y)\rightarrow(0,0)}\ \frac{x}{x^2+y^2}
+&amp;=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ \frac{r\cos\theta}{r^2}
+=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ \frac{\cos\theta}{r}
 \end{align*}
 </div>
 <p data-braille="continuation">which does not exist, since, for example,</p>
 <ul class="disc">
 <li>if \(\theta=0\text{,}\) then<div class="displaymath">
 \begin{equation*}
-\lim_{\Atop{r\rightarrow0^+}{\theta=0}}\ \cos^2\theta
-=\lim_{r\rightarrow0^+}\ 1
-= 1
+\lim_{\Atop{r\rightarrow0^+}{\theta=0}}\ \frac{\cos\theta}{r}
+=\lim_{r\rightarrow0^+}\ \frac{1}{r}
+=+\infty
 \end{equation*}
 </div>
 </li>
-<li>while if \(\theta=\frac{\pi}{2}\text{,}\) then<div class="displaymath">
+<li>while if \(\theta=\pi\text{,}\) then<div class="displaymath">
 \begin{equation*}
-\lim_{\Atop{r\rightarrow0^+}{\theta=\pi/2}}\ \cos^2\theta
-=\lim_{r\rightarrow0^+}\ 0
-=0
+\lim_{\Atop{r\rightarrow0^+}{\theta=\pi}}\ \frac{\cos\theta}{r}
+=\lim_{r\rightarrow0^+}\ \frac{-1}{r}
+=-\infty
 \end{equation*}
 </div>
 </li>

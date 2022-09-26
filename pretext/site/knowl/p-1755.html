@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:46+01:00    *-->
+<!--*    on 2022-09-26T13:31:10+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,24 +13,33 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>People often write \(\De f\) for the change \(f\big(x_0+\De x\,,\,y_0+\De y\big)
-- f\big(x_0\,,\,y_0\big)\) in the value of \(f\text{.}\) Then the linear approximation <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a> becomes</p>
+<p>Let</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y) = \sqrt{x^2+y^2}
+\end{equation*}
+</div>
+<p data-braille="continuation">Then</p>
 <div class="displaymath">
 \begin{align*}
-\De f
-&amp;\approx  \pdiff{f}{x}\big(x_0\,,\,y_0\big)\,\De x
-+ \pdiff{f}{y}\big(x_0\,,\,y_0\big)\,\De y
+\pdiff{f}{x}(x,y)&amp;=\frac{1}{2}\,\frac{2x}{\sqrt{x^2+y^2}} &amp;
+f_x(x_0,y_0)&amp;=\frac{x_0}{\sqrt{x_0^2+y_0^2}}\\
+\pdiff{f}{y}(x,y)&amp;=\frac{1}{2}\,\frac{2y}{\sqrt{x^2+y^2}} &amp;
+f_y(x_0,y_0)&amp;=\frac{y_0}{\sqrt{x_0^2+y_0^2}}
 \end{align*}
 </div>
-<p data-braille="continuation">If they want to emphasize that that \(\De x\text{,}\) \(\De y\) and \(\De f\) are really small (they may even say “infinitesimal”), they'll write<a class="fn-knowl" data-knowl="./knowl/fn-62-hidden.html" title="Footnote 2.6.2"><sup> 2 </sup></a> \(\dee{x}\text{,}\) \(\dee{y}\) and \(\dee{f}\) instead. In this notation</p>
+<p data-braille="continuation">so that the linear approximation to \(f(x,y)\) at \((x_0,y_0)\) is</p>
 <div class="displaymath">
 \begin{align*}
-\dee{f}
-&amp;\approx  \pdiff{f}{x}\big(x_0\,,\,y_0\big)\,\dee{x}
-+ \pdiff{f}{y}\big(x_0\,,\,y_0\big)\,\dee{y}
+f\big(x_0+\De x\,,\,y_0+\De y\big)
+&amp;\approx f\big(x_0\,,\,y_0\big)
++ f_x\big(x_0\,,\,y_0\big)\,\De x
++ f_y\big(x_0\,,\,y_0\big)\,\De y\\
+&amp;=\sqrt{x_0^2+y_0^2}
++ \frac{x_0}{\sqrt{x_0^2+y_0^2}}\,\De x
++ \frac{y_0}{\sqrt{x_0^2+y_0^2}}\,\De y
 \end{align*}
 </div>
-<p data-braille="continuation">People sometimes call \(\dee{x}\text{,}\) \(\dee{y}\) and \(\dee{f}\) “differentials” and sometimes \(\dee{f}\) is called the “total differential of \(f\)” to indicate that it includes the impact of small changes in both \(x\) and \(y\text{.}\)</p>
 <span class="incontext"><a href="sec_lin_approx.html#p-1755">in-context</a></span>
 </body>
 </html>

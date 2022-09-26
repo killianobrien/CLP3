@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:41:28+01:00    *-->
+<!--*    on 2022-09-26T13:27:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -244,6 +244,7 @@ MathJax.Hub.Config({
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
 <li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3">CLP3 at Manchester Met</a></li>
 </ul>
 </li>
 <li class="link">
@@ -306,7 +307,7 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_pde"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.8</span> <span class="title">A First Look at Partial Differential Equations</span>
 </h2>
-<section class="introduction" id="introduction-54"><p id="p-2189">Many phenomena are modelled by equations that relate the rates of change of various quantities. As rates of change are given by derivatives, the resulting equations contain derivatives and so are called differential equations. We saw a number of such differential equations in §2.4 of the CLP-2 text.  In particular, a partial differential equation is an equation for an unknown function of two or more variables that involves the partial derivatives of the unknown function. The standard acronym for partial differential equation is PDE. PDEs<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-68" id="fn-68"><sup> 1 </sup></a> play a central role in modelling a huge number of different phenomena. Here is a table giving a bunch of named PDEs and what they are used for. It is far from complete.</p>
+<section class="introduction" id="introduction-54"><p id="p-2190">Many phenomena are modelled by equations that relate the rates of change of various quantities. As rates of change are given by derivatives, the resulting equations contain derivatives and so are called differential equations. We saw a number of such differential equations in §2.4 of the CLP-2 text.  In particular, a partial differential equation is an equation for an unknown function of two or more variables that involves the partial derivatives of the unknown function. The standard acronym for partial differential equation is PDE. PDEs<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-68" id="fn-68"><sup> 1 </sup></a> play a central role in modelling a huge number of different phenomena. Here is a table giving a bunch of named PDEs and what they are used for. It is far from complete.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-68"><div class="fn">There is a divided community on what the plural of PDE should be. Most people use PDEs as the plural. But some people use PDE as its own plural.</div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
 <tr>
@@ -342,12 +343,12 @@ MathJax.Hub.Config({
 <td class="l m b1 r1 l0 t0 lines" data-braille="last-cell">used in many applications, including electrostatics</td>
 </tr>
 </table></div></div></div>
-<p id="p-2190">We are just going to scratch the surface of the study of partial of differential equations. Many of you will take a separate course on the subject. Some very important PDEs are very hard. One of the millon U.S. dollar prizes<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-69" id="fn-69"><sup> 2 </sup></a> announced in 2000 by the Clay Institute concerns the Navier-Stokes equations. On the other hand, we already know enough to accomplish some PDE tasks. In particular, we can check if a given function really does satisfy a given PDE. Here are some examples.</p>
+<p id="p-2191">We are just going to scratch the surface of the study of partial of differential equations. Many of you will take a separate course on the subject. Some very important PDEs are very hard. One of the millon U.S. dollar prizes<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-69" id="fn-69"><sup> 2 </sup></a> announced in 2000 by the Clay Institute concerns the Navier-Stokes equations. On the other hand, we already know enough to accomplish some PDE tasks. In particular, we can check if a given function really does satisfy a given PDE. Here are some examples.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-69"><div class="fn">See <a class="external" href="https://www.claymath.org/millennium-problems" target="_blank"><code class="code-inline tex2jax_ignore">https://www.claymath.org/millennium-problems</code></a> or <a class="external" href="https://en.wikipedia.org/wiki/Millennium_Prize_Problems" target="_blank"><code class="code-inline tex2jax_ignore">https://en.wikipedia.org/wiki/Millennium_Prize_Problems</code></a>
 </div></div>
 <article class="example example-like" id="eg_check_PDF_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_check_PDF_A"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.1</span><span class="period">.</span><span class="space"> </span><span class="title">\(x\pdiff{z}{x}+ y\pdiff{z}{y}=0\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_check_PDF_A"><article class="example example-like"><p id="p-2191">Show that the function \(z(x,y)=\frac{x+y}{x-y}\) obeys</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_check_PDF_A"><article class="example example-like"><p id="p-2192">Show that the function \(z(x,y)=\frac{x+y}{x-y}\) obeys</p>
 <div class="displaymath">
 \begin{equation*}
 x\pdiff{z}{x}+ y\pdiff{z}{y}=0
@@ -355,7 +356,7 @@ x\pdiff{z}{x}+ y\pdiff{z}{y}=0
 </div>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-300" id="solution-300"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-300"><div class="solution solution-like">
-<p id="p-2192">We simply evaluate the two terms on the left hand side when \(z=z(x,y)=\frac{x+y}{x-y}\text{.}\)</p>
+<p id="p-2193">We simply evaluate the two terms on the left hand side when \(z=z(x,y)=\frac{x+y}{x-y}\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 x\pdiff{z}{x}\amp= x\pdiff{}{x}\left(\frac{x+y}{x-y}\right)
@@ -376,14 +377,14 @@ x\pdiff{z}{x}+y\pdiff{z}{y}
 </div>
 <p data-braille="continuation">and \(z(x,y)=\frac{x+y}{x-y}\) really does solve the PDE \(x\pdiff{z}{x}+ y\pdiff{z}{y}=0
 \text{.}\)</p>
-<p id="p-2193">Beware however, that while we have found one solution to the given PDE, we have not found all solutions. There are many others. Trivially, if \(z(x,y)=7\text{,}\) or any other constant, then we certainly have  \(x\pdiff{z}{x}=0\) and \(y\pdiff{z}{y}=0\) so that \(x\pdiff{z}{x}+ y\pdiff{z}{y}=0\text{.}\) Less trivially, in the next example, we'll find a ton<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-70" id="fn-70"><sup> 3 </sup></a><a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-71" id="fn-71"><sup> 4 </sup></a> of solutions.</p>
+<p id="p-2194">Beware however, that while we have found one solution to the given PDE, we have not found all solutions. There are many others. Trivially, if \(z(x,y)=7\text{,}\) or any other constant, then we certainly have  \(x\pdiff{z}{x}=0\) and \(y\pdiff{z}{y}=0\) so that \(x\pdiff{z}{x}+ y\pdiff{z}{y}=0\text{.}\) Less trivially, in the next example, we'll find a ton<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-70" id="fn-70"><sup> 3 </sup></a><a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-71" id="fn-71"><sup> 4 </sup></a> of solutions.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-70"><div class="fn">Or, if you prefer, we will find 1.01605 tonnes of solutions. Although the authors of this text believe strongly in the supremacy of the modern metric system over the archaic chaos of imperial units, they are less certain of the appropriateness of revising well established colloquialisms. It is not at all clear that rewriting <em class="emphasis">I have a ton of work to do</em> as <em class="emphasis">I have a tonne of work to do</em> achieves very much except to give the impression that the author is wasting time adding two letters when they are expressing the sheer quantity of tasks that require their attention. Speaking of which, the authors should end this footnote, and get on with the next example.</div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-71"><div class="fn">In the previous footnote, the authors, writing from Canada, are using imperial tons rather than U.S. tons. The interested reader is invited to proceed to their favourite search engine to discover just how much time they can waste investigating the history, similarities and differences of these systems.</div></div>
 </div></div>
 </div></article></div>
 <article class="example example-like" id="eg_check_PDF_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_check_PDF_B"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.2</span><span class="period">.</span><span class="space"> </span><span class="title">\(x\pdiff{z}{x}+ y\pdiff{z}{y}=0\text{,}\) again.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_check_PDF_B"><article class="example example-like"><p id="p-2194">Let \(G(u)\) be any differentiable function. Show that the function \(z(x,y)=G\big(\frac{y}{x}\big)\) obeys</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_check_PDF_B"><article class="example example-like"><p id="p-2195">Let \(G(u)\) be any differentiable function. Show that the function \(z(x,y)=G\big(\frac{y}{x}\big)\) obeys</p>
 <div class="displaymath">
 \begin{equation*}
 x\pdiff{z}{x}+ y\pdiff{z}{y}=0
@@ -392,7 +393,7 @@ x\pdiff{z}{x}+ y\pdiff{z}{y}=0
 <p data-braille="continuation">for all \(x\ne 0\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-301" id="solution-301"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-301"><div class="solution solution-like">
-<p id="p-2195">We again simply evaluate the two terms on the left hand side  when \(z=z(x,y)=G\big(\frac{y}{x}\big)\text{.}\) By the chain rule</p>
+<p id="p-2196">We again simply evaluate the two terms on the left hand side  when \(z=z(x,y)=G\big(\frac{y}{x}\big)\text{.}\) By the chain rule</p>
 <div class="displaymath">
 \begin{align*}
 x\pdiff{z}{x}\amp= x\pdiff{}{x}\left(G\Big(\frac{y}{x}\Big)\right)
@@ -419,7 +420,7 @@ x\pdiff{z}{x} + y\pdiff{z}{y}
 </div></article></div>
 <article class="example example-like" id="eg_check_PDF_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_check_PDF_C"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.3</span><span class="period">.</span><span class="space"> </span><span class="title">Harmonic.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_check_PDF_C"><article class="example example-like"><p id="p-2196">A function \(u(x,y)\) is said to be harmonic if it satisfies Laplace's equation</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_check_PDF_C"><article class="example example-like"><p id="p-2197">A function \(u(x,y)\) is said to be harmonic if it satisfies Laplace's equation</p>
 <div class="displaymath">
 \begin{equation*}
 u_{xx} + u_{yy}=0
@@ -458,7 +459,7 @@ u(x,y) = a +\overbrace{bx+cy}^{\rm degree\ 1}
 <p data-braille="continuation">with \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(\al\text{,}\) and \(\be\) all constants. Notice that since both terms in the equation involve a second derivative, we would not expect there to be any conditions on the constant and linear terms. There aren't. Beware that, while we have found all harmonic degree-two polynomials, there are many other <em class="emphasis">harmonic functions</em>, like, for example \(e^x\cos y\text{.}\)</p></article></div></section><section class="subsection" id="sec_wave"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.8.1</span> <span class="title">Optional — Solving the Advection and Wave Equations</span>
 </h3>
-<p id="p-2197">In this section we consider</p>
+<p id="p-2198">In this section we consider</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{\partial^2 w}{\partial x^2}(x,t)
@@ -467,7 +468,7 @@ u(x,y) = a +\overbrace{bx+cy}^{\rm degree\ 1}
 </div>
 <p data-braille="continuation">This is an extremely important<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-72" id="fn-72"><sup> 5 </sup></a> partial differential equation called the “wave equation” (in one spatial dimension) that is used in modelling water waves, sound waves, seismic waves, light waves and so on. The reason that we are looking at it here is that we can use what we have just learned to see that its solutions are waves travelling with speed \(c\text{.}\)</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-72"><div class="fn">If you plug “wave equation” into your favourite search engine you will get more than a million hits.</div></div>
-<p id="p-2198">To start, we'll use gradients and the chain rule to find the solution of the slightly simpler equation</p>
+<p id="p-2199">To start, we'll use gradients and the chain rule to find the solution of the slightly simpler equation</p>
 <div class="displaymath">
 \begin{equation*}
 \pdiff{w}{x}(x,t)-\frac{1}{c}\pdiff{w}{t}(x,t)=0
@@ -493,7 +494,7 @@ u(x,y) = a +\overbrace{bx+cy}^{\rm degree\ 1}
 <li id="li-997">Thus the gradient of any solution \(w(x,t)\) must always be parallel to the constant vector \(\llt 1\,,\,c\rgt\text{.}\)</li>
 <li id="li-998">Recall that one of our implications following Definition <a class="xref" data-knowl="./knowl/def_dri_deriv.html" title="Definition 2.7.5">2.7.5</a> is that the gradient of \(w(x,t)\) must always be perpendicular to the level curves of \(w\text{.}\)</li>
 <li id="li-999">
-<p id="p-2199">So the level curves of \(w(x,t)\) are always perpendicular to the constant vector \(\big \lt  1\,,\,c\big \gt \text{.}\) They must be straight lines with equations of the form</p>
+<p id="p-2200">So the level curves of \(w(x,t)\) are always perpendicular to the constant vector \(\big \lt  1\,,\,c\big \gt \text{.}\) They must be straight lines with equations of the form</p>
 <div class="displaymath">
 \begin{equation*}
 \llt 1\,,\,c\rgt\cdot\llt x-x_0\,,\,t-t_0\rgt =0\qquad\text{or}\qquad
@@ -507,8 +508,8 @@ x+ct=u\quad\text{with $u$ a constant}
 <p data-braille="continuation">This solution represents a wave packet moving to the left with speed \(c\text{.}\) You can see this by observing that all points \((x,t)\) in space-time for which \(x+ct\) takes the same fixed value, say \(z\text{,}\) have the same value of \(U(x+ct)\text{,}\) namely \(U(z)\text{.}\) So if you move so that your position at time \(t\) is \(x=z-ct\)  (i.e. move the left with speed \(c\)) you always see the same value of \(w\text{.}\) The figure below illustrates this. It contains the graphs of \(U(x)\text{,}\) \(U(x+c)
 =U(x+ct)\big|_{t=1}\) and  \(U(x+2c)=U(x+ct)\big|_{t=2}\) for a bump shaped \(U(x)\text{.}\) In the figure the location of the tick \(z\) on the \(x\)-axis was chosen so that so that \(U(z)=\max_x U(x)\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:17%;margin-right:17%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/bumpLeft.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-2200">The above argument that lead to the solution \(w(x,t)=U(x+ct)\) was somewhat handwavy. But we can easily turn it into a much tighter argument by simply changing variables from \((x,y)\) to \((u,v)\) with \(u=x+ct\text{.}\) It doesn't much matter what we choose (within reason) for the new variable \(v\text{.}\) Let's take \(v=x-ct\text{.}\) Then \(x=\frac{u+v}{2}\) and \(t=\frac{u-v}{2c}\) and it is easy to translate back and forth between \(x,t\) and \(u,v\text{.}\)</p>
-<p id="p-2201">Now define the function \(W(u,v)\) by</p>
+<p id="p-2201">The above argument that lead to the solution \(w(x,t)=U(x+ct)\) was somewhat handwavy. But we can easily turn it into a much tighter argument by simply changing variables from \((x,y)\) to \((u,v)\) with \(u=x+ct\text{.}\) It doesn't much matter what we choose (within reason) for the new variable \(v\text{.}\) Let's take \(v=x-ct\text{.}\) Then \(x=\frac{u+v}{2}\) and \(t=\frac{u-v}{2c}\) and it is easy to translate back and forth between \(x,t\) and \(u,v\text{.}\)</p>
+<p id="p-2202">Now define the function \(W(u,v)\) by</p>
 <div class="displaymath">
 \begin{equation*}
 w(x,t) = W(x+ct\,,\,x-ct)
@@ -565,17 +566,17 @@ w(x,t) = W(x+ct\,,\,x-ct)
 w(x,t) = W(x+ct\,,\,x-ct) = U(x+ct)
 \end{equation*}
 </div>
-<p id="p-2202">Now that we have solved our toy equation, let's move on to the 1d wave equation.</p>
+<p id="p-2203">Now that we have solved our toy equation, let's move on to the 1d wave equation.</p>
 <article class="example example-like" id="example-103"><a data-knowl="" class="id-ref original" data-refid="hk-example-103"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.4</span><span class="period">.</span><span class="space"> </span><span class="title">Wave Equation.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-103"><article class="example example-like"><p id="p-2203">We'll now expand the above argument to find the general solution to</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-103"><article class="example example-like"><p id="p-2204">We'll now expand the above argument to find the general solution to</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{\partial^2 w}{\partial x^2}(x,t)
 -\frac{1}{c^2}\frac{\partial^2 w}{\partial t^2}(x,t)=0
 \end{equation*}
 </div>
-<p id="p-2204">We'll again make the change of variables from \((x,y)\) to \((u,v)\) with \(u=x+ct\) and \(v=x-ct\) and again define the function \(W(u,v)\) by</p>
+<p id="p-2205">We'll again make the change of variables from \((x,y)\) to \((u,v)\) with \(u=x+ct\) and \(v=x-ct\) and again define the function \(W(u,v)\) by</p>
 <div class="displaymath">
 \begin{equation*}
 w(x,t) = W(x+ct\,,\,x-ct)
@@ -668,10 +669,10 @@ w(x,t) = W(x+ct\,,\,x-ct)
 </div>
 <p data-braille="continuation">As we saw above \(U(x+ct)\) represents a wave packet moving to the left with speed \(c\text{.}\) Similarly, \(V(x-ct)\) represents a wave packet moving to the right with speed \(c\text{.}\)</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-73"><div class="fn">This is known as d'Alembert's form of the solution. It is named after Jean le Rond d'Alembert, 1717--1783, who was a French mathematician, physicist, philosopher and music theorist.</div></div>
-<p id="p-2205">Notice that \(w(x,t) = U(x+ct) + V(x-ct)\) is a solution regardless of what \(U\) and \(V\) are. The differential equation cannot tell us what \(U\) and \(V\) are. To determine them, we need more information about the system — usually in the form of initial conditions, like \(w(x,0)=\cdots\) and \(\pdiff{w}{t}(x,0)=\cdots\text{.}\) General techniques for solving partial differential equations lie beyond this text — but definitely require a good understanding of multivariable calculus. A good reason to keep on reading!</p></article></div></section><section class="subsection" id="sec_wave_deriv"><h3 class="heading hide-type">
+<p id="p-2206">Notice that \(w(x,t) = U(x+ct) + V(x-ct)\) is a solution regardless of what \(U\) and \(V\) are. The differential equation cannot tell us what \(U\) and \(V\) are. To determine them, we need more information about the system — usually in the form of initial conditions, like \(w(x,0)=\cdots\) and \(\pdiff{w}{t}(x,0)=\cdots\text{.}\) General techniques for solving partial differential equations lie beyond this text — but definitely require a good understanding of multivariable calculus. A good reason to keep on reading!</p></article></div></section><section class="subsection" id="sec_wave_deriv"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.8.2</span> <span class="title">Really Optional — Derivation of the Wave Equation</span>
 </h3>
-<p id="p-2206">In this section we derive the wave equation</p>
+<p id="p-2207">In this section we derive the wave equation</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{\partial^2 w}{\partial x^2}(x,t)
@@ -679,9 +680,9 @@ w(x,t) = W(x+ct\,,\,x-ct)
 \end{equation*}
 </div>
 <p data-braille="continuation">in one application. To be precise, we apply Newton's law to an elastic string, and conclude that small amplitude transverse vibrations of the string obey the wave equation.</p>
-<p id="p-2207">Here is a sketch of a tiny element of the string.</p>
+<p id="p-2208">Here is a sketch of a tiny element of the string.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/string_elmnt.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-2208">The basic notation that we will use (most of which appears in the sketch) is</p>
+<p id="p-2209">The basic notation that we will use (most of which appears in the sketch) is</p>
 <div class="displaymath">
 \begin{align*}
 w(x,t) &amp;= \text{vertical displacement of the string from the }x
@@ -740,7 +741,7 @@ T(x,t) &amp;= \text{tension in the string at position $x$ and time $t$}\\
 \end{align*}
 </div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:36%;margin-right:36%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/triangleString.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-2209">Substituting these formulae into (E1) give a horrendous mess. However, we can get considerable simplification by looking only at small vibrations. By a small vibration, we mean that \(|\theta(x,t)|\ll 1\) for all \(x\) and \(t\text{.}\) This implies that \(|\tan\theta(x,t)|\ll 1\text{,}\) hence that \(\big|\frac{\partial w}{\partial x}(x,t)\big|\ll 1\) and hence that</p>
+<p id="p-2210">Substituting these formulae into (E1) give a horrendous mess. However, we can get considerable simplification by looking only at small vibrations. By a small vibration, we mean that \(|\theta(x,t)|\ll 1\) for all \(x\) and \(t\text{.}\) This implies that \(|\tan\theta(x,t)|\ll 1\text{,}\) hence that \(\big|\frac{\partial w}{\partial x}(x,t)\big|\ll 1\) and hence that</p>
 <div class="displaymath">
 \begin{align*}
 \sqrt{1+\left(\frac{\partial w}{\partial x}\right)^2}&amp;\approx 1&amp;
@@ -762,7 +763,7 @@ T(x,t) &amp;= \text{tension in the string at position $x$ and time $t$}\\
 \end{equation*}
 </div>
 <p data-braille="continuation">which is indeed relatively simple, but still exhibits a problem. This is one equation in the two unknowns \(w\) and \(T\text{.}\)</p>
-<p id="p-2210">Fortunately there is a second equation lurking in the background, that we haven't used yet. Namely, the horizontal component of Newton's law of motion. As a second simplification, we assume that there are only transverse vibrations. That is, our tiny string element moves only vertically. Then the net horizontal force on it must be zero. That is,</p>
+<p id="p-2211">Fortunately there is a second equation lurking in the background, that we haven't used yet. Namely, the horizontal component of Newton's law of motion. As a second simplification, we assume that there are only transverse vibrations. That is, our tiny string element moves only vertically. Then the net horizontal force on it must be zero. That is,</p>
 <div class="displaymath">
 \begin{equation*}
 T(x+\De x,t)\cos\theta(x+\De x,t)-T(x,t)\cos\theta(x,t)=0
@@ -794,20 +795,20 @@ c=\sqrt{\frac{T}{\rho}}
 \end{equation*}
 </div>
 <p data-braille="continuation">as desired.</p>
-<p id="p-2211">The equation that is called the wave equation has built into it a lot of approximations. By going through the derivation, we have seen what those approximations are, and we can get some idea as to when they are applicable.</p></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
+<p id="p-2212">The equation that is called the wave equation has built into it a lot of approximations. By going through the derivation, we have seen what those approximations are, and we can get some idea as to when they are applicable.</p></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">2.8.3</span> <span class="title">Exercises</span>
 </h3>
 <div class="exercisegroup" id="exercisegroup-42">
-<div class="introduction" id="introduction-55"><p id="p-2212"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="introduction" id="introduction-55"><p id="p-2213"><em class="alert">Exercises — Stage 1</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-276"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-2213">Let \(u(x,t)= e^{-t-x^2}\text{.}\) Find a function \(g(x)\) so that \(u(x,t)\) obeys the partial differential equation</p>
+<p id="p-2214">Let \(u(x,t)= e^{-t-x^2}\text{.}\) Find a function \(g(x)\) so that \(u(x,t)\) obeys the partial differential equation</p>
 <div class="displaymath">
 \begin{equation*}
 u_{xx}(x,t)+u(x,t) = g(x)\, u_t(x,t)
 \end{equation*}
 </div></article><article class="exercise exercise-like" id="exercise-277"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<ol id="p-2217" class="lower-alpha">
+<ol id="p-2218" class="lower-alpha">
 <li id="li-1008">Find all functions \(u(x,y)\) that obey the partial differential equation<div class="displaymath">
 \begin{equation*}
 u_x=0
@@ -824,10 +825,10 @@ u_x(x,y)= f(x)
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-43">
-<div class="introduction" id="introduction-56"><p id="p-2223"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="introduction" id="introduction-56"><p id="p-2224"><em class="alert">Exercises — Stage 2</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-278"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-2224">Solutions of Laplace's equation \(u_{xx}(x,y)+u_{yy}(x,y)=0\) are called <em class="emphasis">harmonic functions</em>. Which of the following functions are harmonic?</p>
+<p id="p-2225">Solutions of Laplace's equation \(u_{xx}(x,y)+u_{yy}(x,y)=0\) are called <em class="emphasis">harmonic functions</em>. Which of the following functions are harmonic?</p>
 <ol class="lower-alpha">
 <li id="li-1010">\(\displaystyle x^3-3xy^2\)</li>
 <li id="li-1011">\(\displaystyle x^3-y^3\)</li>
@@ -837,31 +838,31 @@ u_x(x,y)= f(x)
 </ol></article><article class="exercise exercise-like" id="exercise-279"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-2231">Let \(u(x,t) = e^{t+ax} + e^{t-ax}\) where \(a\) is a constant. Find \(a\) such that \(5u_t = u_{xx} + u\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-280"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-2235">Let \(u(x,y,z) = e^{3x+4y}\sin(az)\) where \(a\) is a constant. Find all \(a\)'s such that</p>
+<p id="p-2232">Let \(u(x,t) = e^{t+ax} + e^{t-ax}\) where \(a\) is a constant. Find \(a\) such that \(5u_t = u_{xx} + u\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-280"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-2236">Let \(u(x,y,z) = e^{3x+4y}\sin(az)\) where \(a\) is a constant. Find all \(a\)'s such that</p>
 <div class="displaymath">
 \begin{equation*}
 u_{xx}+u_{yy}+u_{zz}=0
 \end{equation*}
 </div></article><article class="exercise exercise-like" id="exercise-281"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-2239">Let \(u(x,t) = \sin(at)\,\cos(bx)\) where \(a\) and \(b\) are constants. Find all \(a\)'s and \(b\)'s such that \(u_{tt} = u_{xx}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-282"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-2243">Let \(F(u)\) be any differentiable function of one variable. Define \(z(x,y)=F\big(x^2+y^2\big)\text{.}\) Is the partial differential equation</p>
+<p id="p-2240">Let \(u(x,t) = \sin(at)\,\cos(bx)\) where \(a\) and \(b\) are constants. Find all \(a\)'s and \(b\)'s such that \(u_{tt} = u_{xx}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-282"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-2244">Let \(F(u)\) be any differentiable function of one variable. Define \(z(x,y)=F\big(x^2+y^2\big)\text{.}\) Is the partial differential equation</p>
 <div class="displaymath">
 \begin{equation*}
 y\pdiff{z}{x} - x\pdiff{z}{y}=0
 \end{equation*}
 </div>
 <p data-braille="continuation">necessarily satisfied? You must justify your answer.</p></article><article class="exercise exercise-like" id="exercise-283"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-2247">Let \(u(x,t) = f(t)\,\cos(2x)\text{.}\) Find all functions \(f(t)\) such that  such that \(u_t = u_{xx}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-284"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-2251">Let \(u_1(x,t)\) and \(u_2(x,t)\) both be solutions of the wave equation \(u_{tt}=u_{xx}\) and let \(a_1\) and \(a_2\) be constants. Show that \(u(x,t)=a_1u_1(x,t)+a_2u_2(t,x)\) is also a solution of \(u_{tt}=u_{xx}\text{.}\) Because of this property, the wave equation is said to be a <em class="emphasis">linear PDE</em>.</p></article><article class="exercise exercise-like" id="exercise-285"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-2254">Let \(v(x,y)\) be a harmonic function. That is, \(v(x,y)\) obeys \(v_{xx}+v_{yy}=0\text{.}\) Let \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(d\) be constants. Show that if the vectors \(\llt a,b\rgt\) and \(\llt c,d\rgt\) have the same length and are mutually \(\underline{\ \ \ \ \ \ \ \ \ \ \ \ }\) (fill in the missing word),  then \(u(x,y)=v(ax+by\,,\,cx+dy)\) is also a harmonic function.</p></article>
+<p id="p-2248">Let \(u(x,t) = f(t)\,\cos(2x)\text{.}\) Find all functions \(f(t)\) such that  such that \(u_t = u_{xx}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-284"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-2252">Let \(u_1(x,t)\) and \(u_2(x,t)\) both be solutions of the wave equation \(u_{tt}=u_{xx}\) and let \(a_1\) and \(a_2\) be constants. Show that \(u(x,t)=a_1u_1(x,t)+a_2u_2(t,x)\) is also a solution of \(u_{tt}=u_{xx}\text{.}\) Because of this property, the wave equation is said to be a <em class="emphasis">linear PDE</em>.</p></article><article class="exercise exercise-like" id="exercise-285"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
+<p id="p-2255">Let \(v(x,y)\) be a harmonic function. That is, \(v(x,y)\) obeys \(v_{xx}+v_{yy}=0\text{.}\) Let \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(d\) be constants. Show that if the vectors \(\llt a,b\rgt\) and \(\llt c,d\rgt\) have the same length and are mutually \(\underline{\ \ \ \ \ \ \ \ \ \ \ \ }\) (fill in the missing word),  then \(u(x,y)=v(ax+by\,,\,cx+dy)\) is also a harmonic function.</p></article>
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-44">
-<div class="introduction" id="introduction-57"><p id="p-2258"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="introduction" id="introduction-57"><p id="p-2259"><em class="alert">Exercises — Stage 3</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-286"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
-<p id="p-2259">The distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is</p>
+<p id="p-2260">The distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is</p>
 <div class="displaymath">
 \begin{equation*}
 r(x,y,z) = \sqrt{x^2+y^2+z^2}
@@ -874,7 +875,7 @@ u_{xx}+u_{yy}+u_{zz}=0
 \end{equation*}
 </div>
 <p data-braille="continuation">for all \((x,y,z)\ne  (0,0,0)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-287"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
-<p id="p-2262">In this question we are going to find all solutions \(u(t,x)\) to the PDE</p>
+<p id="p-2263">In this question we are going to find all solutions \(u(t,x)\) to the PDE</p>
 <div class="displaymath">
 \begin{equation*}
 u_t=xu_x\qquad\text{for }x&gt;0
@@ -897,7 +898,7 @@ X'(x)\amp=\frac{\la}{x} X(x)
 </li>
 <li id="li-1019">Find the general solutions to  \(T'(t)=\la T(t)\) and \(X'(x)=\frac{\la}{x} X(x)\) with \(T,X&gt;0\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-288"><h6 class="heading"><span class="codenumber">13<span class="period">.</span></span></h6>
-<p id="p-2270">Suppose that \(u(x,y)\) obeys the PDE</p>
+<p id="p-2271">Suppose that \(u(x,y)\) obeys the PDE</p>
 <div class="displaymath">
 \begin{equation*}
 \al(x,y)\,u_x(x,y) +\be(x,y)\,u_y(x,y)=0
@@ -912,7 +913,7 @@ X'(x)\amp=\frac{\la}{x} X(x)
 </div>
 <p data-braille="continuation">Show that \(u\) is constant along that curve. That is, show that \(u\big(X(t),Y(t)\big)\) is independent of \(t\text{.}\)</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-74"><div class="fn">Such curves are called <em class="emphasis">characteristics</em> of the PDE.</div></div></article><article class="exercise exercise-like" id="exercise-289"><h6 class="heading"><span class="codenumber">14<span class="period">.</span></span></h6>
-<ol id="p-2274" class="lower-alpha">
+<ol id="p-2275" class="lower-alpha">
 <li id="li-1020">Suppose that \(u(x,y)\) obeys the PDE<div class="displaymath">
 \begin{equation*}
 3u_x(x,y) + 6u_y(x,y)=u(x,y)\text{.}

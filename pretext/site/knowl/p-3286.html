@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:14+01:00    *-->
+<!--*    on 2022-09-26T13:34:13+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,11 +13,38 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Evaluate the iterated double integral</p>
+<p>(b) In polar coordinates, \(x^2 + y^2 \le 2y\) becomes</p>
 <div class="displaymath">
 \begin{equation*}
-\int_{x=0}^{x=2}\int_{y=0}^{y=\sqrt{4-x^2}} {(x^2+y^2)}^{\frac{3}{2}}\ \dee{y}\,\dee{x}
+r^2\le 2r\sin\theta
+\iff
+r\le 2\sin\theta
 \end{equation*}
+</div>
+<p data-braille="continuation">Let us denote by \(D\) the base region of the part of \(E\) in the first octant (i.e. the shaded region in the figure above). Think of \(D\) as being part of the \(xy\)--plane. In polar coordinates, on \(D\)</p>
+<ul class="disc">
+<li>\(\theta\) runs from \(0\) to \(\frac{\pi}{2}\text{.}\) (Recall that \(D\) is contained in the first quadrant.)</li>
+<li>For each \(\theta\) in that range, \(r\) runs from \(0\) to \(2\sin\theta\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Because</p>
+<ul class="disc">
+<li>in polar coordinates \(\dee{A} = r\,\dee{r}\,\dee{\theta}\text{,}\) and</li>
+<li>the height of \(E\) above each point \((x,y)\) in \(D\) is \(\sqrt{x^2+y^2}\text{,}\) or, in polar coordinates, \(r\text{,}\) and</li>
+<li>the volume of \(E\) is twice the volume of the part of \(E\) in the first octant,</li>
+</ul>
+<p data-braille="continuation">we have</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume}(E)
+&amp;= 2\int_0^{\frac{\pi}{2}}\dee{\theta} \int_0^{2\sin\theta}\dee{r}\ r^2\\
+&amp;=\frac{16}{3} \int_0^{\frac{\pi}{2}}\dee{\theta}\ \sin^3\theta
+=\frac{16}{3} \int_0^{\frac{\pi}{2}}\dee{\theta}\
+\sin\theta\ \big(1-\cos^2\theta\big)\\
+&amp;=-\frac{16}{3} \int_1^0\dee{u}\ \big(1-u^2\big)\qquad
+\text{with }u=\cos\theta,\ \dee{u}=-\sin\theta\ \dee{\theta}\\
+&amp;=\frac{16}{3}\left[1-\frac{1}{3}\right]\\
+&amp;=\frac{32}{9}
+\end{align*}
 </div>
 <span class="incontext"><a href="sec_polars.html#p-3286">in-context</a></span>
 </body>

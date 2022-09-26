@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:35+01:00    *-->
+<!--*    on 2022-09-26T13:29:35+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,24 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Note that the velocity \(\vv(t) = \vr'(t)\) is a vector quantity while the speed \(\diff{s}{t}(t)=|\vr'(t)|\) is a scalar quantity.</p>
+<p>If \(\vr(t)=\big(x(t)\,,\,y(t)\,,\,z(t)\big)\) is the position of a particle at time \(t\text{,}\) then</p>
+<div class="displaymath">
+\begin{align*}
+\text{velocity at time } t
+&amp;=\vv(t)=\vr'(t)=x'(t)\hi + y'(t)\hj + z'(t)\hk
+= \diff{s}{t}(t)\,\hat\vT(t)\\
+\text{speed at time } t
+&amp;= \diff{s}{t}(t)=|\vv(t)|=|\vr'(t)|=\sqrt{(x'(t)^2+y'(t)^2+z'(t)^2}\\
+\text{acceleration at time } t
+&amp;=\va(t)=\vr''(t)=\vv'(t)
+=\big(x''(t)\hi + y''(t)\hj + z''(t)\hk\\
+\end{align*}
+<p class="intertext">and the distance travelled between times \(T_0\) and \(T\) is</p>
+\begin{align*}
+s(T)-s(T_0)&amp;= \int_{T_0}^T \Big|\diff{\vr}{t}(t)\Big|\,\dee{t}
+= \int_{T_0}^T \sqrt{(x'(t)^2+y'(t)^2+z'(t)^2}\,\dee{t}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_curves.html#p-737">in-context</a></span>
 </body>
 </html>

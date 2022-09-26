@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:00+01:00    *-->
+<!--*    on 2022-09-26T13:30:08+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,14 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Here is another way to come to the same conclusion.</p>
+<p>Observe that</p>
 <ul class="disc">
-<li>Pick any really small positive number. We'll use \(10^{-137}\) as an example.</li>
-<li>Pick any real number \(F\) between \(-1\) and \(1\text{.}\) We'll use \(F=\frac{\sqrt{3}}{2}\) as an example.</li>
-<li>Looking at the sketch above, we see that \(f(x,y)\) takes the value \(F\) along an entire ray \(\theta={\rm const}\text{,}\) \(r\gt 0\text{.}\) In the case \(F=\frac{\sqrt{3}}{2}\text{,}\) the ray is \(2\theta=30^{\circ}\text{,}\) \(r\gt 0\text{.}\) In particular, because the ray extends all the way to \((0,0)\text{,}\) \(f\) takes the value \(F\) for some \((x,y)\) obeying \(|(x,y)|\lt 10^{-137}\text{.}\)</li>
-<li>That is true regardless of which really small number you picked. So \(f(x,y)=\frac{x^2-y^2}{x^2+y^2}\) does not approach any single value as \(r=|(x,y)|\) approaches \(0\) and we conclude that \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2-y^2}{x^2+y^2}\) does not exist.</li>
+<li>as \((x,y)\) approaches \((0,0)\) along the ray with \(2\theta =30^\circ\text{,}\) \(f(x,y)\) approaches the value \(\frac{\sqrt{3}}{2}\) (and in fact \(f(x,y)\) takes the value \(\cos(30^\circ)=\frac{\sqrt{3}}{2}\) at every point of that ray)</li>
+<li>as \((x,y)\) approaches \((0,0)\) along the ray with \(2\theta =60^\circ\text{,}\) \(f(x,y)\) approaches the value \(\frac{1}{2}\) (and in fact \(f(x,y)\) takes the value \(\cos(60^\circ)=\frac{1}{2}\) at every point of that ray)</li>
+<li>as \((x,y)\) approaches \((0,0)\) along the ray with \(2\theta =90^\circ\text{,}\) \(f(x,y)\) approaches the value \(0\) (and in fact \(f(x,y)\) takes the value \(\cos(90^\circ)=0\) at every point of that ray)</li>
+<li>and so on</li>
 </ul>
+<p data-braille="continuation">So there is not single number \(L\) such that \(f(x,y)\) approaches \(L\) as \(r=|(x,y)|\rightarrow 0\text{,}\) no matter what the direction of approach is. The limit \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2-y^2}{x^2+y^2}\) does not exist.</p>
 <span class="incontext"><a href="sec_limits.html#p-1118">in-context</a></span>
 </body>
 </html>

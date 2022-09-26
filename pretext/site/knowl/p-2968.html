@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:41+01:00    *-->
+<!--*    on 2022-09-26T13:33:37+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>A region \(E\) in the \(xy\)--plane has the property that for all continuous functions f</p>
+<p>(c) When \(f(x,y)=\frac{x}{y}\text{,}\)</p>
 <div class="displaymath">
-\begin{equation*}
-\dblInt_E f(x,y)\,\dee{A}
-= \int_{x=-1}^{x=3}\left[\int_{y=x^2}^{y=2x+3} f(x,y) \dee{y}\right] \dee{x}
-\end{equation*}
+\begin{align*}
+I &amp;= \int_1^{\sqrt{2}} \int_{1/y}^{\sqrt{y}} \frac{x}{y}\,\dee{x}\,\dee{y}
++\int_{\sqrt{2}}^4 \int_{y/2}^{\sqrt{y}} \frac{x}{y}\,\dee{x}\,\dee{y}\\
+&amp;=\int_1^{\sqrt{2}} \frac{1}{y}\left[\frac{y}{2}-\frac{1}{2y^2}\right]
+\,\dee{y}
++\int_{\sqrt{2}}^4 \frac{1}{y}\left[\frac{y}{2}-\frac{y^2}{8}\right]
+\,\dee{y}\\
+&amp;=\left[\frac{y}{2}+\frac{1}{4y^2}\right]_1^{\sqrt{2}}
++\left[\frac{y}{2}-\frac{y^2}{16}\right]_{\sqrt{2}}^4\\
+&amp;=\frac{1}{\sqrt{2}} +\frac{1}{8}-\frac{1}{2}-\frac{1}{4}
++2 -1 -\frac{1}{\sqrt{2}} +\frac{1}{8}\\
+&amp;=\frac{1}{2}
+\end{align*}
 </div>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2968">in-context</a></span>
 </body>

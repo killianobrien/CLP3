@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:59+01:00    *-->
+<!--*    on 2022-09-26T13:35:01+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -15,30 +15,15 @@
 <h6 class="heading"><span class="type">Paragraph</span></h6>
 <p>Note that</p>
 <ul class="disc">
-<li>\(z\) runs from \(-1\) to  \(\sqrt{1-x^2}\text{.}\)</li>
-<li>For each \(z\) between \(-1\) and \(-\sqrt{1-x^2}\text{,}\) \(y\) runs from \(-\sqrt{1-x^2}\) to \(\sqrt{1-x^2}\text{,}\) while</li>
-<li>for each \(z\) between \(-\sqrt{1-x^2}\) and \(\sqrt{1-x^2}\text{,}\) \(y\) runs from \(z\) to \(\sqrt{1-x^2}\text{.}\)</li>
+<li>in \(E\text{,}\) \(x\) runs from \(-1\) to \(1\text{.}\)</li>
+<li>Once \(x\) has been fixed, \(y\) and \(z\) must obey<div class="displaymath">
+\begin{equation*}
+-\sqrt{1-x^2}\le y\le\sqrt{1-x^2}\qquad -1\le z\le y
+\end{equation*}
+</div>
+</li>
 </ul>
-<p data-braille="continuation">So</p>
-<div class="displaymath">
-\begin{align*}
-\tripInt_E f(x,y,z)\ \dee{V}
-&amp;=\int_{-1}^1\dee{x} \int_{-1}^{-\sqrt{1-x^2}}\dee{z}
-\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}\dee{y}  \ f(x,y,z)\\
-&amp;\hskip1in  +\int_{-1}^1\dee{x} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}\dee{z}
-\int_z^{\sqrt{1-x^2}}\dee{y}  \ f(x,y,z)
-\end{align*}
-</div>
-<p data-braille="continuation">or</p>
-<div class="displaymath">
-\begin{align*}
-\tripInt_E f(x,y,z)\ \dee{V}
-&amp;=\int_{-1}^1 \int_{-1}^{-\sqrt{1-x^2}} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}
-f(x,y,z)\ \dee{y}\,\dee{z}\,\dee{x}\\
-&amp;\hskip1in  +\int_{-1}^1 \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}
-\int_z^{\sqrt{1-x^2}}  f(x,y,z)\ \dee{y}\,\dee{z}\,\dee{x}
-\end{align*}
-</div>
+<p data-braille="continuation">Here is a sketch.</p>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3668">in-context</a></span>
 </body>
 </html>

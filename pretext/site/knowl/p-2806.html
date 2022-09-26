@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:22+01:00    *-->
+<!--*    on 2022-09-26T13:33:18+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,23 +13,45 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In the very special (but not that uncommon) case that \(\cR\) is the rectangle</p>
+<p>Let \(A,B,C\) be real numbers. Under the hypotheses of Theorem <a class="xref" data-knowl="./knowl/thm_xy_mass.html" title="Theorem 3.1.3">3.1.3</a>,</p>
 <div class="displaymath">
-\begin{equation*}
-\cR=\Set{(x,y)}{a\le x\le b,\ c\le y\le d}
-\end{equation*}
+\begin{align*}
+\dblInt_\cR \left( f(x,y) + g(x,y) \right)\,\dee{x}\dee{y}
+&amp;= \dblInt_\cR f(x,y)\,\dee{x}\dee{y} + \dblInt_\cR g(x,y)\,\dee{x}\dee{y}
+\tag{a}\\
+\dblInt_\cR\left(f(x,y)-g(x,y)\right)\,\dee{x}\dee{y}
+&amp;= \dblInt_\cR f(x,y)\,\dee{x}\dee{y} - \dblInt_\cR g(x,y)\,\dee{x}\dee{y}
+\tag{b}\\
+\dblInt_\cR C f(x,y)\,\dee{x}\dee{y}
+&amp;= C\,\dblInt_\cR f(x,y)\,\dee{x}\dee{y}
+\tag{c}
+\end{align*}
 </div>
-<p data-braille="continuation">and the integrand is the product \(f(x,y)=g(x)h(y)\text{,}\)</p>
+<p data-braille="continuation">Combining these three rules we have</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR\left( Af(x,y) + Bg(x,y) \right)\,\dee{x}\dee{y}
+&amp;= A\dblInt_\cR f(x,y)\,\dee{x}\dee{y}\\
+&amp;\hskip0.25in  + B\dblInt_\cR g(x,y)\,\dee{x}\dee{y}
+\tag{d}
+\end{align*}
+</div>
+<p data-braille="continuation">That is, integrals depend linearly on the integrand.</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR \,\dee{x}\dee{y} &amp;= \text{Area}(\cR)
+\tag{e}
+\end{align*}
+</div>
+<p data-braille="continuation">If the region \(\cR\) in the \(xy\)-plane is the union of regions \(\cR_1\) and \(\cR_2\) that do not overlap (except possibly on their boundaries), then</p>
 <div class="displaymath">
 \begin{align*}
 \dblInt_\cR f(x,y)\,\dee{x}\dee{y}
-&amp;=\int_a^b\dee{x} \int_c^d\dee{y}\ g(x) h(y)\\
-&amp;=\int_a^b\dee{x}\ g(x) \int_c^d\dee{y}\  h(y)\\
-&amp;\hskip0.25in\text{since $g(x)$ is a constant as far as the $y$-integral is concerned}\\
-&amp;=\left[ \int_a^b\dee{x}\ g(x)\right]\ \left[\int_c^d\dee{y}\  h(y)\right]
+&amp;= \dblInt_{\cR_1} f(x,y)\,\dee{x}\dee{y}
++\dblInt_{\cR_2} f(x,y)\,\dee{x}\dee{y}
+\tag{f}
 \end{align*}
 </div>
-<p data-braille="continuation">since \(\int_c^d\dee{y}\  h(y)\) is a constant as far as the $x$-integral is concerned.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2806">in-context</a></span>
 </body>
 </html>

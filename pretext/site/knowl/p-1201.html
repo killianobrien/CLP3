@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:06+01:00    *-->
+<!--*    on 2022-09-26T13:30:15+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,22 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Define, for all \((x,y)\ne(0,0)\text{,}\) \(f(x,y)=\frac{x^2y}{x^4+y^2}\text{.}\)</p>
-<ol class="lower-alpha">
-<li>Let \(0\le \theta \lt 2\pi\text{.}\) Compute \(\ds\lim_{r\rightarrow 0^+}f(r\cos\theta,r\sin\theta)\text{.}\)</li>
-<li>Compute \(\ds\lim_{x\rightarrow 0}f(x,x^2)\text{.}\)</li>
-<li>Does \(\ds\lim_{(x,y)\rightarrow (0,0)}f(x,y)\) exist?</li>
-</ol>
+<p>(b) Since</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{x^2y^2 -2 x^2y + x^2} {(x^2 + y^2-2y+1)^2}
+=\frac{x^2(y-1)^2} {\big[x^2 + (y-1)^2\big]^2}
+\end{gather*}
+</div>
+<p data-braille="continuation">and, in polar coordinates centred on \((0,1)\text{,}\) \(x=r\cos\theta\text{,}\) \(y=1+r\sin\theta\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{x^2(y-1)^2} {\big[x^2 + (y-1)^2\big]^2}
+=\frac{r^4\cos^2\theta\sin^2\theta}{r^4}
+=\cos^2\theta\sin^2\theta
+\end{equation*}
+</div>
+<p data-braille="continuation">we have that the limit does not exist. For example, if we send \((x,y)\) to \((0,1)\) along the line \(y=1\text{,}\) so that \(\theta=0\text{,}\) we get the limit \(0\text{,}\) while if we send \((x,y)\) to \((0,1)\) along the line \(y=x+1\text{,}\) so that \(\theta=\frac{\pi}{4}\text{,}\) we get the limit \(\frac{1}{4}\text{.}\)</p>
 <span class="incontext"><a href="sec_limits.html#p-1201">in-context</a></span>
 </body>
 </html>

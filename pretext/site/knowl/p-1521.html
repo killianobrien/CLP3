@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:29+01:00    *-->
+<!--*    on 2022-09-26T13:30:45+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,9 +13,54 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Assume that the function \(F(x,y,z)\) satisfies the equation \(\frac{\partial F}{\partial z} = \frac{\partial^2 F}{\partial x^2}
-+ \frac{\partial^2 F}{\partial y^2}\) and the mixed partial derivatives \(\frac{\partial^2 F}{\partial x \partial y}\) and \(\frac{\partial^2 F}{\partial y \partial x}\) are equal. Let \(A\) be some constant and let \(G(\gamma, s, t) = F (\gamma + s, \gamma-s, At)\text{.}\) Find the value of \(A\) such that \(\frac{\partial G}{\partial t} = \frac{\partial^2 G}{\partial \gamma^2}
-+ \frac{\partial^2 G}{\partial s^2}\text{.}\)</p>
+<p>Write \(w(t) = z\big(x(t),y(t)\big) = f\big(x(t),y(t)\big)\) with \(x(t)=2t^2\text{,}\) \(y(t)=t^3\text{.}\) We are to compute \(\difftwo{w}{t}(1)\text{.}\) By the chain rule</p>
+<div class="displaymath">
+\begin{align*}
+\diff{w}{t}(t)&amp;= \diff{}{t} f\big(x(t),y(t)\big)\\
+&amp;= f_x(x(t)\,,\,y(t))\,\diff{x}{t}(t)
++f_y(x(t)\,,\,y(t))\,\diff{y}{t}(t)\\
+&amp;= 4t\,f_x(x(t)\,,\,y(t))
++3t^2\,f_y(x(t)\,,\,y(t))
+\end{align*}
+</div>
+<p data-braille="continuation">By linearity, the product rule, and the chain rule,</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\difftwo{}{t} f\big(x(t),y(t)\big)
+= \diff{}{t}\left[4t\,f_x\big(x(t),y(t)\big) \right]
++\diff{}{t}\left[3t^2\,f_y\big(x(t),y(t)\big) \right]\\
+&amp;\hskip0.3in= 4\,f_x\big(x(t),y(t)\big)
++ \color{blue}{4t \diff{}{t}\left[f_x\big(x(t),y(t)\big) \right] }\\
+&amp;\hskip0.3in\phantom{=}
++6t\,f_y\big(x(t),y(t)\big)
++\color{red}{3t^2\diff{}{t}\left[f_y\big(x(t),y(t)\big) \right]}\\
+&amp;\hskip0.3in= 4\,f_x(2t^2\,,\,t^3)
++ \color{blue}{4t\Big[f_{xx}\big(x(t),y(t)\big)\,\diff{x}{t}(t)
++ f_{xy}\big(x(t),y(t)\big)\,\diff{y}{t}(t)\Big]}\\
+&amp;\hskip0.3in\phantom{=} + 6t\,f_y(2t^2\,,\,t^3)
++ \color{red}{3t^2\Big[f_{yx}\big(x(t),y(t)\big)\,\diff{x}{t}(t)
++ f_{yy}\big(x(t),y(t)\big)\,\diff{y}{t}(t)\Big]}\\
+&amp;\hskip0.3in= 4\,f_x(2t^2\,,\,t^3)
++ \color{blue}{16t^2\,f_{xx}(2t^2\,,\,t^3)
++ 12t^3\,f_{xy}(2t^2\,,\,t^3)}\\
+&amp;\hskip0.3in\phantom{=} + 6t\,f_y(2t^2\,,\,t^3)
++ \color{red}{12t^3\,f_{yx}(2t^2\,,\,t^3)
++ 9t^4\,f_{yy}(2t^2\,,\,t^3)}
+\end{align*}
+</div>
+<p data-braille="continuation">In particular, when \(t=1\text{,}\) and since \(f_{xy}(2, 1)=f_{yx}(2, 1)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\left.\difftwo{}{t} f\big(x(t),y(t)\big) \right|_{t=1}
+&amp;= 4\,(5)
++\color{blue}{ 16\,(2)
++ 12\,(1)}\\
+&amp;\phantom{=} + 6\,(-2)
++ \color{red}{12\,(1)
++ 9\,(-4)}\\
+&amp;=28
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_chain_rule.html#p-1521">in-context</a></span>
 </body>
 </html>

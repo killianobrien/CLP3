@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:34+01:00    *-->
+<!--*    on 2022-09-26T13:35:42+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,30 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>For each fixed \(\varphi\text{,}\) \(\theta\) runs from \(0\) to \(2\pi\) and \(\rho\) runs from \(0\) to either \(\frac{h}{\cos\varphi}\) (at the top of the can, when \(\varphi \lt \tan^{-1}\frac{a}{h}\)) or \(\frac{a}{\sin\varphi}\) (at the side of the can, when \(\varphi \gt \tan^{-1}\frac{a}{h}\)). So the</p>
-<div class="displaymath">
-\begin{align*}
-\text{Volume}
-&amp;= \int_{0}^{\tan^{-1}{a\over h}} \dee{\varphi} \int_{0}^{2\pi} \dee{\theta}
-\int_0^{h/\cos\varphi}\dee{\rho}\ \rho^2\sin\varphi\\
-&amp;\hskip1in
-+\int_{\tan^{-1}{a\over h}}^{{\pi\over 2}} \dee{\varphi} \int_{0}^{2\pi} \dee{\theta}
-\int_0^{a/\sin\varphi}\dee{\rho}\ \rho^2\sin\varphi\\
-&amp;= 2\pi\int_{0}^{\tan^{-1}{a\over h}} \dee{\varphi}
-\ \frac{h^3\sin\varphi}{3\cos^3\varphi}
-+2\pi\int_{\tan^{-1}{a\over h}}^{{\pi\over 2}} \dee{\varphi}
-\ \frac{a^3\sin\varphi}{3\sin^3\varphi}\\
-&amp;=2\pi\Big\{\int_0^{{a\over h}}\dee{t}\ \frac{h^3}{3}t
--\int^0_{{h\over a}}\dee{s}\ \frac{a^3}{3}\Big\}\\
-&amp;\hskip0.5in\hbox{ where }
-t=\tan\varphi, \dee{t}=\sec^2\varphi\,\dee{\varphi},
-s=\cot\varphi, \dee{s}=-\csc^2\varphi\,\dee{\varphi}\\
-&amp;=2\pi\left\{\frac{h^3}{3}\,\frac{1}{2}\left(\frac{a}{h}\right)^2
-+\frac{a^3}{3}\,\frac{h}{a}\right\}
-=2\pi\left\{\frac{ah^2}{6}+\frac{a^2h}{3}\right\}
-=\pi a^2h
-\end{align*}
-</div>
+<p>The top of the cylinder has equation \(z=h\text{,}\) i.e. \(\rho\cos\varphi=h\text{.}\) The side of the cylinder has equation \(x^2+y^2=a^2\text{,}\) i.e. \(\rho\sin\varphi=a\text{.}\) The bottom of the cylinder has equation \(z=0\text{,}\) i.e. \(\varphi=\frac{\pi}{2}\text{.}\)</p>
 <span class="incontext"><a href="sec_spherical.html#p-3949">in-context</a></span>
 </body>
 </html>

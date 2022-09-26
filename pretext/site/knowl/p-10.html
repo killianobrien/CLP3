@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:42:51+01:00    *-->
+<!--*    on 2022-09-26T13:28:43+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>More generally, the distance from the point \((x,y,z)\) to the point \((x',y',z')\) is</p>
-<div class="displaymath">
-\begin{equation*}
-\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}
-\end{equation*}
-</div>
-<p data-braille="continuation">Notice that this gives us the equation for a sphere quite directly. All the points on a sphere are equidistant from the centre of the sphere. So, for example, the equation of the sphere centered on \((1,2,3)\) with radius \(4\text{,}\) that is, the set of all points \((x,y,z)\) whose distance from \((1,2,3)\) is \(4\text{,}\) is</p>
-<div class="displaymath">
-\begin{equation*}
-(x-1)^2+(y-2)^2+(z-3)^2=16
-\end{equation*}
-</div>
+<p>Observe that our 2d distances extend quite easily to 3d.</p>
+<ul class="disc">
+<li>the distance from the point \((x,y,z)\) to the \(xy\)-plane is \(|z|\)</li>
+<li>the distance from the point \((x,y,z)\) to the \(xz\)-plane is \(|y|\)</li>
+<li>the distance from the point \((x,y,z)\) to the \(yz\)-plane is \(|x|\)</li>
+<li>the distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is \(\sqrt{x^2+y^2+z^2}\)</li>
+</ul>
+<p data-braille="continuation">To see that the distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is indeed  \(\sqrt{x^2+y^2+z^2}\text{,}\)</p>
+<ul class="disc">
+<li>apply Pythagoras to the right-angled triangle with vertices \((0,0,0)\text{,}\) \((x,0,0)\) and \((x,y,0)\) to see that the distance from \((0,0,0)\) to \((x,y,0)\) is \(\sqrt{x^2+y^2}\) and then</li>
+<li>apply Pythagoras to the right-angled triangle with vertices \((0,0,0)\text{,}\) \((x,y,0)\) and \((x,y,z)\) to see that the distance from \((0,0,0)\) to \((x,y,z)\) is \(\sqrt{{\big(\sqrt{x^2+y^2}\big)}^2+z^2}
+=\sqrt{x^2+y^2+z^2}\text{.}\)</li>
+</ul>
 <span class="incontext"><a href="sec-points.html#p-10">in-context</a></span>
 </body>
 </html>

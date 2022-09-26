@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:17+01:00    *-->
+<!--*    on 2022-09-26T13:35:20+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><em class="alert">Exercises — Stage 3</em></p>
+<p>We'll use cylindrical coordinates. In the base region (the shaded region in the figure on the left above)</p>
+<ul class="disc">
+<li>\(\theta\) runs from \(0\) to \(\pi\) and</li>
+<li>for each fixed \(\theta\) between \(0\) and \(\pi\text{,}\) \(r\) runs from \(0\) to \(2\text{.}\)</li>
+<li>For each fixed point \((x,y)=(r\cos\theta,r\sin\theta)\) in the base region, \(z\) runs from \(0\)) to \(\frac{y}{2}=\frac{r\sin\theta}{2}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the volume is</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^\pi \dee{\theta}\int_0^2 \dee{r}\int_0^{r\sin\theta/2} dz\ r
+&amp;=\int_0^\pi \dee{\theta}\int_0^2 \dee{r}\ \frac{1}{2} r^2\sin\theta
+=\int_0^\pi \dee{\theta}\ \frac{r^3}{6}\sin\theta\,\bigg|_0^2\\
+&amp;=\frac{4}{3}\int_0^\pi \dee{\theta}\ \sin\theta\\
+&amp;=-\frac{4}{3}\cos\theta\,\bigg|_0^\pi
+=\frac{8}{3}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_cylindrical.html#p-3821">in-context</a></span>
 </body>
 </html>

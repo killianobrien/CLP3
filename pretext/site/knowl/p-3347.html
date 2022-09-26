@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:21+01:00    *-->
+<!--*    on 2022-09-26T13:34:20+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,17 +13,32 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider the surface \(S\) given by \(z=e^{x^2+y^2}\text{.}\)</p>
-<ol class="lower-alpha">
-<li>Compute the volume under \(S\) and above the disk \(x^2+y^2\le 9\) in the \(xy\)-plane.</li>
-<li>The volume under \(S\) and above a certain region \(R\) in the \(xy\)-plane is<div class="displaymath">
+<p>Slice the urn into horzontal slices, with the slice at height \(z\) a disk of radius \(r(z)\) and thickness \(\dee{z}\) and hence of volume \(\pi r(z)^2\dee{z}\text{.}\) The volume to height \(z_0\) is</p>
+<div class="displaymath">
+\begin{align*}
+V(z)
+&amp;=\int_{-6}^{z_0} \dee{z}\ \pi r(z)^2
+=\int_{-6}^{z_0} \dee{z}\ \pi\left[3-\frac{z^2}{36}\right]^2
+=\pi\left[9z-\frac{z^3}{18}+\frac{z^5}{5\times36^2}\right]_{-6}^{z_0}
+\end{align*}
+</div>
+<p data-braille="continuation">We are told that the mark is to be at the 6 cup level and that the urn holds 24 cups. So the mark is to be at the height \(z_0\) for which the volume, \(V(z_0)\text{,}\) is one quarter of the total volume, \(V(6)\text{.}\) That is, we are to choose \(z_0\) so that \(V(z_0)=\frac{1}{4} V(6)\) or</p>
+<div class="displaymath">
+\begin{align*}
+\pi\left[9z-\frac{z^3}{18}+\frac{z^5}{5\times36^2}\right]_{-6}^{z_0}
+&amp;=\frac{\pi}{4}\left[9z-\frac{z^3}{18}+\frac{z^5}{5\times36^2}\right]_{-6}^{6}\\
+&amp;=\frac{\pi}{2}\left[9\times 6-\frac{6^3}{18}+\frac{6^5}{5\times36^2}\right]
+\end{align*}
+</div>
+<p data-braille="continuation">or</p>
+<div class="displaymath">
 \begin{equation*}
-\int_0^1\bigg(\int_0^y e^{x^2+y^2}\,\dee{x}\bigg)\dee{y}
-+\int_1^2\bigg(\int_0^{2-y} e^{x^2+y^2}\,\dee{x}\bigg)\dee{y}
+9z_0-\frac{z_0^3}{18}+\frac{z_0^5}{5\times36^2}
+=-\frac{1}{2}\left[9\times 6-\frac{6^3}{18}+\frac{6^5}{5\times36^2}\right]
+=-21.60
 \end{equation*}
-</div>Sketch \(R\) and express the volume as a single iterated integral with the order of integration reversed. <em class="emphasis">Do not compute either integral in part (b).</em>
-</li>
-</ol>
+</div>
+<p data-braille="continuation">Since \(\Big[9z_0-\frac{z_0^3}{18}+\frac{z_0^5}{6480}\Big]_{z_0=-2.495}=-21.61\) and \(\Big[9z_0-\frac{z_0^3}{18}+\frac{z_0^5}{6480}\Big]_{z_0=-2.490}=-21.57\text{,}\) there is a solution \(z_0=-2.49\) (to two decimal places). The mark should be about 3.5'' above the bottom.</p>
 <span class="incontext"><a href="sec_polars.html#p-3347">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:42:56+01:00    *-->
+<!--*    on 2022-09-26T13:28:50+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,11 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>Now let's develop a formula for the projection of \(\va\) on \(\vb\text{.}\) Denote by \(\theta\) the angle between \(\va\) and \(\vb\text{.}\) If \(|\theta|\) is no more than \(90^\circ\text{,}\) as in the figure on the left above, the length of the projection of \(\va\) on \(\vb\) is \(|\va|\cos\theta\text{.}\) By Property 6 of Theorem <a class="xref" data-knowl="./knowl/thm_dotPppties.html" title="Theorem 1.2.11: Properties of the Dot Product">1.2.11</a>, \(|\va|\cos\theta=\va\cdot\vb/|\vb|\text{,}\) so the projection is a vector whose length is \(\va\cdot\vb/|\vb|\) and whose direction is given by the unit vector \(\vb/|\vb|\text{.}\) Hence</p>
 <div class="displaymath">
-\begin{equation*}
-{\rm proj}_{\vb}\,\va=\frac{\va\cdot\vb}{|\vb|^2}\,\vb
-\end{equation*}
+\begin{gather*}
+\text{projection of \(\va\) on \(\vb\)}={\rm proj}_{\vb}\,\va
+=\frac{\va\cdot\vb}{|\vb|}\frac{\vb}{|\vb|}
+=\frac{\va\cdot\vb}{|\vb|^2}\,\vb
+\end{gather*}
 </div>
+<p data-braille="continuation">If \(|\theta|\) is larger than \(90^\circ\text{,}\) as in the figure on the right above, the projection has length \(|\va|\,\cos(\pi-\theta)=-|\va|\cos\theta=-\va\cdot\vb/|\vb|\) and direction \(-\vb/|\vb|\text{.}\) In this case</p>
+<div class="displaymath">
+\begin{gather*}
+{\rm proj}_{\vb}\,\va
+=-\frac{\va\cdot\vb}{|\vb|}\ \frac{-\vb}{|\vb|}
+=\frac{\va\cdot\vb}{|\vb|^2}\ \vb
+\end{gather*}
+</div>
+<p data-braille="continuation">too. So the formula</p>
 <span class="incontext"><a href="sec_vectors.html#p-115">in-context</a></span>
 </body>
 </html>

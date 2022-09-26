@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:23+01:00    *-->
+<!--*    on 2022-09-26T13:30:38+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,15 +13,33 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Thermodynamics texts use the relationship</p>
+<p>We are told in the statement of the question that \(w(t)= f\big(x(t),y(t),t\big)\text{.}\) Applying the chain rule to \(w(t)= f\big(x(t),y(t),t\big),\) by following the procedure given in §<a href="sec_chain_rule.html#subsec_memory_aid" class="internal" title="Subsection 2.4.1: Memory Aids for the Chain Rule">2.4.1</a>, gives</p>
+<div class="displaymath">
+\begin{align*}
+\diff{w}{t}(t)
+&amp;=\pdiff{f}{x}\big(x(t),y(t),t\big)\diff{x}{t}(t)
++\pdiff{f}{y}\big(x(t),y(t),t\big)\diff{y}{t}(t)\\
+&amp;\hskip1in+\pdiff{f}{t}\big(x(t),y(t),t\big)\diff{t}{t}\\
+&amp;=\pdiff{f}{x}\big(x(t),y(t),t\big)\diff{x}{t}(t)
++\pdiff{f}{y}\big(x(t),y(t),t\big)\diff{y}{t}(t)\\
+&amp;\hskip1in+\pdiff{f}{t}\big(x(t),y(t),t\big)
+\end{align*}
+</div>
+<p data-braille="continuation">Substituting in the values given in the question</p>
 <div class="displaymath">
 \begin{equation*}
-\left(\pdiff{y}{x}\right)
-\left(\pdiff{z}{y}\right)
-\left(\pdiff{x}{z}\right)=-1
+\diff{w}{t}
+=2\times 1
+-3\times 2
++5
+=1
 \end{equation*}
 </div>
-<p data-braille="continuation">Explain the meaning of this equation and prove that it is true.</p>
+<p data-braille="continuation">On the other hand, we are told explicitly in the question that \(f_t\) is \(5\text{.}\) The reason that \(f_t\) and \(\diff{w}{t}\) are different is that</p>
+<ul class="disc">
+<li>\(f_t\) gives the rate of change of \(f(x,y,t)\) as \(t\) varies while \(x\) and \(y\) are held fixed, but</li>
+<li>\(\diff{w}{t}\) gives the rate of change of \(f\big(x(t),y(t),t\big)\text{.}\) For the latter all of \(x=x(t)\text{,}\) \(y=y(t)\) and \(t\) are changing at once.</li>
+</ul>
 <span class="incontext"><a href="sec_chain_rule.html#p-1459">in-context</a></span>
 </body>
 </html>

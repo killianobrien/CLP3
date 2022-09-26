@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:47+01:00    *-->
+<!--*    on 2022-09-26T13:33:45+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,17 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Let</p>
+<p>(b) We'll use the integral with the order of integration reversed that we found in part (a). When \(f(x,y)=\frac{e^x}{2-x}\)</p>
 <div class="displaymath">
-\begin{equation*}
-I=\int_0^4\int_{\sqrt{y}}^{\sqrt{8-y}} f(x,y)\,\dee{x}\,\dee{y}
-\end{equation*}
+\begin{align*}
+I &amp;= \int_{-1}^2\int_{x^2}^{x+2} \frac{e^x}{2-x}\ \dee{y}\,\dee{x}\\
+&amp;= \int_{-1}^2 (x+2-x^2)\frac{e^x}{2-x}\ \dee{x}
+= -\int_{-1}^2 (x-2)(x+1)\frac{e^x}{2-x}\ \dee{x}\\
+&amp;= \int_{-1}^2 (x+1) e^x\ \dee{x}\\
+&amp;= \Big[xe^x\Big]_{-1}^2\\
+&amp;= 2e^2 + \frac{1}{e}
+\end{align*}
 </div>
-<ol class="lower-alpha">
-<li>Sketch the domain of integration.</li>
-<li>Reverse the order of integration.</li>
-<li>Evaluate the integral for \(f(x,y)=\frac{1}{(1+y)^2}\text{.}\)</li>
-</ol>
 <span class="incontext"><a href="sec_2d_integrals.html#p-3034">in-context</a></span>
 </body>
 </html>

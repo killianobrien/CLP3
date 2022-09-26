@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:33+01:00    *-->
+<!--*    on 2022-09-26T13:30:52+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,26 +13,10 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(G(\eta)\) be any function whose derivative is \(H(\eta)\) (i.e. an indefinite integral of \(H(\eta)\)). Then \(\pdiff{}{\eta}\big[v(\xi,\eta)-G(\eta)]=H(\eta)-H(\eta)=0\text{.}\) This is the case if and only if, for each fixed \(\xi\text{,}\) \(v(\xi,\eta)-G(\xi,\eta)\)  is a constant, independent of \(\eta\text{.}\) That is, if and  only if</p>
-<div class="displaymath">
-\begin{equation*}
-v(\xi,\eta)-G(\eta)=F(\xi)
-\end{equation*}
-</div>
-<p data-braille="continuation">for some function \(F\text{.}\) Hence</p>
-<div class="displaymath">
-\begin{align*}
-\frac{\partial^2 u}{\partial x^2}(x,t)
-&amp;-\frac{1}{c^2}\frac{\partial^2 u}{\partial t^2}(x,t)=0
-\iff
-\frac{\partial^2 v\,}{\partial\xi\partial\eta}
-\big(\xi,\eta\big)=0\text{ for all }(\xi,\eta)\\
-&amp;\iff v(\xi,\eta)=F(\xi)+G(\eta)\text{ for some functions $F$ and $G$}\\
-&amp;\iff u(x,t)=v\big(\xi(x,t),\eta(x,t)\big)
-=F\big(\xi(x,t)\big)+G\big(\eta(x,t)\big)\\
-&amp;\phantom{\iff u(x,t)\,}=F(x-ct)+G(x+ct)
-\end{align*}
-</div>
+<p>(b) Now \(\frac{\partial^2 v\,}{\partial\xi\partial\eta}\big(\xi,\eta\big)
+=\frac{\partial}{\partial\xi}
+\Big[\frac{\partial v}{\partial\eta}\Big]=0\text{.}\) Temporarily rename \(\pdiff{v}{\eta}=w\text{.}\) The equation \(\pdiff{w}{\xi}(\xi,\eta)=0\) says that, for each fixed \(\eta\text{,}\) \(w(\xi,\eta)\) is a constant. The value of the constant may depend on \(\eta\text{.}\) That is, \(\pdiff{v}{\eta}(\xi,\eta)=w(\xi,\eta)
+=H(\eta)\text{,}\) for some function \(H\text{.}\) (As a check, observe that \(\pdiff{}{\xi}H(\eta)=0\text{.}\)) So the derivative of \(v\) with respect to \(\eta\text{,}\) (viewing \(\xi\) as a constant) is \(H(\eta)\text{.}\)</p>
 <span class="incontext"><a href="sec_chain_rule.html#p-1572">in-context</a></span>
 </body>
 </html>

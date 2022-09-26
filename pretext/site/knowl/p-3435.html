@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:31+01:00    *-->
+<!--*    on 2022-09-26T13:34:31+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,25 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The average distance of a point in a plane region \(D\) to a point \((a, b)\) is defined by</p>
+<p>For both \(n=2\) and \(n=3\text{,}\) we have</p>
 <div class="displaymath">
-\begin{equation*}
-\frac{1}{A(D)}\dblInt_D \sqrt{(x-a)^2+(y-b)^2}\ \dee{x}\,\dee{y}
-\end{equation*}
+\begin{align*}
+\dblInt_R y^n\,\dee{A}
+&amp;=\int_0^2\dee{y} \int_{\frac{2-y}{2}}^{2-y}\dee{x}\ y^n\\
+&amp;=\int_0^2\dee{y} \ y^n\frac{2-y}{2}\\
+&amp;=\frac{1}{2}\left[\frac{2y^{n+1}}{n+1}-\frac{y^{n+2}}{n+2}\right]_0^2\\
+&amp;=\frac{1}{2}\left[\frac{2^{n+2}}{n+1}-\frac{2^{n+2}}{n+2}\right]\\
+&amp;=\frac{2^{n+1}}{(n+1)(n+2)}
+\end{align*}
 </div>
-<p data-braille="continuation">where \(A(D)\) is the area of the plane region \(D\text{.}\) Let \(D\) be the unit disk \(1 \ge x^2 + y^2\text{.}\) Find the average distance of a point in \(D\) to the center of \(D\text{.}\)</p>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{gather*}
+\bar y =\frac{\dblInt_R y^3\,\dee{A}}{\dblInt_R y^2\,\dee{A}}
+=\frac{ \frac{2^4}{(4)(5)} }{ \frac{2^{3}}{(3)(4)} }
+=\frac{6}{5}
+\end{gather*}
+</div>
 <span class="incontext"><a href="sec_int_2d_applications.html#p-3435">in-context</a></span>
 </body>
 </html>

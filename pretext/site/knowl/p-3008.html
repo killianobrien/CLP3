@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:45+01:00    *-->
+<!--*    on 2022-09-26T13:33:42+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,16 +13,18 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>For the integral</p>
+<p>(c) Using the answer to part (b)</p>
 <div class="displaymath">
-\begin{equation*}
-I = \int_0^1 \int_{\sqrt{x}}^1 \sqrt{1+y^3}\ \dee{y}\,\dee{x}
-\end{equation*}
+\begin{align*}
+I&amp;=\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{y}{x}
++\int_1^2\dee{x}\int_0^{2-x}\dee{y}\ \frac{y}{x}\\
+&amp;=\frac{1}{2}\int_0^1\dee{x}\ x
++\frac{1}{2}\int_1^2\dee{x}\ \frac{(2-x)^2}{x}\\
+&amp;=\frac{1}{4} +\frac{1}{2}\int_1^2\dee{x}\ \left(\frac{4}{x}-4+x\right)\\
+&amp;=\frac{1}{4} +\frac{1}{2}\left[4\ln 2 -4 + \frac{4-1}{2}\right]\\
+&amp;=2\ln 2 -1
+\end{align*}
 </div>
-<ol class="lower-alpha">
-<li>Sketch the region of integration.</li>
-<li>Evaluate \(I\text{.}\)</li>
-</ol>
 <span class="incontext"><a href="sec_2d_integrals.html#p-3008">in-context</a></span>
 </body>
 </html>

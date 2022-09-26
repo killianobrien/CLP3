@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:19+01:00    *-->
+<!--*    on 2022-09-26T13:33:15+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,35 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(c) The level surfaces of \(x+y+z\) are planes with equation of the form \(x+y+z=c\text{.}\) To find the largest (smallest) value of \(x+y+z\) on \(4x^2+4y^2+z^2=96\) we keep increasing (decreasing) \(c\) until we get to the largest (smallest) value of \(c\) for which the plane \(x+y+z=c\) intersects \(4x^2+4y^2+z^2=96\text{.}\) For this value of \(c\text{,}\) \(x+y+z=c\) is tangent to \(4x^2+4y^2+z^2=96\text{.}\)</p>
+<p>(b) We are to find the \(x\text{,}\) \(y\) and \(z\) that minimize or maximize \(f(x,y,z)=x+y+z\) subject to the constraint that \(g(x,y,z)=4x^2+4y^2+z^2-96=0\text{.}\) By the method of Lagrange multipliers (Theorem <a class="xref" data-knowl="./knowl/thm_Lagrange.html" title="Theorem 2.10.2: Lagrange Multipliers">2.10.2</a>), the minimizing/maximizing \(x\text{,}\) \(y\text{,}\) \(z\) must obey</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+f_x&amp;=1=\la(8x)&amp;&amp;=\la g_x\\
+f_y&amp;=1=\la(8y)&amp;&amp;=\la g_y\\
+f_z&amp;=1=\la(2z)&amp;&amp;=\la g_z\\
+&amp;\hskip-0.6in 4x^2+4y^2+z^2-96&amp;&amp;=0
+\end{alignat*}
+</div>
+<p data-braille="continuation">The first three equations give</p>
+<div class="displaymath">
+\begin{equation*}
+x=\frac{1}{8\la}\qquad y=\frac{1}{8\la}\qquad z=\frac{1}{2\la}
+\qquad\text{with }\la\ne 0
+\end{equation*}
+</div>
+<p data-braille="continuation">Substituting this into the fourth equation gives</p>
+<div class="displaymath">
+\begin{align*}
+4\left(\frac{1}{8\la}\right)^2+4\left(\frac{1}{8\la}\right)^2
++\left(\frac{1}{2\la}\right)^2=96
+&amp;\iff
+\left(\frac{1}{16}+\frac{1}{16}+\frac{1}{4}\right)\frac{1}{\la^2}=96\\
+&amp;\iff
+\la^2=\frac{3}{8}\frac{1}{96}=\frac{1}{8\times 32}\\
+&amp;\iff \la=\pm \frac{1}{16}
+\end{align*}
+</div>
+<p data-braille="continuation">Hence \(x=\pm 2\text{,}\) \(y=\pm 2\) and \(z=\pm 8\) so that the largest and smallest values of \(x+y+z\) on \(4x^2+4y^2+z^2-96\) are \(\pm 2\pm2 \pm 8\) or \(\pm 12\text{.}\)</p>
 <span class="incontext"><a href="sec_Lagrange.html#p-2769">in-context</a></span>
 </body>
 </html>

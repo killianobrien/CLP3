@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:20+01:00    *-->
+<!--*    on 2022-09-26T13:30:34+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,52 +13,11 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Here is a pictorial procedure that uses a <em class="emphasis">tree diagram</em> to help remember the chain rule \(\pdiff{}{s}f\big(x(s,t),y(s,t)\big)=
-\pdiff{f}{x}
-\pdiff{x}{s}
-+\pdiff{f}{y}
-\pdiff{y}{s}
-\text{.}\) As in the figure on the left below,</p>
+<p>To help remember the formulae of Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>, it is sometimes also useful to pretend that our variables are physical quantities with \(f,F\) having units of grams, \(x,y\) having units of meters and \(s,t\) having units of seconds. Note that</p>
 <ul class="disc">
-<li>write, on the top row, “\(f\)”.</li>
-<li>Write, on the middle row, each of the variables that the function \(f(x,y)\) depends on, namely“\(x\)” and “\(y\)”.</li>
-<li>
-<p>Write, on the bottom row,</p>
-<ul class="circle">
-<li>below \(x\text{,}\) each of the variables that the function \(x(s,t)\) depends on, namely “\(s\)” and “\(t\)”, and</li>
-<li>below \(y\text{,}\) each of the variables that the function \(y(s,t)\) depends on, namely “\(s\)” and “\(t\)”.</li>
-</ul>
-</li>
-<li>Draw a line joining each function with each of the variables that it depends on.</li>
-<li>
-<p>Then, as in the figure on the right below, write beside each line, the partial derivative of the function at the top of the line with respect to the variable at the bottom of the line.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/decTreeA.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/decTreeB.svg" style="width: 100%; height: auto;" alt=""></div>
-</div></div>
-</li>
-<li>
-<p>Finally</p>
-<ul class="circle">
-<li>observe, from the figure below, that there are two paths from \(f\text{,}\) on the top, to \(s\text{,}\) on the bottom. One path goes from \(f\) at the top, through \(x\) in the middle to \(s\) at the bottom.  The other path goes from \(f\) at the top, through \(y\) in the middle to \(s\) at the bottom.</li>
-<li>For each such path, multiply together the partial derivatives beside the lines of the path. In this example, the two products are \(\pdiff{f}{x}\,\pdiff{x}{s}\text{,}\) for the first path, and \(\pdiff{f}{y}\,\pdiff{y}{s}\text{,}\) for the second path.</li>
-<li>Then add together those products, giving, in this example, \(\pdiff{f}{x}\,\pdiff{x}{s}+\pdiff{f}{y}\,\pdiff{y}{s}\text{.}\)</li>
-<li>Put in the arguments, as in Step 4, above.</li>
-</ul>
-</li>
-<li>
-<p>That's it. We have</p>
-<div class="displaymath">
-\begin{align*}
-\pdiff{}{s}f\big(x(s,t),y(s,t)\big)
-&amp;=  \pdiff{f}{x}\big(x(s,t),y(s,t)\big)
-\pdiff{x}{s}(s,t)\\
-&amp;\hskip0.5in  +\pdiff{f}{y}\big(x(s,t),y(s,t)\big)
-\pdiff{y}{s}(s,t)
-\end{align*}
-</div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/decTreeS.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-</li>
+<li>the left hand side, \(\pdiff{F}{s}\text{,}\) has units grams per second.</li>
+<li>Each term on the right hand side contains the partial derivative of \(f\) with respect to a different independent variable. That independent variable appears once in the denominator and once in the numerator, so that its units (in this case meters) cancel out. Thus both of the terms \(\pdiff{f}{x }\pdiff{x }{s}\) and \(\pdiff{f}{y }\pdiff{y }{s}\) on the right hand side also have the units grams per second.</li>
+<li>Hence both sides of the equation have the same units.</li>
 </ul>
 <span class="incontext"><a href="sec_chain_rule.html#p-1411">in-context</a></span>
 </body>

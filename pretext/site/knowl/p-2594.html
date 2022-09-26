@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:59+01:00    *-->
+<!--*    on 2022-09-26T13:32:40+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,24 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>But we already know, by Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_G.html" title="Theorem 2.5.5: Tangent Plane and Normal Line">2.5.5</a>.a, that \(\vnabla g(a,b,c)\) is also perpendicular to \(S\) at \((a,b,c)\text{.}\) So \(\vnabla f(a,b,c)\) and \(\vnabla g(a,b,c)\) have to be parallel vectors. That is,</p>
+<p>By the chain rule, Theorem <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>,</p>
 <div class="displaymath">
-\begin{equation*}
-\vnabla f(a,b,c) = \la \vnabla g(a,b,c)
-\end{equation*}
+\begin{align*}
+F'(0) &amp;= \diff{}{t}f\big(x(t),y(t),z(t)\big)\Big|_{t=0}\\
+&amp;=f_x\big(a,b,c\big) x'(0)+f_y\big(a,b,c\big) y'(0)
++f_z\big(a,b,c\big) z'(0)
+=0
+\tag{$*$}
+\end{align*}
 </div>
-<p data-braille="continuation">for some number \(\la\text{.}\) That's the Lagrange multiplier rule of our theorem.</p>
+<p data-braille="continuation">We may rewrite this as a dot product:</p>
+<div class="displaymath">
+\begin{align*}
+&amp;0=F'(0)=\vnabla f(a,b,c)\cdot\llt x'(0)\,,\,y'(0)\,,\,z'(0)\rgt\\
+&amp;\implies \vnabla f(a,b,c) \perp \llt x'(0)\,,\,y'(0)\,,\,z'(0)\rgt
+\end{align*}
+</div>
+<p data-braille="continuation">This is true for all paths on \(S\) that pass through \((a,b,c)\) at time \(0\text{.}\) In particular it is true for all vectors \(\llt x'(0)\,,\,y'(0)\,,\,z'(0)\rgt\) that are tangent to \(S\) at \((a,b,c)\text{.}\) So \(\vnabla f(a,b,c)\) is perpendicular to \(S\) at \((a,b,c)\text{.}\)</p>
 <span class="incontext"><a href="sec_Lagrange.html#p-2594">in-context</a></span>
 </body>
 </html>

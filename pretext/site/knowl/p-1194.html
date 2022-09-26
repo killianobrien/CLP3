@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:06+01:00    *-->
+<!--*    on 2022-09-26T13:30:14+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,34 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><em class="alert">Exercises — Stage 3</em></p>
+<p>We can gain a more detailed understanding of the behaviour of \(\frac{x^2-y^4}{x^2+y^4}\) near the origin by switching to polar coordinates.</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{x^2-y^4}{x^2+y^4}
+=\frac{r^2\cos^2\theta-r^4\sin^4\theta}{r^2\cos^2\theta+r^4\sin^4\theta}
+=\frac{\cos^2\theta-r^2\sin^4\theta}{\cos^2\theta+r^2\sin^4\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">Now fix any \(\theta\) and let \(r\rightarrow 0\) (so that we are approaching the origin along the ray that makes an angle \(\theta\) with the positive \(x\)-axis). If \(\cos\theta\ne 0\) (i.e. the ray is not part of the \(y\)-axis)</p>
+<div class="displaymath">
+\begin{gather*}
+\lim_{r\rightarrow 0}
+\frac{\cos^2\theta-r^2\sin^4\theta}{\cos^2\theta+r^2\sin^4\theta}
+=\frac{\cos^2\theta}{\cos^2\theta}
+=1
+\end{gather*}
+</div>
+<p data-braille="continuation">But if \(\cos\theta= 0\) (i.e. the ray is part of the \(y\)-axis)</p>
+<div class="displaymath">
+\begin{gather*}
+\lim_{r\rightarrow 0}
+\frac{\cos^2\theta-r^2\sin^4\theta}{\cos^2\theta+r^2\sin^4\theta}
+=\lim_{r\rightarrow 0}
+\frac{-r^2\sin^4\theta}{r^2\sin^4\theta}
+=\frac{-\sin^4\theta}{\sin^4\theta}
+=-1
+\end{gather*}
+</div>
 <span class="incontext"><a href="sec_limits.html#p-1194">in-context</a></span>
 </body>
 </html>

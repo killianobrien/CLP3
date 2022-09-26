@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:15+01:00    *-->
+<!--*    on 2022-09-26T13:31:45+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,17 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Assume that the temperature \(T\) at a point \((x,y,z)\) near a flame at the origin is given by</p>
+<p>(d) The eagle is moving at right angles to the direction of motion of the sparrow, which is \(\llt 1,2,2\rgt\text{.}\) As the eagle is also moving in a direction for which the temperature remains constant, it must be moving perpendicularly to the temperature gradient, \(\llt 2,2,4\rgt\text{.}\) So the direction of the eagle must be (a posiitve constant times) one of</p>
 <div class="displaymath">
-\begin{equation*}
-T(x,y,z)=\frac{200}{1+x^2+y^2+z^2}
-\end{equation*}
+\begin{align*}
+\pm\llt 1,2,2\rgt \times\llt 2,2,4\rgt
+=\pm\det\left[\begin{matrix}
+\hi &amp; \hj &amp; \hk\\
+1   &amp;  2  &amp; 2\\
+2   &amp;  2  &amp; 4
+\end{matrix}\right]
+=\pm\llt 4,0,-2\rgt
+\end{align*}
 </div>
-<p data-braille="continuation">where the coordinates are given in meters and the temperature is in degrees Celsius. Suppose that at some moment in time, a moth is at the point \((3,4,0)\) and is flying at a constant speed of \(1 {\rm m/s}\) in the direction of maximum increase of temperature.</p>
-<ol class="lower-alpha">
-<li>Find the velocity vector \(\vv\) of the moth at this moment.</li>
-<li>What rate of change of temperature does the moth feel at that moment?</li>
-</ol>
+<p data-braille="continuation">or equivalently, any positive constant times \(\pm\llt 2,0,-1\rgt\text{.}\)</p>
 <span class="incontext"><a href="sec_directional_derivatives.html#p-2106">in-context</a></span>
 </body>
 </html>

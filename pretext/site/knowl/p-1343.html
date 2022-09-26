@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:15+01:00    *-->
+<!--*    on 2022-09-26T13:30:28+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,37 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>If \(f(x_1,x_2,x_3,x_4) = x_1^4\, x_2^3\, x_3^2\, x_4\text{,}\) then</p>
+<p>Let \(f(x,y) = e^{\al x+\be y}\text{.}\) Then</p>
 <div class="displaymath">
 \begin{align*}
-\frac{\partial^4\  f}
-{\partial x_1\, \partial x_2\,\partial x_3\,\partial x_4}
-&amp;=  \frac{\partial^3 \ }
-{\partial x_1\, \partial x_2\,\partial x_3}
-\left( x_1^4\, x_2^3\, x_3^2\right)\\
-&amp;=  \frac{\partial^2 \ }
-{\partial x_1\, \partial x_2}
-\left( 2\ x_1^4\, x_2^3\, x_3\right)\\
-&amp;=  \pdiff{}{x_1}
-\left( 6\ x_1^4\, x_2^2\, x_3\right)\\
-&amp;=   24\ x_1^3\, x_2^2\, x_3
+f_x &amp;=  \al e^{\al x+\be y} &amp;
+f_y &amp;=  \be e^{\al x+\be y}\\
+f_{xx}  &amp;= \al^2  e^{\al x+\be y} &amp;
+f_{yx} &amp;=   \be \al e^{\al x+\be y}\\
+f_{xy}  &amp;=  \al \be  e^{\al x+\be y} &amp;
+f_{yy} &amp;=  \be^2 e^{\al x+\be y}
 \end{align*}
 </div>
-<p data-braille="continuation">and</p>
+<p data-braille="continuation">More generally, for any integers \(m,n\ge 0\text{,}\)</p>
 <div class="displaymath">
-\begin{align*}
-\frac{\partial^4\ f}
-{\partial x_4\, \partial x_3\,\partial x_2\,\partial x_1}
-&amp;=  \frac{\partial^3 \ }
-{\partial x_4\, \partial x_3\,\partial x_2}
-\left( 4 x_1^3\, x_2^3\, x_3^2\,x_4\right)\\
-&amp;=  \frac{\partial^2 \ }
-{\partial x_4\, \partial x_3}
-\left( 12\ x_1^3\, x_2^2\, x_3^2\,x_4\right)\\
-&amp;=  \pdiff{}{x_4}
-\left( 24\ x_1^3\, x_2^2\, x_3\,x_4\right)\\
-&amp;=   24\ x_1^3\, x_2^2\, x_3
-\end{align*}
+\begin{equation*}
+\frac{\partial^{m+n} f}{\partial x^m\, \partial y^n}
+= \al^m\be^n e^{\al x+\be y}
+\end{equation*}
 </div>
 <span class="incontext"><a href="sec_higher_order.html#p-1343">in-context</a></span>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:10+01:00    *-->
+<!--*    on 2022-09-26T13:31:38+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(d) For \(\hi+5\hj+a\hk\) to be tangent to the level surface \(F(x, y, z) = 3\) at \((3, 2, 1)\text{,}\) \(\hi+5\hj+a\hk\) must be perpendicular to  \(\vnabla F(3,2,1)\text{.}\) So</p>
+<p>(c) The velocity vector at time \(0\) is</p>
 <div class="displaymath">
 \begin{gather*}
-0=\llt 1\,,\,5\,,\,a \rgt \cdot \llt 1\,,\,-1\,,\,2 \rgt
-= -4+2a
+\vv=\llt x'(0)\,,\,y'(0)\,,\,z'(0)\rgt
+=\llt 3e^t\,,\,-2\sin t\,,\,\frac{1}{2\sqrt{1+t}}\rgt\Big|_{t=0}
+=\llt 3\,,\,0\,,\,\frac{1}{2}\rgt
 \end{gather*}
 </div>
-<p data-braille="continuation">So \(a=2\text{.}\)</p>
+<p data-braille="continuation">So the rate of change of temperature with respect to \(t\) at \(t=0\) is</p>
+<div class="displaymath">
+\begin{gather*}
+\vnabla F(3,2,1)\cdot \vv
+=\llt 1\,,\,-1\,,\,2 \rgt\cdot
+\llt 3\,,\,0\,,\,\frac{1}{2}\rgt
+=4
+\end{gather*}
+</div>
 <span class="incontext"><a href="sec_directional_derivatives.html#p-2042">in-context</a></span>
 </body>
 </html>

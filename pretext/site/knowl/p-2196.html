@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:22+01:00    *-->
+<!--*    on 2022-09-26T13:31:53+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,43 +13,29 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>A function \(u(x,y)\) is said to be harmonic if it satisfies Laplace's equation</p>
-<div class="displaymath">
-\begin{equation*}
-u_{xx} + u_{yy}=0
-\end{equation*}
-</div>
-<p data-braille="continuation">We will now find all harmonic polynomials (in the variables \(x\) and \(y\)) of degree at most two. Any polynomial of degree at most two is of the form</p>
-<div class="displaymath">
-\begin{equation*}
-u(x,y) = a +bx +cy + \al x^2 +\be xy +\ga y^2
-\end{equation*}
-</div>
-<p data-braille="continuation">for some constants \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(\al\text{,}\) \(\be\text{,}\) \(\ga\text{.}\) We will need \(u_{xx}\) and \(u_{yy}\text{,}\) so we compute them now.</p>
+<p>We again simply evaluate the two terms on the left hand side  when \(z=z(x,y)=G\big(\frac{y}{x}\big)\text{.}\) By the chain rule</p>
 <div class="displaymath">
 \begin{align*}
-u(x,y) \amp= a +bx +cy + \al x^2 +\be xy +\ga y^2 \\
-u_x(x,y) \amp= b + 2\al x +\be y  \\
-u_{xx}(x,y) \amp=  2\al  \\
-u_y(x,y) \amp= c + \be x +2\ga y  \\
-u_{yy}(x,y) \amp=  2\ga  
+x\pdiff{z}{x}\amp= x\pdiff{}{x}\left(G\Big(\frac{y}{x}\Big)\right)
+=xG'\left(\frac{y}{x}\right)\left(\pdiff{}{x}\,\frac{y}{x}\right)
+=xG'\left(\frac{y}{x}\right)\left(-\frac{y}{x^2}\right)\\
+\amp=-G'\left(\frac{y}{x}\right)\frac{y}{x} \\
+y\pdiff{z}{y}\amp= y\pdiff{}{y}\left(G\Big(\frac{y}{x}\Big)\right)
+=yG'\left(\frac{y}{x}\right)\left(\pdiff{}{y}\,\frac{y}{x}\right)
+=yG'\left(\frac{y}{x}\right)\left(\frac{1}{x}\right)\\
+\amp=G'\left(\frac{y}{x}\right)\frac{y}{x} 
 \end{align*}
 </div>
-<p data-braille="continuation">The polynomial \(u(x,y)\) is harmonic if and only if</p>
-<div class="displaymath">
-\begin{align*}
-0\amp= u_{xx}(x,y) + u_{yy}(x,y)
-= 2\al+2\ga
-\end{align*}
-</div>
-<p data-braille="continuation">So the polynomial \(u(x,y)\) is harmonic if and only if \(\al+\ga=0\text{,}\) i.e. if and only if the polynomial is of the form</p>
+<p data-braille="continuation">So</p>
 <div class="displaymath">
 \begin{equation*}
-u(x,y) = a +\overbrace{bx+cy}^{\rm degree\ 1}
-+\overbrace{\al(x^2-y^2)\ +\ \be xy}^{\rm degree\ 2}
+x\pdiff{z}{x} + y\pdiff{z}{y}
+=-G'\left(\frac{y}{x}\right)\frac{y}{x} + G'\left(\frac{y}{x}\right)\frac{y}{x} 
+=0
 \end{equation*}
 </div>
-<p data-braille="continuation">with \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(\al\text{,}\) and \(\be\) all constants. Notice that since both terms in the equation involve a second derivative, we would not expect there to be any conditions on the constant and linear terms. There aren't. Beware that, while we have found all harmonic degree-two polynomials, there are many other <em class="emphasis">harmonic functions</em>, like, for example \(e^x\cos y\text{.}\)</p>
+<p data-braille="continuation">and \(z(x,y)=G\big(\frac{y}{x}\big)\) really does solve the PDE \(x\pdiff{z}{x}+ y\pdiff{z}{y}=0
+\text{.}\) Note that we can rewrite the solution \(\frac{x+y}{x-y}\) of Example <a class="xref" data-knowl="./knowl/eg_check_PDF_A.html" title="Example 2.8.1: \(x\pdiff{z}{x}+ y\pdiff{z}{y}=0\)">2.8.1</a> as \(\frac{1+y/x}{1-y/x}\text{,}\) which is of the form \(G\big(\frac{y}{x}\big)\text{.}\)</p>
 <span class="incontext"><a href="sec_pde.html#p-2196">in-context</a></span>
 </body>
 </html>

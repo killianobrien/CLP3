@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:27+01:00    *-->
+<!--*    on 2022-09-26T13:30:44+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,11 +13,29 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Suppose that \(w = f (xz, yz)\text{,}\) where \(f\) is a differentiable function. Show that</p>
+<p>By the chain rule,</p>
 <div class="displaymath">
-\begin{equation*}
-x\pdiff{w}{x} + y\pdiff{w}{y} = z\pdiff{w}{z}
-\end{equation*}
+\begin{align*}
+\pdiff{h}{t}(s,t)
+&amp;=\pdiff{}{t}\big[f(2s + 3t)\big] + \pdiff{}{t}\big[g(s - 6t)\big]\\
+&amp;=f'(2s + 3t)\pdiff{}{t}(2s+3t) + g(s - 6t)\pdiff{}{t}(s-6t)\\
+&amp;= 3f'(2s + 3t) - 6g'(s - 6t)\\
+\frac{\partial^2 h}{\partial t^2}(s,t)
+&amp;=\color{blue}{3\pdiff{}{t}\big[f''(2s + 3t)\big]}
+\color{red}{- 6\pdiff{}{t}\big[ g''(s - 6t) \big]}\\
+&amp;=\color{blue}{3\,f''(2s + 3t)\pdiff{}{t}(2s+3t)}
+\color{red}{- 6\,g''(s - 6t) \pdiff{}{t}(s-6t)}\\
+&amp;=\color{blue}{9f''(2s+3t)} +\color{red}{36g''(s-6t)}
+\end{align*}
+</div>
+<p data-braille="continuation">In particular</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{\partial^2 h}{\partial t^2}(2,1)
+=9f''(7) +36g''(-4)
+=9(-2) +36(-1)
+=-54
+\end{gather*}
 </div>
 <span class="incontext"><a href="sec_chain_rule.html#p-1507">in-context</a></span>
 </body>

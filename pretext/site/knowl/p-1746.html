@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:46+01:00    *-->
+<!--*    on 2022-09-26T13:31:10+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,42 +13,43 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>A frequently used, and effective, strategy for building an understanding of the behaviour of a complicated function near a point is to approximate it by a simple function. The following suite of such approximations is standard fare in Calculus I courses. See, for example, §3.4 in the CLP-1 text.</p>
+<p>Let \((x,y,z)\) be any point on the paraboloid \(z=x^2+y^2\text{.}\) The square of the distance from \((1,1,0)\) to this point is</p>
 <div class="displaymath">
 \begin{align*}
-g(t_0+\De t) &amp;\approx g(t_0)
-&amp;&amp;\text{constant approximation}\\
-g(t_0+\De t) &amp;\approx g(t_0) +g'(t_0)\,\De t
-&amp;&amp;\text{linear, or tangent line, approximation}\\
-g(t_0+\De t) &amp;\approx g(t_0) +g'(t_0)\,\De t +\tfrac{1}{2} g''(t_0)\,\De t^2
-&amp;&amp;\text{quadratic approximation}
+D(x,y)&amp;=(x-1)^2+(y-1)^2+z^2\\
+&amp;=(x-1)^2+(y-1)^2+{(x^2+y^2)}^2
 \end{align*}
 </div>
-<p data-braille="continuation">More generally, for any natural number \(n\text{,}\) the  approximation</p>
+<p data-braille="continuation">We wish to minimize \(D(x,y)\text{.}\) That is, to find the lowest point on the graph \(z=D(x,y)\text{.}\) At this lowest point, the tangent plane to \(z=D(x,y)\) is horizontal. So at the minimum, the normal vector to \(z=D(x,y)\) has \(x\) and \(y\) components zero. So</p>
 <div class="displaymath">
-\begin{align*}
-g(t_0+\De t) &amp;\approx g(t_0) +g'(t_0)\,\De t + \tfrac{1}{2} g''(t_0)\,\De t^2
-+\cdots+ \tfrac{1}{n!} g^{(n)}(t_0)\,\De t^n
-\end{align*}
+\begin{alignat*}{2}
+0&amp;=\pdiff{D}{x}(x,y)&amp;&amp;= 2(x-1)+2(x^2+y^2)(2x)\\
+0&amp;=\pdiff{D}{y}(x,y)&amp;&amp;= 2(y-1)+2(x^2+y^2)(2y)
+\end{alignat*}
 </div>
-<p data-braille="continuation">is known as the Taylor polynomial of degree \(n\text{.}\) You may have also found a formula for the error introduced in making this approximation. The error \(E_n(\De t)\) is defined by</p>
-<div class="displaymath">
-\begin{align*}
-g(t_0+\De t)
-&amp;=
-g(t_0)+g'(t_0)\De t+\tfrac{1}{2!}g''(t_0)\De t^2
-+\cdots
-+\tfrac{1}{n!}g^{(n)}(t_0) \De t^n +E_n(\De t)
-\end{align*}
-</div>
-<p data-braille="continuation">and obeys<a class="fn-knowl" data-knowl="./knowl/fn-61-hidden.html" title="Footnote 2.6.1"><sup> 1 </sup></a></p>
+<p data-braille="continuation">By symmetry (or multiplying the first equation by \(y\text{,}\) multiplying the second equation by \(x\) and subtracting) the solution will have \(x=y\) with</p>
 <div class="displaymath">
 \begin{equation*}
-E_n(\De t)=
-\tfrac{1}{(n+1)!}g^{(n+1)}(t_0+c\De t) \De t^{n+1}
+0=2(x-1)+2(x^2+x^2)(2x)=8x^3+2x-2
 \end{equation*}
 </div>
-<p data-braille="continuation">for some (unknown) \(0\le c\le 1\text{.}\)</p>
-<span class="incontext"><a href="sec_lin_approx.html#p-1746">in-context</a></span>
+<p data-braille="continuation">Observe that the value of \(8x^3+2x-2=2(4x^3+x-1)\) at \(x=\frac{1}{2}\) is \(0\text{.}\) (See Appendix A.16 of the CLP-2 text for some useful tricks that can help you guess roots of polynomials with integer coefficients.) So \(\big(x-\frac{1}{2}\big)\) is a factor of</p>
+<div class="displaymath">
+\begin{equation*}
+4x^3+x-1
+={\textstyle 4\big(x^3+\frac{x}{4}-\frac{1}{4}\big)
+=4\big(x-\frac{1}{2}\big)\big(x^2+\half x+\half\big)}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the minimizing \((x,y)\) obeys \(x=y\) and</p>
+<div class="displaymath">
+\begin{equation*}
+0=8x^3+2x-2
+=8\big(x-\half\big)\big(x^2+\half x+\half\big)=0
+\end{equation*}
+</div>
+<p data-braille="continuation">By the quadratic root formula, \(x^2+\half x+\half\) has no real roots, so the only solution is \(x=y=\half\text{,}\) \(z=\big(\half\big)^2+\big(\half\big)^2=\half\) and the distance is \(\sqrt{\big(\half-1\big)^2+\big(\half-1\big)^2
++\big(\half\big)^2}=\frac{\sqrt{3}}{2}\text{.}\)</p>
+<span class="incontext"><a href="sec_tangent_planes.html#p-1746">in-context</a></span>
 </body>
 </html>

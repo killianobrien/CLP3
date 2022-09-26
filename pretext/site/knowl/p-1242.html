@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:08+01:00    *-->
+<!--*    on 2022-09-26T13:30:18+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,44 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Set</p>
-<div class="displaymath">
-\begin{equation*}
-f(x,y)=\begin{cases}
-\frac{\cos x-\cos y}{x-y}&amp;\text{if } x\ne y \\
-0&amp;\text{if } x=y
-\end{cases}
-\end{equation*}
-</div>
-<p data-braille="continuation">If \(b\ne a\text{,}\) then for all \((x,y)\) sufficiently close to \((a,b)\text{,}\) \(f(x,y) = \frac{\cos x-\cos y}{x-y}\) and we can compute the partial derivatives of \(f\) at \((a,b)\) using the familiar rules of differentiation. However that is not the case for \((a,b)=(0,0)\text{.}\) To evaluate \(f_x(0,0)\text{,}\) we need to set \(y=0\) and find the derivative of</p>
-<div class="displaymath">
-\begin{equation*}
-f(x,0) = \begin{cases}
-\frac{\cos x-1}{x}&amp;\text{if } x\ne 0 \\
-0&amp;\text{if } x=0
-\end{cases}
-\end{equation*}
-</div>
-<p data-braille="continuation">with respect to \(x\) at \(x=0\text{.}\) As we cannot use the usual differentiation rules, we evaluate the derivative<a class="fn-knowl" data-knowl="./knowl/fn-41-hidden.html" title="Footnote 2.2.2"><sup> 2 </sup></a> by applying the definition</p>
-<div class="displaymath">
-\begin{align*}
-f_x(0,0) &amp;= \lim_{h\rightarrow 0}\frac{f(h,0)-f(0,0)}{h}\\
-&amp;= \lim_{h\rightarrow 0}\frac{\frac{\cos h-1}{h}-0}{h}
-&amp;\qquad\text{(Recall that $h\ne 0$ in the limit.)}\\
-&amp;= \lim_{h\rightarrow 0}\frac{\cos h-1}{h^2}\\
-&amp;= \lim_{h\rightarrow 0}\frac{-\sin h}{2h}
-&amp;\qquad\text{(By l'Hôpital's rule.)}\\
-&amp;= \lim_{h\rightarrow 0}\frac{-\cos h}{2}
-&amp;\qquad\text{(By l'Hôpital again.)}\\
-&amp;=-\frac{1}{2}
-\end{align*}
-</div>
-<p data-braille="continuation">We could also evaluate the limit of \(\frac{\cos h-1}{h^2} \) by substituting in the Taylor expansion</p>
-<div class="displaymath">
-\begin{equation*}
-\cos h = 1 -\frac{h^2}{2}+\frac{h^4}{4!} -\cdots
-\end{equation*}
-</div>
+<p>Now here is a more complicated example — our function takes a special value at \((0,0)\text{.}\) To compute derivatives there we revert to the definition.</p>
 <span class="incontext"><a href="sec_partials.html#p-1242">in-context</a></span>
 </body>
 </html>

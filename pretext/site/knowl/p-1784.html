@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:49+01:00    *-->
+<!--*    on 2022-09-26T13:31:14+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,27 +13,36 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>But there is also a sneakier, and often computationally more efficient, method to get the same result. It exploits the single variable Taylor expansions</p>
+<p>The first way uses the canned formula <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a>. We compute all partial derivatives up to order 2 at \((x_0,y_0)\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
-e^{x}&amp;=1+x+\frac{1}{2!}x^2+\cdots\\
-\sin y &amp;=y - \frac{1}{3!}y^3+\cdots
+f(x,y)&amp;= e^{2x}\sin(3y) &amp;
+f(x_0,y_0)&amp;=0\\
+f_x(x,y)&amp;= 2e^{2x}\sin(3y) &amp;
+f_x(x_0,y_0)&amp;=0\\
+f_y(x,y)&amp;= 3e^{2x}\cos(3y) &amp;
+f_y(x_0,y_0)&amp;=3\\
+f_{xx}(x,y)&amp;=4e^{2x}\sin(3y) &amp;
+f_{xx}(x_0,y_0)&amp;=0\\
+f_{xy}(x,y)&amp;=6e^{2x}\cos(3y) &amp;
+f_{xy}(x_0,y_0)&amp;= 6\\
+f_{yy}(x,y)&amp;=-9e^{2x}\sin(3y) &amp;\qquad
+f_{yy}(x_0,y_0)&amp;=0
 \end{align*}
 </div>
-<p data-braille="continuation">Replacing \(x\) by \(2x\) in the first and \(y\) by \(3y\) in the second and multiplying the two together, keeping track only of terms of degree at most two, gives</p>
+<p data-braille="continuation">So the quadratic approximation to \(f\) about \((0,0)\) is</p>
 <div class="displaymath">
 \begin{align*}
-f(x,y)&amp;= e^{2x}\sin(3y)\cr
-&amp;= \Big[1+(2x)+\frac{1}{2!}(2x)^2+\cdots\Big]
-\Big[(3y) - \frac{1}{3!}(3y)^3+\cdots\Big]\\
-&amp;= \Big[1+2x+2x^2+\cdots\Big]
-\Big[3y - \frac{9}{2}y^3+\cdots\Big]\\
-&amp;= 3y+6xy+6x^2y+\cdots
-- \frac{9}{2}y^3- 9xy^3- 9x^2y^3+\cdots\\
-&amp;=3y + 6xy + \cdots
+f\big(x\,,\,y\big)
+&amp; \approx f(x, y)
++f_x(x, y) x+f_y(0, 0)y\\
+&amp;\hskip1in+\frac{1}{2}\bigg[f_{xx}(0, 0)x^2
++2f_{xy}(0, 0) x y
++f_{yy}(0, 0) y^2\bigg]\\
+&amp;=3y+6xy
 \end{align*}
 </div>
-<p data-braille="continuation">just as in the first computation.</p>
+<p data-braille="continuation">That's pretty simple — just compute a bunch of partial derivatives and substitute into the formula <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a>.</p>
 <span class="incontext"><a href="sec_lin_approx.html#p-1784">in-context</a></span>
 </body>
 </html>

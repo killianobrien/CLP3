@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:57+01:00    *-->
+<!--*    on 2022-09-26T13:32:36+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The critical points are the solutions of</p>
+<p>To find the critical points we will need the gradient of \(f\) and to apply the second derivative test of Theorem <a class="xref" data-knowl="./knowl/thm_second_deriv_test.html" title="Theorem 2.9.16: Second Derivative Test">2.9.16</a> we will need all second order partial derivatives. So we need all partial derivatives of \(f\) up to order two. Here they are.</p>
 <div class="displaymath">
-\begin{equation*}
-f_x=6x(ky-1)=0   \qquad
-f_y=3kx^2+3y^2-6y = 0
-\end{equation*}
+\begin{alignat*}{3}
+f&amp;=3kx^2 y + y^3 - 3x^2 - 3y^2 + 4\\
+f_x&amp;=6kxy-6x   &amp; f_{xx}&amp;=6ky-6 \qquad &amp; f_{xy}&amp;= 6kx\\
+f_y&amp;=3kx^2+3y^2-6y \qquad &amp; f_{yy}&amp;=6y-6\qquad &amp; f_{yx}&amp;= 6kx
+\end{alignat*}
 </div>
-<p data-braille="continuation">The first equation is satisfied if at least one of \(x=0\text{,}\) \(y=\frac{1}{k}\) are satisfied. (Recall that \(k \gt 0\text{.}\))</p>
-<ul class="disc">
-<li>If \(x=0\text{,}\) the second equation reduces to \(3y(y-2)=0\text{,}\) which is satisfied if either \(y=0\) or \(y=2\text{.}\)</li>
-<li>If \(y=\frac{1}{k}\text{,}\) the second equation reduces to \(3kx^2+\frac{3}{k^2}-\frac{6}{k}=3kx^2+\frac{3}{k^2}(1-2k)=0\text{.}\)</li>
-</ul>
+<p data-braille="continuation">(Of course, \(f_{xy}\) and \(f_{yx}\) have to be the same. It is still useful to compute both, as a way to catch some mechanical errors.)</p>
 <span class="incontext"><a href="sec_max.html#p-2569">in-context</a></span>
 </body>
 </html>

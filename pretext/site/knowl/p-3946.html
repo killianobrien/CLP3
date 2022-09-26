@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:33+01:00    *-->
+<!--*    on 2022-09-26T13:35:41+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,22 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Evaluate the volume of a circular cylinder of radius \(a\) and height \(h\) by means of an integral in spherical coordinates.</p>
+<p>As \(\dee{V} = \rho^2\sin\varphi\ \dee{\rho}\,\dee{\varphi}\,\dee{\theta}\) and \(\big(x^2+y^2+z^2\big)^{5/2}=\rho^5\text{,}\) the integral is</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\int_{-1}^1 \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}
+\int_{1-\sqrt{1-x^2-y^2}}^{1+\sqrt{1-x^2-y^2}}
+(x^2+y^2+z^2)^{5/2}  \ \dee{z}\,\dee{y}\,\dee{x}\\
+&amp;\hskip0.5in=\int_0^{2\pi}\dee{\theta}\int_0^{\pi/2}\dee{\varphi}
+\int_0^{2\cos\varphi}\dee{\rho}\ \rho^2\sin\varphi
+\ \rho^5\\
+&amp;\hskip0.5in=\int_0^{2\pi}\dee{\theta}\int_0^{\pi/2}\dee{\varphi}
+\ \frac{2^8\cos^8\varphi}{8}\sin\varphi\\
+&amp;\hskip0.5in=32\int_0^{2\pi}\dee{\theta}\ \left[-\frac{\cos^9\varphi}{9}\right]_0^{\pi/2}\\
+&amp;\hskip0.5in=\frac{32}{9}(2\pi)
+=\frac{64\pi}{9}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_spherical.html#p-3946">in-context</a></span>
 </body>
 </html>

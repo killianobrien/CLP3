@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:50+01:00    *-->
+<!--*    on 2022-09-26T13:33:48+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,11 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider the solid under the surface \(z=6-xy\text{,}\) bounded by the five planes \(x=0\text{,}\) \(x=3\text{,}\) \(y=0\text{,}\) \(y=3\text{,}\) \(z=0\text{.}\) Note that no part of the solid lies below the \(x\)--\(y\) plane.</p>
-<ol class="lower-alpha">
-<li>Sketch the base of the solid in the \(xy\)--plane. Note that it is <em class="emphasis">not</em> a square!</li>
-<li>Compute the volume of the solid.</li>
-</ol>
+<p>(b) As it stands, the inside integral, over \(y\text{,}\) looks pretty nasty because \(\sin(y^3)\) does not have an obvious antiderivative. So let's reverse the order of integration. The given integral was set up using vertical strips. So, to reverse the order of integration, we use horizontal strips as in the figure on the right above. Looking at that figure we see that, on the domain of integration,</p>
+<ul class="disc">
+<li>\(y\) runs from \(0\) to \(1\) and</li>
+<li>for each fixed \(y\) in that range, \(x\) runs from \(0\) to \(\sqrt{y}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+I&amp;=\int_0^1\dee{y} \int_0^{\sqrt{y}}\dee{x}\  x^3\ \sin(y^3)\\
+&amp;=\int_0^1\dee{y}\ \sin(y^3)\left[\frac{x^4}{4}\right]_0^{\sqrt{y}}\\
+&amp;=\frac{1}{4}\int_0^1\dee{y}\ y^2\sin(y^3)\\
+&amp;=\frac{1}{4}\left[-\frac{\cos(y^3)}{3}\right]_0^1\\
+&amp;=\frac{1-\cos(1)}{12}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_2d_integrals.html#p-3065">in-context</a></span>
 </body>
 </html>

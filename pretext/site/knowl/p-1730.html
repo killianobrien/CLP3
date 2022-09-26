@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:45+01:00    *-->
+<!--*    on 2022-09-26T13:31:08+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,11 +13,28 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<ol class="lower-alpha">
-<li>Find a vector perpendicular at the point \((1,1,3)\) to the surface with equation \(x^2+z^2=10\text{.}\)</li>
-<li>Find a vector tangent at the same point to the curve of intersection of the surface in part (a) with surface \(y^2+z^2=10\text{.}\)</li>
-<li>Find parametric equations for the line tangent to that curve at that point.</li>
-</ol>
+<p>(c) Differentiating \(z_x\) with respect to \(y\) gives</p>
+<div class="displaymath">
+\begin{align*}
+&amp;z_{xy}(x,y)
+=-\frac{1}{y+3z(x,y)^2}
+-\frac{2-2x-y}{{[y+3z(x,y)^2]}^2}\big(1+6z(x,y)z_y(x,y)\big)\\
+&amp;=-\frac{1}{y+3z(x,y)^2}
+-\frac{2-2x-y}{{[y+3z(x,y)^2]}^2}
+\left(1-6z(x,y)\frac{x+2y+z(x,y)}{y+3z(x,y)^2}\right)
+\end{align*}
+</div>
+<p data-braille="continuation">As an alternate solution, we could also  differentiate \(z_y\) with respect to \(x\text{.}\) This gives</p>
+<div class="displaymath">
+\begin{align*}
+z_{yx}(x,y)
+&amp;=-\frac{1+z_x(x,y)}{y+3z(x,y)^2}
++\frac{x+2y+z(x,y)}{{[y+3z(x,y)^2]}^2}6z(x,y)z_x(x,y)\\
+&amp;=-\frac{1}{y+3z(x,y)^2}\left(1+\frac{2-2x-y}{y+3z(x,y)^2}\right)\\
+&amp;\hskip0.5in
++\frac{x+2y+z(x,y)}{{[y+3z(x,y)^2]}^2}6z(x,y)\frac{2-2x-y}{y+3z(x,y)^2}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_tangent_planes.html#p-1730">in-context</a></span>
 </body>
 </html>

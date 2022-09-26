@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:39+01:00    *-->
+<!--*    on 2022-09-26T13:35:47+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,21 +13,31 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(c) We'll use the spherical coordinate form.</p>
+<p>In spherical coordinates</p>
+<ul class="disc">
+<li>\(x^2+y^2+z^2\le 2\) is \(\rho\le\sqrt{2}\text{,}\) and</li>
+<li>\(\sqrt{x^2+y^2}\le z\) is \(\rho\sin\varphi\le \rho\cos\varphi\text{,}\) or \(\tan\varphi\le 1\) or \(\varphi\le\frac{\pi}{4}\text{,}\) and</li>
+<li>the density \(x^2+y^2=\rho^2\sin^2\varphi\text{,}\) and</li>
+<li>\(\dee{V}\) is \(\rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
 <div class="displaymath">
 \begin{align*}
-M &amp;=\int_0^{\sqrt{2}}\dee{\rho}\int_0^{2\pi}\dee{\theta}
-\int_0^{\pi/4}\dee{\varphi}\ \rho^4\sin^3\varphi\\
+V =\big\{\ (\rho\sin\varphi\cos\theta\,,\,\rho\sin\varphi\sin\theta\,,\,
+\rho\cos\varphi)\ \big|\ 
+0\le\rho\le \sqrt{2},\  &amp;0\le\theta\le2\pi,\\
+&amp;\hskip 0.25in 0\le \varphi\le \frac{\pi}{4}\ \big\}
+\end{align*}
+</div>
+<p data-braille="continuation">and, since the integrand \(x^2+y^2=\rho^2\sin^2\varphi\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+M &amp;=\tripInt_V \big(x^2+y^2\big)\ \dee{V}
+=\int_0^{\sqrt{2}}\dee{\rho}\int_0^{2\pi}\dee{\theta}
+\int_0^{\pi/4}\dee{\varphi}\ \rho^2\sin\varphi\
+\rho^2\sin^2\varphi\\
 &amp;=\int_0^{\sqrt{2}}\dee{\rho}\int_0^{2\pi}\dee{\theta}
-\int_0^{\pi/4}\dee{\varphi}\ \rho^4\sin\varphi
-\big[1-\cos^2\varphi\big]\\
-&amp;=2\pi \int_0^{\sqrt{2}}\dee{\rho}\ \rho^4
-\left[-\cos\varphi +\frac{\cos^3\varphi}{3}\right]_0^{\pi/4}
-=2\pi \left[\frac{2}{3} - \frac{5}{6\sqrt{2}}\right]
-\int_0^{\sqrt{2}}\dee{\rho}\ \rho^4\\
-&amp;=2\pi \frac{4\sqrt{2}}{5}\left[\frac{2}{3} - \frac{5}{6\sqrt{2}}\right]
-=\pi \left[\frac{16\sqrt{2}}{15} - \frac{4}{3}\right]
-\approx 0.5503
+\int_0^{\pi/4}\dee{\varphi}\ \rho^4\sin^3\varphi
 \end{align*}
 </div>
 <span class="incontext"><a href="sec_spherical.html#p-3987">in-context</a></span>

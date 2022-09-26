@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:30+01:00    *-->
+<!--*    on 2022-09-26T13:33:26+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>On each darkly shaded rectangle, \(f(x,y)\ge 0\) and the graph of \(f(x,y)\) is the graph of \(g_n(x)g_n(y)\) which looks like a pyramid. On each lightly shaded rectangle, \(f(x,y)\le 0\) and the graph of \(f(x,y)\) is the graph of \(-g_{n+1}(x)g_n(y)\) which looks like a pyramidal hole in the ground.</p>
+<p>Now we define the integrand \(f(x,y)\) in terms of these subintervals \(I_n\) and functions \(g_n\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+f(x,y)=\begin{cases}
+0&amp; \text{if } x=0 \\
+0&amp; \text{if } y=0 \\
+g_m(x)g_n(y)&amp; \text{if } x\in I_m,\ y\in I_n \text{ with } m=n\\
+-g_m(x)g_n(y)&amp; \text{if } x\in I_m,\ y\in I_n \text{ with } m=n+1\\
+0&amp; \text{otherwise}
+\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">You should think of \((0,1]\times(0,1]\) as a union of a bunch of small rectangles \(I_m\times I_n\text{,}\) as in the figure below. On most of these rectangles, \(f(x,y)\) is just zero. The exceptions are the darkly shaded rectangles \(I_n\times I_n\) on the “diagonal” of the figure and the lightly shaded rectangles \(I_{n+1}\times I_n\) just to the left of the “diagonal”.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2876">in-context</a></span>
 </body>
 </html>

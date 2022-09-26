@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:21+01:00    *-->
+<!--*    on 2022-09-26T13:30:35+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,16 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Suppose that we are told that \(F(P,V,T)=0\) and that we are to find  \(\pdiff{P}{T}\text{.}\)</p>
+<p>Define  \(w(x,t)=f(x+ct)\) and \(W(x,t)=\pdiff{w}{t}(x,t)=cf'(x+ct)=F\big(u(x,t)\big)\) where \(F(u)=cf'(u)\) and \(u(x,t)=x+ct\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\partial^2}{\partial t^2}f(x+ct)
+&amp;=\pdiff{W}{t}(x,t)
+=\diff{F}{u}\big(u(x,t)\big)  \pdiff{u}{t}(x,t)
+=c\,f''(x+ct)\,c\\
+&amp;=c^2\,f''(x+ct)
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_chain_rule.html#p-1424">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:20+01:00    *-->
+<!--*    on 2022-09-26T13:30:34+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,6 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>We recommend strongly that you use the following procedure, without leaving out any steps, the first couple of dozen times that you use the chain rule.</p>
+<ul class="disc">
+<li>Step 1: List <em class="alert">explicitly</em> all the functions involved and specify the arguments of each function. Ensure that all different functions have different names. Invent new names for some of the functions if necessary. In the case of the chain rule in Theorem  <a class="xref" data-knowl="./knowl/thm_chainRule.html" title="Theorem 2.4.1: The Chain Rule">2.4.1</a>, the list would be<div class="displaymath">
+\begin{equation*}
+f(x,y)\qquad\qquad
+x(s,t)\qquad\qquad
+y(s,t)\qquad\qquad
+F(s,t)=f\big(x(s,t),y(s,t)\big)
+\end{equation*}
+</div>While the functions \(f\) and \(F\) are closely related, they are not the same. One is a function of \(x\) and \(y\) while the other is a function of \(s\) and \(t\text{.}\)</li>
+<li>
 <p>Step 2: Write down the template</p>
 <div class="displaymath">
 \begin{equation*}
@@ -23,6 +34,24 @@
 <ul class="circle">
 <li>The function \(F\) appears once in the numerator on the left. The function \(f\text{,}\) from which \(F\) is constructed by a change of variables, appears once in the numerator on the right.</li>
 <li>The variable in the denominator on the left appears once in the denominator on the right.</li>
+</ul>
+</li>
+<li>Step 3: Fill in the blanks with every variable that makes sense. In particular, since \(f\) is a function of \(x\) and \(y\text{,}\) it may only be differentiated with respect to \(x\) and \(y\text{.}\) So we add together two copies of our template — one for \(x\) and one for \(y\text{:}\)<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{s}
+=\pdiff{f}{x }\pdiff{x }{s}
++\pdiff{f}{y }\pdiff{y }{s}
+\end{equation*}
+</div>Note that \(x\) and \(y\) are functions of \(s\) so that the derivatives \(\pdiff{x }{s}\) and \(\pdiff{y }{s}\) make sense. The first term, \(\pdiff{f}{x }\pdiff{x }{s}\text{,}\) arises from the variation of \(x\) with respect to \(s\) and the second term, \(\pdiff{f}{y }\pdiff{y }{s}\text{,}\) arises from the variation of \(y\) with respect to \(s\text{.}\)</li>
+<li>Step 4: Put in the functional dependence <em class="alert">explicitly</em>. Fortunately, there is only one functional dependence that makes sense. The left hand side is a function of \(s\) and \(t\text{.}\) Hence the right hand side must also be a function of \(s\) and \(t\text{.}\) As \(f\) is a function of \(x\) and \(y\text{,}\) this is achieved by evaluating \(f\) at \(x=x(s,t)\) and \(y=y(s,t)\text{.}\)<div class="displaymath">
+\begin{equation*}
+\pdiff{F}{s}(s,t)=
+\pdiff{f}{x}\big(x(s,t),y(s,t)\big)
+\pdiff{x}{s}(s,t)
++\pdiff{f}{y}\big(x(s,t),y(s,t)\big)
+\pdiff{y}{s}(s,t)
+\end{equation*}
+</div>If you fail to put in the arguments, or at least if you fail to remember what the arguments are, you may forget that \(\pdiff{f}{x}\) and \(\pdiff{f}{y}\) depend on \(s\) and \(t\text{.}\) Then, if you have to compute a second derivative of \(F\text{,}\) you will probably fail to differentiate the factors  \(\pdiff{f}{x}\big(x(s,t),y(s,t)\big)\) and \(\pdiff{f}{y}\big(x(s,t),y(s,t)\big)\text{.}\)</li>
 </ul>
 <span class="incontext"><a href="sec_chain_rule.html#p-1409">in-context</a></span>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:09+01:00    *-->
+<!--*    on 2022-09-26T13:30:18+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>So how is this possible? The answer is that \(f_x(0,0)\) only involves values of \(f(x,y)\) with \(y=0\text{.}\) As \(f(x,0)=x\text{,}\) for all values of \(x\text{,}\) we have that \(f(x,0)\) is a continuous, and indeed a differentiable, function. Similarly, \(f_y(0,0)\) only involves values of \(f(x,y)\) with \(x=0\text{.}\) As \(f(0,y)=0\text{,}\) for all values of \(y\text{,}\) we have that \(f(0,y)\) is a continuous, and indeed a differentiable, function. On the other hand, the bad behaviour of \(f(x,y)\) for \((x,y)\) near \((0,0)\) only happens for \(x\) and \(y\) both nonzero.</p>
+<p>To see that, nonetheless, \(f(x,y)\) is not continuous at \((0,0)\text{,}\) we take the limit of \(f(x,y)\) as \((x,y)\) approaches \((0,0)\) along the curve \(y=x-x^3\text{.}\) The limit is</p>
+<div class="displaymath">
+\begin{gather*}
+\lim_{x\rightarrow 0} f\big(x,x-x^3\big)
+=\lim_{x\rightarrow 0} \frac{x^2}{x-(x-x^3)}
+=\lim_{x\rightarrow 0} \frac{1}{x}
+\end{gather*}
+</div>
+<p data-braille="continuation">which does not exist. Indeed as \(x\) approaches \(0\) through positive numbers, \(\frac{1}{x}\) approaches \(+\infty\text{,}\) and as \(x\) approaches \(0\) through negative numbers, \(\frac{1}{x}\) approaches \(-\infty\text{.}\)</p>
 <span class="incontext"><a href="sec_partials.html#p-1250">in-context</a></span>
 </body>
 </html>

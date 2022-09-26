@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:46+01:00    *-->
+<!--*    on 2022-09-26T13:29:50+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,27 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) The particle travelled a distance of 21 units in \(\frac{7}{2}\) time units. This corresponds to a speed of \(\frac{21}{7/2}=6\text{.}\)</p>
+<p>(a) Parametrize \(C\) by \(x\text{.}\) Since \(y=x^2\) and \(z=\frac{2}{3}x^3\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\vr(x)&amp;=x\,\hi+x^2\,\hj+\frac{2}{3}x^3\,\hk\cr
+\vr'(x)&amp;=\hi+2x\,\hj+2x^2\,\hk\cr
+\vr''(x)&amp;=2\,\hj+4x\,\hk\cr
+\diff{s}{x}
+&amp;=|\vr'(x)|
+=\sqrt{1+4x^2+4x^4}=1+2x^2\cr
+\end{align*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+\int_C \ \dee{s}
+=\int_0^3 \diff{s}{x}\ \dee{x}
+=\int_0^3 \big(1+2x^2\big)\ \dee{x}
+={\Big[x+\frac{2}{3}x^3\Big]}_0^3
+=21
+\end{equation*}
+</div>
 <span class="incontext"><a href="sec_curves.html#p-893">in-context</a></span>
 </body>
 </html>

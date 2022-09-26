@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:29+01:00    *-->
+<!--*    on 2022-09-26T13:35:36+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,33 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Use spherical coordinates to find</p>
-<ol class="lower-alpha">
-<li>The volume inside the cone \(z=\sqrt{x^2+y^2}\) and inside the sphere \(x^2+y^2+z^2=a^2\text{.}\)</li>
-<li>\(\tripInt_R x\, \dee{V}\) and \(\tripInt_R z\, \dee{V}\) over the part of the sphere of radius \(a\) that lies in the first octant.</li>
-<li>The mass of a spherical planet of radius \(a\) whose density at distance \(\rho\) from the center is \(\de=A/(B+\rho^2)\text{.}\)</li>
-<li>The volume enclosed by \(\ \rho=a(1-\cos\varphi).\) Here \(\rho\) and \(\varphi\) refer to the usual spherical coordinates.</li>
-</ol>
+<p>Looking at the figure above, we see that, on \(D\)</p>
+<ul class="disc">
+<li>\(\varphi\) runs from \(0\) (the positive \(z\)-axis) to \(\frac{\pi}{4}\) (on the cone), and</li>
+<li>for each \(\varphi\) is that range, \(\rho\) runs from \(0\)  to \(2\) and \(\theta\) runs from \(0\) to \(2\pi\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+D&amp;=\Set{(\rho\sin\varphi\cos\theta,\rho\sin\varphi\sin\theta,\rho\cos\varphi)}
+{0\le\varphi\le\frac{\pi}{4},\
+0\le \theta\le 2\pi,\ \rho\le 2}
+\end{align*}
+</div>
+<p data-braille="continuation">and, as \(\dee{V} =\rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+I&amp;= \int_0^{\pi/4}\dee{\varphi}\int_0^{2\pi}\dee{\theta}
+\int_0^{2}\dee{\rho}\
+\rho^2\sin\varphi\ \overbrace{\rho\cos\varphi}^{z}\\
+&amp;= \int_0^{\pi/4}\dee{\varphi}\int_0^{2\pi}\dee{\theta}
+\int_0^{2}\dee{\rho}\
+\rho^3\sin\varphi\,\cos\varphi\\
+&amp;= 2\pi\ \frac{2^4}{4} \int_0^{\pi/4}\dee{\varphi}\ \sin\varphi\,\cos\varphi\\
+&amp;= 2\pi\ \frac{2^4}{4}\left[\frac{\sin^2\varphi}{2}\right]_0^{\pi/4}\\
+&amp;= 2\pi
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_spherical.html#p-3910">in-context</a></span>
 </body>
 </html>

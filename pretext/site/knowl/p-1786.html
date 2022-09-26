@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:49+01:00    *-->
+<!--*    on 2022-09-26T13:31:14+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We'll now define, and find, the Taylor polynomial of degree \(n\) for the function \(f(x,y)\) about \((x,y)=(x_0,y_0)\text{.}\) It is going to be a polynomial of degree \(n\) in \(\De x\) and \(\De y\text{.}\) The most general such polynomial is</p>
+<p>We have just found linear and quadratic approximations to the function \(f(x,y)\text{,}\) for \((x,y)\) near the point \((x_0,y_0)\text{.}\) In CLP-1, we found not only linear and quadratic approximations, but in fact a whole hierarchy of approximations. For each integer \(n\ge 0\text{,}\) the \(n^\mathrm{th}\) degree Taylor polynomial for \(f(x)\) about \(x=a\) was defined, in Definition 3.4.11 of the CLP-1 text, to be</p>
 <div class="displaymath">
-\begin{equation*}
-T_n(\De x,\De y)
-=\sum_{\Atop{\ell,m\ge 0}{\ell+m\le n}}  a_{\ell,m}\  (\De x)^\ell (\De y)^m
-\end{equation*}
+\begin{gather*}
+\sum_{k=0}^n \frac{1}{k!} f^{(k)}(a) \cdot (x-a)^k
+\end{gather*}
 </div>
-<p data-braille="continuation">with all of the coefficients \(a_{\ell,m}\) being constants. The specific coefficients for the Taylor polynomial are determined by the requirement that all partial derivatives of \(T_n(\De x,\De y)\) at \(\De x=\De y=0\) are the same as the corresponding partial derivatives of \(f\big(x_0 + \De x\,,\,y_0+\De y\big)\) at \(\De x=\De y=0\text{.}\)</p>
 <span class="incontext"><a href="sec_lin_approx.html#p-1786">in-context</a></span>
 </body>
 </html>

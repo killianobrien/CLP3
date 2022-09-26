@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:05+01:00    *-->
+<!--*    on 2022-09-26T13:32:54+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Find \(a,\ b\) and \(c\) so that the volume \(\frac{4\pi}{3} abc\) of an ellipsoid \(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1\) passing through the point \((1,2,1)\) is as small as possible.</p>
+<p>We are to find the maximum and minimum of \(f(x,y,z)=x+y-z\) subject to the constraint \(g(x,y,z) = x^2+y^2+z^2 -1=0\text{.}\) According to the method of Lagrange multipliers, we need to find all solutions to</p>
+<div class="displaymath">
+\begin{alignat*}{5}
+f_x = 1 = 2\la x  &amp;= \la g_x
+\ &amp;&amp;\implies\  &amp;&amp; x=\frac{1}{2\la} \tag{E1}\\
+f_y = 1 = 2\la y &amp;= \la g_y
+\ &amp;&amp;\implies\  &amp;&amp; y=\frac{1}{2\la}\tag{E2}\\
+f_z = -1 = 2\la z &amp;= \la g_z
+\ &amp;&amp;\implies\  &amp;&amp; z=-\frac{1}{2\la} \tag{E3}\\
+x^2+y^2+z^2&amp;=1
+\ &amp;&amp;\implies\  &amp;&amp;3\left(\frac{1}{2\la}\right)^2=1
+\ &amp;&amp;\implies\  &amp; \la&amp;=\pm\frac{\sqrt{3}}{2}\tag{E4}
+\end{alignat*}
+</div>
+<p data-braille="continuation">Thus the critical points are \(\big(-\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\big)\text{,}\) where \(f=-\sqrt{3}\) and \(\big(\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}}\big)\text{,}\) where \(f=\sqrt{3}\text{.}\) So, the max is \(f=\sqrt{3}\) and the min is \(f=-\sqrt{3}\text{.}\)</p>
 <span class="incontext"><a href="sec_Lagrange.html#p-2647">in-context</a></span>
 </body>
 </html>

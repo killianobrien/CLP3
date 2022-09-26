@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:16+01:00    *-->
+<!--*    on 2022-09-26T13:35:20+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,15 +13,22 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) Switching to cylindrical coordinates</p>
+<p>(a) The solid consists of all \((x,y,z)\) with</p>
+<ul class="disc">
+<li>\((x,y)\) running over the disk \(x^2+y^2\le 4\) and</li>
+<li>for each fixed \((x,y)\) obeying \(x^2+y^2\le 4\text{,}\) \(z\) running from \(0\) to \(e^{-x^2-y^2}\)</li>
+</ul>
+<p data-braille="continuation">On the disk \(x^2+y^2\le 4\text{,}\)</p>
+<ul class="disc">
+<li>\(x\) runs from \(-2\) to \(2\) and</li>
+<li>for each fixed \(x\) obeying \(-2\le x\le 2\text{,}\) \(y\) runs from \(-\sqrt{4-x^2}\) to \(\sqrt{4-x^2}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
 <div class="displaymath">
-\begin{align*}
-\text{Volume}&amp;=\int_0^2 \dee{r}\int_0^{2\pi}\dee{\theta} \int_0^{e^{-r^2}}\dee{z}\ r
-=\int_0^2 \dee{r}\int_0^{2\pi}\dee{\theta} \ r e^{-r^2}
-=\int_0^2 \dee{r}\ 2\pi\ r e^{-r^2}\\
-&amp;=-\pi e^{-r^2}\Big|_0^2
-=\pi\big[1-e^{-4}\big]\approx 3.084
-\end{align*}
+\begin{equation*}
+\text{Volume}=\int_{-2}^2 \dee{x}
+\int_{-\sqrt{4-x^2}}^{\sqrt{4-x^2}}\dee{y}\int_0^{e^{-x^2-y^2}}\dee{z}
+\end{equation*}
 </div>
 <span class="incontext"><a href="sec_cylindrical.html#p-3816">in-context</a></span>
 </body>

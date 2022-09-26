@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:27+01:00    *-->
+<!--*    on 2022-09-26T13:31:59+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,34 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(u_1(x,t)\) and \(u_2(x,t)\) both be solutions of the wave equation \(u_{tt}=u_{xx}\) and let \(a_1\) and \(a_2\) be constants. Show that \(u(x,t)=a_1u_1(x,t)+a_2u_2(t,x)\) is also a solution of \(u_{tt}=u_{xx}\text{.}\) Because of this property, the wave equation is said to be a <em class="emphasis">linear PDE</em>.</p>
+<p>We evaluate both sides of the given PDE with \(u=u(x,t)=f(t)\,\cos(2x)\text{.}\) Since</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+u(x,t) \amp=  f(t)\,\cos(2x) \\
+u_t(x,t) \amp =   f'(t)\,\cos(2x)\\
+u_x(x,t) \amp=  -2\,f(t)\,\sin(2x)\qquad \amp
+u_{xx}(x,t) \amp=   -4\,f(t)\,\cos(2x)
+\end{alignat*}
+</div>
+<p data-braille="continuation">the left hand side of the PDE is</p>
+<div class="displaymath">
+\begin{equation*}
+u_t(x,t) =  f'(t)\,\cos(2x)
+\end{equation*}
+</div>
+<p data-braille="continuation">and the right hand side of the PDE is</p>
+<div class="displaymath">
+\begin{equation*}
+u_{xx}(x,t) =  -4\,f(t)\,\cos(2x)
+\end{equation*}
+</div>
+<p data-braille="continuation">The left and right hand sides are equal if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+f'(t)=-4 f(t)
+\end{equation*}
+</div>
+<p data-braille="continuation">This is the type of ordinary differential equation that we studied in Section 3.3,  on exponential growth and decay, in the CLP-1 text. We found in Theorem 3.3.2 there that the general solution to this ODE is \(f(t) = Ce^{-4t}\) with \(C\) being an arbitrary constant.</p>
 <span class="incontext"><a href="sec_pde.html#p-2251">in-context</a></span>
 </body>
 </html>

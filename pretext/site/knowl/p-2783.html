@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:20+01:00    *-->
+<!--*    on 2022-09-26T13:33:16+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,11 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>At this point you may be wondering “Do we always have to use vertical slices?” and “Do we always have to integrate with respect to \(y\) first?” The answer is “no”. This brings us to consider “horizontal slices”.</p>
+<p>To evaluate the integral \(\displaystyle\int_a^b \dee{x} \int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)\text{,}\)</p>
+<ul class="circle">
+<li>first evaluate the inside integral \(\int_{B(x)}^{T(x)} \dee{y}\, f\big(x,y\big)\) using the limits of integration that are directly beside the \(\dee{y}\text{.}\) Indeed the \(\dee{y}\) is written directly beside \(\int_{B(x)}^{T(x)}\) to make it clear that the limits of integration \(B(x)\) and \(T(x)\) are for the \(y\)-integral. In the past you probably wrote this integral as \(\int_{B(x)}^{T(x)} f\big(x,y\big)\ \dee{y}\text{.}\) The result of the inside integral is again a function of \(x\) only.  Call it \(F(x)\text{.}\)</li>
+<li>Then evaluate the outside integral \(\int_a^b \dee{x}\,F(x)\text{,}\) whose integrand is the answer to the inside integral and whose limits of integration are directly beside the \(\dee{x}\text{.}\)</li>
+</ul>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2783">in-context</a></span>
 </body>
 </html>

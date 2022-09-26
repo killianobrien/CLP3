@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:09+01:00    *-->
+<!--*    on 2022-09-26T13:34:08+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,24 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Alternatively, on \(\cR\text{,}\)</p>
+<p>Thus the domain of integration is</p>
+<div class="displaymath">
+\begin{equation*}
+\cR=\Set{(r\cos\theta,r\sin\theta)}{0\le\theta\le\tfrac{\pi}{2},\
+0\le r\le 2\cos\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">On this domain,</p>
 <ul class="disc">
-<li>\(r\) runs from \(0\) (at the point \((0,0)\)) to \(2\) (at the point \((2,0)\)).</li>
-<li>For each fixed \(r\) in that range, \(\theta\) runs from \(0\) to \(\arccos\frac{r}{2}\) (which was gotten by solving \(r=2\cos\theta\) for \(\theta\) as a function of \(r\)), as in the figure on the right above.</li>
+<li>\(\theta\) runs from \(0\) to \(\frac{\pi}{2}\text{.}\)</li>
+<li>For each fixed \(\theta\) in that range, \(r\) runs from \(0\) to \(2\cos\theta\text{,}\) as in the figure on the left below.</li>
 </ul>
-<p data-braille="continuation">So</p>
+<p data-braille="continuation">In polar coordinates \(\dee{x}\,\dee{y} = r\,\dee{r}\,\dee{\theta}\text{,}\) so that</p>
 <div class="displaymath">
 \begin{equation*}
 \dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}
-=\int_0^2\dee{r}
-\int_0^{\arccos\frac{r}{2}}\dee{\theta}
-\ r\ f(r\cos\theta,r\sin\theta)
+=\int_0^{\frac{\pi}{2}}\dee{\theta}
+\int_0^{2\cos\theta}\dee{r}\ r\ f(r\cos\theta,r\sin\theta)
 \end{equation*}
 </div>
 <span class="incontext"><a href="sec_polars.html#p-3245">in-context</a></span>

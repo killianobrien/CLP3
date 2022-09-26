@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:33+01:00    *-->
+<!--*    on 2022-09-26T13:33:30+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,54 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>From the sketch, it looks like \(\cR\) is invariant under \(x\rightarrow-x\) (i.e. is symmetric about the \(y\)-axis) and is also invariant under \(y\rightarrow-y\) (i.e. is symmetric about the \(x\)-axis) and is also invariant under \((x,y)\rightarrow-(x,y)\text{.}\) It is easy to check analytically that this is indeed the case. The point \((x,y)\) is in \(\cR\) if and only if it is inside \(x^2+4y^2=1\text{.}\) That is the case if and only if \(x^2+4y^2\le 1\text{.}\) Since</p>
-<div class="displaymath">
-\begin{equation*}
-(-x)^2+4y^2 = x^2+(-4y)^2 = (-x)^2+4(-y)^2 = x^2+4y^2
-\end{equation*}
-</div>
-<p data-braille="continuation">we have</p>
-<div class="displaymath">
-\begin{align*}
-(x,y)\text{ is in $\cR$} &amp;\iff (-x,y)\text{ is in $\cR$} \\
-&amp;\iff (x,-y)\text{ is in $\cR$} \\
-&amp;\iff (-x,-y)\text{ is in $\cR$} 
-\end{align*}
-</div>
-<p data-braille="continuation">Now let's check the evenness and oddness properties of the integrand.</p>
-<div class="displaymath">
-\begin{alignat*}{4}
-f(x,y) &amp;= xe^y &amp;&amp;+ ye^x &amp;&amp;+ xe^{xy} &amp;&amp;+ 7 \\
-f(-x,y) &amp;= -xe^y &amp;&amp;+ ye^{-x} &amp;&amp;- xe^{-xy} &amp;&amp;+ 7 \\
-f(x,-y) &amp;= xe^{-y} &amp;&amp;- ye^x &amp;&amp;+ xe^{-xy} &amp;&amp;+ 7 \\
-f(-x,-y) &amp;= -xe^{-y} &amp;&amp;- ye^{-x} &amp;&amp;- xe^{xy} &amp;&amp;+ 7 
-\end{alignat*}
-</div>
-<p data-braille="continuation">So \(f(x,y)\) is neither even nor odd under any of \(x\rightarrow-x\text{,}\) \(y\rightarrow-y\text{,}\) and \((x,y)\rightarrow-(x,y)\text{.}\) BUT, look at the four terms of \(f(x,y)\) separately.</p>
-<ul class="disc">
-<li>The first term of \(f(x,y)\text{,}\) namely \(xe^y\text{,}\) is odd under \(x\rightarrow-x\text{.}\)</li>
-<li>The second term of \(f(x,y)\text{,}\) namely \(ye^x\text{,}\) is odd under \(y\rightarrow-y\text{.}\)</li>
-<li>The third term of \(f(x,y)\text{,}\) namely \(xe^{xy}\text{,}\) is odd under \((x,y)\rightarrow-(x,y)\text{.}\)</li>
-<li>The fourth term of \(f(x,y)\text{,}\) namely \(7\text{,}\) is even under all of \(x\rightarrow-x\text{,}\) \(y\rightarrow-y\text{,}\) and \((x,y)\rightarrow-(x,y)\text{.}\)</li>
-</ul>
-<p data-braille="continuation">So, by parts (a), (b) and (c) of Theorem <a class="xref" data-knowl="./knowl/thm_INTevenodd2d.html" title="Theorem 3.1.27: 2d Even and Odd">3.1.27</a>, in order,</p>
-<div class="displaymath">
-\begin{align*}
-&amp;\dblInt_{\cR}(xe^y + ye^x + xe^{xy} + 7)\,\dee{x}\dee{y}\\
-&amp;\hskip0.5in= \dblInt_{\cR}xe^y\,\dee{x}\dee{y}
-+ \dblInt_{\cR}ye^x\,\dee{x}\dee{y}
-+ \dblInt_{\cR}xe^{xy}\,\dee{x}\dee{y}
-+ 7 \dblInt_{\cR} \dee{x}\dee{y} \\
-&amp;\hskip0.5in= 0 + 0 +0 + 7\,\text{Area}(\cR)
-\end{align*}
-</div>
-<p data-braille="continuation">Since \(\cR\) is an ellipse with semi-major axis \(a=1\) and semi-minor axis \(b=\frac{1}{2}\text{,}\) it has area \(\pi a b = \tfrac{1}{2}\pi\) and</p>
-<div class="displaymath">
-\begin{equation*}
-\dblInt_{\cR}(xe^y + ye^x + xe^{xy} + 7)\,\dee{x}\dee{y}
-= \tfrac{7}{2}\pi
-\end{equation*}
-</div>
+<p>First, let's sketch the ellipse \(x^2+4y^2=1\text{.}\) Notice that its \(x\) intercepts are the points \((x,0)\) that obey \(x^2+4(0)^2=1\text{.}\) So the \(x\)-intercepts are \((\pm 1,0)\text{.}\) Similarly its \(y\) intercepts are the points \((0,y)\) that obey \(0^2+4y^2=1\text{.}\) So the \(y\)-intercepts are \((0,\pm 1/2)\text{.}\) Here is a sketch of \(\cR\text{.}\)</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2905">in-context</a></span>
 </body>
 </html>

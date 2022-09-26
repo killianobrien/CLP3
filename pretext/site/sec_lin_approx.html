@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:41:22+01:00    *-->
+<!--*    on 2022-09-26T13:27:02+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -244,6 +244,7 @@ MathJax.Hub.Config({
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
 <li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3">CLP3 at Manchester Met</a></li>
 </ul>
 </li>
 <li class="link">
@@ -306,7 +307,7 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_lin_approx"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.6</span> <span class="title">Linear Approximations and Error</span>
 </h2>
-<section class="introduction" id="introduction-46"><p id="p-1746">A frequently used, and effective, strategy for building an understanding of the behaviour of a complicated function near a point is to approximate it by a simple function. The following suite of such approximations is standard fare in Calculus I courses. See, for example, §3.4 in the CLP-1 text.</p>
+<section class="introduction" id="introduction-46"><p id="p-1747">A frequently used, and effective, strategy for building an understanding of the behaviour of a complicated function near a point is to approximate it by a simple function. The following suite of such approximations is standard fare in Calculus I courses. See, for example, §3.4 in the CLP-1 text.</p>
 <div class="displaymath">
 \begin{align*}
 g(t_0+\De t) &amp;\approx g(t_0)
@@ -343,7 +344,7 @@ E_n(\De t)=
 </div>
 <p data-braille="continuation">for some (unknown) \(0\le c\le 1\text{.}\)</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-61"><div class="fn">You may have seen it written as \(E_n(x)=\tfrac{1}{(n+1)!}g^{(n+1)}(c) (x-a)^{n+1}\)</div></div>
-<p id="p-1747">It is a simple matter to use these one dimensional approximations to generate the analogous multidimensional approximations. To introduce the ideas, we'll generate the linear approximation to a function, \(f(x,y)\text{,}\) of two variables, near the point \((x_0,y_0)\text{.}\) Define</p>
+<p id="p-1748">It is a simple matter to use these one dimensional approximations to generate the analogous multidimensional approximations. To introduce the ideas, we'll generate the linear approximation to a function, \(f(x,y)\text{,}\) of two variables, near the point \((x_0,y_0)\text{.}\) Define</p>
 <div class="displaymath">
 \begin{equation*}
 g(t) = f\big(x_0+t\,\De x\,,\,y_0+t\,\De y\big)
@@ -357,7 +358,7 @@ g(1) = f\big(x_0 + \De x\,,\,y_0+\De y\big)
 \end{equation*}
 </div>
 <p data-braille="continuation">Consequently, setting \(t_0=0\) and \(\De t=1\text{,}\)</p>
-<div class="displaymath" id="p-1748">
+<div class="displaymath" id="p-1749">
 \begin{align*}
 f\big(x_0+\De x\,,\,y_0+\De y\big)
 &amp;=g(1) = g(t_0+\De t)\\
@@ -376,18 +377,18 @@ g'(t) = \pdiff{f}{x}\big(x_0+t\,\De x\,,\,y_0+t\,\De y\big)\,\De x
 <article class="fact theorem-like" id="eqn_lin_approx_2d"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-1749">
+<div class="displaymath" id="p-1750">
 \begin{align*}
 f\big(x_0+\De x\,,\,y_0+\De y\big)
 &amp;\approx f\big(x_0\,,\,y_0\big)
 + \pdiff{f}{x}\big(x_0\,,\,y_0\big)\,\De x
 + \pdiff{f}{y}\big(x_0\,,\,y_0\big)\,\De y
 \end{align*}
-</div></article><p id="p-1750">Of course exactly the same procedure works for functions of three or more variables. In particular</p>
+</div></article><p id="p-1751">Of course exactly the same procedure works for functions of three or more variables. In particular</p>
 <article class="fact theorem-like" id="eqn_lin_approx_3d"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.6.2</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-1751">
+<div class="displaymath" id="p-1752">
 \begin{align*}
 &amp;f\big(x_0+\De x\,,\,y_0+\De y\,,\,z_0 + \De z\big)\\
 &amp;\hskip0.25in\approx f\big(x_0\,,\,y_0\,,\,z_0\big)
@@ -396,11 +397,11 @@ f\big(x_0+\De x\,,\,y_0+\De y\big)
 &amp;\hskip2in
 + \pdiff{f}{z}\big(x_0\,,\,y_0\,,\,z_0\big)\,\De z
 \end{align*}
-</div></article><p id="p-1752">While these linear approximations are quite simple, they tend to be pretty decent provided \(\De x\) and \(\De y\) are small. See the optional §<a href="sec_lin_approx.html#sec_error" class="internal" title="Subsection 2.6.1: Quadratic Approximation and Error Bounds">2.6.1</a> for a more precise statement.</p>
+</div></article><p id="p-1753">While these linear approximations are quite simple, they tend to be pretty decent provided \(\De x\) and \(\De y\) are small. See the optional §<a href="sec_lin_approx.html#sec_error" class="internal" title="Subsection 2.6.1: Quadratic Approximation and Error Bounds">2.6.1</a> for a more precise statement.</p>
 <article class="remark remark-like" id="rmk_lin_approx_tan_plane"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.6.3</span><span class="period">.</span>
 </h6>
-<p id="p-1753">Applying <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a>, with \(\De x=x-x_0\) and \(\De y = y-y_0\text{.}\) gives</p>
+<p id="p-1754">Applying <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a>, with \(\De x=x-x_0\) and \(\De y = y-y_0\text{.}\) gives</p>
 <div class="displaymath">
 \begin{align*}
 f\big(x\,,\,y\big)
@@ -411,7 +412,7 @@ f\big(x\,,\,y\big)
 </div>
 <p data-braille="continuation">Looking at part (b) of Theorem <a class="xref" data-knowl="./knowl/thm_tan_plane_f.html" title="Theorem 2.5.1: Tangent Plane and Normal Line">2.5.1</a>, we see that this just says that the tangent plane to the surface \(z=f(x,y)\) at the point \(\big(x_0\,,\,y_0\,,\,f(x_0,y_0)\big)\) remains close to the surface when \((x,y)\) is close to \((x_0,y_0)\text{.}\)</p></article><article class="example example-like" id="eg_approx_AA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_approx_AA"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.4</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_AA"><article class="example example-like"><p id="p-1754">Let</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_AA"><article class="example example-like"><p id="p-1755">Let</p>
 <div class="displaymath">
 \begin{equation*}
 f(x,y) = \sqrt{x^2+y^2}
@@ -441,7 +442,7 @@ f\big(x_0+\De x\,,\,y_0+\De y\big)
 <article class="definition definition-like" id="notn_approx"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.5</span><span class="period">.</span>
 </h6>
-<p id="p-1755">People often write \(\De f\) for the change \(f\big(x_0+\De x\,,\,y_0+\De y\big)
+<p id="p-1756">People often write \(\De f\) for the change \(f\big(x_0+\De x\,,\,y_0+\De y\big)
 - f\big(x_0\,,\,y_0\big)\) in the value of \(f\text{.}\) Then the linear approximation <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a> becomes</p>
 <div class="displaymath">
 \begin{align*}
@@ -462,18 +463,18 @@ f\big(x_0+\De x\,,\,y_0+\De y\big)
 <div class="hidden-content tex2jax_ignore" id="hk-fn-62"><div class="fn">Don't take the notation \(\dee{x}\) or the terminology “infinitesimal” too seriously. It is just intended to signal “very small”.</div></div></article><article class="definition definition-like" id="def_error"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.6</span><span class="period">.</span>
 </h6>
-<p id="p-1756">Suppose that we wish to approximate a quantity \(Q\) and that the approximation turns out to be \(Q+\De Q\text{.}\) Then</p>
+<p id="p-1757">Suppose that we wish to approximate a quantity \(Q\) and that the approximation turns out to be \(Q+\De Q\text{.}\) Then</p>
 <ul class="disc">
 <li id="li-853">the absolute error in the approximation is \(|\De Q|\) and</li>
 <li id="li-854">the relative error in the approximation is \(\left|\frac{\De Q}{Q}\right|\) and</li>
 <li id="li-855">the percentage error in the approximation is \(100\left|\frac{\De Q}{Q}\right|\)</li>
-</ul></article><p id="p-1757">In Example 3.4.5 of the CLP-1 text we found an approximate value for the number \(\sqrt{4.1}\) by using a linear approximation to the single variable function \(f(x)=\sqrt{x}\text{.}\) We can make similar use of linear approximations to multivariable functions.</p>
+</ul></article><p id="p-1758">In Example 3.4.5 of the CLP-1 text we found an approximate value for the number \(\sqrt{4.1}\) by using a linear approximation to the single variable function \(f(x)=\sqrt{x}\text{.}\) We can make similar use of linear approximations to multivariable functions.</p>
 <article class="example example-like" id="eg_approx_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_approx_A"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.7</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_A"><article class="example example-like"><p id="p-1758">Find an approximate value for \(\frac{(0.998)^3}{1.003}\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_A"><article class="example example-like"><p id="p-1759">Find an approximate value for \(\frac{(0.998)^3}{1.003}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-229" id="solution-229"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-229"><div class="solution solution-like">
-<p id="p-1759">Set \(f(x,y) = \dfrac{x^3}{y}\text{.}\) We are to find (approximately) \(f(0.998\,,\,1.003)\text{.}\) We can easily find</p>
+<p id="p-1760">Set \(f(x,y) = \dfrac{x^3}{y}\text{.}\) We are to find (approximately) \(f(0.998\,,\,1.003)\text{.}\) We can easily find</p>
 <div class="displaymath">
 \begin{align*}
 f(1,1) &amp;= \frac{1^3}{1}=1
@@ -511,10 +512,10 @@ f(1,1) &amp;= \frac{1^3}{1}=1
 </div></article></div>
 <article class="example example-like" id="eg_approx_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_approx_B"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.8</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_B"><article class="example example-like"><p id="p-1760">Find an approximate value for \((4.2)^{1/2} + (26.7)^{1/3} + (256.4)^{1/4}\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_B"><article class="example example-like"><p id="p-1761">Find an approximate value for \((4.2)^{1/2} + (26.7)^{1/3} + (256.4)^{1/4}\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-230" id="solution-230"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-230"><div class="solution solution-like">
-<p id="p-1761">Set \(f(x,y,z) = x^{1/2} + y^{1/3} + z^{1/4}\text{.}\) We are to find (approximately) \(f(4.2\,,\,26.7\,,\,256.4)\text{.}\) We can easily find</p>
+<p id="p-1762">Set \(f(x,y,z) = x^{1/2} + y^{1/3} + z^{1/4}\text{.}\) We are to find (approximately) \(f(4.2\,,\,26.7\,,\,256.4)\text{.}\) We can easily find</p>
 <div class="displaymath">
 \begin{align*}
 f(4,27,256) &amp;= (4)^{1/2} + (27)^{1/3} + (256)^{1/4} = 2+3+4 =9
@@ -553,7 +554,7 @@ f(4,27,256) &amp;= (4)^{1/2} + (27)^{1/3} + (256)^{1/4} = 2+3+4 =9
 \end{align*}
 </div>
 <p data-braille="continuation">to four decimal places. The exact answer is \(9.03980\) to five decimal places.</p>
-<p id="p-1762">That's a difference of about</p>
+<p id="p-1763">That's a difference of about</p>
 <div class="displaymath">
 \begin{equation*}
 100\frac{9.0405-9.0398}{9}\%
@@ -565,11 +566,11 @@ f(4,27,256) &amp;= (4)^{1/2} + (27)^{1/3} + (256)^{1/4} = 2+3+4 =9
 </div></article></div>
 <article class="example example-like" id="eg_error_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_error_C"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.9</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_error_C"><article class="example example-like"><p id="p-1763">A triangle has sides \(a=10.1\)cm and \(b=19.8\)cm which include an angle \(35^\circ\text{.}\) Approximate the area of the triangle.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_error_C"><article class="example example-like"><p id="p-1764">A triangle has sides \(a=10.1\)cm and \(b=19.8\)cm which include an angle \(35^\circ\text{.}\) Approximate the area of the triangle.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:36%;margin-right:36%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/triangleError.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-231" id="solution-231"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-231"><div class="solution solution-like">
-<p id="p-1764">The triangle has height \(h=a\sin\theta\) and hence has area</p>
+<p id="p-1765">The triangle has height \(h=a\sin\theta\) and hence has area</p>
 <div class="displaymath">
 \begin{equation*}
 A(a,b,\theta) = \frac{1}{2} bh =\frac{1}{2} ab\sin\theta
@@ -577,7 +578,7 @@ A(a,b,\theta) = \frac{1}{2} bh =\frac{1}{2} ab\sin\theta
 </div>
 <p data-braille="continuation">The \(\sin\theta\) in this formula hides a booby trap built into this problem. In preparing the linear approximation we will need to use the derivative of \(\sin\theta\text{.}\) But the standard derivative \(\diff{}{\theta}\sin\theta
 =\cos\theta\) only applies when \(\theta\) is expressed in radians — not in degrees. See Warning 3.4.23 in the CLP-1 text.</p>
-<p id="p-1765">So we are obliged to convert \(35^\circ\) into</p>
+<p id="p-1766">So we are obliged to convert \(35^\circ\) into</p>
 <div class="displaymath">
 \begin{equation*}
 35^\circ = (30+5) \frac{\pi}{180}\ \text{radians}
@@ -630,10 +631,10 @@ A\big(a_0,b_0,\theta_0\big)
 <div class="hidden-content tex2jax_ignore" id="hk-fn-63"><div class="fn">There are other choices possible. For example, we could write \(35^\circ=45^\circ-10^\circ\text{.}\) To get a good approximation we try to make \(\De\theta\) as small as possible, while keeping the arithmetic reasonably simple.</div></div>
 </div></div>
 </div></article></div>
-<p id="p-1766">Another practical use of these linear approximations is to quantify how errors made in measured quantities propagate in computations using those measured quantities. Let's explore this idea a little by recycling the last example.</p>
+<p id="p-1767">Another practical use of these linear approximations is to quantify how errors made in measured quantities propagate in computations using those measured quantities. Let's explore this idea a little by recycling the last example.</p>
 <article class="example example-like" id="eg_error_D"><a data-knowl="" class="id-ref original" data-refid="hk-eg_error_D"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.10</span><span class="period">.</span><span class="space"> </span><span class="title">Example 2.6.9, continued.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_error_D"><article class="example example-like"><p id="p-1767">Suppose, that, as in Example <a class="xref" data-knowl="./knowl/eg_error_C.html" title="Example 2.6.9">2.6.9</a>, we are attempting to determine the area of a triangle by measuring the lengths of two of its sides together with the angle between them and then using the formula</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_error_D"><article class="example example-like"><p id="p-1768">Suppose, that, as in Example <a class="xref" data-knowl="./knowl/eg_error_C.html" title="Example 2.6.9">2.6.9</a>, we are attempting to determine the area of a triangle by measuring the lengths of two of its sides together with the angle between them and then using the formula</p>
 <div class="displaymath">
 \begin{equation*}
 A(a,b,\theta) = \frac{1}{2} ab\sin\theta
@@ -641,7 +642,7 @@ A(a,b,\theta) = \frac{1}{2} ab\sin\theta
 </div>
 <p data-braille="continuation">Of course, in the real world <a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-64" id="fn-64"><sup> 4 </sup></a>, we cannot measure lengths and angles exactly. So if we need to know the area to within 1%,  the question becomes: “How accurately do we have to measure the side lengths and included angle if we want the area that we compute to have an error of no more than about 1%?”</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-64"><div class="fn">Of course in our “real world” everyone uses calculus.</div></div>
-<p id="p-1768">Let's call the exact side lengths and included angle \(a_0\text{,}\) \(b_0\) and \(\theta_0\text{,}\) respectively, and the measured side lengths and included angle \(a_0+\De a\text{,}\) \(b_0+\De b\) and \(\theta_0+\De\theta\text{.}\) So \(\De a\text{,}\) \(\De b\) and \(\De\theta\) represent the errors in our measurements. Then, by <a class="xref" data-knowl="./knowl/eqn_lin_approx_3d.html" title="Equation 2.6.2">2.6.2</a>, the error in our computed area will be approximately</p>
+<p id="p-1769">Let's call the exact side lengths and included angle \(a_0\text{,}\) \(b_0\) and \(\theta_0\text{,}\) respectively, and the measured side lengths and included angle \(a_0+\De a\text{,}\) \(b_0+\De b\) and \(\theta_0+\De\theta\text{.}\) So \(\De a\text{,}\) \(\De b\) and \(\De\theta\) represent the errors in our measurements. Then, by <a class="xref" data-knowl="./knowl/eqn_lin_approx_3d.html" title="Equation 2.6.2">2.6.2</a>, the error in our computed area will be approximately</p>
 <div class="displaymath">
 \begin{align*}
 \De A &amp;\approx \pdiff{A}{a}\big(a_0,b_0,\theta_0\big)\,\De a
@@ -670,7 +671,7 @@ A(a,b,\theta) = \frac{1}{2} ab\sin\theta
 \end{align*}
 </div>
 <p data-braille="continuation">We want this to be less than \(1\text{.}\)</p>
-<p id="p-1769">Of course we do not know exactly what \(a_0\text{,}\) \(b_0\) and \(\theta_0\) are. But suppose that we are confident that \(a_0\ge 10\text{,}\) \(b_0\ge 10\) and \(\frac{\pi}{6}\le \theta_0 \le \frac{\pi}{2}\) so that \(\cot\theta_0\le \cot\frac{\pi}{6}=\sqrt{3}\le 2\text{.}\) Then</p>
+<p id="p-1770">Of course we do not know exactly what \(a_0\text{,}\) \(b_0\) and \(\theta_0\) are. But suppose that we are confident that \(a_0\ge 10\text{,}\) \(b_0\ge 10\) and \(\frac{\pi}{6}\le \theta_0 \le \frac{\pi}{2}\) so that \(\cot\theta_0\le \cot\frac{\pi}{6}=\sqrt{3}\le 2\text{.}\) Then</p>
 <div class="displaymath">
 \begin{align*}
 100\left|\frac{\De a}{a_0}\right|&amp;\le 100\left|\frac{\De a}{10}\right|
@@ -697,8 +698,8 @@ A(a,b,\theta) = \frac{1}{2} ab\sin\theta
 </div></article></div>
 <article class="example example-like" id="eg_errors_in_measurement"><a data-knowl="" class="id-ref original" data-refid="hk-eg_errors_in_measurement"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.11</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_errors_in_measurement"><article class="example example-like"><p id="p-1770"><em class="emphasis">A Question</em></p>
-<p id="p-1771">Suppose that three variables are measured with percentage error \(\veps_1,\ \veps_2\) and \(\veps_3\) respectively. In other words, if the exact value of  variable number \(i\) is \(x_i\) and measured value of variable  number \(i\) is \(x_i+\De x_i\) then</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_errors_in_measurement"><article class="example example-like"><p id="p-1771"><em class="emphasis">A Question</em></p>
+<p id="p-1772">Suppose that three variables are measured with percentage error \(\veps_1,\ \veps_2\) and \(\veps_3\) respectively. In other words, if the exact value of  variable number \(i\) is \(x_i\) and measured value of variable  number \(i\) is \(x_i+\De x_i\) then</p>
 <div class="displaymath">
 \begin{equation*}
 100\ \left|\frac{\De x_i}{x_i}\right|=\veps_i
@@ -713,7 +714,7 @@ P(x_1,x_2,x_3)=x_1x_2x_3
 <p data-braille="continuation">and the measured value is \(P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)\text{.}\) What is the percentage error in this measured value of \(P\text{?}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-232" id="solution-232"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-232"><div class="solution solution-like">
-<p id="p-1772">The percentage error in the measured value \(P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)\) is</p>
+<p id="p-1773">The percentage error in the measured value \(P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)\) is</p>
 <div class="displaymath">
 \begin{equation*}
 100\ \left|\frac{P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)-P(x_1,x_2,x_3)}
@@ -768,14 +769,14 @@ P_{x_3}(x_1,x_2,x_3)&amp;=\pdiff{}{x_3}\big[x_1x_2x_3\big]
 <p data-braille="continuation">More generally, if we take a product of \(n\text{,}\) rather than three,  variables the percentage error in the product becomes at most (approximately) \(\
 \smsum\limits_{i=1}^n\veps_i.
 \ \) This is the basis of the experimentalist's rule of thumb that when you take products, percentage errors add.</p>
-<p id="p-1773">Still more generally, if we take a “product” \(\prod_{i=1}^n x_i^{m_i}\text{,}\) the percentage error in the “product” becomes at most (approximately) \(\
+<p id="p-1774">Still more generally, if we take a “product” \(\prod_{i=1}^n x_i^{m_i}\text{,}\) the percentage error in the “product” becomes at most (approximately) \(\
 \smsum\limits_{i=1}^n|m_i|\veps_i.
 \ \)</p>
 </div></div>
 </div></article></div></section><section class="subsection" id="sec_error"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.6.1</span> <span class="title">Quadratic Approximation and Error Bounds</span>
 </h3>
-<p id="p-1774">Recall that, in the CLP-1 text, we started with the constant approximation, then improved it to the linear approximation by adding in degree one terms, then improved that to the quadratic approximation by adding in degree two terms, and so on. We can do the same thing here. Once again, set</p>
+<p id="p-1775">Recall that, in the CLP-1 text, we started with the constant approximation, then improved it to the linear approximation by adding in degree one terms, then improved that to the quadratic approximation by adding in degree two terms, and so on. We can do the same thing here. Once again, set</p>
 <div class="displaymath">
 \begin{equation*}
 g(t) = f\big(x_0+t\,\De x\,,\,y_0+t\,\De y\big)
@@ -871,7 +872,7 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)
 <article class="fact theorem-like" id="eqn_quadratic_approx"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.6.12</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-1775">
+<div class="displaymath" id="p-1776">
 \begin{align*}
 &amp;f\big(x_0 + \De x\,,\,y_0+\De y\big)\\
 &amp;\hskip0.25in\approx f\big(x_0\,,\,y_0\big)
@@ -884,7 +885,7 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)
 + \frac{\partial^2 f}{\partial y^2}\big(x_0,y_0\big)\,\De y^2
 \right\}
 \end{align*}
-</div></article><p id="p-1776">and the corresponding exact formula</p>
+</div></article><p id="p-1777">and the corresponding exact formula</p>
 <div class="displaymath">
 \begin{align*}
 f\big(x_0 + \De x\,,\,y_0+\De y\big)
@@ -895,7 +896,7 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)
 <article class="fact theorem-like" id="eqn_quadratic_exact"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.6.13</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-1777">
+<div class="displaymath" id="p-1778">
 \begin{align*}
 &amp;f\big(x_0 + \De x\,,\,y_0+\De y\big)\\
 &amp;\hskip0.25in= f\big(x_0\,,\,y_0\big)
@@ -912,7 +913,7 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)
 <p data-braille="continuation">where \(\vr(c) = \big(x_0+c\,\De x\,,\,y_0+c\,\De y\big)\) and \(c\) is some (unknown) number satisfying \(0\le c\le 1\text{.}\)</p></article><article class="fact theorem-like" id="eqn_linear_bound"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.6.14</span><span class="period">.</span>
 </h6>
-<p id="p-1778">If we can bound the second derivatives</p>
+<p id="p-1779">If we can bound the second derivatives</p>
 <div class="displaymath">
 \begin{equation*}
 \left|\frac{\partial^2 f}{\partial x^2}\big(\vr(c)\big)\right|\ ,\
@@ -931,10 +932,10 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)
 &amp;\hskip 3.2in
 \le \frac{M}{2}\big(|\De x|^2 +2|\De x|\,|\De y| +|\De y|^2\big)
 \end{align*}
-</div></article><p id="p-1779">Why might we want to do this? The left hand side of <a class="xref" data-knowl="./knowl/eqn_linear_bound.html" title="Equation 2.6.14">2.6.14</a> is exactly the error in the linear approximation <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a>. So the right hand side is a rigorous bound on the error in the linear approximation.</p>
+</div></article><p id="p-1780">Why might we want to do this? The left hand side of <a class="xref" data-knowl="./knowl/eqn_linear_bound.html" title="Equation 2.6.14">2.6.14</a> is exactly the error in the linear approximation <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a>. So the right hand side is a rigorous bound on the error in the linear approximation.</p>
 <article class="example example-like" id="eg_error"><a data-knowl="" class="id-ref original" data-refid="hk-eg_error"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.15</span><span class="period">.</span><span class="space"> </span><span class="title">Example 2.6.7, continued.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_error"><article class="example example-like"><p id="p-1780">Suppose that we approximate \(\frac{(0.998)^3}{1.003}\) as in Example <a class="xref" data-knowl="./knowl/eg_approx_A.html" title="Example 2.6.7">2.6.7</a> and we want a rigorous bound on the approximation. We can get such a rigorous bound by applying <a class="xref" data-knowl="./knowl/eqn_quadratic_exact.html" title="Equation 2.6.13">2.6.13</a>. Set</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_error"><article class="example example-like"><p id="p-1781">Suppose that we approximate \(\frac{(0.998)^3}{1.003}\) as in Example <a class="xref" data-knowl="./knowl/eg_approx_A.html" title="Example 2.6.7">2.6.7</a> and we want a rigorous bound on the approximation. We can get such a rigorous bound by applying <a class="xref" data-knowl="./knowl/eqn_quadratic_exact.html" title="Equation 2.6.13">2.6.13</a>. Set</p>
 <div class="displaymath">
 \begin{equation*}
 f(x,y)=\frac{x^3}{y}
@@ -993,7 +994,7 @@ f(x,y)&amp;=\frac{x^3}{y} &amp;
 <p data-braille="continuation">By way of comparison, the exact error is 0.0000389, to seven decimal places.</p></article></div>
 <article class="example example-like" id="eg_approx_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_approx_C"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.16</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_C"><article class="example example-like"><p id="p-1781">In this example, we find the quadratic approximation of \(f(x,y)=\sqrt{1+4x^2+y^2}\) at \((x_0,y_0)=(1,2)\) and use it to compute approximately \(f(1.1\,,\,2.05)\text{.}\) We know that we will need all partial derivatives up to order 2, so we first compute them and evaluate them at \((x_0,y_0)=(1,2)\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_C"><article class="example example-like"><p id="p-1782">In this example, we find the quadratic approximation of \(f(x,y)=\sqrt{1+4x^2+y^2}\) at \((x_0,y_0)=(1,2)\) and use it to compute approximately \(f(1.1\,,\,2.05)\text{.}\) We know that we will need all partial derivatives up to order 2, so we first compute them and evaluate them at \((x_0,y_0)=(1,2)\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 f(x,y)&amp;=\sqrt{1+4x^2+y^2} &amp;
@@ -1036,8 +1037,8 @@ f(1.1\,,\,2.05)&amp;\approx 3 \!+\!\frac{4}{3} (0.1)\!+\!\frac{2}{3}(0.05)
 <p data-braille="continuation">The actual value, to four decimal places, is \(3.1690\text{.}\) The percentage error is about 0.004\%.</p></article></div>
 <article class="example example-like" id="eg_approx_D"><a data-knowl="" class="id-ref original" data-refid="hk-eg_approx_D"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.17</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_D"><article class="example example-like"><p id="p-1782">In this example, we find the quadratic approximation of \(f(x,y)=e^{2x}\sin(3y)\) about \((x_0,y_0)=(0,0)\) in two different ways.</p>
-<p id="p-1783">The first way uses the canned formula <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a>. We compute all partial derivatives up to order 2 at \((x_0,y_0)\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_approx_D"><article class="example example-like"><p id="p-1783">In this example, we find the quadratic approximation of \(f(x,y)=e^{2x}\sin(3y)\) about \((x_0,y_0)=(0,0)\) in two different ways.</p>
+<p id="p-1784">The first way uses the canned formula <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a>. We compute all partial derivatives up to order 2 at \((x_0,y_0)\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 f(x,y)&amp;= e^{2x}\sin(3y) &amp;
@@ -1067,7 +1068,7 @@ f\big(x\,,\,y\big)
 \end{align*}
 </div>
 <p data-braille="continuation">That's pretty simple — just compute a bunch of partial derivatives and substitute into the formula <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a>.</p>
-<p id="p-1784">But there is also a sneakier, and often computationally more efficient, method to get the same result. It exploits the single variable Taylor expansions</p>
+<p id="p-1785">But there is also a sneakier, and often computationally more efficient, method to get the same result. It exploits the single variable Taylor expansions</p>
 <div class="displaymath">
 \begin{align*}
 e^{x}&amp;=1+x+\frac{1}{2!}x^2+\cdots\\
@@ -1090,13 +1091,13 @@ f(x,y)&amp;= e^{2x}\sin(3y)\cr
 <p data-braille="continuation">just as in the first computation.</p></article></div></section><section class="subsection" id="sec_taylor"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.6.2</span> <span class="title">Optional — Taylor Polynomials</span>
 </h3>
-<p id="p-1785">We have just found linear and quadratic approximations to the function \(f(x,y)\text{,}\) for \((x,y)\) near the point \((x_0,y_0)\text{.}\) In CLP-1, we found not only linear and quadratic approximations, but in fact a whole hierarchy of approximations. For each integer \(n\ge 0\text{,}\) the \(n^\mathrm{th}\) degree Taylor polynomial for \(f(x)\) about \(x=a\) was defined, in Definition 3.4.11 of the CLP-1 text, to be</p>
+<p id="p-1786">We have just found linear and quadratic approximations to the function \(f(x,y)\text{,}\) for \((x,y)\) near the point \((x_0,y_0)\text{.}\) In CLP-1, we found not only linear and quadratic approximations, but in fact a whole hierarchy of approximations. For each integer \(n\ge 0\text{,}\) the \(n^\mathrm{th}\) degree Taylor polynomial for \(f(x)\) about \(x=a\) was defined, in Definition 3.4.11 of the CLP-1 text, to be</p>
 <div class="displaymath">
 \begin{gather*}
 \sum_{k=0}^n \frac{1}{k!} f^{(k)}(a) \cdot (x-a)^k
 \end{gather*}
 </div>
-<p id="p-1786">We'll now define, and find, the Taylor polynomial of degree \(n\) for the function \(f(x,y)\) about \((x,y)=(x_0,y_0)\text{.}\) It is going to be a polynomial of degree \(n\) in \(\De x\) and \(\De y\text{.}\) The most general such polynomial is</p>
+<p id="p-1787">We'll now define, and find, the Taylor polynomial of degree \(n\) for the function \(f(x,y)\) about \((x,y)=(x_0,y_0)\text{.}\) It is going to be a polynomial of degree \(n\) in \(\De x\) and \(\De y\text{.}\) The most general such polynomial is</p>
 <div class="displaymath">
 \begin{equation*}
 T_n(\De x,\De y)
@@ -1104,7 +1105,7 @@ T_n(\De x,\De y)
 \end{equation*}
 </div>
 <p data-braille="continuation">with all of the coefficients \(a_{\ell,m}\) being constants. The specific coefficients for the Taylor polynomial are determined by the requirement that all partial derivatives of \(T_n(\De x,\De y)\) at \(\De x=\De y=0\) are the same as the corresponding partial derivatives of \(f\big(x_0 + \De x\,,\,y_0+\De y\big)\) at \(\De x=\De y=0\text{.}\)</p>
-<p id="p-1787">By way of preparation for our computation of the derivatives of \(T_n(\De x,\De y)\text{,}\) consider</p>
+<p id="p-1788">By way of preparation for our computation of the derivatives of \(T_n(\De x,\De y)\text{,}\) consider</p>
 <div class="displaymath">
 \begin{align*}
 \diff{}{t}t^4&amp;=4t^3 &amp;
@@ -1185,11 +1186,11 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)\Big|_{\De x=\De y=0}\\
 p!\,q!\,a_{p,q} = \frac{\partial^{p+q}\ f}{\partial x^p\, \partial y^q}(x_0,y_0)
 \end{equation*}
 </div>
-<p id="p-1788">So the Taylor polynomial of degree \(n\) for the function \(f(x,y)\) about \((x,y)=(x_0,y_0)\) is the right hand side of</p>
+<p id="p-1789">So the Taylor polynomial of degree \(n\) for the function \(f(x,y)\) about \((x,y)=(x_0,y_0)\) is the right hand side of</p>
 <article class="fact theorem-like" id="eqn_Taylor_n_2d"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">2.6.18</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-1789">
+<div class="displaymath" id="p-1790">
 \begin{align*}
 f\big(x_0 + \De x\,,\,y_0+\De y\big)
 &amp;\approx
@@ -1197,7 +1198,7 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)
 \frac{\partial^{\ell+m}\ f}{\partial x^\ell\,\partial y^m}(x_0,y_0)\
 (\De x)^\ell (\De y)^m
 \end{align*}
-</div></article><p id="p-1790">This is for functions, \(f(x,y)\text{,}\) of two variables. There are natural extensions of this for functions of any (finite) number of variables. For example, the Taylor polynomial of degree \(n\) for a function, \(f(x,y,z)\text{,}\) of three variables is the right hand side of</p>
+</div></article><p id="p-1791">This is for functions, \(f(x,y)\text{,}\) of two variables. There are natural extensions of this for functions of any (finite) number of variables. For example, the Taylor polynomial of degree \(n\) for a function, \(f(x,y,z)\text{,}\) of three variables is the right hand side of</p>
 <div class="displaymath">
 \begin{align*}
 &amp;f\big(x_0 + \De x\,,\,y_0+\De y\,,\,z_0+\De z\big)\\
@@ -1211,10 +1212,10 @@ f\big(x_0 + \De x\,,\,y_0+\De y\big)
 <span class="type">Exercises</span> <span class="codenumber">2.6.3</span> <span class="title">Exercises</span>
 </h3>
 <div class="exercisegroup" id="exercisegroup-36">
-<div class="introduction" id="introduction-47"><p id="p-1791"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="introduction" id="introduction-47"><p id="p-1792"><em class="alert">Exercises — Stage 1</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-215"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1792">Let \(x_0\) and \(y_0\) be constants and let \(m\) and \(n\) be integers. If \(m \lt 0\) assume that \(x_0\ne 0\text{,}\) and if \(n \lt 0\) assume that \(y_0\ne 0\text{.}\) Define \(P(x,y) = x^m y^n\text{.}\)</p>
+<p id="p-1793">Let \(x_0\) and \(y_0\) be constants and let \(m\) and \(n\) be integers. If \(m \lt 0\) assume that \(x_0\ne 0\text{,}\) and if \(n \lt 0\) assume that \(y_0\ne 0\text{.}\) Define \(P(x,y) = x^m y^n\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-856">Find the linear approximation to \(P(x_0+\De x,y_0+\De y)\text{.}\)</li>
 <li id="li-857">Denote by<div class="displaymath">
@@ -1225,8 +1226,8 @@ y_\% &amp;= 100\left|\frac{\De y}{y_0}\right|
 \end{align*}
 </div>the percentage errors in \(P\text{,}\) \(x\) and \(y\) respectively. Use the linear approximation to find an (approximate) upper bound on \(P_\%\) in terms of \(m\text{,}\) \(n\text{,}\) \(x_\%\) and \(y_\%\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-216"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1799">Consider the following work.</p>
-<p id="p-1800"><em class="emphasis">We compute, approximately, the \(y\)-coordinate of the point whose polar coordinates are \(r=0.9\) and \(\theta=2^\circ\text{.}\) In general, the \(y\)-coordinate of the point whose polar coordinates are \(r\) and \(\theta\) is \(Y(r,\theta) = r\sin\theta\text{.}\) The partial derivatives</em></p>
+<p id="p-1800">Consider the following work.</p>
+<p id="p-1801"><em class="emphasis">We compute, approximately, the \(y\)-coordinate of the point whose polar coordinates are \(r=0.9\) and \(\theta=2^\circ\text{.}\) In general, the \(y\)-coordinate of the point whose polar coordinates are \(r\) and \(\theta\) is \(Y(r,\theta) = r\sin\theta\text{.}\) The partial derivatives</em></p>
 <div class="displaymath">
 \begin{equation*}
 Y_r(r,\theta)=\sin\theta\qquad Y_\theta(r,\theta) = r\cos\theta
@@ -1247,43 +1248,43 @@ Y(0.9,2) = Y(1-0.1\,,\, 0+2)\approx 0\ +\ (0)\,(-0.1)\ +\ (1)(2)
 =2
 \end{gather*}
 </div>
-<p id="p-1801">This conclusion is ridiculous. We're saying that the \(y\)-coordinate is more than twice the distance from the point to the origin. What was the mistake?</p></article>
+<p id="p-1802">This conclusion is ridiculous. We're saying that the \(y\)-coordinate is more than twice the distance from the point to the origin. What was the mistake?</p></article>
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-37">
-<div class="introduction" id="introduction-48"><p id="p-1805"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="introduction" id="introduction-48"><p id="p-1806"><em class="alert">Exercises — Stage 2</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-217"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1806">Find an approximate value for \(f(x,y)=\sin(\pi xy+\ln y)\) at \((0.01,1.05)\) without using a calculator or computer.</p></article><article class="exercise exercise-like" id="exercise-218"><h6 class="heading">
+<p id="p-1807">Find an approximate value for \(f(x,y)=\sin(\pi xy+\ln y)\) at \((0.01,1.05)\) without using a calculator or computer.</p></article><article class="exercise exercise-like" id="exercise-218"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1809">Let \(\displaystyle f(x,y)=\frac{x^2y}{x^4+2y^2}\text{.}\) Find an approximate value for \(f (-0.9\,,\, 1.1)\) without using a calculator or computer.</p></article><article class="exercise exercise-like" id="exercise-219"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1813">Four numbers, each at least zero and each at most 50, are rounded to the first decimal place and then multiplied together. Estimate the maximum possible error in the computed product.</p></article><article class="exercise exercise-like" id="exercise-220"><h6 class="heading">
+<p id="p-1810">Let \(\displaystyle f(x,y)=\frac{x^2y}{x^4+2y^2}\text{.}\) Find an approximate value for \(f (-0.9\,,\, 1.1)\) without using a calculator or computer.</p></article><article class="exercise exercise-like" id="exercise-219"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1814">Four numbers, each at least zero and each at most 50, are rounded to the first decimal place and then multiplied together. Estimate the maximum possible error in the computed product.</p></article><article class="exercise exercise-like" id="exercise-220"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1817">One side of a right triangle is measured to be \(3\) with a maximum possible error of \(\pm 0.1\text{,}\) and the other side is measured to be \(4\) with a maximum possible error of \(\pm 0.2\text{.}\) Use the linear approximation to estimate the maximum possible error in calculating the length of the hypotenuse of the right triangle.</p></article><article class="exercise exercise-like" id="exercise-221"><h6 class="heading">
+<p id="p-1818">One side of a right triangle is measured to be \(3\) with a maximum possible error of \(\pm 0.1\text{,}\) and the other side is measured to be \(4\) with a maximum possible error of \(\pm 0.2\text{.}\) Use the linear approximation to estimate the maximum possible error in calculating the length of the hypotenuse of the right triangle.</p></article><article class="exercise exercise-like" id="exercise-221"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1821">If two resistors of resistance \(R_1\) and \(R_2\) are wired in parallel, then the resulting resistance R satisfies the equation \(\frac{1}{R} =\frac{1}{R_1}+\frac{1}{R_2}\text{.}\) Use the linear approximation to estimate the change in \(R\) if \(R_1\) decreases from \(2\) to \(1.9\) ohms and \(R_2\) increases from 8 to 8.1 ohms.</p></article><article class="exercise exercise-like" id="exercise-222"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-1825">The total resistance \(R\) of three resistors, \(R_1\text{,}\) \(R_2\text{,}\) \(R_3\text{,}\) connected in parallel is determined by</p>
+<p id="p-1822">If two resistors of resistance \(R_1\) and \(R_2\) are wired in parallel, then the resulting resistance R satisfies the equation \(\frac{1}{R} =\frac{1}{R_1}+\frac{1}{R_2}\text{.}\) Use the linear approximation to estimate the change in \(R\) if \(R_1\) decreases from \(2\) to \(1.9\) ohms and \(R_2\) increases from 8 to 8.1 ohms.</p></article><article class="exercise exercise-like" id="exercise-222"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-1826">The total resistance \(R\) of three resistors, \(R_1\text{,}\) \(R_2\text{,}\) \(R_3\text{,}\) connected in parallel is determined by</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{1}{R}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}
 \end{equation*}
 </div>
 <p data-braille="continuation">If the resistances, measured in Ohms, are \(R_1=25\Om\text{,}\) \(R_2=40\Om\) and \(R_3=50\Om\text{,}\) with a possible error of 0.5\% in each case, estimate the maximum error in the calculated value of \(R\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-223"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-1829">The specific gravity \(S\) of an object is given by \(\ S=\frac{A}{A-W}\ \) where \(A\) is the weight of the object in air and \(W\) is the weight of the object in water. If \(\ A=20\pm .01\ \) and \(\ W=12\pm.02\ \) find the approximate percentage error in calculating \(S\) from the given measurements.</p></article><article class="exercise exercise-like" id="exercise-224"><h6 class="heading">
+<p id="p-1830">The specific gravity \(S\) of an object is given by \(\ S=\frac{A}{A-W}\ \) where \(A\) is the weight of the object in air and \(W\) is the weight of the object in water. If \(\ A=20\pm .01\ \) and \(\ W=12\pm.02\ \) find the approximate percentage error in calculating \(S\) from the given measurements.</p></article><article class="exercise exercise-like" id="exercise-224"><h6 class="heading">
 <span class="codenumber">10<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1833">The pressure in a solid is given by</p>
+<p id="p-1834">The pressure in a solid is given by</p>
 <div class="displaymath">
 \begin{equation*}
 P(s,r) = sr(4s^2 - r^2 - 2)
 \end{equation*}
 </div>
 <p data-braille="continuation">where \(s\) is the specific heat and \(r\) is the density. We expect to measure \((s,r)\) to be approximately \((2,2)\) and would like to have the most accurate value for \(P\text{.}\) There are two different ways to measure \(s\) and \(r\text{.}\) Method \(1\) has an error in \(s\) of \(\pm 0.01\) and an error in \(r\) of \(\pm 0.1\text{,}\) while method 2 has an error of \(\pm 0.02\) for both \(s\) and \(r\text{.}\)</p>
-<p id="p-1834">Should we use method 1 or method 2? Explain your reasoning carefully.</p></article><article class="exercise exercise-like" id="exercise-225"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
-<p id="p-1837">A rectangular beam that is supported at its two ends and is subjected to a uniform load sags by an amount</p>
+<p id="p-1835">Should we use method 1 or method 2? Explain your reasoning carefully.</p></article><article class="exercise exercise-like" id="exercise-225"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
+<p id="p-1838">A rectangular beam that is supported at its two ends and is subjected to a uniform load sags by an amount</p>
 <div class="displaymath">
 \begin{equation*}
 S=C\frac{p\ell^4}{w h^3}
@@ -1292,10 +1293,10 @@ S=C\frac{p\ell^4}{w h^3}
 <p data-braille="continuation">where \(p={\rm load}\text{,}\) \(\ell={\rm length}\text{,}\) \(h={\rm height}\text{,}\) \(w={\rm width}\) and \(C\) is a constant. Suppose \(p\approx 100\text{,}\) \(\ell\approx 4\text{,}\) \(w\approx .1\) and \(h\approx.2\text{.}\) Will the sag of the beam be more sensitive to changes in the height of the beam or to changes in the width of the beam.</p></article><article class="exercise exercise-like" id="exercise-226"><h6 class="heading">
 <span class="codenumber">12<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1841">Let \(z=f(x,y)=\frac{2y}{x^2+y^2}\text{.}\) Find an approximate value for \(f(-0.8,2.1)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-227"><h6 class="heading">
+<p id="p-1842">Let \(z=f(x,y)=\frac{2y}{x^2+y^2}\text{.}\) Find an approximate value for \(f(-0.8,2.1)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-227"><h6 class="heading">
 <span class="codenumber">13<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1844">Suppose that a function \(z = f (x, y)\) is implicitly defined by an equation:</p>
+<p id="p-1845">Suppose that a function \(z = f (x, y)\) is implicitly defined by an equation:</p>
 <div class="displaymath">
 \begin{equation*}
 xyz + x + y^2 + z^3 = 0
@@ -1308,28 +1309,28 @@ xyz + x + y^2 + z^3 = 0
 </ol></article><article class="exercise exercise-like" id="exercise-228"><h6 class="heading">
 <span class="codenumber">14<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1851">Let \(z = f(x,y)\) be given implicitly by</p>
+<p id="p-1852">Let \(z = f(x,y)\) be given implicitly by</p>
 <div class="displaymath">
 \begin{equation*}
 e^z + yz = x + y.
 \end{equation*}
 </div>
-<ol id="p-1852" class="lower-alpha">
+<ol id="p-1853" class="lower-alpha">
 <li id="li-861">Find the differential \(\dee{z}\text{.}\)</li>
 <li id="li-862">Use linear approximation at the point \((1,0)\) to approximate \(f(0.99,0.01)\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-229"><h6 class="heading">
 <span class="codenumber">15<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1857">Two sides and the enclosed angle of a triangle are measured to be \(3\pm.1\)m, \(4\pm.1\)m and \(90\pm 1^\circ\) respectively. The length of the third side is then computed using the cosine law \(C^2=A^2+B^2-2AB\cos\theta\text{.}\) What is the approximate maximum error in the computed value of \(C\text{?}\)</p></article><article class="exercise exercise-like" id="exercise-230"><h6 class="heading">
+<p id="p-1858">Two sides and the enclosed angle of a triangle are measured to be \(3\pm.1\)m, \(4\pm.1\)m and \(90\pm 1^\circ\) respectively. The length of the third side is then computed using the cosine law \(C^2=A^2+B^2-2AB\cos\theta\text{.}\) What is the approximate maximum error in the computed value of \(C\text{?}\)</p></article><article class="exercise exercise-like" id="exercise-230"><h6 class="heading">
 <span class="codenumber">16<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1861">Use differentials to find a reasonable approximation to the value of \(f(x,y)=xy\sqrt{x^2+y^2}\) at \(x=3.02\text{,}\) \(y=3.96\text{.}\) Note that \(3.02\approx 3\) and \(3.96\approx 4\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-231"><h6 class="heading">
+<p id="p-1862">Use differentials to find a reasonable approximation to the value of \(f(x,y)=xy\sqrt{x^2+y^2}\) at \(x=3.02\text{,}\) \(y=3.96\text{.}\) Note that \(3.02\approx 3\) and \(3.96\approx 4\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-231"><h6 class="heading">
 <span class="codenumber">17<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1864">Use differentials to estimate the volume of metal in a closed metal can with diameter 8cm and height 12cm if the metal is 0.04cm thick.</p></article><article class="exercise exercise-like" id="exercise-232"><h6 class="heading">
+<p id="p-1865">Use differentials to estimate the volume of metal in a closed metal can with diameter 8cm and height 12cm if the metal is 0.04cm thick.</p></article><article class="exercise exercise-like" id="exercise-232"><h6 class="heading">
 <span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1867">Let \(z\) be a function of \(x\text{,}\) \(y\) such that</p>
+<p id="p-1868">Let \(z\) be a function of \(x\text{,}\) \(y\) such that</p>
 <div class="displaymath">
 \begin{equation*}
 z^3 - z + 2xy - y^2 = 0,\qquad z(2, 4) = 1.
@@ -1342,12 +1343,12 @@ z^3 - z + 2xy - y^2 = 0,\qquad z(2, 4) = 1.
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-38">
-<div class="introduction" id="introduction-49"><p id="p-1872"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="introduction" id="introduction-49"><p id="p-1873"><em class="alert">Exercises — Stage 3</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-233"><h6 class="heading">
 <span class="codenumber">19<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1873">Consider the surface given by:</p>
+<p id="p-1874">Consider the surface given by:</p>
 <div class="displaymath">
 \begin{equation*}
 z^3 - xyz^2 - 4x = 0.
@@ -1365,14 +1366,14 @@ x(\theta) = 1 + \cos\theta,\ y(\theta) = \sin\theta
 </ol></article><article class="exercise exercise-like" id="exercise-234"><h6 class="heading">
 <span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1885">Consider the function \(f\) that maps each point \((x, y)\) in \(\bbbr^2\) to \(ye^{-x}\text{.}\)</p>
+<p id="p-1886">Consider the function \(f\) that maps each point \((x, y)\) in \(\bbbr^2\) to \(ye^{-x}\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-869">Suppose that \(x = 1\) and \(y = e\text{,}\) but errors of size \(0.1\) are made in measuring each of \(x\) and \(y\text{.}\) Estimate the maximum error that this could cause in \(f(x,y)\text{.}\)</li>
 <li id="li-870">The graph of the function \(f\) sits in \(\bbbr^3\) , and the point \((1, e, 1)\) lies on that graph. Find a nonzero vector that is perpendicular to that graph at that point.</li>
 </ol></article><article class="exercise exercise-like" id="exercise-235"><h6 class="heading">
 <span class="codenumber">21<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1891">A surface is defined implicitly by \(z^4 - xy^2 z^2 + y = 0\text{.}\)</p>
+<p id="p-1892">A surface is defined implicitly by \(z^4 - xy^2 z^2 + y = 0\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-871">Compute \(\pdiff{z}{x}\text{,}\) \(\pdiff{z}{y}\) in terms of \(x\text{,}\) \(y\text{,}\) \(z\text{.}\)</li>
 <li id="li-872">Evaluate \(\pdiff{z}{x}\) and \(\pdiff{z}{y}\) at \((x, y, z) = (2, -1/2, 1)\text{.}\)</li>
@@ -1381,14 +1382,14 @@ x(\theta) = 1 + \cos\theta,\ y(\theta) = \sin\theta
 </ol></article><article class="exercise exercise-like" id="exercise-236"><h6 class="heading">
 <span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1900">A surface \(z = f (x, y)\) has derivatives \(\pdiff{f}{x}=3\) and \(\pdiff{f}{y}=-2\) at \((x, y, z) = (1, 3, 1)\text{.}\)</p>
+<p id="p-1901">A surface \(z = f (x, y)\) has derivatives \(\pdiff{f}{x}=3\) and \(\pdiff{f}{y}=-2\) at \((x, y, z) = (1, 3, 1)\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-875">If \(x\) increases from \(1\) to \(1.2\text{,}\) and \(y\) decreases from \(3\) to \(2.6\text{,}\) find the change in \(z\) using a linear approximation.</li>
 <li id="li-876">Find the equation of the tangent plane to the surface at the point \((1, 3, 1)\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-237"><h6 class="heading">
 <span class="codenumber">23<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1905">According to van der Waal's equation, a gas satisfies the equation</p>
+<p id="p-1906">According to van der Waal's equation, a gas satisfies the equation</p>
 <div class="displaymath">
 \begin{equation*}
 (pV^2 + 16)(V - 1) = T V^2 ,
@@ -1397,28 +1398,28 @@ x(\theta) = 1 + \cos\theta,\ y(\theta) = \sin\theta
 <p data-braille="continuation">where \(p\text{,}\) \(V\) and \(T\) denote pressure, volume and temperature respectively. Suppose the gas is now at pressure \(1\text{,}\) volume \(2\) and temperature \(5\text{.}\) Find the approximate change in its volume if \(p\) is increased by \(0.2\) and \(T\) is increased by \(0.3\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-238"><h6 class="heading">
 <span class="codenumber">24<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1908">Consider the function \(f(x, y) = e^{-x^2 +4y^2}\text{.}\)</p>
+<p id="p-1909">Consider the function \(f(x, y) = e^{-x^2 +4y^2}\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-877">Find the equation of the tangent plane to the graph \(z = f (x,y)\) at the point where \((x, y) = (2, 1)\text{.}\)</li>
 <li id="li-878">Find the tangent plane approximation to the value of \(f(1.99, 1.01)\) using the tangent plane from part (a).</li>
 </ol></article><article class="exercise exercise-like" id="exercise-239"><h6 class="heading">
 <span class="codenumber">25<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1912">Let \(z = f (x, y) = \ln(4x^2 + y^2)\text{.}\)</p>
+<p id="p-1913">Let \(z = f (x, y) = \ln(4x^2 + y^2)\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-879">Use a linear approximation of the function \(z = f (x, y)\) at \((0, 1)\) to estimate \(f(0.1, 1.2)\text{.}\)</li>
 <li id="li-880">Find a point \(P (a, b, c)\) on the graph of \(z = f(x, y)\) such that the tangent plane to the graph of \(z = f (x, y)\) at the point \(P\) is parallel to the plane \(2x + 2y - z = 3\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-240"><h6 class="heading">
 <span class="codenumber">26<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<ol id="p-1917" class="lower-alpha">
+<ol id="p-1918" class="lower-alpha">
 <li id="li-881">Find the equation of the tangent plane to the surface \(x^2 z^3 + y \sin(\pi x) = -y^2\) at the point \(P = (1,1,-1)\text{.}\)</li>
 <li id="li-882">Let \(z\) be defined implicitly by \(x^2 z^3 + y \sin(\pi x) = -y^2\text{.}\) Find \(\pdiff{z}{x}\) at the point  \(P = (1,1,-1)\text{.}\)</li>
 <li id="li-883">Let \(z\) be the same implicit function as in part (ii), defined by the equation \(x^2 z^3 + y \sin(\pi x) = -y^2\text{.}\) Let \(x = 0.97\text{,}\) and \(y = 1\text{.}\) Find the approximate value of \(z\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-241"><h6 class="heading">
 <span class="codenumber">27<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1924">The surface \(x^4+y^4+z^4+xyz=17\) passes through \((0,1,2)\text{,}\) and near this point the surface determines \(x\) as a function, \(x=F(y,z)\text{,}\) of \(y\) and \(z\text{.}\)</p>
+<p id="p-1925">The surface \(x^4+y^4+z^4+xyz=17\) passes through \((0,1,2)\text{,}\) and near this point the surface determines \(x\) as a function, \(x=F(y,z)\text{,}\) of \(y\) and \(z\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-884">Find \(F_y\) and \(F_z\) at \((x,y,z)=(0,1,2)\text{.}\)</li>
 <li id="li-885">Use the tangent plane approximation (also known as linear, first order or differential approximation) to find the approximate value of \(x\) (near \(0\)) such that \((x,1.01, 1.98)\) lies on the surface.</li>

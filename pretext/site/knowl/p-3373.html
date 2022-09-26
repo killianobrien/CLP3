@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:24+01:00    *-->
+<!--*    on 2022-09-26T13:34:23+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,20 +13,18 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In Section 2.3 of the CLP-2 text, we did not have access to multivariable integrals, so we used some physical intuition to derive that the centroid of a body that fills the region</p>
-<div class="displaymath">
-\begin{equation*}
-\cR=\big\{\ (x,y)\ \big|\ a\le x\le b,\ B(x)\le y\le T(x)\ \big\}
-\end{equation*}
-</div>
-<p data-braille="continuation">in the \(xy\)-plane is \((\bar x,\bar y)\) where</p>
 <div class="displaymath">
 \begin{align*}
-\bar x &amp;= \frac{\int_a^b x [T(x)-B(x)]\,\dee{x}}{A}\\
-\bar y &amp;= \frac{\int_a^b\, [T(x)^2-B(x)^2]\,\dee{x}}{2A}
+\bar x &amp;=\frac{\dblInt_\cR x\ \dee{x}\,\dee{y}}
+{\dblInt_\cR  \dee{x}\,\dee{y}}
+=\frac{\dblInt_\cR x\ \dee{x}\,\dee{y}}
+{\text{Area}(\cR)}\\
+\bar y &amp;=\frac{\dblInt_\cR y\ \dee{x}\,\dee{y}}
+{\dblInt_\cR \  \dee{x}\,\dee{y}}
+=\frac{\dblInt_\cR y\  \dee{x}\,\dee{y}}
+{\text{Area}(\cR)}
 \end{align*}
 </div>
-<p data-braille="continuation">and \(A=\int_a^b [T(x)-B(x)]\,\dee{x}\) is the area of \(\cR\text{.}\) Now that we do have access to multivariable integrals, we can derive these formulae directly from <a class="xref" data-knowl="./knowl/eq_centroid.html" title="Equation 3.3.8: Centroid">3.3.8</a>. Using vertical slices, as in this figure,</p>
 <span class="incontext"><a href="sec_int_2d_applications.html#p-3373">in-context</a></span>
 </body>
 </html>

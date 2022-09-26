@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:42+01:00    *-->
+<!--*    on 2022-09-26T13:29:44+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,21 +13,28 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) A tangent vector to the curve at \(\vr(\pi)=\big(-2\pi\,,\, 0\,,\, \frac{\pi^3}{3}\big)\) is</p>
-<div class="displaymath">
-\begin{equation*}
-\vr'(\pi) = \left(2\cos\pi - 2\pi\sin\pi\,,\,
-2\sin\pi + 2\pi \cos\pi\,,\,
-\pi^2\right)
-= (-2\,,\,-2\pi\,,\,\pi^2)
-\end{equation*}
-</div>
-<p data-braille="continuation">So parametric equations for the tangent line at \(\vr(\pi)\) are</p>
+<p>(a) The speed is</p>
 <div class="displaymath">
 \begin{align*}
-x(t) &amp;= -2\pi -2t\\
-y(t) &amp;=  -2\pi t\\
-z(t) &amp;= \frac{\pi^3}{3} + \pi^2 t
+\diff{s}{t}(t)
+=\big|\vr'(t)\big| &amp; = \left|\left(2\cos t - 2t\sin t\,,\,
+2\sin t + 2t \cos t\,,\,
+t^2\right)\right|\\
+&amp;=\sqrt{\big(2\cos t - 2t\sin t\big)^2
++\big(2\sin t + 2t \cos t\big)^2
++t^4}\\
+&amp;= \sqrt{4+ 4t^2 +t^4}\\
+&amp;= 2+t^2
+\end{align*}
+</div>
+<p data-braille="continuation">so the length of the curve is</p>
+<div class="displaymath">
+\begin{align*}
+\text{length }
+&amp;=\int_0^2 \diff{s}{t}\,\dee{t}
+=\int_0^2 (2+t^2)\,\dee{t}
+= \left[2t +\frac{t^3}{3}\right]_0^2
+=\frac{20}{3}
 \end{align*}
 </div>
 <span class="incontext"><a href="sec_curves.html#p-836">in-context</a></span>

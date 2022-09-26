@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:48+01:00    *-->
+<!--*    on 2022-09-26T13:29:52+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,31 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(c) At \(t=1\text{,}\) the particle is at \(\vr(1)=(0,1,1)\) and has velocity \(\vr'(1)=\llt -\frac{\pi}{2},1,1\rgt\text{.}\) So for \(t\ge 1\text{,}\) the particle is at</p>
+<p>(b) By definition,</p>
 <div class="displaymath">
-\begin{equation*}
-\llt x,y,z\rgt = \llt 0,1,1\rgt+(t-1)\llt -\frac{\pi}{2},1,1\rgt
-\end{equation*}
+\begin{align*}
+\text{velocity}&amp;=\vr'(t)\\
+&amp;= \big[\cos\big(\tfrac{\pi t}{2}\big)
+-\tfrac{\pi t}{2}\sin\big(\tfrac{\pi t}{2}\big)\big]\hi
++\big[\sin\big(\tfrac{\pi t}{2}\big)
++\tfrac{\pi t}{2}\cos\big(\tfrac{\pi t}{2}\big)\big]\hj +\hk\\
+\text{speed}&amp;=|\vr'(t)|\\
+&amp;=\sqrt{\big[\cos\big(\tfrac{\pi t}{2}\big)
+-\tfrac{\pi t}{2}\sin\big(\tfrac{\pi t}{2}\big)\big]^2
++\big[\sin\big(\tfrac{\pi t}{2}\big)
++\tfrac{\pi t}{2}\cos\big(\tfrac{\pi t}{2}\big)\big]^2 +1^2}\\
+&amp;=
+\Big[\cos^2\big(\tfrac{\pi t}{2}\big)
+-2\tfrac{\pi t}{2}\cos\big(\tfrac{\pi t}{2}\big)
+\sin\big(\tfrac{\pi t}{2}\big)
++\big(\tfrac{\pi t}{2}\big)^2\sin^2\big(\tfrac{\pi t}{2}\big)\\
+&amp;\hskip.2in         +\sin^2\big(\tfrac{\pi t}{2}\big)
++2\tfrac{\pi t}{2}\cos\big(\tfrac{\pi t}{2}\big)
+\sin\big(\tfrac{\pi t}{2}\big)
++\big(\tfrac{\pi t}{2}\big)^2\cos^2\big(\tfrac{\pi t}{2}\big) +1\Big]^{1/2}\\
+&amp; =\sqrt{2+\frac{\pi^2 t^2}{4}}
+\end{align*}
 </div>
-<p data-braille="continuation">This is also a vector parametric equation for the line.</p>
 <span class="incontext"><a href="sec_curves.html#p-921">in-context</a></span>
 </body>
 </html>

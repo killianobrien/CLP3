@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:23+01:00    *-->
+<!--*    on 2022-09-26T13:31:55+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,38 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The equation that is called the wave equation has built into it a lot of approximations. By going through the derivation, we have seen what those approximations are, and we can get some idea as to when they are applicable.</p>
+<p>Fortunately there is a second equation lurking in the background, that we haven't used yet. Namely, the horizontal component of Newton's law of motion. As a second simplification, we assume that there are only transverse vibrations. That is, our tiny string element moves only vertically. Then the net horizontal force on it must be zero. That is,</p>
+<div class="displaymath">
+\begin{equation*}
+T(x+\De x,t)\cos\theta(x+\De x,t)-T(x,t)\cos\theta(x,t)=0
+\end{equation*}
+</div>
+<p data-braille="continuation">Dividing by \(\De x\) and taking the limit as \(\De x\) tends to zero gives</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\partial }{\partial x}\big[T(x,t)\cos\theta(x,t)\big]=0
+\end{equation*}
+</div>
+<p data-braille="continuation">Thus \(T(x,t)\cos\theta(x,t)\) is independent of \(x\text{.}\) For small amplitude vibrations, \(\cos\theta\) is very close to one, for all \(x\text{.}\) So \(T\) is a function of \(t\) only, which is determined by how hard you are pulling on the ends of the string at time \(t\text{.}\) So for small, transverse vibrations, (E3) simplifies further to</p>
+<div class="displaymath">
+\begin{equation*}
+\rho(x)\frac{\partial^2 w}{\partial\, t^2}(x,t)
+=T(t)\,\frac{\partial^2 w}{\partial x^2}(x,t)
++F(x,t)
+\tag{E4}
+\end{equation*}
+</div>
+<p data-braille="continuation">In the event that the string density \(\rho\) is a constant, independent of \(x\text{,}\) the string tension \(T(t)\) is a constant independent of \(t\) (in other words you are not continually playing with the tuning pegs) and there are no external forces \(F\) we end up with the wave equation</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\partial^2 w}{\partial\, t^2}(x,t)
+=c^2\,\frac{\partial^2 w}{\partial x^2}(x,t)
+\qquad
+\text{where}\qquad
+c=\sqrt{\frac{T}{\rho}}
+\end{equation*}
+</div>
+<p data-braille="continuation">as desired.</p>
 <span class="incontext"><a href="sec_pde.html#p-2211">in-context</a></span>
 </body>
 </html>

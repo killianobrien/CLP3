@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:29+01:00    *-->
+<!--*    on 2022-09-26T13:33:26+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,33 +13,31 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The hypotheses of both of these theorems can be relaxed a bit, but not too much. For example, if</p>
-<div class="displaymath">
-\begin{align*}
-\cR&amp;=\Set{(x,y)}{0\le x\le 1,\ 0\le y\le 1}\\
-f(x,y)&amp;=\begin{cases}
-1&amp;\text{if } x,y \text{ are both rational numbers} \\
-0&amp;\text{otherwise}
-\end{cases}
-\end{align*}
-</div>
-<p data-braille="continuation">then the integral \(\dblInt_\cR f(x,y)\ \dee{x}\,\dee{y}\) does not exist. This is easy to see. If all of the \(x_i^*\)'s and \(y_i^*\)'s are chosen to be rational numbers, then</p>
+<p>If \(f(x,y)\) is continuous in a region \(\cR\) described by both</p>
 <div class="displaymath">
 \begin{equation*}
-\sum_{i=1}^n f(x_i^*,y_i^*)\,\De A_i
-=\sum_{i=1}^n \,\De A_i
-=\text{Area}(\cR)
+\left\{\begin{aligned}
+a&amp;\le x\le b \\
+B(x)&amp;\le y\le T(x)
+\end{aligned}\right\}
+\qquad\text{and}\qquad
+\left\{
+\begin{aligned}
+c&amp;\le y\le d\\
+L(y)&amp;\le x\le R(y)
+\end{aligned}
+\right\}
 \end{equation*}
 </div>
-<p data-braille="continuation">But if we choose all  the \(x_i^*\)'s and \(y_i^*\)'s to be irrational numbers, then</p>
+<p data-braille="continuation">for continuous functions \(B(x)\text{,}\) \(T(x)\text{,}\) \(L(y)\text{,}\) \(R(y)\text{,}\) then both</p>
 <div class="displaymath">
 \begin{equation*}
-\sum_{i=1}^n f(x_i^*,y_i^*)\,\De A_i
-=\sum_{i=1}^n 0\,\De A_i
-=0
+\int_a^b \dee{x} \bigg[\int_{B(x)}^{T(x)}\dee{y}\  f(x,y)\bigg]
+\qquad\text{and}\qquad
+\int_c^d \dee{y} \bigg[\int_{L(y)}^{R(y)}\dee{x}\  f(x,y)\bigg]
 \end{equation*}
 </div>
-<p data-braille="continuation">So the limit of \(\sum\limits_{i=1}^n f(x_i^*,y_i^*)\,\De A_i\text{,}\) as the maximum diagonal of the rectangles approaches zero, depends on the choice of points \((x_i^*,y_i^*)\text{.}\) So the integral \(\dblInt_\cR f(x,y)\ \dee{x}\,\dee{y}\) does not exist.</p>
+<p data-braille="continuation">exist and are equal.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2870">in-context</a></span>
 </body>
 </html>

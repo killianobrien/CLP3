@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:11+01:00    *-->
+<!--*    on 2022-09-26T13:30:21+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,63 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>You are traversing an undulating landscape. Take the \(z\)-axis to be straight up towards the sky, the positive \(x\)-axis to be due south, and the positive \(y\)-axis to be due east. Then the landscape near you is described by the equation \(z=f(x,y)\text{,}\) with you at the point \((0,0,f(0,0))\text{.}\) The function \(f(x,y)\) is differentiable.</p>
+<ol class="lower-alpha">
+<li>By definition<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{x}(0,0)
+=\lim_{h\rightarrow 0}\frac{f(h,0)-f(0,0)}{h}
+\end{equation*}
+</div>One approximation to this is<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{x}(0,0)
+\approx \left.\frac{f(h,0)-f(0,0)}{h}\right|_{h=0.1}
+=\frac{1.10517-1}{0.1}
+=1.0517
+\end{equation*}
+</div>Another approximation to this is<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{x}(0,0)
+\approx \left.\frac{f(h,0)-f(0,0)}{h}\right|_{h=0.01}
+=\frac{1.01005-1}{0.01}
+=1.005
+\end{equation*}
+</div>
+</li>
+<li>By definition<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{y}(0,0)
+=\lim_{h\rightarrow 0}\frac{f(0,h)-f(0,0)}{h}
+\end{equation*}
+</div>One approximation to this is<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{y}(0,0)
+\approx \left.\frac{f(0,h)-f(0,0)}{h}\right|_{h=-0.1}
+=\frac{0.99500-1}{-0.1}
+=0.0500
+\end{equation*}
+</div>Another approximation to this is<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{y}(0,0)
+\approx \left.\frac{f(0,h)-f(0,0)}{h}\right|_{h=-0.01}
+=\frac{0.99995-1}{-0.01}
+=.0050
+\end{equation*}
+</div>
+</li>
+<li>To take the partial derivative with respect to \(x\) at \((0,0)\text{,}\) we set \(y=0\text{,}\) differentiate with respect to \(x\) and then set \(x=0\text{.}\) So<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{x}(0,0) = \left.\diff{}{x} e^x\cos 0\right|_{x=0}
+=\left.e^x\right|_{x=0}=1
+\end{equation*}
+</div>To take the partial derivative with respect to \(y\) at \((0,0)\text{,}\) we set \(x=0\text{,}\) differentiate with respect to \(y\) and then set \(y=0\text{.}\) So<div class="displaymath">
+\begin{equation*}
+\pdiff{f}{y}(0,0) = \left.\diff{}{y} e^0\cos y\right|_{y=0}
+=\left.\sin y\right|_{y=0}
+=0
+\end{equation*}
+</div>
+</li>
+</ol>
 <span class="incontext"><a href="sec_partials.html#p-1276">in-context</a></span>
 </body>
 </html>

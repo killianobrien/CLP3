@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:05+01:00    *-->
+<!--*    on 2022-09-26T13:30:13+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,32 +13,16 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(e) Switching to polar coordinates,</p>
+<p>(d) Switching to polar coordinates,</p>
 <div class="displaymath">
 \begin{align*}
-\lim_{(x,y)\rightarrow(0,0)}\ \frac{x^2y^2}{x^2+y^4}
-&amp;=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\
-\frac{r^2\cos^2\theta\ r^2\sin^2\theta}
-{r^2\cos^2\theta+r^4\sin^4\theta}\\
-&amp;=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ r^2\sin^2\theta
-\frac{\cos^2\theta}{\cos^2\theta+r^2\sin^4\theta}\\
-&amp;=  0
+\lim_{(x,y)\rightarrow(0,0)}\ \frac{x^3}{x^2+y^2}
+&amp;=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ \frac{r^3\cos^3\theta}{r^2}
+=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ r\cos^3\theta
+=0
 \end{align*}
 </div>
-<p data-braille="continuation">Here, we used that</p>
-<div class="displaymath">
-\begin{align*}
-\left|\sin^2\theta\frac{\cos^2\theta} {\cos^2\theta+r^2\sin^4\theta}\right|
-&amp;\le \frac{\cos^2\theta} {\cos^2\theta+r^2\sin^4\theta}\\
-&amp;\le \left.\begin{cases}
-\frac{\cos^2\theta} {\cos^2\theta}&amp;\text{ if }\cos\theta\ne 0 \\
-0 &amp;\text { if }\cos\theta =0
-\end{cases}
-\right\}\\
-&amp;\le 1
-\end{align*}
-</div>
-<p data-braille="continuation">for all \(r \gt 0\text{.}\)</p>
+<p data-braille="continuation">since \(|\cos\theta|\le 1\) for all \(\theta\text{.}\)</p>
 <span class="incontext"><a href="sec_limits.html#p-1178">in-context</a></span>
 </body>
 </html>

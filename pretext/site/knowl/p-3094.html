@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:53+01:00    *-->
+<!--*    on 2022-09-26T13:33:51+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,23 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(c) The easy way to evaluate \(I\) is to observe that, since \(\sin\big(y^3-3y\big)\) is odd under \(y\rightarrow -y\text{,}\) the integral</p>
+<p>(b) The given integral was formed by decomposing the domain of integration \(R\) into vertical strips, like the pink strip in the figure above. To exchange the order of integration we instead decompose the domain of integration \(R\) into horizontal strips, like the blue strip in the figure above. To do so, we observe that, on \(R\text{,}\)</p>
+<ul class="disc">
+<li>\(y\) runs from \(-1\) to \(1\text{,}\) and</li>
+<li>for each fixed \(y\) between \(-1\) and \(1\text{,}\) \(x\) runs from \(y^2\) to \(1\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
 <div class="displaymath">
 \begin{equation*}
-\int_{-\sqrt{x}}^{\sqrt{x}} \sin\big(y^3-3y\big)\,\dee{y}=0
+I=\int_{-1}^1\bigg[\int_{y^2}^1 \sin\big(y^3-3y\big)\,\dee{x}\bigg]\ \dee{y}
 \end{equation*}
 </div>
-<p data-braille="continuation">for all \(x\text{.}\) Hence \(I=0\text{.}\) The hard way is</p>
-<div class="displaymath">
-\begin{align*}
-I&amp;=\int_{-1}^1\bigg[\int_{y^2}^1 \sin\big(y^3-3y\big)\,\dee{x}\bigg]\ \dee{y}\\
-&amp;=\int_{-1}^1 (1-y^2) \sin\big(y^3-3y\big)\ \dee{y}\\
-&amp;=\int_2^{-2} \sin t\ \frac{\dee{t}}{-3}
-\qquad\hbox{ where }t=y^3-3y,\ \dee{t} =3(y^2-1)\,\dee{y}\\
-&amp;=\frac{1}{3}\cos t\ \Big|_2^{-2}=0
-\end{align*}
-</div>
-<p data-braille="continuation">again, since \(\cos\) is even.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-3094">in-context</a></span>
 </body>
 </html>

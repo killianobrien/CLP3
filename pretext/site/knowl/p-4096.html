@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:51+01:00    *-->
+<!--*    on 2022-09-26T13:36:02+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>To determine what the change of variables does to the domain of integration, we'll sketch \(\cR\) and then reexpress the boundary of \(\cR\) in terms of the new coordinates \(s\) and \(t\text{.}\) Here is the sketch of \(\cR\) in the original coordinates \((x,y)\text{.}\)</p>
+<p>By (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>), recalling that \(x(s,t)=s\) and \(y(s,t)=t(1+s)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\dee{x}\,\dee{y}
+&amp;= \left|\det\left[\begin{matrix}\pdiff{x}{s}&amp;\pdiff{y}{s}\\
+\pdiff{x}{t}&amp;\pdiff{y}{t}
+\end{matrix}\right]\right| \dee{s}\,\dee{t}
+= \left|\det\left[\begin{matrix}1&amp;t\\
+0&amp;1+s
+\end{matrix}\right]\right| \dee{s}\,\dee{t}
+= (1+s)\,\dee{s}\,\dee{t}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_Jacobian.html#p-4096">in-context</a></span>
 </body>
 </html>

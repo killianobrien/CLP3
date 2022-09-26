@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:58+01:00    *-->
+<!--*    on 2022-09-26T13:34:59+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,19 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><em class="emphasis">Order \(\dee{y}\,\dee{x}\,\dee{z}\text{:}\)</em> From the sketch of the part of \(E\) in the first octant, we see that, on \(E\text{,}\) \(z\) runs from \(0\) to \(6\text{.}\) For each fixed \(z\) in this range \((x,y)\) runs over</p>
-<div class="displaymath">
-\begin{align*}
-E_z&amp;=\Set{(x,y)}{x\le 3,\ -\sqrt{6}\le y\le \sqrt{6},\ y^2\le z\le 2x}\\
-&amp;=\Set{(x,y)}{z/2\le x\le 3,\ y^2\le z}\\
-&amp;=\Set{(x,y)}{z/2\le x\le 3,\ -\sqrt{z}\le y\le \sqrt{z} }
-\end{align*}
-</div>
-<p data-braille="continuation">So the integral is</p>
+<p><em class="emphasis">Order \(\dee{x}\,\dee{z}\,\dee{y}\text{:}\)</em> Also from the sketch of \(E_y\) above</p>
 <div class="displaymath">
 \begin{equation*}
-\int_{z=0}^{z=6}\int_{x=z/2}^{x=3}\int_{y=-\sqrt{z}}^{y=\sqrt{z}}
-f(x,y,z)\ \dee{y}\,\dee{x}\,\dee{z}
+E_y = \Set{(x,z)}{y^2\le z\le 6,\ z/2\le x\le 3}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the integral is</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{y=-\sqrt{6}}^{y=\sqrt{6}}\int_{z=y^2}^{z=6}\int_{x=z/2}^{x=3}
+f(x,y,z)\ \dee{x}\,\dee{z}\,\dee{y}
 \end{equation*}
 </div>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3657">in-context</a></span>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:01+01:00    *-->
+<!--*    on 2022-09-26T13:35:03+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,30 +13,7 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>To set up the domain of integration, let's decompose the base region into horizontal strips as in the figure above. On the base region</p>
-<ul class="disc">
-<li>\(y\) runs from \(0\) to \(1\) and</li>
-<li>for each fixed \(y\) between \(0\) and \(1\text{,}\) \(x\) runs from \(0\) to \(2-y\text{.}\)</li>
-<li>For each fixed \((x,y)\) in the base region \(z\) runs from \(0\) to \(\sqrt{1-y^2}\)</li>
-</ul>
-<p data-braille="continuation">So</p>
-<div class="displaymath">
-\begin{equation*}
-E=\Set{(x,y,z)}{0\le y\le 1,\ 0\le x\le 2-y,\ 0\le z\le\sqrt{1-y^2} }
-\end{equation*}
-</div>
-<p data-braille="continuation">and</p>
-<div class="displaymath">
-\begin{align*}
-\tripInt_E z\,\dee{V}&amp;=\int_0^1 \dee{y}\int_0^{2-y}\dee{x}\int_0^{\sqrt{1-y^2}}\dee{z}\ z\\
-&amp;=\int_0^1 \dee{y}\int_0^{2-y}\dee{x}\ \frac{1}{2} z^2\Big|_0^{\sqrt{1-y^2}}\\
-&amp;=\int_0^1 \dee{y}\int_0^{2-y}\dee{x}\ \frac{1}{2} (1-y^2)\\
-&amp;=\int_0^1 \dee{y}\ \frac{1}{2} (1-y^2)(2-y)
-=\frac{1}{2}\int_0^1 \dee{y}\ \big(2-y-2y^2+y^3\big)\\
-&amp;=\frac{1}{2}\left[2-\frac{1}{2}-\frac{2}{3}+\frac{1}{4}\right]
-=\frac{13}{24}\approx 0.5417
-\end{align*}
-</div>
+<p>Viewed from above, the region \(E\) is bounded by the lines \(x=0\text{,}\) \(y=0\text{,}\) \(x+y=2\) and \(y=1\text{.}\) This base region is pictured below.</p>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3686">in-context</a></span>
 </body>
 </html>

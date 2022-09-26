@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:44+01:00    *-->
+<!--*    on 2022-09-26T13:32:20+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,22 +13,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The critical points are the solutions of</p>
+<p>To find the critical points we will need the gradient of \(f\text{,}\) and to apply the second derivative test of Theorem <a class="xref" data-knowl="./knowl/thm_second_deriv_test.html" title="Theorem 2.9.16: Second Derivative Test">2.9.16</a> we will need all second order partial derivatives. So we need all partial derivatives of \(f\) up to order two. Here they are.</p>
 <div class="displaymath">
-\begin{alignat*}{2}
-f_x&amp;=3x^2+2xy+y^2-9&amp;&amp;=0  \tag{E1}\\
-f_y&amp;=x(x+2y) &amp;&amp;= 0  \tag{E2}
+\begin{alignat*}{3}
+f&amp;=x^3 + x^2y + xy^2 - 9x\\
+f_x&amp;=3x^2+2xy+y^2-9 \qquad   &amp; f_{xx}&amp;=6x+2y \qquad &amp; f_{xy}&amp;= 2x+2y\\
+f_y&amp;=x^2+2xy  &amp; f_{yy}&amp;=2x\qquad &amp; f_{yx}&amp;= 2x+2y
 \end{alignat*}
 </div>
-<p data-braille="continuation">Equation (E2) is satisfied if at least one of \(x=0\text{,}\) \(x=-2y\text{.}\)</p>
-<ul class="disc">
-<li>If \(x=0\text{,}\) equation (E1) reduces to \(y^2-9=0\text{,}\) which is satisfied if \(y=\pm 3\text{.}\)</li>
-<li>If \(x=-2y\text{,}\) equation (E1) reduces to<div class="displaymath">
-\begin{gather*}
-0=3(-2y)^2+2(-2y)y+y^2-9=9y^2-9
-\end{gather*}
-</div>which is satisfied if \(y=\pm 1\text{.}\)</li>
-</ul>
+<p data-braille="continuation">(Of course, \(f_{xy}\) and \(f_{yx}\) have to be the same. It is still useful to compute both, as a way to catch some mechanical errors.)</p>
 <span class="incontext"><a href="sec_max.html#p-2433">in-context</a></span>
 </body>
 </html>

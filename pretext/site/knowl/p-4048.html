@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:46+01:00    *-->
+<!--*    on 2022-09-26T13:35:55+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,22 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) The spherical coordinate \(\varphi\) runs from \(0\) (when the radius vector is along the positive \(z\)-axis)  to \(\frac{\pi}{2}\) (when the radius vector lies in the \(xy\)-plane) so that</p>
+<p>(a) Note that, in \(V\text{,}\) \((x,y)\) is restricted to the third quadrant, which in cylindrical coordinates is \(\pi\le\theta\le\frac{3\pi}{2}\text{.}\) So, in cylindrical coordinates,</p>
+<div class="displaymath">
+\begin{align*}
+V&amp;=\Big\{(r\cos\theta,r\sin\theta,z)\ \Big|\
+r^2+z^2\le a^2,\ \pi\le\theta\le\frac{3\pi}{2},\ z\ge 0 \Big\}\\
+&amp;=\Big\{(r\cos\theta,r\sin\theta,z)\ \Big|\ 0\le z\le a,\
+\pi\le\theta\le\frac{3\pi}{2},\ 0\le r\le\sqrt{a^2-z^2} \Big\}
+\end{align*}
+</div>
+<p data-braille="continuation">and</p>
 <div class="displaymath">
 \begin{align*}
 I&amp;= \tripInt_V \big(x^2+y^2+z^2\big)^{2014}\ \dee{V}
-= \tripInt_V \rho^{2\times 2014}\ \rho^2\sin\varphi\
-\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
-&amp;=\int_0^{\pi/2} \dee{\varphi}\int_{\pi}^{3\pi/2}\dee{\theta}
-\int_0^a\dee{\rho}\ \rho^{4030}\sin\varphi
+= \tripInt_V \big(r^2+z^2\big)^{2014}\ r\,\dee{r}\,\dee{\theta}\,\dee{z}\\
+&amp;=\int_0^a \dee{z}\int_{\pi}^{3\pi/2}\dee{\theta}
+\int_0^{\sqrt{a^2-z^2}}\dee{r}\ r\big(r^2+z^2\big)^{2014}
 \end{align*}
 </div>
 <span class="incontext"><a href="sec_spherical.html#p-4048">in-context</a></span>

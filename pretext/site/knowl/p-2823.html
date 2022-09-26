@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:24+01:00    *-->
+<!--*    on 2022-09-26T13:33:20+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,25 +13,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Recall that, when integrating \(y\text{,}\) \(x\) is held constant, so we may factor the constant \(x\) out of the inner \(y\) integral.</p>
-<div class="displaymath">
-\begin{align*}
-\int_{x^2/(4\nu)}^{\sqrt{\nu x/2}} \dee{y}\ xy
-&amp;= x\int_{x^2/(4\nu)}^{\sqrt{\nu x/2}} \dee{y}\ y\\
-&amp;= x\left[\frac{y^2}{2}\right]_{x^2/(4\nu)}^{\sqrt{\nu x/2}}\\
-&amp;=\frac{\nu x^2}{4}-\frac{x^5}{32\nu^2}
-\end{align*}
-</div>
-<p data-braille="continuation">and the</p>
+<p>we conclude that the</p>
 <div class="displaymath">
 \begin{align*}
 \text{Mass}(\cR)
-&amp;=\int_0^{2\nu} \dee{x}\
-\left[\frac{\nu x^2}{4}-\frac{x^5}{32\nu^2}\right]\\
-&amp;= \frac{\nu (2\nu)^3}{3\times 4}-\frac{(2\nu)^6}{6\times 32\nu^2}
-=\frac{\nu^4}{3}
+&amp;=\int_a^b \dee{x}\int_{B(x)}^{T(x)} \dee{y}\ f(x,y)
+=\int_0^{2\nu} \dee{x}\int_{x^2/(4\nu)}^{\sqrt{\nu x/2}} \dee{y}\ xy
 \end{align*}
 </div>
+<p data-braille="continuation">Here the integral over \(x\) adds up the masses of all of the different strips.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2823">in-context</a></span>
 </body>
 </html>

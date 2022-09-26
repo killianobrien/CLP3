@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:20+01:00    *-->
+<!--*    on 2022-09-26T13:33:16+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,6 +13,13 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>Here \(L(y)\) (“\(L\)” stands for “left”) is the smallest<a class="fn-knowl" data-knowl="./knowl/fn-106-hidden.html" title="Footnote 3.1.1"><sup> 1 </sup></a> allowed value of \(x\text{,}\) when the \(y\)-coordinate is \(y\text{,}\) and \(R(y)\) (“\(R\)” stands for “right”) is the largest allowed value of \(x\text{,}\) when the \(y\)-coordinate is \(y\text{.}\) Suppose that we wish to evaluate the mass of a plate that fills the region \(\cR\text{,}\) and that the density of the plate is \(f(x,y)\text{.}\) We follow essentially the same the procedure as we used with vertical slices, but with the roles of \(x\) and \(y\) swapped.</p>
+<ul class="disc">
+<li>Pick a natural number \(n\) (that we will later send to infinity). Then</li>
+<li>subdivide the interval \(c\le y\le d\) into \(n\) narrow subintervals, each of width \(\De y=\frac{d-c}{n}\text{.}\) Each subinterval cuts a thin horizontal slice from the region (see the figure below).</li>
+<li>We approximate slice number \(i\) by a thin horizontal rectangle (indicated by the long darker gray rectangle in the figure below). On this slice, the \(y\)-coordinate runs over a very narrow range. We pick a number \(y_i^*\text{,}\) somewhere in that range. We approximate slice \(i\) by a rectangle whose left side is at \(x=L(y_i^*)\) and whose right side is at \(x=R(y_i^*)\text{.}\)</li>
+<li>If we were computing the area of \(\cR\text{,}\) we would now approximate the area of slice \(i\) by \(\big[R(x_i^*)-L(x_i^*)\big]\De y\text{,}\) which is the area of the rectangle with width \(\big[R(x_i^*)-L(x_i^*)\big]\) and height \(\De y\text{.}\)</li>
+<li>
 <p>To get the mass, just as we did above with vertical slices, we</p>
 <ul class="circle">
 <li>pick another natural number \(m\) (that we will later send to infinity), and then</li>
@@ -43,6 +50,24 @@ F(y) = \int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}
 \end{equation*}
 </div>Observe that, as \(x\) has been integrated out, \(F(y)\) is a function of \(y\) only, not of \(x\) and \(y\text{.}\)</li>
 </ul>
+</li>
+<li>Finally taking the limit as \(n \to \infty\) (i.e. taking the limit as the slice width goes to zero), we get<div class="displaymath">
+\begin{align*}
+\text{Mass}
+&amp;=\lim_{n\rightarrow\infty}\sum_{i=1}^n
+\De y \int_{L(y_i^*)}^{R(y_i^*)} f\big(x,y_i^*\big)\,\dee{x}
+= \lim_{n\rightarrow\infty}\sum_{i=1}^n  F(y_i^*)\,\De y
+\end{align*}
+</div>Now \(\sum\limits_{i=1}^n  F(y_i^*)\,\De y\) is a Riemann sum approximation to the integral \(\int_c^d F(y)\,\dee{y}\text{.}\) So<div class="displaymath">
+\begin{align*}
+\text{Mass}
+&amp;= \int_c^d F(y)\,\dee{y}
+=\int_c^d \left[\int_{L(y)}^{R(y)} f\big(x,y\big)\,\dee{x}\right]\dee{y}
+\end{align*}
+</div>
+</li>
+</ul>
+<p data-braille="continuation">The standard notations of Notation <a class="xref" data-knowl="./knowl/notn_dbl_int.html" title="Definition 3.1.1">3.1.1</a> also apply to this integral.</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2786">in-context</a></span>
 </body>
 </html>

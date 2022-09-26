@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:42:57+01:00    *-->
+<!--*    on 2022-09-26T13:28:51+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,33 +13,43 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>To extract the components perpendicular to the direction of motion, we dot with \(\llt -\sin\theta,\cos\theta\rgt \) rather than \(\llt \cos\theta,\sin\theta\rgt \text{.}\) Note that, because</p>
+<p>When there is some, but not too much, friction, so that \(\beta \gt 0\) is relatively small, we would expect “oscillation with decaying amplitude”. So we  guess</p>
 <div class="displaymath">
 \begin{equation*}
-\llt -\sin\theta,\cos\theta\rgt \cdot \llt \cos\theta,\sin\theta\rgt =0,
+\theta(t)=Ae^{-\gamma t}\sin(\omega t-\delta)
 \end{equation*}
 </div>
-<p data-braille="continuation">the vector \(\llt -\sin\theta,\cos\theta\rgt \) really is perpendicular to the direction of motion.  Since</p>
+<p data-braille="continuation">for some constant decay rate \(\gamma\text{,}\) to be determined. With this guess,</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+\theta(t)&amp;=\phantom{- -\gamma\omega^{2})} Ae^{-\gamma t}
+&amp;\sin(\omega t-\delta)\\
+\theta'(t)&amp;=\phantom{-\omega^{2})}-\gamma Ae^{-\gamma t}
+&amp;\sin(\omega t-\delta)
+&amp;+\phantom{2\gamma }\omega A e^{-\gamma t}&amp;\cos(\omega t-\delta)\\
+\theta''(t)&amp;=(\gamma^2-\omega^2)Ae^{-\gamma t}&amp;\sin(\omega t-\delta)
+&amp;-2\gamma\omega A e^{-\gamma t}&amp;\cos(\omega t-\delta)
+\end{alignat*}
+</div>
+<p data-braille="continuation">and the left hand side</p>
 <div class="displaymath">
 \begin{align*}
-\llt -\sin\theta,\cos\theta\rgt \cdot\llt \cos\theta,\sin\theta\rgt &amp;=0\\
-\llt -\sin\theta,\cos\theta\rgt \cdot\llt -\sin\theta,cos\theta\rgt &amp;=1\\
-\llt -\sin\theta,\cos\theta\rgt \cdot\llt 0,-1\rgt &amp;=-\cos\theta
+\ddiff{2}{\theta}{t}+\frac{\beta}{m}\diff{\theta}{t}+\frac{g}{\ell}\theta
+&amp;
+=\left[\gamma^2-\omega^2-\frac{\beta}{m}\gamma+\frac{g}{\ell}\right]
+Ae^{-\gamma t}\sin(\omega t-\delta)\\
+&amp;\hskip0.5in+\left[-2\gamma\omega+\frac{\beta}{m}\omega\right]
+Ae^{-\gamma t}\cos(\omega t-\delta)
 \end{align*}
 </div>
-<p data-braille="continuation">dotting both sides of the equation of motion \((*)\) with \(\llt -\sin\theta,\cos\theta\rgt \) gives</p>
+<p data-braille="continuation">vanishes if \(\gamma^2-\omega^2-\frac{\beta}{m}\gamma+\tfrac{g}{\ell}=0\) and \(-2\gamma\omega+\frac{\beta}{m}\omega=0.\) The second equation tells us the decay rate \(\gamma=\tfrac{\beta}{2m}\) and then the first tells us the frequency</p>
 <div class="displaymath">
 \begin{gather*}
-m\ell\Big(\diff{\theta}{t}\Big)^2=-mg\cos\theta+\tau
+\omega=\sqrt{\gamma^2-\tfrac{\beta}{m}\gamma+\tfrac{g}{\ell}}
+=\sqrt{\tfrac{g}{\ell}-\tfrac{\beta^2}{4m^2}}
 \end{gather*}
 </div>
-<p data-braille="continuation">This equation just determines the tension</p>
-<div class="displaymath">
-\begin{equation*}
-\tau=m\ell\big(\diff{\theta}{t}\big)^2+mg\cos\theta
-\end{equation*}
-</div>
-<p data-braille="continuation">in the rod, once you know \(\theta(t)\text{.}\)</p>
+<p data-braille="continuation">When there is a lot of friction (namely when \(\tfrac{\beta^2}{4m^2} \gt \tfrac{g}{\ell}\text{,}\) so that the frequency \(\omega\) is not a real number), we would expect damping without oscillation and so would guess \(\theta(t)=Ae^{-\gamma t}\text{.}\) You can determine the allowed values of \(\gamma\) by substituting this guess in.</p>
 <span class="incontext"><a href="sec_vectors.html#p-128">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:31+01:00    *-->
+<!--*    on 2022-09-26T13:30:48+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,37 +13,40 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>By definition, the gradient of the differentiable function \(f(x,y)\) at the point \(\big( x_0\,,\,y_0\big)\) is</p>
+<p>(b) Replacing \(f\) by \(g\) in (E1) gives</p>
 <div class="displaymath">
-\begin{equation*}
-\vnabla f(x_0,y_0)
-=\llt \pdiff{f}{x}\big( x_0\,,\,y_0\big)\,,\,
-\pdiff{f}{y}\big( x_0\,,\,y_0\big)\rgt
-\end{equation*}
+\begin{align*}
+G_\theta(r,\theta)
+&amp;=\pdiff{}{\theta}\big[g\big(r\cos\theta\,,\,r\sin\theta\big)\big]\\
+&amp;=-r\sin\theta\, g_x\big(r\cos\theta\,,\,r\sin\theta\big)
++r\cos\theta\, g_y\big(r\cos\theta\,,\,r\sin\theta\big)\\
+&amp;=-r\sin\theta\, f_y\big(r\cos\theta\,,\,r\sin\theta\big)
+-r\cos\theta\, f_x\big(r\cos\theta\,,\,r\sin\theta\big)\\
+&amp;=-r \pdiff{}{r}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+\qquad\text{by (E2)}
+\end{align*}
 </div>
-<p data-braille="continuation">Suppose that we know</p>
+<p data-braille="continuation">Replacing \(f\) by \(g\) in (E2) gives</p>
 <div class="displaymath">
-\begin{equation*}
-\vnabla f(3,6)=\llt 7,8\rgt
-\end{equation*}
+\begin{align*}
+G_r(r,\theta)
+&amp;=\pdiff{}{r}\big[g\big(r\cos\theta\,,\,r\sin\theta\big)\big]\\
+&amp;= \cos\theta\, g_x\big(r\cos\theta\,,\,r\sin\theta\big)
++\sin\theta\, g_y\big(r\cos\theta\,,\,r\sin\theta\big)\\
+&amp;= \cos\theta\, f_y\big(r\cos\theta\,,\,r\sin\theta\big)
+-\sin\theta\, f_x\big(r\cos\theta\,,\,r\sin\theta\big)\\
+&amp;=\frac{1}{r} \pdiff{}{\theta}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+\qquad\text{by (E1)}
+\end{align*}
 </div>
-<p data-braille="continuation">Suppose also that</p>
+<p data-braille="continuation">or</p>
 <div class="displaymath">
-\begin{equation*}
-\vnabla g(1,2)=\llt -1,4\rgt,
-\end{equation*}
-</div>
-<p data-braille="continuation">and</p>
-<div class="displaymath">
-\begin{equation*}
-\vnabla h(1,2)=\llt -5,10\rgt.
-\end{equation*}
-</div>
-<p data-braille="continuation">Assuming \(g(1,2)=3\text{,}\) \(h(1,2)=6\text{,}\) and \(z(s,t)=f\big(g(s,t),h(s,t)\big)\text{,}\) find</p>
-<div class="displaymath">
-\begin{equation*}
-\vnabla z(1,2)
-\end{equation*}
+\begin{align*}
+\pdiff{}{r}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+&amp;=-\frac{1}{r} \pdiff{}{\theta}\big[g\big(r\cos\theta\,,\,r\sin\theta\big)\big]\\
+\pdiff{}{\theta}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+&amp;=r\pdiff{}{r}\big[g\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+\end{align*}
 </div>
 <span class="incontext"><a href="sec_chain_rule.html#p-1545">in-context</a></span>
 </body>

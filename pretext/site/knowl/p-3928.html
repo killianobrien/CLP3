@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:31+01:00    *-->
+<!--*    on 2022-09-26T13:35:38+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,37 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) By definition, the centre of mass is \((\bar x,\bar y,\bar z)\) where \(\bar x\text{,}\) \(\bar y\) and \(\bar z\) are the weighted averages of \(x\text{,}\) \(y\) and \(z\text{,}\) respectively, over \(H\text{.}\) That is</p>
+<p>We could have gotten the same result by expressing the mass as</p>
+<ul class="disc">
+<li>one half, times</li>
+<li>the density \(D\text{,}\) times</li>
+<li>the difference between the volume of a sphere of radius \(3\) and a sphere of radius \(2\text{.}\)</li>
+</ul>
+<p data-braille="continuation">That is</p>
 <div class="displaymath">
 \begin{gather*}
-\bar x =\frac{\tripInt_H x\,D\,\dee{V}}{\tripInt_H D\,\dee{V}}\qquad
-\bar y =\frac{\tripInt_H y\,D\,\dee{V}}{\tripInt_H D\,\dee{V}}\qquad
-\bar z =\frac{\tripInt_H z\,D\,\dee{V}}{\tripInt_H D\,\dee{V}}
-\end{gather*}
-</div>
-<p data-braille="continuation">As \(H\) is invariant under reflection in the \(yz\)-plane (i.e. under \(x\rightarrow-x\)) we have \(\bar x=0\text{.}\) As \(H\) is also invariant under reflection in the \(xz\)-plane (i.e. under \(y\rightarrow-y\)) we have \(\bar y=0\text{.}\) So we just have to find \(\bar z\text{.}\) We have already found the denominator in part (a), so we just have evaluate the numerator</p>
-<div class="displaymath">
-\begin{align*}
-\tripInt_H z\,D\,\dee{V}
-&amp;=\int_2^3\dee{\rho} \int_0^{2\pi}\dee{\theta}\int_0^{\pi/2}\dee{\varphi}\
-D\ \rho^2\sin\varphi\ \overbrace{\rho\cos\varphi}^{z}\\
-&amp;=D\ \left[\int_2^3\dee{\rho}\ \rho^3\right]\
-\left[\int_0^{2\pi}\dee{\theta}\right]\
-\left[\int_0^{\pi/2}\dee{\varphi}\ \sin\varphi\ \cos\varphi\right]\\
-&amp;= D\left[\frac{3^4}{4}-\frac{2^4}{4}\right]\
-\big[2\pi\big]\
-\left[\frac{1}{2}\sin^2\frac{\pi}{2} -\frac{1}{2}\sin^2 0\right]\\
-&amp;=\frac{81-16}{4}\pi D
-=\frac{65}{4}\pi D
-\end{align*}
-</div>
-<p data-braille="continuation">All together</p>
-<div class="displaymath">
-\begin{gather*}
-\bar x = \bar y=0\qquad
-\bar z =\frac{\frac{65}{4}\pi D}{\frac{38}{3}\pi D}
-=\frac{195}{152}
-\approx 1.28
+\text{Mass}(H) =\frac{1}{2}D\left[\frac{4}{3}\pi 3^3-\frac{4}{3}\pi 2^3\right]
+=\frac{38}{3}\pi D
 \end{gather*}
 </div>
 <span class="incontext"><a href="sec_spherical.html#p-3928">in-context</a></span>

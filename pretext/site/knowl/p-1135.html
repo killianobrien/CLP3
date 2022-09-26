@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:02+01:00    *-->
+<!--*    on 2022-09-26T13:30:10+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We often (somewhat lazily) interpret the limit “\(\lim\limits_{(x,y)\to(0,0)}f(x,y)=10\)”  to mean that, as \((x,y)\) gets closer and closer to the origin, \(f(x,y)\) gets closer and closer to 10. This isn't exactly what the definition means, though. The definition tells us that, we can guarantee that \(f(x,y)\) be very close to 10 by choosing \((x,y)\) very close to \((0,0)\text{.}\)</p>
+<p>In general, this is false. Consider \(f(x,y)=12-(1-10x)^2-(1-10y)^2\text{.}\)</p>
+<ul class="disc">
+<li>\(\lim\limits_{(x,y)\to(0,0)}f(x,y)=12-1-1=10\) (the function is continuous)</li>
+<li>\(\displaystyle f(0.1,0.1)=12-(1-1)^2-(1-1)^2=12\)</li>
+<li>\(\displaystyle f(0.2,0.2)=12-(1-2)^2-(1-2)^2=10\)</li>
+</ul>
 <span class="incontext"><a href="sec_limits.html#p-1135">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:41+01:00    *-->
+<!--*    on 2022-09-26T13:31:03+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,27 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider the surface \(z = f(x,y)\) defined implicitly by the equation \(xyz^2 + y^2 z^3 = 3 + x^2\text{.}\) Use a 3--dimensional gradient vector to find the equation of the tangent plane to this surface at the point \((-1, 1, 2)\text{.}\) Write your answer in the form \(z = ax + by + c\text{,}\) where \(a\text{,}\) \(b\) and \(c\) are constants.</p>
+<p>(b) The specified graph is \(z=f(x,y)=e^{xy}\) or \(F(x,y,z)=e^{xy}-z=0\text{.}\) Observe that \(f(2,0)=1\text{.}\) The vector</p>
+<div class="displaymath">
+\begin{align*}
+\vnabla F(2,0,1)
+&amp;= \llt F_x(x,y,z),F_y(x,y,z),F_z(x,y,z)\rgt\Big|_{(x,y,z)=(2,0,1)}\\
+&amp;= \llt ye^{xy},xe^{xy},-1\rgt\Big|_{(x,y,z)=(2,0,1)}\\
+&amp;= \llt 0,2,-1\rgt
+\end{align*}
+</div>
+<p data-braille="continuation">is a normal vector to the graph at \((2,0,1)\text{.}\) So the tangent plane is</p>
+<div class="displaymath">
+\begin{equation*}
+0(x-2)+2(y-0)-(z-1)=0\text{ or } 2y-z=-1
+\end{equation*}
+</div>
+<p data-braille="continuation">and the normal line is</p>
+<div class="displaymath">
+\begin{equation*}
+\llt x,y,z\rgt=\llt 2,0,1\rgt+t\llt 0,2,-1\rgt
+\end{equation*}
+</div>
 <span class="incontext"><a href="sec_tangent_planes.html#p-1685">in-context</a></span>
 </body>
 </html>

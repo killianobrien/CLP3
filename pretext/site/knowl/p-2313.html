@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:32+01:00    *-->
+<!--*    on 2022-09-26T13:32:06+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,65 +13,18 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We wish to choose \(m\) and \(b\) so as to minimize \(E(m,b)\text{.}\) So we need to determine where the partial derivatives of \(E\) are zero.</p>
-<div class="displaymath">
-\begin{alignat*}{3}
-0&amp;=\frac{\partial E}{\partial m}&amp;&amp;=\sum_{i=1}^n 2(mx_i+b-y_i)x_i
-&amp;&amp;=m\Big[\smsum_{i=1}^n 2x^2_i\Big]+b\Big[\smsum_{i=1}^n 2x_i\Big]
--\Big[\smsum_{i=1}^n 2x_iy_i\Big]\\
-0&amp;=\frac{\partial E}{\partial b}&amp;&amp;=\sum_{i=1}^n 2(mx_i+b-y_i)
-&amp;&amp;=m\Big[\smsum_{i=1}^n 2x_i\Big]+b\Big[\smsum_{i=1}^n 2\Big]
--\Big[\smsum_{i=1}^n 2y_i\Big]
-\end{alignat*}
-</div>
-<p data-braille="continuation">There are a lot of symbols here. But remember that all of the \(x_i\)'s and \(y_i\)'s are given constants. They come from, for example, experimental data. The only unknowns are \(m\) and \(b\text{.}\) To emphasize this, and to save some writing, define the constants</p>
+<p>The definition of “best” is “minimizes the root mean square error”, i.e. minimizes</p>
 <div class="displaymath">
 \begin{equation*}
-S_x=\smsum_{i=1}^n x_i\qquad
-S_y=\smsum_{i=1}^n y_i\qquad
-S_{x^2}=\smsum_{i=1}^n x^2_i\qquad
-S_{xy}=\smsum_{i=1}^n x_iy_i
+E(m,b)=\sum_{i=1}^n (mx_i+b-y_i)^2
 \end{equation*}
 </div>
-<p data-braille="continuation">The equations which determine the critical points are (after dividing by two)</p>
-<div class="displaymath">
-\begin{align*}
-S_{x^2}\, m+S_x\, b&amp;=S_{xy} \tag{E1}\\
-S_{x}\, m+n\, b&amp;=S_{y}      \tag{E2}
-\end{align*}
-</div>
-<p data-braille="continuation">These are two linear equations on the unknowns \(m\) and \(b\text{.}\) They may be solved in any of the usual ways. One is to use (E2) to solve for \(b\) in terms of \(m\)</p>
-<div class="displaymath">
-\begin{equation*}
-b=\frac{1}{n}\big(S_y-S_xm\big)\tag{E3}
-\end{equation*}
-</div>
-<p data-braille="continuation">and then substitute this into (E1) to get the equation</p>
-<div class="displaymath">
-\begin{equation*}
-S_{x^2}\, m+\frac{1}{n}S_x\, \big(S_y-S_xm\big)=S_{xy}\quad\implies\quad
-\big(nS_{x^2} -S_x^2\big) m = nS_{xy}-S_xS_y
-\end{equation*}
-</div>
-<p data-braille="continuation">for \(m\text{.}\) We can then solve this equation for \(m\) and substitute back into (E3) to get \(b\text{.}\) This gives</p>
-<div class="displaymath">
-\begin{align*}
-m\amp=\frac{nS_{xy}-S_xS_y}{nS_{x^2} -S_x^2}\\
-b\amp=\frac{S_y}{n}\,\frac{nS_{x^2} -S_x^2}{nS_{x^2} -S_x^2}
--\frac{S_x}{n}\,\frac{nS_{xy}-S_xS_y}{nS_{x^2} -S_x^2}
-=\frac{nS_yS_{x^2}-nS_xS_{xy}}{n(nS_{x^2} -S_x^2)}\\
-\amp=-\frac{S_xS_{xy}-S_yS_{x^2}}{nS_{x^2} -S_x^2}
-\end{align*}
-</div>
-<p data-braille="continuation">Another way to solve the system of equations is</p>
-<div class="displaymath">
-\begin{alignat*}{2}
-n\text{(E1)}-S_x\text{(E2)}:&amp;\quad \Big[nS_{x^2} -S_x^2\Big]m&amp;&amp;=nS_{xy}-S_xS_y\\
--S_x\text{(E1)}+S_{x^2}\text{(E2)}:&amp;\quad
-\Big[nS_{x^2} -S_x^2\Big]b&amp;&amp;=-S_xS_{xy}+S_yS_{x^2}
-\end{alignat*}
-</div>
-<p data-braille="continuation">which gives the same solution.</p>
+<p data-braille="continuation">Note that</p>
+<ul class="disc">
+<li>term number \(i\) in \(E(m,b)\) is the square of the difference between \(y_i\text{,}\) which is the \(i^{\rm th}\) measured value of \(y\text{,}\) and \(\Big[mx+b\Big]_{x=x_i}\text{,}\) which is the approximation to \(y_i\) given by the line \(y=mx+b\text{.}\)</li>
+<li>All terms in the sum are positive, regardless of whether the points \((x_i,y_i)\) are above or below the line.</li>
+</ul>
+<p data-braille="continuation">Our problem is to find the \(m\) and \(b\) that minimizes \(E(m,b)\text{.}\) This technique for drawing a line through a bunch of data points is called “linear regression”. It is used <em class="emphasis">a lot</em><a class="fn-knowl" data-knowl="./knowl/fn-83-hidden.html" title="Footnote 2.9.9"><sup> 9 </sup></a> <a class="fn-knowl" data-knowl="./knowl/fn-84-hidden.html" title="Footnote 2.9.10"><sup> 10 </sup></a>. Even in the real world — and not just the real world that you find in mathematics problems. The actual real world that involves jobs.</p>
 <span class="incontext"><a href="sec_max.html#p-2313">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:02+01:00    *-->
+<!--*    on 2022-09-26T13:32:48+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,28 +13,26 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We now find all vectors in \(\cT^\perp\text{.}\) We can easily guess two such vectors. Since the curve \(g=h=0\) lies inside the surface \(g=0\) and \(\vnabla g(a,b,c)\) is normal to \(g=0\) at \((a,b,c)\text{,}\) we have</p>
+<p>Call your velocity vector \(\vv\text{.}\) It is tangent to the curve \(g(x,y,z)=h(x,y,z)=0\text{.}\) Because \(f\) has a local minimum at \((a,b,c)\text{,}\) \(f\) must be increasing (or constant) as we leave \((a,b,c)\text{.}\) So the directional derivative</p>
 <div class="displaymath">
 \begin{equation*}
-\vnabla g(a,b,c) \cdot \vv=0
-\tag{E1}
+D_{\vv}f(a,b,c)=\vnabla f(a,b,c) \cdot \vv\ge 0
 \end{equation*}
 </div>
-<p data-braille="continuation">Similarly, since the the curve \(g=h=0\) lies inside the surface \(h=0\) and \(\vnabla h(a,b,c)\) is normal to \(h=0\) at \((a,b,c)\text{,}\) we have</p>
+<p data-braille="continuation">Now start over. Again walk away from \((a,b,c)\) along the curve \(g=h=0\text{,}\) but this time moving in the opposite direction, with velocity vector \(-\vv\text{.}\) Again \(f\) must be increasing (or constant) as we leave \((a,b,c)\text{,}\) so the directional derivative</p>
 <div class="displaymath">
 \begin{equation*}
-\vnabla h(a,b,c) \cdot \vv=0
-\tag{E2}
+D_{-\vv}f(a,b,c)=\vnabla f(a,b,c) \cdot (-\vv)\ge 0
 \end{equation*}
 </div>
-<p data-braille="continuation">Picking any two constants \(\la\) and \(\mu\text{,}\) multiplying (E1) by \(\la\text{,}\) multiplying (E2) by \(\mu\) and adding gives that</p>
+<p data-braille="continuation">As both \(\vnabla f(a,b,c) \cdot \vv\) and \(-\vnabla f(a,b,c) \cdot \vv\) are at least zero, we now have that</p>
 <div class="displaymath">
 \begin{equation*}
-\big(\la\vnabla g(a,b,c)
-+\mu\vnabla h(a,b,c)\big) \cdot \vv=0
+\vnabla f(a,b,c) \cdot \vv=0
+\tag{$*$}
 \end{equation*}
 </div>
-<p data-braille="continuation">for all vectors \(\vv\)  in \(\cT\text{.}\) Thus, for all \(\la\) and \(\mu\text{,}\) the vector \(\la\vnabla g(a,b,c)+\mu\vnabla h(a,b,c)\) is in \(\cT^\perp\text{.}\)</p>
+<p data-braille="continuation">for all vectors \(\vv\) that are tangent to the curve \(g=h=0\) at \((a,b,c)\text{.}\) Let's denote by \(\cT\) the set of all vectors \(\vv\) that are tangent to the curve \(g=h=0\) at \((a,b,c)\) and let's denote by \(\cT^\perp\) the set of all vectors that are perpendicular to all vectors in \(\cT\text{.}\) So \((*)\) says that \(\vnabla f(a,b,c)\) must in \(\cT^\perp\text{.}\)</p>
 <span class="incontext"><a href="sec_Lagrange.html#p-2623">in-context</a></span>
 </body>
 </html>

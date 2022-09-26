@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:52+01:00    *-->
+<!--*    on 2022-09-26T13:36:03+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,69 +13,49 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Spherical coordinates have</p>
+<p>Cylindrical coordinates have</p>
 <div class="displaymath">
 \begin{align*}
-x(\rho,\theta,\varphi) &amp;= \rho\,\cos\theta\,\sin\varphi\\
-y(\rho,\theta,\varphi) &amp;= \rho\,\sin\theta\,\sin\varphi\\
-z(\rho,\theta,\varphi) &amp; =  \rho\,\cos\varphi
+x(r,\theta,z) &amp;= r\cos\theta\\
+y(r,\theta,z) &amp;= r\sin\theta\\
+z(r,\theta,z) &amp; = z
 \end{align*}
 </div>
 <p data-braille="continuation">Since</p>
 <div class="displaymath">
 \begin{align*}
-\pdiff{x}{\rho}&amp;=\cos\theta\,\sin\varphi
-&amp;\pdiff{y}{\rho}&amp;=\sin\theta\,\sin\varphi
-&amp;\pdiff{z}{\rho}&amp;=\cos\varphi\\
-\pdiff{x}{\theta}&amp;=-\rho\,\sin\theta\,\sin\varphi
-&amp;\pdiff{y}{\theta}&amp;=\rho\,\cos\theta\,\sin\varphi
+\pdiff{x}{r}&amp;=\cos\theta   &amp;\pdiff{y}{r}&amp;=\sin\theta &amp;\pdiff{z}{r}&amp;=0\\
+\pdiff{x}{\theta}&amp;=-r\sin\theta  &amp;\pdiff{y}{\theta}&amp;=r\cos\theta
 &amp;\pdiff{z}{\theta}&amp;=0\\
-\pdiff{x}{\varphi}&amp;= \rho\,\cos\theta\,\cos\varphi
-&amp;\pdiff{y}{\varphi}&amp;=\rho\,\sin\theta\,\cos\varphi
-&amp;\pdiff{z}{\varphi}&amp;=-\rho\,\sin\varphi
+\pdiff{x}{z}&amp;= 0  &amp;\pdiff{y}{z}&amp;=0
+&amp;\pdiff{z}{z}&amp;=1
 \end{align*}
 </div>
-<p data-braille="continuation">(<a class="xref" data-knowl="./knowl/eq_dV.html" title="Equation 3.8.8">3.8.8</a>), but with \(u\) renamed to \(\rho\text{,}\) \(v\) renamed to \(\theta\) and \(w\) renamed to \(\varphi\text{,}\) gives</p>
+<p data-braille="continuation">(<a class="xref" data-knowl="./knowl/eq_dV.html" title="Equation 3.8.8">3.8.8</a>), but with \(u\) renamed to \(r\) and \(v\) renamed to \(\theta\text{,}\) gives</p>
 <div class="displaymath">
 \begin{align*}
-\dee{V} &amp;= \left|\det\left[\begin{matrix}\cos\theta\,\sin\varphi
-&amp; \sin\theta\,\sin\varphi
-&amp;\cos\varphi \\
--\rho\,\sin\theta\,\sin\varphi
-&amp;\rho\,\cos\theta\,\sin\varphi
-&amp;0 \\
-\rho\,\cos\theta\,\cos\varphi
-&amp;\rho\,\sin\theta\,\cos\varphi
-&amp;-\rho\,\sin\varphi
-\end{matrix}\right]\right| \dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
-&amp;= \left|\cos\theta\,\sin\varphi\det\left[\begin{matrix}
-\rho\,\cos\theta\,\sin\varphi&amp;0 \\
-\rho\,\sin\theta\,\cos\varphi  &amp;-\rho\,\sin\varphi
-\end{matrix}\right] \right.\\
-&amp;\hskip1in\left.
--\sin\theta\,\sin\varphi\det\left[\begin{matrix}
--\rho\,\sin\theta\,\sin\varphi &amp;0 \\
-\rho\,\cos\theta\,\cos\varphi &amp;-\rho\,\sin\varphi
-\end{matrix}\right] \right.\\
-&amp;\hskip1in\left.
-+\cos\varphi\det\left[\begin{matrix}
--\rho\,\sin\theta\,\sin\varphi
-&amp;\rho\,\cos\theta\,\sin\varphi  \\
-\rho\,\cos\theta\,\cos\varphi
-&amp;\rho\,\sin\theta\,\cos\varphi
+\dee{V} &amp;= \left|\det\left[\begin{matrix}\cos\theta &amp;\sin\theta&amp;0 \\
+-r\sin\theta &amp; r\cos\theta&amp;0 \\
+0 &amp; 0 &amp; 1
+\end{matrix}\right]\right| \dee{r}\,\dee{\theta}\,\dee{z}\\
+&amp;= \left|\cos\theta\det\left[\begin{matrix}
+r\cos\theta&amp;0 \\
+0 &amp; 1
 \end{matrix}\right]
-\right| \dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
-&amp;=\rho^2 \big|-\cos^2\theta \sin^3\varphi
-- \sin^2\theta\sin^3\varphi
--\sin\varphi\cos^2\varphi
-\big|\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
-&amp;=\rho^2 \big|-\sin\varphi \sin^2\varphi
--\sin\varphi\cos^2\varphi
-\big|\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}\\
-&amp;= \rho^2\sin\varphi\,\dee{\rho}\,\dee{\theta}\,\dee{\varphi}
+-\sin\theta\det\left[\begin{matrix}
+-r\sin\theta&amp;0 \\
+0 &amp; 1
+\end{matrix}\right]\right.\\
+&amp;\hskip2.3in+0\left.\det\left[\begin{matrix}
+-r\sin\theta  &amp;  r\cos\theta \\
+0 &amp; 0
+\end{matrix}\right]
+\right| \dee{r}\,\dee{\theta}\,\dee{z}\\
+&amp;=\big(r\cos^2\theta + r\sin^2\theta\big)\,\dee{r}\,\dee{\theta}\,\dee{z}\\
+&amp;= r\,\dee{r}\,\dee{\theta}\,\dee{z}
 \end{align*}
 </div>
-<p data-braille="continuation">which is exactly what we found in (<a class="xref" data-knowl="./knowl/eq_dV_spherical.html" title="Equation 3.7.3">3.7.3</a>).</p>
+<p data-braille="continuation">which is exactly what we found in (<a class="xref" data-knowl="./knowl/eq_dV_cylindrical.html" title="Equation 3.6.3">3.6.3</a>).</p>
 <span class="incontext"><a href="sec_Jacobian.html#p-4104">in-context</a></span>
 </body>
 </html>

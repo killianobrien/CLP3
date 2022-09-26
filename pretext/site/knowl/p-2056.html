@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:12+01:00    *-->
+<!--*    on 2022-09-26T13:31:40+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,38 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The temperature at a point \((x, y, z)\) is given by \(T(x, y, z) = 5e^{-2x^2-y^2-3z^2}\text{,}\) where \(T\) is measured in centigrade and \(x\text{,}\) \(y\text{,}\) \(z\) in meters.</p>
-<ol class="lower-alpha">
-<li>Find the rate of change of temperature at the point \(P(1, 2, -1)\) in the direction toward the point \((1, 1, 0)\text{.}\)</li>
-<li>In which direction does the temperature decrease most rapidly?</li>
-<li>Find the maximum rate of decrease at \(P\text{.}\)</li>
-</ol>
+<p>(b) <em class="emphasis">Solution 2</em>: Suppose that the bee is at \(\big(x(t),y(t),z(t)\big)\) at time \(t\text{.}\) Then the temperature that the bee feels at time \(t\) is</p>
+<div class="displaymath">
+\begin{gather*}
+T\big(x(t),y(t),z(t),t\big)
+\end{gather*}
+</div>
+<p data-braille="continuation">By the chain rule, the rate of change of temperature (per unit time) felt by the bee at time \(t=2\) is</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\diff{}{t}T\big(x(t),y(t),z(t),t\big)\Big|_{t=2}\\
+&amp;\hskip0.5in=\bigg[\pdiff{T}{x}\big(x(t),y(t),z(t),t\big)\,x'(t)
++\pdiff{T}{y}\big(x(t),y(t),z(t),t\big)\,y'(t)\\
+&amp;\hskip1.0in
++\pdiff{T}{z}\big(x(t),y(t),z(t),t\big)\,z'(t)
++\pdiff{T}{t}\big(x(t),y(t),z(t),t\big)\bigg]_{t=2}
+\end{align*}
+</div>
+<p data-braille="continuation">Recalling that \(T = xy - 3x+2yt+z\text{,}\) we have</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\diff{}{t}T\big(x(t),y(t),z(t),t\big)\Big|_{t=2}\\
+&amp;\hskip1in=[y(2)-3]x'(2) + [x(2)+2\times 2]y'(2) +z'(2) +2y(2)
+\end{align*}
+</div>
+<p data-braille="continuation">Also recalling that, at time \(t=2\text{,}\) the bee is at \((1,1,0)\) and has velocity \(\llt -2 \,,\, -4 \,,\, 4 \rgt\)</p>
+<div class="displaymath">
+\begin{align*}
+\diff{}{t}T\big(x(t),y(t),z(t),t\big)\Big|_{t=2}
+&amp;=[-2](-2) + [5](-4) +4  +2\\
+&amp;=-10
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_directional_derivatives.html#p-2056">in-context</a></span>
 </body>
 </html>

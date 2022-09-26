@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:45+01:00    *-->
+<!--*    on 2022-09-26T13:32:20+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,35 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Find and classify all the critical points of \(f(x,y)=x^2+y^2+x^2y+4\text{.}\)</p>
+<p>The maximum value of \(f\) will be taken at a critical point. On \(D\)</p>
+<div class="displaymath">
+\begin{align*}
+f &amp;= x^2 y^2 (5-2x-y) =5x^2 y^2 - 2x^3 y^2 -x^2 y^3
+\end{align*}
+</div>
+<p data-braille="continuation">So the critical points are the solutions of</p>
+<div class="displaymath">
+\begin{align*}
+0&amp;=f_x(x,y) = 10xy^2 -6x^2y^2 -2xy^3\\
+0&amp;=f_y(x,y) = 10x^2y -4x^3y   -3x^2y^2
+\end{align*}
+</div>
+<p data-braille="continuation">or, dividing by the first equation by \(xy^2\) and the second equation by \(x^2y\text{,}\) (recall that \(x,y\ne 0\))</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+10 -6x -2y   &amp;=0 &amp;\qquad\text{or}\qquad 3x+y&amp;=5\\
+10 -4x   -3y &amp;=0 &amp;\qquad\text{or}\qquad 4x+3y&amp;=10
+\end{alignat*}
+</div>
+<p data-braille="continuation">Substituting \(y=5-3x\text{,}\) from the first equation, into the second equation gives</p>
+<div class="displaymath">
+\begin{equation*}
+4x+3(5-3x)=10
+\implies -5x +15 =10
+\implies x=1,\ y=5-3(1)=2
+\end{equation*}
+</div>
+<p data-braille="continuation">So the maximum value of \(f\) is \((1)^2(2)^2(5-2-2)=4\) at \((1,2,1)\text{.}\)</p>
 <span class="incontext"><a href="sec_max.html#p-2440">in-context</a></span>
 </body>
 </html>

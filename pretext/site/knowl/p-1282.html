@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:11+01:00    *-->
+<!--*    on 2022-09-26T13:30:22+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,15 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>For (a) and (b), remember \(\pdiff{f}{x}(x,y)=\lim\limits_{h\to0}\frac{f(x+h,y)-f(x,y)}{h}\) and \(\pdiff{f}{y}(x,y)=\lim\limits_{h\to0}\frac{f(x,y+h)-f(x,y)}{h}\text{.}\) For (c), you're finding the derivative of a function of one variable, say \(g(t)\text{,}\) where</p>
+<p>Let</p>
 <div class="displaymath">
 \begin{equation*}
-g(t)=f(t,t)=\begin{cases}
-\frac{t^2t}{t^2+t^2} &amp; \text{if } t\ne 0 \\
-0                    &amp; \text{if } t= 0
+f(x,y)=\begin{cases}\frac{x^2y}{x^2+y^2}&amp; \text{if } (x,y)\ne (0,0)\\
+0 &amp; \text{if } (x,y)=(0,0)
 \end{cases}
 \end{equation*}
 </div>
+<p data-braille="continuation">Compute, directly from the definitions,</p>
+<ol class="lower-alpha">
+<li>\(\displaystyle \pdiff{f}{x}(0,0)\)</li>
+<li>\(\displaystyle \pdiff{f}{y}(0,0)\)</li>
+<li>\(\displaystyle \diff{}{t} f(t,t)\Big|_{t=0}\)</li>
+</ol>
 <span class="incontext"><a href="sec_partials.html#p-1282">in-context</a></span>
 </body>
 </html>

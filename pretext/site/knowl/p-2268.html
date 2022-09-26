@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:28+01:00    *-->
+<!--*    on 2022-09-26T13:32:02+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) The left hand side \(\frac{T'(t)}{T(t)}\) is independent of \(x\text{,}\) and the right hand side \(x\,\frac{X'(x)}{X(x)}\) is independent of \(t\text{.}\) The left and right hand sides are equal to each other, so both are independent of both \(t\) and \(x\text{,}\) i.e. are constant. If we call the constant \(\la\text{,}\) then</p>
+<p>(a) Substituting \(u(x,t)= X(x)\,T(t)\) into the given PDE yields</p>
 <div class="displaymath">
-\begin{align*}
-\frac{T'(t)}{T(t)} \amp= x\,\frac{X'(x)}{X(x)}=\la \\
-\implies T'(t)\amp=\la\,T(t),\qquad X'(x)=\frac{\la}{x} X(x)
-\end{align*}
+\begin{equation*}
+X(x)\,T'(t) = u_t=x\,u_x=x\, X'(x)\,T(t)
+\end{equation*}
 </div>
+<p data-braille="continuation">Then dividing both sides by \(X(x)\,T(t)\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{T'(t)}{T(t)} = x\,\frac{X'(x)}{X(x)}
+\end{equation*}
+</div>
+<p data-braille="continuation">as desired.</p>
 <span class="incontext"><a href="sec_pde.html#p-2268">in-context</a></span>
 </body>
 </html>

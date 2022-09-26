@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:31+01:00    *-->
+<!--*    on 2022-09-26T13:35:38+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We could have gotten the same result by expressing the mass as</p>
-<ul class="disc">
-<li>one half, times</li>
-<li>the density \(D\text{,}\) times</li>
-<li>the difference between the volume of a sphere of radius \(3\) and a sphere of radius \(2\text{.}\)</li>
-</ul>
-<p data-braille="continuation">That is</p>
+<p>(a) In spherical coordinates \(\dee{V}=\rho^2\sin\varphi\ \dee{\rho}\,\dee{\varphi}\,\dee{\theta}\text{,}\) so that, as the density is the constant \(D\text{,}\)</p>
 <div class="displaymath">
-\begin{gather*}
-\text{Mass}(H) =\frac{1}{2}D\left[\frac{4}{3}\pi 3^3-\frac{4}{3}\pi 2^3\right]
-=\frac{38}{3}\pi D
-\end{gather*}
+\begin{align*}
+\text{Mass}(H)
+&amp;=\int_2^3\dee{\rho} \int_0^{2\pi}\dee{\theta}\int_0^{\pi/2}\dee{\varphi}\
+D\ \rho^2\sin\varphi\\
+&amp;=D\ \left[\int_2^3\dee{\rho}\ \rho^2\right]\
+\left[\int_0^{2\pi}\dee{\theta}\right]\
+\left[\int_0^{\pi/2}\dee{\varphi}\ \sin\varphi\right]\\
+&amp;= D\left[\frac{3^3}{3}-\frac{2^3}{3}\right]\
+\big[2\pi\big]\ \big[\cos 0 -\cos(\pi/2)\big]\\
+&amp;=\frac{38}{3}\pi D
+\end{align*}
 </div>
 <span class="incontext"><a href="sec_spherical.html#p-3927">in-context</a></span>
 </body>

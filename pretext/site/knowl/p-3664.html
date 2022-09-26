@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:59+01:00    *-->
+<!--*    on 2022-09-26T13:35:00+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) Here is a sketch of (the front half of) a constant \(z\)  slice of \(E\text{.}\)</p>
+<p>The integral</p>
+<div class="displaymath">
+\begin{align*}
+\tripInt_E f(x,y,z)\ \dee{V}
+&amp;=\int_{x^2+y^2\le 1}\dee{x}\,\dee{y}\int_{-1}^y\dee{z}\ f(x,y,z)\\
+&amp;=\int_{-1}^1\dee{y}\int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}}\dee{x}
+\int_{-1}^y\dee{z}\ f(x,y,z)\\
+&amp;=\int_{-1}^1\int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}}
+\int_{-1}^y f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3664">in-context</a></span>
 </body>
 </html>

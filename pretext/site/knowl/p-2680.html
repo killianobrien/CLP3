@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:09+01:00    *-->
+<!--*    on 2022-09-26T13:33:02+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,46 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Find the radius of the largest sphere centred at the origin that can be inscribed inside (that is, enclosed inside) the ellipsoid</p>
+<p>If \(\la\ne 0\text{,}\) then multiplying (E1) by \(x\text{,}\) (E2) by \(y\text{,}\) and (E3) by \(z\) gives</p>
 <div class="displaymath">
+\begin{align*}
+&amp;xyz = \la (2x^2+xy) = \la(2y^2 +xy) =6\la z^2\\
+&amp;\hskip1in\implies 2x^2+xy =2y^2 +xy =6z^2\\
+&amp;\hskip1in\implies x=\pm y,\ z^2=\frac{1}{6}(2x^2+xy)
+\end{align*}
+</div>
+<ul class="circle">
+<li>If \(x=y\text{,}\) then \(z^2=\frac{x^2}{2}\) and, by (E4)<div class="displaymath">
+\begin{align*}
+x^2+x^2+x^2 +\frac{3}{2}x^2=9
+&amp;\implies x^2=2\\
+&amp;\implies x=y=\pm \sqrt{2},\ z=\pm 1
+\end{align*}
+</div>For these points<div class="displaymath">
 \begin{equation*}
-2(x+1)^2 + y^2 + 2(z-1)^2 =8
+f(x,y,z)=2z=\begin{cases}
+2&amp;\text{if }z=1 \\
+-2&amp;\text{if }z=-1
+\end{cases}
 \end{equation*}
 </div>
+</li>
+<li>If \(x=-y\text{,}\) then \(z^2=\frac{x^2}{6}\) and, by (E4)<div class="displaymath">
+\begin{align*}
+x^2-x^2+x^2 +\frac{x^2}{2}=9
+&amp;\implies x^2=6\\
+&amp;\implies x=-y=\pm \sqrt{6},\ z=\pm 1
+\end{align*}
+</div>For these points<div class="displaymath">
+\begin{equation*}
+f(x,y,z)=-6z=\begin{cases}
+-6&amp;\text{if }z=1 \\
+6&amp;\text{if }z=-1
+\end{cases}
+\end{equation*}
+</div>
+</li>
+</ul>
 <span class="incontext"><a href="sec_Lagrange.html#p-2680">in-context</a></span>
 </body>
 </html>

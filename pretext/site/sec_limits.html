@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:41:06+01:00    *-->
+<!--*    on 2022-09-26T13:26:41+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -244,6 +244,7 @@ MathJax.Hub.Config({
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
 <li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3">CLP3 at Manchester Met</a></li>
 </ul>
 </li>
 <li class="link">
@@ -306,11 +307,11 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_limits"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Limits</span>
 </h2>
-<section class="introduction" id="introduction-26"><p id="p-1090">Before we really start, let's recall some useful notation.</p>
+<section class="introduction" id="introduction-26"><p id="p-1091">Before we really start, let's recall some useful notation.</p>
 <article class="definition definition-like" id="notn_multivariable_functions"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
 </h6>
-<ul id="p-1091" class="disc">
+<ul id="p-1092" class="disc">
 <li id="li-578">\(\bbbn\) is the set \(\{1,2,3,\cdots\}\) of all natural numbers.</li>
 <li id="li-579">\(\bbbr\) is the set of all real numbers.</li>
 <li id="li-580">\(\in\) is read “is an element of”.</li>
@@ -319,7 +320,7 @@ MathJax.Hub.Config({
 <li id="li-583">If \(S\) is a set and \(T\) is a subset of \(S\text{,}\) then \(S\setminus T\) is \(\Set{x\in S}{x\notin T}\text{,}\) the set \(S\) with the elements of \(T\) removed. In particular, if  \(S\) is a set and \(a\) is an element of \(S\text{,}\) then \(S\setminus\{a\}=\Set{x\in S}{x\ne\ a}\) is the set \(S\) with the element \(a\) removed.</li>
 <li id="li-584">If \(n\) is a natural number, \(\bbbr^n\) is used for both the set of \(n\)-component vectors  \(\llt x_1,x_2,\cdots,x_n \rgt\) and the set of  points \((x_1,x_2,\cdots,x_n)\) with \(n\) coordinates.</li>
 <li id="li-585">If \(S\) and \(T\) are sets, then \(f:S\rightarrow T\) means that \(f\) is a function which assigns to each element of \(S\) an element of \(T\text{.}\) The set \(S\) is called the domain of \(f\text{.}\)</li>
-<li id="li-586"><div class="displaymath" id="p-1092">
+<li id="li-586"><div class="displaymath" id="p-1093">
 \begin{align*}
 [a,b]=\Set{x\in\bbbr}{a\le x\le b} \amp\amp
 (a,b]=\Set{x\in\bbbr}{a \lt  x\le b}\\
@@ -327,7 +328,7 @@ MathJax.Hub.Config({
 (a,b)=\Set{x\in\bbbr}{a \lt  x \lt  b}
 \end{align*}
 </div></li>
-</ul></article><p id="p-1093">The definition of the limit of a function of more than one variable looks just like the definition<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-34" id="fn-34"><sup> 1 </sup></a> of the limit of a function of one variable. Very roughly speaking</p>
+</ul></article><p id="p-1094">The definition of the limit of a function of more than one variable looks just like the definition<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-34" id="fn-34"><sup> 1 </sup></a> of the limit of a function of one variable. Very roughly speaking</p>
 <div class="displaymath">
 \begin{gather*}
 \lim_{\vx\to \va} f(\vx) = \vL
@@ -338,7 +339,7 @@ MathJax.Hub.Config({
 <article class="definition definition-like" id="def_limit"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Limit.</span>
 </h6>
-<p id="p-1094">Let</p>
+<p id="p-1095">Let</p>
 <ul class="disc">
 <li id="li-587">\(m\) and \(n\) be natural numbers<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-35" id="fn-35"><sup> 2 </sup></a>
 </li>
@@ -356,11 +357,11 @@ MathJax.Hub.Config({
 <div class="hidden-content tex2jax_ignore" id="hk-fn-35"><div class="fn">In this text, we will interested in \(m,n\in\big\{1,2,3\big\}\text{,}\) but the definition works for all natural numbers \(m,n\text{.}\)</div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-36"><div class="fn">To be precise, there is a number \(r\gt 0\) such that \(f(\vx)\) is defined for all \(\vx\) obeying \(|\vx-\va|\lt r\text{.}\)</div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-37"><div class="fn">There is a precise, formal version of this definition that looks just like Definition 1.7.1 of the CLP-1 text.</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-38"><div class="fn">You may find the condition “without  being exactly \(\va\)” a little strange, but there is a good reason for it, which we have already seen in Calculus I. In the definition \(f'(x) = \lim\limits_{x\rightarrow a} \frac{f(x)-f(a)}{x-a}\text{,}\) the function whose limit is being taken, namely  \(\frac{f(x)-f(a)}{x-a}\text{,}\) is not defined at all at \(x=a\text{.}\) This will again happen when we define derivatives of functions of more than one variable.</div></div></article><p id="p-1095">Now that we have extended the definition of limit, we can extend the definition of continuity.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-38"><div class="fn">You may find the condition “without  being exactly \(\va\)” a little strange, but there is a good reason for it, which we have already seen in Calculus I. In the definition \(f'(x) = \lim\limits_{x\rightarrow a} \frac{f(x)-f(a)}{x-a}\text{,}\) the function whose limit is being taken, namely  \(\frac{f(x)-f(a)}{x-a}\text{,}\) is not defined at all at \(x=a\text{.}\) This will again happen when we define derivatives of functions of more than one variable.</div></div></article><p id="p-1096">Now that we have extended the definition of limit, we can extend the definition of continuity.</p>
 <article class="definition definition-like" id="def_continuity"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity.</span>
 </h6>
-<p id="p-1096">Let</p>
+<p id="p-1097">Let</p>
 <ul class="disc">
 <li id="li-591">\(m\) and \(n\) be natural numbers</li>
 <li id="li-592">\(\displaystyle \va\in\bbbr^m\)</li>
@@ -374,10 +375,10 @@ MathJax.Hub.Config({
 </div>
 </li>
 <li id="li-595">The function \(f\) is continuous on a set \(D\) if it is continuous at every point of \(D\text{.}\)</li>
-</ol></article><p id="p-1097">Here are a few very simple examples. There will be some more substantial examples later — after, as we did in the CLP-1 text, we build some tools that can be used to build complicated limits from simpler ones.</p>
+</ol></article><p id="p-1098">Here are a few very simple examples. There will be some more substantial examples later — after, as we did in the CLP-1 text, we build some tools that can be used to build complicated limits from simpler ones.</p>
 <article class="example example-like" id="eg_trivial_limits"><a data-knowl="" class="id-ref original" data-refid="hk-eg_trivial_limits"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_trivial_limits"><article class="example example-like"><ol id="p-1098" class="lower-alpha">
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_trivial_limits"><article class="example example-like"><ol id="p-1099" class="lower-alpha">
 <li id="li-596">If \(f(x,y)\) is the constant function which always takes the value \(L\text{,}\) then<div class="displaymath">
 \begin{equation*}
 \lim_{(x,y)\to(a,b)} f(x,y) = L
@@ -401,11 +402,11 @@ MathJax.Hub.Config({
 </div>
 </li>
 </ol></article></div>
-<p id="p-1099">Limits of multivariable functions have much the same computational properties as limits of functions of one variable. The following theorem summarizes a bunch of them. For simplicity, it concerns primarily real valued functions. That is, functions that output real numbers as opposed to vectors. However it does contain one vector valued function. The function \(\vX\) in the theorem takes as input an \(n\)-component vector and returns an \(m\)-component vector. We will not deal with many vector valued functions here in CLP-3, but we will see a lot in CLP-4.</p>
+<p id="p-1100">Limits of multivariable functions have much the same computational properties as limits of functions of one variable. The following theorem summarizes a bunch of them. For simplicity, it concerns primarily real valued functions. That is, functions that output real numbers as opposed to vectors. However it does contain one vector valued function. The function \(\vX\) in the theorem takes as input an \(n\)-component vector and returns an \(m\)-component vector. We will not deal with many vector valued functions here in CLP-3, but we will see a lot in CLP-4.</p>
 <article class="theorem theorem-like" id="thm_LIMpptiesB"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Arithmetic, and Other, Properties of Limits.</span>
 </h6>
-<p id="p-1100">Let</p>
+<p id="p-1101">Let</p>
 <ul class="disc">
 <li id="li-599">\(m\) and \(n\) be natural numbers</li>
 <li id="li-600">\(\va\in \bbbr^m\) and \(\vb\in\bbbr^n\)</li>
@@ -432,28 +433,28 @@ f,g:D\setminus\{\va\}\rightarrow\bbbr\qquad
 <p data-braille="continuation">Then</p>
 <ol class="lower-alpha">
 <li id="li-603">
-<p id="p-1101">\(\lim\limits_{\vx\rightarrow \va}\big[f(\vx)+g(\vx)\big]
+<p id="p-1102">\(\lim\limits_{\vx\rightarrow \va}\big[f(\vx)+g(\vx)\big]
 =F+G\)</p>
-<p id="p-1102">\(\lim\limits_{\vx\rightarrow \va}\big[f(\vx)-g(\vx)\big]
+<p id="p-1103">\(\lim\limits_{\vx\rightarrow \va}\big[f(\vx)-g(\vx)\big]
 =F-G\)</p>
 </li>
 <li id="li-604">
-<p id="p-1103">\(\lim\limits_{\vx\rightarrow \va} f(\vx)\,g(\vx)
+<p id="p-1104">\(\lim\limits_{\vx\rightarrow \va} f(\vx)\,g(\vx)
 =FG\)</p>
-<p id="p-1104">\(\lim\limits_{\vx\rightarrow \va} cf(\vx)
+<p id="p-1105">\(\lim\limits_{\vx\rightarrow \va} cf(\vx)
 =cF\)</p>
 </li>
-<li id="li-605"><p id="p-1105">\(\lim\limits_{\vx\rightarrow \va} \frac{f(\vx)}{g(\vx)}
+<li id="li-605"><p id="p-1106">\(\lim\limits_{\vx\rightarrow \va} \frac{f(\vx)}{g(\vx)}
 =\frac{F}{G} \)  if \(G\ne 0\)</p></li>
-<li id="li-606"><p id="p-1106">\(\displaystyle \lim\limits_{\vy\rightarrow \vb} f\big(\vX(\vy)\big)
+<li id="li-606"><p id="p-1107">\(\displaystyle \lim\limits_{\vy\rightarrow \vb} f\big(\vX(\vy)\big)
 =F\)</p></li>
 <li id="li-607">\(\displaystyle \lim\limits_{\vx\rightarrow \va} \ga\big(f(\vx)\big)
 =\ga(F)\)</li>
-</ol></article><p id="p-1107">This shows that multivariable limits interact very nicely with arithmetic, just as single variable limits did. Also recall, from Theorem 1.6.8 in the CLP-1 text,</p>
+</ol></article><p id="p-1108">This shows that multivariable limits interact very nicely with arithmetic, just as single variable limits did. Also recall, from Theorem 1.6.8 in the CLP-1 text,</p>
 <article class="theorem theorem-like" id="thm_one_d_continuity"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
 </h6>
-<p id="p-1108">The following functions are continuous everywhere in their domains</p>
+<p id="p-1109">The following functions are continuous everywhere in their domains</p>
 <ul class="disc">
 <li id="li-608">polynomials, rational functions</li>
 <li id="li-609">roots and powers</li>
@@ -461,7 +462,7 @@ f,g:D\setminus\{\va\}\rightarrow\bbbr\qquad
 <li id="li-611">exponential and the logarithm</li>
 </ul></article><article class="example example-like" id="eg_LIMtwodA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_LIMtwodA"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_LIMtwodA"><article class="example example-like"><p id="p-1109">In this example we evaluate</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_LIMtwodA"><article class="example example-like"><p id="p-1110">In this example we evaluate</p>
 <div class="displaymath">
 \begin{equation*}
 \lim_{(x,y)\rightarrow (2,3)} \frac{x+\sin y}{x^2y^2+1}
@@ -497,19 +498,19 @@ f,g:D\setminus\{\va\}\rightarrow\bbbr\qquad
 \end{align*}
 </div>
 <p data-braille="continuation">Here we have used that \(\sin x\) is a continuous function.</p></article></div>
-<p id="p-1110">While the CLP-1 text's Definition 1.3.3 of the limit of a function of one variable, and our Definition <a class="xref" data-knowl="./knowl/def_limit.html" title="Definition 2.1.2: Limit">2.1.2</a> of the limit of a multivariable function look virtually identical, there is a substantial practical difference between the two. In dimension one, you can approach a point from the left or from the right and that's it. There are only two possible directions of approach. In two or more dimensions there is “much more room” and there are infinitely many possible types of approach.  One can even spiral in to a point. See the middle and right hand figures below.</p>
+<p id="p-1111">While the CLP-1 text's Definition 1.3.3 of the limit of a function of one variable, and our Definition <a class="xref" data-knowl="./knowl/def_limit.html" title="Definition 2.1.2: Limit">2.1.2</a> of the limit of a multivariable function look virtually identical, there is a substantial practical difference between the two. In dimension one, you can approach a point from the left or from the right and that's it. There are only two possible directions of approach. In two or more dimensions there is “much more room” and there are infinitely many possible types of approach.  One can even spiral in to a point. See the middle and right hand figures below.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel" style="width:33.3333333333333%;justify-content:flex-start;"><img src="figs/room1.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:33.3333333333333%;justify-content:flex-start;"><img src="figs/room2.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:33.3333333333333%;justify-content:flex-start;"><img src="figs/room3.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-1111">The next few examples illustrate the impact that the“extra room” in dimensions greater than one has on limits.</p>
+<p id="p-1112">The next few examples illustrate the impact that the“extra room” in dimensions greater than one has on limits.</p>
 <article class="example example-like" id="ex_LIMtwodB"><a data-knowl="" class="id-ref original" data-refid="hk-ex_LIMtwodB"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_LIMtwodB"><article class="example example-like"><p id="p-1112">As a second example, we consider \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2y}{x^2+y^2}\text{.}\) In this example, both the numerator, \(x^2y\text{,}\) and the denominator, \(x^2+y^2\text{,}\) tend to zero as \((x,y)\) approaches \((0,0)\text{,}\) so we have to be more careful.</p>
-<p id="p-1113">A good way to see the behaviour of a function \(f(x,y)\) when \((x,y)\) is close to \((0,0)\) is to switch to the polar coordinates, \(r,\theta\text{,}\) that are defined by</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_LIMtwodB"><article class="example example-like"><p id="p-1113">As a second example, we consider \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2y}{x^2+y^2}\text{.}\) In this example, both the numerator, \(x^2y\text{,}\) and the denominator, \(x^2+y^2\text{,}\) tend to zero as \((x,y)\) approaches \((0,0)\text{,}\) so we have to be more careful.</p>
+<p id="p-1114">A good way to see the behaviour of a function \(f(x,y)\) when \((x,y)\) is close to \((0,0)\) is to switch to the polar coordinates, \(r,\theta\text{,}\) that are defined by</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;">
-<div class="sbspanel" style="width:28.5714285714286%;justify-content:flex-start;"><div class="displaymath" id="p-1114">
+<div class="sbspanel" style="width:28.5714285714286%;justify-content:flex-start;"><div class="displaymath" id="p-1115">
 \begin{align*}
 x&amp;=r\cos\theta\\
 y&amp;=r\sin\theta
@@ -517,7 +518,7 @@ y&amp;=r\sin\theta
 </div></div>
 <div class="sbspanel" style="width:28.5714285714286%;justify-content:flex-start;"><img src="figs/polar.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-1115">The points \((x,y)\) that are close to \((0,0)\) are those with small \(r\text{,}\) regardless of what \(\theta\) is. Recall that \(\lim\limits_{{(x,y)\rightarrow (0,0)}} f(x,y)=L\) when \(f(x,y)\) approaches \(L\) as \((x,y)\) approaches \((0,0)\text{.}\) Substituting \(x=r\cos\theta\text{,}\) \(y=r\sin\theta\) into that statement turns it into the statement that \(\lim\limits_{{(x,y)\rightarrow (0,0)}} f(x,y)=L\) when \(f(r\cos\theta,r\sin\theta)\) approaches \(L\) as \(r\) approaches \(0\text{.}\) For our current example</p>
+<p id="p-1116">The points \((x,y)\) that are close to \((0,0)\) are those with small \(r\text{,}\) regardless of what \(\theta\) is. Recall that \(\lim\limits_{{(x,y)\rightarrow (0,0)}} f(x,y)=L\) when \(f(x,y)\) approaches \(L\) as \((x,y)\) approaches \((0,0)\text{.}\) Substituting \(x=r\cos\theta\text{,}\) \(y=r\sin\theta\) into that statement turns it into the statement that \(\lim\limits_{{(x,y)\rightarrow (0,0)}} f(x,y)=L\) when \(f(r\cos\theta,r\sin\theta)\) approaches \(L\) as \(r\) approaches \(0\text{.}\) For our current example</p>
 <div class="displaymath">
 \begin{gather*}
 \frac{x^2y}{x^2+y^2}
@@ -533,7 +534,7 @@ y&amp;=r\sin\theta
 </div></article></div>
 <article class="example example-like" id="ex_LIMtwodC"><a data-knowl="" class="id-ref original" data-refid="hk-ex_LIMtwodC"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_LIMtwodC"><article class="example example-like"><p id="p-1116">As a third example, we consider \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2-y^2}{x^2+y^2}\text{.}\) Once again, the best way to see the behaviour of \(f(x,y)=\frac{x^2-y^2}{x^2+y^2}\) for \((x,y)\) close to \((0,0)\) is to switch to polar coordinates.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_LIMtwodC"><article class="example example-like"><p id="p-1117">As a third example, we consider \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2-y^2}{x^2+y^2}\text{.}\) Once again, the best way to see the behaviour of \(f(x,y)=\frac{x^2-y^2}{x^2+y^2}\) for \((x,y)\) close to \((0,0)\) is to switch to polar coordinates.</p>
 <div class="displaymath">
 \begin{equation*}
 f(x,y)=\frac{x^2-y^2}{x^2+y^2}=\frac{(r\cos\theta)^2-(r\sin\theta)^2}{r^2}
@@ -543,7 +544,7 @@ f(x,y)=\frac{x^2-y^2}{x^2+y^2}=\frac{(r\cos\theta)^2-(r\sin\theta)^2}{r^2}
 </div>
 <p data-braille="continuation">Note that, this time, \(f\) is independent of \(r\) but does depend on \(\theta\text{.}\) Here is a greatly magnified sketch of a number of level curves for \(f(x,y)\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/polarD.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1117">Observe that</p>
+<p id="p-1118">Observe that</p>
 <ul class="disc">
 <li id="li-612">as \((x,y)\) approaches \((0,0)\) along the ray with \(2\theta =30^\circ\text{,}\) \(f(x,y)\) approaches the value \(\frac{\sqrt{3}}{2}\) (and in fact \(f(x,y)\) takes the value \(\cos(30^\circ)=\frac{\sqrt{3}}{2}\) at every point of that ray)</li>
 <li id="li-613">as \((x,y)\) approaches \((0,0)\) along the ray with \(2\theta =60^\circ\text{,}\) \(f(x,y)\) approaches the value \(\frac{1}{2}\) (and in fact \(f(x,y)\) takes the value \(\cos(60^\circ)=\frac{1}{2}\) at every point of that ray)</li>
@@ -551,7 +552,7 @@ f(x,y)=\frac{x^2-y^2}{x^2+y^2}=\frac{(r\cos\theta)^2-(r\sin\theta)^2}{r^2}
 <li id="li-615">and so on</li>
 </ul>
 <p data-braille="continuation">So there is not single number \(L\) such that \(f(x,y)\) approaches \(L\) as \(r=|(x,y)|\rightarrow 0\text{,}\) no matter what the direction of approach is. The limit \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2-y^2}{x^2+y^2}\) does not exist.</p>
-<p id="p-1118">Here is another way to come to the same conclusion.</p>
+<p id="p-1119">Here is another way to come to the same conclusion.</p>
 <ul class="disc">
 <li id="li-616">Pick any really small positive number. We'll use \(10^{-137}\) as an example.</li>
 <li id="li-617">Pick any real number \(F\) between \(-1\) and \(1\text{.}\) We'll use \(F=\frac{\sqrt{3}}{2}\) as an example.</li>
@@ -562,7 +563,7 @@ f(x,y)=\frac{x^2-y^2}{x^2+y^2}=\frac{(r\cos\theta)^2-(r\sin\theta)^2}{r^2}
 </h3>
 <article class="example example-like" id="eg_nasty_limit"><a data-knowl="" class="id-ref original" data-refid="hk-eg_nasty_limit"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_nasty_limit"><article class="example example-like"><p id="p-1119">In this example we study the behaviour of the function</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_nasty_limit"><article class="example example-like"><p id="p-1120">In this example we study the behaviour of the function</p>
 <div class="displaymath">
 \begin{equation*}
 f(x,y)=\begin{cases}
@@ -573,9 +574,9 @@ f(x,y)=\begin{cases}
 </div>
 <p data-braille="continuation">as \((x,y)\rightarrow (0,0)\text{.}\) Here is a graph of the level curve, \(f(x,y)=-3\text{,}\) for this function.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/noLimS.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1120">Here is a larger graph of level curves, \(f(x,y)=c\text{,}\) for various values of the constant \(c\text{.}\)</p>
+<p id="p-1121">Here is a larger graph of level curves, \(f(x,y)=c\text{,}\) for various values of the constant \(c\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/noLim.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1121">As before, it helps to convert to polar coordinates — it is a good approach<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-39" id="fn-39"><sup> 6 </sup></a>. In polar coordinates</p>
+<p id="p-1122">As before, it helps to convert to polar coordinates — it is a good approach<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-39" id="fn-39"><sup> 6 </sup></a>. In polar coordinates</p>
 <div class="displaymath">
 \begin{equation*}
 f(r\cos\theta,r\sin\theta)
@@ -590,12 +591,12 @@ r\frac{(2\cos\theta-\sin\theta)^2}{\cos\theta-\sin\theta} &amp;
 <p data-braille="continuation">If we approach the origin along any fixed ray \(\theta=\text{const}\text{,}\) then \(f(r\cos\theta,r\sin\theta)\) is the constant \(\frac{(2\cos\theta-\sin\theta)^2}{\cos\theta-\sin\theta}\) (or \(0\) if \(\cos\theta=\sin\theta\)) times \(r\) and so approaches zero as \(r\) approaches zero. You can see this in the figure below, which shows the level curves again, with the rays \(\theta=\frac{1}{8}\pi\) and \(\theta=\frac{3}{16}\pi\) superimposed.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-39"><div class="fn">Not just a pun.</div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/noLimA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1122">If you move towards the origin on either of those rays, you first cross the \(f=3\) level curve, then the \(f=2\) level curve, then the \(f=1\) level curve, then the \(f=\frac{1}{2}\) level curve, and so on.</p>
-<p id="p-1123">That \(f(x,y)\rightarrow 0\) as \((x,y)\rightarrow (0,0)\) along any fixed ray is suggestive, but <em class="emphasis">does not imply</em> that the limit exists and is zero. Recall that to have \(\lim_{(x,y)\rightarrow(0,0)}f(x,y)=0\text{,}\) we need \(f(x,y)\rightarrow 0\) no matter how \((x,y)\rightarrow (0,0)\text{.}\) It is not sufficient to check only straight line approaches.</p>
-<p id="p-1124">In fact, the limit of \(f(x,y)\) as \((x,y)\rightarrow (0,0)\) does not exist. A good way to see this is to observe that if you fix any \(r \gt 0\text{,}\) no matter how small, \(f(x,y)\) takes all values from \(-\infty\) to \(+\infty\) on the circle \(x^2+y^2=r^2\text{.}\) You can see this in the figure below, which shows the level curves yet again, with a circle \(x^2+y^2=r^2\) superimposed. For every single \(-\infty  \lt  c  \lt \infty\text{,}\) the level curve \(f(x,y)=c\) crosses the circle.</p>
+<p id="p-1123">If you move towards the origin on either of those rays, you first cross the \(f=3\) level curve, then the \(f=2\) level curve, then the \(f=1\) level curve, then the \(f=\frac{1}{2}\) level curve, and so on.</p>
+<p id="p-1124">That \(f(x,y)\rightarrow 0\) as \((x,y)\rightarrow (0,0)\) along any fixed ray is suggestive, but <em class="emphasis">does not imply</em> that the limit exists and is zero. Recall that to have \(\lim_{(x,y)\rightarrow(0,0)}f(x,y)=0\text{,}\) we need \(f(x,y)\rightarrow 0\) no matter how \((x,y)\rightarrow (0,0)\text{.}\) It is not sufficient to check only straight line approaches.</p>
+<p id="p-1125">In fact, the limit of \(f(x,y)\) as \((x,y)\rightarrow (0,0)\) does not exist. A good way to see this is to observe that if you fix any \(r \gt 0\text{,}\) no matter how small, \(f(x,y)\) takes all values from \(-\infty\) to \(+\infty\) on the circle \(x^2+y^2=r^2\text{.}\) You can see this in the figure below, which shows the level curves yet again, with a circle \(x^2+y^2=r^2\) superimposed. For every single \(-\infty  \lt  c  \lt \infty\text{,}\) the level curve \(f(x,y)=c\) crosses the circle.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/noLimB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1125">Consequently there is no one number \(L\) such that \(f(x,y)\) is close to \(L\) whenever \((x,y)\) is sufficiently close to \((0,0)\text{.}\) The limit \(\lim_{(x,y)\rightarrow(0,0)} f(x,y)\) does not exist.</p>
-<p id="p-1126">Another way to see that  \(f(x,y)\) does not have any limit as \((x,y)\rightarrow (0,0)\) is to show that \(f(x,y)\) does not have  a limit as \((x,y)\) approaches \((0,0)\) along some specific curve. This can be done by picking a curve  that makes the denominator, \(x-y\text{,}\) tend to zero very quickly. One such curve is \(x-y=x^3\) or, equivalently, \(y=x-x^3\text{.}\)  Along this curve, for \(x\ne 0\text{,}\)</p>
+<p id="p-1126">Consequently there is no one number \(L\) such that \(f(x,y)\) is close to \(L\) whenever \((x,y)\) is sufficiently close to \((0,0)\text{.}\) The limit \(\lim_{(x,y)\rightarrow(0,0)} f(x,y)\) does not exist.</p>
+<p id="p-1127">Another way to see that  \(f(x,y)\) does not have any limit as \((x,y)\rightarrow (0,0)\) is to show that \(f(x,y)\) does not have  a limit as \((x,y)\) approaches \((0,0)\) along some specific curve. This can be done by picking a curve  that makes the denominator, \(x-y\text{,}\) tend to zero very quickly. One such curve is \(x-y=x^3\) or, equivalently, \(y=x-x^3\text{.}\)  Along this curve, for \(x\ne 0\text{,}\)</p>
 <div class="displaymath">
 \begin{align*}
 f(x,x-x^3)&amp;=\frac{{(2x-x+x^3)}^2}{x-x+x^3}
@@ -607,8 +608,8 @@ f(x,x-x^3)&amp;=\frac{{(2x-x+x^3)}^2}{x-x+x^3}
 \end{cases}
 \end{align*}
 </div>
-<p id="p-1127">The choice of the specific power \(x^3\) is not important. Any power \(x^p\) with \(p \gt 2\) will have the same effect.</p>
-<p id="p-1128">If we send \((x,y)\) to  \((0,0)\) along the curve  \(x-y=ax^2\) or, equivalently, \(y=x-ax^2\text{,}\) where \(a\) is a nonzero constant,</p>
+<p id="p-1128">The choice of the specific power \(x^3\) is not important. Any power \(x^p\) with \(p \gt 2\) will have the same effect.</p>
+<p id="p-1129">If we send \((x,y)\) to  \((0,0)\) along the curve  \(x-y=ax^2\) or, equivalently, \(y=x-ax^2\text{,}\) where \(a\) is a nonzero constant,</p>
 <div class="displaymath">
 \begin{align*}
 \lim_{x\rightarrow 0}f(x,x-ax^2)
@@ -622,26 +623,26 @@ f(x,x-x^3)&amp;=\frac{{(2x-x+x^3)}^2}{x-x+x^3}
 <span class="type">Exercises</span> <span class="codenumber">2.1.2</span> <span class="title">Exercises</span>
 </h3>
 <div class="exercisegroup" id="exercisegroup-21">
-<div class="introduction" id="introduction-27"><p id="p-1129"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="introduction" id="introduction-27"><p id="p-1130"><em class="alert">Exercises — Stage 1</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-138"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1130">Suppose \(f(x,y)\) is a function such that \(\lim\limits_{(x,y)\to(0,0)}f(x,y)=10\text{.}\)</p>
-<p id="p-1131">True or false: \(|f(0.1,0.1)-10| \lt |f(0.2,0.2)-10|\)</p></article><article class="exercise exercise-like" id="exercise-139"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1137">A millstone pounds wheat into flour. The wheat sits in a basin, and the millstone pounds up and down.</p>
-<p id="p-1138">Samples of wheat are taken from various places along the basin. Their diameters are measured and their position on the basin is recorded.</p>
-<p id="p-1139">Consider this claim: “As the particles get very close to the millstone, the diameters of the particles approach 50 \(\mu\)m.” In this context, describe the variables below from Definition <a class="xref" data-knowl="./knowl/def_limit.html" title="Definition 2.1.2: Limit">2.1.2</a>.</p>
-<ol id="p-1140" class="lower-alpha">
+<p id="p-1131">Suppose \(f(x,y)\) is a function such that \(\lim\limits_{(x,y)\to(0,0)}f(x,y)=10\text{.}\)</p>
+<p id="p-1132">True or false: \(|f(0.1,0.1)-10| \lt |f(0.2,0.2)-10|\)</p></article><article class="exercise exercise-like" id="exercise-139"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1138">A millstone pounds wheat into flour. The wheat sits in a basin, and the millstone pounds up and down.</p>
+<p id="p-1139">Samples of wheat are taken from various places along the basin. Their diameters are measured and their position on the basin is recorded.</p>
+<p id="p-1140">Consider this claim: “As the particles get very close to the millstone, the diameters of the particles approach 50 \(\mu\)m.” In this context, describe the variables below from Definition <a class="xref" data-knowl="./knowl/def_limit.html" title="Definition 2.1.2: Limit">2.1.2</a>.</p>
+<ol id="p-1141" class="lower-alpha">
 <li id="li-623">\(\displaystyle \mathbf x\)</li>
 <li id="li-624">\(\displaystyle \mathbf a\)</li>
 <li id="li-625">\(\displaystyle \mathbf L\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-140"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1146">Let \(f(x,y)=\dfrac{x^2}{x^2+y^2}\text{.}\)</p>
+<p id="p-1147">Let \(f(x,y)=\dfrac{x^2}{x^2+y^2}\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-629">Find a ray approaching the origin along which \(f(x,y)=1\text{.}\)</li>
 <li id="li-630">Find a ray approaching the origin along which \(f(x,y)=0\text{.}\)</li>
 <li id="li-631">What does the above work show about a limit of \(f(x,y)\text{?}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-141"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1153">Let \(f(x,y)=x^2-y^2\)</p>
+<p id="p-1154">Let \(f(x,y)=x^2-y^2\)</p>
 <ol class="lower-alpha">
 <li id="li-635">Express the function in terms of the polar coordinates \(r\) and \(\theta\text{,}\) and simplify.</li>
 <li id="li-636">Suppose \((x,y)\) is a distance of 1 from the origin. What are the largest and smallest values of \(f(x,y)\text{?}\)</li>
@@ -649,14 +650,14 @@ f(x,x-x^3)&amp;=\frac{{(2x-x+x^3)}^2}{x-x+x^3}
 <li id="li-638">Let \(\epsilon \gt 0\text{.}\) Find a positive value of \(r\) that guarantees \(|f(x,y)| \lt \epsilon\) whenever \((x,y)\) is at most \(r\) units from the origin.</li>
 <li id="li-639">What did you just show?</li>
 </ol></article><article class="exercise exercise-like" id="exercise-142"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1161">Suppose \(f(x,y)\) is a polynomial. Evaluate \(\lim\limits_{(x,y)\to(a,b)}f(x,y)\text{,}\) where \((a,b)\in\mathbb R^2\text{.}\)</p></article>
+<p id="p-1162">Suppose \(f(x,y)\) is a polynomial. Evaluate \(\lim\limits_{(x,y)\to(a,b)}f(x,y)\text{,}\) where \((a,b)\in\mathbb R^2\text{.}\)</p></article>
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-22">
-<div class="introduction" id="introduction-28"><p id="p-1165"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="introduction" id="introduction-28"><p id="p-1166"><em class="alert">Exercises — Stage 2</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-143"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-1166">Evaluate, if possible,</p>
+<p id="p-1167">Evaluate, if possible,</p>
 <ol class="lower-alpha">
 <li id="li-645">\(\displaystyle \ds\lim_{(x,y)\rightarrow(2,-1)}\ \big(xy+x^2\big)\)</li>
 <li id="li-646">\(\displaystyle \ds\lim_{(x,y)\rightarrow(0,0)}\ \frac{x}{x^2+y^2}\)</li>
@@ -668,13 +669,13 @@ f(x,x-x^3)&amp;=\frac{{(2x-x+x^3)}^2}{x-x+x^3}
 </ol></article><article class="exercise exercise-like" id="exercise-144"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<ol id="p-1180" class="lower-alpha">
+<ol id="p-1181" class="lower-alpha">
 <li id="li-655">Find the limit: \(\ds \lim_{(x,y)\to(0,0)}\frac{x^8+y^8}{x^4+y^4}\text{.}\)</li>
 <li id="li-656">Prove that the following limit does not exist: \(\ds \lim_{(x,y)\to(0,0)}\frac{xy^5}{x^8+y^{10}}\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-145"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1186">Evaluate each of the following limits or show that it does not exist.</p>
+<p id="p-1187">Evaluate each of the following limits or show that it does not exist.</p>
 <ol class="lower-alpha">
 <li id="li-657">\(\displaystyle \ds\lim_{(x,y)\rightarrow (0,0)}\frac{x^3-y^3}{x^2+y^2}\)</li>
 <li id="li-658">\(\displaystyle \ds\lim_{(x,y)\rightarrow (0,0)}\frac{x^2-y^4}{x^2+y^4}\)</li>
@@ -682,18 +683,18 @@ f(x,x-x^3)&amp;=\frac{{(2x-x+x^3)}^2}{x-x+x^3}
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-23">
-<div class="introduction" id="introduction-29"><p id="p-1194"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="introduction" id="introduction-29"><p id="p-1195"><em class="alert">Exercises — Stage 3</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-146"><h6 class="heading">
 <span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1195">Evaluate each of the following limits or show that it does not exist.</p>
+<p id="p-1196">Evaluate each of the following limits or show that it does not exist.</p>
 <ol class="lower-alpha">
 <li id="li-659">\(\displaystyle \ds\lim_{(x,y)\rightarrow (0,0)}\frac{2x^2 + x^2y - y^2x + 2y^2}{x^2 + y^2}\)</li>
 <li id="li-660">\(\displaystyle \ds\lim_{(x,y)\rightarrow(0,1)} \frac{x^2y^2 -2 x^2y + x^2}
 {(x^2 + y^2-2y+1)^2}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-147"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-1201">Define, for all \((x,y)\ne(0,0)\text{,}\) \(f(x,y)=\frac{x^2y}{x^4+y^2}\text{.}\)</p>
+<p id="p-1202">Define, for all \((x,y)\ne(0,0)\text{,}\) \(f(x,y)=\frac{x^2y}{x^4+y^2}\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-661">Let \(0\le \theta \lt 2\pi\text{.}\) Compute \(\ds\lim_{r\rightarrow 0^+}f(r\cos\theta,r\sin\theta)\text{.}\)</li>
 <li id="li-662">Compute \(\ds\lim_{x\rightarrow 0}f(x,x^2)\text{.}\)</li>
@@ -701,14 +702,14 @@ f(x,x-x^3)&amp;=\frac{{(2x-x+x^3)}^2}{x-x+x^3}
 </ol></article><article class="exercise exercise-like" id="exercise-148"><h6 class="heading">
 <span class="codenumber">11<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1209">Compute the following limits or explain why they do not exist.</p>
+<p id="p-1210">Compute the following limits or explain why they do not exist.</p>
 <ol class="lower-alpha">
 <li id="li-664">\(\displaystyle \ds\lim_{(x,y)\rightarrow(0,0)}\frac{xy}{x^2+y^2}\)</li>
 <li id="li-665">\(\displaystyle \ds\lim_{(x,y)\rightarrow(0,0)}\frac{\sin(xy)}{x^2+y^2}\)</li>
 <li id="li-666">\(\displaystyle \ds\lim_{(x,y)\rightarrow(-1,1)}\frac{x^2+2xy^2+y^4}{1+y^4}\)</li>
 <li id="li-667">\(\displaystyle \ds\lim_{(x,y)\rightarrow(0,0)}|y|^x\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-149"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
-<p id="p-1218">Evaluate each of the following limits or show that it does not exist.</p>
+<p id="p-1219">Evaluate each of the following limits or show that it does not exist.</p>
 <ol class="lower-alpha">
 <li id="li-670">\(\displaystyle \ds\lim_{(x,y)\rightarrow (0,0)}\begin{cases}
 \frac{x^2}{y-x} &amp;\text{if }y\ne x \\

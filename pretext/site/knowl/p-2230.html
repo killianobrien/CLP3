@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:25+01:00    *-->
+<!--*    on 2022-09-26T13:31:57+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,26 +13,14 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(e) If \(u(x,y) = \ln(x^2+y^2)\text{,}\) then</p>
+<p>(d) If \(u(x,y) = e^{7x}\,\cos(7y)\text{,}\) then</p>
 <div class="displaymath">
 \begin{alignat*}{2}
-u_x\amp= \frac{2x}{x^2+y^2} \qquad\amp 
-u_{xx}\amp= \frac{2}{x^2+y^2}- \frac{4x^2}{{(x^2+y^2)}^2}\\
-u_y\amp= \frac{2y}{x^2+y^2} \qquad\amp 
-u_{yy}\amp= \frac{2}{x^2+y^2}- \frac{4y^2}{{(x^2+y^2)}^2} 
+u_x\amp= 7\,e^{7x}\,\cos(7y) \qquad\amp u_{xx}\amp= 49\,e^{7x}\,\cos(7y) \\
+u_y\amp= -7\,e^{7x}\ \sin(7y) \qquad\amp u_{yy}\amp= -49\,e^{7x}\,\cos(7y) 
 \end{alignat*}
 </div>
-<p data-braille="continuation">So</p>
-<div class="displaymath">
-\begin{align*}
-u_{xx}(x,y)+u_{yy}(x,y)\amp=\frac{2}{x^2+y^2}- \frac{4x^2}{{(x^2+y^2)}^2}
-+\frac{2}{x^2+y^2}- \frac{4y^2}{{(x^2+y^2)}^2} \\
-\amp=\frac{4}{x^2+y^2} - 4\frac{x^2+y^2}{{(x^2+y^2)}^2} \\
-\amp=\frac{4}{x^2+y^2}-\frac{4}{x^2+y^2} \\
-\amp=0
-\end{align*}
-</div>
-<p data-braille="continuation">and \(\ln(x^2+y^2)\) <em class="emphasis">is</em> harmonic.</p>
+<p data-braille="continuation">So \(u_{xx}(x,y)+u_{yy}(x,y)=49\,e^{7x}\,\cos(7y)-49\,e^{7x}\,\cos(7y)=0\) and \(e^{7x}\,\cos(7y)\) <em class="emphasis">is</em> harmonic.</p>
 <span class="incontext"><a href="sec_pde.html#p-2230">in-context</a></span>
 </body>
 </html>

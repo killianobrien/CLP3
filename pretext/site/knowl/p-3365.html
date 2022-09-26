@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:23+01:00    *-->
+<!--*    on 2022-09-26T13:34:22+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>It is not at all unusual to want to find the average value of some function \(f(x,y)\) with \((x,y)\) running over some region \(\cR\text{,}\)  but to also want some \((x,y)\)'s to play a greater role in determining the average than other \((x,y)\)'s. One common way to do so is to create a “weight function” \(w(x,y) \gt 0\) with \(\frac{w(x_1,y_1)}{w(x_2,y_2)}\) giving the relative importance of \((x_1,y_1)\) and \((x_2,y_2)\text{.}\) That is, \((x_1,y_1)\) is \(\frac{w(x_1,y_1)}{w(x_2,y_2)}\) times as important as \((x_2,y_2)\text{.}\) This leads to the definition</p>
+<p>we see that</p>
+<div class="displaymath">
+\begin{equation*}
+\int_{-\pi/2}^0 \cos^2\theta\ \dee{\theta}
+=\int_{-\pi/2}^0 \sin^2\theta\ \dee{\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">Thus</p>
+<div class="displaymath">
+\begin{align*}
+\int_{-\pi/2}^0 \cos^2\theta\ \dee{\theta}
+&amp;=\int_{-\pi/2}^0 \sin^2\theta\ \dee{\theta}
+=\int_{-\pi/2}^0 \frac{1}{2}\big[\sin^2\theta+\cos^2\theta\big]\,\dee{\theta}
+=\frac{1}{2}\int_{-\pi/2}^0 \dee{\theta}\\
+&amp;=\frac{\pi}{4}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_int_2d_applications.html#p-3365">in-context</a></span>
 </body>
 </html>

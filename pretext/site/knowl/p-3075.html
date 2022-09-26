@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:51+01:00    *-->
+<!--*    on 2022-09-26T13:33:49+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,29 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider the volume above the \(xy\)-plane that is inside the circular cylinder \(x^2+y^2=2y\) and underneath the surface \(z=8+2xy\text{.}\)</p>
-<ol class="lower-alpha">
-<li>Express this volume as a double integral \(I\text{,}\) stating clearly the domain over which I is to be taken.</li>
-<li>Express in Cartesian coordinates, the double integral \(I\) as an iterated intergal in two different ways, indicating clearly the limits of integration in each case.</li>
-<li>How much is this volume?</li>
-</ol>
+<p>The inside integral, \(\int_{x^2}^4\cos\big(y^{3/2}\big)\ \dee{y}\text{,}\) in the given integral looks really nasty.  So let's try exchanging the order of integration. The given integral was formed by decomposing the domain of integration \(D\) into horizontal strips, like the blue strip in the figure above. To exchange the order of integration we instead decompose the domain of integration \(D\) into vertical strips, like the pink strip in the figure above. To do so, we observe that, on \(D\text{,}\)</p>
+<ul class="disc">
+<li>\(y\) runs from \(0\) to \(4\) and</li>
+<li>for each fixed \(y\) between \(0\) and \(4\text{,}\) \(x\) runs from \(-\sqrt{y}\) to \(\sqrt{y}\text{.}\)</li>
+</ul>
+<p data-braille="continuation">That is, we reexpress the domain of integration as</p>
+<div class="displaymath">
+\begin{equation*}
+D = \Set{(x,y)}{0\le y\le 4,\  -\sqrt{y}\le x\le \sqrt{y}}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the given integral as</p>
+<div class="displaymath">
+\begin{align*}
+\int_{-2}^2\int_{x^2}^4\cos\big(y^{3/2}\big)\ \dee{y}\,\dee{x}
+&amp;=\int_0^4\dee{y} \int_{-\sqrt{y}}^{\sqrt{y}}\dee{x}\ \cos\big(y^{3/2}\big)\cr
+&amp;=\int_0^4\dee{y} \ 2\sqrt{y}\cos\big(y^{3/2}\big)\cr
+&amp;=\frac{4}{3}\int_0^8\dee{t}\ \cos t\quad\hbox{where }
+t=y^{3/2},\ \dee{t}=\frac{3}{2}\sqrt{y}\ \dee{y}\cr
+&amp;=\frac{4}{3}\sin t\Big|_0^8
+=\frac{4}{3}\sin 8\approx 1.319
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_2d_integrals.html#p-3075">in-context</a></span>
 </body>
 </html>

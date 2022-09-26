@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:22+01:00    *-->
+<!--*    on 2022-09-26T13:31:54+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,43 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In this section we consider</p>
+<p>A function \(u(x,y)\) is said to be harmonic if it satisfies Laplace's equation</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{\partial^2 w}{\partial x^2}(x,t)
--\frac{1}{c^2}\frac{\partial^2 w}{\partial t^2}(x,t)=0
+u_{xx} + u_{yy}=0
 \end{equation*}
 </div>
-<p data-braille="continuation">This is an extremely important<a class="fn-knowl" data-knowl="./knowl/fn-72-hidden.html" title="Footnote 2.8.5"><sup> 5 </sup></a> partial differential equation called the “wave equation” (in one spatial dimension) that is used in modelling water waves, sound waves, seismic waves, light waves and so on. The reason that we are looking at it here is that we can use what we have just learned to see that its solutions are waves travelling with speed \(c\text{.}\)</p>
+<p data-braille="continuation">We will now find all harmonic polynomials (in the variables \(x\) and \(y\)) of degree at most two. Any polynomial of degree at most two is of the form</p>
+<div class="displaymath">
+\begin{equation*}
+u(x,y) = a +bx +cy + \al x^2 +\be xy +\ga y^2
+\end{equation*}
+</div>
+<p data-braille="continuation">for some constants \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(\al\text{,}\) \(\be\text{,}\) \(\ga\text{.}\) We will need \(u_{xx}\) and \(u_{yy}\text{,}\) so we compute them now.</p>
+<div class="displaymath">
+\begin{align*}
+u(x,y) \amp= a +bx +cy + \al x^2 +\be xy +\ga y^2 \\
+u_x(x,y) \amp= b + 2\al x +\be y  \\
+u_{xx}(x,y) \amp=  2\al  \\
+u_y(x,y) \amp= c + \be x +2\ga y  \\
+u_{yy}(x,y) \amp=  2\ga  
+\end{align*}
+</div>
+<p data-braille="continuation">The polynomial \(u(x,y)\) is harmonic if and only if</p>
+<div class="displaymath">
+\begin{align*}
+0\amp= u_{xx}(x,y) + u_{yy}(x,y)
+= 2\al+2\ga
+\end{align*}
+</div>
+<p data-braille="continuation">So the polynomial \(u(x,y)\) is harmonic if and only if \(\al+\ga=0\text{,}\) i.e. if and only if the polynomial is of the form</p>
+<div class="displaymath">
+\begin{equation*}
+u(x,y) = a +\overbrace{bx+cy}^{\rm degree\ 1}
++\overbrace{\al(x^2-y^2)\ +\ \be xy}^{\rm degree\ 2}
+\end{equation*}
+</div>
+<p data-braille="continuation">with \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) \(\al\text{,}\) and \(\be\) all constants. Notice that since both terms in the equation involve a second derivative, we would not expect there to be any conditions on the constant and linear terms. There aren't. Beware that, while we have found all harmonic degree-two polynomials, there are many other <em class="emphasis">harmonic functions</em>, like, for example \(e^x\cos y\text{.}\)</p>
 <span class="incontext"><a href="sec_pde.html#p-2197">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:26+01:00    *-->
+<!--*    on 2022-09-26T13:30:41+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,42 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Assume that \(f(x,y)\) satisfies Laplace's equation \(\frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2}=0\text{.}\) Show that this is also the case for the composite function \(g(s,t) = f (s - t, s + t)\text{.}\) That is, show that \(\frac{\partial^2 g}{\partial s^2}+\frac{\partial^2 g}{\partial t^2}=0\text{.}\) You may assume that \(f(x,y)\) is a smooth function so that the Chain Rule and Clairaut's Theorem on the equality of the mixed partial derivatives apply.</p>
+<p>The given function is</p>
+<div class="displaymath">
+\begin{equation*}
+g(s,t)=f(2s+3t,3s-2t)
+\end{equation*}
+</div>
+<p data-braille="continuation">The first order derivatives are</p>
+<div class="displaymath">
+\begin{align*}
+g_s(s,t)&amp;=2f_1(2s+3t,3s-2t)+3f_2(2s+3t,3s-2t)\\
+g_t(s,t)&amp;=3f_1(2s+3t,3s-2t)-2f_2(2s+3t,3s-2t)
+\end{align*}
+</div>
+<p data-braille="continuation">The second order derivatives are</p>
+<div class="displaymath">
+\begin{align*}
+g_{ss}(s,t)
+&amp;=\pdiff{}{s}\Big(2f_1(2s+3t,3s-2t)+3f_2(2s+3t,3s-2t)\Big)\\
+&amp;=2\Big(2f_{11}+3f_{12}\Big)
++3\Big(2f_{21}+3f_{22}\Big)\\
+&amp;=4f_{11}+6f_{12}+6f_{21}+9f_{22}\\
+&amp;=4f_{11}(2s+3t,3s-2t)+12f_{12}(2s+3t,3s-2t)\\
+&amp;\hskip1in+9f_{22}(2s+3t,3s-2t)\\
+g_{st}(s,t)&amp;=\pdiff{}{t}\Big(2f_1(2s+3t,3s-2t)+3f_2(2s+3t,3s-2t)\Big)\\
+&amp;=2\Big(3f_{11}-2f_{12}\Big)
++3\Big(3f_{21}-2f_{22}\Big)\\
+&amp;=6f_{11}(2s+3t,3s-2t)+5f_{12}(2s+3t,3s-2t)\\
+&amp;\hskip1in-6f_{22}(2s+3t,3s-2t)\\
+g_{tt}(s,t)&amp;=\pdiff{}{t}\Big(3f_1(2s+3t,3s-2t)-2f_2(2s+3t,3s-2t)\Big)\\
+&amp;=3\Big(3f_{11}-2f_{12}\Big)
+-2\Big(3f_{21}-2f_{22}\Big)\\
+&amp;=9f_{11}(2s+3t,3s-2t)-12f_{12}(2s+3t,3s-2t)\\
+&amp;\hskip1in+4f_{22}(2s+3t,3s-2t)
+\end{align*}
+</div>
+<p data-braille="continuation">Here \(f_1\) denotes the partial derivative of \(f\) with respect to its first argument, \(f_{12}\) is the result of first taking one partial derivative of \(f\) with respect to its first argument and then taking a partial derivative with respect to its second argument, and so on.</p>
 <span class="incontext"><a href="sec_chain_rule.html#p-1481">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:00+01:00    *-->
+<!--*    on 2022-09-26T13:35:02+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,25 +13,18 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) On \(E\)</p>
+<p>(a) On \(E\)</p>
 <ul class="disc">
-<li>\(z\) runs from \(0\) to \(3\text{.}\)</li>
-<li>For each fixed \(z\) in that range, \((x,y)\) runs over<div class="displaymath">
-\begin{align*}
-&amp;\Set{(x,y)}{0\le y\le 2,\ x^2\le z\le 3-y}\\
-&amp;\hskip1in=\Set{(x,y)}{0\le y\le 2,\ y\le 3-z,\ x^2\le z}
-\end{align*}
-</div>In particular, \(y\) runs from \(0\) to the minimum of \(2\) and \(3-z\text{.}\)</li>
-<li>So if \(0\le z\le 1\) (so that \(3-z\ge 2\)), \((x,y)\) runs over \(\Set{(x,y)}{0\le y\le 2,\ x^2\le z}\text{,}\) while</li>
-<li>if \(1\le z\le 3\text{,}\) (so that \(3-z\le 2\)), \((x,y)\) runs over \(\Set{(x,y)}{0\le y\le 3-z,\ x^2\le z}\text{,}\)</li>
+<li>\(y\) runs from \(0\) to \(2\text{.}\)</li>
+<li>For each fixed \(y\) in that range, \((x,z)\) runs over \(\Set{(x,z)}{x^2\le z\le 3-y}\text{.}\)</li>
+<li>In particular, the largest \(x^2\) is \(3-y\) (when \(z=3-y\)). So \(x\) runs from \(-\sqrt{3-y}\) to \(\sqrt{3-y}\text{.}\)</li>
+<li>For fixed \(y\) and \(x\) as above, \(z\) runs from \(x^2\) to \(3-y\text{.}\)</li>
 </ul>
 <p data-braille="continuation">so that</p>
 <div class="displaymath">
 \begin{gather*}
-I= \int_0^1 \int_0^2 \int_{-\sqrt{z}}^{\sqrt{z}} f(x,y,z)\
-\dee{x}\,\dee{y}\,\dee{z}
-+\int_1^3 \int_0^{3-z} \int_{-\sqrt{z}}^{\sqrt{z}} f(x,y,z)\
-\dee{x}\,\dee{y}\,\dee{z}
+I=\tripInt_E f(x,y,z)\ \dee{V}
+= \int_0^2 \int_{-\sqrt{3-y}}^{\sqrt{3-y}} \int_{x^2}^{3-y} f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y}
 \end{gather*}
 </div>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3679">in-context</a></span>

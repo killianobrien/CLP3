@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:41:09+01:00    *-->
+<!--*    on 2022-09-26T13:26:45+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -244,6 +244,7 @@ MathJax.Hub.Config({
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
 <li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3">CLP3 at Manchester Met</a></li>
 </ul>
 </li>
 <li class="link">
@@ -306,8 +307,8 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_higher_order"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Higher Order Derivatives</span>
 </h2>
-<section class="introduction" id="introduction-34"><p id="p-1338">You have already observed, in your first Calculus course, that if \(f(x)\) is a function of \(x\text{,}\) then its derivative, \(\diff{f}{x}(x)\text{,}\) is also a function of \(x\text{,}\) and can be differentiated to give the second order derivative \(\difftwo{f}{x}(x)\text{,}\) which can in turn be differentiated yet again to give the third order derivative, \(f^{(3)}(x)\text{,}\) and so on.</p>
-<p id="p-1339">We can do the same for functions of more than one variable. If \(f(x,y)\) is a function of \(x\) and \(y\text{,}\) then both of its partial derivatives, \(\pdiff{f}{x}(x,y)\) and \(\pdiff{f}{y}(x,y)\) are also functions of \(x\) and \(y\text{.}\) They can both be differentiated with respect to \(x\) and they can both be differentiated with respect to \(y\text{.}\) So there are four possible second order derivatives. Here they are, together with various alternate notations.</p>
+<section class="introduction" id="introduction-34"><p id="p-1339">You have already observed, in your first Calculus course, that if \(f(x)\) is a function of \(x\text{,}\) then its derivative, \(\diff{f}{x}(x)\text{,}\) is also a function of \(x\text{,}\) and can be differentiated to give the second order derivative \(\difftwo{f}{x}(x)\text{,}\) which can in turn be differentiated yet again to give the third order derivative, \(f^{(3)}(x)\text{,}\) and so on.</p>
+<p id="p-1340">We can do the same for functions of more than one variable. If \(f(x,y)\) is a function of \(x\) and \(y\text{,}\) then both of its partial derivatives, \(\pdiff{f}{x}(x,y)\) and \(\pdiff{f}{y}(x,y)\) are also functions of \(x\) and \(y\text{.}\) They can both be differentiated with respect to \(x\) and they can both be differentiated with respect to \(y\text{.}\) So there are four possible second order derivatives. Here they are, together with various alternate notations.</p>
 <div class="displaymath">
 \begin{alignat*}{2}
 \pdiff{}{x}\left(\pdiff{f}{x}\right)(x,y)
@@ -322,10 +323,10 @@ MathJax.Hub.Config({
 </div>
 <p data-braille="continuation">In \(\frac{\partial^2\ f}{\partial y\,\partial x}
 =\frac{\partial^2}{\partial y\,\partial x}f\text{,}\) the derivative closest to \(f\text{,}\) in this case \(\pdiff{}{x}\text{,}\) is applied first.</p>
-<p id="p-1340">In \(f_{xy}\text{,}\) the derivative with respect to the variable closest to \(f\text{,}\) in this case \(x\text{,}\) is applied first.</p>
+<p id="p-1341">In \(f_{xy}\text{,}\) the derivative with respect to the variable closest to \(f\text{,}\) in this case \(x\text{,}\) is applied first.</p>
 <article class="example example-like" id="eg_higher_order_A"><a data-knowl="" class="id-ref original" data-refid="hk-eg_higher_order_A"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_A"><article class="example example-like"><p id="p-1341">Let \(f(x,y) = e^{my}\cos(nx)\text{.}\) Then</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_A"><article class="example example-like"><p id="p-1342">Let \(f(x,y) = e^{my}\cos(nx)\text{.}\) Then</p>
 <div class="displaymath">
 \begin{align*}
 f_x &amp;=  -n e^{my}\sin(nx) &amp;
@@ -338,7 +339,7 @@ f_{yy} &amp;=   m^2 e^{my}\cos(nx)
 </div></article></div>
 <article class="example example-like" id="eg_higher_order_B"><a data-knowl="" class="id-ref original" data-refid="hk-eg_higher_order_B"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_B"><article class="example example-like"><p id="p-1342">Let \(f(x,y) = e^{\al x+\be y}\text{.}\) Then</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_B"><article class="example example-like"><p id="p-1343">Let \(f(x,y) = e^{\al x+\be y}\text{.}\) Then</p>
 <div class="displaymath">
 \begin{align*}
 f_x &amp;=  \al e^{\al x+\be y} &amp;
@@ -358,7 +359,7 @@ f_{yy} &amp;=  \be^2 e^{\al x+\be y}
 </div></article></div>
 <article class="example example-like" id="eg_higher_order_C"><a data-knowl="" class="id-ref original" data-refid="hk-eg_higher_order_C"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_C"><article class="example example-like"><p id="p-1343">If \(f(x_1,x_2,x_3,x_4) = x_1^4\, x_2^3\, x_3^2\, x_4\text{,}\) then</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_higher_order_C"><article class="example example-like"><p id="p-1344">If \(f(x_1,x_2,x_3,x_4) = x_1^4\, x_2^3\, x_3^2\, x_4\text{,}\) then</p>
 <div class="displaymath">
 \begin{align*}
 \frac{\partial^4\  f}
@@ -390,7 +391,7 @@ f_{yy} &amp;=  \be^2 e^{\al x+\be y}
 &amp;=   24\ x_1^3\, x_2^2\, x_3
 \end{align*}
 </div></article></div>
-<p id="p-1344">Notice that in Example <a class="xref" data-knowl="./knowl/eg_higher_order_A.html" title="Example 2.3.1">2.3.1</a>,</p>
+<p id="p-1345">Notice that in Example <a class="xref" data-knowl="./knowl/eg_higher_order_A.html" title="Example 2.3.1">2.3.1</a>,</p>
 <div class="displaymath">
 \begin{equation*}
 f_{xy}= f_{yx} = -m n e^{my}\sin(nx)
@@ -417,7 +418,7 @@ f_{xy}= f_{yx} = \al \be  e^{\al x+\be y}
 <article class="theorem theorem-like" id="thm_mixed_partials"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Clairaut's Theorem or Schwarz's Theorem.</span>
 </h6>
-<p id="p-1345">If the partial derivatives \(\frac{\partial^2  f }{\partial x\partial y}\) and \(\frac{\partial^2 f}{\partial y\partial x}\) exist and are continuous at \((x_0,y_0)\text{,}\) then</p>
+<p id="p-1346">If the partial derivatives \(\frac{\partial^2  f }{\partial x\partial y}\) and \(\frac{\partial^2 f}{\partial y\partial x}\) exist and are continuous at \((x_0,y_0)\text{,}\) then</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{\partial^2 f}{\partial x\partial y}(x_0,y_0)
@@ -429,7 +430,7 @@ f_{xy}= f_{yx} = \al \be  e^{\al x+\be y}
 <section class="subsubsection" id="subsubsection-1"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">2.3.1.1</span> <span class="title">Outline</span>
 </h4>
-<p id="p-1346">Here is an outline of the proof of Theorem <a class="xref" data-knowl="./knowl/thm_mixed_partials.html" title="Theorem 2.3.4: Clairaut's Theorem or Schwarz's Theorem">2.3.4</a>. The (numbered) details are in the subsection below. Fix real numbers \(x_0\) and \(y_0\) and define</p>
+<p id="p-1347">Here is an outline of the proof of Theorem <a class="xref" data-knowl="./knowl/thm_mixed_partials.html" title="Theorem 2.3.4: Clairaut's Theorem or Schwarz's Theorem">2.3.4</a>. The (numbered) details are in the subsection below. Fix real numbers \(x_0\) and \(y_0\) and define</p>
 <div class="displaymath">
 \begin{equation*}
 F(h,k)
@@ -448,7 +449,7 @@ F(h,k)
 \end{align*}
 </div>
 <p data-braille="continuation">Note that the two right hand sides here are identical except for the order in which the limits are taken.</p>
-<p id="p-1347">Now, by the mean value theorem (four times),</p>
+<p id="p-1348">Now, by the mean value theorem (four times),</p>
 <div class="displaymath">
 \begin{align*}
 F(h,k)\ &amp;\eqf{(2)}\ \frac{1}{h}
@@ -485,7 +486,7 @@ F(h,k)\ &amp;\eqf{(4)}\ \frac{1}{k}
 <p data-braille="continuation">as desired. To complete the proof we just have to justify the details (1), (2), (3), (4) and (5).</p></section><section class="subsubsection" id="subsubsection-2"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">2.3.1.2</span> <span class="title">The Details</span>
 </h4>
-<ol id="p-1348" class="decimal">
+<ol id="p-1349" class="decimal">
 <li id="li-708">By definition,<div class="displaymath">
 \begin{align*}
 &amp;\pdiff{}{y}
@@ -517,7 +518,7 @@ F(h,k)\ &amp;\eqf{(4)}\ \frac{1}{k}
 </div>
 </li>
 <li id="li-709">
-<p id="p-1349">The mean value theorem (Theorem 2.13.4 in the CLP-1 text) says that, for any differentiable function \(\varphi(x)\text{,}\)</p>
+<p id="p-1350">The mean value theorem (Theorem 2.13.4 in the CLP-1 text) says that, for any differentiable function \(\varphi(x)\text{,}\)</p>
 <ul class="disc"><li id="li-710">the slope of the line joining the points \(\big(x_0,\varphi(x_0)\big)\) and \(\big(x_0+k,\varphi(x_0+k)\big)\) on the graph of \(\varphi\)</li></ul>
 <p data-braille="continuation">is the same as</p>
 <ul class="disc"><li id="li-711">the slope of the tangent to the graph at some point between \(x_0\) and \(x_0+k\text{.}\)</li></ul>
@@ -528,7 +529,7 @@ F(h,k)\ &amp;\eqf{(4)}\ \frac{1}{k}
 \end{equation*}
 </div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/mvt.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1350">Applying this with \(x\) replaced by \(y\) and \(\varphi\) replaced by \(G(y)=f(x_0+h,y)-f(x_0,y)\) gives</p>
+<p id="p-1351">Applying this with \(x\) replaced by \(y\) and \(\varphi\) replaced by \(G(y)=f(x_0+h,y)-f(x_0,y)\) gives</p>
 <div class="displaymath">
 \begin{align*}
 \frac{G(y_0+k)-G(y_0)}{k}
@@ -585,10 +586,10 @@ F(h,k)\ &amp;=\ \frac{1}{k}\left[B(y_0+k)-B(y_0)\right]\\
 <span class="type">Subsection</span> <span class="codenumber">2.3.2</span> <span class="title">Optional — An Example of \(\frac{\partial^2\ f}{\partial x\partial y}(x_0,y_0)
 \ne\frac{\partial^2\ f}{\partial y\partial x}(x_0,y_0)\)</span>
 </h3>
-<p id="p-1351">In Theorem <a class="xref" data-knowl="./knowl/thm_mixed_partials.html" title="Theorem 2.3.4: Clairaut's Theorem or Schwarz's Theorem">2.3.4</a>, we showed that \(\frac{\partial^2 f }{\partial x\partial y}(x_0,y_0)
+<p id="p-1352">In Theorem <a class="xref" data-knowl="./knowl/thm_mixed_partials.html" title="Theorem 2.3.4: Clairaut's Theorem or Schwarz's Theorem">2.3.4</a>, we showed that \(\frac{\partial^2 f }{\partial x\partial y}(x_0,y_0)
 =\frac{\partial^2 f }{\partial y\partial x}(x_0,y_0)\) <em class="alert">if</em> the partial derivatives \(\frac{\partial^2 f }{\partial x\partial y}\) and \(\frac{\partial^2 f }{\partial y\partial x}\) exist and are continuous at \((x_0,y_0)\text{.}\) Here is an example which shows that if the partial derivatives \(\frac{\partial^2 f }{\partial x\partial y}\) and \(\frac{\partial^2 f }{\partial y\partial x}\) are not continuous at \((x_0,y_0)\text{,}\) then it is possible that \(\frac{\partial^2 f }{\partial x\partial y}(x_0,y_0)
 \ne\frac{\partial^2 f }{\partial y\partial x}(x_0,y_0)\text{.}\)</p>
-<p id="p-1352">Define</p>
+<p id="p-1353">Define</p>
 <div class="displaymath">
 \begin{equation*}
 f(x,y)=\begin{cases}
@@ -656,10 +657,10 @@ x\frac{x^2-y^2}{x^2+y^2}  - \frac{4x^3y^2}{{(x^2+y^2)}^2}
 <span class="type">Exercises</span> <span class="codenumber">2.3.3</span> <span class="title">Exercises</span>
 </h3>
 <div class="exercisegroup" id="exercisegroup-27">
-<div class="introduction" id="introduction-35"><p id="p-1353"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="introduction" id="introduction-35"><p id="p-1354"><em class="alert">Exercises — Stage 1</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-162"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1354">Let all of the third order partial derivatives of the function \(f(x,y,z)\) exist and be continuous. Show that</p>
+<p id="p-1355">Let all of the third order partial derivatives of the function \(f(x,y,z)\) exist and be continuous. Show that</p>
 <div class="displaymath">
 \begin{align*}
 f_{xyz}(x,y,z)
@@ -670,21 +671,21 @@ f_{xyz}(x,y,z)
 =f_{zyx}(x,y,z)
 \end{align*}
 </div></article><article class="exercise exercise-like" id="exercise-163"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1358">Find, if possible, a function \(f(x,y)\) for which \(f_x(x,y)=e^y\) and \(f_y(x,y)=e^x\text{.}\)</p></article>
+<p id="p-1359">Find, if possible, a function \(f(x,y)\) for which \(f_x(x,y)=e^y\) and \(f_y(x,y)=e^x\text{.}\)</p></article>
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-28">
-<div class="introduction" id="introduction-36"><p id="p-1362"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="introduction" id="introduction-36"><p id="p-1363"><em class="alert">Exercises — Stage 2</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-164"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1363">Find the specified partial derivatives.</p>
+<p id="p-1364">Find the specified partial derivatives.</p>
 <ol class="lower-alpha">
 <li id="li-720">\(f(x,y) = x^2y^3\text{;}\) \(f_{xx}(x,y)\text{,}\) \(f_{xyy}(x,y)\text{,}\) \(f_{yxy}(x,y)\)</li>
 <li id="li-721">\(f(x,y) = e^{xy^2}\text{;}\) \(f_{xx}(x,y)\text{,}\) \(f_{xy}(x,y)\text{,}\) \(f_{xxy}(x,y)\text{,}\) \(f_{xyy}(x,y)\)</li>
 <li id="li-722">\(\displaystyle f(u,v,w) = \frac{1}{u+2v+3w}\ \text{,}\) \(\displaystyle \frac{\partial^3 f}{\partial u\partial v\partial w}(u,v,w)\ \text{,}\) \(\displaystyle \frac{\partial^3 f}{\partial u\partial v\partial w}(3,2,1)\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-165"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1375">Find all second partial derivatives of \(f(x,y)=\sqrt{x^2+5y^2}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-166"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1380">Find the specified partial derivatives.</p>
+<p id="p-1376">Find all second partial derivatives of \(f(x,y)=\sqrt{x^2+5y^2}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-166"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1381">Find the specified partial derivatives.</p>
 <ol class="lower-alpha">
 <li id="li-723">\(f(x,y,z) = \arctan\big(e^{\sqrt{xy}}\big)\text{;}\) \(f_{xyz}(x,y,z)\)</li>
 <li id="li-724">\(f(x,y,z) = \arctan\big(e^{\sqrt{xy}}\big)
@@ -694,7 +695,7 @@ f_{xyz}(x,y,z)
 </ol></article><article class="exercise exercise-like" id="exercise-167"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1390">Let \(f(r,\theta)=r^m\cos m\theta\) be a function of \(r\) and \(\theta\text{,}\) where \(m\) is a positive integer.</p>
+<p id="p-1391">Let \(f(r,\theta)=r^m\cos m\theta\) be a function of \(r\) and \(\theta\text{,}\) where \(m\) is a positive integer.</p>
 <ol class="lower-alpha">
 <li id="li-729">Find the second order partial derivatives \(f_{rr}\text{,}\) \(f_{r\theta}\text{,}\) \(f_{\theta\theta}\) and evaluate their respective values at \((r,\theta)=(1,0)\text{.}\)</li>
 <li id="li-730">Determine the value of the real number \(\la\) so that \(f(r,\theta)\) satisfies the differential equation<div class="displaymath">
@@ -707,9 +708,9 @@ f_{rr}+\frac{\la}{r}f_r+\frac{1}{r^2}f_{\theta\theta}=0
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-29">
-<div class="introduction" id="introduction-37"><p id="p-1395"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="introduction" id="introduction-37"><p id="p-1396"><em class="alert">Exercises — Stage 3</em></p></div>
 <div class="exercisegroup-exercises"><article class="exercise exercise-like" id="exercise-168"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-1396">Let \(\al \gt 0\) be a constant. Show that \(\displaystyle u(x,y,z,t) =\frac{1}{t^{3/2}}
+<p id="p-1397">Let \(\al \gt 0\) be a constant. Show that \(\displaystyle u(x,y,z,t) =\frac{1}{t^{3/2}}
 e^{-(x^2+y^2+z^2)/(4\al t)}\) satisfies the heat equation</p>
 <div class="displaymath">
 \begin{equation*}

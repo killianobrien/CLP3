@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:53+01:00    *-->
+<!--*    on 2022-09-26T13:32:29+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,18 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Find all the critical points of the function</p>
-<div class="displaymath">
-\begin{equation*}
-f(x,y)=x^3+xy^2-x
-\end{equation*}
-</div>
-<p data-braille="continuation">defined in the \(xy\)-plane. Classify each critical point as a local minimum, maximum or saddle point. Explain your reasoning.</p>
+<p>The coldest point must be either on the boundary of the plate or in the interior of the plate.</p>
+<ul class="disc">
+<li>On the semi--circular part of the boundary \(0\le y\le 2\) and \(x^2+y^2=4\) so that \(T=\ln\big(1+x^2+y^2\big)-y=\ln 5-y\text{.}\) The smallest value of \(\ln 5-y\) is taken when \(y\) is as large as possible, i.e. when \(y=2\text{,}\) and is \(\ln 5 -2\approx -0.391\text{.}\)</li>
+<li>On the flat part of the boundary, \(y=0\) and \(-2\le x\le 2\) so that \(T=\ln\big(1+x^2+y^2\big)-y=\ln\big(1+x^2\big)\text{.}\) The smallest value of \(\ln\big(1+x^2\big)\) is taken when \(x\) is as small as possible, i.e. when \(x=0\text{,}\) and is \(0\text{.}\)</li>
+<li>If the coldest point is in the interior of the plate, it must be at a critical point of \(T(x,y)\text{.}\) Since<div class="displaymath">
+\begin{gather*}
+T_x(x,y)=\frac{2x}{1+x^2+y^2}\qquad
+T_y(x,y)=\frac{2y}{1+x^2+y^2}-1
+\end{gather*}
+</div>a critical point must have \(x=0\) and \(\frac{2y}{1+x^2+y^2}-1=0\text{,}\) which is the case if and only if \(x=0\) and \(2y-1-y^2=0\text{.}\) So the only critical point is \(x=0,\ y=1\text{,}\) where \(T=\ln 2-1\approx -0.307\text{.}\)</li>
+</ul>
+<p data-braille="continuation">Since \(-0.391 \lt -0.307 \lt 0\text{,}\) the coldest temperture is \(-0.391\) and the coldest point is \((0,2)\text{.}\)</p>
 <span class="incontext"><a href="sec_max.html#p-2528">in-context</a></span>
 </body>
 </html>

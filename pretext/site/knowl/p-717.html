@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:34+01:00    *-->
+<!--*    on 2022-09-26T13:29:34+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,21 +13,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>It is also quite common that one can use either \(x\) or \(y\) to parametrize part of, but not all of, a curve. A simple example is the circle \(x^2+y^2=a^2\text{.}\) For each \(-a\lt x\lt a\text{,}\) there are two points on the circle with that value of \(x\text{.}\) So one cannot use \(x\) to parametrize the whole circle. Similarly, for each \(-a\lt y\lt a\text{,}\) there are two points on the circle with that value of \(y\text{.}\) So one cannot use \(y\) to parametrize the whole circle. On the other hand</p>
+<p>A very easy method that can often create parametrizations for a curve is to use \(x\) or \(y\) as a parameter. Because we can solve \(e^y=1+x^2\) for \(y\) as a function of \(x\text{,}\) namely \(y=\ln\big(1+x^2\big)\text{,}\) we can use \(x\) as the parameter simply by setting \(t=x\text{.}\) This gives the parametrization</p>
 <div class="displaymath">
-\begin{alignat*}{2}
-\vr(t) &amp;= \big(t\,,\,\sqrt{a^2-t^2}\big)\qquad &amp;-a\lt t\lt a \\
-\vr(t) &amp;= \big(t\,,\,-\sqrt{a^2-t^2}\big)\qquad &amp;-a\lt t\lt a
-\end{alignat*}
+\begin{equation*}
+\vr(t) = \big(t\,,\,\ln(1+t^2)\big)\qquad -\infty\lt t\lt \infty
+\end{equation*}
 </div>
-<p data-braille="continuation">provide parametrizations of the top half and bottom half, respectively, of the circle using \(x\) as the parameter, and</p>
-<div class="displaymath">
-\begin{alignat*}{2}
-\vr(t) &amp;= \big(\sqrt{a^2-t^2}\,,\,t\big)\qquad &amp;-a\lt t\lt a \\
-\vr(t) &amp;= \big(-\sqrt{a^2-t^2}\,,\,t\big)\qquad &amp;-a\lt t\lt a
-\end{alignat*}
-</div>
-<p data-braille="continuation">provide parametrizations of the right half and left half, respectively, of the circle using \(y\) as the parameter.</p>
 <span class="incontext"><a href="sec_curves.html#p-717">in-context</a></span>
 </body>
 </html>

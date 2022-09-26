@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:32+01:00    *-->
+<!--*    on 2022-09-26T13:34:32+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,15 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(a) As \(D\) is a disk of radius \(1\text{,}\) it has area \(\pi\text{.}\) As \(H\) is a disk of radius \(\frac{1}{2}\text{,}\) it has area \(\frac{\pi}{4}\text{.}\) As \(\cC\) has density \(1\text{,}\)</p>
+<p>Note that \(x^2+y^2=x\) is equivalent to \(\left(x-\frac{1}{2}\right)^2+y^2=\frac{1}{4}\text{,}\) which is the circle of radius \(\frac{1}{2}\) centred on \(\left(\frac{1}{2},0\right)\text{.}\) Let's call the crescent \(\cC\) and write</p>
 <div class="displaymath">
 \begin{align*}
-\text{Mass}(\cC) &amp;= \dblInt_\cC \dee{A}
-= \dblInt_D\dee{A} -\dblInt_H\dee{A}\\
-&amp;=\pi - \frac{\pi}{4}\\
-&amp;=\frac{3\pi}{4}
+D &amp;= \Set{(x,y)}{x^2+y^2\le 1}\\
+H &amp;= \Set{(x,y)}{\left(x-\tfrac{1}{2}\right)^2+y^2\le\tfrac{1}{4}}
 \end{align*}
 </div>
+<p data-braille="continuation">so that</p>
+<div class="displaymath">
+\begin{equation*}
+\cC= D\setminus H
+\end{equation*}
+</div>
+<p data-braille="continuation">meaning that \(\cC\) is the disk \(D\) with the “hole” \(H\) removed. Here is a sketch.</p>
 <span class="incontext"><a href="sec_int_2d_applications.html#p-3443">in-context</a></span>
 </body>
 </html>

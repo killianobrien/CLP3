@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:08+01:00    *-->
+<!--*    on 2022-09-26T13:30:17+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>If, instead, we are passing through the point \((x,y)=(a,b)\) and are walking parallel to the \(y\)-axis (in the positive direction), then our \(x\)-coordinate will be constant, always taking the value \(x=a\text{.}\) So we can think of the measured temperature as the function of one variable \(A(y) = f(a,y)\) and we will observe the rate of change of temperature</p>
+<p>Suppose that we are passing through the point \((x,y)=(a,b)\) and that we are walking parallel to the \(x\)-axis (in the positive direction). Then our \(y\)-coordinate will be constant, always taking the value \(y=b\text{.}\) So we can think of the measured temperature as the function of one variable \(B(x) = f(x,b)\) and we will observe the rate of change of temperature</p>
 <div class="displaymath">
 \begin{equation*}
-\diff{A}{y}(b) = \lim_{h\rightarrow 0}\frac{A(b+h) - A(b)}{h}
-= \lim_{h\rightarrow 0}\frac{f(a,b+h) - f(a,b)}{h}
+\diff{B}{x}(a) = \lim_{h\rightarrow 0}\frac{B(a+h) - B(a)}{h}
+= \lim_{h\rightarrow 0}\frac{f(a+h,b) - f(a,b)}{h}
 \end{equation*}
 </div>
-<p data-braille="continuation">This is called the “partial derivative \(f\) with respect to \(y\) at \((a,b)\)” and is denoted \(\pdiff{f}{y}(a,b)\text{.}\)</p>
+<p data-braille="continuation">This is called the “partial derivative \(f\) with respect to \(x\) at \((a,b)\)” and is denoted \(\pdiff{f}{x}(a,b)\text{.}\) Here</p>
+<ul class="disc">
+<li>the symbol \(\partial\text{,}\) which is read “partial”, indicates that we are dealing with a function of more than one variable, and</li>
+<li>the \(x\) in \({\pdiff{f}{x}}\) indicates that we are differentiating with respect to \(x\text{,}\) while \(y\) is being held fixed, i.e. being treated as a constant.</li>
+<li>\({\pdiff{f}{x}}\) is read “partial dee \(f\) dee \(x\)”.</li>
+</ul>
+<p data-braille="continuation">Do not write \(\diff{}{x}\) when \(\pdiff{}{x}\) is appropriate. We shall later encounter situations when \(\diff{}{x}f\) and \(\pdiff{}{x}f\) are both defined and have different meanings.</p>
 <span class="incontext"><a href="sec_partials.html#p-1226">in-context</a></span>
 </body>
 </html>

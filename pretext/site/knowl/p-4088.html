@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:50+01:00    *-->
+<!--*    on 2022-09-26T13:36:01+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,16 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The determinant</p>
+<p>Let the functions \(x(u,v)\) and \(y(u,v)\) have continuous first partial derivatives and let the function \(f(x,y)\) be continuous. Assume that \(x=x(u,v)\text{,}\) \(y=y(u,v)\) provides a one-to-one correspondence between the points \((u,v)\) of the region \(\cU\) in the \(uv\)-plane and the points \((x,y)\) of the region \(\cR\) in the \(xy\)-plane. Then</p>
 <div class="displaymath">
-\begin{align*}
-\det\left[\begin{matrix}
-\pdiff{x}{u}(u,v)&amp;\pdiff{y}{u}(u,v) \\
+\begin{equation*}
+\dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}
+= \dblInt_{\cU} f\big(x(u,v)\,,\,y(u,v)\big)
+\left|\det\left[\begin{matrix}
+\pdiff{x}{u}(u,v)&amp;\pdiff{y}{u}(u,v)\\
 \pdiff{x}{v}(u,v)&amp;\pdiff{y}{v}(u,v)
-\end{matrix}\right]
-\end{align*}
+\end{matrix}\right]\right| \dee{u}\,\dee{v}
+\end{equation*}
 </div>
-<p data-braille="continuation">that appears in (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>) and Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a> is known as the Jacobian<a class="fn-knowl" data-knowl="./knowl/fn-153-hidden.html" title="Footnote 3.8.4"><sup> 4 </sup></a>.</p>
 <span class="incontext"><a href="sec_Jacobian.html#p-4088">in-context</a></span>
 </body>
 </html>

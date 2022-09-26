@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:31+01:00    *-->
+<!--*    on 2022-09-26T13:32:04+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,31 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Alternatively, we could have also used the second equation to write \(y=3x-2\text{,}\) and then substituted that into the first equation to get</p>
+<p>As in the last example, we need to find where the gradient is zero, and to find the gradient we need the first order partial derivatives.</p>
 <div class="displaymath">
 \begin{equation*}
-6x^2-6(3x-2) =0
-\iff x^2-3x+2=0
+f_x=6x^2-6y   \qquad
+f_y=-6x+2y+4
 \end{equation*}
 </div>
-<p data-braille="continuation">just as above.</p>
+<p data-braille="continuation">So the critical points are the solutions of</p>
+<div class="displaymath">
+\begin{equation*}
+6x^2-6y=0   \qquad
+-6x+2y+4 = 0
+\end{equation*}
+</div>
+<p data-braille="continuation">We can rewrite the first equation as \(y=x^2\text{,}\) which expresses \(y\) as a function of \(x\text{.}\) We can then substitute \(y=x^2\) into the second equation, giving</p>
+<div class="displaymath">
+\begin{align*}
+-6x+2y+4 = 0
+&amp;\iff -6x+2x^2+4 = 0
+\iff x^2-3x+2=0\\
+&amp;\iff (x-1)(x-2)=0\\
+&amp;\iff x=1\text{ or }2
+\end{align*}
+</div>
+<p data-braille="continuation">When \(x=1\text{,}\) \(y=1^2=1\) and when \(x=2\text{,}\) \(y=2^2=4\text{.}\) So, there are two critical points: \((1,1),\ (2,4)\text{.}\)</p>
 <span class="incontext"><a href="sec_max.html#p-2297">in-context</a></span>
 </body>
 </html>

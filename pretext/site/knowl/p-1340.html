@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:15+01:00    *-->
+<!--*    on 2022-09-26T13:30:28+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In \(f_{xy}\text{,}\) the derivative with respect to the variable closest to \(f\text{,}\) in this case \(x\text{,}\) is applied first.</p>
+<p>We can do the same for functions of more than one variable. If \(f(x,y)\) is a function of \(x\) and \(y\text{,}\) then both of its partial derivatives, \(\pdiff{f}{x}(x,y)\) and \(\pdiff{f}{y}(x,y)\) are also functions of \(x\) and \(y\text{.}\) They can both be differentiated with respect to \(x\) and they can both be differentiated with respect to \(y\text{.}\) So there are four possible second order derivatives. Here they are, together with various alternate notations.</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+\pdiff{}{x}\left(\pdiff{f}{x}\right)(x,y)
+&amp;=\frac{\partial^2 f}{\partial x^2}(x,y) &amp;= f_{xx}(x,y)\\
+\pdiff{}{y}\left(\pdiff{f}{x}\right)(x,y)
+&amp;=\frac{\partial^2\ f}{\partial y\partial x}(x,y) &amp;= f_{xy}(x,y)\\
+\pdiff{}{x}\left(\pdiff{f}{y}\right)(x,y)
+&amp;=\frac{\partial^2\ f}{\partial x\partial y}(x,y) &amp;= f_{yx}(x,y)\\
+\pdiff{}{y}\left(\pdiff{f}{y}\right)(x,y)
+&amp;=\frac{\partial^2 f}{\partial y^2}(x,y) &amp;= f_{yy}(x,y)
+\end{alignat*}
+</div>
+<p data-braille="continuation">In \(\frac{\partial^2\ f}{\partial y\,\partial x}
+=\frac{\partial^2}{\partial y\,\partial x}f\text{,}\) the derivative closest to \(f\text{,}\) in this case \(\pdiff{}{x}\text{,}\) is applied first.</p>
 <span class="incontext"><a href="sec_higher_order.html#p-1340">in-context</a></span>
 </body>
 </html>

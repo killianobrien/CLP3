@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:45+01:00    *-->
+<!--*    on 2022-09-26T13:34:45+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,8 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><em class="emphasis">The iterated integral \(\tripInt_\cV f(x, y, z)\ \dee{y}\,\dee{x} \,\dee{z}
-=\int\left(\int\left(\int f(x, y, z)\ \dee{y}\right)\dee{x} \right)\dee{z}\text{:}\)</em> For this iterated integral, the outside integral is with respect to \(z\text{,}\) so we first slice up \(\cV\) using planes of constant \(z\text{,}\) as in the figure below.</p>
+<p>Observe from that figure that, on \(\cV\text{,}\)</p>
+<ul class="disc">
+<li>\(x\) runs from \(0\) to \(2\text{,}\) and</li>
+<li>for each fixed \(x\) in that range, \(y\) runs from \(0\) to \(4-x\) and</li>
+<li>for each fixed \((x,y)\) as above, \(z\) runs from \(0\) to \(4-x^2\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\tripInt_\cV f(x, y, z)\ \dee{z}\,\dee{y} \,\dee{x}
+&amp;=\int_0^2 \dee{x} \int_0^{4-x} \dee{y}\int_0^{4-x^2}\dee{z}\  f(x, y, z)\\
+&amp;=\int_0^2  \int_0^{4-x} \int_0^{4-x^2}f(x, y, z)\ \dee{z}\,\dee{y}\,\dee{x}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3542">in-context</a></span>
 </body>
 </html>

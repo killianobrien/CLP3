@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:48+01:00    *-->
+<!--*    on 2022-09-26T13:31:12+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,61 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The percentage error in the measured value \(P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)\) is</p>
+<p>Suppose that three variables are measured with percentage error \(\veps_1,\ \veps_2\) and \(\veps_3\) respectively. In other words, if the exact value of  variable number \(i\) is \(x_i\) and measured value of variable  number \(i\) is \(x_i+\De x_i\) then</p>
 <div class="displaymath">
 \begin{equation*}
-100\ \left|\frac{P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)-P(x_1,x_2,x_3)}
-{P(x_1,x_2,x_3)}\right|
+100\ \left|\frac{\De x_i}{x_i}\right|=\veps_i
 \end{equation*}
 </div>
-<p data-braille="continuation">We can get a much simpler approximate expression for this percentage error, which is good enough for virtually all applications, by applying</p>
+<p data-braille="continuation">Suppose further that a quantity \(P\) is then computed by taking the product of the three variables. So the exact value of \(P\) is</p>
 <div class="displaymath">
-\begin{align*}
-P(x_1+\De &amp;x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)\\
-&amp;\approx P(x_1,x_2,x_3) +P_{x_1}(x_1,x_2,x_3)\,\De x_1
-+P_{x_2}(x_1,x_2,x_3)\,\De x_2\\
-&amp;\hskip1in+P_{x_3}(x_1,x_2,x_3)\,\De x_3
-\end{align*}
+\begin{equation*}
+P(x_1,x_2,x_3)=x_1x_2x_3
+\end{equation*}
 </div>
-<p data-braille="continuation">The three partial derivatives are</p>
-<div class="displaymath">
-\begin{alignat*}{4}
-P_{x_1}(x_1,x_2,x_3)&amp;=\pdiff{}{x_1}\big[x_1x_2x_3\big]
-&amp;=x_2x_3\cr
-P_{x_2}(x_1,x_2,x_3)&amp;=\pdiff{}{x_2}\big[x_1x_2x_3\big]
-&amp;=x_1x_3\cr
-P_{x_3}(x_1,x_2,x_3)&amp;=\pdiff{}{x_3}\big[x_1x_2x_3\big]
-&amp;=x_1x_2
-\end{alignat*}
-</div>
-<p data-braille="continuation">So</p>
-<div class="displaymath">
-\begin{align*}
-&amp;P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)\\
-&amp;\hskip1in\approx P(x_1,x_2,x_3) +x_2x_3\,\De x_1+x_1x_3\,\De x_2+x_1x_2\,\De x_3
-\end{align*}
-</div>
-<p data-braille="continuation">and the (approximate) percentage error in \(P\) is</p>
-<div class="displaymath">
-\begin{align*}
-&amp;100\ \left|
-\frac{P(x_1+\De x_1,x_2+\De x_2,x_3+\De x_3)-P(x_1,x_2,x_3)}{P(x_1,x_2,x_3)}
-\right|\\
-&amp;\hskip0.5in
-\approx
-100\ \left|
-\frac{x_2x_3\De x_1+x_1x_3\De x_2+x_1x_2\De x_3}{P(x_1,x_2,x_3)}
-\right|\\
-&amp;\hskip0.5in
-=100\  \left|\frac{x_2x_3\De x_1+x_1x_3\De x_2+x_1x_2\De x_3}{x_1x_2x_3}\right|\\
-&amp;\hskip0.5in=\left|100\frac{\De x_1}{x_1}+100\frac{\De x_2}{x_2}
-+100\frac{\De x_3}{x_3}\right|\\
-&amp;\hskip0.5in\le \veps_1+\veps_2+\veps_3
-\end{align*}
-</div>
-<p data-braille="continuation">More generally, if we take a product of \(n\text{,}\) rather than three,  variables the percentage error in the product becomes at most (approximately) \(\
-\smsum\limits_{i=1}^n\veps_i.
-\ \) This is the basis of the experimentalist's rule of thumb that when you take products, percentage errors add.</p>
+<p data-braille="continuation">and the measured value is \(P(x_1+\De x_1\,,\,x_2+\De x_2\,,\,x_3+\De x_3)\text{.}\) What is the percentage error in this measured value of \(P\text{?}\)</p>
 <span class="incontext"><a href="sec_lin_approx.html#p-1772">in-context</a></span>
 </body>
 </html>

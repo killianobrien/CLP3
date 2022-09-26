@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:48:01+01:00    *-->
+<!--*    on 2022-09-26T13:35:03+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,28 +13,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In setting up the domain of integration, we'll decompose, for each \(0\le z\le   1\text{,}\) \(T_z\) into vertical strips as in the figure above. On \(T_z\)</p>
+<p>On \(D\)</p>
 <ul class="disc">
-<li>\(x\) runs from \(1-z\) to \(1\) and</li>
-<li>for each fixed \(x\) between \(1-z\) and \(1\text{,}\) \(y\) runs from \(2-x-z\) to \(1\)</li>
+<li>\(z\) runs from \(0\) to \(1\) and</li>
+<li>for each fixed \(z\text{,}\) between 0 and 1, \((x,y)\) runs over the triangle \(T_z\) bounded by \(x=1\text{,}\) \(y=1\) and \(x+y=2-z\text{.}\) Observe that when \(z=0\text{,}\) this triangle is just a point (the bottom vertex of the tetrahedron). As \(z\) increases, the triangle grows, reaching its maximum size when \(z=1\text{.}\)</li>
 </ul>
-<p data-braille="continuation">so that</p>
-<div class="displaymath">
-\begin{align*}
-\tripInt_D x\,\dee{V}
-&amp;=\int_0^1\dee{z}\dblInt_{T_z}\dee{x}\,\dee{y}\ x
-=\int_0^1 \dee{z}\int_{1-z}^1 \dee{x}\int_{2-x-z}^1 \dee{y}\ x\\
-&amp;=\int_0^1 \dee{z}\int_{1-z}^1 \dee{x}\ x(x+z-1)\\
-&amp;=\int_0^1 \dee{z}\ \left[\frac{1}{3}x^3+\frac{1}{2} x^2(z-1)\right]_{1-z}^1\\
-&amp;=\int_0^1 \dee{z}\ \left[\frac{1}{3}+\frac{1}{2} (z-1)-\frac{1}{3}(1-z)^3
--\frac{1}{2}(1-z)^2(z-1)\right]\\
-&amp;=\int_0^1 \dee{z}\ \left[\frac{1}{3}+\frac{1}{2} (z-1)
--\frac{1}{6}(z-1)^3\right]\\
-&amp;=\left[\frac{1}{3}z+\frac{1}{4} (z-1)^2-\frac{1}{24}(z-1)^4\right]_0^1
-=\frac{1}{3}-\frac{1}{4}+\frac{1}{24}=\frac{3}{24}\\
-&amp;=\frac{1}{8}=0.125
-\end{align*}
-</div>
+<p data-braille="continuation">Here is a sketch of \(T_z\text{.}\)</p>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3692">in-context</a></span>
 </body>
 </html>

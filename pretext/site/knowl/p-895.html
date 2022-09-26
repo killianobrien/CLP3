@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:46+01:00    *-->
+<!--*    on 2022-09-26T13:29:50+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,26 +13,26 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(d) By the product and chain rules,</p>
+<p>(c) Denote by \(\vR(t)\) the position of the particle at time \(t\text{.}\) Then</p>
 <div class="displaymath">
 \begin{equation*}
-\vR'(t)=\vr'\big(x(t)\big)\diff{x}{t}\implies
-\vR''(t)=\vr''\big(x(t)\big){\Big(\diff{x}{t}\Big)}^2
-+\vr'\big(x(t)\big)\difftwo{x}{t}
+\vR(t)=\vr\big(x(t)\big)\implies
+\vR'(t)=\vr'\big(x(t)\big)\diff{x}{t}
 \end{equation*}
 </div>
-<p data-braille="continuation">Applying \(\diff{}{t}\) to \(6=\big(1+2x(t)^2\big)\diff{x}{t}(t)\) gives</p>
+<p data-braille="continuation">By parts (a) and (b) and the chain rule</p>
 <div class="displaymath">
 \begin{equation*}
-0=4x{\Big(\diff{x}{t}\Big)}^2+(1+2x^2)\difftwo{x}{t}
+6=\diff{s}{t}=\diff{s}{x}\diff{x}{t}=(1+2x^2)\diff{x}{t}
+\implies \diff{x}{t}=\frac{6}{1+2x^2}
 \end{equation*}
 </div>
-<p data-braille="continuation">In particular, when \(x=1\) and \(\diff{x}{t}=2\text{,}\) \(0=4\times 1\big(2\big)^2+(3)\difftwo{x}{t}\) gives \(\difftwo{x}{t}=-\frac{16}{3}\) and</p>
+<p data-braille="continuation">In particular, the particle is at \(\big(1,1,\frac{2}{3}\big)\) at \(x=1\text{.}\) At this time \(\diff{x}{t}=\frac{6}{1+2\times 1}=2\) and</p>
 <div class="displaymath">
 \begin{equation*}
-\vR''=\big(2\,\hj+4\,\hk\big)\big(2\big)^2
--\big(\hi+2\,\hj+2\,\hk\big)\frac{16}{3}
-= -\frac{8}{3}\big(2\hi+\,\hj-2\,\hk\big)
+\vR'=\vr'\big(1\big)\diff{x}{t}
+=\big(\hi+2\,\hj+2\,\hk\big)2
+=2\hi+4\,\hj+4\,\hk
 \end{equation*}
 </div>
 <span class="incontext"><a href="sec_curves.html#p-895">in-context</a></span>

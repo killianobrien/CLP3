@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:42:33+01:00    *-->
+<!--*    on 2022-09-26T13:28:21+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -244,6 +244,7 @@ MathJax.Hub.Config({
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
 <li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3">CLP3 at Manchester Met</a></li>
 </ul>
 </li>
 <li class="link">
@@ -306,16 +307,16 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_Jacobian"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.8</span> <span class="title">Optional— Integrals in General Coordinates</span>
 </h2>
-<section class="introduction" id="introduction-89"><p id="p-4074">One of the most important tools used in dealing with single variable integrals is the change of variable (substitution) rule</p>
+<section class="introduction" id="introduction-89"><p id="p-4075">One of the most important tools used in dealing with single variable integrals is the change of variable (substitution) rule</p>
 <article class="fact theorem-like" id="eq_1d_substitution"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.8.1</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-4075">
+<div class="displaymath" id="p-4076">
 \begin{equation*}
 x=f(u)\qquad
 \dee{x} = f'(u)\,\dee{u}
 \end{equation*}
-</div></article><p id="p-4076">See Theorems 1.4.2 and 1.4.6 in the CLP-2 text. Expressing multivariable integrals using polar or cylindrical or spherical coordinates are really  multivariable substitutions. For example, switching to spherical coordinates amounts replacing the coordinates \(x,y,z\) with the coordinates \(\rho,\theta,\varphi\) by using the substitution</p>
+</div></article><p id="p-4077">See Theorems 1.4.2 and 1.4.6 in the CLP-2 text. Expressing multivariable integrals using polar or cylindrical or spherical coordinates are really  multivariable substitutions. For example, switching to spherical coordinates amounts replacing the coordinates \(x,y,z\) with the coordinates \(\rho,\theta,\varphi\) by using the substitution</p>
 <div class="displaymath">
 \begin{equation*}
 \vX =\vr(\rho,\theta,\varphi)\qquad
@@ -333,7 +334,7 @@ x=f(u)\qquad
 \end{equation*}
 </div>
 <p data-braille="continuation">We'll now derive a generalization of the substitution rule <a class="xref" data-knowl="./knowl/eq_1d_substitution.html" title="Equation 3.8.1">3.8.1</a> to two dimensions. It will include polar coordinates as a special case. Later, we'll state (without proof) its generalization to three dimensions. It will include cylindrical and spherical coordinates as special cases.</p>
-<p id="p-4077">Suppose that we wish to integrate over a region, \(\cR\text{,}\) in \(\bbbr^2\) and that we also wish<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-150" id="fn-150"><sup> 1 </sup></a> to use two new coordinates, that we'll call \(u\) and \(v\text{,}\) in place of \(x\) and \(y\text{.}\) The new coordinates \(u\text{,}\) \(v\) are related to the old coordinates \(x\text{,}\) \(y\text{,}\) by the functions<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-151" id="fn-151"><sup> 2 </sup></a></p>
+<p id="p-4078">Suppose that we wish to integrate over a region, \(\cR\text{,}\) in \(\bbbr^2\) and that we also wish<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-150" id="fn-150"><sup> 1 </sup></a> to use two new coordinates, that we'll call \(u\) and \(v\text{,}\) in place of \(x\) and \(y\text{.}\) The new coordinates \(u\text{,}\) \(v\) are related to the old coordinates \(x\text{,}\) \(y\text{,}\) by the functions<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-151" id="fn-151"><sup> 2 </sup></a></p>
 <div class="displaymath">
 \begin{align*}
 x&amp;=x(u,v)\\
@@ -349,16 +350,16 @@ y&amp;=y(u,v)
 <p data-braille="continuation">As an example, if the new coordinates are polar coordinates, with \(r\) renamed to \(u\) and \(\theta\) renamed to \(v\text{,}\) then \(x(u,v) = u\cos v\) and \(y=u\sin v\text{.}\)</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-150"><div class="fn">We'll keep our third wish in reserve.</div></div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-151"><div class="fn">We are abusing notation a little here by using \(x\) and \(y\) both as coordinates and as functions. We could write \(x=f(u,v)\) and \(y=g(u,v)\text{,}\) but it is easier to remember \(x=x(u,v)\) and \(y=y(u,v)\text{.}\)</div></div>
-<p id="p-4078">Note that if we hold \(v\) fixed and vary \(u\text{,}\) then \(\vr(u,v)\) sweeps out a curve. For example, if \(x(u,v) = u\cos v\) and \(y=u\sin v\text{,}\) then, if we hold \(v\) fixed and vary \(u\text{,}\) \(\vr(u,v)\) sweeps out a straight line (that makes the angle \(v\) with the \(x\)-axis), while, if we hold \(u \gt 0\) fixed and vary \(v\text{,}\) \(\vr(u,v)\) sweeps out a circle (of radius \(u\) centred on the origin).</p>
+<p id="p-4079">Note that if we hold \(v\) fixed and vary \(u\text{,}\) then \(\vr(u,v)\) sweeps out a curve. For example, if \(x(u,v) = u\cos v\) and \(y=u\sin v\text{,}\) then, if we hold \(v\) fixed and vary \(u\text{,}\) \(\vr(u,v)\) sweeps out a straight line (that makes the angle \(v\) with the \(x\)-axis), while, if we hold \(u \gt 0\) fixed and vary \(v\text{,}\) \(\vr(u,v)\) sweeps out a circle (of radius \(u\) centred on the origin).</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
 <div class="sbspanel" style="width:41.1764705882353%;justify-content:center;"><img src="figs/polarU.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:41.1764705882353%;justify-content:center;"><img src="figs/polarV.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-4079">We start by cutting \(\cR\) (the shaded region in the figure below) up into small pieces by drawing a bunch of curves of constant \(u\) (the blue curves in the figure below) and a bunch of curves of constant \(v\) (the red curves in the figure below).</p>
+<p id="p-4080">We start by cutting \(\cR\) (the shaded region in the figure below) up into small pieces by drawing a bunch of curves of constant \(u\) (the blue curves in the figure below) and a bunch of curves of constant \(v\) (the red curves in the figure below).</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/RSlice.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4080">Concentrate on any one of the small pieces. Here is a greatly magnified sketch.</p>
+<p id="p-4081">Concentrate on any one of the small pieces. Here is a greatly magnified sketch.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4081">For example, the  lower red curve was constructed by holding \(v\) fixed at the value \(v_0\text{,}\) varying \(u\) and sketching \(\vr(u,v_0)\text{,}\) and the  upper red curve was constructed by holding \(v\) fixed at the slightly larger value \(v_0+\dee{v}\text{,}\) varying \(u\) and sketching \(\vr(u,v_0+\dee{v})\text{.}\) So the four intersection points in the figure are</p>
+<p id="p-4082">For example, the  lower red curve was constructed by holding \(v\) fixed at the value \(v_0\text{,}\) varying \(u\) and sketching \(\vr(u,v_0)\text{,}\) and the  upper red curve was constructed by holding \(v\) fixed at the slightly larger value \(v_0+\dee{v}\text{,}\) varying \(u\) and sketching \(\vr(u,v_0+\dee{v})\text{.}\) So the four intersection points in the figure are</p>
 <div class="displaymath">
 \begin{alignat*}{2}
 P_2&amp;=\vr(u_0, v_0+\dee{v}) &amp;\qquad
@@ -394,7 +395,7 @@ P_3&amp;=\vr(u_0+\dee{u}, v_0+\dee{v})
 </div>
 <p data-braille="continuation">We have dropped all Taylor expansion terms that are of degree two or higher in \(\dee{u}\text{,}\) \(\dee{v}\text{.}\) The reason is that, in defining the integral, we take the limit \(\dee{u},\dee{v}\rightarrow 0\text{.}\) Because of that limit, all of the dropped terms contribute exactly \(0\) to the integral. We shall not prove this. But we shall show, in the optional §<a href="sec_Jacobian.html#sec_hoterms" class="internal" title="Subsection 3.8.1: Optional — Dropping Higher Order Terms in \(\dee{u},\dee{v}\)">3.8.1</a>, why this is the case.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-152"><div class="fn">Recall <a class="xref" data-knowl="./knowl/eqn_lin_approx_2d.html" title="Equation 2.6.1">2.6.1</a>.</div></div>
-<p id="p-4082">The small piece of \(\cR\) surface with corners \(P_0\text{,}\) \(P_1\text{,}\) \(P_2\text{,}\) \(P_3\) is approximately a parallelogram with sides</p>
+<p id="p-4083">The small piece of \(\cR\) surface with corners \(P_0\text{,}\) \(P_1\text{,}\) \(P_2\text{,}\) \(P_3\) is approximately a parallelogram with sides</p>
 <div class="displaymath">
 \begin{align*}
 \overrightarrow{P_0P_1}
@@ -411,7 +412,7 @@ P_3&amp;=\vr(u_0+\dee{u}, v_0+\dee{v})
 \end{align*}
 </div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:40%;margin-right:40%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dA2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4083">Here the notation, for example, \(\overrightarrow{P_0P_1}\) refers to the vector whose tail is at the point \(P_0\) and whose head is at the point \(P_1\text{.}\) Recall, from <a class="xref" data-knowl="./knowl/eq_pgram_area.html" title="Equation 1.2.17">1.2.17</a> that</p>
+<p id="p-4084">Here the notation, for example, \(\overrightarrow{P_0P_1}\) refers to the vector whose tail is at the point \(P_0\) and whose head is at the point \(P_1\text{.}\) Recall, from <a class="xref" data-knowl="./knowl/eq_pgram_area.html" title="Equation 1.2.17">1.2.17</a> that</p>
 <div class="displaymath">
 \begin{equation*}
 \text{area of parallelogram with sides $\llt a,b\rgt$ and $\llt c,d\rgt$} =
@@ -423,19 +424,19 @@ P_3&amp;=\vr(u_0+\dee{u}, v_0+\dee{v})
 <article class="fact theorem-like" id="eq_dA"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.8.2</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-4084">
+<div class="displaymath" id="p-4085">
 \begin{align*}
 \dee{A}
 = \left|\det\left[\begin{matrix}\pdiff{x}{u}&amp;\pdiff{y}{u}\\
 \pdiff{x}{v}&amp;\pdiff{y}{v}
 \end{matrix}\right]\right| \dee{u}\,\dee{v}
 \end{align*}
-</div></article><p id="p-4085">Recall that \(\det M\) denotes the determinant of the matrix \(M\text{.}\) Also recall that we don't really need determinants for this text, though it does make for nice compact notation.</p>
-<p id="p-4086">The formula (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>) is the heart of the following theorem, which tells us how to translate an integral in one coordinate system into an integral in another coordinate system.</p>
+</div></article><p id="p-4086">Recall that \(\det M\) denotes the determinant of the matrix \(M\text{.}\) Also recall that we don't really need determinants for this text, though it does make for nice compact notation.</p>
+<p id="p-4087">The formula (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>) is the heart of the following theorem, which tells us how to translate an integral in one coordinate system into an integral in another coordinate system.</p>
 <article class="theorem theorem-like" id="thm_2d_sub"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.8.3</span><span class="period">.</span>
 </h6>
-<p id="p-4087">Let the functions \(x(u,v)\) and \(y(u,v)\) have continuous first partial derivatives and let the function \(f(x,y)\) be continuous. Assume that \(x=x(u,v)\text{,}\) \(y=y(u,v)\) provides a one-to-one correspondence between the points \((u,v)\) of the region \(\cU\) in the \(uv\)-plane and the points \((x,y)\) of the region \(\cR\) in the \(xy\)-plane. Then</p>
+<p id="p-4088">Let the functions \(x(u,v)\) and \(y(u,v)\) have continuous first partial derivatives and let the function \(f(x,y)\) be continuous. Assume that \(x=x(u,v)\text{,}\) \(y=y(u,v)\) provides a one-to-one correspondence between the points \((u,v)\) of the region \(\cU\) in the \(uv\)-plane and the points \((x,y)\) of the region \(\cR\) in the \(xy\)-plane. Then</p>
 <div class="displaymath">
 \begin{equation*}
 \dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}
@@ -445,7 +446,7 @@ P_3&amp;=\vr(u_0+\dee{u}, v_0+\dee{v})
 \pdiff{x}{v}(u,v)&amp;\pdiff{y}{v}(u,v)
 \end{matrix}\right]\right| \dee{u}\,\dee{v}
 \end{equation*}
-</div></article><p id="p-4088">The determinant</p>
+</div></article><p id="p-4089">The determinant</p>
 <div class="displaymath">
 \begin{align*}
 \det\left[\begin{matrix}
@@ -458,7 +459,7 @@ P_3&amp;=\vr(u_0+\dee{u}, v_0+\dee{v})
 <div class="hidden-content tex2jax_ignore" id="hk-fn-153"><div class="fn">It is not named after the Jacobin Club, a political movement of the French revolution. It is not named after the Jacobite rebellions that took place in Great Britain and Ireland between 1688 and 1746. It is not named after the Jacobean era of English and Scottish history. It is named after the German mathematician Carl Gustav Jacob Jacobi (1804 – 1851). He died from smallpox.</div></div>
 <article class="example example-like" id="eg_exchange_dA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_exchange_dA"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.8.4</span><span class="period">.</span><span class="space"> </span><span class="title">\(\dee{A}\) for \(x\leftrightarrow y\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_exchange_dA"><article class="example example-like"><p id="p-4089">We'll start with a pretty trivial example in which we simply rename \(x\) to \(Y\) and \(y\) to \(X\text{.}\) That is</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_exchange_dA"><article class="example example-like"><p id="p-4090">We'll start with a pretty trivial example in which we simply rename \(x\) to \(Y\) and \(y\) to \(X\text{.}\) That is</p>
 <div class="displaymath">
 \begin{align*}
 x(X,Y) &amp;= Y\\
@@ -484,7 +485,7 @@ y(X,Y) &amp;= X
 <p data-braille="continuation">which should really not be a shock.</p></article></div>
 <article class="example example-like" id="eg_polar_dA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_polar_dA"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.8.5</span><span class="period">.</span><span class="space"> </span><span class="title">\(\dee{A}\) for Polar Coordinates.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_polar_dA"><article class="example example-like"><p id="p-4090">Polar coordinates have</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_polar_dA"><article class="example example-like"><p id="p-4091">Polar coordinates have</p>
 <div class="displaymath">
 \begin{align*}
 x(r,\theta) &amp;= r\cos\theta\\
@@ -511,7 +512,7 @@ y(r,\theta) &amp;= r\sin\theta
 <p data-braille="continuation">which is exactly what we found in <a class="xref" data-knowl="./knowl/eq_dA_polar.html" title="Equation 3.2.5">3.2.5</a>.</p></article></div>
 <article class="example example-like" id="eg_parabolic_dA"><a data-knowl="" class="id-ref original" data-refid="hk-eg_parabolic_dA"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.8.6</span><span class="period">.</span><span class="space"> </span><span class="title">\(\dee{A}\) for Parabolic Coordinates.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_parabolic_dA"><article class="example example-like"><p id="p-4091">Parabolic<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-154" id="fn-154"><sup> 5 </sup></a> coordinates are defined by</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_parabolic_dA"><article class="example example-like"><p id="p-4092">Parabolic<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-154" id="fn-154"><sup> 5 </sup></a> coordinates are defined by</p>
 <div class="displaymath">
 \begin{align*}
 x(u,v) &amp;= \frac{u^2-v^2}{2}\\
@@ -535,10 +536,10 @@ y(u,v) &amp;= uv
 \end{align*}
 </div>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-154"><div class="fn">The name comes from the fact that both the curves of constant \(u\) and the curves of constant \(v\) are parabolas.</div></div></article></div>
-<p id="p-4092">In practice applying the change of variables Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a> can be quite tricky. Here is just one simple (and rigged) example.</p>
+<p id="p-4093">In practice applying the change of variables Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a> can be quite tricky. Here is just one simple (and rigged) example.</p>
 <article class="example example-like" id="eg_2d_sub"><a data-knowl="" class="id-ref original" data-refid="hk-eg_2d_sub"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.8.7</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_2d_sub"><article class="example example-like"><p id="p-4093">Evaluate</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_2d_sub"><article class="example example-like"><p id="p-4094">Evaluate</p>
 <div class="displaymath">
 \begin{equation*}
 \dblInt_\cR\frac{y}{1+x}\ \dee{x}\,\dee{y}\qquad\text{where }
@@ -547,7 +548,7 @@ y(u,v) &amp;= uv
 </div>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-574" id="solution-574"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-574"><div class="solution solution-like">
-<p id="p-4094">We can simplify the integrand considerably by making the change of variables</p>
+<p id="p-4095">We can simplify the integrand considerably by making the change of variables</p>
 <div class="displaymath">
 \begin{align*}
 s&amp;=x                    &amp; x&amp;=s\\
@@ -559,7 +560,7 @@ t&amp;=\frac{y}{1+x}        &amp; y&amp;=t(1+x) = t(1+s)
 <li id="li-2319">[\(\circ\)] the domain of integration in terms of \(s\) and \(t\) and</li>
 <li id="li-2320">[\(\circ\)] \(\dee{x}\,\dee{y}\) in terms of \(\dee{s}\,\dee{t}\text{.}\)</li>
 </ul>
-<p id="p-4095">By (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>), recalling that \(x(s,t)=s\) and \(y(s,t)=t(1+s)\text{,}\)</p>
+<p id="p-4096">By (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>), recalling that \(x(s,t)=s\) and \(y(s,t)=t(1+s)\text{,}\)</p>
 <div class="displaymath">
 \begin{align*}
 \dee{x}\,\dee{y}
@@ -572,9 +573,9 @@ t&amp;=\frac{y}{1+x}        &amp; y&amp;=t(1+x) = t(1+s)
 = (1+s)\,\dee{s}\,\dee{t}
 \end{align*}
 </div>
-<p id="p-4096">To determine what the change of variables does to the domain of integration, we'll sketch \(\cR\) and then reexpress the boundary of \(\cR\) in terms of the new coordinates \(s\) and \(t\text{.}\) Here is the sketch of \(\cR\) in the original coordinates \((x,y)\text{.}\)</p>
+<p id="p-4097">To determine what the change of variables does to the domain of integration, we'll sketch \(\cR\) and then reexpress the boundary of \(\cR\) in terms of the new coordinates \(s\) and \(t\text{.}\) Here is the sketch of \(\cR\) in the original coordinates \((x,y)\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/genSub.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4097">The region \(\cR\) is a quadrilateral. It has four sides.</p>
+<p id="p-4098">The region \(\cR\) is a quadrilateral. It has four sides.</p>
 <ul class="disc">
 <li id="li-2321">The left side is part of the line \(x=0\text{.}\) Recall that \(x=s\text{.}\) So, in terms of \(s\) and \(t\text{,}\) this line is \(s=0\text{.}\)</li>
 <li id="li-2322">The right side is part of the line \(x=1\text{.}\) In terms of \(s\) and \(t\text{,}\) this line is \(s=1\text{.}\)</li>
@@ -583,7 +584,7 @@ t&amp;=\frac{y}{1+x}        &amp; y&amp;=t(1+x) = t(1+s)
 </ul>
 <p data-braille="continuation">Here is another copy of the sketch of \(\cR\text{.}\) But this time the equations of its four sides are expressed in terms of \(s\) and \(t\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/genSubB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4098">So, expressed in terms of \(s\) and \(t\text{,}\) the domain of integration \(\cR\) is much simpler:</p>
+<p id="p-4099">So, expressed in terms of \(s\) and \(t\text{,}\) the domain of integration \(\cR\) is much simpler:</p>
 <div class="displaymath">
 \begin{equation*}
 \Set{(s,t)}{0\le s\le 1,\ 1\le t\le 2}
@@ -602,9 +603,9 @@ t&amp;=\frac{y}{1+x}        &amp; y&amp;=t(1+x) = t(1+s)
 </div>
 </div></div>
 </div></article></div>
-<p id="p-4099">There are natural generalizations of (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>) and Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a> to three (and also to higher) dimensions, that are derived in precisely the same way as (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>) was derived. The derivation is based on the fact, discussed in the optional Section <a href="sec_vectors.html#sec_GEOparallelogram" class="internal" title="Subsection 1.2.4: (Optional) Areas of Parallelograms">1.2.4</a>, that the volume of the parallelepiped (three dimensional parallelogram)</p>
+<p id="p-4100">There are natural generalizations of (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>) and Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.8.3">3.8.3</a> to three (and also to higher) dimensions, that are derived in precisely the same way as (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>) was derived. The derivation is based on the fact, discussed in the optional Section <a href="sec_vectors.html#sec_GEOparallelogram" class="internal" title="Subsection 1.2.4: (Optional) Areas of Parallelograms">1.2.4</a>, that the volume of the parallelepiped (three dimensional parallelogram)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:40%;margin-right:40%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/piped.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4100">determined by the three vectors \(\va=\llt a_1,a_2,a_3\rgt ,\ \vb=\llt b_1,b_2,b_3\rgt \) and \(\vc=\llt c_1,c_2,c_3\rgt \) is given by the formula</p>
+<p id="p-4101">determined by the three vectors \(\va=\llt a_1,a_2,a_3\rgt ,\ \vb=\llt b_1,b_2,b_3\rgt \) and \(\vc=\llt c_1,c_2,c_3\rgt \) is given by the formula</p>
 <div class="displaymath">
 \begin{align*}
 \text{volume of parallelepiped with edges } \va, \vb, \vc
@@ -617,7 +618,7 @@ c_1&amp;c_2&amp;c_3\end{matrix}\right]
 </div>
 <p data-braille="continuation">where the determinant of a \(3\times 3\) matrix can be defined in terms of some \(2\times 2\) determinants by</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/det2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4101">If we use</p>
+<p id="p-4102">If we use</p>
 <div class="displaymath">
 \begin{align*}
 x&amp;=x(u,v,w)\\
@@ -629,7 +630,7 @@ z&amp;=z(u,v,w)
 <article class="fact theorem-like" id="eq_dV"><h6 class="heading">
 <span class="type">Equation</span><span class="space"> </span><span class="codenumber">3.8.8</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-4102">
+<div class="displaymath" id="p-4103">
 \begin{align*}
 \dee{V}
 = \left|\det\left[\begin{matrix}
@@ -640,7 +641,7 @@ z&amp;=z(u,v,w)
 \end{align*}
 </div></article><article class="example example-like" id="eg_cylindrical_dV"><a data-knowl="" class="id-ref original" data-refid="hk-eg_cylindrical_dV"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.8.9</span><span class="period">.</span><span class="space"> </span><span class="title">\(\dee{V}\) for Cylindrical Coordinates.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_cylindrical_dV"><article class="example example-like"><p id="p-4103">Cylindrical coordinates have</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_cylindrical_dV"><article class="example example-like"><p id="p-4104">Cylindrical coordinates have</p>
 <div class="displaymath">
 \begin{align*}
 x(r,\theta,z) &amp;= r\cos\theta\\
@@ -685,7 +686,7 @@ r\cos\theta&amp;0 \\
 <p data-braille="continuation">which is exactly what we found in (<a class="xref" data-knowl="./knowl/eq_dV_cylindrical.html" title="Equation 3.6.3">3.6.3</a>).</p></article></div>
 <article class="example example-like" id="eg_spherical_dV"><a data-knowl="" class="id-ref original" data-refid="hk-eg_spherical_dV"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.8.10</span><span class="period">.</span><span class="space"> </span><span class="title">\(\dee{V}\) for Spherical Coordinates.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_spherical_dV"><article class="example example-like"><p id="p-4104">Spherical coordinates have</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_spherical_dV"><article class="example example-like"><p id="p-4105">Spherical coordinates have</p>
 <div class="displaymath">
 \begin{align*}
 x(\rho,\theta,\varphi) &amp;= \rho\,\cos\theta\,\sin\varphi\\
@@ -750,9 +751,9 @@ z(\rho,\theta,\varphi) &amp; =  \rho\,\cos\varphi
 <p data-braille="continuation">which is exactly what we found in (<a class="xref" data-knowl="./knowl/eq_dV_spherical.html" title="Equation 3.7.3">3.7.3</a>).</p></article></div></section><section class="subsection" id="sec_hoterms"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.8.1</span> <span class="title">Optional — Dropping Higher Order Terms in \(\dee{u},\dee{v}\)</span>
 </h3>
-<p id="p-4105">In the course of deriving (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>), that is, the \(\dee{A}\) formula for</p>
+<p id="p-4106">In the course of deriving (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.8.2">3.8.2</a>), that is, the \(\dee{A}\) formula for</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4106">we approximated, for example, the vectors</p>
+<p id="p-4107">we approximated, for example, the vectors</p>
 <div class="displaymath">
 \begin{alignat*}{2}
 \overrightarrow{P_0P_1}
@@ -767,7 +768,7 @@ z(\rho,\theta,\varphi) &amp; =  \rho\,\cos\varphi
 </div>
 <p data-braille="continuation">where \(\vE_1\) is bounded<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-155" id="fn-155"><sup> 6 </sup></a> by a constant times \((\dee{u})^2\) and \(E_2\) is bounded by a constant times \((\dee{v})^2\text{.}\) That is, we assumed that we could just ignore the errors and drop \(E_1\) and \(E_2\) by setting them to zero.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-155"><div class="fn">Remember the error in the Taylor polynomial approximations. See <a class="xref" data-knowl="./knowl/eqn_quadratic_exact.html" title="Equation 2.6.13">2.6.13</a> and <a class="xref" data-knowl="./knowl/eqn_linear_bound.html" title="Equation 2.6.14">2.6.14</a>.</div></div>
-<p id="p-4107">So we approximated</p>
+<p id="p-4108">So we approximated</p>
 <div class="displaymath">
 \begin{align*}
 \left|\overrightarrow{P_0P_1}\times\overrightarrow{P_0P_2}\right|
@@ -785,7 +786,7 @@ z(\rho,\theta,\varphi) &amp; =  \rho\,\cos\varphi
 <p data-braille="continuation">where the length of the vector \(\vE_3\) is bounded by a constant times \((\dee{u})^2\,\dee{v}+\dee{u}\,(\dee{v})^2\text{.}\) We'll now see why dropping terms like \(\vE_3\) does not change the value of the integral at all<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-156" id="fn-156"><sup> 7 </sup></a>. Suppose that our domain of integration consists of all \((u,v)\)'s in a rectangle of width \(W\) and height \(H\text{,}\) as in the figure below.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-156"><div class="fn">See the optional § 1.1.6 of the CLP-2 text for an analogous argument concerning Riemann sums.</div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/slicing.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4108">Subdivide the rectangle into a grid of \(n\times n\) small subrectangles by drawing lines of constant \(v\) (the red lines in the figure) and lines of constant \(u\) (the blue lines in the figure). Each subrectangle has width \(\dee{u} = \frac{W}{n}\) and height \(\dee{v} = \frac{H}{n}\text{.}\) Now suppose that in setting up the integral we make, for each subrectangle, an error that is bounded by some constant times</p>
+<p id="p-4109">Subdivide the rectangle into a grid of \(n\times n\) small subrectangles by drawing lines of constant \(v\) (the red lines in the figure) and lines of constant \(u\) (the blue lines in the figure). Each subrectangle has width \(\dee{u} = \frac{W}{n}\) and height \(\dee{v} = \frac{H}{n}\text{.}\) Now suppose that in setting up the integral we make, for each subrectangle, an error that is bounded by some constant times</p>
 <div class="displaymath">
 \begin{equation*}
 (\dee{u})^2\,\dee{v}+\dee{u}\,(\dee{v})^2

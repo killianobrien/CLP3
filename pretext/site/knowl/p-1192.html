@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:06+01:00    *-->
+<!--*    on 2022-09-26T13:30:14+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,23 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) The limit as we approach \((0,0)\) along the \(x\)-axis is</p>
+<p>(a) In polar coordinates</p>
 <div class="displaymath">
-\begin{gather*}
-\lim_{t\rightarrow 0}\frac{x^2-y^4}{x^2+y^4}\bigg|_{(x,y)=(t,0)}
-=\lim_{t\rightarrow 0}\frac{t^2-0^4}{t^2+0^4}
-=1
-\end{gather*}
+\begin{equation*}
+\frac{x^3-y^3}{x^2+y^2}=\frac{r^3\cos^3\theta-r^3\sin^3\theta}{r^2}
+=r\cos^3\theta-r\sin^3\theta
+\end{equation*}
 </div>
-<p data-braille="continuation">On the other hand the limit as we approach \((0,0)\) along the \(y\)-axis is</p>
+<p data-braille="continuation">Since</p>
 <div class="displaymath">
-\begin{gather*}
-\lim_{t\rightarrow 0}\frac{x^2-y^4}{x^2+y^4}\bigg|_{(x,y)=(0,t)}
-=\lim_{t\rightarrow 0}\frac{0^2-t^4}{0^2+t^4}
-=-1
-\end{gather*}
+\begin{equation*}
+\big|r\cos^3\theta-r\sin^3\theta\big|\le 2r
+\end{equation*}
 </div>
-<p data-braille="continuation">These are different, so the limit as \((x,y)\rightarrow 0\) does not exist.</p>
+<p data-braille="continuation">and \(2r\rightarrow 0\) as \(r\rightarrow 0\text{,}\) the limit exists and is \(0\text{.}\)</p>
 <span class="incontext"><a href="sec_limits.html#p-1192">in-context</a></span>
 </body>
 </html>

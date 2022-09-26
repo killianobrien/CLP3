@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:19+01:00    *-->
+<!--*    on 2022-09-26T13:30:34+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We now generalize the chain rule to functions of more than one variable. For concreteness, we concentrate on the case in which all functions are functions of two variables. That is, we find the partial derivatives \(\pdiff{F}{s}\) and \(\pdiff{F}{t}\) of a function \(F(s,t)\) that is defined as a composition</p>
+<p>You already routinely use the one dimensional chain rule</p>
 <div class="displaymath">
 \begin{equation*}
-F(s,t)=f\big(x(s,t)\,,\,y(s,t)\big)
+\diff{}{t}f\big(x(t)\big)
+= \diff{f}{x}\big(x(t)\big)\ \diff{x}{t}(t)
 \end{equation*}
 </div>
-<p data-braille="continuation">We are using the name \(F\) for the new function \(F(s,t)\) as a reminder that it is closely related to, though not the same as, the function \(f(x,y)\text{.}\) The partial derivative \(\pdiff{F}{s}\) is the rate of change of \(F\) when \(s\) is varied with \(t\) held constant. When \(s\) is varied, both the \(x\)-argument, \(x(s,t)\text{,}\) and the \(y\)-argument, \(y(s,t)\text{,}\) in \(f\big(x(s,t)\,,\,y(s,t)\big)\) vary. Consequently, the chain rule for \(f\big(x(s,t)\,,\,y(s,t)\big)\) is a sum of two terms — one resulting from the variation of the \(x\)-argument and the other resulting from the variation of the \(y\)-argument.</p>
+<p data-braille="continuation">in doing computations like</p>
+<div class="displaymath">
+\begin{equation*}
+\diff{}{t}\sin(t^2) = \cos(t^2)\ 2t
+\end{equation*}
+</div>
+<p data-braille="continuation">In this example, \(f(x)=\sin(x)\) and \(x(t)=t^2\text{.}\)</p>
 <span class="incontext"><a href="sec_chain_rule.html#p-1400">in-context</a></span>
 </body>
 </html>

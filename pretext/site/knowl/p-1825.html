@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:53+01:00    *-->
+<!--*    on 2022-09-26T13:31:18+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,40 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The total resistance \(R\) of three resistors, \(R_1\text{,}\) \(R_2\text{,}\) \(R_3\text{,}\) connected in parallel is determined by</p>
+<p>We wish to use the linear approximation</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{1}{R}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}
+R(R_1,R_2) \approx R(2,8) + \pdiff{R}{R_1}(2,8)\,(R_1-2)
++ \pdiff{R}{R_2}(2,8)\,(R_2-8)
 \end{equation*}
 </div>
-<p data-braille="continuation">If the resistances, measured in Ohms, are \(R_1=25\Om\text{,}\) \(R_2=40\Om\) and \(R_3=50\Om\text{,}\) with a possible error of 0.5\% in each case, estimate the maximum error in the calculated value of \(R\text{.}\)</p>
+<p data-braille="continuation">To do so, we need the partial derivatives \(\pdiff{R}{R_1}(2,8)\) and \(\pdiff{R}{R_2}(2,8)\text{.}\) To find them, we differentiate \((*)\) with respect to \(R_1\) and \(R_2\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+-\frac{1}{R(R_1,R_2)^2}\pdiff{R}{R_1}(R_1,R_2)
+&amp;= -\frac{1}{R_1^2}\\
+-\frac{1}{R(R_1,R_2)^2}\pdiff{R}{R_2}(R_1,R_2)
+&amp;= -\frac{1}{R_2^2}
+\end{align*}
+</div>
+<p data-braille="continuation">Setting \(R_1=2\) and \(R_2=8\) gives</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+-\frac{1}{(8/5)^2}\pdiff{R}{R_1}(2,8)
+&amp;= -\frac{1}{4} &amp;\quad\implies\quad &amp;
+&amp;\pdiff{R}{R_1}(2,8) &amp;=\frac{16}{25}\\
+-\frac{1}{(8/5)^2}\pdiff{R}{R_2}(2,8)
+&amp;= -\frac{1}{64}  &amp;\quad\implies\quad &amp;
+&amp;\pdiff{R}{R_2}(2,8) &amp;=\frac{1}{25}
+\end{alignat*}
+</div>
+<p data-braille="continuation">So the specified change in \(R\) is</p>
+<div class="displaymath">
+\begin{gather*}
+R(1.9,8.1)-R(2,8) \approx  \frac{16}{25} (-0.1) + \frac{1}{25}(0.1)
+=-\frac{15}{250} = -0.06
+\end{gather*}
+</div>
 <span class="incontext"><a href="sec_lin_approx.html#p-1825">in-context</a></span>
 </body>
 </html>

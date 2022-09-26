@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:50+01:00    *-->
+<!--*    on 2022-09-26T13:31:15+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,25 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider the following work.</p>
+<p><em class="emphasis">Warning.</em> The answer \(m\,x_\% +n\,y_\%\text{,}\) without absolute values on \(m\) and \(n\text{,}\) can be seriously wrong. As an example, suppose that \(m=1\text{,}\) \(n=-1\text{,}\) \(x_0=y_0=1\text{,}\) \(\De x = 0.05\) and \(\De y=-0.05\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+P_\%  &amp;\approx 100\left|m\frac{\De x}{x_0} + n\frac{\De y}{y_0}\right|\\
+&amp;= 100\left|(1)\frac{0.05}{1} + (-1)\frac{-0.05}{1}\right|\\
+&amp; = 10\%
+\end{align*}
+</div>
+<p data-braille="continuation">while</p>
+<div class="displaymath">
+\begin{align*}
+m\,x_\% +n\,y_\% &amp;= m\, 100\left|\frac{\De x}{x_0}\right|
++ n\, 100\left|\frac{\De y}{y_0}\right|\\
+&amp;=  (1) 100\left|\frac{0.05}{1}\right|
++ (-1) 100\left|\frac{-0.05}{1}\right|\\
+&amp;= 0
+\end{align*}
+</div>
+<p data-braille="continuation">The point is that \(m\) and \(n\) being of opposite sign does not guarantee that there is a cancelation between the two terms of \(m\frac{\De x}{x_0} + n\frac{\De y}{y_0}\text{,}\) because \(\frac{\De x}{x_0}\) and \(\frac{\De y}{y_0}\) can also be of opposite sign.</p>
 <span class="incontext"><a href="sec_lin_approx.html#p-1799">in-context</a></span>
 </body>
 </html>

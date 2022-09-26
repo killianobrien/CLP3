@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:22+01:00    *-->
+<!--*    on 2022-09-26T13:29:20+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,24 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(a) The plane is to contain the point \((2,3,4)\) and is to have \(\llt-1,1,-1 \rgt\) as a normal vector. So</p>
+<p>We are going to need a direction vector for \(L\) in both parts (a) and (b). So we find one first.</p>
+<ul class="disc">
+<li>The vector \(\llt 1,1,0\rgt\) is perpendicular to \(x + y = 1\) and hence to \(L\text{.}\)</li>
+<li>The vector \(\llt 1,2,1\rgt\) is perpendicular to \(x + 2y + z = 3\) and hence to \(L\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the vector</p>
 <div class="displaymath">
-\begin{gather*}
-\llt-1,1,-1 \rgt\cdot \llt x-2,y-3,z-4 \rgt =0\qquad\text{or}\qquad
-x-y+z=3
-\end{gather*}
+\begin{align*}
+\llt 1,1,0\rgt \times \llt 1,2,1\rgt
+=\det\left[\begin{matrix}
+\hi  &amp;  \hj  &amp;  \hk\\
+1    &amp;   1   &amp;   0\\
+1    &amp;   2   &amp;    1
+\end{matrix}\right]
+=\llt 1 \,,\, -1 \,,\, 1 \rgt
+\end{align*}
 </div>
-<p data-braille="continuation">does the job.</p>
+<p data-braille="continuation">is a direction vector for \(L\text{.}\)</p>
 <span class="incontext"><a href="sec_planes_3d.html#p-539">in-context</a></span>
 </body>
 </html>

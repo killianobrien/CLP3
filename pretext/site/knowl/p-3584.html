@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:50+01:00    *-->
+<!--*    on 2022-09-26T13:34:51+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,16 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>So the integral is</p>
-<div class="displaymath">
-\begin{align*}
-&amp;\int_{y=-1}^{y=1} \int_{x=0}^{x=1+y^2-y} \int_{z=0}^{z=1-y^2} f(x,y,z)
-\ \dee{z}\,\dee{x}\,\dee{y}\\
-&amp;\hskip1in
-+\int_{y=-1}^{y=1} \int_{x=1+y^2-y}^{x=2-y} \int_{z=0}^{z=2-x-y} f(x,y,z)
-\ \dee{z}\,\dee{x}\,\dee{y}
-\end{align*}
+<p>(b) We are to change the order of integration so that the outside integral is over \(y\) (the same as the given integral), the middle integral is over \(x\text{,}\) and the inside integral is over over \(z\text{.}\)</p>
+<ul class="disc">
+<li>We still have \(y\) running from \(-1\) to \(1\text{.}\)</li>
+<li>For each fixed \(y\) in that range, \((x,z)\) runs over<div class="displaymath">
+\begin{equation*}
+E_y=\Set{(x,z)}{0\le z\le 1-y^2,\ 0\le x+z\le 2-y}
+\end{equation*}
 </div>
+</li>
+<li>The biggest value of \(x\) in \(E_y\) is \(2-y\text{.}\) It is achieved when \(z=0\text{.}\) You can also see this in the figure below. The shaded region in that figure is \(E_y\text{.}\)</li>
+<li>For each fixed \(x\) and \(y\) as above,  \(z\) runs over<div class="displaymath">
+\begin{equation*}
+E_{x,y} = \Set{z}{0\le z\le 1-y^2,\ 0\le z\le 2-x-y}
+\end{equation*}
+</div>That is, \(z\) runs from \(0\) to the smaller of \(1-y^2\) and \(2-x-y\text{.}\) Note that \(1-y^2\le 2-x-y\) if and only if \(x\le 1+y^2-y\text{.}\)</li>
+<li>So if \(0\le x\le 1+y^2-y\text{,}\) \(z\) runs from \(0\) to \(1-y^2\) and if \(1+y^2-y\le x\le 2-y\text{,}\) \(z\) runs from \(0\) to \(2-x-y\text{.}\)</li>
+</ul>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3584">in-context</a></span>
 </body>
 </html>

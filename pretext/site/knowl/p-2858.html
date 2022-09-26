@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:28+01:00    *-->
+<!--*    on 2022-09-26T13:33:25+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,26 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Here is an example which is included as an excuse to review some integration technique from CLP-2.</p>
+<p><em class="emphasis">Solution using vertical strips.</em>\(\ \ \ \) To set up the integral using vertical strips, as in the figure on the right above, we observe that, on the domain of integration,</p>
+<ul class="disc">
+<li>\(x\) runs from \(0\) to \(1\) and</li>
+<li>for each fixed \(x\text{,}\) \(y\) runs from \(0\) to \(y=x\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So the iterated integral is</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{\sin x}{x}
+\end{equation*}
+</div>
+<p data-braille="continuation">This time, because \(x\) is treated as a constant in the inner integral, it is trivial to evaluate the iterated integral.</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{\sin x}{x}
+&amp;=\int_0^1\dee{x}\ \frac{\sin x}{x}\int_0^x\dee{y}
+=\int_0^1\dee{x}\ \sin x
+=1-\cos 1
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2858">in-context</a></span>
 </body>
 </html>

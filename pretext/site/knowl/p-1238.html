@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:08+01:00    *-->
+<!--*    on 2022-09-26T13:30:17+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -16,19 +16,33 @@
 <p>Let</p>
 <div class="displaymath">
 \begin{equation*}
-f(x,y) = y\cos x + xe^{xy}
+f(x,y) = x^3+y^2+ 4xy^2
 \end{equation*}
 </div>
-<p data-braille="continuation">Then, since \(\pdiff{}{x}\) treats \(y\) as a constant, \(\pdiff{}{x} e^{yx}=y e^{yx}\) and</p>
+<p data-braille="continuation">Then, since \(\pdiff{}{x}\) treats \(y\) as a constant,</p>
 <div class="displaymath">
 \begin{align*}
-\pdiff{f}{x}(x,y) &amp;= y\pdiff{}{x}(\cos x) + e^{xy}\pdiff{}{x}(x)
-+x\pdiff{}{x}\big(e^{xy}\big)
-\qquad\text{(by the product rule)}\\
-&amp;= -y\sin x + e^{xy} +xye^{xy}\\
-\pdiff{f}{y}(x,y) &amp;= \cos x\pdiff{}{y}(y) + x\pdiff{}{y}\big(e^{xy}\big)\\
-&amp;= \cos x + x^2e^{xy}
+\pdiff{f}{x}
+&amp;= \pdiff{}{x}(x^3) + \pdiff{}{x}(y^2) +\pdiff{}{x}(4xy^2)\\
+&amp;= 3x^2+0 + 4y^2\pdiff{}{x}(x)\\
+&amp;= 3x^2 +4y^2
 \end{align*}
+</div>
+<p data-braille="continuation">and, since \(\pdiff{}{y}\) treats \(x\) as a constant,</p>
+<div class="displaymath">
+\begin{align*}
+\pdiff{f}{y}
+&amp;= \pdiff{}{y}(x^3) + \pdiff{}{y}(y^2) +\pdiff{}{y}(4xy^2)\\
+&amp;= 0 + 2y + 4x\pdiff{}{y}(y^2)\\
+&amp;= 2y+8xy
+\end{align*}
+</div>
+<p data-braille="continuation">In particular, at \((x,y)=(1,0)\) these partial derivatives take the values</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+\pdiff{f}{x}(1,0) &amp;= 3(1)^2 +4(0)^2&amp;=3\\
+\pdiff{f}{y}(1,0) &amp;= 2(0) +8(1)(0)\ &amp;=0
+\end{alignat*}
 </div>
 <span class="incontext"><a href="sec_partials.html#p-1238">in-context</a></span>
 </body>

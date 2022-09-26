@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:34+01:00    *-->
+<!--*    on 2022-09-26T13:30:52+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,27 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(c) We are told to evaluate \(\left(\pdiff{y}{x}\right)_u\text{,}\) which is the partial derivative of \(y\) with respect to \(x\) with \(u\) being held fixed. So \(x\) and \(u\) have to be independent variables and \(y\) has to be a function of \(x\) and \(u\text{.}\)</p>
+<p>(b) We are told to evaluate \(\diff{y}{x}\text{.}\) So \(y\) has to be a function of the single variable \(x\text{.}\) We are also told that \(x\) and \(y\) are related by \(F(x,y,x^2-y^2)=0\text{.}\) So the function \(y(x)\) has to obey</p>
+<div class="displaymath">
+\begin{equation*}
+F\big(x,y(x),x^2-y(x)^2\big)=0
+\end{equation*}
+</div>
+<p data-braille="continuation">for all \(x\text{.}\) Applying \(\diff{}{x}\) to both sides of that equation and using the chain rule gives</p>
+<div class="displaymath">
+\begin{align*}
+&amp;F_1\big(x,y(x),x^2-y(x)^2\big)\,\ \diff{x}{x}
++F_2\big(x,y(x),x^2-y(x)^2\big)\ \diff{y}{x}(x)\\
+&amp;\hskip1in
++F_3\big(x,y(x),x^2-y(x)^2\big)\,\diff{}{x}\left[x^2-y(x)^2\right]= 0\\
+\implies &amp;F_1\big(x,y(x),x^2-y(x)^2\big) +F_2\big(x,y(x),x^2-y(x)^2\big)\ \diff{y}{x}(x)\\
+&amp;\hskip1in
++F_3\big(x,y(x),x^2-y(x)^2\big)\,\left[2x-2y(x)\diff{y}{x}(x)\right]= 0\\
+\implies &amp; \diff{y}{x}(x)
+=-\frac{F_1\big(x,y(x),x^2-y(x)^2\big)+2x\,F_3\big(x,y(x),x^2-y(x)^2\big)}
+{F_2\big(x,y(x),x^2-y(x)^2\big)-2y(x)\,F_3\big(x,y(x),x^2-y(x)^2\big)}
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_chain_rule.html#p-1582">in-context</a></span>
 </body>
 </html>

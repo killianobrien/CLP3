@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:00+01:00    *-->
+<!--*    on 2022-09-26T13:30:08+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,15 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>As a third example, we consider \(\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2-y^2}{x^2+y^2}\text{.}\) Once again, the best way to see the behaviour of \(f(x,y)=\frac{x^2-y^2}{x^2+y^2}\) for \((x,y)\) close to \((0,0)\) is to switch to polar coordinates.</p>
+<p>The points \((x,y)\) that are close to \((0,0)\) are those with small \(r\text{,}\) regardless of what \(\theta\) is. Recall that \(\lim\limits_{{(x,y)\rightarrow (0,0)}} f(x,y)=L\) when \(f(x,y)\) approaches \(L\) as \((x,y)\) approaches \((0,0)\text{.}\) Substituting \(x=r\cos\theta\text{,}\) \(y=r\sin\theta\) into that statement turns it into the statement that \(\lim\limits_{{(x,y)\rightarrow (0,0)}} f(x,y)=L\) when \(f(r\cos\theta,r\sin\theta)\) approaches \(L\) as \(r\) approaches \(0\text{.}\) For our current example</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{x^2y}{x^2+y^2}
+=\frac{(r\cos\theta)^2(r\sin\theta)}{r^2}
+=r\cos^2\theta\sin\theta
+\end{gather*}
+</div>
+<p data-braille="continuation">As \(\big|r\cos^2\theta\sin\theta\big|\le r\) tends to \(0\) as \(r\) tends to \(0\) (regardless of what \(\theta\) does as \(r\) tends to \(0\)) we have</p>
 <div class="displaymath">
 \begin{equation*}
-f(x,y)=\frac{x^2-y^2}{x^2+y^2}=\frac{(r\cos\theta)^2-(r\sin\theta)^2}{r^2}
-=\cos^2\theta-\sin^2\theta
-=\cos(2\theta)
+\lim\limits_{(x,y)\rightarrow (0,0)}\frac{x^2y}{x^2+y^2}=0
 \end{equation*}
 </div>
-<p data-braille="continuation">Note that, this time, \(f\) is independent of \(r\) but does depend on \(\theta\text{.}\) Here is a greatly magnified sketch of a number of level curves for \(f(x,y)\text{.}\)</p>
 <span class="incontext"><a href="sec_limits.html#p-1116">in-context</a></span>
 </body>
 </html>

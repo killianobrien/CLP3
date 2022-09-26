@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:42:58+01:00    *-->
+<!--*    on 2022-09-26T13:28:52+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,30 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>These properties almost determine \(\va\times\vb\text{.}\) Property 1 forces the vector \(\va\times\vb\) to lie on the line perpendicular to the plane containing \(\va\) and \(\vb\text{.}\) There are precisely two vectors on this line that have the length given by property 2. In the left hand figure of</p>
+<p>The formula \(|\va\times\vb|=|\va|\,|\vb|\sin\theta\) is gotten by verifying that</p>
+<div class="displaymath">
+\begin{align*}
+|\va\times\vb|^2
+&amp;=\big(\va\times\vb\big)\cdot\big(\va\times\vb\big)\\
+&amp;=(a_2b_3-a_3b_2)^2+(a_3b_1-a_1b_3)^2+ (a_1b_2-a_2b_1)^2\\
+&amp;=a_2^2b_3^2-2a_2b_3a_3b_2+a_3^2b_2^2
++a_3^2b_1^2-2a_3b_1a_1b_3+a_1^2b_3^2\\
+&amp;\hskip0.5in
++a_1^2b_2^2-2a_1b_2a_2b_1+a_2^2b_1^2\\
+\end{align*}
+<p class="intertext">is equal to</p>
+\begin{align*}
+|\va|^2\,|\vb|^2\sin^2\theta
+&amp;=|\va|^2|\vb|^2(1-\cos^2\theta)\\
+&amp;=|\va|^2|\vb|^2-(\va\cdot\vb)^2\\
+&amp;=\big(a_1^2+a_2^2+a_3^2\big)\big(b_1^2+b_2^2+b_3^2\big)
+-\big(a_1b_1+a_2b_2+a_3b_3\big)^2\\
+&amp;=a_1^2b_2^2+a_1^2b_3^2+a_2^2b_1^2+a_2^2b_3^2+a_3^2b_1^2+a_3^2b_2^2\\
+&amp;\hskip0.5in
+-\big(2a_1b_1a_2b_2+2a_1b_1a_3b_3+2a_2b_2a_3b_3\big)
+\end{align*}
+</div>
+<p data-braille="continuation">To see that \(|\va|\,|\vb|\sin\theta\) is the area of the parallelogram with sides \(\va\) and \(\vb\text{,}\) just recall that the area of any parallelogram is given by the length of its base times its height. Think of \(\va\) as the base of the parallelogram. Then \(|\va|\) is the length of the base and \(|\vb|\sin\theta\) is the height.</p>
 <span class="incontext"><a href="sec_vectors.html#p-164">in-context</a></span>
 </body>
 </html>

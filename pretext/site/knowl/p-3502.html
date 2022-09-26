@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:40+01:00    *-->
+<!--*    on 2022-09-26T13:34:40+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,33 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Find the area of the portion of the cone \(z^2 = x^2 + y^2\) lying between the planes \(z = 2\) and \(z = 3\text{.}\)</p>
+<p>First observe that any point \((x,y,z)\) on the paraboliod lies above the \(xy\)-plane if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+0\le z = a^2-x^2-y^2
+\iff x^2+y^2\le a^2
+\end{equation*}
+</div>
+<p data-braille="continuation">That is, if and only if \((x,y)\) lies in the circular disk of radius \(a\) centred on the origin. The equation of the paraboloid is of the form \(z=f(x,y)\) with \(f(x,y)=a^2-x^2-y^2\text{.}\) So, by Theorem <a class="xref" data-knowl="./knowl/thm_surface_area.html" title="Theorem 3.4.2">3.4.2</a>.a,</p>
+<div class="displaymath">
+\begin{align*}
+\text{Surface area}
+&amp;= \dblInt_{x^2+y^2\le a^2}\sqrt{1+f_x(x,y)^2+f_y(x,y)^2}\ \dee{x}\,\dee{y}\\
+&amp;= \dblInt_{x^2+y^2\le a^2}\sqrt{1+4x^2+4y^2}\ \dee{x}\,\dee{y}
+\end{align*}
+</div>
+<p data-braille="continuation">Switching to polar coordinates,</p>
+<div class="displaymath">
+\begin{align*}
+\text{Surface area}
+&amp;= \int_0^a\dee{r}\int_0^{2\pi}\dee{\theta}\ r\sqrt{1+4r^2}\\
+&amp;= 2\pi \int_0^a\dee{r}\ r\sqrt{1+4r^2}\\
+&amp;= 2\pi \int_1^{1+4a^2}\frac{\dee{s}}{8}\ \sqrt{s}\qquad
+\text{with } s=1+4r^2, \dee{s}=8r\,\dee{r}\\
+&amp;=\frac{\pi}{4}\ \frac{2}{3}s^{3/2}\bigg|_{s=1}^{s=1+4a^2}\\
+&amp;=\frac{\pi}{6}\big[{(1+4a^2)}^{3/2}-1\big]
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_surface_area.html#p-3502">in-context</a></span>
 </body>
 </html>

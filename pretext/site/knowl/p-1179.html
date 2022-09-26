@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:05+01:00    *-->
+<!--*    on 2022-09-26T13:30:13+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,49 +13,32 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(f) To start, observe that</p>
+<p>(e) Switching to polar coordinates,</p>
 <div class="displaymath">
-\begin{gather*}
-\lim_{(x,y)\rightarrow (0,0)}\
-\frac{(\sin x)\left(e^y-1\right)}{xy}
-=\left[\lim_{x\rightarrow 0}\
-\frac{\sin x}{x}\right]
-\left[\lim_{y\rightarrow 0}\
-\frac{e^y-1}{y}\right]
-\end{gather*}
+\begin{align*}
+\lim_{(x,y)\rightarrow(0,0)}\ \frac{x^2y^2}{x^2+y^4}
+&amp;=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\
+\frac{r^2\cos^2\theta\ r^2\sin^2\theta}
+{r^2\cos^2\theta+r^4\sin^4\theta}\\
+&amp;=\lim_{\Atop{r\rightarrow0^+}{0\le\theta \lt 2\pi}}\ r^2\sin^2\theta
+\frac{\cos^2\theta}{\cos^2\theta+r^2\sin^4\theta}\\
+&amp;=  0
+\end{align*}
 </div>
-<p data-braille="continuation">We may evaluate  \(\ds\left[\lim_{x\rightarrow 0}\
-\frac{\sin x}{x}\right]\) by l'Hôpital's rule or by using the definition of the derivative to give</p>
+<p data-braille="continuation">Here, we used that</p>
 <div class="displaymath">
-\begin{equation*}
-\lim_{x\rightarrow 0}\ \frac{\sin x}{x}
-=\lim_{x\rightarrow 0}\ \frac{\sin x-\sin 0}{x-0}
-=\diff{}{x}\sin x\bigg|_{x=0}
-=\cos x\Big|_{x=0}=1
-\end{equation*}
+\begin{align*}
+\left|\sin^2\theta\frac{\cos^2\theta} {\cos^2\theta+r^2\sin^4\theta}\right|
+&amp;\le \frac{\cos^2\theta} {\cos^2\theta+r^2\sin^4\theta}\\
+&amp;\le \left.\begin{cases}
+\frac{\cos^2\theta} {\cos^2\theta}&amp;\text{ if }\cos\theta\ne 0 \\
+0 &amp;\text { if }\cos\theta =0
+\end{cases}
+\right\}\\
+&amp;\le 1
+\end{align*}
 </div>
-<p data-braille="continuation">Similarly, we may evaluate  \(\ds\left[\lim_{y\rightarrow 0}\
-\frac{e^y-1}{y}\right]\) by l'Hôpital's rule or by using the definition of the derivative to give</p>
-<div class="displaymath">
-\begin{equation*}
-\lim_{y\rightarrow 0}\ \frac{e^y-1}{y}
-=\lim_{y\rightarrow 0}\ \frac{e^y-e^0}{y-0}
-=\diff{}{y}e^y\bigg|_{y=0}
-=e^y\Big|_{y=0}=1
-\end{equation*}
-</div>
-<p data-braille="continuation">So all together</p>
-<div class="displaymath">
-\begin{gather*}
-\lim_{(x,y)\rightarrow (0,0)}\
-\frac{(\sin x)\left(e^y-1\right)}{xy}
-=\left[\lim_{x\rightarrow 0}\
-\frac{\sin x}{x}\right]
-\left[\lim_{y\rightarrow 0}\
-\frac{e^y-1}{y}\right]
-=[1]\ [1]=1
-\end{gather*}
-</div>
+<p data-braille="continuation">for all \(r \gt 0\text{.}\)</p>
 <span class="incontext"><a href="sec_limits.html#p-1179">in-context</a></span>
 </body>
 </html>

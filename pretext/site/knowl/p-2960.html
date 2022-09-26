@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:40+01:00    *-->
+<!--*    on 2022-09-26T13:33:36+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,17 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The integral \(I\) is defined as</p>
+<p>(b) The given integral decomposed the domain of integration into vertical strips like the blue strip in the figure on the right above. To reverse the order of integration, we instead use horizontal strips. Looking at the pink strip in the figure on the right above, we see that this entails</p>
+<ul class="disc">
+<li>having \(y\) run from \(0\) to \(1\) and</li>
+<li>for each fixed \(y\) between \(0\) and \(1\text{,}\) having \(x\) run from \(0\) to \(y\)</li>
+</ul>
+<p data-braille="continuation">This gives</p>
 <div class="displaymath">
 \begin{equation*}
-I =\dblInt_R f(x,y)\ \dee{A}
-= \int_1^{\sqrt{2}} \int_{1/y}^{\sqrt{y}} f(x,y)\,\dee{x}\,\dee{y}
-+\int_{\sqrt{2}}^4 \int_{y/2}^{\sqrt{y}} f(x,y)\,\dee{x}\,\dee{y}
+\int_0^1\dee{y}\int_0^y \dee{x}\ e^{x/y}=\int_0^1\dee{y}\ \Big[ye^{x/y}\Big]_0^y
+=\int_0^1\dee{y}\ y(e-1)
+=\frac{1}{2} (e-1)
 \end{equation*}
 </div>
 <span class="incontext"><a href="sec_2d_integrals.html#p-2960">in-context</a></span>

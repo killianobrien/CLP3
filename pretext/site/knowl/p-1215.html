@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:07+01:00    *-->
+<!--*    on 2022-09-26T13:30:16+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,17 +13,18 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>(b) This limit does not exist, since if it were to exist the limit</p>
+<p>(a) Since, in polar coordinates,</p>
 <div class="displaymath">
-\begin{align*}
-\lim_{(x,y)\rightarrow(0,0)}\frac{xy}{x^2+y^2}
-&amp;=\lim_{(x,y)\rightarrow(0,0)}\frac{xy}{\sin(xy)}\ \frac{\sin(xy)}{x^2+y^2}\\
-&amp;=\lim_{(x,y)\rightarrow(0,0)}\frac{xy}{\sin(xy)}\
-\lim_{(x,y)\rightarrow(0,0)}\frac{\sin(xy)}{x^2+y^2}
-\end{align*}
+\begin{equation*}
+\frac{xy}{x^2+y^2}=\frac{r^2\cos\theta\sin\theta}{r^2}
+=\cos\theta\sin\theta
+\end{equation*}
 </div>
-<p data-braille="continuation">would also exist. (Recall that \(\ds\lim_{t\rightarrow 0}\tfrac{\sin t}{t}
-=1\text{.}\))</p>
+<p data-braille="continuation">we have that the limit does not exist. For example,</p>
+<ul class="disc">
+<li>if we send \((x,y)\) to \((0,0)\) along the positive \(x\)-axis, so that \(\theta=0\text{,}\) we get the limit \(\sin\theta\cos\theta\big|_{\theta=0}=0\text{,}\)</li>
+<li>while if we send \((x,y)\) to \((0,0)\) along the line \(y=x\) in the first quadrant, so that  \(\theta=\frac{\pi}{4}\text{,}\) we get the limit \(\sin\theta\cos\theta\big|_{\theta=\pi/4}=\frac{1}{2}\text{.}\)</li>
+</ul>
 <span class="incontext"><a href="sec_limits.html#p-1215">in-context</a></span>
 </body>
 </html>

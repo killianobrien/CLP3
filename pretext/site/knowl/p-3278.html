@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:13+01:00    *-->
+<!--*    on 2022-09-26T13:34:12+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,11 +13,22 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider  the region \(E\) in 3--dimensions specified by the inequalities \(x^2 + y^2 \le 2y\) and \(0 \le z \le \sqrt{x^2 + y^2}\text{.}\)</p>
-<ol class="lower-alpha">
-<li>Draw a reasonably accurate picture of \(E\) in 3--dimensions. Be sure to show the units on the coordinate axes.</li>
-<li><p>Use polar coordinates to find the volume of \(E\text{.}\) Note that you will be “using polar coordinates” if you solve this problem by means of cylindrical coordinates.</p></li>
-</ol>
+<p>The solid is symmetric under \(y\rightarrow -y\) and \(z\rightarrow -z\text{,}\) so we can restrict to \(y\ge 0\text{,}\) \(z\ge 0\) and multiply by 4. The volume is</p>
+<div class="displaymath">
+\begin{align*}
+\text{Volume}
+&amp;=4\int_0^{\pi\over 2} \dee{\theta}\int_0^{2a\cos\theta} \dee{r}\
+r\sqrt{2ar\cos\theta}\\
+&amp;=4\int_0^{\pi\over 2} \dee{\theta}\ \sqrt{2a\cos\theta}\ \frac{2}{5}\
+r^{5/2}\bigg|_0^{2a\cos\theta}\\
+&amp;=\frac{8}{5}\int_0^{\pi\over 2} \dee{\theta}\ \big(2a\cos\theta\big)^3
+=\frac{64}{5}a^3\int_0^{\pi\over 2} \dee{\theta}\ \cos\theta\big(1-\sin^2\theta\big)\\
+&amp;=\frac{64}{5}a^3\int_0^1 dt\ \big(1-t^2\big)
+\qquad\text{ where } t=\sin\theta\\
+&amp;=\frac{64}{5}a^3\left[t-\frac{t^3}{3}\right]_0^1
+=\frac{128}{15}a^3
+\end{align*}
+</div>
 <span class="incontext"><a href="sec_polars.html#p-3278">in-context</a></span>
 </body>
 </html>

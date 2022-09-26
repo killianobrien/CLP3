@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:45:33+01:00    *-->
+<!--*    on 2022-09-26T13:32:07+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,19 +13,27 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(r \gt 0\) and assume that all second order derivatives of the function \(f(x,y)\) are continuous at all points \((x,y)\) that are within a distance \(r\) of \((a,b)\text{.}\) Assume that \(f_x(a,b)=f_y(a,b)=0\text{.}\) Define</p>
+<p>Of course not every function is quadratic. But by using the quadratic approximation <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a> we can apply the same ideas much more generally. Suppose that \((a,b)\) is a critical point of some function \(f(x,y)\text{.}\) For \(\De x\) and \(\De y\) small, the quadratic approximation <a class="xref" data-knowl="./knowl/eqn_quadratic_approx.html" title="Equation 2.6.12">2.6.12</a> gives</p>
 <div class="displaymath">
 \begin{equation*}
-D(x,y) = f_{xx}(x,y)\,f_{yy}(x,y) - f_{xy}(x,y)^2
+\begin{split}
+&amp;f\big(a + \De x\,,\,b+\De y\big) \\
+&amp;\hskip0.25in\approx f\big(a\,,\,b\big)
++ f_x\big(a\,,\,b\big)\,\De x
++ f_y\big(a\,,\,b\big)\,\De y \\
+&amp;\hskip0.75in +\frac{1}{2}\left\{
+f_{xx}\big(a,b\big)\,\De x^2
++2f_{xy}\big(a,b\big) \,\De x\De y
++ f_{yy}\big(a,b\big)\,\De y^2 \right\}\\
+&amp;\hskip0.25in= f\big(a\,,\,b\big)
++\frac{1}{2}\left\{
+f_{xx}\big(a,b\big)\,\De x^2
++2f_{xy}\big(a,b\big) \,\De x\De y
++ f_{yy}\big(a,b\big)\,\De y^2 \right\}
+\end{split}\tag{$*$}
 \end{equation*}
 </div>
-<p data-braille="continuation">It is called the discriminant of \(f\text{.}\) Then</p>
-<ul class="disc">
-<li>if \(D(a,b) \gt 0\) and \(f_{xx}(a,b) \gt 0\text{,}\) then \(f(x,y)\) has a local minimum at \((a,b)\text{,}\)</li>
-<li>if \(D(a,b) \gt 0\) and \(f_{xx}(a,b) \lt 0\text{,}\) then \(f(x,y)\) has a local maximum at \((a,b)\text{,}\)</li>
-<li>if \(D(a,b) \lt 0\text{,}\) then \(f(x,y)\) has a saddle point at \((a,b)\text{,}\) but</li>
-<li>if \(D(a,b)=0\text{,}\) then we cannot  draw any conclusions without more work.</li>
-</ul>
+<p data-braille="continuation">since \((a,b)\) is a critical point so that \(f_x(a,b)=f_y(a,b)=0\text{.}\) Then using the technique of Examples <a class="xref" data-knowl="./knowl/eg_maxminB.html" title="Example 2.9.12: \(f(x,y)= x^2+3xy+3y^2-6x-3y-6\)">2.9.12</a> and <a class="xref" data-knowl="./knowl/eg_maxminC.html" title="Example 2.9.15: \(f(x,y)= x^2-2xy-y^2+4y-2\)">2.9.15</a>, we get<a class="fn-knowl" data-knowl="./knowl/fn-86-hidden.html" title="Footnote 2.9.12"><sup> 12 </sup></a> (details below).</p>
 <span class="incontext"><a href="sec_max.html#p-2329">in-context</a></span>
 </body>
 </html>

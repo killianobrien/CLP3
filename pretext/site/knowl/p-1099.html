@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:59+01:00    *-->
+<!--*    on 2022-09-26T13:30:06+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,30 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Limits of multivariable functions have much the same computational properties as limits of functions of one variable. The following theorem summarizes a bunch of them. For simplicity, it concerns primarily real valued functions. That is, functions that output real numbers as opposed to vectors. However it does contain one vector valued function. The function \(\vX\) in the theorem takes as input an \(n\)-component vector and returns an \(m\)-component vector. We will not deal with many vector valued functions here in CLP-3, but we will see a lot in CLP-4.</p>
+<ol class="lower-alpha">
+<li>If \(f(x,y)\) is the constant function which always takes the value \(L\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\lim_{(x,y)\to(a,b)} f(x,y) = L
+\end{equation*}
+</div>
+</li>
+<li>If \(f:\bbbr^2\rightarrow\bbbr^2\) is defined by \(f(x,y) = (x,y)\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\lim_{(x,y)\to(a,b)} f(x,y) = (a,b)
+\end{equation*}
+</div>
+</li>
+<li>By definition, as \((x,y)\) approaches \((a,b)\text{,}\) \(x\) approaches \(a\) and \(y\) approaches \(b\text{,}\) so that if \(f:\bbbr^2\rightarrow\bbbr\) is defined by \(f(x,y) = x\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\lim_{(x,y)\to(a,b)} f(x,y) = a
+\end{equation*}
+</div>Similarly, if \(g:\bbbr^2\rightarrow\bbbr\) is defined by \(g(x,y) = y\text{,}\) then<div class="displaymath">
+\begin{equation*}
+\lim_{(x,y)\to(a,b)} g(x,y) = b
+\end{equation*}
+</div>
+</li>
+</ol>
 <span class="incontext"><a href="sec_limits.html#p-1099">in-context</a></span>
 </body>
 </html>

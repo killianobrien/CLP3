@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:46:46+01:00    *-->
+<!--*    on 2022-09-26T13:33:43+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,22 +13,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>To evaluate \(J\text{,}\) we'll use horizontal slices as in the figure above. (If we were to use vertical slices we would have to split the integral in two, with \(0\le x\le 1\) in one part and \(1\le x\le 4\) in the other.) From the figure, we see that, on \(D\text{,}\)</p>
-<ul class="disc">
-<li>\(y\) runs from \(-1\) to \(2\) and</li>
-<li>for each fixed \(y\) in that range, \(x\) runs from \(y^2\) to \(y+2\text{.}\)</li>
-</ul>
-<p data-braille="continuation">Hence</p>
+<p>(a) Observe that the parabola \(y^2=x\) and the line \(y=x-2\) meet when \(x=y+2\) and</p>
 <div class="displaymath">
-\begin{align*}
-J &amp;=\dblInt_D 3y\ \dee{A}
-=\int_{-1}^2\dee{y}\int_{y^2}^{y+2}\dee{x}\ 3y\\
-&amp;=3\int_{-1}^2\dee{y}\ y(y+2-y^2)\\
-&amp;=3\left[\frac{y^3}{3}+y^2-\frac{y^4}{4}\right]_{-1}^2\\
-&amp;=3\left[\frac{8}{3}+4-4+\frac{1}{3}-1+\frac{1}{4}\right]\\
-&amp;=\frac{27}{4}
-\end{align*}
+\begin{equation*}
+y^2=y+2
+\iff y^2-y-2=0
+\iff (y-2)(y+1)=0
+\end{equation*}
 </div>
+<p data-braille="continuation">So the points of intersection of \(x=y^2\) and \(y=x-2\) are \((1,-1)\) and \((4,2)\text{.}\) Here is a sketch of \(D\text{.}\)</p>
 <span class="incontext"><a href="sec_2d_integrals.html#p-3019">in-context</a></span>
 </body>
 </html>

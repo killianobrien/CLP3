@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:45+01:00    *-->
+<!--*    on 2022-09-26T13:29:48+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,17 +13,31 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>A particle of mass \(m = 1\) has position \(\vr_0 = \frac{1}{2}\,\hk\) and velocity \(\vv_0 =\frac{\pi^2}{2}\,\hi\) at time \(0\text{.}\) It moves under a force</p>
+<p>(d) By the product and chain rules,</p>
 <div class="displaymath">
 \begin{equation*}
-\vF(t) = -3t\,\hi + \sin t\,\hj + 2e^{2t}\,\hk.
+\vR'(t)=\vr'\big(u(t)\big)\diff{u}{t}\implies
+\vR''(t)=\vr''\big(u(t)\big)\Big(\diff{u}{t}\Big)^2
++\vr'\big(u(t)\big)\difftwo{u}{t}
 \end{equation*}
 </div>
-<ol class="lower-alpha">
-<li>Determine the position \(\vr(t)\) of the particle depending on \(t\text{.}\)</li>
-<li>At what time after time \(t = 0\) does the particle cross the plane \(x = 0\) for the first time?</li>
-<li>What is the velocity of the particle when it crosses the plane \(x = 0\) in part (b)?</li>
-</ol>
+<p data-braille="continuation">In particular,</p>
+<div class="displaymath">
+\begin{align*}
+27\,\hi+30\,\hj+6\,\hk
+&amp;=\vR''(t_1)=\vr''(1)\Big(\diff{u}{t}(t_1)\Big)^2
++\vr'\big(1\big)\difftwo{u}{t}(t_1)\\
+&amp;=\big(6\,\hi+6\,\hj\big)2^2+\big(3\,\hi+6\,\hj+6\,\hk\big)\difftwo{u}{t}(t_1)
+\end{align*}
+</div>
+<p data-braille="continuation">Simplifying</p>
+<div class="displaymath">
+\begin{equation*}
+3\,\hi+6\,\hj+6\,\hk
+=\big(3\,\hi+6\,\hj+6\,\hk\big)\difftwo{u}{t}(t_1)
+\implies \difftwo{u}{t}(t_1)=1
+\end{equation*}
+</div>
 <span class="incontext"><a href="sec_curves.html#p-881">in-context</a></span>
 </body>
 </html>

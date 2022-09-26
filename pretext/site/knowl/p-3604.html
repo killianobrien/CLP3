@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:47:52+01:00    *-->
+<!--*    on 2022-09-26T13:34:53+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,21 +13,31 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><em class="emphasis">Summary:</em> We have found that</p>
+<p>Looking at the figure on the left (with the vertical strip), we see that, on \(V_z\text{,}\)</p>
+<ul class="disc">
+<li>\(x\) runs from \(0\) to \((1-z)^2\text{,}\) and</li>
+<li>for each fixed \(x\) in that range, \(y\) runs from \(\sqrt{x}\) to \(1-z\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
 <div class="displaymath">
-\begin{alignat*}{2}
-I&amp;= \int_0^1 \int_{\sqrt{x}}^1 \int_0^{1-y} f(x,y,z)\,\dee{z}\,\dee{y}\,\dee{x}
-&amp;&amp;=\int_0^1 \int_0^{1-\sqrt{x}}\!\! \int_{\sqrt{x}}^{1-z}
-\!\!f(x,y,z)\  \dee{y}\,\dee{z}\,\dee{x}\\
-&amp;=\int_0^1  \int_0^{y^2}\int_0^{1-y}f(x,y,z)\
-\dee{z}\,\dee{x}\, \dee{y}
-&amp;&amp;=\int_0^1  \int_0^{1-y} \int_0^{y^2}\!\! f(x,y,z)\
-\dee{x}\, \dee{z}\,\dee{y}\\
-&amp;=\int_0^1\!\int_0^{(1-z)^2}\!\! \int_{\sqrt{x}}^{1-z}\!\!f(x,y,z)\,
+\begin{align*}
+I &amp;= \int_0^1 \dee{z} \int_0^{(1-z)^2}\dee{x} \int_{\sqrt{x}}^{1-z}\dee{y}\ f(x,y,z)\\
+&amp;= \int_0^1  \int_0^{(1-z)^2} \int_{\sqrt{x}}^{1-z}f(x,y,z)\
 \dee{y}\,\dee{x}\, \dee{z}
-&amp;&amp;=\int_0^1  \int_0^{1-z}\!\! \int_0^{y^2} f(x,y,z)
+\end{align*}
+</div>
+<p data-braille="continuation">Looking at the figure on the right above (with the horizontal strip), we see that, on \(V_z\text{,}\)</p>
+<ul class="disc">
+<li>\(y\) runs from \(0\) to \(1-z\text{.}\)</li>
+<li>for each fixed \(y\) in that range, \(x\) runs from \(0\) to \(y^2\text{.}\)</li>
+</ul>
+<p data-braille="continuation">So</p>
+<div class="displaymath">
+\begin{equation*}
+I = \int_0^1 \dee{z} \int_0^{1-z}\dee{y} \int_0^{y^2}\dee{x}\ f(x,y,z)
+= \int_0^1  \int_0^{1-z} \int_0^{y^2} f(x,y,z)\
 \dee{x}\, \dee{y}\,\dee{z}
-\end{alignat*}
+\end{equation*}
 </div>
 <span class="incontext"><a href="sec_3d_integrals.html#p-3604">in-context</a></span>
 </body>

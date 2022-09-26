@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:09+01:00    *-->
+<!--*    on 2022-09-26T13:30:18+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,15 +13,29 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>To see that, nonetheless, \(f(x,y)\) is not continuous at \((0,0)\text{,}\) we take the limit of \(f(x,y)\) as \((x,y)\) approaches \((0,0)\) along the curve \(y=x-x^3\text{.}\) The limit is</p>
+<p>In this example, we will see that the function</p>
 <div class="displaymath">
-\begin{gather*}
-\lim_{x\rightarrow 0} f\big(x,x-x^3\big)
-=\lim_{x\rightarrow 0} \frac{x^2}{x-(x-x^3)}
-=\lim_{x\rightarrow 0} \frac{1}{x}
-\end{gather*}
+\begin{equation*}
+f(x,y)=\begin{cases}
+\frac{x^2}{x-y}&amp;\text{if } x\ne y \\
+0&amp;\text{if } x=y
+\end{cases}
+\end{equation*}
 </div>
-<p data-braille="continuation">which does not exist. Indeed as \(x\) approaches \(0\) through positive numbers, \(\frac{1}{x}\) approaches \(+\infty\text{,}\) and as \(x\) approaches \(0\) through negative numbers, \(\frac{1}{x}\) approaches \(-\infty\text{.}\)</p>
+<p data-braille="continuation">is <em class="emphasis">not</em> continuous at \((0,0)\) and yet has both partial derivatives \(f_x(0,0)\) and \(f_y(0,0)\) perfectly well defined. We'll also see how that is possible. First let's compute the partial derivatives. By definition,</p>
+<div class="displaymath">
+\begin{align*}
+f_x(0,0)&amp;=\lim_{h\rightarrow 0}\frac{f(0+h,0)-f(0,0)}{h}
+=\lim_{h\rightarrow 0}\frac{\overbrace{\tfrac{h^2}{h-0}}^{h}-\,0}{h}
+=\lim_{h\rightarrow 0}1\\
+&amp;=1\\
+f_y(0,0)&amp;=\lim_{h\rightarrow 0}\frac{f(0,0+h)-f(0,0)}{h}
+=\lim_{h\rightarrow 0}\frac{\frac{0^2}{0-h}-0}{h}
+=\lim_{h\rightarrow 0}0\\
+&amp;=0
+\end{align*}
+</div>
+<p data-braille="continuation">So the first order partial derivatives \(f_x(0,0)\) and \(f_y(0,0)\) are perfectly well defined.</p>
 <span class="incontext"><a href="sec_partials.html#p-1249">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:53+01:00    *-->
+<!--*    on 2022-09-26T13:31:18+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,31 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>If two resistors of resistance \(R_1\) and \(R_2\) are wired in parallel, then the resulting resistance R satisfies the equation \(\frac{1}{R} =\frac{1}{R_1}+\frac{1}{R_2}\text{.}\) Use the linear approximation to estimate the change in \(R\) if \(R_1\) decreases from \(2\) to \(1.9\) ohms and \(R_2\) increases from 8 to 8.1 ohms.</p>
+<p>Denote by \(x\) and \(y\) the lengths of sides with \(x=3\pm 0.1\) and \(y=4\pm 0.2\text{.}\) Then the length of the hypotenuse is \(f(x,y)=\sqrt{x^2+y^2}\text{.}\) Note that</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+f(x,y)&amp;=\sqrt{x^2+y^2} &amp;
+f(3,4)&amp;=5\\
+f_x(x,y)&amp;=\frac{x}{\sqrt{x^2+y^2}}\qquad &amp;
+f_x(3,4)&amp;=\frac{3}{5}\\
+f_y(x,y)&amp;=\frac{y}{\sqrt{x^2+y^2}} &amp;
+f_y(3,4)&amp;=\frac{4}{5}
+\end{alignat*}
+</div>
+<p data-braille="continuation">By the linear approximation</p>
+<div class="displaymath">
+\begin{align*}
+f(x,y)&amp;\approx f(3,4) + f_x(3,4)\,(x-3) + f_y(3,4)\,(y-4)\\
+&amp; =5 +\frac{3}{5}\,(x-3)  +\frac{4}{5}\,(y-4)
+\end{align*}
+</div>
+<p data-braille="continuation">So the approximate maximum error in calculating the length of the hypotenuse is</p>
+<div class="displaymath">
+\begin{gather*}
+\frac{3}{5}\,(0.1)  +\frac{4}{5}\,(0.2)
+=\frac{1.1}{5} = 0.22
+\end{gather*}
+</div>
 <span class="incontext"><a href="sec_lin_approx.html#p-1821">in-context</a></span>
 </body>
 </html>

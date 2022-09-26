@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:00+01:00    *-->
+<!--*    on 2022-09-26T13:30:07+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,42 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>While the CLP-1 text's Definition 1.3.3 of the limit of a function of one variable, and our Definition <a class="xref" data-knowl="./knowl/def_limit.html" title="Definition 2.1.2: Limit">2.1.2</a> of the limit of a multivariable function look virtually identical, there is a substantial practical difference between the two. In dimension one, you can approach a point from the left or from the right and that's it. There are only two possible directions of approach. In two or more dimensions there is “much more room” and there are infinitely many possible types of approach.  One can even spiral in to a point. See the middle and right hand figures below.</p>
+<p>In this example we evaluate</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{(x,y)\rightarrow (2,3)} \frac{x+\sin y}{x^2y^2+1}
+\end{equation*}
+</div>
+<p data-braille="continuation">as a typical application of Theorem <a class="xref" data-knowl="./knowl/thm_LIMpptiesB.html" title="Theorem 2.1.5: Arithmetic, and Other, Properties of Limits">2.1.5</a>. Here “\(\eqover{a}\)” means that part (a) of Theorem <a class="xref" data-knowl="./knowl/thm_LIMpptiesB.html" title="Theorem 2.1.5: Arithmetic, and Other, Properties of Limits">2.1.5</a> justifies that equality. Start by computing separately the limits of the numerator and denominator.</p>
+<div class="displaymath">
+\begin{align*}
+&amp;\lim_{(x,y)\rightarrow (2,3)} \big(x+\sin y\big)\
+\eqover{a} \lim_{(x,y)\rightarrow (2,3)} x
++\lim_{(x,y)\rightarrow (2,3)}\sin y\\
+&amp;\hskip0.5in\eqover{e} \lim_{(x,y)\rightarrow (2,3)} x
++\sin\Big(\lim_{(x,y)\rightarrow (2,3)} y\Big)\\
+&amp;\hskip0.5in=\  2+\sin 3\\
+&amp;\lim_{(x,y)\rightarrow (2,3)} \big(x^2y^2+1\big)\
+\eqover{a}\  \lim_{(x,y)\rightarrow (2,3)} x^2y^2
++\lim_{(x,y)\rightarrow (2,3)}1\\
+&amp;\hskip0.5in\eqover{b}\  \Big(\lim_{(x,y)\rightarrow (2,3)} x\Big)
+\Big(\lim_{(x,y)\rightarrow (2,3)} x\Big)
+\Big(\lim_{(x,y)\rightarrow (2,3)} y\Big)
+\Big(\lim_{(x,y)\rightarrow (2,3)} y\Big)+1\\
+&amp;\hskip0.5in=\  2^23^2+1
+\end{align*}
+</div>
+<p data-braille="continuation">Since the limit of the denominator is nonzero, we can simply divide.</p>
+<div class="displaymath">
+\begin{align*}
+\lim_{(x,y)\rightarrow (2,3)} \frac{x+\sin y}{x^2y^2+1}\
+&amp;\eqover{c}\ \frac
+{\lim\limits_{(x,y)\rightarrow (2,3)}(x+\sin y)}
+{\lim\limits_{(x,y)\rightarrow (2,3)}(x^2y^2+1)}\\
+&amp;=\ \frac{2+\sin 3}{37}
+\end{align*}
+</div>
+<p data-braille="continuation">Here we have used that \(\sin x\) is a continuous function.</p>
 <span class="incontext"><a href="sec_limits.html#p-1110">in-context</a></span>
 </body>
 </html>

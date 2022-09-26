@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:43:00+01:00    *-->
+<!--*    on 2022-09-26T13:28:55+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,41 +13,59 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Recall that the angular velocity \(\vOmega=(0,0,\Omega)\) does not depend on time. The rotating observer sees \(\hi(t)\) as \(\hi=(1,0,0)\text{,}\) sees \(\hj(t)\) as \(\hj=(0,1,0)\text{,}\) and sees \(\hk(t)\) as \(\hk=(0,0,1)\) and so sees</p>
+<p>The position of the moving particle, as seen by the fixed observer is</p>
+<div class="displaymath">
+\begin{align*}
+\vR(t) &amp;= x(t)\,\hi(t) + y(t)\,\hj(t) +z(t)\,\hk(t)
+\end{align*}
+</div>
+<p data-braille="continuation">Differentiating, the velocity of the moving particle, as measured by the fixed observer is</p>
+<div class="displaymath">
+\begin{align*}
+\vV(t)=\diff{\vR}{t} &amp;= \phantom{+}\diff{x}{t}\!(t)\ \hi(t)
++ \diff{y}{t}\!(t)\ \hj(t)
++ \diff{z}{t}\!(t)\ \hk(t)\\
+&amp;\phantom{=} +x(t)\diff{}{t} \hi(t)
++y(t)\diff{}{t} \hj(t)
++z(t)\diff{}{t} \hk(t)
+\end{align*}
+</div>
+<p data-braille="continuation">We saw, in the last (optional) §<a href="sec_vectors.html#sec_rot_motion" class="internal" title="Subsection 1.2.7: (Optional) Application of Cross Products to Rotational Motion">1.2.7</a>, that</p>
+<div class="displaymath">
+\begin{gather*}
+\diff{}{t} \hi(t)=\vOmega\times\hi(t)\quad
+\diff{}{t} \hj(t)=\vOmega\times\hj(t)\quad
+\diff{}{t} \hk(t)=\vOmega\times\hk(t)
+\end{gather*}
+</div>
+<p data-braille="continuation">(You could also verify that these are correct by putting in \(\vOmega = (0,0,\Om)\) and explicitly computing the cross products.) So</p>
+<div class="displaymath">
+\begin{align*}
+\vV(t)&amp;= \Big(\diff{x}{t}\!(t)\ \hi(t)
++ \diff{y}{t}\!(t)\ \hj(t)
++ \diff{z}{t}\!(t)\ \hk(t)\Big)\\
+&amp;\hskip0.5in           +\vOmega\times\Big(x(t)\ \hi(t)
++y(t)\ \hj(t)
++z(t)\ \hk(t)\Big)
+\end{align*}
+</div>
+<p data-braille="continuation">Differentiating a second time, the acceleration of the moving particle (which is also \(\frac{\vF}{m}\text{,}\) where \(\vF\) is the net force being applied to the particle and \(m\) is the mass of the particle) as measured  by the fixed observer is</p>
 <div class="displaymath">
 \begin{align*}
 \frac{\vF}{m}
-&amp;=\va(t) + 2\vOmega\times\vv(t) +\vOmega\times\big[\vOmega\times\vr(t)\big]
+=\vA(t)
+=&amp; \Big(\difftwo{x}{t}\!(t)\ \hi(t)
++ \difftwo{y}{t}\!(t)\ \hj(t)
++ \difftwo{z}{t}\!(t)\ \hk(t)\Big)\\
+&amp; +2\vOmega\times\Big(\diff{x}{t}\!(t)\ \hi(t)
++\diff{y}{t}\!(t)\ \hj(t)
++\diff{z}{t}\!(t)\ \hk(t)\Big)\\
+&amp;+\vOmega\times\Big(\vOmega\times\big[
+x(t)\ \hi(t)
++y(t)\ \hj(t)
++z(t)\ \hk(t)\big]\Big)
 \end{align*}
 </div>
-<p data-braille="continuation">where, as usual,</p>
-<div class="displaymath">
-\begin{alignat*}{2}
-\vv(t) &amp;= \diff{}{t}\vr(t)
-&amp;&amp;= \Big(\diff{x}{t}(t)\,,\,\diff{y}{t}(t)\,,\,\diff{z}{t}(t)\Big)\\
-\va(t) &amp;= \difftwo{}{t}\vr(t)
-&amp;&amp;= \Big(\difftwo{x}{t}(t)\,,\,\difftwo{y}{t}(t)\,,\,\difftwo{z}{t}(t)\Big)
-\end{alignat*}
-</div>
-<p data-braille="continuation">So the acceleration of the particle seen by the moving observer is</p>
-<div class="displaymath">
-\begin{gather*}
-\va(t) = \frac{\vF}{m} -  2\vOmega\times\vv(t)
-- \vOmega\times\big[\vOmega\times\vr(t)\big]
-\end{gather*}
-</div>
-<p data-braille="continuation">Here</p>
-<ul class="disc">
-<li>\(\vF\) is the sum of all external forces acting on the moving particle,</li>
-<li>\(\vF_{{\rm cor}}=-2 \vOmega\times\vv(t)\) is called the Coriolis force and</li>
-<li>\(- \vOmega\times\big[\vOmega\times\vr(t)\big]\) is called the centrifugal force.</li>
-</ul>
-<p data-braille="continuation">As an example, suppose that you are the moving particle and that you are at the edge of the merry-go-round. Let's say \(t=0\) and you are at \(\hi\text{.}\) Then \(\vF\) is the friction that the surface of the merry-go-round applies to the soles of your shoes. If you are just standing there, \(\vv(t)=\vZero\text{,}\) so that \(\vF_{{\rm cor}}=\vZero\text{,}\) and the friction \(\vF\) exactly cancels the centrifugal force \(-\vOmega\times\big[\vOmega\times\vr(t)\big]\) so that you remain at \(\hi(t)\text{.}\) Assume that \(\Om \gt 0\text{.}\) Now suppose that you start walking around the edge of the merry-go-round. Then, at \(t=0\text{,}\) \(\vr=\hi\) and</p>
-<ul class="disc">
-<li>if you walk in the direction of rotation (with speed one), as in the figure on the left below, \(\vv=\hj\) and the Coriolis force \(\vF_{{\rm cor}}=
--2\Om\hk\times\hj = 2\Om\,\hi\) tries to push you off of the merry-go-round, while</li>
-<li>if you walk opposite to the direction of rotation (with speed one), as in the figure on the right below,  \(\vv=-\hj\) so that the Coriolis force \(\vF_{{\rm cor}}=-2\Om\hk\times(-\hj) = -2\Om\,\hi\) tries to pull you into the centre of the merry-go-round.</li>
-</ul>
 <span class="incontext"><a href="sec_vectors.html#p-209">in-context</a></span>
 </body>
 </html>

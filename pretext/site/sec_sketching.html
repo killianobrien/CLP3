@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:41:04+01:00    *-->
+<!--*    on 2022-09-26T13:26:37+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -244,6 +244,7 @@ MathJax.Hub.Config({
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
 <li><a href="preface-2.html" data-scroll="preface-2">Feedback about the text</a></li>
+<li><a href="preface-3.html" data-scroll="preface-3">CLP3 at Manchester Met</a></li>
 </ul>
 </li>
 <li class="link">
@@ -306,17 +307,17 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec_sketching"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.7</span> <span class="title">Sketching Surfaces in 3d</span>
 </h2>
-<section class="introduction" id="introduction-21"><p id="p-930">In practice students taking multivariable calculus regularly have great difficulty visualising surfaces in three dimensions, despite the fact that we all live in three dimensions. We'll now develop some technique to help us sketch surfaces in three dimensions<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-29" id="fn-29"><sup> 1 </sup></a>.</p>
+<section class="introduction" id="introduction-21"><p id="p-931">In practice students taking multivariable calculus regularly have great difficulty visualising surfaces in three dimensions, despite the fact that we all live in three dimensions. We'll now develop some technique to help us sketch surfaces in three dimensions<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-29" id="fn-29"><sup> 1 </sup></a>.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn">Of course you could instead use some fancy graphing software, but part of the point is to build intuition. Not to mention that you can't use fancy graphing software on your exam.</div></div>
-<p id="p-931">We all have a fair bit of experience drawing curves in two dimensions. Typically the intersection of a surface (in three dimensions) with a plane is a curve lying in the (two dimensional) plane. Such an intersection is usually called a cross-section. In the special case that the plane is one of the coordinate planes, the intersection is sometimes called a trace. One can often get a pretty good idea of what a surface looks like by sketching a bunch of cross-sections. Here are some examples.</p>
+<p id="p-932">We all have a fair bit of experience drawing curves in two dimensions. Typically the intersection of a surface (in three dimensions) with a plane is a curve lying in the (two dimensional) plane. Such an intersection is usually called a cross-section. In the special case that the plane is one of the coordinate planes, the intersection is sometimes called a trace. One can often get a pretty good idea of what a surface looks like by sketching a bunch of cross-sections. Here are some examples.</p>
 <article class="example example-like" id="eg_hyperboloid"><a data-knowl="" class="id-ref original" data-refid="hk-eg_hyperboloid"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">\(4x^2+y^2-z^2=1\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_hyperboloid"><article class="example example-like"><p id="p-932">Sketch the surface that satisfies \(4x^2+y^2-z^2=1\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_hyperboloid"><article class="example example-like"><p id="p-933">Sketch the surface that satisfies \(4x^2+y^2-z^2=1\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-126" id="solution-126"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-126"><div class="solution solution-like">
-<p id="p-933">We'll start by fixing any number \(z_0\) and sketching the part of the surface that lies in the horizontal plane \(z=z_0\text{.}\)</p>
+<p id="p-934">We'll start by fixing any number \(z_0\) and sketching the part of the surface that lies in the horizontal plane \(z=z_0\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:33.5%;margin-right:33.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/zedzeroPlane.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-934">The intersection of our surface with that horizontal plane is a horizontal cross-section. Any point \((x,y,z)\) lying on that horizontal cross-section satisfies both</p>
+<p id="p-935">The intersection of our surface with that horizontal plane is a horizontal cross-section. Any point \((x,y,z)\) lying on that horizontal cross-section satisfies both</p>
 <div class="displaymath">
 \begin{align*}
 &amp;z=z_0\ \ \text{and}\ \ 4x^2+y^2-z^2=1\\
@@ -327,12 +328,12 @@ MathJax.Hub.Config({
 <p data-braille="continuation">Think of \(z_0\) as a constant. Then \(4x^2+y^2=1+z_0^2\) is a curve in the \(xy\)-plane. As \(1+z_0^2\) is a constant, the curve is an ellipse. To determine its semi-axes<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-30" id="fn-30"><sup> 2 </sup></a>, we observe that when \(y=0\text{,}\) we have \(x=\pm\frac{1}{2}\sqrt{1+z_0^2}\) and when \(x=0\text{,}\) we have \(y=\pm\sqrt{1+z_0^2}\text{.}\) So the curve is just an ellipse with \(x\) semi-axis \(\frac{1}{2}\sqrt{1+z_0^2}\) and \(y\) semi-axis \(\sqrt{1+z_0^2}\text{.}\) It's easy to sketch.</p>
 <div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn">The semi-axes of an ellipse are the line segments from the centre of the ellipse to the farthest points on the ellipse and to the nearest points on the ellipse. For a circle the lengths of all of these line segments are just the  radius.</div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:22.5%;margin-right:22.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ellipse.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-935">Remember that this ellipse is the part of our surface that lies in the plane \(z=z_0\text{.}\) Imagine that the sketch of the ellipse is on a single sheet of paper. Lift the sheet of paper up, move it around so that the \(x\)- and \(y\)-axes point in the directions of the three dimensional \(x\)- and \(y\)-axes and place the sheet of paper into the three dimensional sketch at height \(z_0\text{.}\) This gives a single horizontal ellipse in 3d, as in the figure below.</p>
+<p id="p-936">Remember that this ellipse is the part of our surface that lies in the plane \(z=z_0\text{.}\) Imagine that the sketch of the ellipse is on a single sheet of paper. Lift the sheet of paper up, move it around so that the \(x\)- and \(y\)-axes point in the directions of the three dimensional \(x\)- and \(y\)-axes and place the sheet of paper into the three dimensional sketch at height \(z_0\text{.}\) This gives a single horizontal ellipse in 3d, as in the figure below.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperboloidZX.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-936">We can build up the full surface by stacking many of these horizontal ellipses — one for each possible height \(z_0\text{.}\) So we now draw a few of them as in the figure below. To reduce the amount of clutter in the sketch, we have only drawn the first octant (i.e. the part of three dimensions that has \(x\ge 0\text{,}\) \(y\ge 0\) and \(z\ge 0\)).</p>
+<p id="p-937">We can build up the full surface by stacking many of these horizontal ellipses — one for each possible height \(z_0\text{.}\) So we now draw a few of them as in the figure below. To reduce the amount of clutter in the sketch, we have only drawn the first octant (i.e. the part of three dimensions that has \(x\ge 0\text{,}\) \(y\ge 0\) and \(z\ge 0\)).</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperboloidZXB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-937">Here is why it is OK, in this case, to just sketch the first octant. Replacing \(x\) by \(-x\) in the equation \(4x^2+y^2-z^2=1\) does not change the equation. That means that a point \((x,y,z)\) is on the surface if and only if the point \((-x,y,z)\) is on the surface. So the surface is invariant under reflection in the \(yz\)-plane. Similarly, the equation \(4x^2+y^2-z^2=1\) does not change when \(y\) is replaced by \(-y\) or \(z\) is replaced by \(-z\text{.}\) Our surface is also invariant reflection in the \(xz\)- and \(xy\)-planes. Once we have the part in the first octant, the remaining octants can be gotten simply by reflecting about the coordinate planes.</p>
-<p id="p-938">We can get a more visually meaningful sketch by adding in some vertical cross-sections. The \(x=0\) and \(y=0\) cross-sections (also called traces — they are the parts of our surface that are in the \(yz\)- and \(xz\)-planes, respectively) are</p>
+<p id="p-938">Here is why it is OK, in this case, to just sketch the first octant. Replacing \(x\) by \(-x\) in the equation \(4x^2+y^2-z^2=1\) does not change the equation. That means that a point \((x,y,z)\) is on the surface if and only if the point \((-x,y,z)\) is on the surface. So the surface is invariant under reflection in the \(yz\)-plane. Similarly, the equation \(4x^2+y^2-z^2=1\) does not change when \(y\) is replaced by \(-y\) or \(z\) is replaced by \(-z\text{.}\) Our surface is also invariant reflection in the \(xz\)- and \(xy\)-planes. Once we have the part in the first octant, the remaining octants can be gotten simply by reflecting about the coordinate planes.</p>
+<p id="p-939">We can get a more visually meaningful sketch by adding in some vertical cross-sections. The \(x=0\) and \(y=0\) cross-sections (also called traces — they are the parts of our surface that are in the \(yz\)- and \(xz\)-planes, respectively) are</p>
 <div class="displaymath">
 \begin{equation*}
 x=0,\ y^2-z^2=1\qquad\text{and}\qquad
@@ -358,28 +359,28 @@ y^2&amp;=1+z^2 &amp;
 <div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/hyperbolaXa.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:44.4444444444444%;justify-content:center;"><img src="figs/hyperbolaYa.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-939">Now we'll incorporate them into the 3d sketch. Once again imagine that each is a single sheet of paper. Pick each up and move it into the 3d sketch, carefully matching up the axes. The red (blue) parts of the hyperbolas above become the red (blue) parts of the 3d sketch below (assuming of course that you are looking at this on a colour screen).</p>
+<p id="p-940">Now we'll incorporate them into the 3d sketch. Once again imagine that each is a single sheet of paper. Pick each up and move it into the 3d sketch, carefully matching up the axes. The red (blue) parts of the hyperbolas above become the red (blue) parts of the 3d sketch below (assuming of course that you are looking at this on a colour screen).</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperboloidBa.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-940">Now that we have a pretty good idea of what the surface looks like we can clean up and simplify the sketch. Here are a couple of possibilities.</p>
+<p id="p-941">Now that we have a pretty good idea of what the surface looks like we can clean up and simplify the sketch. Here are a couple of possibilities.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
 <div class="sbspanel" style="width:47.0588235294118%;justify-content:center;"><img src="figs/hyperboloidC.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:35.2941176470588%;justify-content:center;"><img src="figs/hyperboloidD.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-941">Here are two figures created by graphing software.</p>
+<p id="p-942">Here are two figures created by graphing software.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
 <div class="sbspanel" style="width:68.0412371134021%;justify-content:center;"><img src="figs/hyperboloid1sheet.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:28.8659793814433%;justify-content:center;"><img src="figs/hyperboloid1sheetDD.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-942">This type of surface is called a hyperboloid of one sheet.</p>
-<p id="p-943">There are also hyperboloids of two sheets. For example, replacing the \(+1\) on the right hand side of \(x^2+y^2-z^2=1\) gives \(x^2+y^2-z^2=-1\text{,}\) which is a hyperboloid of two sheets. We'll sketch it quickly in the next example.</p>
+<p id="p-943">This type of surface is called a hyperboloid of one sheet.</p>
+<p id="p-944">There are also hyperboloids of two sheets. For example, replacing the \(+1\) on the right hand side of \(x^2+y^2-z^2=1\) gives \(x^2+y^2-z^2=-1\text{,}\) which is a hyperboloid of two sheets. We'll sketch it quickly in the next example.</p>
 </div></div>
 </div></article></div>
 <article class="example example-like" id="eg_hyperboloid_two"><a data-knowl="" class="id-ref original" data-refid="hk-eg_hyperboloid_two"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">\(4x^2+y^2-z^2=-1\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_hyperboloid_two"><article class="example example-like"><p id="p-944">Sketch the surface that satisfies \(4x^2+y^2-z^2=-1\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_hyperboloid_two"><article class="example example-like"><p id="p-945">Sketch the surface that satisfies \(4x^2+y^2-z^2=-1\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-127" id="solution-127"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-127"><div class="solution solution-like">
-<p id="p-945">As in the last example, we'll start by fixing any number \(z_0\) and sketching the part of the surface that lies in the horizontal plane \(z=z_0\text{.}\) The intersection of our surface with that horizontal plane is</p>
+<p id="p-946">As in the last example, we'll start by fixing any number \(z_0\) and sketching the part of the surface that lies in the horizontal plane \(z=z_0\text{.}\) The intersection of our surface with that horizontal plane is</p>
 <div class="displaymath">
 \begin{align*}
 &amp;z=z_0\ \ \text{and}\ \ 4x^2+y^2=z_0^2-1
@@ -393,7 +394,7 @@ y^2&amp;=1+z^2 &amp;
 </ul>
 <p data-braille="continuation">The first octant parts of a few of these horizontal cross-sections are drawn in the figure below.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperboloidZXBB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-946">Next we add in the \(x=0\) and \(y=0\) cross-sections (i.e. the parts of our surface that are in the \(yz\)- and \(xz\)-planes, respectively)</p>
+<p id="p-947">Next we add in the \(x=0\) and \(y=0\) cross-sections (i.e. the parts of our surface that are in the \(yz\)- and \(xz\)-planes, respectively)</p>
 <div class="displaymath">
 \begin{equation*}
 x=0,\ z^2=1+y^2\qquad\text{and}\qquad
@@ -401,34 +402,34 @@ y=0,\ z^2=1+4x^2
 \end{equation*}
 </div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperboloidBaa.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-947">Now that we have a pretty good idea of what the surface looks like we clean up and simplify the sketch.</p>
+<p id="p-948">Now that we have a pretty good idea of what the surface looks like we clean up and simplify the sketch.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
 <div class="sbspanel" style="width:47.0588235294118%;justify-content:center;"><img src="figs/hyperboloidCC.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:35.2941176470588%;justify-content:center;"><img src="figs/hyperboloidDD.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-948">Here is are two figures created by graphing software.</p>
+<p id="p-949">Here is are two figures created by graphing software.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
 <div class="sbspanel" style="width:68.0412371134021%;justify-content:center;"><img src="figs/hyperboloid2sheet.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:28.8659793814433%;justify-content:center;"><img src="figs/hyperboloid2sheetDD.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-949">This type of surface is called a hyperboloid of two sheets.</p>
+<p id="p-950">This type of surface is called a hyperboloid of two sheets.</p>
 </div></div>
 </div></article></div>
 <article class="example example-like" id="eg_hyperbolic_cylinder"><a data-knowl="" class="id-ref original" data-refid="hk-eg_hyperbolic_cylinder"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.3</span><span class="period">.</span><span class="space"> </span><span class="title">\(yz=1\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_hyperbolic_cylinder"><article class="example example-like"><p id="p-950">Sketch the surface \(yz=1\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_hyperbolic_cylinder"><article class="example example-like"><p id="p-951">Sketch the surface \(yz=1\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-128" id="solution-128"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-128"><div class="solution solution-like">
-<p id="p-951">This surface has a special property that makes it relatively easy to sketch. There are no \(x\)'s in the equation \(yz=1\text{.}\) That means that if some \(y_0\) and \(z_0\) obey \(y_0z_0=1\text{,}\) then the point \((x,y_0,z_0)\) lies on the surface \(yz=1\) for all values of \(x\text{.}\) As \(x\) runs from \(-\infty\) to \(\infty\text{,}\) the point \((x,y_0,z_0)\) sweeps out a straight line parallel to the \(x\)-axis. So the surface \(yz=1\) is a union of lines parallel to the \(x\)-axis. It is invariant under translations parallel to the \(x\)-axis. To sketch \(yz=1\text{,}\) we just need to sketch its intersection with the \(yz\)-plane and then translate the resulting curve parallel to the \(x\)-axis to sweep out the surface.</p>
-<p id="p-952">We'll start with a sketch of the hyperbola \(yz=1\) in two dimensions.</p>
+<p id="p-952">This surface has a special property that makes it relatively easy to sketch. There are no \(x\)'s in the equation \(yz=1\text{.}\) That means that if some \(y_0\) and \(z_0\) obey \(y_0z_0=1\text{,}\) then the point \((x,y_0,z_0)\) lies on the surface \(yz=1\) for all values of \(x\text{.}\) As \(x\) runs from \(-\infty\) to \(\infty\text{,}\) the point \((x,y_0,z_0)\) sweeps out a straight line parallel to the \(x\)-axis. So the surface \(yz=1\) is a union of lines parallel to the \(x\)-axis. It is invariant under translations parallel to the \(x\)-axis. To sketch \(yz=1\text{,}\) we just need to sketch its intersection with the \(yz\)-plane and then translate the resulting curve parallel to the \(x\)-axis to sweep out the surface.</p>
+<p id="p-953">We'll start with a sketch of the hyperbola \(yz=1\) in two dimensions.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperbola3.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-953">Next we'll move this 2d sketch into the \(yz\)-plane, i.e. the plane \(x=0\text{,}\) in 3d, except that we'll only draw in the part in the first octant.</p>
+<p id="p-954">Next we'll move this 2d sketch into the \(yz\)-plane, i.e. the plane \(x=0\text{,}\) in 3d, except that we'll only draw in the part in the first octant.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperbolicCylinderA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-954">The we'll draw in \(x=x_0\) cross-sections for a couple of more values of \(x_0\)</p>
+<p id="p-955">The we'll draw in \(x=x_0\) cross-sections for a couple of more values of \(x_0\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperbolicCylinderB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-955">and clean up the sketch a bit</p>
+<p id="p-956">and clean up the sketch a bit</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/hyperbolicCylinderC.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-956">Here are two figures created by graphing software.</p>
+<p id="p-957">Here are two figures created by graphing software.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
 <div class="sbspanel" style="width:48.9795918367347%;justify-content:center;"><img src="figs/hypCylinder.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:48.9795918367347%;justify-content:center;"><img src="figs/hypCylinderDD.svg" style="width: 100%; height: auto;" alt=""></div>
@@ -437,11 +438,11 @@ y=0,\ z^2=1+4x^2
 </div></article></div>
 <article class="example example-like" id="eg_xyz"><a data-knowl="" class="id-ref original" data-refid="hk-eg_xyz"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.4</span><span class="period">.</span><span class="space"> </span><span class="title">\(xyz=4\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_xyz"><article class="example example-like"><p id="p-957">Sketch the surface \(xyz=4\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_xyz"><article class="example example-like"><p id="p-958">Sketch the surface \(xyz=4\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-129" id="solution-129"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-129"><div class="solution solution-like">
-<p id="p-958">We'll sketch this surface using much the same procedure as we used in Examples <a class="xref" data-knowl="./knowl/eg_hyperboloid.html" title="Example 1.7.1: \(4x^2+y^2-z^2=1\)">1.7.1</a> and <a class="xref" data-knowl="./knowl/eg_hyperboloid_two.html" title="Example 1.7.2: \(4x^2+y^2-z^2=-1\)">1.7.2</a>. We'll only sketch the part of the surface in the first octant. The remaining parts (in the octants with \(x,y \lt 0\text{,}\) \(z\ge 0\text{,}\) with \(x,z \lt 0\text{,}\) \(y\ge 0\) and with \(y,z \lt 0\text{,}\) \(x\ge0\)) are just reflections of the first octant part.</p>
-<p id="p-959">As usual, we start by fixing any number \(z_0\) and sketching the part of the surface that lies in the horizontal plane \(z=z_0\text{.}\) The intersection of our surface with that horizontal plane is the hyperbola</p>
+<p id="p-959">We'll sketch this surface using much the same procedure as we used in Examples <a class="xref" data-knowl="./knowl/eg_hyperboloid.html" title="Example 1.7.1: \(4x^2+y^2-z^2=1\)">1.7.1</a> and <a class="xref" data-knowl="./knowl/eg_hyperboloid_two.html" title="Example 1.7.2: \(4x^2+y^2-z^2=-1\)">1.7.2</a>. We'll only sketch the part of the surface in the first octant. The remaining parts (in the octants with \(x,y \lt 0\text{,}\) \(z\ge 0\text{,}\) with \(x,z \lt 0\text{,}\) \(y\ge 0\) and with \(y,z \lt 0\text{,}\) \(x\ge0\)) are just reflections of the first octant part.</p>
+<p id="p-960">As usual, we start by fixing any number \(z_0\) and sketching the part of the surface that lies in the horizontal plane \(z=z_0\text{.}\) The intersection of our surface with that horizontal plane is the hyperbola</p>
 <div class="displaymath">
 \begin{align*}
 &amp;z=z_0\ \ \text{and}\ \ xy=\frac{4}{z_0}
@@ -449,7 +450,7 @@ y=0,\ z^2=1+4x^2
 </div>
 <p data-braille="continuation">Note that \(x\rightarrow\infty\) as \(y\rightarrow 0\) and that \(y\rightarrow\infty\) as \(x\rightarrow 0\text{.}\) So the hyperbola has both the \(x\)-axis and the \(y\)-axis as asymptotes, when drawn in the \(xy\)-plane. The first octant parts of a few of these horizontal cross-sections (namely, \(z_0=4\text{,}\) \(z_0=2\) and \(z_0=\frac{1}{2}\)) are drawn in the figure below.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/seatB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-960">Next we add some vertical cross-sections. We can't use \(x=0\) or \(y=0\) because any point on \(xyz=4\) must have all of \(x\text{,}\) \(y\text{,}\) \(z\) nonzero. So we use</p>
+<p id="p-961">Next we add some vertical cross-sections. We can't use \(x=0\) or \(y=0\) because any point on \(xyz=4\) must have all of \(x\text{,}\) \(y\text{,}\) \(z\) nonzero. So we use</p>
 <div class="displaymath">
 \begin{equation*}
 x=4,\ yz=1\qquad\text{and}\qquad
@@ -458,9 +459,9 @@ y=4,\ xz=1
 </div>
 <p data-braille="continuation">instead. They are again hyperbolae.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/seatC.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-961">Finally, we clean up and simplify the sketch.</p>
+<p id="p-962">Finally, we clean up and simplify the sketch.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/seatA.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-962">Here are two figures created by graphing software.</p>
+<p id="p-963">Here are two figures created by graphing software.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
 <div class="sbspanel" style="width:54.0816326530612%;justify-content:center;"><img src="figs/xyzSurfB.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:43.8775510204082%;justify-content:center;"><img src="figs/xyzSurfDD.svg" style="width: 100%; height: auto;" alt=""></div>
@@ -469,13 +470,13 @@ y=4,\ xz=1
 </div></article></div></section><section class="subsection" id="subsec-Level"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.7.1</span> <span class="title">Level Curves and Surfaces</span>
 </h3>
-<p id="p-963">Often the reason you are interested in a surface in 3d is that it is the graph \(z=f(x,y)\) of a function of two variables \(f(x,y)\text{.}\) Another good way to visualize the behaviour of a function \(f(x,y)\) is to sketch what are called its level curves. By definition, a level curve of \(f(x,y)\) is a curve whose equation is \(f(x,y)=C\text{,}\) for some constant \(C\text{.}\) It is the set of points in the \(xy\)-plane where \(f\) takes the value \(C\text{.}\) Because it is a curve in 2d, it is usually easier to sketch than the graph of \(f\text{.}\) Here are a couple of examples.</p>
+<p id="p-964">Often the reason you are interested in a surface in 3d is that it is the graph \(z=f(x,y)\) of a function of two variables \(f(x,y)\text{.}\) Another good way to visualize the behaviour of a function \(f(x,y)\) is to sketch what are called its level curves. By definition, a level curve of \(f(x,y)\) is a curve whose equation is \(f(x,y)=C\text{,}\) for some constant \(C\text{.}\) It is the set of points in the \(xy\)-plane where \(f\) takes the value \(C\text{.}\) Because it is a curve in 2d, it is usually easier to sketch than the graph of \(f\text{.}\) Here are a couple of examples.</p>
 <article class="example example-like" id="example-43"><a data-knowl="" class="id-ref original" data-refid="hk-example-43"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.5</span><span class="period">.</span><span class="space"> </span><span class="title">\(f(x,y) = x^2+4y^2-2x+2\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-43"><article class="example example-like"><p id="p-964">Sketch the level curves of \(f(x,y) = x^2+4y^2-2x+2\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-43"><article class="example example-like"><p id="p-965">Sketch the level curves of \(f(x,y) = x^2+4y^2-2x+2\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-130" id="solution-130"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-130"><div class="solution solution-like">
-<p id="p-965">Fix any real number \(C\text{.}\) Then, for the specified function \(f\text{,}\) the level curve \(f(x,y)=C\) is the set of points \((x,y)\) that obey</p>
+<p id="p-966">Fix any real number \(C\text{.}\) Then, for the specified function \(f\text{,}\) the level curve \(f(x,y)=C\) is the set of points \((x,y)\) that obey</p>
 <div class="displaymath">
 \begin{align*}
 x^2+4y^2-2x+2=C
@@ -497,15 +498,15 @@ x^2+4y^2-2x+2=C
 </div>
 <p data-braille="continuation">So, when \(C \gt 1\text{,}\) \(f(x,y)=C\) is the ellipse centred on \((1,0)\) with \(x\) semi-axis \(\sqrt{C-1} \) and \(y\) semi-axis \(\tfrac{1}{2}\sqrt{C-1}\text{.}\) Here is a sketch of some representative level curves of \(f(x,y) = x^2+4y^2-2x+2\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/ellipseLevelB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-966">It is often easier to develop an understanding of the behaviour of a function \(f(x,y)\) by looking at a sketch of its level curves, than it is by looking at a sketch of its graph. On the other hand, you can also use a sketch of the level curves of \(f(x,y)\) as the first step in building a sketch of the graph \(z=f(x,y)\text{.}\) The next step would be to redraw, for each \(C\text{,}\) the level curve \(f(x,y)=C\text{,}\) in the plane \(z=C\text{,}\) as we did in Example <a class="xref" data-knowl="./knowl/eg_hyperboloid.html" title="Example 1.7.1: \(4x^2+y^2-z^2=1\)">1.7.1</a>.</p>
+<p id="p-967">It is often easier to develop an understanding of the behaviour of a function \(f(x,y)\) by looking at a sketch of its level curves, than it is by looking at a sketch of its graph. On the other hand, you can also use a sketch of the level curves of \(f(x,y)\) as the first step in building a sketch of the graph \(z=f(x,y)\text{.}\) The next step would be to redraw, for each \(C\text{,}\) the level curve \(f(x,y)=C\text{,}\) in the plane \(z=C\text{,}\) as we did in Example <a class="xref" data-knowl="./knowl/eg_hyperboloid.html" title="Example 1.7.1: \(4x^2+y^2-z^2=1\)">1.7.1</a>.</p>
 </div></div>
 </div></article></div>
 <article class="example example-like" id="example-44"><a data-knowl="" class="id-ref original" data-refid="hk-example-44"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.6</span><span class="period">.</span><span class="space"> </span><span class="title">\(e^{x+y+z}=1\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-44"><article class="example example-like"><p id="p-967">The function \(f(x,y)\) is given implicitly by the equation \(e^{x+y+z}=1\text{.}\) Sketch the level curves of \(f\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-44"><article class="example example-like"><p id="p-968">The function \(f(x,y)\) is given implicitly by the equation \(e^{x+y+z}=1\text{.}\) Sketch the level curves of \(f\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-131" id="solution-131"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-131"><div class="solution solution-like">
-<p id="p-968">This one is not as nasty as it appears. That “\(f(x,y)\) is given implicitly by the equation \(e^{x+y+z}=1\)” means that, for each \(x,y\text{,}\)  the solution \(z\) of \(e^{x+y+z}=1\) is \(f(x,y)\text{.}\) So, for the specified function \(f\) and any fixed real number \(C\text{,}\) the level curve \(f(x,y)=C\) is the set of points \((x,y)\) that obey</p>
+<p id="p-969">This one is not as nasty as it appears. That “\(f(x,y)\) is given implicitly by the equation \(e^{x+y+z}=1\)” means that, for each \(x,y\text{,}\)  the solution \(z\) of \(e^{x+y+z}=1\) is \(f(x,y)\text{.}\) So, for the specified function \(f\) and any fixed real number \(C\text{,}\) the level curve \(f(x,y)=C\) is the set of points \((x,y)\) that obey</p>
 <div class="displaymath">
 \begin{align*}
 e^{x+y+C}=1
@@ -517,20 +518,20 @@ e^{x+y+C}=1
 <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/planeLevel.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
 </div></div>
 </div></article></div>
-<p id="p-969">We have just seen that sketching the level curves of a function \(f(x,y)\) can help us understand the behaviour of \(f\text{.}\) We can generalise this to functions \(F(x,y,z)\) of three variables. A level surface of \(F(x,y,z)\) is a surface whose equation is of the form \(F(x,y,z)=C\) for some constant \(C\text{.}\) It is the set of points \((x,y,z)\) at which \(F\) takes the value \(C\text{.}\)</p>
+<p id="p-970">We have just seen that sketching the level curves of a function \(f(x,y)\) can help us understand the behaviour of \(f\text{.}\) We can generalise this to functions \(F(x,y,z)\) of three variables. A level surface of \(F(x,y,z)\) is a surface whose equation is of the form \(F(x,y,z)=C\) for some constant \(C\text{.}\) It is the set of points \((x,y,z)\) at which \(F\) takes the value \(C\text{.}\)</p>
 <article class="example example-like" id="eg_level_surface_sphere"><a data-knowl="" class="id-ref original" data-refid="hk-eg_level_surface_sphere"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">\(F(x,y,z)=x^2+y^2+z^2\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_level_surface_sphere"><article class="example example-like"><p id="p-970">Let \(F(x,y,z)=x^2+y^2+z^2\text{.}\) If \(C \gt 0\text{,}\) then the level surface \(F(x,y,z)=C\) is the sphere of radius \(\sqrt{C}\) centred on the origin. Here is a sketch of the parts of the level surfaces \(F=1\) (radius \(1\)), \(F=4\) (radius \(2\)) and \(F=9\) (radius \(3\)) that are in the first octant.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_level_surface_sphere"><article class="example example-like"><p id="p-971">Let \(F(x,y,z)=x^2+y^2+z^2\text{.}\) If \(C \gt 0\text{,}\) then the level surface \(F(x,y,z)=C\) is the sphere of radius \(\sqrt{C}\) centred on the origin. Here is a sketch of the parts of the level surfaces \(F=1\) (radius \(1\)), \(F=4\) (radius \(2\)) and \(F=9\) (radius \(3\)) that are in the first octant.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/spherA.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></div>
 <article class="example example-like" id="eg_level_surface_cylinder"><a data-knowl="" class="id-ref original" data-refid="hk-eg_level_surface_cylinder"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.8</span><span class="period">.</span><span class="space"> </span><span class="title">\(F(x,y,z)=x^2+z^2\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_level_surface_cylinder"><article class="example example-like"><p id="p-971">Let \(F(x,y,z)=x^2+z^2\) and \(C \gt 0\text{.}\) Consider the level surface \(x^2+z^2=C\text{.}\)  The variable \(y\) does not appear in this equation. So for any fixed \(y_0\text{,}\) the intersection of the our surface \(x^2+z^2=C\) with the plane \(y=y_0\) is the circle of radius \(\sqrt{C}\) centred on \(x=z=0\text{.}\) Here is a sketch of the first quadrant part of one such circle.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_level_surface_cylinder"><article class="example example-like"><p id="p-972">Let \(F(x,y,z)=x^2+z^2\) and \(C \gt 0\text{.}\) Consider the level surface \(x^2+z^2=C\text{.}\)  The variable \(y\) does not appear in this equation. So for any fixed \(y_0\text{,}\) the intersection of the our surface \(x^2+z^2=C\) with the plane \(y=y_0\) is the circle of radius \(\sqrt{C}\) centred on \(x=z=0\text{.}\) Here is a sketch of the first quadrant part of one such circle.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cylB.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-972">The full surface is the horizontal stack of all of those circles with \(y_0\) running over \(\bbbr\text{.}\) It is the cylinder of radius \(\sqrt{C}\) centred on the \(y\)-axis. Here is a sketch of the parts of the level surfaces \(F=1\) (radius \(1\)), \(F=4\) (radius \(2\)) and \(F=9\) (radius \(3\)) that are in the first octant.</p>
+<p id="p-973">The full surface is the horizontal stack of all of those circles with \(y_0\) running over \(\bbbr\text{.}\) It is the cylinder of radius \(\sqrt{C}\) centred on the \(y\)-axis. Here is a sketch of the parts of the level surfaces \(F=1\) (radius \(1\)), \(F=4\) (radius \(2\)) and \(F=9\) (radius \(3\)) that are in the first octant.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/cylA.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></div>
 <article class="example example-like" id="eg_level_surface_plane"><a data-knowl="" class="id-ref original" data-refid="hk-eg_level_surface_plane"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.9</span><span class="period">.</span><span class="space"> </span><span class="title">\(F(x,y,z)=e^{x+y+z}\).</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_level_surface_plane"><article class="example example-like"><p id="p-973">Let \(F(x,y,z)=e^{x+y+z}\) and \(C \gt 0\text{.}\) Consider the level surface \(e^{x+y+z}=C\text{,}\) or equivalently, \(x+y+z=\ln C\text{.}\) It is the plane that contains the intercepts \((\ln C,0,0)\text{,}\) \((0,\ln C,0)\) and \((0,0,\ln C)\text{.}\) Here is a sketch of the parts of the level surfaces</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg_level_surface_plane"><article class="example example-like"><p id="p-974">Let \(F(x,y,z)=e^{x+y+z}\) and \(C \gt 0\text{.}\) Consider the level surface \(e^{x+y+z}=C\text{,}\) or equivalently, \(x+y+z=\ln C\text{.}\) It is the plane that contains the intercepts \((\ln C,0,0)\text{,}\) \((0,\ln C,0)\) and \((0,0,\ln C)\text{.}\) Here is a sketch of the parts of the level surfaces</p>
 <ul class="disc">
 <li id="li-530">\(F=e\) (intercepts \((1,0,0)\text{,}\) \((0,1,0)\text{,}\) \((0,0,1)\)),</li>
 <li id="li-531">\(F=e^2\) (intercepts \((2,0,0)\text{,}\) \((0,2,0)\text{,}\) \((0,0,2)\)) and</li>
@@ -541,31 +542,31 @@ e^{x+y+C}=1
 <span class="type">Exercises</span> <span class="codenumber">1.7.2</span> <span class="title">Exercises</span>
 </h3>
 <div class="exercisegroup" id="exercisegroup-18">
-<div class="introduction" id="introduction-22"><p id="p-974"><em class="alert">Exercises — Stage 1</em></p></div>
+<div class="introduction" id="introduction-22"><p id="p-975"><em class="alert">Exercises — Stage 1</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-126"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-975">Match the following equations and expressions with the corresponding pictures. Cartesian coordinates are \((x, y, z)\text{,}\) cylindrical coordinates are \((r, \theta, z)\text{,}\) and spherical coordinates are \((\rho, \theta, \varphi)\text{.}\)</p>
+<p id="p-976">Match the following equations and expressions with the corresponding pictures. Cartesian coordinates are \((x, y, z)\text{,}\) cylindrical coordinates are \((r, \theta, z)\text{,}\) and spherical coordinates are \((\rho, \theta, \varphi)\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-976">(A)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-977">(A)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/surface1.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-977">(B)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-978">(B)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/surface2.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-978">(C)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-979">(C)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/surface3.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-979">(D)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-980">(D)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/surface4.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-980">(E)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-981">(E)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/surface5.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-981">(F)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-982">(F)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/surface6a.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<div class="displaymath" id="p-982">
+<div class="displaymath" id="p-983">
 \begin{alignat*}{7}
 &amp;\text{(a)}\quad&amp; \varphi&amp;=\pi/3 &amp;
 &amp;\text{(b)}\quad&amp; r&amp;=2\cos\theta &amp;
@@ -575,22 +576,22 @@ e^{x+y+C}=1
 &amp;\text{(f)}&amp; z&amp;=x^4+y^4-4xy &amp;
 \end{alignat*}
 </div></article><article class="exercise exercise-like" id="exercise-127"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-995">In each of (a) and (b) below, you are provided with a sketch of the first quadrant parts of a few level curves of some function \(f(x,y)\text{.}\) Sketch the first octant part of the corresponding graph \(z=f(x,y)\text{.}\)</p>
+<p id="p-996">In each of (a) and (b) below, you are provided with a sketch of the first quadrant parts of a few level curves of some function \(f(x,y)\text{.}\) Sketch the first octant part of the corresponding graph \(z=f(x,y)\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-996">(a)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-997">(a)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/planeLevelA.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-997">(b)</p></div>
+<div class="sbspanel" style="width:5.263157894736842%;justify-content:flex-start;"><p id="p-998">(b)</p></div>
 <div class="sbspanel" style="width:36.8421052631579%;justify-content:flex-start;"><img src="pfigs/paraboloidLevelA.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div></article><article class="exercise exercise-like" id="exercise-128"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1004">Sketch a few level curves for the function \(f(x,y)\) whose graph \(z=f(x,y)\) is sketched below.</p>
+<p id="p-1005">Sketch a few level curves for the function \(f(x,y)\) whose graph \(z=f(x,y)\) is sketched below.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="pfigs/hyperCylinderGraph.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article>
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-19">
-<div class="introduction" id="introduction-23"><p id="p-1009"><em class="alert">Exercises — Stage 2</em></p></div>
+<div class="introduction" id="introduction-23"><p id="p-1010"><em class="alert">Exercises — Stage 2</em></p></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-129"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1010">Sketch some of the level curves of</p>
+<p id="p-1011">Sketch some of the level curves of</p>
 <ol class="lower-alpha">
 <li id="li-538">\(\displaystyle f(x,y)=x^2+2y^2\)</li>
 <li id="li-539">\(\displaystyle f(x,y)=xy\)</li>
@@ -598,13 +599,13 @@ e^{x+y+C}=1
 </ol></article><article class="exercise exercise-like" id="exercise-130"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1017">Sketch the level curves of \(f(x,y)=\frac{2y}{x^2+y^2}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-131"><h6 class="heading">
+<p id="p-1018">Sketch the level curves of \(f(x,y)=\frac{2y}{x^2+y^2}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-131"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1020">Draw a “contour map” of \(f(x, y) = e^{-x^2 +4y^2}\) , showing all types of level curves that occur.</p></article><article class="exercise exercise-like" id="exercise-132"><h6 class="heading">
+<p id="p-1021">Draw a “contour map” of \(f(x, y) = e^{-x^2 +4y^2}\) , showing all types of level curves that occur.</p></article><article class="exercise exercise-like" id="exercise-132"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1022">A surface is given implicitly by</p>
+<p id="p-1023">A surface is given implicitly by</p>
 <div class="displaymath">
 \begin{equation*}
 x^2 + y^2 - z^2 + 2z = 0
@@ -616,20 +617,20 @@ x^2 + y^2 - z^2 + 2z = 0
 </ol></article><article class="exercise exercise-like" id="exercise-133"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title"><em class="emphasis">✳</em>.</span>
 </h6>
-<p id="p-1027">Sketch the hyperboloid \(z^2=4x^2+y^2-1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-134"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
-<p id="p-1029">Describe the level surfaces of</p>
+<p id="p-1028">Sketch the hyperboloid \(z^2=4x^2+y^2-1\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-134"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-1030">Describe the level surfaces of</p>
 <ol class="lower-alpha">
 <li id="li-554">\(\displaystyle f(x,y,z)=x^2+y^2+z^2\)</li>
 <li id="li-555">\(\displaystyle f(x,y,z)=x+2y+3z\)</li>
 <li id="li-556">\(\displaystyle f(x,y,z)=x^2+y^2\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-135"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
-<p id="p-1036">Sketch the graphs of</p>
+<p id="p-1037">Sketch the graphs of</p>
 <ol class="lower-alpha">
 <li id="li-557">\(\displaystyle f(x,y)=\sin x\qquad 0\le x\le 2\pi,\ 0\le y\le 1\)</li>
 <li id="li-558">\(\displaystyle f(x,y)=\sqrt{x^2+y^2}\)</li>
 <li id="li-559">\(\displaystyle f(x,y)=|x|+|y|\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-136"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
-<p id="p-1043">Sketch and describe the following surfaces.</p>
+<p id="p-1044">Sketch and describe the following surfaces.</p>
 <ol class="lower-alpha">
 <li id="li-560">\(\displaystyle 4x^2+y^2=16\)</li>
 <li id="li-561">\(\displaystyle x+y+2z=4\)</li>
@@ -643,9 +644,9 @@ x^2 + y^2 - z^2 + 2z = 0
 </div>
 </div>
 <div class="exercisegroup" id="exercisegroup-20">
-<div class="introduction" id="introduction-24"><p id="p-1060"><em class="alert">Exercises — Stage 3</em></p></div>
+<div class="introduction" id="introduction-24"><p id="p-1061"><em class="alert">Exercises — Stage 3</em></p></div>
 <div class="exercisegroup-exercises"><article class="exercise exercise-like" id="exercise-137"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
-<p id="p-1061">The surface below has circular level curves, centred along the \(z\)-axis. The lines given are the intersection of the surface with the right half of the \(yz\)-plane. Give an equation for the surface.</p>
+<p id="p-1062">The surface below has circular level curves, centred along the \(z\)-axis. The lines given are the intersection of the surface with the right half of the \(yz\)-plane. Give an equation for the surface.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/image-253.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></div>
 </div></section></section></div></main>
 </div>

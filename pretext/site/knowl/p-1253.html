@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-09-25T12:44:09+01:00    *-->
+<!--*    on 2022-09-26T13:30:19+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,30 +13,25 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>We are not going to be able to explicitly solve the equation for \(z(x,y)\text{.}\) All we know is that</p>
+<p>The equation</p>
 <div class="displaymath">
 \begin{equation*}
-z(x,y)^5 + y^2 e^{z(x,y)} + e^{2x} =0
+z^5 + y^2 e^z +e^{2x}=0
 \end{equation*}
 </div>
-<p data-braille="continuation">for all \(x\) and \(y\text{.}\) We can turn this into an equation for \(\pdiff{z}{x}(0,0)\) by differentiating<a class="fn-knowl" data-knowl="./knowl/fn-43-hidden.html" title="Footnote 2.2.4"><sup> 4 </sup></a> the whole equation with respect to \(x\text{,}\) giving</p>
+<p data-braille="continuation">implicitly determines \(z\) as a function of \(x\) and \(y\text{.}\) That is, the function \(z(x,y)\) obeys</p>
 <div class="displaymath">
 \begin{equation*}
-5z(x,y)^4\ \pdiff{z}{x}(x,y) + y^2 e^{z(x,y)}\ \pdiff{z}{x}(x,y) +2e^{2x}  =0
+z(x,y)^5 + y^2 e^{z(x,y)} +e^{2x}=0
 \end{equation*}
 </div>
-<p data-braille="continuation">and then setting \(x=y=0\text{,}\) giving</p>
+<p data-braille="continuation">For example, when \(x=y=0\text{,}\) the equation reduces to</p>
 <div class="displaymath">
 \begin{equation*}
-5z(0,0)^4\ \pdiff{z}{x}(0,0) +2  =0
+z(0,0)^5=-1
 \end{equation*}
 </div>
-<p data-braille="continuation">As we already know that \(z(0,0)=-1\text{,}\)</p>
-<div class="displaymath">
-\begin{equation*}
-\pdiff{z}{x}(0,0) = -\frac{2}{5z(0,0)^4} =-\frac{2}{5}
-\end{equation*}
-</div>
+<p data-braille="continuation">which forces<a class="fn-knowl" data-knowl="./knowl/fn-42-hidden.html" title="Footnote 2.2.3"><sup> 3 </sup></a> \(z(0,0)=-1\text{.}\) Let's find the partial derivative \(\pdiff{z}{x}(0,0)\text{.}\)</p>
 <span class="incontext"><a href="sec_partials.html#p-1253">in-context</a></span>
 </body>
 </html>
