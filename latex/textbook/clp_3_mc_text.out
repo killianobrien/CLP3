@@ -1,0 +1,93 @@
+\BOOKMARK [0][-]{chapter.1}{Vectors and Geometry in Two and Three Dimensions}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Points}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Vectors}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Addition of Vectors and Multiplication of a Vector by a Scalar}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{The Dot Product}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{\(Optional\) Using Dot Products to Resolve Forces \204 The Pendulum}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.4}{\(Optional\) Areas of Parallelograms}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.5}{The Cross Product}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.6}{\(Optional\) Some Vector Identities}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.7}{\(Optional\) Application of Cross Products to Rotational Motion}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.8}{\(Optional\) Application of Cross Products to Rotating Reference Frames}{section.1.2}% 11
+\BOOKMARK [1][-]{section.1.3}{Equations of Lines in 2d}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.4}{Equations of Planes in 3d}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.5}{Equations of Lines in 3d}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.6}{Curves and their Tangent Vectors}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.6.1}{Derivatives and Tangent Vectors}{section.1.6}% 16
+\BOOKMARK [1][-]{section.1.7}{Sketching Surfaces in 3d}{chapter.1}% 17
+\BOOKMARK [2][-]{subsection.1.7.1}{Level Curves and Surfaces}{section.1.7}% 18
+\BOOKMARK [1][-]{section.1.8}{Cylinders}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.9}{Quadric Surfaces}{chapter.1}% 20
+\BOOKMARK [0][-]{chapter.2}{Partial Derivatives}{}% 21
+\BOOKMARK [1][-]{section.2.1}{Limits}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.1.1}{Optional \204 A Nasty Limit That Doesn't Exist}{section.2.1}% 23
+\BOOKMARK [1][-]{section.2.2}{Partial Derivatives}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.3}{Higher Order Derivatives}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.3.1}{Optional \204 The Proof of Theorem 2.3.4}{section.2.3}% 26
+\BOOKMARK [2][-]{subsection.2.3.2}{Optional \204 An Example of 2 fxy\(x0,y0\) 2 fyx\(x0,y0\)}{section.2.3}% 27
+\BOOKMARK [1][-]{section.2.4}{The Chain Rule}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.4.1}{Memory Aids for the Chain Rule}{section.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.4.2}{Chain Rule Examples}{section.2.4}% 30
+\BOOKMARK [2][-]{subsection.2.4.3}{Review of the Proof of \040ddtf\(to.x\(t\)\)to. = \040dfdx\(to.x\(t\)\)to. \040dxdt\(t\)}{section.2.4}% 31
+\BOOKMARK [2][-]{subsection.2.4.4}{Proof of Theorem 2.4.1}{section.2.4}% 32
+\BOOKMARK [1][-]{section.2.5}{Tangent Planes and Normal Lines}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.5.1}{Surfaces of the Form z=f\(x,y\).}{section.2.5}% 34
+\BOOKMARK [2][-]{subsection.2.5.2}{Surfaces of the Form G\(x,y,z\)=0.}{section.2.5}% 35
+\BOOKMARK [1][-]{section.2.6}{Linear Approximations and Error}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.6.1}{Quadratic Approximation and Error Bounds}{section.2.6}% 37
+\BOOKMARK [2][-]{subsection.2.6.2}{Optional \204 Taylor Polynomials}{section.2.6}% 38
+\BOOKMARK [1][-]{section.2.7}{Directional Derivatives and the Gradient}{chapter.2}% 39
+\BOOKMARK [1][-]{section.2.8}{A First Look at Partial Differential Equations}{chapter.2}% 40
+\BOOKMARK [2][-]{subsection.2.8.1}{Optional \204 Solving the Advection and Wave Equations}{section.2.8}% 41
+\BOOKMARK [2][-]{subsection.2.8.2}{Really Optional \204 Derivation of the Wave Equation}{section.2.8}% 42
+\BOOKMARK [1][-]{section.2.9}{Maximum and Minimum Values}{chapter.2}% 43
+\BOOKMARK [2][-]{subsection.2.9.1}{Absolute Minima and Maxima}{section.2.9}% 44
+\BOOKMARK [1][-]{section.2.10}{Lagrange Multipliers}{chapter.2}% 45
+\BOOKMARK [2][-]{subsection.2.10.1}{\(Optional\) An Example with Two Lagrange Multipliers}{section.2.10}% 46
+\BOOKMARK [0][-]{chapter.3}{Multiple Integrals}{}% 47
+\BOOKMARK [1][-]{section.3.1}{Double Integrals}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.1.1}{Vertical Slices}{section.3.1}% 49
+\BOOKMARK [2][-]{subsection.3.1.2}{Horizontal Slices}{section.3.1}% 50
+\BOOKMARK [2][-]{subsection.3.1.3}{Volumes}{section.3.1}% 51
+\BOOKMARK [2][-]{subsection.3.1.4}{Examples}{section.3.1}% 52
+\BOOKMARK [2][-]{subsection.3.1.5}{Optional \204 More about the Definition of \040Rf\(x,y\) dxdy}{section.3.1}% 53
+\BOOKMARK [2][-]{subsection.3.1.6}{Even and Odd Functions}{section.3.1}% 54
+\BOOKMARK [1][-]{section.3.2}{Double Integrals in Polar Coordinates}{chapter.3}% 55
+\BOOKMARK [2][-]{subsection.3.2.1}{Polar Coordinates}{section.3.2}% 56
+\BOOKMARK [2][-]{subsection.3.2.2}{Polar Curves}{section.3.2}% 57
+\BOOKMARK [2][-]{subsection.3.2.3}{Integrals in Polar Coordinates}{section.3.2}% 58
+\BOOKMARK [2][-]{subsection.3.2.4}{Optional\204 Error Control for the Polar Area Formula}{section.3.2}% 59
+\BOOKMARK [1][-]{section.3.3}{Applications of Double Integrals}{chapter.3}% 60
+\BOOKMARK [1][-]{section.3.4}{Surface Area}{chapter.3}% 61
+\BOOKMARK [1][-]{section.3.5}{Triple Integrals}{chapter.3}% 62
+\BOOKMARK [1][-]{section.3.6}{Triple Integrals in Cylindrical Coordinates}{chapter.3}% 63
+\BOOKMARK [2][-]{subsection.3.6.1}{Cylindrical Coordinates}{section.3.6}% 64
+\BOOKMARK [2][-]{subsection.3.6.2}{The Volume Element in Cylindrical Coordinates}{section.3.6}% 65
+\BOOKMARK [2][-]{subsection.3.6.3}{Sample Integrals in Cylindrical Coordinates}{section.3.6}% 66
+\BOOKMARK [1][-]{section.3.7}{Triple Integrals in Spherical Coordinates}{chapter.3}% 67
+\BOOKMARK [2][-]{subsection.3.7.1}{Spherical Coordinates}{section.3.7}% 68
+\BOOKMARK [2][-]{subsection.3.7.2}{The Volume Element in Spherical Coordinates}{section.3.7}% 69
+\BOOKMARK [2][-]{subsection.3.7.3}{Sample Integrals in Spherical Coordinates}{section.3.7}% 70
+\BOOKMARK [1][-]{section.3.8}{Optional\204 Integrals in General Coordinates}{chapter.3}% 71
+\BOOKMARK [2][-]{subsection.3.8.1}{Optional \204 Dropping Higher Order Terms in du,dv}{section.3.8}% 72
+\BOOKMARK [0][-]{appendix.A}{Trigonometry}{}% 73
+\BOOKMARK [1][-]{section.A.1}{Trigonometry \204 Graphs}{appendix.A}% 74
+\BOOKMARK [1][-]{section.A.2}{Trigonometry \204 Special Triangles}{appendix.A}% 75
+\BOOKMARK [1][-]{section.A.3}{Trigonometry \204 Simple Identities}{appendix.A}% 76
+\BOOKMARK [1][-]{section.A.4}{Trigonometry \204 Add and Subtract Angles}{appendix.A}% 77
+\BOOKMARK [1][-]{section.A.5}{Inverse Trigonometric Functions}{appendix.A}% 78
+\BOOKMARK [0][-]{appendix.B}{Powers and Logarithms}{}% 79
+\BOOKMARK [1][-]{section.B.1}{Powers}{appendix.B}% 80
+\BOOKMARK [1][-]{section.B.2}{Logarithms}{appendix.B}% 81
+\BOOKMARK [0][-]{appendix.C}{Table of Derivatives}{}% 82
+\BOOKMARK [0][-]{appendix.D}{Table of Integrals}{}% 83
+\BOOKMARK [0][-]{appendix.E}{Table of Taylor Expansions}{}% 84
+\BOOKMARK [0][-]{appendix.F}{3d Coordinate Systems}{}% 85
+\BOOKMARK [1][-]{section.F.1}{Cartesian Coordinates}{appendix.F}% 86
+\BOOKMARK [1][-]{section.F.2}{Cylindrical Coordinates}{appendix.F}% 87
+\BOOKMARK [1][-]{section.F.3}{Spherical Coordinates}{appendix.F}% 88
+\BOOKMARK [0][-]{appendix.G}{ISO Coordinate System Notation}{}% 89
+\BOOKMARK [1][-]{section.G.1}{Polar Coordinates}{appendix.G}% 90
+\BOOKMARK [1][-]{section.G.2}{Cylindrical Coordinates}{appendix.G}% 91
+\BOOKMARK [1][-]{section.G.3}{Spherical Coordinates}{appendix.G}% 92
+\BOOKMARK [0][-]{appendix.H}{Conic Sections and Quadric Surfaces}{}% 93
