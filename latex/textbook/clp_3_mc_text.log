@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.19)  30 SEP 2022 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.19)  2 OCT 2022 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7479,19 +7479,19 @@ File: figures/integration/cos2graph.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/integration/cos2graph.pdf  used on input line 
 3766.
 (pdftex.def)             Requested size: 194.727pt x 99.371pt.
-<figures/integration/sin2graph.pdf, id=5791, 192.72pt x 99.37125pt>
+<figures/integration/sin2graph.pdf, id=5791, 141.52875pt x 99.37125pt>
 File: figures/integration/sin2graph.pdf Graphic file (type pdf)
 <use figures/integration/sin2graph.pdf>
 Package pdftex.def Info: figures/integration/sin2graph.pdf  used on input line 
 3767.
-(pdftex.def)             Requested size: 192.71951pt x 99.371pt.
-[300 <./figures/integration/cos2graph.pdf> <./figures/integration/sin2graph.pdf
+(pdftex.def)             Requested size: 141.5284pt x 99.371pt.
+[300 <./figures/integration/cos2graph.pdf> <./figures/integration/sin2Graph.pdf
 >] [301]
 Overfull \hbox (24.80298pt too wide) in paragraph at lines 3854--3859
  [] 
  []
 
-<figures/integration/centroidXY.pdf, id=5834, 194.7275pt x 147.55125pt>
+<figures/integration/centroidXY.pdf, id=5838, 194.7275pt x 147.55125pt>
 File: figures/integration/centroidXY.pdf Graphic file (type pdf)
 <use figures/integration/centroidXY.pdf>
 Package pdftex.def Info: figures/integration/centroidXY.pdf  used on input line
@@ -7512,14 +7512,14 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 3897--3900
  [] 
  []
 
-<figures/integration/centroidQuarterCircleh.pdf, id=5851, 134.5025pt x 100.375p
+<figures/integration/centroidQuarterCircleh.pdf, id=5855, 134.5025pt x 100.375p
 t>
 File: figures/integration/centroidQuarterCircleh.pdf Graphic file (type pdf)
 <use figures/integration/centroidQuarterCircleh.pdf>
 Package pdftex.def Info: figures/integration/centroidQuarterCircleh.pdf  used o
 n input line 3918.
 (pdftex.def)             Requested size: 134.50215pt x 100.37474pt.
-<figures/integration/centroidQuarterCirclev.pdf, id=5852, 107.40125pt x 100.375
+<figures/integration/centroidQuarterCirclev.pdf, id=5856, 107.40125pt x 100.375
 pt>
 File: figures/integration/centroidQuarterCirclev.pdf Graphic file (type pdf)
 <use figures/integration/centroidQuarterCirclev.pdf>
@@ -7562,7 +7562,7 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 4108--4111
  [] 
  []
 
-<figures/integration/cofm.pdf, id=5898, 200.75pt x 128.48pt>
+<figures/integration/cofm.pdf, id=5902, 200.75pt x 128.48pt>
 File: figures/integration/cofm.pdf Graphic file (type pdf)
 <use figures/integration/cofm.pdf>
 Package pdftex.def Info: figures/integration/cofm.pdf  used on input line 4155.
@@ -7586,13 +7586,13 @@ s den-sity $\OML/zplm/m/it/12 ^^Z\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 x\OT1/ppl/
 m/n/12 , \OML/zplm/m/it/12 y\OT1/zplm/m/n/12 ) []/[][]$\OT1/ppl/m/n/12 ,
  []
 
-<figures/integration/momInertia.pdf, id=5908, 138.5175pt x 136.51pt>
+<figures/integration/momInertia.pdf, id=5912, 138.5175pt x 136.51pt>
 File: figures/integration/momInertia.pdf Graphic file (type pdf)
 <use figures/integration/momInertia.pdf>
 Package pdftex.def Info: figures/integration/momInertia.pdf  used on input line
  4197.
 (pdftex.def)             Requested size: 138.51715pt x 136.50966pt.
-<figures/integration/momInertiaB.pdf, id=5909, 95.35625pt x 95.35625pt>
+<figures/integration/momInertiaB.pdf, id=5913, 95.35625pt x 95.35625pt>
 File: figures/integration/momInertiaB.pdf Graphic file (type pdf)
 <use figures/integration/momInertiaB.pdf>
 Package pdftex.def Info: figures/integration/momInertiaB.pdf  used on input lin
@@ -7612,7 +7612,7 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 4259--4263
  [] 
  []
 
-<figures/integration/diskI.pdf, id=5950, 111.41624pt x 110.4125pt>
+<figures/integration/diskI.pdf, id=5954, 111.41624pt x 110.4125pt>
 File: figures/integration/diskI.pdf Graphic file (type pdf)
 <use figures/integration/diskI.pdf>
 Package pdftex.def Info: figures/integration/diskI.pdf  used on input line 4269
@@ -7639,7 +7639,7 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
  []
 
 [309 <./figures/integration/diskI.pdf>]
-<figures/integration/cardioidIZ.pdf, id=5968, 111.41624pt x 125.46875pt>
+<figures/integration/cardioidIZ.pdf, id=5972, 111.41624pt x 125.46875pt>
 File: figures/integration/cardioidIZ.pdf Graphic file (type pdf)
 <use figures/integration/cardioidIZ.pdf>
 Package pdftex.def Info: figures/integration/cardioidIZ.pdf  used on input line
@@ -7655,13 +7655,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 4364--4365
 
  []
 
-<figures/integration/sphericaldSxy.pdf, id=5992, 136.51pt x 155.58125pt>
+<figures/integration/sphericaldSxy.pdf, id=5996, 136.51pt x 155.58125pt>
 File: figures/integration/sphericaldSxy.pdf Graphic file (type pdf)
 <use figures/integration/sphericaldSxy.pdf>
 Package pdftex.def Info: figures/integration/sphericaldSxy.pdf  used on input l
 ine 4458.
 (pdftex.def)             Requested size: 136.50966pt x 155.58086pt.
-<figures/integration/dSfxy.pdf, id=5993, 111.41624pt x 89.33376pt>
+<figures/integration/dSfxy.pdf, id=5997, 111.41624pt x 89.33376pt>
 File: figures/integration/dSfxy.pdf Graphic file (type pdf)
 <use figures/integration/dSfxy.pdf>
 Package pdftex.def Info: figures/integration/dSfxy.pdf  used on input line 4465
@@ -7673,7 +7673,7 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
  []
 
 [312 <./figures/integration/dSfxy.pdf>]
-<figures/integration/dS2fxy.pdf, id=6025, 83.31125pt x 68.255pt>
+<figures/integration/dS2fxy.pdf, id=6029, 83.31125pt x 68.255pt>
 File: figures/integration/dS2fxy.pdf Graphic file (type pdf)
 <use figures/integration/dS2fxy.pdf>
 Package pdftex.def Info: figures/integration/dS2fxy.pdf  used on input line 454
@@ -7697,7 +7697,7 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 4673--4677
  [] 
  []
 
-<figures/integration/cone.pdf, id=6042, 112.42pt x 80.3pt>
+<figures/integration/cone.pdf, id=6046, 112.42pt x 80.3pt>
 File: figures/integration/cone.pdf Graphic file (type pdf)
 <use figures/integration/cone.pdf>
 Package pdftex.def Info: figures/integration/cone.pdf  used on input line 4683.
@@ -7719,13 +7719,13 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 4718--4721
  []
 
 [315 <./figures/integration/cone.pdf>]
-<figures/integration/cylinderF.pdf, id=6063, 131.49126pt x 100.375pt>
+<figures/integration/cylinderF.pdf, id=6067, 131.49126pt x 100.375pt>
 File: figures/integration/cylinderF.pdf Graphic file (type pdf)
 <use figures/integration/cylinderF.pdf>
 Package pdftex.def Info: figures/integration/cylinderF.pdf  used on input line 
 4738.
 (pdftex.def)             Requested size: 131.49092pt x 100.37474pt.
-<figures/integration/cylinderG.pdf, id=6064, 135.50626pt x 100.375pt>
+<figures/integration/cylinderG.pdf, id=6068, 135.50626pt x 100.375pt>
 File: figures/integration/cylinderG.pdf Graphic file (type pdf)
 <use figures/integration/cylinderG.pdf>
 Package pdftex.def Info: figures/integration/cylinderG.pdf  used on input line 
@@ -7785,17 +7785,17 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 4886--4889
  [] 
  []
 
-<figures/coord/cart2.pdf, id=6106, 109.40875pt x 111.41624pt>
+<figures/coord/cart2.pdf, id=6110, 109.40875pt x 111.41624pt>
 File: figures/coord/cart2.pdf Graphic file (type pdf)
 <use figures/coord/cart2.pdf>
 Package pdftex.def Info: figures/coord/cart2.pdf  used on input line 4901.
 (pdftex.def)             Requested size: 109.40846pt x 111.41597pt.
-<figures/coord/cart4.pdf, id=6107, 129.48375pt x 111.41624pt>
+<figures/coord/cart4.pdf, id=6111, 129.48375pt x 111.41624pt>
 File: figures/coord/cart4.pdf Graphic file (type pdf)
 <use figures/coord/cart4.pdf>
 Package pdftex.def Info: figures/coord/cart4.pdf  used on input line 4902.
 (pdftex.def)             Requested size: 129.48341pt x 111.41597pt.
-<figures/coord/cart3.pdf, id=6108, 125.46875pt x 111.41624pt>
+<figures/coord/cart3.pdf, id=6112, 125.46875pt x 111.41624pt>
 File: figures/coord/cart3.pdf Graphic file (type pdf)
 <use figures/coord/cart3.pdf>
 Package pdftex.def Info: figures/coord/cart3.pdf  used on input line 4903.
@@ -7805,13 +7805,13 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 4905--4905
  [] 
  []
 
-<figures/integration/sphereMass1.pdf, id=6109, 151.56625pt x 115.43124pt>
+<figures/integration/sphereMass1.pdf, id=6113, 151.56625pt x 115.43124pt>
 File: figures/integration/sphereMass1.pdf Graphic file (type pdf)
 <use figures/integration/sphereMass1.pdf>
 Package pdftex.def Info: figures/integration/sphereMass1.pdf  used on input lin
 e 4927.
 (pdftex.def)             Requested size: 151.56587pt x 115.43095pt.
-<figures/integration/sphereMass1a.pdf, id=6110, 119.44624pt x 115.43124pt>
+<figures/integration/sphereMass1a.pdf, id=6114, 119.44624pt x 115.43124pt>
 File: figures/integration/sphereMass1a.pdf Graphic file (type pdf)
 <use figures/integration/sphereMass1a.pdf>
 Package pdftex.def Info: figures/integration/sphereMass1a.pdf  used on input li
@@ -7820,25 +7820,25 @@ ne 4928.
 [319 <./figures/coord/cart2.pdf> <./figures/coord/cart4.pdf> <./figures/coord/c
 art3.pdf> <./figures/integration/sphereMass1.pdf> <./figures/integration/sphere
 Mass1a.pdf>]
-<figures/integration/sphereMass2.pdf, id=6158, 158.5925pt x 115.43124pt>
+<figures/integration/sphereMass2.pdf, id=6162, 158.5925pt x 115.43124pt>
 File: figures/integration/sphereMass2.pdf Graphic file (type pdf)
 <use figures/integration/sphereMass2.pdf>
 Package pdftex.def Info: figures/integration/sphereMass2.pdf  used on input lin
 e 4951.
 (pdftex.def)             Requested size: 158.59209pt x 115.43095pt.
-<figures/integration/sphereMass2a.pdf, id=6159, 197.73875pt x 115.43124pt>
+<figures/integration/sphereMass2a.pdf, id=6163, 197.73875pt x 115.43124pt>
 File: figures/integration/sphereMass2a.pdf Graphic file (type pdf)
 <use figures/integration/sphereMass2a.pdf>
 Package pdftex.def Info: figures/integration/sphereMass2a.pdf  used on input li
 ne 4952.
 (pdftex.def)             Requested size: 197.73827pt x 115.43095pt.
-<figures/integration/sphereMass3.pdf, id=6160, 158.5925pt x 115.43124pt>
+<figures/integration/sphereMass3.pdf, id=6164, 158.5925pt x 115.43124pt>
 File: figures/integration/sphereMass3.pdf Graphic file (type pdf)
 <use figures/integration/sphereMass3.pdf>
 Package pdftex.def Info: figures/integration/sphereMass3.pdf  used on input lin
 e 4972.
 (pdftex.def)             Requested size: 158.59209pt x 115.43095pt.
-<figures/integration/sphereMass3a.pdf, id=6161, 130.4875pt x 115.43124pt>
+<figures/integration/sphereMass3a.pdf, id=6165, 130.4875pt x 115.43124pt>
 File: figures/integration/sphereMass3a.pdf Graphic file (type pdf)
 <use figures/integration/sphereMass3a.pdf>
 Package pdftex.def Info: figures/integration/sphereMass3a.pdf  used on input li
@@ -7861,19 +7861,19 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 5060--5064
  [] 
  []
 
-<figures/integration/limits3dA.pdf, id=6223, 114.4275pt x 99.37125pt>
+<figures/integration/limits3dA.pdf, id=6227, 114.4275pt x 99.37125pt>
 File: figures/integration/limits3dA.pdf Graphic file (type pdf)
 <use figures/integration/limits3dA.pdf>
 Package pdftex.def Info: figures/integration/limits3dA.pdf  used on input line 
 5091.
 (pdftex.def)             Requested size: 114.42722pt x 99.371pt.
-<figures/integration/limits3dB.pdf, id=6224, 114.4275pt x 99.37125pt>
+<figures/integration/limits3dB.pdf, id=6228, 114.4275pt x 99.37125pt>
 File: figures/integration/limits3dB.pdf Graphic file (type pdf)
 <use figures/integration/limits3dB.pdf>
 Package pdftex.def Info: figures/integration/limits3dB.pdf  used on input line 
 5092.
 (pdftex.def)             Requested size: 114.42722pt x 99.371pt.
-<figures/integration/limits3dC.pdf, id=6225, 114.4275pt x 99.37125pt>
+<figures/integration/limits3dC.pdf, id=6229, 114.4275pt x 99.37125pt>
 File: figures/integration/limits3dC.pdf Graphic file (type pdf)
 <use figures/integration/limits3dC.pdf>
 Package pdftex.def Info: figures/integration/limits3dC.pdf  used on input line 
@@ -7884,7 +7884,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 5095--5095
  [] 
  []
 
-<figures/integration/limits3dD.pdf, id=6226, 279.0425pt x 192.72pt>
+<figures/integration/limits3dD.pdf, id=6230, 279.0425pt x 192.72pt>
 File: figures/integration/limits3dD.pdf Graphic file (type pdf)
 <use figures/integration/limits3dD.pdf>
 Package pdftex.def Info: figures/integration/limits3dD.pdf  used on input line 
@@ -7892,7 +7892,7 @@ Package pdftex.def Info: figures/integration/limits3dD.pdf  used on input line
 (pdftex.def)             Requested size: 279.04181pt x 192.71951pt.
 [322 <./figures/integration/limits3dA.pdf> <./figures/integration/limits3dB.pdf
 > <./figures/integration/limits3dC.pdf>]
-<figures/integration/limits3dE.pdf, id=6244, 252.945pt x 192.72pt>
+<figures/integration/limits3dE.pdf, id=6248, 252.945pt x 192.72pt>
 File: figures/integration/limits3dE.pdf Graphic file (type pdf)
 <use figures/integration/limits3dE.pdf>
 Package pdftex.def Info: figures/integration/limits3dE.pdf  used on input line 
@@ -7930,7 +7930,7 @@ m/n/12 )$\OT1/ppl/m/n/12 .
 
 pdfTeX warning: pdflatex (file ./figures/integration/xchange2.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/integration/xchange2.pdf, id=6267, 128.48pt x 140.525pt>
+<figures/integration/xchange2.pdf, id=6271, 128.48pt x 140.525pt>
 File: figures/integration/xchange2.pdf Graphic file (type pdf)
 <use figures/integration/xchange2.pdf>
 Package pdftex.def Info: figures/integration/xchange2.pdf  used on input line 5
@@ -7940,7 +7940,7 @@ Package pdftex.def Info: figures/integration/xchange2.pdf  used on input line 5
 
 pdfTeX warning: pdflatex (file ./figures/integration/xchange5.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/integration/xchange5.pdf, id=6268, 138.5175pt x 140.525pt>
+<figures/integration/xchange5.pdf, id=6272, 138.5175pt x 140.525pt>
 File: figures/integration/xchange5.pdf Graphic file (type pdf)
 <use figures/integration/xchange5.pdf>
 Package pdftex.def Info: figures/integration/xchange5.pdf  used on input line 5
@@ -7950,7 +7950,7 @@ Package pdftex.def Info: figures/integration/xchange5.pdf  used on input line 5
 
 pdfTeX warning: pdflatex (file ./figures/integration/xchange4.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/integration/xchange4.pdf, id=6276, 166.6225pt x 157.58875pt>
+<figures/integration/xchange4.pdf, id=6280, 166.6225pt x 157.58875pt>
 File: figures/integration/xchange4.pdf Graphic file (type pdf)
 <use figures/integration/xchange4.pdf>
 Package pdftex.def Info: figures/integration/xchange4.pdf  used on input line 5
@@ -7960,7 +7960,7 @@ Package pdftex.def Info: figures/integration/xchange4.pdf  used on input line 5
 
 pdfTeX warning: pdflatex (file ./figures/integration/xchange3.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/integration/xchange3.pdf, id=6277, 232.87pt x 160.6pt>
+<figures/integration/xchange3.pdf, id=6281, 232.87pt x 160.6pt>
 File: figures/integration/xchange3.pdf Graphic file (type pdf)
 <use figures/integration/xchange3.pdf>
 Package pdftex.def Info: figures/integration/xchange3.pdf  used on input line 5
@@ -7970,7 +7970,7 @@ Package pdftex.def Info: figures/integration/xchange3.pdf  used on input line 5
 
 pdfTeX warning: pdflatex (file ./figures/integration/xchange6.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/integration/xchange6.pdf, id=6278, 200.75pt x 160.6pt>
+<figures/integration/xchange6.pdf, id=6282, 200.75pt x 160.6pt>
 File: figures/integration/xchange6.pdf Graphic file (type pdf)
 <use figures/integration/xchange6.pdf>
 Package pdftex.def Info: figures/integration/xchange6.pdf  used on input line 5
@@ -7986,7 +7986,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 5229--5229
 
 pdfTeX warning: pdflatex (file ./figures/integration/xchange3v.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/integration/xchange3v.pdf, id=6315, 232.87pt x 136.51pt>
+<figures/integration/xchange3v.pdf, id=6319, 232.87pt x 136.51pt>
 File: figures/integration/xchange3v.pdf Graphic file (type pdf)
 <use figures/integration/xchange3v.pdf>
 Package pdftex.def Info: figures/integration/xchange3v.pdf  used on input line 
@@ -7996,7 +7996,7 @@ Package pdftex.def Info: figures/integration/xchange3v.pdf  used on input line
 
 pdfTeX warning: pdflatex (file ./figures/integration/xchange3h.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/integration/xchange3h.pdf, id=6316, 232.87pt x 136.51pt>
+<figures/integration/xchange3h.pdf, id=6320, 232.87pt x 136.51pt>
 File: figures/integration/xchange3h.pdf Graphic file (type pdf)
 <use figures/integration/xchange3h.pdf>
 Package pdftex.def Info: figures/integration/xchange3h.pdf  used on input line 
@@ -8025,7 +8025,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5271--5272
 
  []
 
-<figures/coord/cyl1.pdf, id=6355, 130.4875pt x 107.40125pt>
+<figures/coord/cyl1.pdf, id=6359, 130.4875pt x 107.40125pt>
 File: figures/coord/cyl1.pdf Graphic file (type pdf)
 <use figures/coord/cyl1.pdf>
 Package pdftex.def Info: figures/coord/cyl1.pdf  used on input line 5309.
@@ -8036,17 +8036,17 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
  []
 
 [327 <./figures/integration/xchange3h.pdf>]
-<figures/coord/cyl3.pdf, id=6372, 108.405pt x 128.48pt>
+<figures/coord/cyl3.pdf, id=6376, 108.405pt x 128.48pt>
 File: figures/coord/cyl3.pdf Graphic file (type pdf)
 <use figures/coord/cyl3.pdf>
 Package pdftex.def Info: figures/coord/cyl3.pdf  used on input line 5332.
 (pdftex.def)             Requested size: 108.40472pt x 128.47968pt.
-<figures/coord/cyl4.pdf, id=6373, 110.4125pt x 128.48pt>
+<figures/coord/cyl4.pdf, id=6377, 110.4125pt x 128.48pt>
 File: figures/coord/cyl4.pdf Graphic file (type pdf)
 <use figures/coord/cyl4.pdf>
 Package pdftex.def Info: figures/coord/cyl4.pdf  used on input line 5333.
 (pdftex.def)             Requested size: 110.41222pt x 128.47968pt.
-<figures/coord/cyl2.pdf, id=6374, 109.40875pt x 115.43124pt>
+<figures/coord/cyl2.pdf, id=6378, 109.40875pt x 115.43124pt>
 File: figures/coord/cyl2.pdf Graphic file (type pdf)
 <use figures/coord/cyl2.pdf>
 Package pdftex.def Info: figures/coord/cyl2.pdf  used on input line 5334.
@@ -8067,25 +8067,25 @@ Overfull \vbox (2.33517pt too high) has occurred while \output is active []
 
 [328 <./figures/coord/cyl1.pdf> <./figures/coord/cyl3.pdf> <./figures/coord/cyl
 4.pdf> <./figures/coord/cyl2.pdf>]
-<figures/integration/sphereCyl1.pdf, id=6410, 126.4725pt x 115.43124pt>
+<figures/integration/sphereCyl1.pdf, id=6414, 126.4725pt x 115.43124pt>
 File: figures/integration/sphereCyl1.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl1.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl1.pdf  used on input line
  5354.
 (pdftex.def)             Requested size: 126.47218pt x 115.43095pt.
-<figures/integration/sphereCyl2.pdf, id=6411, 130.4875pt x 115.43124pt>
+<figures/integration/sphereCyl2.pdf, id=6415, 130.4875pt x 115.43124pt>
 File: figures/integration/sphereCyl2.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl2.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl2.pdf  used on input line
  5363.
 (pdftex.def)             Requested size: 130.48717pt x 115.43095pt.
-<figures/integration/sphereCyl3.pdf, id=6412, 129.48375pt x 115.43124pt>
+<figures/integration/sphereCyl3.pdf, id=6416, 129.48375pt x 115.43124pt>
 File: figures/integration/sphereCyl3.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl3.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl3.pdf  used on input line
  5372.
 (pdftex.def)             Requested size: 129.48341pt x 115.43095pt.
-<figures/integration/cylCube.pdf, id=6413, 126.4725pt x 56.21pt>
+<figures/integration/cylCube.pdf, id=6417, 126.4725pt x 56.21pt>
 File: figures/integration/cylCube.pdf Graphic file (type pdf)
 <use figures/integration/cylCube.pdf>
 Package pdftex.def Info: figures/integration/cylCube.pdf  used on input line 53
@@ -8103,25 +8103,25 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
  []
 
 [330 <./figures/integration/cylCube.pdf>]
-<figures/integration/sphereCyl1a.pdf, id=6459, 137.51375pt x 115.43124pt>
+<figures/integration/sphereCyl1a.pdf, id=6463, 137.51375pt x 115.43124pt>
 File: figures/integration/sphereCyl1a.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl1a.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl1a.pdf  used on input lin
 e 5460.
 (pdftex.def)             Requested size: 137.51341pt x 115.43095pt.
-<figures/integration/sphereCyl1b.pdf, id=6460, 119.44624pt x 115.43124pt>
+<figures/integration/sphereCyl1b.pdf, id=6464, 119.44624pt x 115.43124pt>
 File: figures/integration/sphereCyl1b.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl1b.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl1b.pdf  used on input lin
 e 5461.
 (pdftex.def)             Requested size: 119.44594pt x 115.43095pt.
-<figures/integration/sphereCyl2a.pdf, id=6462, 143.53625pt x 115.43124pt>
+<figures/integration/sphereCyl2a.pdf, id=6466, 143.53625pt x 115.43124pt>
 File: figures/integration/sphereCyl2a.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl2a.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl2a.pdf  used on input lin
 e 5485.
 (pdftex.def)             Requested size: 143.53589pt x 115.43095pt.
-<figures/integration/sphereCyl2b.pdf, id=6463, 137.51375pt x 115.43124pt>
+<figures/integration/sphereCyl2b.pdf, id=6467, 137.51375pt x 115.43124pt>
 File: figures/integration/sphereCyl2b.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl2b.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl2b.pdf  used on input lin
@@ -8130,13 +8130,13 @@ e 5486.
  [331 <./figures/integration/sphereCyl1a.pdf> <./figures/integration/sphereCyl1
 b.pdf> <./figures/integration/sphereCyl2a.pdf> <./figures/integration/sphereCyl
 2b.pdf>]
-<figures/integration/sphereCyl3a.pdf, id=6505, 119.44624pt x 115.43124pt>
+<figures/integration/sphereCyl3a.pdf, id=6509, 119.44624pt x 115.43124pt>
 File: figures/integration/sphereCyl3a.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl3a.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl3a.pdf  used on input lin
 e 5507.
 (pdftex.def)             Requested size: 119.44594pt x 115.43095pt.
-<figures/integration/sphereCyl3b.pdf, id=6506, 143.53625pt x 115.43124pt>
+<figures/integration/sphereCyl3b.pdf, id=6510, 143.53625pt x 115.43124pt>
 File: figures/integration/sphereCyl3b.pdf Graphic file (type pdf)
 <use figures/integration/sphereCyl3b.pdf>
 Package pdftex.def Info: figures/integration/sphereCyl3b.pdf  used on input lin
@@ -8164,32 +8164,32 @@ Package pdftex.def Info: figures/integration/cone.pdf  used on input line 5611.
 
 (pdftex.def)             Requested size: 112.41972pt x 80.29979pt.
 [333]
-<figures/integration/coneZ.pdf, id=6533, 120.45pt x 134.5025pt>
+<figures/integration/coneZ.pdf, id=6537, 120.45pt x 134.5025pt>
 File: figures/integration/coneZ.pdf Graphic file (type pdf)
 <use figures/integration/coneZ.pdf>
 Package pdftex.def Info: figures/integration/coneZ.pdf  used on input line 5627
 .
 (pdftex.def)             Requested size: 120.44969pt x 134.50215pt.
-<figures/integration/cart6.pdf, id=6535, 166.6225pt x 119.44624pt>
+<figures/integration/cart6.pdf, id=6539, 166.6225pt x 119.44624pt>
 File: figures/integration/cart6.pdf Graphic file (type pdf)
 <use figures/integration/cart6.pdf>
 Package pdftex.def Info: figures/integration/cart6.pdf  used on input line 5639
 .
 (pdftex.def)             Requested size: 166.62209pt x 119.44594pt.
  [334 <./figures/integration/coneZ.pdf> <./figures/integration/cart6.pdf>]
-<figures/integration/coneP.pdf, id=6553, 111.41624pt x 137.51375pt>
+<figures/integration/coneP.pdf, id=6557, 111.41624pt x 137.51375pt>
 File: figures/integration/coneP.pdf Graphic file (type pdf)
 <use figures/integration/coneP.pdf>
 Package pdftex.def Info: figures/integration/coneP.pdf  used on input line 5668
 .
 (pdftex.def)             Requested size: 111.41597pt x 137.51341pt.
-<figures/integration/coneX.pdf, id=6554, 156.585pt x 109.40875pt>
+<figures/integration/coneX.pdf, id=6558, 156.585pt x 109.40875pt>
 File: figures/integration/coneX.pdf Graphic file (type pdf)
 <use figures/integration/coneX.pdf>
 Package pdftex.def Info: figures/integration/coneX.pdf  used on input line 5685
 .
 (pdftex.def)             Requested size: 156.58461pt x 109.40846pt.
-<figures/integration/coneT.pdf, id=6555, 93.34875pt x 109.40875pt>
+<figures/integration/coneT.pdf, id=6559, 93.34875pt x 109.40875pt>
 File: figures/integration/coneT.pdf Graphic file (type pdf)
 <use figures/integration/coneT.pdf>
 Package pdftex.def Info: figures/integration/coneT.pdf  used on input line 5686
@@ -8206,7 +8206,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5771--5772
 
  []
 
-<figures/coord/spherical.pdf, id=6586, 158.5925pt x 156.585pt>
+<figures/coord/spherical.pdf, id=6590, 158.5925pt x 156.585pt>
 File: figures/coord/spherical.pdf Graphic file (type pdf)
 <use figures/coord/spherical.pdf>
 Package pdftex.def Info: figures/coord/spherical.pdf  used on input line 5798.
@@ -8217,13 +8217,13 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
  []
 
 [336]
-<figures/coord/sphericalSide.pdf, id=6593, 161.60374pt x 127.47626pt>
+<figures/coord/sphericalSide.pdf, id=6597, 161.60374pt x 127.47626pt>
 File: figures/coord/sphericalSide.pdf Graphic file (type pdf)
 <use figures/coord/sphericalSide.pdf>
 Package pdftex.def Info: figures/coord/sphericalSide.pdf  used on input line 58
 06.
 (pdftex.def)             Requested size: 161.60335pt x 127.47594pt.
-<figures/coord/sphericalTop.pdf, id=6594, 186.6975pt x 118.4425pt>
+<figures/coord/sphericalTop.pdf, id=6598, 186.6975pt x 118.4425pt>
 File: figures/coord/sphericalTop.pdf Graphic file (type pdf)
 <use figures/coord/sphericalTop.pdf>
 Package pdftex.def Info: figures/coord/sphericalTop.pdf  used on input line 580
@@ -8236,19 +8236,19 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
 
 [337 <./figures/coord/spherical.pdf> <./figures/coord/sphericalSide.pdf> <./fig
 ures/coord/sphericalTop.pdf>]
-<figures/integration/spher2.pdf, id=6626, 114.4275pt x 131.49126pt>
+<figures/integration/spher2.pdf, id=6630, 114.4275pt x 131.49126pt>
 File: figures/integration/spher2.pdf Graphic file (type pdf)
 <use figures/integration/spher2.pdf>
 Package pdftex.def Info: figures/integration/spher2.pdf  used on input line 584
 0.
 (pdftex.def)             Requested size: 114.42722pt x 131.49092pt.
-<figures/integration/spher3.pdf, id=6627, 110.4125pt x 131.49126pt>
+<figures/integration/spher3.pdf, id=6631, 110.4125pt x 131.49126pt>
 File: figures/integration/spher3.pdf Graphic file (type pdf)
 <use figures/integration/spher3.pdf>
 Package pdftex.def Info: figures/integration/spher3.pdf  used on input line 584
 1.
 (pdftex.def)             Requested size: 110.41222pt x 131.49092pt.
-<figures/integration/spher4.pdf, id=6628, 111.41624pt x 131.49126pt>
+<figures/integration/spher4.pdf, id=6632, 111.41624pt x 131.49126pt>
 File: figures/integration/spher4.pdf Graphic file (type pdf)
 <use figures/integration/spher4.pdf>
 Package pdftex.def Info: figures/integration/spher4.pdf  used on input line 584
@@ -8259,7 +8259,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 5844--5844
  [] 
  []
 
-<figures/integration/sphereSph1.pdf, id=6630, 154.5775pt x 150.5625pt>
+<figures/integration/sphereSph1.pdf, id=6634, 154.5775pt x 150.5625pt>
 File: figures/integration/sphereSph1.pdf Graphic file (type pdf)
 <use figures/integration/sphereSph1.pdf>
 Package pdftex.def Info: figures/integration/sphereSph1.pdf  used on input line
@@ -8272,19 +8272,19 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
 
 [338 <./figures/integration/spher2.pdf> <./figures/integration/spher3.pdf> <./f
 igures/integration/spher4.pdf>]
-<figures/integration/sphereSph2.pdf, id=6656, 154.5775pt x 151.56625pt>
+<figures/integration/sphereSph2.pdf, id=6660, 154.5775pt x 151.56625pt>
 File: figures/integration/sphereSph2.pdf Graphic file (type pdf)
 <use figures/integration/sphereSph2.pdf>
 Package pdftex.def Info: figures/integration/sphereSph2.pdf  used on input line
  5870.
 (pdftex.def)             Requested size: 139.11844pt x 136.40836pt.
-<figures/integration/sphereSph3.pdf, id=6657, 154.5775pt x 150.5625pt>
+<figures/integration/sphereSph3.pdf, id=6661, 154.5775pt x 150.5625pt>
 File: figures/integration/sphereSph3.pdf Graphic file (type pdf)
 <use figures/integration/sphereSph3.pdf>
 Package pdftex.def Info: figures/integration/sphereSph3.pdf  used on input line
  5879.
 (pdftex.def)             Requested size: 139.11844pt x 135.50497pt.
-<figures/integration/spher5b.pdf, id=6658, 209.78375pt x 251.94125pt>
+<figures/integration/spher5b.pdf, id=6662, 209.78375pt x 251.94125pt>
 File: figures/integration/spher5b.pdf Graphic file (type pdf)
 <use figures/integration/spher5b.pdf>
 Package pdftex.def Info: figures/integration/spher5b.pdf  used on input line 58
@@ -8292,25 +8292,25 @@ Package pdftex.def Info: figures/integration/spher5b.pdf  used on input line 58
 (pdftex.def)             Requested size: 209.78322pt x 251.94063pt.
  [339 <./figures/integration/sphereSph1.pdf> <./figures/integration/sphereSph2.
 pdf> <./figures/integration/sphereSph3.pdf>]
-<figures/integration/sphereTh.pdf, id=6682, 103.38625pt x 112.42pt>
+<figures/integration/sphereTh.pdf, id=6686, 103.38625pt x 112.42pt>
 File: figures/integration/sphereTh.pdf Graphic file (type pdf)
 <use figures/integration/sphereTh.pdf>
 Package pdftex.def Info: figures/integration/sphereTh.pdf  used on input line 5
 917.
 (pdftex.def)             Requested size: 103.38599pt x 112.41972pt.
-<figures/integration/spherePhi.pdf, id=6683, 103.38625pt x 112.42pt>
+<figures/integration/spherePhi.pdf, id=6687, 103.38625pt x 112.42pt>
 File: figures/integration/spherePhi.pdf Graphic file (type pdf)
 <use figures/integration/spherePhi.pdf>
 Package pdftex.def Info: figures/integration/spherePhi.pdf  used on input line 
 5918.
 (pdftex.def)             Requested size: 103.38599pt x 112.41972pt.
-<figures/integration/sphereThPhiA.pdf, id=6684, 105.39375pt x 111.41624pt>
+<figures/integration/sphereThPhiA.pdf, id=6688, 105.39375pt x 111.41624pt>
 File: figures/integration/sphereThPhiA.pdf Graphic file (type pdf)
 <use figures/integration/sphereThPhiA.pdf>
 Package pdftex.def Info: figures/integration/sphereThPhiA.pdf  used on input li
 ne 5919.
 (pdftex.def)             Requested size: 105.39348pt x 111.41597pt.
-<figures/integration/sphereRho.pdf, id=6686, 114.4275pt x 113.42375pt>
+<figures/integration/sphereRho.pdf, id=6690, 114.4275pt x 113.42375pt>
 File: figures/integration/sphereRho.pdf Graphic file (type pdf)
 <use figures/integration/sphereRho.pdf>
 Package pdftex.def Info: figures/integration/sphereRho.pdf  used on input line 
@@ -8321,7 +8321,7 @@ File: figures/integration/sphereTh.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/integration/sphereTh.pdf  used on input line 5
 937.
 (pdftex.def)             Requested size: 103.38599pt x 112.41972pt.
-<figures/integration/sphereRhoThB.pdf, id=6687, 114.4275pt x 111.41624pt>
+<figures/integration/sphereRhoThB.pdf, id=6691, 114.4275pt x 111.41624pt>
 File: figures/integration/sphereRhoThB.pdf Graphic file (type pdf)
 <use figures/integration/sphereRhoThB.pdf>
 Package pdftex.def Info: figures/integration/sphereRhoThB.pdf  used on input li
@@ -8330,7 +8330,7 @@ ne 5938.
 
 [340 <./figures/integration/spher5b.pdf> <./figures/integration/sphereTh.pdf> <
 ./figures/integration/spherePhi.pdf> <./figures/integration/sphereThPhiA.pdf>]
-<figures/coord/spher9.pdf, id=6724, 183.68625pt x 219.82124pt>
+<figures/coord/spher9.pdf, id=6728, 183.68625pt x 219.82124pt>
 File: figures/coord/spher9.pdf Graphic file (type pdf)
 <use figures/coord/spher9.pdf>
 Package pdftex.def Info: figures/coord/spher9.pdf  used on input line 5947.
@@ -8345,7 +8345,7 @@ File: figures/integration/spherePhi.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/integration/spherePhi.pdf  used on input line 
 5963.
 (pdftex.def)             Requested size: 103.38599pt x 112.41972pt.
-<figures/integration/sphereRhoPhi.pdf, id=6725, 114.4275pt x 111.41624pt>
+<figures/integration/sphereRhoPhi.pdf, id=6729, 114.4275pt x 111.41624pt>
 File: figures/integration/sphereRhoPhi.pdf Graphic file (type pdf)
 <use figures/integration/sphereRhoPhi.pdf>
 Package pdftex.def Info: figures/integration/sphereRhoPhi.pdf  used on input li
@@ -8358,7 +8358,7 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
 
 [341 <./figures/integration/sphereRho.pdf> <./figures/integration/sphereRhoThB.
 pdf> <./figures/coord/spher9.pdf>]
-<figures/coord/spher10.pdf, id=6751, 191.71625pt x 219.82124pt>
+<figures/coord/spher10.pdf, id=6755, 191.71625pt x 219.82124pt>
 File: figures/coord/spher10.pdf Graphic file (type pdf)
 <use figures/coord/spher10.pdf>
 Package pdftex.def Info: figures/coord/spher10.pdf  used on input line 5977.
@@ -8368,7 +8368,7 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 5990--5996
  [] 
  []
 
-<figures/integration/iceCream.pdf, id=6753, 100.375pt x 129.48375pt>
+<figures/integration/iceCream.pdf, id=6757, 100.375pt x 129.48375pt>
 File: figures/integration/iceCream.pdf Graphic file (type pdf)
 <use figures/integration/iceCream.pdf>
 Package pdftex.def Info: figures/integration/iceCream.pdf  used on input line 6
@@ -8380,25 +8380,25 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
  []
 
 [342 <./figures/integration/sphereRhoPhi.pdf> <./figures/coord/spher10.pdf>]
-<figures/integration/iceCream1.pdf, id=6775, 113.42375pt x 157.58875pt>
+<figures/integration/iceCream1.pdf, id=6779, 113.42375pt x 157.58875pt>
 File: figures/integration/iceCream1.pdf Graphic file (type pdf)
 <use figures/integration/iceCream1.pdf>
 Package pdftex.def Info: figures/integration/iceCream1.pdf  used on input line 
 6036.
 (pdftex.def)             Requested size: 113.42346pt x 157.58835pt.
-<figures/integration/iceCream1a.pdf, id=6776, 113.42375pt x 157.58875pt>
+<figures/integration/iceCream1a.pdf, id=6780, 113.42375pt x 157.58875pt>
 File: figures/integration/iceCream1a.pdf Graphic file (type pdf)
 <use figures/integration/iceCream1a.pdf>
 Package pdftex.def Info: figures/integration/iceCream1a.pdf  used on input line
  6037.
 (pdftex.def)             Requested size: 113.42346pt x 157.58835pt.
-<figures/integration/iceCream2.pdf, id=6777, 140.525pt x 103.38625pt>
+<figures/integration/iceCream2.pdf, id=6781, 140.525pt x 103.38625pt>
 File: figures/integration/iceCream2.pdf Graphic file (type pdf)
 <use figures/integration/iceCream2.pdf>
 Package pdftex.def Info: figures/integration/iceCream2.pdf  used on input line 
 6061.
 (pdftex.def)             Requested size: 140.52464pt x 103.38599pt.
-<figures/integration/iceCream2b.pdf, id=6778, 140.525pt x 103.38625pt>
+<figures/integration/iceCream2b.pdf, id=6782, 140.525pt x 103.38625pt>
 File: figures/integration/iceCream2b.pdf Graphic file (type pdf)
 <use figures/integration/iceCream2b.pdf>
 Package pdftex.def Info: figures/integration/iceCream2b.pdf  used on input line
@@ -8407,13 +8407,13 @@ Package pdftex.def Info: figures/integration/iceCream2b.pdf  used on input line
 
 [343 <./figures/integration/iceCream.pdf> <./figures/integration/iceCream1.pdf>
  <./figures/integration/iceCream1a.pdf>]
-<figures/integration/iceCream3.pdf, id=6799, 140.525pt x 103.38625pt>
+<figures/integration/iceCream3.pdf, id=6803, 140.525pt x 103.38625pt>
 File: figures/integration/iceCream3.pdf Graphic file (type pdf)
 <use figures/integration/iceCream3.pdf>
 Package pdftex.def Info: figures/integration/iceCream3.pdf  used on input line 
 6084.
 (pdftex.def)             Requested size: 140.52464pt x 103.38599pt.
-<figures/integration/iceCream3b.pdf, id=6800, 140.525pt x 103.38625pt>
+<figures/integration/iceCream3b.pdf, id=6804, 140.525pt x 103.38625pt>
 File: figures/integration/iceCream3b.pdf Graphic file (type pdf)
 <use figures/integration/iceCream3b.pdf>
 Package pdftex.def Info: figures/integration/iceCream3b.pdf  used on input line
@@ -8422,7 +8422,7 @@ Package pdftex.def Info: figures/integration/iceCream3b.pdf  used on input line
  [344 <./figures/integration/iceCream2.pdf> <./figures/integration/iceCream2b.p
 df> <./figures/integration/iceCream3.pdf> <./figures/integration/iceCream3b.pdf
 >]
-<figures/integration/triangleIceCream.pdf, id=6836, 79.29625pt x 64.24pt>
+<figures/integration/triangleIceCream.pdf, id=6840, 79.29625pt x 64.24pt>
 File: figures/integration/triangleIceCream.pdf Graphic file (type pdf)
 <use figures/integration/triangleIceCream.pdf>
 Package pdftex.def Info: figures/integration/triangleIceCream.pdf  used on inpu
@@ -8444,13 +8444,13 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 6177--6181
  []
 
 [345 <./figures/integration/triangleIceCream.pdf>]
-<figures/integration/appleCoreB.pdf, id=6855, 203.76125pt x 186.6975pt>
+<figures/integration/appleCoreB.pdf, id=6859, 203.76125pt x 186.6975pt>
 File: figures/integration/appleCoreB.pdf Graphic file (type pdf)
 <use figures/integration/appleCoreB.pdf>
 Package pdftex.def Info: figures/integration/appleCoreB.pdf  used on input line
  6198.
 (pdftex.def)             Requested size: 203.76074pt x 186.69704pt.
-<figures/integration/appleCoreB2.pdf, id=6856, 109.40875pt x 112.42pt>
+<figures/integration/appleCoreB2.pdf, id=6860, 109.40875pt x 112.42pt>
 File: figures/integration/appleCoreB2.pdf Graphic file (type pdf)
 <use figures/integration/appleCoreB2.pdf>
 Package pdftex.def Info: figures/integration/appleCoreB2.pdf  used on input lin
@@ -8458,19 +8458,19 @@ e 6213.
 (pdftex.def)             Requested size: 109.40846pt x 112.41972pt.
  [346 <./figures/integration/appleCoreB.pdf> <./figures/integration/appleCoreB2
 .pdf>]
-<figures/integration/appleCoreB3.pdf, id=6880, 125.46875pt x 112.42pt>
+<figures/integration/appleCoreB3.pdf, id=6884, 125.46875pt x 112.42pt>
 File: figures/integration/appleCoreB3.pdf Graphic file (type pdf)
 <use figures/integration/appleCoreB3.pdf>
 Package pdftex.def Info: figures/integration/appleCoreB3.pdf  used on input lin
 e 6230.
 (pdftex.def)             Requested size: 125.46843pt x 112.41972pt.
-<figures/integration/appleCoreB3b.pdf, id=6882, 125.46875pt x 112.42pt>
+<figures/integration/appleCoreB3b.pdf, id=6886, 125.46875pt x 112.42pt>
 File: figures/integration/appleCoreB3b.pdf Graphic file (type pdf)
 <use figures/integration/appleCoreB3b.pdf>
 Package pdftex.def Info: figures/integration/appleCoreB3b.pdf  used on input li
 ne 6254.
 (pdftex.def)             Requested size: 125.46843pt x 112.41972pt.
-<figures/integration/appleCoreB3c.pdf, id=6883, 200.75pt x 106.3975pt>
+<figures/integration/appleCoreB3c.pdf, id=6887, 200.75pt x 106.3975pt>
 File: figures/integration/appleCoreB3c.pdf Graphic file (type pdf)
 <use figures/integration/appleCoreB3c.pdf>
 Package pdftex.def Info: figures/integration/appleCoreB3c.pdf  used on input li
@@ -8478,7 +8478,7 @@ ne 6255.
 (pdftex.def)             Requested size: 200.7495pt x 106.39723pt.
  [347 <./figures/integration/appleCoreB3.pdf> <./figures/integration/appleCoreB
 3b.pdf> <./figures/integration/appleCoreB3c.pdf>]
-<figures/integration/triangleApple.pdf, id=6924, 76.285pt x 70.2625pt>
+<figures/integration/triangleApple.pdf, id=6928, 76.285pt x 70.2625pt>
 File: figures/integration/triangleApple.pdf Graphic file (type pdf)
 <use figures/integration/triangleApple.pdf>
 Package pdftex.def Info: figures/integration/triangleApple.pdf  used on input l
@@ -8495,25 +8495,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 6367--6368
  []
 
 [349]
-<figures/integration/polarU.pdf, id=6948, 134.5025pt x 94.3525pt>
+<figures/integration/polarU.pdf, id=6952, 134.5025pt x 94.3525pt>
 File: figures/integration/polarU.pdf Graphic file (type pdf)
 <use figures/integration/polarU.pdf>
 Package pdftex.def Info: figures/integration/polarU.pdf  used on input line 643
 4.
 (pdftex.def)             Requested size: 134.50215pt x 94.35225pt.
-<figures/integration/polarV.pdf, id=6949, 135.50626pt x 88.33pt>
+<figures/integration/polarV.pdf, id=6953, 135.50626pt x 88.33pt>
 File: figures/integration/polarV.pdf Graphic file (type pdf)
 <use figures/integration/polarV.pdf>
 Package pdftex.def Info: figures/integration/polarV.pdf  used on input line 643
 5.
 (pdftex.def)             Requested size: 135.5059pt x 88.32977pt.
-<figures/integration/RSlice.pdf, id=6950, 143.53625pt x 120.45pt>
+<figures/integration/RSlice.pdf, id=6954, 143.53625pt x 120.45pt>
 File: figures/integration/RSlice.pdf Graphic file (type pdf)
 <use figures/integration/RSlice.pdf>
 Package pdftex.def Info: figures/integration/RSlice.pdf  used on input line 644
 7.
 (pdftex.def)             Requested size: 143.53589pt x 120.44969pt.
-<figures/integration/dA.pdf, id=6951, 111.41624pt x 88.33pt>
+<figures/integration/dA.pdf, id=6955, 111.41624pt x 88.33pt>
 File: figures/integration/dA.pdf Graphic file (type pdf)
 <use figures/integration/dA.pdf>
 Package pdftex.def Info: figures/integration/dA.pdf  used on input line 6454.
@@ -8525,7 +8525,7 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
 
 [350 <./figures/integration/polarU.pdf> <./figures/integration/polarV.pdf> <./f
 igures/integration/RSlice.pdf>]
-<figures/integration/dA2.pdf, id=6983, 73.27374pt x 75.28125pt>
+<figures/integration/dA2.pdf, id=6987, 73.27374pt x 75.28125pt>
 File: figures/integration/dA2.pdf Graphic file (type pdf)
 <use figures/integration/dA2.pdf>
 Package pdftex.def Info: figures/integration/dA2.pdf  used on input line 6516.
@@ -8599,14 +8599,14 @@ Overfull \hbox (24.80298pt too wide) in paragraph at lines 6647--6649
  [] 
  []
 
-<figures/integration/genSub.pdf, id=7037, 149.55875pt x 158.5925pt>
+<figures/integration/genSub.pdf, id=7041, 149.55875pt x 158.5925pt>
 File: figures/integration/genSub.pdf Graphic file (type pdf)
 <use figures/integration/genSub.pdf>
 Package pdftex.def Info: figures/integration/genSub.pdf  used on input line 668
 6.
 (pdftex.def)             Requested size: 149.55838pt x 158.59209pt.
 [354]
-<figures/integration/genSubB.pdf, id=7044, 148.555pt x 158.5925pt>
+<figures/integration/genSubB.pdf, id=7048, 148.555pt x 158.5925pt>
 File: figures/integration/genSubB.pdf Graphic file (type pdf)
 <use figures/integration/genSubB.pdf>
 Package pdftex.def Info: figures/integration/genSubB.pdf  used on input line 67
@@ -8684,7 +8684,7 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
  []
 
 [358]
-<figures/integration/slicing.pdf, id=7105, 149.55875pt x 146.5475pt>
+<figures/integration/slicing.pdf, id=7109, 149.55875pt x 146.5475pt>
 File: figures/integration/slicing.pdf Graphic file (type pdf)
 <use figures/integration/slicing.pdf>
 Package pdftex.def Info: figures/integration/slicing.pdf  used on input line 69
@@ -8702,7 +8702,7 @@ Overfull \hbox (14.9909pt too wide) in paragraph at lines 8--48
  [] 
  []
 
-<figures/trig/special_triangles.pdf, id=7117, 348.4295pt x 157.29901pt>
+<figures/trig/special_triangles.pdf, id=7121, 348.4295pt x 157.29901pt>
 File: figures/trig/special_triangles.pdf Graphic file (type pdf)
 <use figures/trig/special_triangles.pdf>
 Package pdftex.def Info: figures/trig/special_triangles.pdf  used on input line
@@ -8717,7 +8717,7 @@ Underfull \vbox (badness 6808) has occurred while \output is active []
 .tex
 [364]
 Appendix B.
-<figures/powerlog/expGraph2.pdf, id=7170, 239.89626pt x 156.585pt>
+<figures/powerlog/expGraph2.pdf, id=7174, 239.89626pt x 156.585pt>
 File: figures/powerlog/expGraph2.pdf Graphic file (type pdf)
 <use figures/powerlog/expGraph2.pdf>
 Package pdftex.def Info: figures/powerlog/expGraph2.pdf  used on input line 53.
@@ -8726,7 +8726,7 @@ Package pdftex.def Info: figures/powerlog/expGraph2.pdf  used on input line 53.
 [365
 
 ]
-<figures/powerlog/logGraph10.pdf, id=7175, 226.8475pt x 151.56625pt>
+<figures/powerlog/logGraph10.pdf, id=7179, 226.8475pt x 151.56625pt>
 File: figures/powerlog/logGraph10.pdf Graphic file (type pdf)
 <use figures/powerlog/logGraph10.pdf>
 Package pdftex.def Info: figures/powerlog/logGraph10.pdf  used on input line 12
@@ -8751,7 +8751,7 @@ Appendix E.
 
 ]) (./clp_3d_coord.tex [373]
 Appendix F.
-<figures/coord/cart1.pdf, id=7230, 130.4875pt x 106.3975pt>
+<figures/coord/cart1.pdf, id=7234, 130.4875pt x 106.3975pt>
 File: figures/coord/cart1.pdf Graphic file (type pdf)
 <use figures/coord/cart1.pdf>
 Package pdftex.def Info: figures/coord/cart1.pdf  used on input line 19.
@@ -8773,7 +8773,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 30--30
  [] 
  []
 
-<figures/coord/cart5.pdf, id=7231, 165.61874pt x 105.39375pt>
+<figures/coord/cart5.pdf, id=7235, 165.61874pt x 105.39375pt>
 File: figures/coord/cart5.pdf Graphic file (type pdf)
 <use figures/coord/cart5.pdf>
 Package pdftex.def Info: figures/coord/cart5.pdf  used on input line 35.
@@ -8802,7 +8802,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 74--74
  [] 
  []
 
-<figures/coord/cyl5.pdf, id=7244, 166.6225pt x 72.27pt>
+<figures/coord/cyl5.pdf, id=7248, 166.6225pt x 72.27pt>
 File: figures/coord/cyl5.pdf Graphic file (type pdf)
 <use figures/coord/cyl5.pdf>
 Package pdftex.def Info: figures/coord/cyl5.pdf  used on input line 79.
@@ -8822,17 +8822,17 @@ File: figures/coord/sphericalTop.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/coord/sphericalTop.pdf  used on input line 110
 .
 (pdftex.def)             Requested size: 186.69704pt x 118.4422pt.
-<figures/coord/spher2.pdf, id=7258, 114.4275pt x 131.49126pt>
+<figures/coord/spher2.pdf, id=7262, 114.4275pt x 131.49126pt>
 File: figures/coord/spher2.pdf Graphic file (type pdf)
 <use figures/coord/spher2.pdf>
 Package pdftex.def Info: figures/coord/spher2.pdf  used on input line 127.
 (pdftex.def)             Requested size: 114.42722pt x 131.49092pt.
-<figures/coord/spher3.pdf, id=7259, 110.4125pt x 131.49126pt>
+<figures/coord/spher3.pdf, id=7263, 110.4125pt x 131.49126pt>
 File: figures/coord/spher3.pdf Graphic file (type pdf)
 <use figures/coord/spher3.pdf>
 Package pdftex.def Info: figures/coord/spher3.pdf  used on input line 128.
 (pdftex.def)             Requested size: 110.41222pt x 131.49092pt.
-<figures/coord/spher4.pdf, id=7260, 111.41624pt x 131.49126pt>
+<figures/coord/spher4.pdf, id=7264, 111.41624pt x 131.49126pt>
 File: figures/coord/spher4.pdf Graphic file (type pdf)
 <use figures/coord/spher4.pdf>
 Package pdftex.def Info: figures/coord/spher4.pdf  used on input line 129.
@@ -8842,7 +8842,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 131--131
  [] 
  []
 
-<figures/coord/spher11.pdf, id=7273, 290.08376pt x 290.08376pt>
+<figures/coord/spher11.pdf, id=7277, 290.08376pt x 290.08376pt>
 File: figures/coord/spher11.pdf Graphic file (type pdf)
 <use figures/coord/spher11.pdf>
 Package pdftex.def Info: figures/coord/spher11.pdf  used on input line 136.
@@ -8862,7 +8862,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 147--147
 
 [377 <./figures/coord/spher2.pdf> <./figures/coord/spher3.pdf> <./figures/coord
 /spher4.pdf> <./figures/coord/spher11.pdf>]
-<figures/coord/spher5.pdf, id=7306, 209.78375pt x 265.99374pt>
+<figures/coord/spher5.pdf, id=7310, 209.78375pt x 265.99374pt>
 File: figures/coord/spher5.pdf Graphic file (type pdf)
 <use figures/coord/spher5.pdf>
 Package pdftex.def Info: figures/coord/spher5.pdf  used on input line 152.
@@ -8873,7 +8873,7 @@ Appendix G.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/polar.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/polar.pdf, id=7326, 96.36pt x 88.33pt>
+<figures/ISO/polar.pdf, id=7330, 96.36pt x 88.33pt>
 File: figures/ISO/polar.pdf Graphic file (type pdf)
 <use figures/ISO/polar.pdf>
 Package pdftex.def Info: figures/ISO/polar.pdf  used on input line 32.
@@ -8882,7 +8882,7 @@ Package pdftex.def Info: figures/ISO/polar.pdf  used on input line 32.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/polarTh.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/polarTh.pdf, id=7327, 115.43124pt x 127.47626pt>
+<figures/ISO/polarTh.pdf, id=7331, 115.43124pt x 127.47626pt>
 File: figures/ISO/polarTh.pdf Graphic file (type pdf)
 <use figures/ISO/polarTh.pdf>
 Package pdftex.def Info: figures/ISO/polarTh.pdf  used on input line 46.
@@ -8891,7 +8891,7 @@ Package pdftex.def Info: figures/ISO/polarTh.pdf  used on input line 46.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/polarR.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/polarR.pdf, id=7328, 115.43124pt x 127.47626pt>
+<figures/ISO/polarR.pdf, id=7332, 115.43124pt x 127.47626pt>
 File: figures/ISO/polarR.pdf Graphic file (type pdf)
 <use figures/ISO/polarR.pdf>
 Package pdftex.def Info: figures/ISO/polarR.pdf  used on input line 47.
@@ -8907,7 +8907,7 @@ Overfull \hbox (13.14713pt too wide) has occurred while \output is active
 
 pdfTeX warning: pdflatex (file ./figures/ISO/polarNegTh.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/polarNegTh.pdf, id=7341, 188.705pt x 110.4125pt>
+<figures/ISO/polarNegTh.pdf, id=7345, 188.705pt x 110.4125pt>
 File: figures/ISO/polarNegTh.pdf Graphic file (type pdf)
 <use figures/ISO/polarNegTh.pdf>
 Package pdftex.def Info: figures/ISO/polarNegTh.pdf  used on input line 60.
@@ -8916,7 +8916,7 @@ Package pdftex.def Info: figures/ISO/polarNegTh.pdf  used on input line 60.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/polarNeg.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/polarNeg.pdf, id=7342, 234.8775pt x 110.4125pt>
+<figures/ISO/polarNeg.pdf, id=7346, 234.8775pt x 110.4125pt>
 File: figures/ISO/polarNeg.pdf Graphic file (type pdf)
 <use figures/ISO/polarNeg.pdf>
 Package pdftex.def Info: figures/ISO/polarNeg.pdf  used on input line 73.
@@ -8925,7 +8925,7 @@ Package pdftex.def Info: figures/ISO/polarNeg.pdf  used on input line 73.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/polarA.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/polarA.pdf, id=7343, 134.5025pt x 73.27374pt>
+<figures/ISO/polarA.pdf, id=7347, 134.5025pt x 73.27374pt>
 File: figures/ISO/polarA.pdf Graphic file (type pdf)
 <use figures/ISO/polarA.pdf>
 Package pdftex.def Info: figures/ISO/polarA.pdf  used on input line 87.
@@ -8935,7 +8935,7 @@ rNegTh.pdf> <./figures/ISO/polarNeg.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/ISO/cyl1.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<figures/ISO/cyl1.pdf, id=7385, 128.48pt x 104.39pt>
+<figures/ISO/cyl1.pdf, id=7389, 128.48pt x 104.39pt>
 File: figures/ISO/cyl1.pdf Graphic file (type pdf)
 <use figures/ISO/cyl1.pdf>
 Package pdftex.def Info: figures/ISO/cyl1.pdf  used on input line 106.
@@ -8944,7 +8944,7 @@ Package pdftex.def Info: figures/ISO/cyl1.pdf  used on input line 106.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/cyl3.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<figures/ISO/cyl3.pdf, id=7386, 110.4125pt x 128.48pt>
+<figures/ISO/cyl3.pdf, id=7390, 110.4125pt x 128.48pt>
 File: figures/ISO/cyl3.pdf Graphic file (type pdf)
 <use figures/ISO/cyl3.pdf>
 Package pdftex.def Info: figures/ISO/cyl3.pdf  used on input line 123.
@@ -8953,7 +8953,7 @@ Package pdftex.def Info: figures/ISO/cyl3.pdf  used on input line 123.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/cyl4.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<figures/ISO/cyl4.pdf, id=7387, 111.41624pt x 128.48pt>
+<figures/ISO/cyl4.pdf, id=7391, 111.41624pt x 128.48pt>
 File: figures/ISO/cyl4.pdf Graphic file (type pdf)
 <use figures/ISO/cyl4.pdf>
 Package pdftex.def Info: figures/ISO/cyl4.pdf  used on input line 124.
@@ -8962,7 +8962,7 @@ Package pdftex.def Info: figures/ISO/cyl4.pdf  used on input line 124.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/cyl2.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<figures/ISO/cyl2.pdf, id=7388, 109.40875pt x 128.48pt>
+<figures/ISO/cyl2.pdf, id=7392, 109.40875pt x 128.48pt>
 File: figures/ISO/cyl2.pdf Graphic file (type pdf)
 <use figures/ISO/cyl2.pdf>
 Package pdftex.def Info: figures/ISO/cyl2.pdf  used on input line 125.
@@ -8976,7 +8976,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 127--127
 
 pdfTeX warning: pdflatex (file ./figures/ISO/cyl5.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<figures/ISO/cyl5.pdf, id=7389, 168.63pt x 75.28125pt>
+<figures/ISO/cyl5.pdf, id=7393, 168.63pt x 75.28125pt>
 File: figures/ISO/cyl5.pdf Graphic file (type pdf)
 <use figures/ISO/cyl5.pdf>
 Package pdftex.def Info: figures/ISO/cyl5.pdf  used on input line 132.
@@ -8986,7 +8986,7 @@ f> <./figures/ISO/cyl4.pdf> <./figures/ISO/cyl2.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/ISO/spherical.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/spherical.pdf, id=7432, 159.59625pt x 156.585pt>
+<figures/ISO/spherical.pdf, id=7436, 159.59625pt x 156.585pt>
 File: figures/ISO/spherical.pdf Graphic file (type pdf)
 <use figures/ISO/spherical.pdf>
 Package pdftex.def Info: figures/ISO/spherical.pdf  used on input line 148.
@@ -8995,7 +8995,7 @@ Package pdftex.def Info: figures/ISO/spherical.pdf  used on input line 148.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/sphericalSide.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/sphericalSide.pdf, id=7433, 161.60374pt x 127.47626pt>
+<figures/ISO/sphericalSide.pdf, id=7437, 161.60374pt x 127.47626pt>
 File: figures/ISO/sphericalSide.pdf Graphic file (type pdf)
 <use figures/ISO/sphericalSide.pdf>
 Package pdftex.def Info: figures/ISO/sphericalSide.pdf  used on input line 155.
@@ -9005,7 +9005,7 @@ Package pdftex.def Info: figures/ISO/sphericalSide.pdf  used on input line 155.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/sphericalTop.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/sphericalTop.pdf, id=7434, 184.69pt x 127.47626pt>
+<figures/ISO/sphericalTop.pdf, id=7438, 184.69pt x 127.47626pt>
 File: figures/ISO/sphericalTop.pdf Graphic file (type pdf)
 <use figures/ISO/sphericalTop.pdf>
 Package pdftex.def Info: figures/ISO/sphericalTop.pdf  used on input line 156.
@@ -9015,7 +9015,7 @@ ricalSide.pdf> <./figures/ISO/sphericalTop.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/ISO/spher2.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/spher2.pdf, id=7471, 114.4275pt x 131.49126pt>
+<figures/ISO/spher2.pdf, id=7476, 114.4275pt x 131.49126pt>
 File: figures/ISO/spher2.pdf Graphic file (type pdf)
 <use figures/ISO/spher2.pdf>
 Package pdftex.def Info: figures/ISO/spher2.pdf  used on input line 173.
@@ -9024,7 +9024,7 @@ Package pdftex.def Info: figures/ISO/spher2.pdf  used on input line 173.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/spher3.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/spher3.pdf, id=7472, 111.41624pt x 131.49126pt>
+<figures/ISO/spher3.pdf, id=7477, 111.41624pt x 131.49126pt>
 File: figures/ISO/spher3.pdf Graphic file (type pdf)
 <use figures/ISO/spher3.pdf>
 Package pdftex.def Info: figures/ISO/spher3.pdf  used on input line 174.
@@ -9033,7 +9033,7 @@ Package pdftex.def Info: figures/ISO/spher3.pdf  used on input line 174.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/spher4.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/spher4.pdf, id=7473, 110.4125pt x 131.49126pt>
+<figures/ISO/spher4.pdf, id=7478, 110.4125pt x 131.49126pt>
 File: figures/ISO/spher4.pdf Graphic file (type pdf)
 <use figures/ISO/spher4.pdf>
 Package pdftex.def Info: figures/ISO/spher4.pdf  used on input line 175.
@@ -9047,7 +9047,7 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 177--177
 
 pdfTeX warning: pdflatex (file ./figures/ISO/spher5.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/spher5.pdf, id=7474, 212.795pt x 262.9825pt>
+<figures/ISO/spher5.pdf, id=7479, 212.795pt x 262.9825pt>
 File: figures/ISO/spher5.pdf Graphic file (type pdf)
 <use figures/ISO/spher5.pdf>
 Package pdftex.def Info: figures/ISO/spher5.pdf  used on input line 182.
@@ -9056,7 +9056,7 @@ Package pdftex.def Info: figures/ISO/spher5.pdf  used on input line 182.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/spher6.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/spher6.pdf, id=7475, 183.68625pt x 219.82124pt>
+<figures/ISO/spher6.pdf, id=7480, 183.68625pt x 219.82124pt>
 File: figures/ISO/spher6.pdf Graphic file (type pdf)
 <use figures/ISO/spher6.pdf>
 Package pdftex.def Info: figures/ISO/spher6.pdf  used on input line 189.
@@ -9065,7 +9065,7 @@ Package pdftex.def Info: figures/ISO/spher6.pdf  used on input line 189.
 
 pdfTeX warning: pdflatex (file ./figures/ISO/spher7.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<figures/ISO/spher7.pdf, id=7476, 198.7425pt x 219.82124pt>
+<figures/ISO/spher7.pdf, id=7481, 198.7425pt x 219.82124pt>
 File: figures/ISO/spher7.pdf Graphic file (type pdf)
 <use figures/ISO/spher7.pdf>
 Package pdftex.def Info: figures/ISO/spher7.pdf  used on input line 190.
@@ -9079,25 +9079,25 @@ Overfull \hbox (24.11168pt too wide) in paragraph at lines 192--192
 4.pdf> <./figures/ISO/spher5.pdf>]) (./clp_quadric.tex [384 <./figures/ISO/sphe
 r6.pdf> <./figures/ISO/spher7.pdf>]
 Appendix H.
-<figures/quadric/conePlaneCircle.pdf, id=7527, 77.28876pt x 95.35625pt>
+<figures/quadric/conePlaneCircle.pdf, id=7531, 77.28876pt x 95.35625pt>
 File: figures/quadric/conePlaneCircle.pdf Graphic file (type pdf)
 <use figures/quadric/conePlaneCircle.pdf>
 Package pdftex.def Info: figures/quadric/conePlaneCircle.pdf  used on input lin
 e 20.
 (pdftex.def)             Requested size: 77.28856pt x 95.356pt.
-<figures/quadric/conePlaneEllipse.pdf, id=7528, 77.28876pt x 95.35625pt>
+<figures/quadric/conePlaneEllipse.pdf, id=7532, 77.28876pt x 95.35625pt>
 File: figures/quadric/conePlaneEllipse.pdf Graphic file (type pdf)
 <use figures/quadric/conePlaneEllipse.pdf>
 Package pdftex.def Info: figures/quadric/conePlaneEllipse.pdf  used on input li
 ne 21.
 (pdftex.def)             Requested size: 77.28856pt x 95.356pt.
-<figures/quadric/conePlaneParabola.pdf, id=7529, 77.28876pt x 95.35625pt>
+<figures/quadric/conePlaneParabola.pdf, id=7533, 77.28876pt x 95.35625pt>
 File: figures/quadric/conePlaneParabola.pdf Graphic file (type pdf)
 <use figures/quadric/conePlaneParabola.pdf>
 Package pdftex.def Info: figures/quadric/conePlaneParabola.pdf  used on input l
 ine 22.
 (pdftex.def)             Requested size: 77.28856pt x 95.356pt.
-<figures/quadric/conePlaneHyperbola.pdf, id=7530, 73.27374pt x 135.50626pt>
+<figures/quadric/conePlaneHyperbola.pdf, id=7534, 73.27374pt x 135.50626pt>
 File: figures/quadric/conePlaneHyperbola.pdf Graphic file (type pdf)
 <use figures/quadric/conePlaneHyperbola.pdf>
 Package pdftex.def Info: figures/quadric/conePlaneHyperbola.pdf  used on input 
@@ -9121,19 +9121,19 @@ File: figures/quadric/cylinder.pdf Graphic file (type pdf)
 <use figures/quadric/cylinder.pdf>
 Package pdftex.def Info: figures/quadric/cylinder.pdf  used on input line 96.
 (pdftex.def)             Requested size: 74.37784pt x 84.81683pt.
-<figures/quadric/parabolic_cylinder.pdf, id=7557, 64.24pt x 65.24374pt>
+<figures/quadric/parabolic_cylinder.pdf, id=7561, 64.24pt x 65.24374pt>
 File: figures/quadric/parabolic_cylinder.pdf Graphic file (type pdf)
 <use figures/quadric/parabolic_cylinder.pdf>
 Package pdftex.def Info: figures/quadric/parabolic_cylinder.pdf  used on input 
 line 98.
 (pdftex.def)             Requested size: 83.51198pt x 84.81683pt.
-<figures/quadric/hyperbolic_cylinder.pdf, id=7558, 55.20625pt x 65.24374pt>
+<figures/quadric/hyperbolic_cylinder.pdf, id=7562, 55.20625pt x 65.24374pt>
 File: figures/quadric/hyperbolic_cylinder.pdf Graphic file (type pdf)
 <use figures/quadric/hyperbolic_cylinder.pdf>
 Package pdftex.def Info: figures/quadric/hyperbolic_cylinder.pdf  used on input
  line 100.
 (pdftex.def)             Requested size: 77.2882pt x 91.3406pt.
-<figures/quadric/sphere.pdf, id=7559, 62.2325pt x 65.24374pt>
+<figures/quadric/sphere.pdf, id=7563, 62.2325pt x 65.24374pt>
 File: figures/quadric/sphere.pdf Graphic file (type pdf)
 <use figures/quadric/sphere.pdf>
 Package pdftex.def Info: figures/quadric/sphere.pdf  used on input line 102.
@@ -9148,19 +9148,19 @@ Overfull \hbox (6.79227pt too wide) in paragraph at lines 112--112
 \OT1/ppl/m/n/12 paraboloid 
  []
 
-<figures/quadric/ellipsoid.pdf, id=7560, 62.2325pt x 65.24374pt>
+<figures/quadric/ellipsoid.pdf, id=7564, 62.2325pt x 65.24374pt>
 File: figures/quadric/ellipsoid.pdf Graphic file (type pdf)
 <use figures/quadric/ellipsoid.pdf>
 Package pdftex.def Info: figures/quadric/ellipsoid.pdf  used on input line 142.
 
 (pdftex.def)             Requested size: 93.34851pt x 97.86536pt.
-<figures/quadric/elliptic_paraboloid.pdf, id=7561, 68.255pt x 65.24374pt>
+<figures/quadric/elliptic_paraboloid.pdf, id=7565, 68.255pt x 65.24374pt>
 File: figures/quadric/elliptic_paraboloid.pdf Graphic file (type pdf)
 <use figures/quadric/elliptic_paraboloid.pdf>
 Package pdftex.def Info: figures/quadric/elliptic_paraboloid.pdf  used on input
  line 144.
 (pdftex.def)             Requested size: 88.73148pt x 84.81683pt.
-<figures/quadric/cone.pdf, id=7562, 57.21375pt x 65.24374pt>
+<figures/quadric/cone.pdf, id=7566, 57.21375pt x 65.24374pt>
 File: figures/quadric/cone.pdf Graphic file (type pdf)
 <use figures/quadric/cone.pdf>
 Package pdftex.def Info: figures/quadric/cone.pdf  used on input line 146.
@@ -9173,13 +9173,13 @@ File: figures/quadric/hyperboloid1.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/quadric/hyperboloid1.pdf  used on input line 1
 86.
 (pdftex.def)             Requested size: 80.09868pt x 91.3406pt.
-<figures/quadric/hyperboloid2.pdf, id=7579, 57.21375pt x 65.24374pt>
+<figures/quadric/hyperboloid2.pdf, id=7583, 57.21375pt x 65.24374pt>
 File: figures/quadric/hyperboloid2.pdf Graphic file (type pdf)
 <use figures/quadric/hyperboloid2.pdf>
 Package pdftex.def Info: figures/quadric/hyperboloid2.pdf  used on input line 1
 88.
 (pdftex.def)             Requested size: 80.09868pt x 91.3406pt.
-<figures/quadric/hyperbolic_paraboloid.pdf, id=7580, 94.3525pt x 65.24374pt>
+<figures/quadric/hyperbolic_paraboloid.pdf, id=7584, 94.3525pt x 65.24374pt>
 File: figures/quadric/hyperbolic_paraboloid.pdf Graphic file (type pdf)
 <use figures/quadric/hyperbolic_paraboloid.pdf>
 Package pdftex.def Info: figures/quadric/hyperbolic_paraboloid.pdf  used on inp
@@ -9199,12 +9199,12 @@ Package rerunfilecheck Info: File `clp_3_mc_text.out' has not changed.
 (rerunfilecheck)             Checksum: D4148DB0225ABE0CAC1E4929D6F1E7FB;7356.
  ) 
 Here is how much of TeX's memory you used:
- 39823 strings out of 483107
- 933512 string characters out of 5964629
- 1387699 words of memory out of 5000000
- 52559 multiletter control sequences out of 15000+600000
+ 39823 strings out of 481276
+ 933512 string characters out of 5921753
+ 1392257 words of memory out of 5000000
+ 52794 multiletter control sequences out of 15000+600000
  611366 words of font info for 250 fonts, out of 8000000 for 9000
- 59 hyphenation exceptions out of 8191
+ 1131 hyphenation exceptions out of 8191
  76i,21n,102p,1025b,2064s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.45} has been referenced but does not ex
 ist, replaced by a fixed one
@@ -9246,10 +9246,10 @@ ive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplri8a.pfb>
-Output written on clp_3_mc_text.pdf (394 pages, 3261611 bytes).
+Output written on clp_3_mc_text.pdf (394 pages, 3260959 bytes).
 PDF statistics:
- 7898 PDF objects out of 8907 (max. 8388607)
- 6881 compressed objects within 69 object streams
+ 7902 PDF objects out of 8907 (max. 8388607)
+ 6885 compressed objects within 69 object streams
  1106 named destinations out of 1200 (max. 500000)
  2952 words of extra memory for PDF output out of 10000 (max. 10000000)
 

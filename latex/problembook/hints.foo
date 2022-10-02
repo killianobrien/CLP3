@@ -1,0 +1,690 @@
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s1.1}}.}\phantomsection \label {h ex:s1.1} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s1.1} \hspace {2ex} \nameref *{ex:s1.1}}
+\flushleft \hyperref [q:1.1.0.2]{H-2:} 
+In part (d), complete a square.
+\flushleft \hyperref [q:1.1.0.4]{H-4:} 
+In part (d) you are being asked to find the value of $x$ that minimizes the
+distance from $(x,0,0)$ to $A$. You found a formula for that distance in part (c).
+\flushleft \hyperref [q:1.1.0.8]{H-8:} 
+It is not necessary to solve the equation $x^2-2px+y^2=3p^2$ for $p(x,y)$.
+For example, a point $(x,y)$ is on the isobar $p(x,y)=1$ if and only if
+$x^2-2x+y^2=3$. This curve can be easily identified if one first completes a
+square.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s1.2}}.}\phantomsection \label {h ex:s1.2} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s1.2} \hspace {2ex} \nameref *{ex:s1.2}}
+\flushleft \hyperref [q:1.2.0.2]{H-2:} 
+If three points are collinear, then the vector from the first point
+to the second point, and the vector from the first point to the third point
+must both be parallel to the line, and hence must be parallel to each other
+(i.e. must be multiples of each other).
+
+\begin{center}
+     \includegraphics{collinear.pdf}
+\end{center}
+
+\flushleft \hyperref [q:1.2.0.3]{H-3:} 
+Review Theorem \eref{CLP200}{thm:dotPppties} in the CLP-3 text.
+\flushleft \hyperref [q:1.2.0.4]{H-4:} 
+Review Definition \eref{CLP200}{def parallel vectors} and
+Theorem \eref{CLP200}{thm:dotPppties} in the CLP-3 text.
+\flushleft \hyperref [q:1.2.0.5]{H-5:} 
+Review Definition \eref{CLP200}{def parallel vectors} and
+Theorem \eref{CLP200}{thm:dotPppties} in the CLP-3 text.
+\flushleft \hyperref [q:1.2.0.15]{H-15:} 
+(a)
+The three line segments from $C$ to $O$, from $C$ to $A$ and from $C$ to $B$
+all have exactly the same length, namely the radius of the circumscribing
+circle.
+
+(b)
+Let $(\bar x,\bar y)$ be the coordinates of $C$.
+Write down the equations that say that $(\bar x,\bar y)$ is
+equidistant from the three vertices $O$, $A$ and $B$.
+\flushleft \hyperref [q:1.2.0.16]{H-16:} 
+The centre of the sphere is the midpoint of the diameter.
+\flushleft \hyperref [q:1.2.0.17]{H-17:} 
+Draw a sketch.
+Call the vertices of the triangle $A$, $B$ and $C$ with $C$ being the
+vertex that joins the two sides. Let $\va$ be the vector from $C$ to $A$
+and $\vb$ be the vector from $C$ to $B$. Determine, in terms of $\va$ and
+$\vb$,
+\begin{itemize}\itemsep0pt \parskip0pt \parsep0pt %\itemindent-15pt
+
+\item
+the vector from $A$ to $B$,
+\item
+the two vectors from $C$ to the two midpoints and finally
+\item
+the vector joining the two midpoints.
+\end{itemize}
+\flushleft \hyperref [q:1.2.0.18]{H-18:} 
+Review \S\eref{CLP200}{sec:GEOparallelogram} in the CLP-3 text.
+\flushleft \hyperref [q:1.2.0.19]{H-19:} 
+Determine the four corners of the parallelogram.
+\flushleft \hyperref [q:1.2.0.20]{H-20:} 
+Review \S\eref{CLP200}{sec:GEOparallelogram} in the CLP-3 text.
+\flushleft \hyperref [q:1.2.0.30]{H-30:} 
+Evaluate $\diff{L}{t}$ by differentiating $\vr(t)\times\vr'(t)$.
+\flushleft \hyperref [q:1.2.0.40]{H-40:} 
+Choose coordinate axes so that the vertex opposite
+the face of area $D$ is at the origin. Denote  by $\va$, $\vb$ and
+$\vc$ the vertices opposite the sides of area $A$, $B$ and $C$ respectively.
+Express $A$, $B$, $C$ and $D$, which are areas of triangles, as one half
+times cross products of vectors built from $\va$, $\vb$ and $\vc$.
+\flushleft \hyperref [q:1.2.0.41]{H-41:} 
+  Do problem \ref{prb pythagorous} first.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s1.3}}.}\phantomsection \label {h ex:s1.3} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s1.3} \hspace {2ex} \nameref *{ex:s1.3}}
+\flushleft \hyperref [q:1.3.0.1]{H-1:} 
+What, exactly, is $t$?
+\flushleft \hyperref [q:1.3.0.2]{H-2:} 
+What, exactly, is $\mathbf c$?
+\flushleft \hyperref [q:1.3.0.3]{H-3:} 
+Set $t=0$ in both equation to get two different points with integer coordinates; show that these two points are on both lines.
+\flushleft \hyperref [q:1.3.0.4]{H-4:} 
+A line is specified by two things: one point on the line, and a vector parallel to the direction of the line.
+\flushleft \hyperref [q:1.3.0.5]{H-5:} 
+Remember that the parametric equation of a line with direction $\mathbf d$, passing through point $\mathbf c$, is $\llt x,y\rgt =\mathbf c + t\mathbf d $.
+\flushleft \hyperref [q:1.3.0.6]{H-6:} 
+Review Equation~\eref{CLP200}{eqn line} in the CLP-3 text.%1.3.3
+\flushleft \hyperref [q:1.3.0.7]{H-7:} 
+Review Example~\eref{CLP200}{eg nearest point} in the CLP-3 text.%1.3.5
+\flushleft \hyperref [q:1.3.0.9]{H-9:} 
+The radius of the circle will serve as a normal vector to the line.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s1.4}}.}\phantomsection \label {h ex:s1.4} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s1.4} \hspace {2ex} \nameref *{ex:s1.4}}
+\flushleft \hyperref [q:1.4.0.1]{H-1:} 
+You are looking for a vector that is perpendicular to $z=0$ and hence is
+parallel to $\hk$.
+\flushleft \hyperref [q:1.4.0.2]{H-2:} 
+A point $(x,y,z)$ is on the $y$-axis if and only if $x=z=0$. Similarly,
+a point $(x,y,z)$ is on the $z$-axis if and only if $x=y=0$.
+\flushleft \hyperref [q:1.4.0.4]{H-4:} 
+Guess.
+\flushleft \hyperref [q:1.4.0.5]{H-5:} 
+(a) See Question~\ref{prob1.4_planeeqn} --- or just have a guess!
+\flushleft \hyperref [q:1.4.0.6]{H-6:} 
+Three points don't always determine a plane --- why?
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s1.5}}.}\phantomsection \label {h ex:s1.5} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s1.5} \hspace {2ex} \nameref *{ex:s1.5}}
+\flushleft \hyperref [q:1.5.0.1]{H-1:} 
+What's fishy about those normal vectors?
+\flushleft \hyperref [q:1.5.0.2]{H-2:} 
+The two lines $\llt x-x_0\,,\,y-y_0\,,\,z-z_0\rgt =t\vd$ and
+$\llt x-x'_0\,,\,y-y'_0\,,\,z-z'_0\rgt =t\vd'$ are not parallel if
+$\vd\times\vd'\ne\vZero$.
+\flushleft \hyperref [q:1.5.0.3]{H-3:} 
+Review Example \eref{CLP200}{eg line equations} in the CLP-3 text.
+\flushleft \hyperref [q:1.5.0.4]{H-4:} 
+Review Example \eref{CLP200}{eg line equations} in the CLP-3 text.
+\flushleft \hyperref [q:1.5.0.7]{H-7:} 
+Review Example \eref{CLP200}{eg line equations} in the CLP-3 text.
+\flushleft \hyperref [q:1.5.0.8]{H-8:} 
+Review Example \eref{CLP200}{eg:VPdistance-point-line} in the CLP-3 text.
+\flushleft \hyperref [q:1.5.0.9]{H-9:} 
+Review Example \eref{CLP200}{eg:VPdistance-point-plane} in the CLP-3 text.
+\flushleft \hyperref [q:1.5.0.12]{H-12:} 
+Review the properties of the dot product in
+Theorem \eref{CLP200}{thm:dotPppties} of the CLP-3 text.
+\flushleft \hyperref [q:1.5.0.15]{H-15:} 
+All three of the points $A$, $B$, $C$ lie in the plane $y=2$.
+\flushleft \hyperref [q:1.5.0.17]{H-17:} 
+Review Example \eref{CLP200}{eg:VPdistance-line-line-bis}
+in the CLP-3 text.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s1.6}}.}\phantomsection \label {h ex:s1.6} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s1.6} \hspace {2ex} \nameref *{ex:s1.6}}
+\flushleft \hyperref [q:1.6.0.1]{H-1:} 
+Find the value of $t$ at which the three points occur on the curve.
+\flushleft \hyperref [q:1.6.0.2]{H-2:} 
+The curve ``crosses itself" when $(\sin t,t^2)$ gives the same coordinate for different values of $t$. When these crossings occur will depend on which crossing you're referring to, so your answers should all depend on $t$.
+\flushleft \hyperref [q:1.6.0.3]{H-3:} 
+Draw sketches. Don't forget the range that the parameter runs over.
+\flushleft \hyperref [q:1.6.0.4]{H-4:} 
+For part (b), find the position of $P$ relative to the centre of the circle. Then combine your answer with part (a).
+\flushleft \hyperref [q:1.6.0.5]{H-5:} 
+We aren't concerned with $x$, so we can eliminate it by solving one equation for $x$ as a function
+        of $y$ and $z$ and plugging the result into the other equation.
+        
+\flushleft \hyperref [q:1.6.0.6]{H-6:} 
+To determine whether the particle is rising or falling, we only need to consider its $z$-coordinate.
+\flushleft \hyperref [q:1.6.0.7]{H-7:} 
+This is the setup from Lemma~\eref{CLP200}{lem:CVtanArclen} in the CLP-3 text.
+The two quantities you're labelling are related, but different.
+\flushleft \hyperref [q:1.6.0.8]{H-8:} 
+ See the note just before Example~\eref{CLP200}{eg:paramCircleTan}
+in the CLP-3 text.
+\flushleft \hyperref [q:1.6.0.9]{H-9:} 
+To simplify your answer, remember: the cross product of $\va$ and $\vb$ is a vector orthogonal to both $\va$ and $\vb$; the cross product of a vector with itself is zero; and two orthogonal vectors have dot product 0.
+\flushleft \hyperref [q:1.6.0.10]{H-10:} 
+Just compute $|\vv(t)|$. Note that $\big(e^{at}+e^{-at}\big)^2
+=e^{2at} + 2 + e^{-2at}$.
+\flushleft \hyperref [q:1.6.0.11]{H-11:} 
+To figure out what the curves look like, first detemine what curve
+$\big(x(t),y(t)\big)$ traces out. For part (b) this will be easier
+if trig identities are first used to express $x(t)$ and $y(t)$ in terms of
+$\sin(2t)$ and $\cos(2t)$.
+\flushleft \hyperref [q:1.6.0.12]{H-12:} 
+Review Lemma \eref{CLP200}{lem:CVtanArclen} in the CLP-3 text.
+The arc length should be positive.
+\flushleft \hyperref [q:1.6.0.13]{H-13:} 
+From Lemma~\eref{CLP200}{lem:CVtanArclen} in the CLP-3 text,
+we know the arclength from $t=0$ to $t=1$ will be
+\[\int_{0}^1\left| \diff{\vr}{t}(t)\right|\dee t\]
+The notation looks a little confusing at first, but we can break it down piece by piece: $\diff{\vr}{t}(t)$ is a vector, whose components are functions of $t$. If we take its magnitude, we'll get one big function of $t$. That function is what we integrate. Before integrating it, however, we should simplify as much as possible.
+\flushleft \hyperref [q:1.6.0.14]{H-14:} 
+$\vr(t)$ is the position of the particle, so its acceleration is $\vr''(t)$.
+\flushleft \hyperref [q:1.6.0.15]{H-15:} 
+Review \S\eref{CLP200}{sec lines 3d} and  Lemma \eref{CLP200}{lem:CVtanArclen}
+in the CLP-3 text.
+\flushleft \hyperref [q:1.6.0.16]{H-16:} 
+Review Lemma \eref{CLP200}{lem:CVtanArclen} in the CLP-3 text.
+\flushleft \hyperref [q:1.6.0.17]{H-17:} 
+If you got the answer $0$ in part (b), you dropped some absolute value signs.
+\flushleft \hyperref [q:1.6.0.19]{H-19:} 
+The integral you get can be evaluated with
+a simple substitution. You may want to factor the integrand first.
+\flushleft \hyperref [q:1.6.0.20]{H-20:} 
+Given the position of a particle, you can find its velocity.
+\flushleft \hyperref [q:1.6.0.23]{H-23:} 
+If $\vr(u)$ is the parametrization of $\cC$ by $u$, then
+the position of the particle at time $t$ is $\vR(t) = \vr\big(u(t)\big)$.
+\flushleft \hyperref [q:1.6.0.24]{H-24:} 
+By Newton's law, $\vF=m\va$.
+\flushleft \hyperref [q:1.6.0.25]{H-25:} 
+Denote by $\vr(x)$ the parametrization of $C$ by $x$. If the $x$--coordinate
+of the particle at time $t$ is $x(t)$, then the position of the particle at time $t$ is $\vR(t)=\vr\big(x(t)\big)$. Also, though the particle is moving at a constant speed, it doesn't necessarily have a constant value of $\diff{\vx}{t}$.
+\flushleft \hyperref [q:1.6.0.26]{H-26:} 
+The question is already set up as an $xy$--plane, with the camera at the origin, so the vector in the direction the camera is pointing is $(x(t),y(t))$. Let $\theta$ be the angle the camera makes with the positive $x$-axis (due east). The tangent function gives a clean-looking relation between $\theta(t)$, $x(t)$, and $y(t)$.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s1.7}}.}\phantomsection \label {h ex:s1.7} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s1.7} \hspace {2ex} \nameref *{ex:s1.7}}
+\flushleft \hyperref [q:1.7.0.2]{H-2:} 
+For each $C$, redraw the level curve $f(x,y)=C$ in the plane $z=C$.
+\flushleft \hyperref [q:1.7.0.3]{H-3:} 
+Draw in the plane $z=C$ for several values of $C$.
+\flushleft \hyperref [q:1.7.0.12]{H-12:} 
+Since the level curves are circles centred at the origin (in the $xy$-plane), the equation will have the form $x^2+y^2=g(z)$, where $g(z)$ is a function depending only on $z$.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.1}}.}\phantomsection \label {h ex:s2.1} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.1} \hspace {2ex} \nameref *{ex:s2.1}}
+\flushleft \hyperref [q:2.1.0.1]{H-1:} 
+How does the behaviour of a function far away from $(0,0)$ affect its limit at $(0,0)$?
+\flushleft \hyperref [q:2.1.0.2]{H-2:} 
+In this analogy, $f(x,y)$ is the diameter of a particle taken from the position $(x,y)$ in the basin.
+\flushleft \hyperref [q:2.1.0.3]{H-3:} 
+You can probably solve (a) and (b) by just staring at $f(x,y)$.
+\flushleft \hyperref [q:2.1.0.4]{H-4:} 
+Recall $\cos^2\theta-\sin^2\theta=\cos(2\theta)$
+\flushleft \hyperref [q:2.1.0.5]{H-5:} 
+Theorem~\eref{CLP200}{thm one d continuity}%2.1.6
+in the CLP-3 text
+\flushleft \hyperref [q:2.1.0.6]{H-6:} 
+For parts (b), (c), (d), (e), switch to polar coordinates.
+For part (f),
+\begin{equation*}
+\lim_{(x,y)\rightarrow (0,0)}\
+                        \frac{(\sin x)\left(e^y-1\right)}{xy}
+=\left[\lim_{x\rightarrow 0}\
+                        \frac{\sin x}{x}\right]\
+ \left[\lim_{y\rightarrow 0}\
+                        \frac{e^y-1}{y}\right]
+\end{equation*}
+\flushleft \hyperref [q:2.1.0.7]{H-7:} 
+Switch to polar coordinates.
+\flushleft \hyperref [q:2.1.0.8]{H-8:} 
+(a) Switch to polar coordinates.
+
+(b) What are the limits when (i) $x=0$ and $y\rightarrow 0$ and when
+(ii) $y=0$ and $x\rightarrow 0$?
+\flushleft \hyperref [q:2.1.0.9]{H-9:} 
+For part (a) switch to polar coordinates.
+For part (b), switch to polar coordinates
+centred on $(0,1)$. That is, make the change of variables
+$x=r\cos\theta$, $y=1+r\sin\theta$.
+\flushleft \hyperref [q:2.1.0.10]{H-10:} 
+For part (c), does there exist a single number, $L$, with the property that
+$f(x,y)$ is really close to $L$ for all $(x,y)$ that are really close to
+$(0,0)$?
+\flushleft \hyperref [q:2.1.0.11]{H-11:} 
+For part (b), consider the ratio of $\frac{\sin(xy)}{x^2+y^2}$
+(from part (b)) and $\frac{xy}{x^2+y^2}$ (from part (a)), and recall that
+$\dst\lim_{t\rightarrow 0}\tfrac{\sin t}{t}=1$.
+
+For part (d) consider the limits along the positive $x$- and $y$-axes.
+\flushleft \hyperref [q:2.1.0.12]{H-12:} 
+For part (a), determine what happens as $(x,y)$ tends to $(0,0)$
+along the curve $y=x+\frac{x^2}{a}$, where $a$ is any nonzero constant.
+
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.2}}.}\phantomsection \label {h ex:s2.2} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.2} \hspace {2ex} \nameref *{ex:s2.2}}
+\flushleft \hyperref [q:2.2.0.1]{H-1:} 
+Review Definition \eref{CLP200}{def partials}  in the CLP-3 text.
+\flushleft \hyperref [q:2.2.0.2]{H-2:} 
+What happens if you move ``backwards," in the negative $y$ direction?
+\flushleft \hyperref [q:2.2.0.3]{H-3:} 
+For (a) and (b), remember $\pdiff{f}{x}(x,y)=\lim\limits_{h\to0}\frac{f(x+h,y)-f(x,y)}{h}$ and
+$\pdiff{f}{y}(x,y)=\lim\limits_{h\to0}\frac{f(x,y+h)-f(x,y)}{h}$. For (c), you're finding the derivative of a function of one variable, say $g(t)$, where \begin{equation*}
+g(t)=f(t,t)=\begin{cases}
+                  \frac{t^2t}{t^2+t^2} & \text{if $t\ne 0$} \\
+                  0                    & \text{if $t= 0$}
+                 \end{cases}
+\end{equation*}
+\flushleft \hyperref [q:2.2.0.5]{H-5:} 
+Just evaluate $x\pdiff{z}{x}(x,y)+y\pdiff{z}{y}(x,y)$.
+\flushleft \hyperref [q:2.2.0.10]{H-10:} 
+Just evaluate $y\pdiff{z}{x}(x,y)$ and $x\pdiff{z}{y}(x,y)$.
+\flushleft \hyperref [q:2.2.0.12]{H-12:} 
+You can find an equation for the surface, or just look at the diagram.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.3}}.}\phantomsection \label {h ex:s2.3} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.3} \hspace {2ex} \nameref *{ex:s2.3}}
+\flushleft \hyperref [q:2.3.0.1]{H-1:} 
+Repeatedly use (Clairaut's) Theorem \eref{CLP200}{thm mixed partials}
+in the CLP-3 text.
+\flushleft \hyperref [q:2.3.0.2]{H-2:} 
+If $f(x,y)$ obeying the specified conditions exists, then it is necessary
+that $f_{xy}(x,y)=f_{yx}(x,y)$.
+\flushleft \hyperref [q:2.3.0.5]{H-5:} 
+(a) This higher order partial derivative can be evaluated extremely efficiently
+by carefully choosing the order of evaluation of the derivatives.
+
+(b) This higher order partial derivative can be evaluated extremely efficiently
+by carefully choosing a \emph{different order of evaluation} of the derivatives
+for each of the three terms.
+
+(c) Set $g(x) = f(x,0,0)$. Then $f_{xx}(1,0,0)=g''(1)$.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.4}}.}\phantomsection \label {h ex:s2.4} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.4} \hspace {2ex} \nameref *{ex:s2.4}}
+\flushleft \hyperref [q:2.4.0.1]{H-1:} 
+ Review   \S\eref{CLP200}{subsec memory aid} in the CLP-3 text.
+\flushleft \hyperref [q:2.4.0.2]{H-2:} 
+%text ex 2.4.10
+This is a visualization, in a simplified setting, of Example~\eref{CLP3}{eg:chainRuleE} in CLP3.
+\flushleft \hyperref [q:2.4.0.3]{H-3:} 
+Pay attention to which variables change, and which are held fixed, in each context.
+\flushleft \hyperref [q:2.4.0.4]{H-4:} 
+The basic assumption is that the three quantites $x$, $y$
+and $z$ are not independent. Given any two of them, the third is uniquely
+determined. They are assumed to satisfy a relationship
+$F(x,y,z)=0$, which can be solved to
+\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt %\itemindent-15p
+\item
+determine $x$ as a function of $y$ and $z$ (say $x=f(y,z)$) and
+can alternatively be solved to
+\item
+determine $y$ as a function of $x$ and $z$ (say $y=g(x,z)$) and
+can alternatively be solved to
+\item
+determine $z$ as a function of $x$ and $y$
+(say $z=h(x,y)$).
+\end{itemize}
+For example, saying that  $F(x,y,z)=0$ determines $x=f(y,z)$ means that
+\begin{equation*}
+F\big(f(y,z),y,z\big)=0
+\tag{$*$}
+\end{equation*}
+for all $y$ and $z$. The equation
+\begin{equation*}
+\left(\pdiff{y}{x}\right)
+\left(\pdiff{z}{y}\right)
+\left(\pdiff{x}{z}\right)=-1
+\end{equation*}
+really means
+\begin{equation*}
+\left(\pdiff{g}{x}\right)
+\left(\pdiff{h}{y}\right)
+\left(\pdiff{f}{z}\right)=-1
+\end{equation*}
+So use $(*)$ to compute $\pdiff{f}{z}$.  Use other equations similar to $(*)$
+to compute $\pdiff{g}{x}$ and $\pdiff{h}{y}$.
+\flushleft \hyperref [q:2.4.0.5]{H-5:} 
+Is the $\pdiff{w}{x}$ on the left hand side really
+the same as the $\pdiff{w}{x}$ on the right hand side?
+\flushleft \hyperref [q:2.4.0.6]{H-6:} 
+To avoid the chain rule, write $w$ explicitly as a function of $s$ and $t$.
+\flushleft \hyperref [q:2.4.0.7]{H-7:} 
+Start by setting $F(x,y)=f(2x+3y,xy)$. It might also help to define $g(x,y)=2x+3y$ and $h(x,y)=xy$.
+\flushleft \hyperref [q:2.4.0.9]{H-9:} 
+Start by showing that, because
+$\frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2}=0$,
+the second derivative
+$\frac{\partial^2g}{\partial s^2} = 2\frac{\partial^2f}{\partial x \partial y}$.
+\flushleft \hyperref [q:2.4.0.10]{H-10:} 
+The notation in the statement of this question is horrendous ---
+the symbol $z$ is used with two different meanings in one equation.
+On the left hand side, it is a function of $x$ and $y$,
+and on the right hand side, it is a function of $s$ and $t$.
+Unfortunately that abuse of notation is also very common.
+Until you get used to it, undo this notation conflict by renaming the
+function of $s$ and $t$ to $F(s,t)$. That is,
+$
+F(s,t) = f\big(2s+t\,,\,s-t\big)
+$.
+
+Then, evaluate each term on the right-hand side of the equation.
+\flushleft \hyperref [q:2.4.0.11]{H-11:} 
+Let $u(x,y) = x^2 - y^2$ , and $v(x,y) = 2xy$. Then $F(x^2 - y^2 , 2xy)
+=F\big(u(x,y),v(x,y)\big)$.
+\flushleft \hyperref [q:2.4.0.12]{H-12:} 
+(b)  Since $F$ is a function of only one variable, the chain rule for (say) $\frac{\partial}{\partial x} F\big(xe^{-y^2}\big)$  has only one term.
+\flushleft \hyperref [q:2.4.0.13]{H-13:} 
+At some point, you'll be using the chain rule you learned in first-semester calculus.
+\flushleft \hyperref [q:2.4.0.14]{H-14:} 
+Just compute the first order partial derivatives of $w(x,y,z)$.
+\flushleft \hyperref [q:2.4.0.15]{H-15:} 
+The function $\pdiff{f}{x}$ depends on both $x$ and $y$, so don't forget to account for both of these when you take its partial derivative.
+\flushleft \hyperref [q:2.4.0.17]{H-17:} 
+Just compute $\frac{\partial G}{\partial t}$,
+$\frac{\partial^2 G}{\partial \gamma^2}$ and
+$\frac{\partial^2 G}{\partial s^2}$.
+\flushleft \hyperref [q:2.4.0.19]{H-19:} 
+Use implicit differentiation to find $\pdiff{z}{x}(x,y)$ and
+$\pdiff{z}{y}(x,y)$.
+\flushleft \hyperref [q:2.4.0.21]{H-21:} 
+This question uses bad (but standard) notation, in that the one symbol $f$
+is used for two different functions, namely $f(x,y)$ and
+$f(r,\theta)=f(x,y)\big|_{x=r\cos\theta,\,y=r\sin\theta}$.
+Until you get used to it, undo this notation conflict by renaming the
+function of $r$ and $\theta$ to $F(r,\theta)$. That is,
+$
+F(r,\theta) = f\big(r\cos\theta\,,\,r\sin\theta\big)
+$.
+Similarly, rename $g$, viewed as a
+function of $r$ and $\theta$, to $G(r,\theta)$. That is,
+$
+G(r,\theta) = g\big(r\cos\theta\,,\,r\sin\theta\big)
+$.
+
+\flushleft \hyperref [q:2.4.0.23]{H-23:} 
+(b) Think of $x=u^3-3uv^2$, $y=3u^2v-v^3$ as two equations in the two
+    unknowns $u$, $v$ with $x$, $y$ just being given parameters. The
+    question implicitly tells us that those two equations can be solved
+    for $u$, $v$ in terms of $x$, $y$, at least near
+    $(u,v)=(2,1)$, $(x,y)=(2,11)$. That is, the question implicitly
+    tells us that the functions $u(x,y)$ and $v(x,y)$ are determined by
+    $x=u(x,y)^3-3u(x,y)\,v(x,y)^2$, $y=3u(x,y)^2v(x,y)-v(x,y)^3$.
+    Then $z(x,y)$ is determined by $z(x,y)=u(x,y)^2-v(x,y)^2$.
+\flushleft \hyperref [q:2.4.0.24]{H-24:} 
+The question tells us that $x(u,v)$ and $y=y(u,v)$ ar eimplicitly determined by
+\begin{equation*}
+x(u,v)^2-y(u,v)\cos(uv)=v\qquad
+x(u,v)^2+y(u,v)^2-\sin(uv)=\frac{4}{\pi}u
+\end{equation*}
+at least near $(x,y)=(1,1)$, $(u,v)=\big(\frac{\pi}{2},0\big)$.
+Then, in part (b), $z=x^4+y^4$ really means $z(u,v)=x(u,v)^4+y(u,v)^4$.
+\flushleft \hyperref [q:2.4.0.25]{H-25:} 
+This question uses bad (but standard) notation, in that the one symbol $f$
+is used for two different functions, namely $f(u,v)$ and
+$f(x,y)=f(u,v)\big|_{u=x+y,v=x-y}$. A better wording is
+\begin{itemize}
+\item[]
+Let $f(u,v)$ and $F(x,y)$ be differentiable functions such that
+$F(x,y)=f(x+y,x-y)$.  Find a constant, $\al$, such that
+\begin{equation*}
+F_x(x,y)^2+F_y(x,y)^2=\al\big\{f_u(x+y,x-y)^2+f_v(x+y,x-y)^2\big\}
+\end{equation*}
+\end{itemize}
+\flushleft \hyperref [q:2.4.0.26]{H-26:} 
+Use the chain rule to show that
+$\frac{\partial^2 u}{\partial x^2}(x,t)
+-\frac{1}{c^2}\frac{\partial^2 u}{\partial t^2}(x,t)
+=4\frac{\partial^2\hfil v\hfil\,}{\partial\xi\partial\eta}
+      \big(\xi(x,t),\eta(x,t)\big)$.
+\flushleft \hyperref [q:2.4.0.27]{H-27:} 
+For each part, first determine which variables $y$ is a function
+of.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.5}}.}\phantomsection \label {h ex:s2.5} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.5} \hspace {2ex} \nameref *{ex:s2.5}}
+\flushleft \hyperref [q:2.5.0.1]{H-1:} 
+What are the tangent planes to the two surfaces at $(0,0,0)$?
+\flushleft \hyperref [q:2.5.0.2]{H-2:} 
+Apply the chain rule to $G\big(\vr(t)\big)=0$.
+\flushleft \hyperref [q:2.5.0.3]{H-3:} 
+To find a tangent vector to the curve of intersection of the
+surfaces $F(x,y,z)=0$ and $G(x,y,z)=0$ at $(x_0,y_0,z_0)$,
+use Q[\ref{tan_line_plane}] twice, once for the surface $F(x,y,z)=0$ and
+once for the surface $G(x,y,z)=0$.
+\flushleft \hyperref [q:2.5.0.4]{H-4:} 
+To find a tangent vector to the curve of intersection of the
+surfaces $z=f(x,y)$ and $z=g(x,y)$ at $(x_0,y_0,z_0)$,
+use Q[\ref{tan_line_plane}] twice, once for the surface $z=f(x,y)$ and
+once for the surface $z=g(x,y)$.
+\flushleft \hyperref [q:2.5.0.11]{H-11:} 
+Let $(x,y,z)$ be a desired point. Then
+\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt %\itemindent-15pt
+\item
+$(x,y,z)$ must be on the surface and
+\item
+the normal vector to the surface at $(x,y,z)$ must be parallel to the
+plane's normal vector.
+\end{itemize}
+\flushleft \hyperref [q:2.5.0.12]{H-12:} 
+First find a parametric equation for the normal line to $S$ at $(x_0,y_0,z_0)$.
+Then the requirement that $(0,0,0)$ lies on that normal line gives
+three equations in the four unknowns $x_0,y_0,z_0$ and $t$. The requirement
+that $(x_0,y_0,z_0)$ lies on $S$ gives a fourth equation. Solve this system of four equations.
+\flushleft \hyperref [q:2.5.0.13]{H-13:} 
+Two (nonzero) vectors $\vv$ and $\vw$ are parallel if and only if there
+is a $t$ such that $\vv=t\,\vw$.
+Don't forget that the point has to be on the hyperboloid.
+\flushleft \hyperref [q:2.5.0.14]{H-14:} 
+The curve lies in the surface $z^2=4x^2+9y^2$. So the tangent vector to the
+curve is perpendicular to the normal vector to $z^2=4x^2+9y^2$ at $(2,1,-5)$.
+
+The curve also lies in the surface $6x+3y+2z=5$. So the tangent vector to the
+curve is also perpendicular to the normal vector to $6x+3y+2z=5$ at $(2,1,-5)$.
+\flushleft \hyperref [q:2.5.0.15]{H-15:} 
+At the highest and lowest points of the surface, the tangent plane is horizontal.
+\flushleft \hyperref [q:2.5.0.17]{H-17:} 
+(b) If $\vv$ is tangent, at a point $P$, to the curve of intersection of the
+surfaces $S_1$ and $S_2$, then $\vv$
+\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt %\itemindent-15pt
+\item
+has to be tangent to $S_1$ at $P$, and so must be perpendicular to the
+normal vector to $S_1$ at $P$ and
+\item
+has to be tangent to $S_2$ at $P$, and so must be perpendicular to the
+normal vector to $S_2$ at $P$.
+\end{itemize}
+\flushleft \hyperref [q:2.5.0.18]{H-18:} 
+ The angle between the curve and the surface at $P$ is $90^\circ$
+minus the angle between the curve and the normal vector to the surface at $P$.
+\flushleft \hyperref [q:2.5.0.19]{H-19:} 
+Let $D(x,y)$ be the distance (or the square of the distance) from $(1,1,0)$
+to the point $\big(x,y, x^2+y^2)$ on the paraboloid. We wish to
+minimize $D(x,y)$. That is, to find the lowest point on the graph
+$z=D(x,y)$. At this lowest point, the tangent plane to $z=D(x,y)$ is
+horizontal.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.6}}.}\phantomsection \label {h ex:s2.6} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.6} \hspace {2ex} \nameref *{ex:s2.6}}
+\flushleft \hyperref [q:2.6.0.1]{H-1:} 
+Review Example \eref{CLP200}{eg errors in measurement} in the CLP-3 text.
+Be careful when taking absolute values.
+\flushleft \hyperref [q:2.6.0.2]{H-2:} 
+Units!
+\flushleft \hyperref [q:2.6.0.5]{H-5:} 
+Let the four numbers be $x_1$, $x_2$, $x_3$ and $x_4$.
+Let the four rounded numbers be $x_1+\veps_1$, $x_2+\veps_2$, $x_3+\veps_3$
+and $x_4+\veps_4$. If
+$P(x_1,x_2,x_3,x_4)=x_1x_2x_3x_4$, then the error in the product
+introduced by rounding is
+$\big|P(x_1+\veps_1,x_2+\veps_2,x_3+\veps_3,x_4+\veps_4)
+-P(x_1,x_2,x_3,x_4)\big|$.
+\flushleft \hyperref [q:2.6.0.6]{H-6:} 
+Use Pythagoras to express the length of the hypotenuse
+in terms of the lengths of the other two sides.
+\flushleft \hyperref [q:2.6.0.8]{H-8:} 
+Review the relationship between absolute error and percentage error
+given in Definition \eref{CLP200}{def error} in the CLP-3 text.
+\flushleft \hyperref [q:2.6.0.9]{H-9:} 
+Be very careful about signs. There is a trap hidden in this question.
+As an example of the trap, suppose you know that $|\veps_1|\le 0.2$
+and $|\veps_2|\le 0.1$. It does \emph{not} follow from this
+that $\big|\veps_1-\veps_2|\le 0.2 -0.1 =0.1$. The reason is that
+it is possible to have $\veps_1=0.2$ and $\veps_2=-0.1$ and then
+$\veps_1-\veps_2=0.3$. The correct way to bound $\big|\veps_1-\veps_2|$
+is
+\begin{equation*}
+\big|\veps_1-\veps_2| \le |\veps_1|+ |\veps_2|\le 0.2+0.1\le 0.3
+\end{equation*}
+\flushleft \hyperref [q:2.6.0.11]{H-11:} 
+Determine, approximately, the change in sag when the height changes by a small
+amount $\veps$ and also when the width changes by a small amount $\veps$.
+Which is bigger?
+\flushleft \hyperref [q:2.6.0.15]{H-15:} 
+$1^\circ = \frac{\pi}{180}$ radians
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.7}}.}\phantomsection \label {h ex:s2.7} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.7} \hspace {2ex} \nameref *{ex:s2.7}}
+\flushleft \hyperref [q:2.7.0.4]{H-4:} 
+The rate of change in the direction that makes angle $\theta$ with
+respect to the $x$-axis, that is, in the direction
+$\llt \cos\theta,\sin\theta\rgt$ is
+$
+\llt \cos\theta,\sin\theta\rgt \cdot\vnabla f(2,0)
+$.
+\flushleft \hyperref [q:2.7.0.5]{H-5:} 
+Denote $\vnabla f(a,b)=\llt \al,\be\rgt$.
+\flushleft \hyperref [q:2.7.0.6]{H-6:} 
+Use a coordinate system with the positive $y$--axis pointing
+north, with the positive $x$--axis pointing east and with our current
+location being $x=y=0$. Denote by $z(x,y)$ the elevation of the
+earth's surface at $(x,y)$. Express the various slopes in terms of
+$\vnabla z(0,0)$.
+\flushleft \hyperref [q:2.7.0.9]{H-9:} 
+In order for $y=ax^b$ to give the $(x,y)$ coordinates of the
+path of steepest ascent,  the tangent vector to $y=ax^b$ must be parallel
+to the height gradient $\vnabla h(x,y)$ at all points on $y=ax^b$.
+Also, don't forget that $(1,1)$ must be on $y=ax^b$.
+\flushleft \hyperref [q:2.7.0.28]{H-28:} 
+Review \S\eref{CLP200}{sec directional derivatives} in the CLP-3 text.
+
+(e) Suppose that the ant moves along the curve $y=y(x)$.
+For the ant to always experience maximum rate of cooling (or maximum
+rate of heating), the tangent to this curve must be parallel to
+$\vnabla T(x,y)$ at every point of the curve. This gives a separable
+differential equation for the function $y(x)$. Also, don't forget that $(2,-1)$ must be on the curve.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.8}}.}\phantomsection \label {h ex:s2.8} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.8} \hspace {2ex} \nameref *{ex:s2.8}}
+\flushleft \hyperref [q:2.8.0.1]{H-1:} 
+Just evaluate $u_t(x,t)$ and $u_{xx}(x,t)+u(x,t)$ and stare at them for a while.
+\flushleft \hyperref [q:2.8.0.2]{H-2:} 
+(a), (b) Fix any $y_0$ and set $v(x)=u(x,y_0)$. What is $\diff{v}{x}(x)$?
+\flushleft \hyperref [q:2.8.0.4]{H-4:} 
+Just substitute the given $u(x,t)$ into the given PDE.
+\flushleft \hyperref [q:2.8.0.5]{H-5:} 
+Just substitute the given $u(x,y,z)$ into the given PDE.
+\flushleft \hyperref [q:2.8.0.6]{H-6:} 
+Just substitute the given $u(x,t)$ into the given PDE.
+\flushleft \hyperref [q:2.8.0.7]{H-7:} 
+Just substitute the given $z(x,y)$ into the given PDE.
+\flushleft \hyperref [q:2.8.0.8]{H-8:} 
+Substitute the given $u(x,t)$ into the given PDE.
+Review Theorem \eref{CLP100}{thm:growthDEsoln} in the CLP-1 text.
+\flushleft \hyperref [q:2.8.0.10]{H-10:} 
+Evaluate $u_{xx}+u_{yy}$ for the given $u(x,y)$.
+\flushleft \hyperref [q:2.8.0.12]{H-12:} 
+(b) The left hand side is independent of $x$ and the right hand side is
+independent of $t$.
+
+(c) Review Section \eref{CLP100}{sec:ExpGthDecay} in the CLP-1 text
+and Section \eref{CLP101}{sec sep de} in the CLP-2 text.
+\flushleft \hyperref [q:2.8.0.13]{H-13:} 
+Evaluate $\diff{}{t}u\big(X(t),Y(t)\big)$.
+\flushleft \hyperref [q:2.8.0.14]{H-14:} 
+Evaluate $v_X$.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.9}}.}\phantomsection \label {h ex:s2.9} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.9} \hspace {2ex} \nameref *{ex:s2.9}}
+\flushleft \hyperref [q:2.9.0.2]{H-2:} 
+Interpret the height $\sqrt{x^2+y^2}$ geometrically.
+\flushleft \hyperref [q:2.9.0.3]{H-3:} 
+Define $f(t)=g(\va+t\vd)$.
+\flushleft \hyperref [q:2.9.0.4]{H-4:} 
+Write down the equations of specified level curves.
+\flushleft \hyperref [q:2.9.0.13]{H-13:} 
+One way to deal with the boundary $x^2+y^2=1$ is to parametrize
+it by $x=\cos\theta$, $y=\sin\theta$, $0\le\theta<2\pi$.
+\flushleft \hyperref [q:2.9.0.30]{H-30:} 
+Suppose that the bends are made a  distance $x$ from the ends of the fence
+and that the bends are through an angle $\theta$. Draw a sketch of the
+enclosure and figure out its area, as a function of $x$ and $\theta$.
+\flushleft \hyperref [q:2.9.0.31]{H-31:} 
+Suppose that the box has side lengths $x$, $y$ and $z$.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s2.10}}.}\phantomsection \label {h ex:s2.10} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s2.10} \hspace {2ex} \nameref *{ex:s2.10}}
+\flushleft \hyperref [q:2.10.0.2]{H-2:} 
+(a) The function $f$ decreases, or at least does not increase, as you leave
+$(x_0,y_0,z_0)$ in the direction $\vd$.
+The function $f$ also decreases, or at least does not increase, as you leave
+$(x_0,y_0,z_0)$ in the direction $-\vd$.
+\flushleft \hyperref [q:2.10.0.4]{H-4:} 
+The ellipsoid $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ passes
+through the point $(1,2,1)$ if and only if
+$\frac{1}{a^2}+\frac{4}{b^2}+\frac{1}{c^2}=1$.
+\flushleft \hyperref [q:2.10.0.19]{H-19:} 
+The ends of the major axes are the points on the ellipse which are
+farthest from the origin.
+The ends of the minor axes are the points on the ellipse which are
+closest to the origin.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s3.1}}.}\phantomsection \label {h ex:s3.1} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s3.1} \hspace {2ex} \nameref *{ex:s3.1}}
+\flushleft \hyperref [q:3.1.0.2]{H-2:} 
+Be careful to match each integration variable with its own limits.
+Remember that the integral with respect to $x$ treats $y$ as a constant and
+the integral with respect to $y$ treats $x$ as a constant.
+\flushleft \hyperref [q:3.1.0.9]{H-9:} 
+The antiderivative of the function $\sin(y^2)$ cannot be expressed
+in terms of familiar functions. So we do not want the inside integral to
+be over $y$.
+\flushleft \hyperref [q:3.1.0.10]{H-10:} 
+The inside integral, $\int_{\sqrt{y}}^1 \frac{\sin(\pi x^2)}{x}\ \dee{x}$,
+in the given form of $I$ looks really nasty.  So try exchanging
+the order of integration.
+\flushleft \hyperref [q:3.1.0.14]{H-14:} 
+The inside integral, $\int_{\sqrt{x}}^1 \sqrt{1+y^3}\ \dee{y}$,
+of the given integral looks pretty nasty. Try reversing the order of
+integration.
+\flushleft \hyperref [q:3.1.0.15]{H-15:} 
+(b) The inside integral, $\int_{\frac{1}{2}\sqrt{x}}^1  e^{y^3}\ \dee{y}$,
+looks pretty nasty because $e^{y^3}$ does not have an obvious antiderivative.
+Try reversing the order of integration.
+\flushleft \hyperref [q:3.1.0.16]{H-16:} 
+(b) The inside integral, $\int_{\sqrt{-y}}^2 \cos(x^3)\,\dee{x}$
+looks nasty. Try reversing the order of integration.
+\flushleft \hyperref [q:3.1.0.18]{H-18:} 
+ $\frac{1}{9-x^2} =\frac{1}{6}\left(\frac{1}{x+3}-\frac{1}{x-3}\right)$.
+\flushleft \hyperref [q:3.1.0.19]{H-19:} 
+The antiderivative of the function $e^{-y^2}$ cannot be expressed
+in terms of elementary functions. So the inside integral
+$\int_{-2}^{2x} e^{y^2}\ \dee{y}$ cannot be evaluated using
+standard calculus 2 techniques. Try reversing the order of integration.
+\flushleft \hyperref [q:3.1.0.22]{H-22:} 
+The inside integral, over $y$, looks pretty nasty
+because $\sin(y^3)$ does not have an obvious antiderivative. So try
+reversing the order of integration.
+\flushleft \hyperref [q:3.1.0.24]{H-24:} 
+The inside integral, $\int_{x^2}^4\cos\big(y^{3/2}\big)\ \dee{y}$,
+in the given integral looks really nasty.  So try exchanging
+the order of integration.
+\flushleft \hyperref [q:3.1.0.26]{H-26:} 
+The inside integral, $\dst\int_{\sqrt{y}}^3\sin\big(\pi x^3\big)\ \dee{x}$,
+in the given integral looks really nasty.  So try exchanging
+the order of integration.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s3.2}}.}\phantomsection \label {h ex:s3.2} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s3.2} \hspace {2ex} \nameref *{ex:s3.2}}
+\flushleft \hyperref [q:3.2.0.2]{H-2:} 
+$r$ is allowed to be negative.
+\flushleft \hyperref [q:3.2.0.3]{H-3:} 
+Compute, for each angle $\theta$, the dot product $\he_r(\theta)\cdot\he_\theta(\theta)$.
+\flushleft \hyperref [q:3.2.0.4]{H-4:} 
+Sketch $\llt a, b\rgt$ and $\llt A, B\rgt$.
+The trigonometric addition formulas
+\begin{align*}
+\sin(\theta+\varphi)
+       &=\sin\theta\cos\varphi+\cos\theta\sin\varphi \\
+\cos(\theta+\varphi)
+       &=\cos\theta\cos\varphi-\sin\theta\sin\varphi
+\end{align*}
+will help.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s3.3}}.}\phantomsection \label {h ex:s3.3} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s3.3} \hspace {2ex} \nameref *{ex:s3.3}}
+\flushleft \hyperref [q:3.3.0.9]{H-9:} 
+Try using polar coordinates.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s3.4}}.}\phantomsection \label {h ex:s3.4} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s3.4} \hspace {2ex} \nameref *{ex:s3.4}}
+\flushleft \hyperref [q:3.4.0.1]{H-1:} 
+$S$ is a very simple geometric object.
+\flushleft \hyperref [q:3.4.0.3]{H-3:} 
+The triangle is part of the plane $\frac{x}{a}+\frac{y}{b} +\frac{z}{c}=1$.
+\flushleft \hyperref [q:3.4.0.8]{H-8:} 
+The total surface area of (b) (ii) can be determined without evaluating
+any integrals.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s3.5}}.}\phantomsection \label {h ex:s3.5} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s3.5} \hspace {2ex} \nameref *{ex:s3.5}}
+\flushleft \hyperref [q:3.5.0.20]{H-20:} 
+Sketch $E$. You can picture $E$ by thinking of the region bounded by the
+planes $x=0$, $y=0$, $z=0$ and $x+y=2$ as a large wedge of cheese and thinking
+of the cylinder $y^2+z^2=1$ as a drill hole in the wedge. Then to set up
+the limits of integration, first sketch a top view of $E$.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s3.6}}.}\phantomsection \label {h ex:s3.6} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s3.6} \hspace {2ex} \nameref *{ex:s3.6}}
+\flushleft \hyperref [q:3.6.0.12]{H-12:} 
+Use cylindrical coordinates.
+ \par \nicerule \\[2ex]{\large \textbf {Hints for Exercises\nobreakspace {}\ref {ex:s3.7}}.}\phantomsection \label {h ex:s3.7} --- Jump to \hyperlink {toc}{\textsc {table of contents}}. \addcontentsline {toc}{section}{\ref*{ex:s3.7} \hspace {2ex} \nameref *{ex:s3.7}}
+\flushleft \hyperref [q:3.7.0.19]{H-19:} 
+Switch to spherical coordinates.
+\flushleft \hyperref [q:3.7.0.26]{H-26:} 
+(b) it is a solid of revolution.

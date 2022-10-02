@@ -1,0 +1,2737 @@
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s1.1}}}\phantomsection \label {a ex:s1.1} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s1.1} \hspace {2ex} \nameref *{ex:s1.1}}
+\flushleft \hyperref [q:1.1.0.1]{A-1:} 
+(a) The sphere of radius 3 centered on $(1,-2,0)$.
+
+(b) The interior of the sphere of radius 3 centered on $(1,-2,0)$.
+
+\flushleft \hyperref [q:1.1.0.2]{A-2:} 
+(a) $x=y$ is the straight line through the origin that makes an
+angle $45^\circ$ with the $x$-- and $y$--axes. It is sketched in the
+figure on the left below.
+
+\begin{center}
+     \includegraphics{sec1_1_Q1a.pdf}\qquad\qquad
+     \includegraphics{sec1_1_Q1b.pdf}
+\end{center}
+
+(b) $x+y=1$ is the straight line through the points $(1,0)$ and
+$(0,1)$. It is sketched in the figure on the right above.
+
+(c) $x^2+y^2=4$ is the circle with centre $(0,0)$ and radius 2. It is
+sketched in the figure on the left below.
+
+\begin{center}
+     \includegraphics{sec1_1_Q1c.pdf}\qquad\qquad
+     \includegraphics{sec1_1_Q1d.pdf}
+\end{center}
+
+(d) $x^2+y^2=2y$ is the circle with centre $(0,1)$ and radius 1.
+It is sketched in the figure on the right above.
+
+(e) $x^2+y^2<2y$ is the set of points that are strictly inside
+the circle with centre $(0,1)$ and radius 1.
+It is the shaded region (not including the dashed circle) in the sketch below.
+
+\begin{center}
+     \includegraphics{sec1_1_Q1e.pdf}
+\end{center}
+
+\flushleft \hyperref [q:1.1.0.3]{A-3:} 
+(a)
+The set $z=x$ is the plane which contains the $y$--axis and which
+makes an angle $45^\circ$ with the $xy$--plane. Here is a sketch
+of the part of the plane that is in the first octant.
+
+\begin{center}
+     \includegraphics{xeqzPlane.pdf}
+\end{center}
+
+
+(b)
+$x+y+z=1$ is the plane through the points $(1,0,0)$, $(0,1,0)$
+and  $(0,0,1)$. Here is a sketch of the part of the plane
+that is in the first octant.
+
+\begin{center}
+     \includegraphics{xyzPlane.pdf}
+\end{center}
+
+
+(c)
+$x^2+y^2+z^2=4$ is the sphere with centre $(0,0,0)$ and radius 2.
+Here is a sketch of the part of the sphere that is in the first octant.
+
+\begin{center}
+     \includegraphics{quarterSphere.pdf}
+\end{center}
+
+(d)
+$x^2+y^2+z^2=4$, $z=1$ is the circle in the plane $z=1$
+that has centre $(0,0,1)$ and radius $\sqrt{3}$. The part of the circle
+in the first octant is the heavy quarter circle in the sketch
+
+\begin{center}
+     \includegraphics{quarterCircle.pdf}
+\end{center}
+
+
+(e)
+$x^2+y^2=4$ is the cylinder of radius $2$ centered on the $z$--axis.
+Here is a sketch of the part of the cylinder that is in the first octant.
+
+\begin{center}
+     \includegraphics{quarterCylinder.pdf}
+\end{center}
+
+
+(f) $z=x^2+y^2$ is a paraboloid consisting of a vertical stack of
+horizontal circles. The intersection of the surface with the $yz$--plane
+is the parabola $z=y^2$.  Here is a sketch of the part of the paraboloid
+that is in the first octant.
+
+\begin{center}
+     \includegraphics{quarterParaboloid.pdf}
+\end{center}
+
+\flushleft \hyperref [q:1.1.0.4]{A-4:} 
+(a) $3$ \quad
+(b) $1$ \quad
+(c) $\sqrt{(x-2)^2 + 10}$ \quad
+(d) $(2,0,0)$ \quad
+(e) $\sqrt{10}$
+\flushleft \hyperref [q:1.1.0.5]{A-5:} 
+The circumscribing circle has centre $(\bar x,\bar y)$ and radius $r$
+with $\bar x=\frac{a}{2}$, $\bar y=\frac{b^2+c^2-ab}{2c}$ and
+$r=\sqrt{\big(\frac{a}{2}\big)^2+\big(\frac{b^2+c^2-ab}{2c}\big)^2}$.
+\flushleft \hyperref [q:1.1.0.6]{A-6:} 
+$x^2+y^2=4z$
+The surface is a paraboloid consisting of a stack of horizontal circles, starting with a point at the origin and with radius increasing vertically.
+The circle in the plane $z=z_0$ has radius $2\sqrt{z_0}$.
+\flushleft \hyperref [q:1.1.0.7]{A-7:} 
+The sphere has radius 3 and is centered on $(1,2,-1)$.
+\flushleft \hyperref [q:1.1.0.8]{A-8:} 
+\begin{center}
+     \includegraphics{pressureB.pdf}
+\end{center}
+
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s1.2}}}\phantomsection \label {a ex:s1.2} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s1.2} \hspace {2ex} \nameref *{ex:s1.2}}
+\flushleft \hyperref [q:1.2.0.1]{A-1:} 
+$\va+\vb=\llt 3,1\rgt $, $\va+2\vb=\llt 4,2\rgt $,\
+$2\va-\vb=\llt 3,-1\rgt $
+
+\begin{center}
+     \includegraphics{add1.pdf}\qquad
+     \includegraphics{add2.pdf}
+\end{center}
+\begin{center}
+     \includegraphics{add3.pdf}
+\end{center}
+
+\flushleft \hyperref [q:1.2.0.2]{A-2:} 
+(a) not collinear\qquad
+(b) collinear
+\flushleft \hyperref [q:1.2.0.3]{A-3:} 
+(a) perpendicular\qquad
+(b) perpendicular\qquad
+(c) not perpendicular
+\flushleft \hyperref [q:1.2.0.4]{A-4:} 
+(a) $\frac{1}{5}\llt 3,4 \rgt$\quad
+(b) $\pm\frac{1}{5}\llt 3,4 \rgt$\quad
+(c) $\pm \llt 6,8 \rgt$\quad
+(d) $\pm\frac{1}{5}\llt 4,-3 \rgt$
+\flushleft \hyperref [q:1.2.0.5]{A-5:} 
+(a) $\frac{1}{5}\llt 3,4,0 \rgt$\quad
+(b) $\pm\frac{1}{5}\llt 3,4,0 \rgt$
+
+(c) A vector is of length one and perpendicular to $\vb$ if and only if it is of the form $\llt x,-\frac{3}{4}x,z \rgt $ with $\sqrt{\frac{25}{16}x^2+z^2}=1$.
+There are infinitely many such vectors. Four of them are
+\begin{equation*}
+\pm\llt 0,0,1\rgt\qquad
+\pm\frac{1}{5}\llt 4,-3,0\rgt
+\end{equation*}
+
+\flushleft \hyperref [q:1.2.0.6]{A-6:} 
+$\text{proj}_{\hi}\va=a_1\hi$\qquad
+$\text{proj}_{\hj}\va=a_2\hj$.
+\flushleft \hyperref [q:1.2.0.7]{A-7:} 
+Yes.
+\flushleft \hyperref [q:1.2.0.8]{A-8:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.9]{A-9:} 
+See the solution
+\flushleft \hyperref [q:1.2.0.10]{A-10:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.11]{A-11:} 
+This statement is false. One counterexample is $\va=\llt 1,0,0\rgt $,
+$\vb=\llt 0,1,0\rgt ,\ \vc=\llt 0,0,1\rgt $. Then $\va\cdot\vb=\va\cdot\vc=0$, but $\vb\ne\vc$. There are \emph{many} other counterexamples.
+\flushleft \hyperref [q:1.2.0.12]{A-12:} 
+True.
+\flushleft \hyperref [q:1.2.0.13]{A-13:} 
+None. The given equation is nonsense.
+\flushleft \hyperref [q:1.2.0.14]{A-14:} 
+If $\vb$ and $\vc$ are parallel, then $\va\cdot(\vb\times\vc)=0$ for all $\va$.
+If $\vb$ and $\vc$ are not parallel, then $\va$ must be of the form
+$\al\vb+\be\vc$ with $\al$ and $\be$ real numbers.
+\flushleft \hyperref [q:1.2.0.15]{A-15:} 
+(a), (c)
+\begin{center}
+     \includegraphics{circumA.pdf}
+\end{center}
+$\text{proj}_{\overrightarrow{\scriptstyle OA}}\,\overrightarrow{OC}
+    =\overrightarrow{OP_A}=\llt a/2,0\rgt$\qquad
+$\text{proj}_{\overrightarrow{\scriptstyle OB}}\,\overrightarrow{OC}
+    =\overrightarrow{OP_A}=\llt b/2,c/2\rgt$
+
+(b) The centre of the circumscribing circle is $(\bar x,\bar y)$ with
+$\bar x=\frac{a}{2}$ and
+$ \bar y =\frac{b^2+c^2-ab}{2c}$.
+\flushleft \hyperref [q:1.2.0.16]{A-16:} 
+$(x-3)^2+(y-2)^2+(z-7)^2=11$
+\flushleft \hyperref [q:1.2.0.17]{A-17:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.18]{A-18:} 
+(a) $13$\qquad
+(b) $20$
+\flushleft \hyperref [q:1.2.0.19]{A-19:} 
+$2\sqrt{19}$
+\flushleft \hyperref [q:1.2.0.20]{A-20:} 
+(a) $126$\qquad
+(b) $5$
+\flushleft \hyperref [q:1.2.0.21]{A-21:} 
+\leqnomode
+\begin{alignat*}{3}
+\va\cdot\vb&=4\qquad &
+\theta &= 60.25^\circ\hskip4in
+\tag{a}\\
+\va\cdot\vb&=0 &
+\theta &= 90^\circ
+\tag{b}\\
+\va\cdot\vb&=4 &
+\theta &= 0^\circ
+\tag{c}\\
+\va\cdot\vb&=2 &
+\theta &= 61.87^\circ
+\tag{d}\\
+\va\cdot\vb&=0 &
+\theta &= 90^\circ
+\tag{e}
+\end{alignat*}
+\reqnomode
+\flushleft \hyperref [q:1.2.0.22]{A-22:} 
+(a) $10.3^\circ$\qquad
+(b) $61.6^\circ$\qquad
+(c) $82.6^\circ$
+\flushleft \hyperref [q:1.2.0.23]{A-23:} 
+(a) $-1$\qquad
+(b) $0$, $4$\qquad
+(c) $-2$, $-3$
+\flushleft \hyperref [q:1.2.0.24]{A-24:} 
+(a) $-5$\qquad
+(b) $0.8$\qquad
+(c) none
+\flushleft \hyperref [q:1.2.0.25]{A-25:} 
+(a) $\frac{42}{\sqrt{14}}$\qquad
+(b) $\llt 3,6,9\rgt$\qquad
+(c) $\llt 1,4,-3\rgt$
+\flushleft \hyperref [q:1.2.0.26]{A-26:} 
+$-3\hi+6\hj-3\hk$
+\flushleft \hyperref [q:1.2.0.27]{A-27:} 
+(a) $\llt -27,-9,-9\rgt$ \qquad
+(b) $\llt -31,-34,8\rgt$ \qquad
+(c) $\llt -4,5,-4\rgt$
+\flushleft \hyperref [q:1.2.0.28]{A-28:} 
+(a) See the solution.
+
+(b) $\vp\times\vq = -\vq\times\vp = \llt -6,5,-13\rgt$
+
+(c) $\vp \times (3\vr) = 3(\vp\times\vr) =  \llt 6,9,-15\rgt$
+
+(d) $\vp\times(\vq+\vr) = \vp\times\vq+\vp\times\vr =  \llt -4,8,-18\rgt$
+
+(e) $\vp\times(\vq\times\vr) = \llt -46,-19,15\rgt$,
+    $(\vp\times\vq)\times\vr = \llt -44,-32,8\rgt$
+
+\flushleft \hyperref [q:1.2.0.29]{A-29:} 
+$2\sqrt{6}$
+\flushleft \hyperref [q:1.2.0.30]{A-30:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.31]{A-31:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.32]{A-32:} 
+(a) All $6$ edges have length $\sqrt{2}s$.\qquad
+(b) $109.5^\circ$
+\flushleft \hyperref [q:1.2.0.33]{A-33:} 
+$35.26^\circ$ or $90^\circ$ or $144.74^\circ$
+\flushleft \hyperref [q:1.2.0.34]{A-34:} 
+$\sqrt{1+h'\big(x_0\big)^2}\sqrt{-g/h''\big(x_0\big)}$
+\flushleft \hyperref [q:1.2.0.35]{A-35:} 
+The marble rolls in the directionn$\llt ac,bc,-a^2-b^2\rgt$.
+If $c=0$, the plane is vertical. In this case, the marble
+doesn't roll -- it falls straight down. If $a=b=0$, the plane is horizontal.
+ In this case, the marble doesn't roll --- it remains stationary.
+\flushleft \hyperref [q:1.2.0.36]{A-36:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.37]{A-37:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.38]{A-38:} 
+$(\va\times\vb)\cdot(\vc\times\vd)=
+(\va\cdot\vc)(\vb\cdot\vd)
+-(\va\cdot\vd)(\vb\cdot\vc)$
+\flushleft \hyperref [q:1.2.0.39]{A-39:} 
+(a)
+$AA'B'B$ is a parallelogram, but not a rectangle.\\
+$AA'C'C$ is a rectangle.\\
+$BB'C'C$ is a parallelogram, but not a rectangle.
+
+(b) $\sqrt{17}$ \qquad
+(c) $\frac{13}{2}$\qquad
+(d) $\frac{51}{2}$
+
+
+\flushleft \hyperref [q:1.2.0.40]{A-40:} 
+See the solution.
+\flushleft \hyperref [q:1.2.0.41]{A-41:} 
+See the solution.
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s1.3}}}\phantomsection \label {a ex:s1.3} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s1.3} \hspace {2ex} \nameref *{ex:s1.3}}
+\flushleft \hyperref [q:1.3.0.1]{A-1:} 
+Both!
+\flushleft \hyperref [q:1.3.0.2]{A-2:} 
+Generally, only the first.
+\flushleft \hyperref [q:1.3.0.3]{A-3:} 
+Since both lines pass through $(1,9)$ and $(9,13)$, the lines are identical.
+\flushleft \hyperref [q:1.3.0.4]{A-4:} 
+$\llt d_x,d_y\rgt$ can be any nonzero scalar multiple of $\llt 9,7\rgt$, and $\llt x_0,y_0\rgt$ can be any point on the line, i.e. any pair that satisfies $7x_0+24=9y_0$.
+\flushleft \hyperref [q:1.3.0.5]{A-5:} 
+(a) $\llt x,y\rgt=\llt 1,2\rgt+t\llt 3,2\rgt $,\ \ \
+    $x=1+3t,\ y=2+2t$,\ \ \
+    $\frac{x-1}{3}=\frac{y-2}{2}$
+
+(b) $\llt x,y\rgt=\llt 5,4\rgt+t\llt 2,-1\rgt $,\ \ \
+    $x=5+2t,\ y=4-t$,\ \ \
+    $\frac{x-5}{2}=\frac{y-4}{-1}$
+
+(c) $\llt x,y\rgt=\llt -1,3\rgt+t\llt -1,2\rgt $,\ \ \
+    $x=-1-t,\ y=3+2t$,\ \ \
+    $\frac{x+1}{-1}=\frac{y-3}{2}$
+\flushleft \hyperref [q:1.3.0.6]{A-6:} 
+(a) $\llt x,y\rgt=\llt 1,2\rgt+t\llt -2,3\rgt $,\ \ \
+    $x=1-2t,\ y=2+3t$,\ \ \
+    $\frac{x-1}{-2}=\frac{y-2}{3}$
+
+(b) $\llt x,y\rgt=\llt 5,4\rgt+t\llt 1,2\rgt $,\ \ \
+    $x=5+t,\ y=4+2t$,\ \ \
+    $x-5=\frac{y-4}{2}$
+
+(c) $\llt x,y\rgt=\llt -1,3\rgt+t\llt 2,1\rgt $,\ \ \
+    $x=-1+2t,\ y=3+t$,\ \ \
+    $\frac{x+1}{2}=y-3$
+\flushleft \hyperref [q:1.3.0.7]{A-7:} 
+$14/5$
+\flushleft \hyperref [q:1.3.0.8]{A-8:} 
+(a)
+\begin{align*}
+\vx(t)&=\va+t\big(\half\vb+\half\vc-\va\big)\\
+\vx(s)&=\vb+s\big(\half\va+\half\vc-\vb\big)\\
+\vx(u)&=\vc+u\big(\half\va+\half\vb-\vc\big)
+\end{align*}
+
+(b)
+$\frac{1}{3}(\va+\vb+\vc)$
+\flushleft \hyperref [q:1.3.0.9]{A-9:} 
+One way of writing the equation is $x+{\sqrt3}y=4+{\sqrt3}$.
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s1.4}}}\phantomsection \label {a ex:s1.4} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s1.4} \hspace {2ex} \nameref *{ex:s1.4}}
+\flushleft \hyperref [q:1.4.0.1]{A-1:} 
+Any vector of the form $c\,\hk$ with $c\ne 0$ and $c\ne 1$ works.
+Three possible choices are $-\hk$, $2\,\hk$, $7.12345\,\hk$.
+\flushleft \hyperref [q:1.4.0.2]{A-2:} 
+(a) $(0,8,0)$ \qquad
+(b) $(0,0,4)$
+
+(c)
+\begin{center}
+     \includegraphics{intersectSketch.pdf}
+\end{center}
+
+\flushleft \hyperref [q:1.4.0.3]{A-3:} 
+(a) $x+2y+3z=0$ \qquad
+(b) $x+y+3z=3$
+
+(c) There is \emph{no plane} that passes through both $(1,2,3)$
+and $(1,0,0)$ and has normal vector $\llt 4,5,6\rgt$.
+
+(d) $2x+y+z=7$
+\flushleft \hyperref [q:1.4.0.4]{A-4:} 
+$x+y+z=1$
+\flushleft \hyperref [q:1.4.0.5]{A-5:} 
+(a) $x+y+z=2$ \qquad
+(b) No.\qquad
+(c) No. \qquad
+(d) Yes.
+\flushleft \hyperref [q:1.4.0.6]{A-6:} 
+ All three points $(1,2,3),\ (2,3,4)$ and $(3,4,5)$
+are on the line $\vx(t)=(1,2,3)+t(1,1,1)$. There are many planes
+through that line.
+\flushleft \hyperref [q:1.4.0.7]{A-7:} 
+(a) $9x-y-z=8$ \qquad
+(b) $14x-7y-8z=52$
+
+(c) For any real numbers $a$ and $b$, the plane
+$ax+by-(a+b)z=4a+b$ contains the three given points.
+
+\flushleft \hyperref [q:1.4.0.8]{A-8:} 
+(a) $\sqrt{3}$\qquad
+(b) $7/\sqrt{6}$
+\flushleft \hyperref [q:1.4.0.9]{A-9:} 
+(a) $3x+2y+z = 8$\qquad
+(b) $\big(3\,,\,-1\,,\,1\big)$
+\flushleft \hyperref [q:1.4.0.10]{A-10:} 
+(a) $x-y+z=3$\qquad
+(b) $5x+y-4z=-3$
+\flushleft \hyperref [q:1.4.0.11]{A-11:} 
+$4x + 2y - 4z=15$ and $4x + 2y - 4z=-9$ \qquad
+\flushleft \hyperref [q:1.4.0.12]{A-12:} 
+$2$
+\flushleft \hyperref [q:1.4.0.13]{A-13:} 
+(a) $(x,y,z) = (-3,1,0) +t \llt 0,-1,1\rgt$\qquad
+(b) $\sqrt{17}$\qquad
+\flushleft \hyperref [q:1.4.0.14]{A-14:} 
+$(x-1)^2+(y-2)^2+(z-3)^2=3$
+\flushleft \hyperref [q:1.4.0.15]{A-15:} 
+$3x-y+z=-5$
+\flushleft \hyperref [q:1.4.0.16]{A-16:} 
+$|c-\vn\cdot\vp|/|\vn|$
+\flushleft \hyperref [q:1.4.0.17]{A-17:} 
+It is the plane $x+z=8$, which is
+the plane through $(3,2,5)=\half(1,2,3)+\half(5,2,7)$ with normal
+$\llt 1,0,1\rgt=\frac{1}{4}\big(\llt 5,2,7\rgt-\llt 1,2,3\rgt \big)$.
+\flushleft \hyperref [q:1.4.0.18]{A-18:} 
+It is the plane $2(\vb-\va)\cdot\vx=|\vb|^2-|\va|^2$,
+which is the plane through $\half\va+\half\vb$
+with normal vector  $\vb-\va$.
+\flushleft \hyperref [q:1.4.0.19]{A-19:} 
+(a) $\half\sqrt{11}\approx 1.658$\qquad
+(b) $\frac{3}{\sqrt{11}}\approx 0.9045$
+\flushleft \hyperref [q:1.4.0.20]{A-20:} 
+Any positive constant times
+$\llt 1,1,-1\rgt\times\llt 1,0,1\rgt
+=\llt 1, -2, -1\rgt$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s1.5}}}\phantomsection \label {a ex:s1.5} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s1.5} \hspace {2ex} \nameref *{ex:s1.5}}
+\flushleft \hyperref [q:1.5.0.1]{A-1:} 
+There are infinitely many planes satisfying the condition described, but we're asked for ``the" line.
+
+We need two normal directions to figure out the direction of a line in $\mathbb R^3$. Since the given normal vectors are parallel to each other, they really only specify \emph{one} normal direction.
+\flushleft \hyperref [q:1.5.0.2]{A-2:} 
+There are infinitely many correct answers. One is
+\begin{align*}
+\llt x\,,\,y\,,\,z-1\rgt &= t\llt 1,0,0\rgt &
+\llt x\,,\,y\,,\,z-2\rgt &= t\llt 0,1,0\rgt \\
+\llt x\,,\,y\,,\,z-3\rgt &= t\llt 1,1,0\rgt &
+\llt x\,,\,y\,,\,z-4\rgt &= t\llt 1,-1,0\rgt
+\end{align*}
+
+\flushleft \hyperref [q:1.5.0.3]{A-3:} 
+(a) $\llt x,y,z\rgt =  \llt 3,5,0\rgt+\llt 2,-\half,1\rgt t$
+
+(b) $\llt x,y,z\rgt =  \llt -2,-1,0\rgt +\llt \frac{3}{2},1,1\rgt t$
+\flushleft \hyperref [q:1.5.0.4]{A-4:} 
+(a) $\llt x,y,z\rgt=\llt -1,4,0\rgt+t\llt 1,-2,1\rgt $
+
+(b) The two planes are parallel and \emph{do not intersect}.
+
+\flushleft \hyperref [q:1.5.0.5]{A-5:} 
+(a) $(1,0,3)$ lies on both lines.
+     $x+y+2z=7$ is the only plane containing both lines.
+
+(b) The two lines do not intersect. No plane contains the two lines.
+
+(c) The two lines do not intersect.
+     $x+z=1$ is the only plane containing both lines.
+
+(d) The two lines are identical.
+    For arbitrary $a$ and $b$ (not both zero) the plane $ax+by+(a+b)z=a$
+    contains both lines.
+\flushleft \hyperref [q:1.5.0.6]{A-6:} 
+vector parametric equation:\ \ \ $\llt x-2,y+1,z+1\rgt= t\llt 1,-1,-1\rgt$
+
+scalar parametric equation:\ \ \ $x=2+t$,  $y=-1-t$,  $z=-1-t$
+
+symmetric equation:\ \ \ $x-2=-y-1=-z-1$
+\flushleft \hyperref [q:1.5.0.7]{A-7:} 
+$\llt x,y,z\rgt = \llt 1,0,2\rgt +t\llt-1,1,-1 \rgt$
+\flushleft \hyperref [q:1.5.0.8]{A-8:} 
+(a) $\llt x,y,z\rgt=\llt 5,3,0\rgt+t\llt 4,1,-2\rgt =\llt 5+4t,3+t,-2t\rgt$.
+\qquad
+(b) $\sqrt{5}$
+\flushleft \hyperref [q:1.5.0.9]{A-9:} 
+(a) $8x+2y-11z=59$\qquad
+(b) $\frac{64}{\sqrt{189}} \approx 4.655$
+\flushleft \hyperref [q:1.5.0.10]{A-10:} 
+(a) Any nonzero constant times $\llt 1 \,,\, -5 \,,\, -3 \rgt$.\qquad
+(b) $x = -4 + t$,
+    $y = 3 - 5t$,
+    $z = 2 - 3t$
+\flushleft \hyperref [q:1.5.0.11]{A-11:} 
+(a) $(3,3,0)$,  $(12,0,-6)$, $(0,4,2)$ \qquad
+(b) $x=10+t$, $y=11+t$, $z=13+t$.
+\flushleft \hyperref [q:1.5.0.12]{A-12:} 
+(a)  $\frac{x-2}{3}=\frac{y}{4}\qquad z=-1$
+
+(b)  $\al =\frac{\pi}{2}-\arccos\frac{1}{5\sqrt{6}}
+             \approx 0.08\,\text{radians}$
+\flushleft \hyperref [q:1.5.0.13]{A-13:} 
+$(x,y,z) = \big(12\,,\,-1-t\,,\,t\big)$
+\flushleft \hyperref [q:1.5.0.14]{A-14:} 
+(a) $(0,4,0)$\qquad
+(b) $2x-y-z=-2$
+\flushleft \hyperref [q:1.5.0.15]{A-15:} 
+(a) $x=0,\ y=2+t,\ z=2$\qquad
+(b) The sphere $(x-1)^2 +(y-2)^2+(z-2)^2 = 1$
+
+(c) $(0,4,4)$
+\flushleft \hyperref [q:1.5.0.16]{A-16:} 
+See the solution.
+\flushleft \hyperref [q:1.5.0.17]{A-17:} 
+$3$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s1.6}}}\phantomsection \label {a ex:s1.6} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s1.6} \hspace {2ex} \nameref *{ex:s1.6}}
+\flushleft \hyperref [q:1.6.0.1]{A-1:} 
+$(1,25)$, $(-1/\sqrt2,0)$, $(0,25)$.
+\flushleft \hyperref [q:1.6.0.2]{A-2:} 
+The curve crosses itself at all points $(0,(\pi n)^2)$ where $n$ is an integer. It passes such a point twice, $2\pi n$ time units apart.
+\flushleft \hyperref [q:1.6.0.3]{A-3:} 
+(a) $\vr(y)=\sqrt{a^2-y^2}\,\hi+ y\,\hj$, $0\le y\le a$
+
+(b) $\big(x(\phi),y(\phi)\big)
+       =\big(a\sin \phi ,-a\cos \phi \big)$,
+   $\frac{\pi}{2}\le\phi\le\pi$
+
+(c) $\big(x(s),y(s)\big)
+    =\big(a\cos(\tfrac{\pi}{2}-\frac{s}{a}),
+           a\sin(\tfrac{\pi}{2}-\tfrac{s}{a})\big)$,
+   $0\le s\le\tfrac{\pi}{2}a$
+\flushleft \hyperref [q:1.6.0.4]{A-4:} 
+(a) $(a+a\theta,a)$\qquad
+(b)$(a+a\theta+a\sin\theta,a+a\cos\theta)$
+\flushleft \hyperref [q:1.6.0.5]{A-5:} 
+$z=-\frac12\sqrt{1-\frac{y^2}{2}}-\frac{y}{4}$
+\flushleft \hyperref [q:1.6.0.6]{A-6:} 
+The particle is moving upwards from $t=1$ to $t=2$, and from $t=3$ onwards.  The particle is moving downwards from $t=0$ to $t=1$, and from $t=2$ to $t=3$.
+
+The particle is moving faster when $t=1$ than when $t=3$.
+\flushleft \hyperref [q:1.6.0.7]{A-7:} 
+
+\begin{center}
+\begin{tikzpicture}
+\draw[thick] plot[domain=-4.5:1]({4-\x*\x/4},\x);
+\draw (4-1/16,-.5) node[vertex, label=right: $\vr(t+h)$](th){};
+\draw (3,-2) node[vertex, label=right: $\vr(t)$](t){};
+\draw (0,-4) node[vertex, label=below right: $\vr(0)$](zero){};
+%\draw[|-|, red,yshift=10mm, xshift=-10mm] plot[domain=-4:-2]({4-\x*\x/4},\x);
+%\draw[|-|, red,yshift=7.5mm, xshift=-7.5mm] plot[domain=-4:-.5]({4-\x*\x/4},\x);
+\draw[|-|, blue,yshift=-5mm, xshift=10mm] plot[domain=-2:-.5]({4-\x*\x/4},\x);
+\draw[very thick, red, ->] (t)--(th);% node[midway, left]{$\vr(t+h)-\vr(t)$};
+\end{tikzpicture}
+\end{center}
+The red vector is $\vr(t+h)-\vr(t)$. The arclength of the segment indicated by the blue line is the (scalar) $s(t+h)-s(t)$.
+
+Remark: as $h$ approaches 0, the curve (if it's differentiable at $t$) starts to resemble a straight line, with the length of the vector $\vr(t+h)-\vr(t)$ approaching the scalar $s(t+h)-s(t)$. This step is crucial to understanding Lemma~\eref{CLP200}{lem:CVtanArclen} in the CLP-3 text.
+\flushleft \hyperref [q:1.6.0.8]{A-8:} 
+Velocity is a vector-valued quantity, so it has both a magnitude and a direction. Speed is a scalar--the magnitude of the velocity. It does not include a direction.
+\flushleft \hyperref [q:1.6.0.9]{A-9:} 
+(c)
+\flushleft \hyperref [q:1.6.0.10]{A-10:} 
+(d)
+\flushleft \hyperref [q:1.6.0.11]{A-11:} 
+(a)
+\begin{align*}
+\vv(t)&= -a \sin t\,\hi+a\cos t\,\hj+c\,\hk\\
+\diff{s}{t}(t)&= \sqrt{a^2+c^2}\\
+\va(t)&= -a \cos t\,\hi-a\sin t\,\hj
+\end{align*}
+The path is a helix with radius $a$ and with each turn having height $2\pi c$.
+
+(b)
+\begin{align*}
+\vv(t)&= a \cos 2t\,\hi +a\sin 2t\,\hj-a\sin t\,\hk\\
+\diff{s}{t}(t)&= a\sqrt{1+\sin^2t}\\
+\va(t)&= -2a \sin 2t\,\hi +2a\cos 2t\,\hj-a\cos t\,\hk
+\end{align*}
+The $(x,y)$ coordinates go around a circle of radius $\frac{a}{2}$ and
+centre $\big(0,\frac{a}{2}\big)$ counterclockwise. At the same time the $z$ coordinate oscillates over the interval between $1$ and $-1$ half as fast.
+\flushleft \hyperref [q:1.6.0.12]{A-12:} 
+(a) $\hat\vT(1) = \frac{(2,0,1)}{\sqrt{5}}$\qquad
+(b) $\frac{1}{3}\big[5^{3/2}-8\big]$
+\flushleft \hyperref [q:1.6.0.13]{A-13:} 
+2
+\flushleft \hyperref [q:1.6.0.14]{A-14:} 
+1
+\flushleft \hyperref [q:1.6.0.15]{A-15:} 
+(a) $\nicefrac{20}{3}$\qquad
+(b) $x(t) = -2\pi -2t,\
+     y(t) =  -2\pi t,\
+     z(t) = \nicefrac{\pi^3}{3} + \pi^2 t$
+\flushleft \hyperref [q:1.6.0.16]{A-16:} 
+(a) $\vr'(t) = \big(-3 \sin t, 3 \cos t, 4\big)$\qquad
+(b) 5
+\flushleft \hyperref [q:1.6.0.17]{A-17:} 
+(a) $\frac{1}{27}\big(10\sqrt{10}-1\big)$\qquad
+(b) $\frac{2}{27}\big(10\sqrt{10}-1\big)$
+\flushleft \hyperref [q:1.6.0.18]{A-18:} 
+$s(t)=\frac{t^3}{3} +\frac{t}{2}$
+\flushleft \hyperref [q:1.6.0.19]{A-19:} 
+$\frac{8}{27}\Big[\Big(2 + \frac{9}{4}b^m\Big)^{3/2}
+                   -\Big(2 + \frac{9}{4}a^m\Big)^{3/2}\Big]$
+\flushleft \hyperref [q:1.6.0.20]{A-20:} 
+$|t|$
+\flushleft \hyperref [q:1.6.0.21]{A-21:} 
+(a) $\vr(2)=2\hj+4\hk$\qquad
+(b) any nonzero multiple of $\vr'(2)=2\pi\,\hi+\hj+4\,\hk$
+
+(c) $\Ga$ and $E$ do not intersect at right angles.
+\flushleft \hyperref [q:1.6.0.22]{A-22:} 
+$\diff{}{t}\big[|\vr(t)|^2+|\vr'(t)|^2\big]=0$
+\flushleft \hyperref [q:1.6.0.23]{A-23:} 
+(a)  $\vr(u)=u^3\,\hi+3u^2\,\hj+6u\,\hk$\qquad
+(b)  $7$\qquad
+(c)  $2$\qquad
+(d)  $1$
+\flushleft \hyperref [q:1.6.0.24]{A-24:} 
+(a) $\vr(t) = \big(\frac{\pi^2 t}{2}-\frac{t^3}{2}\big)\,\hi +
+              (t- \sin t)\,\hj + \left(\frac{1}{2}e^{2t}-t\right)\,\hk$ \qquad
+(b) $t=\pi$
+
+(c) $-\pi^2\,\hi +2\,\hj + \big(e^{2\pi}-1\big)\,\hk$
+\flushleft \hyperref [q:1.6.0.25]{A-25:} 
+(a) $21$\qquad
+(b) $6$\qquad
+(c) $2\hi+4\,\hj+4\,\hk$\qquad
+(d) $-\frac{8}{3}\big(2\hi+\,\hj-2\,\hk\big)$
+\flushleft \hyperref [q:1.6.0.26]{A-26:} 
+$\frac{x(t)y'(t)-y(t)x'(t)}{x^2+y^2}$
+\flushleft \hyperref [q:1.6.0.27]{A-27:} 
+$\vr(t)=\vr_0-\frac{e^{-\alpha t}-1}{\alpha}\vv_0
++g\frac{1-\alpha t-e^{-\alpha t}}{\alpha^2}\hk$
+\flushleft \hyperref [q:1.6.0.28]{A-28:} 
+(a) $\vr(t)=\llt -\cos t, -\sin t, t\rgt$\qquad
+(b) $\vv(t)\cdot\va(t)=0$
+
+(c) $\vr(u)=\llt 0,1,-\frac{\pi}{2}\rgt+u\llt -1,0,1\rgt$\qquad
+(d) True
+\flushleft \hyperref [q:1.6.0.29]{A-29:} 
+(a) $x(t)^2+y(t)^2=z(t)^2$ for all $t$
+
+(b) $\text{velocity}= \big[\cos\big(\tfrac{\pi t}{2}\big)
+           -\tfrac{\pi t}{2}\sin\big(\tfrac{\pi t}{2}\big)\big]\hi
+         +\big[\sin\big(\tfrac{\pi t}{2}\big)
+           +\tfrac{\pi t}{2}\cos\big(\tfrac{\pi t}{2}\big)\big]\hj +\hk$
+\quad
+$\text{speed}=\sqrt{2+\frac{\pi^2 t^2}{4}}$
+
+(c) $\llt x,y,z\rgt = \llt 0,1,1\rgt +(t-1)\llt -\frac{\pi}{2},1,1\rgt$
+
+(d)   $\frac{2}{\pi}$ seconds
+\flushleft \hyperref [q:1.6.0.30]{A-30:} 
+(a) $90^\circ$\qquad
+(b) $2\sqrt{3}$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s1.7}}}\phantomsection \label {a ex:s1.7} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s1.7} \hspace {2ex} \nameref *{ex:s1.7}}
+\flushleft \hyperref [q:1.7.0.1]{A-1:} 
+(a) $\leftrightarrow$ (C) \qquad
+(b) $\leftrightarrow$ (F) \qquad
+(c) $\leftrightarrow$ (D) \qquad
+(d) $\leftrightarrow$ (B) \qquad
+(e) $\leftrightarrow$ (A) \qquad
+(f) $\leftrightarrow$ (E)
+\flushleft \hyperref [q:1.7.0.2]{A-2:} 
+\begin{center}
+ (a) \raisebox{-0.5\height}
+           {\includegraphics[width=0.4\textwidth, height=0.4\textwidth]
+                                                   {planeGraphB.pdf}}
+\qquad
+  (b)\ \ \raisebox{-0.45\height}
+            {\includegraphics[width=0.33\textwidth, height=0.33\textwidth]
+                                                   {paraboloidGraphB.pdf}}
+\end{center}
+\flushleft \hyperref [q:1.7.0.3]{A-3:} 
+\begin{center}
+  \includegraphics{hyperCylinderLevel.pdf}
+\end{center}
+\flushleft \hyperref [q:1.7.0.4]{A-4:} 
+(a)
+\begin{center}
+     \includegraphics{levelEllipse.pdf}
+\end{center}
+
+(b)
+\begin{center}
+     \includegraphics{levelHyperbola.pdf}
+\end{center}
+
+(c)
+\begin{center}
+     \includegraphics{levelLog.pdf}
+\end{center}
+
+\flushleft \hyperref [q:1.7.0.5]{A-5:} 
+\begin{center}
+     \includegraphics{OE10D_1.pdf}
+\end{center}
+\flushleft \hyperref [q:1.7.0.6]{A-6:} 
+\begin{center}
+     \includegraphics{OE11D_1.pdf}
+\end{center}
+\flushleft \hyperref [q:1.7.0.7]{A-7:} 
+(a)
+
+\begin{center}
+     \includegraphics{OE253_11D_1a.pdf}
+\end{center}
+
+(b)
+
+\begin{center}
+   \includegraphics{OE253_11D_1bl.pdf}\qquad\qquad
+   \raisebox{0.1\height}{\includegraphics[scale=1.2]{OE253_11D_1br.pdf}}
+\end{center}
+\flushleft \hyperref [q:1.7.0.8]{A-8:} 
+\begin{center}
+   \includegraphics{OE226_09A_l.pdf}\qquad\qquad
+   \raisebox{0.1\height}{\includegraphics[scale=1.2]{OE226_09A_r.pdf}}
+\end{center}
+\flushleft \hyperref [q:1.7.0.9]{A-9:} 
+(a)
+ If $c>0$, $f(x,y,z)=c$
+is the sphere of radius $\sqrt{c}$ centered at the origin.
+If $c=0$, $f(x,y,z)=c$ is just the origin. If $c<0$, no
+$(x,y,z)$ satisfies $f(x,y,z)=c$.
+
+(b) $f(x,y,z)=c$ is the plane normal to
+$(1,2,3)$ passing through $(c,0,0)$.
+
+(c) If $c>0$, $f(x,y,z)=c$ is the cylinder
+parallel to the $z$-axis whose cross-section is a circle of
+radius $\sqrt{c}$ that is parallel to the $xy$-plane and is centered on the
+$z$-axis.
+If $c=0$, $f(x,y,z)=c$ is the $z$-axis. If $c<0$, no
+$(x,y,z)$ satisfies $f(x,y,z)=c$.
+
+\flushleft \hyperref [q:1.7.0.10]{A-10:} 
+(a)
+\begin{center}
+     \includegraphics{sinGraph.pdf}
+\end{center}
+
+(b)
+\begin{center}
+     \includegraphics{coneGraph.pdf}
+\end{center}
+
+(c)
+\begin{center}
+   \includegraphics{pmidGraph.pdf}\qquad\qquad
+   \raisebox{0.1\height}{\includegraphics[scale=1.3]{pmidGraphB.pdf}}
+\end{center}
+\flushleft \hyperref [q:1.7.0.11]{A-11:} 
+(a) This is an elliptic cylinder parallel to the $z$-axis.
+Here is a sketch of the part of the surface above the $xy$--plane.
+\begin{center}
+     \includegraphics{elliptical_cylinder}
+\end{center}
+
+(b)
+This is a plane through $(4,0,0)$, $(0,4,0)$ and $(0,0,2)$.
+Here is a sketch of the part of the plane in the first octant.
+\begin{center}
+     \includegraphics{plane.pdf}
+\end{center}
+
+(c)
+This is a hyperboloid of one sheet with axis the $x$-axis.
+\begin{center}
+     \includegraphics{hyperboloidX_l.pdf}\qquad
+     \includegraphics[scale=0.9]{hyperboloidX_r.pdf}
+\end{center}
+
+(d)
+This is a circular cone centred
+on the $y$-axis.
+\begin{center}
+     \includegraphics{coneYY_r.pdf}%\qquad
+%     \includegraphics[scale=0.9]{coneY_r.pdf}
+\end{center}
+
+(e)
+This is an ellipsoid centered on the origin with semiaxes $3$,
+$\sqrt{12}=2\sqrt{3}$ and $3$ along the $x$, $y$ and $z$-axes, respectively.
+\begin{center}
+     \includegraphics{ellipsoid_l.pdf}\qquad
+     \includegraphics[scale=0.9]{ellipsoid_r.pdf}
+\end{center}
+
+(f)
+This is a sphere of radius $r_b=\frac{1}{2}\sqrt{b^2+4b+97}$ centered on
+$\frac{1}{2}(-4,b,-9)$.
+\begin{center}
+     \includegraphics{shiftSphere.pdf}
+\end{center}
+
+(g)
+This is an elliptic paraboloid with axis the $x$-axis.
+\begin{center}
+     \includegraphics{paraboloidX_l.pdf}\qquad
+     \includegraphics[scale=0.8]{paraboloidX_r.pdf}
+\end{center}
+
+(h)
+This is an upward openning parabolic cylinder.
+\begin{center}
+     \includegraphics{parabolicCylinder.pdf}
+\end{center}
+
+%(i)
+
+
+\flushleft \hyperref [q:1.7.0.12]{A-12:} 
+$\displaystyle x^2+y^2=\left( \frac{|z|}{3}+1\right)^2$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.1}}}\phantomsection \label {a ex:s2.1} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.1} \hspace {2ex} \nameref *{ex:s2.1}}
+\flushleft \hyperref [q:2.1.0.1]{A-1:} 
+in general, false.
+\flushleft \hyperref [q:2.1.0.2]{A-2:} 
+(a) the position of the particle in the basin \\
+(b) the position in the basin that the millstone hits\\
+(c) 50 $\mu$m
+\flushleft \hyperref [q:2.1.0.3]{A-3:} 
+(a) along the $x$-axis\qquad (b) along the $y$-axis \qquad (c) $\lim\limits_{(x,y)\to(0,0)}f(x,y)$ does not exist
+\flushleft \hyperref [q:2.1.0.4]{A-4:} 
+(a) $r^2\cos(2\theta)$\quad
+(b) $\text{min}=-1,\ \text{max}=1$\quad
+(c) $\text{min}=-r^2,\ \text{max}=r^2$\quad
+(d) $r<\sqrt\epsilon$
+
+(e) $\lim\limits_{(x,y)\to(0,0)}f(x,y)=0$
+
+\flushleft \hyperref [q:2.1.0.5]{A-5:} 
+$f(a,b)$
+\flushleft \hyperref [q:2.1.0.6]{A-6:} 
+(a) $2$ \qquad
+(b) undefined\qquad
+(c) undefined\qquad
+(d) $0$\qquad
+(e) $0$ \qquad
+(f) $1$
+\flushleft \hyperref [q:2.1.0.7]{A-7:} 
+(a) $0$
+\qquad
+(b) See the solution.
+\flushleft \hyperref [q:2.1.0.8]{A-8:} 
+(a) $0$
+
+(b) The limit does not exist since the limits (i) $x=0$,
+$y\rightarrow 0$ and (ii) $y=0$, $x\rightarrow 0$ are different.
+\flushleft \hyperref [q:2.1.0.9]{A-9:} 
+(a) $2$\qquad
+(b) The limit does not exist. See the solution.
+\flushleft \hyperref [q:2.1.0.10]{A-10:} 
+(a) $0$\qquad
+(b) $\frac{1}{2}$ \qquad
+(c) No.
+\flushleft \hyperref [q:2.1.0.11]{A-11:} 
+(a), (b), (d) Do not exist. See the solutions.\qquad
+(c) $0$
+\flushleft \hyperref [q:2.1.0.12]{A-12:} 
+(a), (b)  The limit does not exist. See the solution.
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.2}}}\phantomsection \label {a ex:s2.2} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.2} \hspace {2ex} \nameref *{ex:s2.2}}
+\flushleft \hyperref [q:2.2.0.1]{A-1:} 
+\begin{enumerate}[(a)]
+\item
+\begin{align*}
+\pdiff{f}{x}(0,0)
+\approx \left.\frac{f(h,0)-f(0,0)}{h}\right|_{h=0.1}
+=\frac{1.10517-1}{0.1}
+=1.0517
+\end{align*}
+and
+\begin{align*}
+\pdiff{f}{x}(0,0)
+\approx \left.\frac{f(h,0)-f(0,0)}{h}\right|_{h=0.01}
+=\frac{1.01005-1}{0.01}
+=1.005
+\end{align*}
+\item
+\begin{align*}
+\pdiff{f}{y}(0,0)
+\approx \left.\frac{f(0,h)-f(0,0)}{h}\right|_{h=-0.1}
+=\frac{0.99500-1}{-0.1}
+=0.0500
+\end{align*}
+and
+\begin{align*}
+\pdiff{f}{y}(0,0)
+\approx \left.\frac{f(0,h)-f(0,0)}{h}\right|_{h=-0.01}
+=\frac{0.99995-1}{-0.01}
+=.0050
+\end{align*}
+\item
+$
+\pdiff{f}{x}(0,0) =1
+$
+and
+$\pdiff{f}{y}(0,0) = 0
+$
+\end{enumerate}
+\flushleft \hyperref [q:2.2.0.2]{A-2:} 
+No: you can go higher by moving in the negative $y$ direction.
+\flushleft \hyperref [q:2.2.0.3]{A-3:} 
+(a) $0$\qquad
+(b) $0$\qquad
+(c) $\frac{1}{2}$
+\flushleft \hyperref [q:2.2.0.4]{A-4:} 
+(a)
+\begin{align*}
+f_x(x,y,z)&=3x^2y^4z^5 & f_x(0,-1,-1)&=0\\
+f_y(x,y,z)&=4x^3y^3z^5 & f_y(0,-1,-1)&=0\\
+f_z(x,y,z)&=5x^3y^4z^4 & f_z(0,-1,-1)&=0
+\end{align*}
+
+(b)
+\begin{align*}
+w_x(x,y,z)&=\frac{yz e^{xyz}}{1+e^{xyz}} & w_x(2,0,-1)&=0\\
+w_y(x,y,z)&=\frac{xz e^{xyz}}{1+e^{xyz}} & w_y(2,0,-1)&=-1\\
+w_z(x,y,z)&=\frac{xy e^{xyz}}{1+e^{xyz}} & w_z(2,0,-1)&=0
+\end{align*}
+
+(c)
+\begin{align*}
+f_x(x,y)&=-\frac{x}{(x^2+y^2)^{3/2}} & f_x(-3,4)&=\frac{3}{125}\\
+f_y(x,y)&=-\frac{y}{(x^2+y^2)^{3/2}} & f_y(-3,4)&=-\frac{4}{125}
+\end{align*}
+\flushleft \hyperref [q:2.2.0.5]{A-5:} 
+See the solution.
+\flushleft \hyperref [q:2.2.0.6]{A-6:} 
+(a)
+$\pdiff{z}{x} = \frac{z(1-x)}{x(yz-1)}$,\quad
+$\pdiff{z}{y} = \frac{z(1+y-yz)}{y(yz-1)}$
+
+(b)
+$\pdiff{z}{x}(-1,-2) =\frac{1}{2}$,\quad
+$\pdiff{z}{y}(-1,-2) =0$.
+\flushleft \hyperref [q:2.2.0.7]{A-7:} 
+$\pdiff{U}{T}(1,2,4) = -\frac{2\ln(2)}{1+2\ln(2)}$\qquad
+$\pdiff{T}{V}(1,2,4) = 1 -\frac{1}{4\ln(2)}$
+\flushleft \hyperref [q:2.2.0.8]{A-8:} 
+$24$
+\flushleft \hyperref [q:2.2.0.9]{A-9:} 
+$f_x(0,0)=1$,\qquad
+$f_y(0,0)=2$
+\flushleft \hyperref [q:2.2.0.10]{A-10:} 
+Yes.
+\flushleft \hyperref [q:2.2.0.11]{A-11:} 
+(a) $\pdiff{f}{x}(0,0)=1$, $\pdiff{f}{y}(0,0)=4$\qquad
+(b) Nope.
+\flushleft \hyperref [q:2.2.0.12]{A-12:} 
+1 resp. 0
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.3}}}\phantomsection \label {a ex:s2.3} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.3} \hspace {2ex} \nameref *{ex:s2.3}}
+\flushleft \hyperref [q:2.3.0.1]{A-1:} 
+See the solution.
+\flushleft \hyperref [q:2.3.0.2]{A-2:} 
+No such $f(x,y)$ exists.
+\flushleft \hyperref [q:2.3.0.3]{A-3:} 
+(a) $f_{xx}(x,y) = 2y^3$\qquad
+    $f_{yxy}(x,y) = f_{xyy}(x,y) = 12xy$
+
+(b) $f_{xx}(x,y)= y^4e^{xy^2}$\quad
+    $f_{xy}(x,y)= \big(2y+2xy^3\big)e^{xy^2}$\quad
+    $f_{xxy}(x,y)= \big(4y^3 + 2xy^5\big)e^{xy^2}$\quad
+    $f_{xyy}(x,y) = \big(2+10xy^2+4x^2y^4\big)e^{xy^2}$
+
+(c) $\displaystyle\frac{\partial^3 f}{\partial u\,\partial v\,\partial w}(u,v,w)
+        = -\frac{36}{(u+2v+3w)^4}$\qquad
+    $\displaystyle\frac{\partial^3 f}{\partial u\,\partial v\,\partial w}(3,2,1)
+         = -0.0036
+         = -\frac{9}{2500}$
+
+\flushleft \hyperref [q:2.3.0.4]{A-4:} 
+$f_{xx}=\frac{5y^2}{(x^2+5y^2)^{3/2}}$\quad
+$f_{xy}=f_{yx}=-\frac{5xy}{(x^2+5y^2)^{3/2}}$\quad
+$f_{yy}=\frac{5x^2}{(x^2+5y^2)^{3/2}}$
+\flushleft \hyperref [q:2.3.0.5]{A-5:} 
+(a) $f_{xyz}(x,y,z)=0$\qquad
+(b) $f_{xyz}(x,y,z)=0$\qquad
+(c) $f_{xx}(1,0,0)=0$
+\flushleft \hyperref [q:2.3.0.6]{A-6:} 
+(a) $f_{rr}(1,0)=m(m-1),\
+f_{r\theta}(1,0)=0,\
+f_{\theta\theta}(1,0)=-m^2$\qquad
+(b) $\la=1$
+\flushleft \hyperref [q:2.3.0.7]{A-7:} 
+See the solution.
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.4}}}\phantomsection \label {a ex:s2.4} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.4} \hspace {2ex} \nameref *{ex:s2.4}}
+\flushleft \hyperref [q:2.4.0.1]{A-1:} 
+(a) $\pdiff{h}{x}(x,y)
+=\pdiff{f}{x}\big(x,u(x,y)\big)
++\pdiff{f}{u}\big(x,u(x,y)\big)
+\pdiff{u}{x}(x,y)$
+
+(b) $\diff{h}{x}(x)
+=\pdiff{f}{x}\big(x,u(x),v(x)\big)
++\pdiff{f}{u}\big(x,u(x),v(x)\big)
+\diff{u}{x}(x)
++\pdiff{f}{v}\big(x,u(x),v(x)\big)
+\diff{v}{x}(x)$
+
+(c) $\pdiff{h}{x}(x,y,z)
+=\pdiff{f}{u}\big(u(x,y,z),v(x,y),w(x)\big)
+\pdiff{u}{x}(x,y,z)
++\pdiff{f}{v}\big(u(x,y,z),v(x,y),w(x)\big)
+\pdiff{v}{x}(x,y)$
+\null$\ \ \ \ \ \ \ \ +\pdiff{f}{w}\big(u(x,y,z),v(x,y),w(x)\big)
+\diff{w}{x}(x)$
+
+
+\flushleft \hyperref [q:2.4.0.2]{A-2:} 
+
+\textit{To visualize, in a simplified setting, the situation from Example~\eref{CLP3}{eg:chainRuleE} in CLP3, note that $w'(x)$ is the rate of change of $z$ as we slide along the blue line, while $f_x(x,y)$ is the change of $z$ as we slide along the orange line.}
+
+In the approximation $f_x(x,y)\approx \frac{\Delta f}{\Delta x}$, starting at the point $P_0$, $\Delta x=x_2-x_1$ and $\Delta f=z_2-z_1$.
+
+In the approximation $\diff{w}{x}\approx \frac{\Delta w}{\Delta x}$, starting at the point $P_0$,  $\Delta x=x_2-x_1$ again, and $\Delta w=z_1-z_1=0$.
+
+\flushleft \hyperref [q:2.4.0.3]{A-3:} 
+$\diff{w}{t}=1$ and $f_t=5$.
+$f_t$ gives the rate of change of $f(x,y,t)$ as $t$ varies
+while $x$ and $y$ are held fixed.
+$\diff{w}{t}$ gives the rate of change of $f\big(x(t),y(t),t\big)$.
+For the latter all of $x=x(t)$, $y=y(t)$ and $t$ are
+changing at once.
+\flushleft \hyperref [q:2.4.0.4]{A-4:} 
+See the solution.
+\flushleft \hyperref [q:2.4.0.5]{A-5:} 
+The problem is that $\pdiff{w}{x}$ is used to represent
+two completely different functions in the same equation.
+See the solution for more details.
+\flushleft \hyperref [q:2.4.0.6]{A-6:} 
+$w_s(s,t)=2s(t^2+1)$\qquad
+$w_t(s,t)=s^2(2t)$
+\flushleft \hyperref [q:2.4.0.7]{A-7:} 
+We have
+\begin{equation*}
+\frac{\partial^3}{\partial x\partial y^2}f(2x+3y,xy)
+=6f_{12}+2x\,f_{22}+18\,f_{111}+(9y+12x)\,f_{112}
++(6xy+2x^2)\,f_{122}+x^2y\,f_{222}
+\end{equation*}
+All functions on the right hand side have arguments $(2x+3y,xy)$.
+The notation $f_{21}$, for example, means first differentiate with
+respect to the second argument and then differentiate with respect
+to the first argument.
+\flushleft \hyperref [q:2.4.0.8]{A-8:} 
+\begin{align*}
+g_{ss}(s,t)&=4f_{11}(2s+3t,3s-2t)+12f_{12}(2s+3t,3s-2t)+9f_{22}(2s+3t,3s-2t)\\
+g_{st}(s,t)&=6f_{11}(2s+3t,3s-2t)+5f_{12}(2s+3t,3s-2t)-6f_{22}(2s+3t,3s-2t)\\
+g_{tt}(s,t)&=9f_{11}(2s+3t,3s-2t)-12f_{12}(2s+3t,3s-2t)+4f_{22}(2s+3t,3s-2t)
+\end{align*}
+Here $f_1$ denotes the partial derivative of $f$ with respect to its first
+argument, $f_{12}$ is the result of first taking one partial derivative
+of $f$ with respect to its first argument and then taking a partial derivative
+with respect to its second argument, and so on.
+\flushleft \hyperref [q:2.4.0.9]{A-9:} 
+See the solutions.
+\flushleft \hyperref [q:2.4.0.10]{A-10:} 
+$a=5$ and $b=c=2$.
+\flushleft \hyperref [q:2.4.0.11]{A-11:} 
+\begin{align*}
+\frac{\partial^2}{\partial x\, \partial y} F(x^2 - y^2 , 2xy)
+&= 2\,  F_v(x^2 - y^2 , 2xy) -4xy\, F_{uu}(x^2 - y^2 , 2xy) \\&\hskip0.5in
+  +4(x^2-y^2)\, F_{uv}(x^2 - y^2 , 2xy) \\&\hskip0.5in
+  +4xy\,  F_{vv}(x^2 - y^2 , 2xy)
+\end{align*}
+\flushleft \hyperref [q:2.4.0.12]{A-12:} 
+(a) $\pdiff{u}{x}(x,y) = \frac{e^y}{x}$,
+    $\pdiff{u}{y}(x,y) = e^y\,\ln (x) -y^2\,e^y -2y e^y$
+
+(b) See the solution.
+\flushleft \hyperref [q:2.4.0.13]{A-13:} 
+$-54$
+\flushleft \hyperref [q:2.4.0.14]{A-14:} 
+See the solution.
+\flushleft \hyperref [q:2.4.0.15]{A-15:} 
+(a) \begin{align*}
+\pdiff{z}{t}(r,t) &= -r\sin t\  \pdiff{f}{x}(r\cos t\,,\,r\sin t)
+                     +r\cos t\  \pdiff{f}{y}(r\cos t\,,\,r\sin t)
+\end{align*}
+
+(b)
+\begin{align*}
+\frac{\partial^2 z}{\partial t^2}(r,t)
+&= -r\cos t \  \pdiff{f}{x}
+   -r\sin t \  \pdiff{f}{y} \\
+&\hskip0.5in
+  +r^2\sin^2 t\ \frac{\partial^2 f}{\partial x^2}
+  -2r^2\sin t\cos t\
+       \frac{\partial^2\ f}{\partial x\partial y}
+  +r^2\cos^2 t\ \frac{\partial^2 f}{\partial y^2}
+\end{align*}
+with all of the partial derivatives of $f$ evaluated at
+$(r\cos t\,,\,r\sin t)$.
+\flushleft \hyperref [q:2.4.0.16]{A-16:} 
+$28$
+\flushleft \hyperref [q:2.4.0.17]{A-17:} 
+$A=2$.
+\flushleft \hyperref [q:2.4.0.18]{A-18:} 
+$10a$
+\flushleft \hyperref [q:2.4.0.19]{A-19:} 
+See the solution.
+\flushleft \hyperref [q:2.4.0.20]{A-20:} 
+(a) $w_{ss}(s,t) =4\,u_{xx}(2s + 3t, 3s - 2t)
+                 +12\,u_{xy}(2s + 3t, 3s - 2t)
+                   +9\,u_{yy}(2s + 3t, 3s - 2t) $
+
+(b) $A=-1$
+\flushleft \hyperref [q:2.4.0.21]{A-21:} 
+(a)
+\begin{align*}
+\pdiff{}{\theta}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+&=-r\sin\theta\, f_x
+  +r\cos\theta\, f_y \\
+\pdiff{}{r}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+&= \cos\theta\, f_x
+  +\sin\theta\, f_y \\
+\frac{\partial^2}{\partial \theta\,\partial r}
+         \big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+&=-\sin\theta\, f_x
+  +\cos\theta\, f_y \\&\hskip0.5in
+  -r\sin\theta\cos\theta\, f_{xx}
+  +r[\cos^2\theta-\sin^2\theta]\, f_{xy}
+  +r\sin\theta\cos\theta\, f_{yy}
+\end{align*}
+with the arguments of $f_x$, $f_y$, $f_{xx}$, $f_{xy}$ and $f_{yy}$
+all being $\big(r\cos\theta\,,\,r\sin\theta\big)$.
+
+(b)
+\begin{align*}
+\pdiff{}{r}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+&=-\frac{1}{r} \pdiff{}{\theta}\big[g\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+\\
+\pdiff{}{\theta}\big[f\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+&=r\pdiff{}{r}\big[g\big(r\cos\theta\,,\,r\sin\theta\big)\big]
+\end{align*}
+\flushleft \hyperref [q:2.4.0.22]{A-22:} 
+$\vnabla z(1,2)=\llt -47,108\rgt$
+\flushleft \hyperref [q:2.4.0.23]{A-23:} 
+(a) See the solution.\qquad
+(b) $\frac{4}{15}$
+\flushleft \hyperref [q:2.4.0.24]{A-24:} 
+(a) $\pdiff{x}{u}\big(\frac{\pi}{2},0\big)=\frac{2}{3\pi}$,
+$\pdiff{y}{u}\big(\frac{\pi}{2},0\big)=\frac{4}{3\pi}$\qquad
+(b) $\frac{8}{\pi}$
+\flushleft \hyperref [q:2.4.0.25]{A-25:} 
+$\al=2$
+\flushleft \hyperref [q:2.4.0.26]{A-26:} 
+See the solutions.
+\flushleft \hyperref [q:2.4.0.27]{A-27:} 
+(a) $\displaystyle\pdiff{y}{z}(x,z)
+           =\frac{x^2 \ln y(x,z)-y(x,z)e^{y(x,z)\,z}}
+                     {ze^{y(x,z)\,z}-\frac{x^2 z}{y(x,z)}}$
+
+(b) $\displaystyle\diff{y}{x}(x)
+=-\frac{F_1\big(x,y(x),x^2-y(x)^2\big)+2x\,F_3\big(x,y(x),x^2-y(x)^2\big)}
+{F_2\big(x,y(x),x^2-y(x)^2\big)-2y(x)\,F_3\big(x,y(x),x^2-y(x)^2\big)}$
+
+(c) $\displaystyle\left(\pdiff{y}{x}\right)_u\!\!(x,u)
+=\frac{y(x,u)\,v(x,u)-x\,y(x,u)}{x\,y(x,u)-x\,v(x,u)}$
+
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.5}}}\phantomsection \label {a ex:s2.5} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.5} \hspace {2ex} \nameref *{ex:s2.5}}
+\flushleft \hyperref [q:2.5.0.1]{A-1:} 
+Yes. The plane $z=0$ is the tangent plane to both surfaces at $(0,0,0)$.
+\flushleft \hyperref [q:2.5.0.2]{A-2:} 
+See the solution.
+\flushleft \hyperref [q:2.5.0.3]{A-3:} 
+The normal plane is $\vn\cdot\llt x-x_0\,,\,y-y_0\,,\,z-z_0\rgt =0$,
+where the normal vector
+$\vn = \vnabla F(x_0,y_0,z_0)\times \vnabla G(x_0,y_0,z_0)$.
+\flushleft \hyperref [q:2.5.0.4]{A-4:} 
+Tangent line is
+\begin{align*}
+x&=x_0+t\big[g_y(x_0,y_0)-f_y(x_0,y_0)\big] \\
+y&=y_0+t\big[f_x(x_0,y_0)-g_x(x_0,y_0)\big] \\
+z&=z_0+ t\big[f_x(x_0,y_0)g_y(x_0,y_0)-f_y(x_0,y_0)g_x(x_0,y_0)\big]
+\end{align*}
+\flushleft \hyperref [q:2.5.0.5]{A-5:} 
+$2x+y+9z=2$
+\flushleft \hyperref [q:2.5.0.6]{A-6:} 
+$2x+y+z = 6$
+\flushleft \hyperref [q:2.5.0.7]{A-7:} 
+(a)  The tangent plane is  $4x+2y+z=-3$
+      and the normal line is  $\llt x,y,z\rgt=\llt -2,1,3\rgt+t\llt 4,2,1\rgt$.
+
+(b) The tangent plane is  $2y-z=-1$
+      and the normal line is  $\llt x,y,z\rgt=\llt 2,0,1\rgt+t\llt 0,2,-1\rgt$.
+
+
+\flushleft \hyperref [q:2.5.0.8]{A-8:} 
+$z = -\frac{3}{4} x- \frac{3}{2} y + \frac{11}{4}$
+\flushleft \hyperref [q:2.5.0.9]{A-9:} 
+(a) $2ax -2ay +z = -a^2$\qquad
+(b) $a=\frac{1}{2}$.
+\flushleft \hyperref [q:2.5.0.10]{A-10:} 
+The tangent plane is $\frac{8}{25}x-\frac{6}{25}y-z=-\frac{8}{5}$.\\
+  \null\hskip0.3in   The normal line is
+   $\llt x,y,z\rgt = \llt -1,2,\frac{4}{5}\rgt
+                  +t \llt \frac{8}{25}\,,\,-\frac{6}{25}\,,\,-1\rgt$.
+\flushleft \hyperref [q:2.5.0.11]{A-11:} 
+$\pm(1,0,-2)$
+\flushleft \hyperref [q:2.5.0.12]{A-12:} 
+$\big(\frac{1}{\sqrt{2}}\,,\,-1\,,\,-\frac{1}{2}\big)$
+and
+  $\big(-\frac{1}{\sqrt{2}}\,,\,-1\,,\,-\frac{1}{2}\big)$
+\flushleft \hyperref [q:2.5.0.13]{A-13:} 
+$\pm \big(\half,-1,-1\big)$
+\flushleft \hyperref [q:2.5.0.14]{A-14:} 
+$\pm\sqrt{3}\frac{\llt 3,14,-30\rgt}{|\llt 3,14,-30\rgt|}
+=\pm\sqrt{\frac{3}{1105}}\llt 3,14,-30\rgt$
+\flushleft \hyperref [q:2.5.0.15]{A-15:} 
+The horizontal tangent planes are $z=0$, $z=e^{-1}$ and $z=-e^{-1}$.
+The largest and smallest values of $z$ are $e^{-1}$ and $-e^{-1}$, respectively.
+\flushleft \hyperref [q:2.5.0.16]{A-16:} 
+(a) $y+z=3$\qquad $\vr(t)=\llt 0,2,1\rgt+t\llt 0,5,5\rgt$
+
+(b) $z_x(x,y)=\frac{2-2x-y}{y+3z(x,y)^2}$\qquad
+    $z_y(x,y)=-\frac{x+2y+z(x,y)}{y+3z(x,y)^2}$\qquad
+    $z_y(0,2)=-1$
+
+(c) $z_{xy}(x,y)=\frac{1}{y+3z(x,y)^2}
+-\frac{2-2x-y}{{[y+3z(x,y)^2]}^2}
+\left(1-6z(x,y)\frac{x+2y+z(x,y)}{y+3z(x,y)^2}\right)$
+\flushleft \hyperref [q:2.5.0.17]{A-17:} 
+(a) $\llt 1,0,3\rgt$\qquad
+(b) $\llt 3,3,-1\rgt$\qquad
+(c) $\vr(t)=\llt 1,1,3\rgt+t\llt 3,3,-1\rgt$
+\flushleft \hyperref [q:2.5.0.18]{A-18:} 
+$49.11^\circ$ (to two decimal places)
+\flushleft \hyperref [q:2.5.0.19]{A-19:} 
+$\frac{\sqrt{3}}{2}$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.6}}}\phantomsection \label {a ex:s2.6} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.6} \hspace {2ex} \nameref *{ex:s2.6}}
+\flushleft \hyperref [q:2.6.0.1]{A-1:} 
+(a) $P(x_0+\De x,y_0+\De y)
+       \approx P(x_0,y_0) + mx_0^{m-1}y_0^n\,\De x  + nx_0^m y_0^{n-1}\,\De y$
+
+(b) $P_\% \le |m|\,x_\% + |n|\,y_\%$
+\flushleft \hyperref [q:2.6.0.2]{A-2:} 
+We used that $\diff{}{\theta}\sin\theta = \cos\theta$. That is true only if $\theta$ is given in radians, not degrees.
+\flushleft \hyperref [q:2.6.0.3]{A-3:} 
+$0.01\,\pi + 0.05 \approx 0.0814$
+\flushleft \hyperref [q:2.6.0.4]{A-4:} 
+$0.3$
+\flushleft \hyperref [q:2.6.0.5]{A-5:} 
+$25000$
+\flushleft \hyperref [q:2.6.0.6]{A-6:} 
+$0.22$
+\flushleft \hyperref [q:2.6.0.7]{A-7:} 
+$-0.06$
+\flushleft \hyperref [q:2.6.0.8]{A-8:} 
+$\frac{1}{17}\approx 0.059$
+
+\flushleft \hyperref [q:2.6.0.9]{A-9:} 
+$\frac{13}{40}\%=0.325\%$
+\flushleft \hyperref [q:2.6.0.10]{A-10:} 
+Method 1 is better.
+\flushleft \hyperref [q:2.6.0.11]{A-11:} 
+The sag will be more sensitive to changes in height.
+\flushleft \hyperref [q:2.6.0.12]{A-12:} 
+$0.84$
+\flushleft \hyperref [q:2.6.0.13]{A-13:} 
+(a) $f_x(x,y) = -\frac{y\,f(x,y) +1}{3f(x,y)^2 +xy}$\qquad
+(b) $f(x,y) \approx  -1 -\frac{3}{2} (y-1)$\qquad
+(c) $-0.955$
+\flushleft \hyperref [q:2.6.0.14]{A-14:} 
+(a) The differential at $x=a$, $y=b$ is
+$
+\frac{\dee{x}}{e^{f(a,b)}+b} + \frac{1-f(a,b)}{e^{f(a,b)}+b} \,\dee{y}
+$
+
+(b) $f\big(0.99\,,\,0.01\big) \approx 0$
+\flushleft \hyperref [q:2.6.0.15]{A-15:} 
+$\frac{\pi}{75}+0.14\approx 0.182$
+\flushleft \hyperref [q:2.6.0.16]{A-16:} 
+$59.560$
+\flushleft \hyperref [q:2.6.0.17]{A-17:} 
+$\pi\times 128\times 0.04=
+5.12\pi\approx 16.1$cc
+\flushleft \hyperref [q:2.6.0.18]{A-18:} 
+(a) $z(x,y)\approx 1-4x+2y$\qquad
+(b) $0.84$
+\flushleft \hyperref [q:2.6.0.19]{A-19:} 
+(a) $\pdiff{z}{x} = \frac{4+yz^2}{3z^2-2xyz}$,
+    $\pdiff{z}{x} = \frac{xz^2}{3z^2-2xyz}$\qquad
+(b) $\pdiff{z}{x}(1,1) = 1$,
+    $\pdiff{z}{y}(1,1) = \frac{1}{2}$\qquad
+(c) $\pm 0.04$\qquad
+
+(d) At $A$, $ \diff{z}{\theta} =\frac{2}{3}$.\qquad
+At $B$, $\diff{z}{\theta}  = -1$.
+\flushleft \hyperref [q:2.6.0.20]{A-20:} 
+ (a) $\frac{1+e^{-1}}{10}$\qquad
+ (b) any nonzero constant times $\llt -1\,,\,e^{-1}\,,\,-1\rgt$
+\flushleft \hyperref [q:2.6.0.21]{A-21:} 
+(a) $\pdiff{z}{x} = \frac{y^2 z^2}{4z^3-2xy^2z}$,
+    $\pdiff{z}{y} = \frac{2xy\, z^2-1}{4z^3-2xy^2 z}$
+
+(b)
+$
+\pdiff{z}{x}(2,-1/2) =\frac{1}{12}
+$,
+$
+\pdiff{z}{y}(2,-1/2) =-1
+$
+
+(c) $f(1.94,-0.4) - 1  \approx -0.105$
+
+(d)  $\frac{x}{12} -y -z = -\frac{1}{3}$
+\flushleft \hyperref [q:2.6.0.22]{A-22:} 
+(a) $1.4$\qquad
+(b) $3x-2y-z = -4$
+\flushleft \hyperref [q:2.6.0.23]{A-23:} 
+$0.1$
+\flushleft \hyperref [q:2.6.0.24]{A-24:} 
+(a) $z=1-4x+8y$\qquad
+(b) $1.12$
+\flushleft \hyperref [q:2.6.0.25]{A-25:} 
+(a) $f(0.1,1.2) \approx  0.4$\qquad
+(b) $\left(\frac{1}{5}\,,\,\frac{4}{5}\,,\,\ln\frac{4}{5}\right)$
+\flushleft \hyperref [q:2.6.0.26]{A-26:} 
+(a)  $-(2+\pi)x +2y +3z = -\pi-3$
+
+(b)  $\pdiff{z}{x}(1,1) = \frac{\pi+2}{3}$
+
+(c)  $z(0.97,1) \approx -\frac{\pi+102}{100}$
+\flushleft \hyperref [q:2.6.0.27]{A-27:} 
+(a) $F_y(1,2)=-2$,\ $F_z(1,2)=-16$\qquad
+(b) $0.3$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.7}}}\phantomsection \label {a ex:s2.7} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.7} \hspace {2ex} \nameref *{ex:s2.7}}
+\flushleft \hyperref [q:2.7.0.1]{A-1:} 
+$0$
+\flushleft \hyperref [q:2.7.0.2]{A-2:} 
+$y\cos(xy)\,\hi +  [2y + x\cos(xy)]\,\hj$
+\flushleft \hyperref [q:2.7.0.3]{A-3:} 
+(a) $-3$\qquad
+(b) $-\frac{61}{144\sqrt{3}}\approx-0.2446$
+\flushleft \hyperref [q:2.7.0.4]{A-4:} 
+(a) $\llt\pm\frac{\sqrt{3}}{2} ,-\frac{1}{2} \rgt$\qquad
+(b) $\llt 0 ,-1 \rgt$ \qquad
+(c) No direction works!
+
+\flushleft \hyperref [q:2.7.0.5]{A-5:} 
+$\vnabla f(a,b)=\llt 7,-1\rgt$
+\flushleft \hyperref [q:2.7.0.6]{A-6:} 
+$-2$
+\flushleft \hyperref [q:2.7.0.7]{A-7:} 
+(a) $6\hi - 3\hj + 3\hk$\qquad
+(b) $\frac{3}{\sqrt{2}}$
+\flushleft \hyperref [q:2.7.0.8]{A-8:} 
+(a) The path of steepest ascent is in the direction
+$-\frac{1}{\sqrt{17}}\llt 1\,,\, 4\rgt$, which is a little
+west of south. The slope is
+$
+|\vnabla f(2,1)| = |\llt -1\,,\, -4\rgt| = \sqrt{17}
+$.
+
+(b) So the hiker descends with slope $4$.
+
+(c) $\pm\frac{1}{\sqrt{17}}\llt 4, -1\rgt$
+\flushleft \hyperref [q:2.7.0.9]{A-9:} 
+$a=1$, $b=\frac{3}{2}$
+\flushleft \hyperref [q:2.7.0.10]{A-10:} 
+(a) Any nonzero $\llt a\,,\,b\,,\,c\rgt$ that obeys $12a+4b-2c=0$
+is an allowed direction. Four allowed unit vectors are
+$\pm\frac{\llt 0\,,\,1\,,\,2\rgt}{\sqrt{5}}$ and
+$\pm\frac{\llt 1\,,\,-3\,,\,0\rgt}{\sqrt{10}}$.
+
+(b) No they need not be the same. Four different explicit directions
+     were given in part (a).
+
+(c) $-\frac{\llt 6\,,\,2\,,\,-1\rgt}{\sqrt{41}}$
+\flushleft \hyperref [q:2.7.0.11]{A-11:} 
+(a) $10$\qquad
+(b) $\pm \frac{1}{5}\llt 3\,,-4\,,0\rgt$
+\flushleft \hyperref [q:2.7.0.12]{A-12:} 
+(a) $\frac{1}{3}$\qquad
+(b) $\llt \pm\frac{4}{5}\,,\,\frac{3}{5}\rgt$
+\flushleft \hyperref [q:2.7.0.13]{A-13:} 
+$\frac{0.04 e}{\sqrt{5}} $
+\flushleft \hyperref [q:2.7.0.14]{A-14:} 
+(a) $0$\qquad
+(b) $ \frac{1}{\sqrt{6}}\llt -1\,,\,1\,,\,-2 \rgt $\qquad
+(c) $4$\qquad
+(d) $a=2$
+\flushleft \hyperref [q:2.7.0.15]{A-15:} 
+(a) $\vnabla f(0,1,-1) =e^{-2}\llt 2,-1,2\rgt$,
+    $\vnabla g(0,1,-1) =\llt -1,1,-1\rgt$\qquad
+(b) $10$
+
+(c) Any vector which is a (strictly)
+positive constant times $\llt -1 \,,\, 0 \,,\, 1 \rgt$ is fine.
+\flushleft \hyperref [q:2.7.0.16]{A-16:} 
+(a) $\vv = \llt -2 \,,\, -4 \,,\, 4 \rgt$\qquad
+(b) $-10$
+\flushleft \hyperref [q:2.7.0.17]{A-17:} 
+(a) $25\,\sqrt{2}\,e^{-9}$\qquad
+(b) $\frac{\llt 2,2,-3\rgt}{\sqrt{17}}$\qquad
+(c) $-10\sqrt{17} e^{-9}$
+\flushleft \hyperref [q:2.7.0.18]{A-18:} 
+The unit vector in the direction of maximum rate of change is
+$\frac{\llt 2\,,\,-4\,,\,-3\rgt}{\sqrt{29}}$.
+The maximum rate of change is $\sqrt{29}$.
+\flushleft \hyperref [q:2.7.0.19]{A-19:} 
+$\pm\frac{1}{\sqrt{5}}\llt 2, -1\rgt$
+\flushleft \hyperref [q:2.7.0.20]{A-20:} 
+(a) South\qquad
+(b) $2$\qquad
+(c) $-2\sqrt{5}$
+\flushleft \hyperref [q:2.7.0.21]{A-21:} 
+(a) $-16$\qquad
+(b) $C \llt  4\,,\,  1 \,,\, -2\rgt$ for any nonzero constant $C$
+
+(c) Any positive non zero multiple of $-\llt 1\,,\, 2\,,\,1\rgt$ will do.
+\flushleft \hyperref [q:2.7.0.22]{A-22:} 
+$\vnabla f(a,b,c) =\sqrt{3} \llt 2,6,-4\rgt$
+\flushleft \hyperref [q:2.7.0.23]{A-23:} 
+(a) $\frac{1}{\sqrt{2}}\llt 1,1\rgt$\qquad
+(b) $\vv=c\llt 1,-1,0\rgt$ for any nonzero constant $c$
+
+(c) $\vv=\frac{1}{\sqrt{2}}\llt 1,1,2e^{-2}\rgt$. Any positive multiple
+of this vector is also a correct answer.
+\flushleft \hyperref [q:2.7.0.24]{A-24:} 
+(a) $\llt 1,2,2\rgt$\qquad
+(b) $14^\circ/{\rm s}$\qquad
+(c) any positive constant times $-\llt 2,2,4\rgt$
+
+(d) any positive constant times $\pm\llt 2,0,-1\rgt$
+\flushleft \hyperref [q:2.7.0.25]{A-25:} 
+(a) $\vv=-\llt \frac{3}{5},\frac{4}{5},0\rgt$\qquad
+(b) $\frac{500}{169}\approx 2.96^\circ/{\rm s}$
+\flushleft \hyperref [q:2.7.0.26]{A-26:} 
+(a) $360$\qquad
+(b) $-\frac{40}{3\sqrt{3}}\approx-7.70$\qquad
+(c) $\vnabla T(x,y,z)=-360\frac{x\hi+y\hj+z\hk}{{(x^2+y^2+z^2)}^{3/2}}$
+\flushleft \hyperref [q:2.7.0.27]{A-27:} 
+(a)
+\begin{center}
+     \includegraphics{OE00AQ3.pdf}
+\end{center}
+
+(b) $\pm\frac{1}{\sqrt{17}}\llt 4,-1\rgt$\qquad
+(c) $-\frac{1}{\sqrt{17}}\llt 1,4\rgt$
+\flushleft \hyperref [q:2.7.0.28]{A-28:} 
+(a) Here is a sketch which show the isotherms $T=0,\ 1,\ -1$ as well
+as the branch of the $T=2$ isotherm that contains the ant's location
+$(2,-1)$.
+\begin{center}
+     \includegraphics{ant.pdf}
+\end{center}
+
+(b) $\llt -1,-1\rgt/\sqrt{2}$\qquad
+(c) $4\sqrt{2}\,v$\qquad
+(d) $\frac{12}{\sqrt{5}}\,v$\qquad
+(e) $y=-\frac{4}{x^2}$
+\flushleft \hyperref [q:2.7.0.29]{A-29:} 
+(a) $\hi$\qquad
+(b) $x=1$\qquad
+(c) $1$\qquad
+(d) $\frac{\pi}{4}$
+\flushleft \hyperref [q:2.7.0.30]{A-30:} 
+(a) $2\sqrt{3}$ \qquad
+(b) $5.5$\qquad
+(c) $\pm\frac{\llt 1,1,-1\rgt}{\sqrt{3}}$
+\flushleft \hyperref [q:2.7.0.31]{A-31:} 
+(a) $-2.1$\qquad
+(b) $F$ increases.\qquad
+(c) Any nonzero constant times $\llt 4 \,,\, 8 \,,\, -1 \rgt$.
+\flushleft \hyperref [q:2.7.0.32]{A-32:} 
+(a) \begin{center}
+     \includegraphics{crater.pdf}
+\end{center}
+
+(b) $-\llt 1,4\rgt$
+
+\flushleft \hyperref [q:2.7.0.33]{A-33:} 
+(a) any positive multiple of $\llt 3,4\rgt$\qquad
+(b) $-800 e^{-17}$\qquad
+(c) $\pm\big(\frac{4}{5},-\frac{3}{5}\big)$\qquad
+(d) $y=\frac{2}{9}x^2$
+\flushleft \hyperref [q:2.7.0.34]{A-34:} 
+(a) See the solution.\qquad
+(b) $4\sqrt{5}\approx 8.944$\qquad
+(c) $7.35$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.8}}}\phantomsection \label {a ex:s2.8} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.8} \hspace {2ex} \nameref *{ex:s2.8}}
+\flushleft \hyperref [q:2.8.0.1]{A-1:} 
+$g(x) = 1-4x^2$
+\flushleft \hyperref [q:2.8.0.2]{A-2:} 
+(a) $u(x,y)=C(y)$ with $C(y)$ being any function of the single variable $y$.
+
+(b) $u(x,y)=F(x)+C(y)$ where $F(x)$ is any function obeying $F'(x)=f(x)$
+(i.e. any antiderivative of $f(x)$) and $C(y)$ is any function of the single variable $y$.
+
+
+\flushleft \hyperref [q:2.8.0.3]{A-3:} 
+(a), (d) and (e) are harmonic.
+(b) and (c) are not harmonic.
+\flushleft \hyperref [q:2.8.0.4]{A-4:} 
+$a=\pm 2$
+\flushleft \hyperref [q:2.8.0.5]{A-5:} 
+$a=\pm 5$
+\flushleft \hyperref [q:2.8.0.6]{A-6:} 
+$a=\pm b$, for any real number $b$.
+\flushleft \hyperref [q:2.8.0.7]{A-7:} 
+Yes it is. For the justification, see the solution.
+\flushleft \hyperref [q:2.8.0.8]{A-8:} 
+$f(t) = Ce^{-4t}$ with $C$ being an arbitrary constant.
+\flushleft \hyperref [q:2.8.0.9]{A-9:} 
+See the solution.
+\flushleft \hyperref [q:2.8.0.10]{A-10:} 
+perpendicular
+\flushleft \hyperref [q:2.8.0.11]{A-11:} 
+$n=0, -1$
+\flushleft \hyperref [q:2.8.0.12]{A-12:} 
+(a), (b) See the solutions.
+
+(c) $T(t) = Ce^{\la t}$, $X(x) = K x^\la$, $u(x,t)= D\,e^{\la t}\,x^\la$ with $C$, $D$ and $K$ being arbitrary positive constants.
+\flushleft \hyperref [q:2.8.0.13]{A-13:} 
+See the solution.
+\flushleft \hyperref [q:2.8.0.14]{A-14:} 
+(a) $v_X(X,Y)=\frac{1}{3} v(X,Y)$\qquad
+(b) $v_X(X,Y)=\frac{1}{X} v(X,Y)$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.9}}}\phantomsection \label {a ex:s2.9} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.9} \hspace {2ex} \nameref *{ex:s2.9}}
+\flushleft \hyperref [q:2.9.0.1]{A-1:} 
+(a) (i) $T$, $U$
+
+(a) (ii) $U$
+
+(a) (iii) $S$
+
+(a) (iv) $S$
+
+(b) (i) $F_x(1,2)>0$
+
+(b) (ii) $F$ does \emph{not} have a critical point at $(2,2)$.
+
+(b) (iii) $F_{xy}(1,2)<0$
+\flushleft \hyperref [q:2.9.0.2]{A-2:} 
+The minimum height is zero at $(0,0,0)$. The derivatives
+$z_x$ and $z_y$ do not exist there.
+The maximum height is $\sqrt{2}$ at $(\pm 1,\pm 1,\sqrt{2})$.
+There $z_x$ and $z_y$ exist but are not zero --- those points would
+not be the highest points if it were not for the restriction
+$|x|,|y|\le 1$.
+\flushleft \hyperref [q:2.9.0.3]{A-3:} 
+$\vnabla g(\vx_0)\cdot\vd=0$, i.e. $\vnabla g(\vx_0)\perp\vd$, and $\vx_0=\va+t_0\vd$ for some $t_0$.
+The second condition is to ensure that $x_0$ lies on the line.
+\flushleft \hyperref [q:2.9.0.4]{A-4:} 
+(a)
+\begin{center}
+     \includegraphics[scale=0.8]{OE05D_5.pdf}
+\end{center}
+
+(b) $(0,0)$ is a local (and also absolute) minimum.
+
+(c) No. See the solutions.
+\flushleft \hyperref [q:2.9.0.5]{A-5:} 
+$|c|>2$
+\flushleft \hyperref [q:2.9.0.6]{A-6:} 
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$ & type \\
+    \hline
+     $(0,0)$ & saddle point  \\ \hline
+     $\left(-\frac{2}{3},\frac{2}{3}\right)$ & local max \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\flushleft \hyperref [q:2.9.0.7]{A-7:} 
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$   & type \\
+    \hline
+     $(0,3)$  &   saddle point  \\ \hline
+     $(0,-3)$  &  saddle point \\  \hline
+     $(-2,1)$  &  local max \\  \hline
+     $(2,-1)$  &  local min \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\flushleft \hyperref [q:2.9.0.8]{A-8:} 
+The minimum value is $0$ on
+\begin{equation*}
+ \Set{(x,y,z)}{x\ge 0,\ y\ge 0,\ z\ge 0,\ 2x+y+z=5,\
+               \text{at least one of $x,y,z$ zero}}
+\end{equation*}
+
+The maximum value is $4$ at $(1,2,1)$.
+\flushleft \hyperref [q:2.9.0.9]{A-9:} 
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$  & type \\  \hline
+     $(0,0)$           &    local min  \\ \hline
+     $(\sqrt{2},-1)$   & saddle point  \\ \hline
+     $(-\sqrt{2},-1)$  & saddle point  \\ \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\flushleft \hyperref [q:2.9.0.10]{A-10:} 
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$  & type \\
+    \hline
+     $\big(\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\big)$   & local min  \\ \hline
+     $-\big(\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\big)$  & saddle point \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\flushleft \hyperref [q:2.9.0.11]{A-11:} 
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$  & type \\
+    \hline
+     $(0,0)$  &  local max  \\ \hline
+     $(2,0)$  &  saddle point \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\flushleft \hyperref [q:2.9.0.12]{A-12:} 
+$\text{min}=0\qquad
+\text{max}=\frac{2}{3\sqrt{3}}\approx0.385$
+\flushleft \hyperref [q:2.9.0.13]{A-13:} 
+$
+\text{min}=-\frac{1}{\sqrt{e}}\qquad
+\text{max}=\frac{1}{\sqrt{e}}
+$
+\flushleft \hyperref [q:2.9.0.14]{A-14:} 
+\begin{center}
+%(i)   \raisebox{-0.5\height}{\includegraphics{level1b.pdf}}
+(i)   \raisebox{-0.5\height}{\includegraphics[width=0.33\textwidth, height=0.3\textwidth]{level1b.pdf}}
+\quad
+%(ii)  \raisebox{-0.5\height}{\includegraphics{level2b.pdf}}
+(ii)  \raisebox{-0.5\height}{\includegraphics[width=0.33\textwidth, height=0.3\textwidth]{level2b.pdf}}
+\end{center}
+\begin{center}
+(iii)   \raisebox{-0.5\height}{\includegraphics[width=0.33\textwidth, height=0.3\textwidth]{level3b.pdf}}
+%(iii)   \raisebox{-0.5\height}{\includegraphics{level3b.pdf}}
+\quad
+%(iv)   \raisebox{-0.5\height}{\includegraphics{level4b.pdf}}
+(iv)   \raisebox{-0.5\height}{\includegraphics[width=0.33\textwidth, height=0.3\textwidth]{level4b.pdf}}
+\end{center}
+\flushleft \hyperref [q:2.9.0.15]{A-15:} 
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$   & type \\
+    \hline
+     $\big(\frac{3}{2},-\frac{1}{4}\big)$  & local min  \\ \hline
+     $(-1,1)$  &  saddle point \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+\flushleft \hyperref [q:2.9.0.16]{A-16:} 
+(a)
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$   & type \\
+    \hline
+     $\left(0,\frac{2}{\sqrt{3}}\right)$
+            & local max  \\ \hline
+     $\left(0,-\frac{2}{\sqrt{3}}\right)$
+            & local min \\  \hline
+     $(2,0)$   & saddle point \\  \hline
+     $(-2,0)$  & saddle point \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+
+(b) The maximum and minimum values of $h(x,y)$ in $x^2+y^2\le 1$
+     are $3$ (at $(0,1)$) and  $-3$ (at $(0,-1)$), respectively.
+\flushleft \hyperref [q:2.9.0.17]{A-17:} 
+The minimum is $-2$ and the maximum is $6$.
+\flushleft \hyperref [q:2.9.0.18]{A-18:} 
+$6-2\sqrt{5}$
+\flushleft \hyperref [q:2.9.0.19]{A-19:} 
+(a)
+(0,0) and (3,0) and (0,3)  are saddle points\\
+\phantom{(a) }(1,1) is a local min
+
+(b)
+The minimum is $-1$ at $(1,1)$ and the maximum is $80$ at $(4,4)$.
+\flushleft \hyperref [q:2.9.0.20]{A-20:} 
+(0,0) is a local max
+
+(0,2) is a local min
+
+(1,1) and (-1,1) are saddle points
+\flushleft \hyperref [q:2.9.0.21]{A-21:} 
+(a) $(1,1)$ is a saddle point and $(2,4)$ is a local min
+
+(b) The min and max  are $\frac{19}{27}$ and $5$, respectively.
+\flushleft \hyperref [q:2.9.0.22]{A-22:} 
+$(0,0)$ is a saddle point and $\pm(1,1)$ are local mins
+\flushleft \hyperref [q:2.9.0.23]{A-23:} 
+(a) $(0,0)$, $(6,0)$, $(0,3)$ are saddle points and $(2,1)$ is a local min
+
+(b) The maximum value is $0$ and the minimum value is $4(4\sqrt{2}-6)
+\approx -1.37$.
+\flushleft \hyperref [q:2.9.0.24]{A-24:} 
+$(0,0)$ is a saddle point and $\pm(1,1)$ are local mins
+\flushleft \hyperref [q:2.9.0.25]{A-25:} 
+The coldest temperture is $-0.391$ and the coldest point is $(0,2)$.
+\flushleft \hyperref [q:2.9.0.26]{A-26:} 
+$(0,\pm 1)$ are saddle points,
+$\big(\frac{1}{\sqrt{3}},0\big)$ is a local min and
+$\big(-\frac{1}{\sqrt{3}},0\big)$ is a local max
+\flushleft \hyperref [q:2.9.0.27]{A-27:} 
+(a) $(0,-5)$ is a saddle point
+
+(b) The smallest value of $g$ is $0$ at $(0,0)$
+and the largest value is $21$ at $(\pm 2\sqrt{3},-1)$.
+\flushleft \hyperref [q:2.9.0.28]{A-28:} 
+$(-1,\pm\sqrt{3})$ and $(2,0)$ are saddle points and
+$(0,0)$ is  a local max.
+\flushleft \hyperref [q:2.9.0.29]{A-29:} 
+$e^{-1}\approx0.368$
+\flushleft \hyperref [q:2.9.0.30]{A-30:} 
+$\frac{2500}{\sqrt{3}}$
+\flushleft \hyperref [q:2.9.0.31]{A-31:} 
+The box has dimensions $(2V)^{1/3}\times(2V)^{1/3}\times 2^{-2/3}V^{1/3}$.
+\flushleft \hyperref [q:2.9.0.32]{A-32:} 
+(a) The maximum and minimum values of $T(x,y)$ in $x^2+y^2\le 4$
+     are $20$ (at $(0,0)$) and  $4$ (at $(\pm 2,0)$), respectively.
+
+(b) $\frac{1}{\sqrt{17}}\llt -4,-1\rgt$\qquad
+(c) $18$\qquad
+(d) $(0,2)$
+\flushleft \hyperref [q:2.9.0.33]{A-33:} 
+\emph{Case $k<\frac{1}{2}$:\ \ \ }
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$  & type \\
+    \hline
+     $(0,0)$   & local max  \\ \hline
+     $(0,2)$   & saddle point \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+
+
+\emph{Case $k=\frac{1}{2}$:\ \ \ }
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$  & type \\
+    \hline
+     $(0,0)$   & local max  \\ \hline
+     $(0,2)$   & unknown \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+
+\emph{Case $k>\frac{1}{2}$:\ \ \ }
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+     \begin{tabular}{|c|c|}
+     \hline
+    $\Atop{\text{critical}}{\text{point}}$   & type \\
+    \hline
+     $(0,0)$    & local max  \\ \hline
+     $(0,2)$    & local min \\  \hline
+     $\left(\sqrt{\frac{1}{k^3}(2k-1)}\,,\,\frac{1}{k}\right)$
+                 & saddle point \\  \hline
+     $\left(-\sqrt{\frac{1}{k^3}(2k-1)}\,,\,\frac{1}{k}\right)$
+                 & saddle point \\  \hline
+     \end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+\flushleft \hyperref [q:2.9.0.34]{A-34:} 
+(a) $x=1$, $y=\half$, $f\big(1,\half\big)=6$\qquad
+(b) local minimum
+
+(c) As $x$ or $y$ tends to infinity (with the other at least zero),
+$2x+4y$ tends to $+\infty$. As $(x,y)$ tends to any point on the first quadrant part of the $x$- and $y$--axes, $\frac{1}{xy}$ tends to $+\infty$.
+Hence as $x$ or $y$ tends to the boundary of the first quadrant
+(counting infinity as part of the boundary), $f(x,y)$ tends to $+\infty$.
+As a result $\big(1,\half\big)$ is a global (and not just local) minimum
+for $f$ in the first quadrant. Hence $f(x,y)\ge f\big(1,\half\big)=6$
+for all $x,y>0$.
+\flushleft \hyperref [q:2.9.0.35]{A-35:} 
+$m=\frac{nS_{xy}-S_xS_y}{nS_{x^2} -S_x^2}$ and
+$b=\frac{S_yS_{x^2}-S_xS_{xy}}{nS_{x^2} -S_x^2}$ where
+$S_y=\smsum\limits_{i=1}^n y_i$, $S_{x^2}=\smsum\limits_{i=1}^n x^2_i$ and
+$S_{xy}=\smsum\limits_{i=1}^n x_iy_i$.
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s2.10}}}\phantomsection \label {a ex:s2.10} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s2.10} \hspace {2ex} \nameref *{ex:s2.10}}
+\flushleft \hyperref [q:2.10.0.1]{A-1:} 
+(a) $f$ does not have a maximum. It does have a minimum.
+
+(b) The minima are at $\pm (1,1)$, where $f$ takes the value $2$.
+\flushleft \hyperref [q:2.10.0.2]{A-2:} 
+(a), (b) $0$
+\flushleft \hyperref [q:2.10.0.3]{A-3:} 
+The max is $f=\sqrt{3}$ and the min is $f=-\sqrt{3}$.
+\flushleft \hyperref [q:2.10.0.4]{A-4:} 
+$a=c=\sqrt{3},\ b=2\sqrt{3}$.
+\flushleft \hyperref [q:2.10.0.5]{A-5:} 
+The minimum value is
+$2^{\frac{1}{3}} + 2^{-\frac{2}{3}}
+       =\frac{3}{2}\root{3}\of{2}
+       =\frac{3}{\sqrt[3]{4}}$ at
+$\big(\pm 2^{\frac{1}{6}}\,,\, 2^{-\frac{1}{3}}\big)$.
+\flushleft \hyperref [q:2.10.0.6]{A-6:} 
+$\text{radius}=\sqrt{\frac{2}{3}}$
+and $\text{height}=\frac{2}{\sqrt{3}}$.
+\flushleft \hyperref [q:2.10.0.7]{A-7:} 
+The maximum and minimum values of $f$ are $\frac{1}{2\sqrt{2}}$
+and $-\frac{1}{2\sqrt{2}}$, respectively.
+\flushleft \hyperref [q:2.10.0.8]{A-8:} 
+min$=1$, max$=\sqrt{2}$.
+\flushleft \hyperref [q:2.10.0.9]{A-9:} 
+$(1,-2,1)$  is the closest point.
+$(-1,4,-1)$ is the farthest point.
+\flushleft \hyperref [q:2.10.0.10]{A-10:} 
+The maximum is $5$ and the minimum is $0$.
+\flushleft \hyperref [q:2.10.0.11]{A-11:} 
+$\big(\sqrt{3}\,,\,\sqrt{2}\,,\,1\big)$
+\flushleft \hyperref [q:2.10.0.12]{A-12:} 
+ The maximum is $6$ and is achieved at
+$\big(\sqrt{6}\,,\,-\sqrt{6}\,,\,-1\big)$ and
+$\big(-\sqrt{6}\,,\,\sqrt{6}\,,\,-1\big)$.
+\flushleft \hyperref [q:2.10.0.13]{A-13:} 
+$\sqrt{6-4\sqrt{2}}\approx 0.59$
+\flushleft \hyperref [q:2.10.0.14]{A-14:} 
+(a) $\frac{4}{3}$\qquad
+(b) $(1,1)$
+\flushleft \hyperref [q:2.10.0.15]{A-15:} 
+(a) The min is $6$ and the max is $54$. \qquad
+(b) $(-1,1,-2)$
+\flushleft \hyperref [q:2.10.0.16]{A-16:} 
+(a) $\big(\sqrt{5}-1\big)^2=6-2\sqrt{5}$
+
+(b) The minimum of $f$ subject to the constraint
+$x^2+y^2+z^2=1$ is the square of the distance from $(2,1,0)$ to
+the point on the sphere $x^2+y^2+z^2=1$ that is nearest $(2,1,0)$.
+\flushleft \hyperref [q:2.10.0.17]{A-17:} 
+The maximum value is $2e^2$ and the minimum value is $-2 e^2$.
+\flushleft \hyperref [q:2.10.0.18]{A-18:} 
+The farthest points are $\pm\sqrt{6}(-2,1)$.
+The nearest points are $\pm(1,2)$.
+\flushleft \hyperref [q:2.10.0.19]{A-19:} 
+The ends of the minor axes are $\pm\big(\frac{1}{\sqrt{2}},-\frac{1}{\sqrt{2}}\big)$.
+The ends of the major axes are $\pm(1,1)$.
+\flushleft \hyperref [q:2.10.0.20]{A-20:} 
+$x=y=4,\ z=6\ \text{meters}$
+\flushleft \hyperref [q:2.10.0.21]{A-21:} 
+The hottest temperature is $+5$ and the coldest temperature
+is $-5$.
+\flushleft \hyperref [q:2.10.0.22]{A-22:} 
+$2\sqrt{3} \times 4\times 24$
+\flushleft \hyperref [q:2.10.0.23]{A-23:} 
+$2{\rm m}\times 2{\rm m}\times 3{\rm m}$
+\flushleft \hyperref [q:2.10.0.24]{A-24:} 
+$\frac{2}{\root 3\of 3}{\rm m}\times\frac{2}{\root 3\of 3}{\rm m}
+                                \times 3^{2/3}{\rm m}$
+\flushleft \hyperref [q:2.10.0.25]{A-25:} 
+$a=\frac{1}{3}$, $b=\frac{1}{6}$, $c=\frac{1}{9}$,
+max volume$ = 27$
+\flushleft \hyperref [q:2.10.0.26]{A-26:} 
+$\sqrt{11}$
+\flushleft \hyperref [q:2.10.0.27]{A-27:} 
+The min is $-27\sqrt{3}$ at $(-3\sqrt{3},0,3)$
+and the max is $48$ at $(4,\pm 4,2)$.
+\flushleft \hyperref [q:2.10.0.28]{A-28:} 
+(a) (i)
+\begin{align*}
+ 2x\,e^y &=\la (2x) \\
+e^y\big(x^2+y^2+2y\big) &=\la (2y) \\
+x^2+y^2&=100
+\end{align*}
+
+(a) (ii)  The warmest point is $(0,10)$ and the coolest point is $(0,-10)$.
+
+(b) (i)
+\begin{align*}
+2x\,e^y &=0 \\
+e^y\big(x^2+y^2+2y\big) &=0
+\end{align*}
+(b) (ii) $(0,0)$ and $(0,-2)$
+
+(c) $(0,0)$
+\flushleft \hyperref [q:2.10.0.29]{A-29:} 
+(a) $c=\pm 12$ \qquad
+(b) $\pm 12$
+
+(c) The level surfaces of $x+y+z$ are planes with equation of the
+form $x+y+z=c$. To find the largest (smallest) value of
+$x+y+z$ on $4x^2+4y^2+z^2=96$ we keep increasing (decreasing) $c$ until
+we get to the largest (smallest) value of $c$ for which the plane
+$x+y+z=c$ intersects $4x^2+4y^2+z^2=96$. For this value of $c$,
+$x+y+z=c$ is tangent to $4x^2+4y^2+z^2=96$.
+\flushleft \hyperref [q:2.10.0.30]{A-30:} 
+See the solution.
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s3.1}}}\phantomsection \label {a ex:s3.1} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s3.1} \hspace {2ex} \nameref *{ex:s3.1}}
+\flushleft \hyperref [q:3.1.0.1]{A-1:} 
+(a) $20$\qquad
+(b) $\pi$  \qquad
+(c) $9\pi$
+\flushleft \hyperref [q:3.1.0.2]{A-2:} 
+(a) $108 y^3$\qquad
+(b) $48x^2$\qquad
+(c), (d) $432$\qquad
+(e) $648$
+\flushleft \hyperref [q:3.1.0.3]{A-3:} 
+(a) $\frac{1}{3}\big(a^3b+ab^3\big)$ \qquad
+(b) $\frac{a^2b}{6}-\frac{ab^2}{2}$  \qquad
+(c) $\frac{3}{56}$ \qquad
+(d) $\frac{1}{2}(1-\cos 1)$ \qquad
+(e) $\frac{1}{2}(e-2)$
+
+(f) $\frac{1}{4}\left(\frac{\pi}{4}-\frac{1}{2}\ln 2\right)$
+\flushleft \hyperref [q:3.1.0.4]{A-4:} 
+(a) $e^2-3$ \qquad
+(b) $\frac{8}{3}$ \qquad
+(c) $\frac{9}{2}$
+\flushleft \hyperref [q:3.1.0.5]{A-5:} 
+$\int_{x=0}^{x=1}\int_{y=x}^{y=2-x} f(x,y)\ \dee{y}\,\dee{x}$
+\flushleft \hyperref [q:3.1.0.6]{A-6:} 
+(a)
+
+\begin{center}
+     \includegraphics{OE04Q7a.pdf}
+\end{center}
+
+(b) $\half(e-1)$
+\flushleft \hyperref [q:3.1.0.7]{A-7:} 
+(a) The region $R$ is the shaded region in the figure
+
+\begin{center}
+     \includegraphics{OE06D_4.pdf}
+\end{center}
+
+(b) $I= \int_{1/\sqrt{2}}^1 \int_{1/x}^{2x} f(x,y)\,\dee{y}\,\dee{x}
+    +\int_1^2 \int_{x^2}^{2x} f(x,y)\,\dee{y}\,\dee{x}$ \qquad
+(c) $\frac{1}{2}$
+\flushleft \hyperref [q:3.1.0.8]{A-8:} 
+(a) $\frac{32}{3}$
+
+(b)
+
+\begin{center}
+     \includegraphics[scale=0.75]{OE07A_7.pdf}
+\end{center}
+
+(c) $I = \int_0^1\dee{y} \int_{-\sqrt{y}}^{\sqrt{y}}\dee{x}\ x
+    +\int_1^9\dee{y} \int_{(y-3)/2}^{\sqrt{y}}\dee{x}\ x$
+\flushleft \hyperref [q:3.1.0.9]{A-9:} 
+$\frac{3}{4}\big[1-\cos(16)\big]$
+\flushleft \hyperref [q:3.1.0.10]{A-10:} 
+(a)
+\begin{center}
+     \includegraphics{OE08D_6.pdf}
+\end{center}
+
+(b) $\frac{1}{\pi}$
+\flushleft \hyperref [q:3.1.0.11]{A-11:} 
+(a) $I=\int_0^1\dee{x}\int_x^1\dee{y}\ y^2\sin xy
+           =\int_0^1\dee{y}\int_0^y\dee{x}\ y^2\sin xy$
+
+(b) $\frac{1-\sin 1}{2}$
+\flushleft \hyperref [q:3.1.0.12]{A-12:} 
+$\frac{1-e^{-1}}{2}$
+\flushleft \hyperref [q:3.1.0.13]{A-13:} 
+(a)
+\begin{center}
+     \includegraphics{OE09D_6.pdf}
+\end{center}
+
+(b) $I=\int_0^1\dee{x}\int_0^x\dee{y}\ \frac{y}{x}
+  +\int_1^2\dee{x}\int_0^{2-x}\dee{y}\ \frac{y}{x}$\qquad
+(c) $2\ln 2 -1$
+\flushleft \hyperref [q:3.1.0.14]{A-14:} 
+(a)
+\begin{center}
+     \includegraphics{OE10A_6.pdf}
+\end{center}
+
+(b) $\frac{2\big(2\sqrt{2}-1\big)}{9}$
+\flushleft \hyperref [q:3.1.0.15]{A-15:} 
+(a) $J=\frac{27}{4}$
+
+\begin{center}
+     \includegraphics[scale=0.95]{OE10D_5a.pdf}
+\end{center}
+
+
+(b) $I=\frac{4}{3}\big[e-1\big]$
+
+\begin{center}
+     \includegraphics[scale=0.95]{OE10D_5b.pdf}
+\end{center}
+\flushleft \hyperref [q:3.1.0.16]{A-16:} 
+(a)
+
+\begin{center}
+     \includegraphics{OE11D_5.pdf}
+\end{center}
+
+(b) $\frac{\sin(8)}{3}$
+\flushleft \hyperref [q:3.1.0.17]{A-17:} 
+(a) $I = \int_{-1}^2\int_{x^2}^{x+2} f(x,y)\ \dee{y}\,\dee{x}$\qquad
+(b) $ 2e^2 + \frac{1}{e}$
+\flushleft \hyperref [q:3.1.0.18]{A-18:} 
+(a)
+\begin{center}
+     \includegraphics{OE12D_7aa.pdf}
+\end{center}
+
+(b) $\int_0^2\int_0^{x^2} f(x,y)\,\dee{y}\,\dee{x}
++\int_2^{\sqrt{8}}\int_0^{8-x^2} f(x,y)\,\dee{y}\,\dee{x}$\qquad
+(c) $\sqrt{8}-\arctan 2 -\frac{1}{6}\left[\ln\frac{3+\sqrt{8}}{3-\sqrt{8}}
+                                       -\ln 5\right]$
+\flushleft \hyperref [q:3.1.0.19]{A-19:} 
+$\frac{1}{4}\big[e^4-1\big]$
+\flushleft \hyperref [q:3.1.0.20]{A-20:} 
+ $I = \int_0^2 \int_y^{6-y^2} f(x,y)\ \dee{x}\,\dee{y}$
+\flushleft \hyperref [q:3.1.0.21]{A-21:} 
+(a)
+
+\begin{center}
+\includegraphics{OE15D_6.pdf}
+\end{center}
+
+
+(b) $\int_0^1 \int_{-\sqrt{1-y}}^{\sqrt{1-y}} f(x,y)\ \dee{x}\,\dee{y}$,
+    $\int_{-1}^1 \int_0^{1-x^2} f(x,y)\ \dee{y}\,\dee{x}$
+
+(c) $e^{2/3}-e^{-2/3}$
+\flushleft \hyperref [q:3.1.0.22]{A-22:} 
+(a)
+\begin{center}
+     \includegraphics{OE16D_6.pdf}
+\end{center}
+(b) $\frac{1-\cos(1)}{12}$
+\flushleft \hyperref [q:3.1.0.23]{A-23:} 
+(a)
+\begin{center}
+     \includegraphics{OE03DQ6a.pdf}
+\end{center}
+
+(b)
+$27+18\ln\frac{3}{2}\approx 34.30$
+\flushleft \hyperref [q:3.1.0.24]{A-24:} 
+$\frac{4}{3}\sin 8\approx 1.319$
+\flushleft \hyperref [q:3.1.0.25]{A-25:} 
+(a) $\dst I=\dblInt_D (8+2xy)\ \dee{x}\dee{y}$ where
+    $D=\Set{(x,y)}{x^2+(y-1)^2\le 1}$
+
+(b) $\dst I
+  =\int_0^2 \dee{y}\int_{-\sqrt{2y-y^2}}^{\sqrt{2y-y^2}}\dee{x}\ (8+2xy)
+  =\int_{-1}^1 \dee{x}\int_{1-\sqrt{1-x^2}}^{1+\sqrt{1-x^2}}\dee{y}\ (8+2xy)$
+
+(c) $8\pi$
+\flushleft \hyperref [q:3.1.0.26]{A-26:} 
+$\frac{2}{3\pi}\approx 0.212$
+\flushleft \hyperref [q:3.1.0.27]{A-27:} 
+
+(b) $\dst\int_{-1}^1\bigg[\int_{y^2}^1 \sin\big(y^3-3y\big)\,\dee{x}\bigg]\ \dee{y}$
+\qquad (c) $0$
+\flushleft \hyperref [q:3.1.0.28]{A-28:} 
+$36$
+\flushleft \hyperref [q:3.1.0.29]{A-29:} 
+$48\sqrt{2}\,\pi$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s3.2}}}\phantomsection \label {a ex:s3.2} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s3.2} \hspace {2ex} \nameref *{ex:s3.2}}
+\flushleft \hyperref [q:3.2.0.1]{A-1:} 
+The left hand sketch below contains the points, $(x_1,y_1)$, $(x_3,y_3)$,
+$(x_5,y_5)$, that are on the axes. The right hand sketch below contains the
+points, $(x_2,y_2)$, $(x_4,y_4)$, that are not on the axes.
+\begin{center}
+  \includegraphics[scale=0.95]{polar3A.pdf}\quad
+  \includegraphics[scale=0.95]{polar2A.pdf}
+\end{center}
+    $r_1 = 3$,        $\theta_1=0$\qquad
+    $r_2 = \sqrt{2}$, $\theta_2=\frac{\pi}{4}$\qquad
+    $r_3 = 1$,        $\theta_3=\frac{\pi}{2}$\qquad
+    $r_4 = \sqrt{2}$, $\theta_4=\frac{3\pi}{4}$\\
+    $r_5 = 2$,        $\theta_5=\pi$
+\flushleft \hyperref [q:3.2.0.2]{A-2:} 
+(a) $\big(r_1=2\,,\,\theta_1= n\pi,\ n\text{ odd integer }\big)$ or
+    $\big(r_1=-2\,,\,\theta_1= n\pi,\ n\text{ even integer }\big)$.
+    In particular,  $\big(r_1=-2\,,\,\theta_1= 0\big)$ has $r_1<0$
+    and $0\le\theta_1<2\pi$.
+
+(b) $\big(r_2=\sqrt{2}\,,\,\theta_2= \nicefrac{\pi}{4} + 2n\pi\big)$ or
+    $\big(r_2=-\sqrt{2}\,,\,\theta_2= \nicefrac{5\pi}{4} + 2n\pi\big)$,
+    with $n$ integer. In particular,  $\big(r_2=-\sqrt{2}\,,\,
+    \theta_2= \nicefrac{5\pi}{4}\big)$ has $r_2<0$
+    and $0\le\theta_2<2\pi$.
+
+(c) $\big(r_3=\sqrt{2}\,,\,\theta_3= \nicefrac{5\pi}{4} + 2n\pi\big)$ or
+    $\big(r_3=-\sqrt{2}\,,\,\theta_3= \nicefrac{\pi}{4} + 2n\pi\big)$,
+    with $n$ integer. In particular,  $\big(r_3=-\sqrt{2}\,,\,
+    \theta_3= \nicefrac{\pi}{4}\big)$ has $r_3<0$
+    and $0\le\theta_3<2\pi$.
+
+(d) $\big(r_4=3\,,\,\theta_4= 0 + 2n\pi\big)$ or
+    $\big(r_4=-3\,,\,\theta_4= \pi + 2n\pi\big)$,
+    with $n$ integer. In particular,  $\big(r_4=-3\,,\,
+    \theta_4= \pi\big)$ has $r_4<0$ and $0\le\theta_4<2\pi$.
+
+(e) $\big(r_5=1\,,\,\theta_5= \nicefrac{\pi}{2} + 2n\pi\big)$ or
+    $\big(r_5=-1\,,\,\theta_5= \nicefrac{3\pi}{2} + 2n\pi\big)$,
+    with $n$ integer. In particular,  $\big(r_5=-1\,,\,
+    \theta_5= \nicefrac{3\pi}{2}\big)$ has $r_5<0$
+    and $0\le\theta_5<2\pi$.
+\flushleft \hyperref [q:3.2.0.3]{A-3:} 
+(a) Both $\he_r(\theta)$ and $\he_\theta(\theta)$ have length 1.
+The angle between them is $\frac{\pi}{2}$. The cross product is
+$\he_r(\theta) \times \he_\theta(\theta)=\hk$.
+
+(b)
+Here is a sketch of $(x_i,y_i)$, $\he_r(\theta_i)$,
+$\he_\theta(\theta_i)$ for $i =1,3,5$ (the points on the axes)
+\begin{center}
+  \includegraphics{polar3.pdf}
+\end{center}
+and here is a sketch (to a different scale) of $(x_i,y_i)$, $\he_r(\theta_i)$,
+$\he_\theta(\theta_i)$ for $i =2,4$ (the points off the axes).
+\begin{center}
+  \includegraphics{polar2.pdf}
+\end{center}
+\flushleft \hyperref [q:3.2.0.4]{A-4:} 
+(a) $a=r\cos\theta$, $b=r\sin\theta$
+
+(b) $A=a\cos\varphi-b\sin\varphi$,
+    $B=b\cos\varphi+a\sin\varphi$
+\flushleft \hyperref [q:3.2.0.5]{A-5:} 
+
+(a)
+$\displaystyle\dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}
+=\int_0^{\nicefrac{\pi}{4}}\dee{\theta}
+ \int_0^2\dee{r}\ r\ f(r\cos\theta,r\sin\theta)
+=\int_0^2\dee{r}
+  \int_0^{\nicefrac{\pi}{4}}\dee{\theta}
+ \ r\ f(r\cos\theta,r\sin\theta)$
+
+(b)
+$\displaystyle\dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}
+=\int_0^{\nicefrac{\pi}{2}}\dee{\theta}
+ \int_1^2\dee{r}\ r\ f(r\cos\theta,r\sin\theta)
+=\int_1^2\dee{r}
+  \int_0^{\nicefrac{\pi}{2}}\dee{\theta}
+ \ r\ f(r\cos\theta,r\sin\theta)$
+
+(c)
+$\displaystyle \dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}
+=\int_0^{\nicefrac{\pi}{2}}\dee{\theta}
+ \int_0^{2\cos\theta}\dee{r}\ r\ f(r\cos\theta,r\sin\theta)
+=\int_0^2\dee{r}
+  \int_0^{\arccos\frac{r}{2}}\dee{\theta}
+ \ r\ f(r\cos\theta,r\sin\theta)$
+
+(d)
+\begin{align*}
+\dblInt_\cR f(x,y)\,\dee{x}\,\dee{y}
+&=\int_{\nicefrac{\pi}{4}}^{\nicefrac{\pi}{2}}\dee{\theta}
+ \int_0^{\nicefrac{2}{\sin\theta}}\dee{r}\ r\ f(r\cos\theta,r\sin\theta)\\
+&=\int_0^2\dee{r}
+  \int_{\nicefrac{\pi}{4}}^{\nicefrac{\pi}{2}}\dee{\theta}
+ \ r\ f(r\cos\theta,r\sin\theta)
++\int_2^{2\sqrt{2}}\dee{r}
+  \int_{\nicefrac{\pi}{4}}^{\arcsin\frac{2}{r}}\dee{\theta}
+ \ r\ f(r\cos\theta,r\sin\theta)
+\end{align*}
+
+\flushleft \hyperref [q:3.2.0.6]{A-6:} 
+\begin{center}
+    (a)\quad
+     \raisebox{-0.9\height}{\includegraphics{polar6a2.pdf}}\hfill
+    (b)\quad \raisebox{-0.9\height}{\includegraphics{polar6b2.pdf}}
+\end{center}
+
+(c)
+\begin{center}
+     \includegraphics{polar6c2.pdf}
+\end{center}
+
+\flushleft \hyperref [q:3.2.0.7]{A-7:} 
+(a) $\frac{a^3}{6}\big[\sqrt{3}+1\big]$\qquad
+(b) $\frac{2}{3}$  \qquad
+(c) $\frac{1}{3}$ \qquad
+(d) $-\pi$
+\flushleft \hyperref [q:3.2.0.8]{A-8:} 
+$\pi \left[\frac{4}{3}\sqrt{2}-\frac{7}{6}\right]
+\approx 2.26$
+\flushleft \hyperref [q:3.2.0.9]{A-9:} 
+$\frac{64}{9}a^3$
+\flushleft \hyperref [q:3.2.0.10]{A-10:} 
+$\frac{128}{15}a^3$
+\flushleft \hyperref [q:3.2.0.11]{A-11:} 
+(a)
+\begin{center}
+     \includegraphics[scale=0.8]{OE05D_8.pdf}
+\end{center}
+
+(b) $\frac{32}{9}$
+\flushleft \hyperref [q:3.2.0.12]{A-12:} 
+$\frac{16\pi}{5}$
+\flushleft \hyperref [q:3.2.0.13]{A-13:} 
+(a)
+
+\begin{center}
+     \includegraphics{OE06D_5.pdf}
+\end{center}
+
+(b) $M = \int_0^{\pi/4}\dee{\theta}\int_{\sqrt{2}}^2\dee{r}\ r\,
+         \rho(r\cos\theta\,,\,r\sin\theta)$ \qquad
+(c) $\frac{1}{2}$
+\flushleft \hyperref [q:3.2.0.14]{A-14:} 
+$\pi$
+\flushleft \hyperref [q:3.2.0.15]{A-15:} 
+$1-\frac{1}{\sqrt{2}}$
+\flushleft \hyperref [q:3.2.0.16]{A-16:} 
+(a)
+\begin{center}
+     \includegraphics{OE13D_5a.pdf}
+\end{center}
+
+(b) $\frac{\pi}{12}\big[5\ln(5)-4\big]$
+\flushleft \hyperref [q:3.2.0.17]{A-17:} 
+$\frac{\sqrt{3}}{2}-\frac{\pi}{6}$
+\flushleft \hyperref [q:3.2.0.18]{A-18:} 
+(a) $D = \Set{(r\cos\theta\,,\,r\sin\theta)}
+     {-\nicefrac{\pi}{2}\le\theta\le\nicefrac{\pi}{4},\ 0\le r\le 2\cos\theta}$
+
+(b) $\text{Volume}=\frac{40}{18\sqrt{2}} +\frac{16}{9}$
+\flushleft \hyperref [q:3.2.0.19]{A-19:} 
+$2\frac{\pi+44/9}{\pi+8}\approx 1.442$
+\flushleft \hyperref [q:3.2.0.20]{A-20:} 
+(a)
+\begin{center}
+     \includegraphics{OE10A_5.pdf}
+\end{center}
+
+(b)
+\begin{align*}
+\dblInt_G f(x,y)\ \dee{A}
+&=\int_0^{\frac{1}{\sqrt{5}}}\dee{y}\int_{y/2}^{2y}\dee{x}\ f(x,y)
+ +\int_{\frac{1}{\sqrt{5}}}^{\frac{2}{\sqrt{5}}}\dee{y}\int_{y/2}^{\sqrt{1-y^2}}
+         \dee{x}\ f(x,y)
+\end{align*}
+
+(c)
+\begin{align*}
+\dblInt_G f(x,y)\ \dee{A}
+&=\int_{\arctan\frac{1}{2}}^{\arctan 2}\dee{\theta}
+       \int_0^1\dee{r}\ r\,f(r\cos\theta,r\sin\theta)
+\end{align*}
+\flushleft \hyperref [q:3.2.0.21]{A-21:} 
+(a)
+\begin{center}
+     \includegraphics{OE11A_6.pdf}
+\end{center}
+
+(b) $J = \int_0^{\sqrt{2}}\int_0^x \frac{y}{x}  e^{x^2+y^2}\ \dee{y}\,\dee{x}
+   + \int_{\sqrt{2}}^2\int_0^{\sqrt{4-x^2}} \frac{y}{x}  e^{x^2+y^2}\
+                                                    \dee{y}\,\dee{x}
+    $
+
+(c) $\frac{1}{4}\left[e^4-1\right]\ln 2$
+\flushleft \hyperref [q:3.2.0.22]{A-22:} 
+$\frac{\pi}{8}ab$
+\flushleft \hyperref [q:3.2.0.23]{A-23:} 
+About 3.5'' above the bottom
+\flushleft \hyperref [q:3.2.0.24]{A-24:} 
+(a) $\pi\big(e^9-1\big)\approx 25,453$
+
+(b) $\int_0^1 \dee{x}\int_x^{2-x}\dee{y}\ e^{x^2+y^2}$
+\begin{center}
+     \includegraphics{OE03AQ5a.pdf}
+\end{center}
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s3.3}}}\phantomsection \label {a ex:s3.3} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s3.3} \hspace {2ex} \nameref *{ex:s3.3}}
+\flushleft \hyperref [q:3.3.0.1]{A-1:} 
+(a) $6\pi$\qquad
+(b) $\half ab (a+b)$
+\flushleft \hyperref [q:3.3.0.2]{A-2:} 
+$\bar x=0$ and $\bar y =  \frac{5}{7}$.
+\flushleft \hyperref [q:3.3.0.3]{A-3:} 
+(a)
+\begin{center}
+     \includegraphics{OE08D_7.pdf}
+\end{center}
+(b) $\text{mass} = \frac{4\pi}{3} - 2\ln\big(2+\sqrt{3}\big)$
+
+(c)
+$\bar x = \frac{2\sqrt{3}- \ln(2+\sqrt{3})}
+            {\frac{4\pi}{3} - 2\ln(2+\sqrt{3})}
+        \approx 1.38$,
+$\bar y=0$.
+\flushleft \hyperref [q:3.3.0.4]{A-4:} 
+$\bar x = \frac{10}{3\pi+8} \approx 0.57$
+\flushleft \hyperref [q:3.3.0.5]{A-5:} 
+$\bar x = \bar y =\frac{4}{3\pi}$
+\flushleft \hyperref [q:3.3.0.6]{A-6:} 
+$\frac{6}{5}$
+\flushleft \hyperref [q:3.3.0.7]{A-7:} 
+$\frac{2}{3}$
+\flushleft \hyperref [q:3.3.0.8]{A-8:} 
+(a) $\frac{3\pi}{4}$\qquad
+(b) $-\frac{1}{6}$
+\flushleft \hyperref [q:3.3.0.9]{A-9:} 
+$4\sqrt{2} -\sqrt{2}\pi\approx 1.214$
+\flushleft \hyperref [q:3.3.0.10]{A-10:} 
+(a) $\frac{1}{3}(b-a\,,\,c)$\qquad
+(b) See the solution.
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s3.4}}}\phantomsection \label {a ex:s3.4} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s3.4} \hspace {2ex} \nameref *{ex:s3.4}}
+\flushleft \hyperref [q:3.4.0.1]{A-1:} 
+$ab\sqrt{1+\tan^2\theta}=ab\sec\theta$
+\flushleft \hyperref [q:3.4.0.2]{A-2:} 
+$\frac{\sqrt{a^2+b^2+c^2}}{c} A(D)$
+\flushleft \hyperref [q:3.4.0.3]{A-3:} 
+(a) $\frac{1}{2}\sqrt{a^2b^2+a^2c^2+b^2c^2}$
+
+(b) See the solution.
+\flushleft \hyperref [q:3.4.0.4]{A-4:} 
+$\frac{8}{27}\left[\left(\frac{13}{4}\right)^{3/2}-1\right]$
+\flushleft \hyperref [q:3.4.0.5]{A-5:} 
+$\frac{\pi}{6}\big[{(1+4a^2)}^{3/2}-1\big]$
+\flushleft \hyperref [q:3.4.0.6]{A-6:} 
+$5\sqrt{2}\pi$
+\flushleft \hyperref [q:3.4.0.7]{A-7:} 
+$\frac{4}{15}\big[9\sqrt{3}-8\sqrt{2}+1\big]$
+\flushleft \hyperref [q:3.4.0.8]{A-8:} 
+(a)  $F(x,y) = \sqrt{1+f_x(x,y)^2+f_y(x,y)^2}$
+\qquad
+(b) (i) $\int_0^{2\pi}\dee{\theta}\int_0^1\dee{r}\ \frac{2r}{\sqrt{4-r^2}}$
+\qquad (ii) $16\pi$
+\flushleft \hyperref [q:3.4.0.9]{A-9:} 
+$255\sqrt{2}\pi\approx 1132.9$
+\flushleft \hyperref [q:3.4.0.10]{A-10:} 
+$a^2[\pi-2]$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s3.5}}}\phantomsection \label {a ex:s3.5} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s3.5} \hspace {2ex} \nameref *{ex:s3.5}}
+\flushleft \hyperref [q:3.5.0.1]{A-1:} 
+$\frac{1}{4}\pi ab^2$
+\flushleft \hyperref [q:3.5.0.2]{A-2:} 
+$3$
+\flushleft \hyperref [q:3.5.0.3]{A-3:} 
+$\frac{a^2bc}{24}$
+\flushleft \hyperref [q:3.5.0.4]{A-4:} 
+$\frac{5}{24}$
+\flushleft \hyperref [q:3.5.0.5]{A-5:} 
+(a) $\dst\int_0^1\dee{x}\int_0^{x}\dee{y}\int_0^{1-x}\hskip-10pt \dee{z}\hskip3pt f(x,y,z)
++\int_0^1\dee{x}\int_x^{1}\dee{y}\int_0^{1-y}\hskip-10pt \dee{z}\hskip3pt f(x,y,z)$
+
+(b) $\dst\int_0^1\dee{x}\int_x^{1}\dee{y}\int_0^{y^2}\!\! \dee{z}\  f(x,y,z)$
+\flushleft \hyperref [q:3.5.0.6]{A-6:} 
+(a)
+\begin{center}
+     \includegraphics{OE05D_9c.pdf}
+\end{center}
+
+(b)
+\begin{align*}
+&\int_{y=-1}^{y=1} \int_{x=0}^{x=1+y^2-y} \int_{z=0}^{z=1-y^2} f(x,y,z)
+                                    \ \dee{z}\,\dee{x}\,\dee{y} \\
+&\hskip1in
++\int_{y=-1}^{y=1} \int_{x=1+y^2-y}^{x=2-y} \int_{z=0}^{z=2-x-y} f(x,y,z)
+                                    \ \dee{z}\,\dee{x}\,\dee{y}
+\end{align*}
+\flushleft \hyperref [q:3.5.0.7]{A-7:} 
+(a)
+
+\begin{center}
+     \includegraphics{OE06D_6a3.pdf}
+\end{center}
+
+(b)
+\begin{align*}
+J = \int_{y=0}^{y=2} \int_{x=0}^{x=1} \int_{z=0}^{z=\frac{4-2x-y}{4}}
+        \!\!\!\! f(x,y,z)  \ \dee{z}\,\dee{x}\,\dee{y}
++\int_{y=2}^{y=4} \int_{x=0}^{x=\frac{4-y}{2}} \int_{z=0}^{z=\frac{4-2x-y}{4}}
+        \!\!\!\!  f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y}
+\end{align*}
+
+\flushleft \hyperref [q:3.5.0.8]{A-8:} 
+\begin{alignat*}{3}
+I&= \int_0^1 \int_{\sqrt{x}}^1 \int_0^{1-y} f(x,y,z)\,\dee{z}\,\dee{y}\,\dee{x}
+&&=\int_0^1 \int_0^{1-\sqrt{x}} \int_{\sqrt{x}}^{1-z}
+                \ f(x,y,z)\  \dee{y}\,\dee{z}\,\dee{x} \\
+&=\int_0^1  \int_0^{y^2}\int_0^{1-y}f(x,y,z)\
+                   \dee{z}\,\dee{x}\, \dee{y}
+&&=\int_0^1  \int_0^{1-y} \int_0^{y^2} f(x,y,z)\
+                   \dee{x}\, \dee{z}\,\dee{y} \\
+&=\int_0^1  \int_0^{(1-z)^2} \int_{\sqrt{x}}^{1-z}f(x,y,z)\
+                   \dee{y}\,\dee{x}\, \dee{z}
+&&=\int_0^1  \int_0^{1-z} \int_0^{y^2} f(x,y,z)\
+                   \dee{x}\, \dee{y}\,\dee{z}
+\end{alignat*}
+\flushleft \hyperref [q:3.5.0.9]{A-9:} 
+(a) $I = \int_{x=-1}^{x=0}\int_{y=-2(1+x)}^{y=0}\int_{z=0}^{z=3(1+x+y/2)}
+            f(x,y,z)\ \dee{z}\,\dee{y}\,\dee{x}$
+
+(b) $I = \int_{z=0}^{z=3}\int_{x=-(1-z/3)}^{x=0}\int_{y=-2(1+x-z/3)}^{y=0}
+             f(x,y,z)\ \dee{y}\,\dee{x}\,\dee{z}$
+\flushleft \hyperref [q:3.5.0.10]{A-10:} 
+$\frac{1}{48}$
+\flushleft \hyperref [q:3.5.0.11]{A-11:} 
+$2$
+\flushleft \hyperref [q:3.5.0.12]{A-12:} 
+$\frac{1}{12}$
+\flushleft \hyperref [q:3.5.0.13]{A-13:} 
+$\frac{1}{60}$
+\flushleft \hyperref [q:3.5.0.14]{A-14:} 
+$\frac{13}{2}-\frac{e^{-6}}{2}$
+\flushleft \hyperref [q:3.5.0.15]{A-15:} 
+(a)
+\begin{center}
+     \includegraphics{OE13D_8.pdf}
+\end{center}
+
+(b) $\int_{-1}^1\dee{x}\int_0^{1-x^2}\dee{y}\int_y^{1-x^2}\dee{z}\ f(x,y,z)$
+\flushleft \hyperref [q:3.5.0.16]{A-16:} 
+$J = \int_0^1 \int_z^1\int_y^1 f(x,y,z)\ \dee{x}\,\dee{y}\,\dee{z}$
+\flushleft \hyperref [q:3.5.0.17]{A-17:} 
+$\int_{y=-\sqrt{6}}^{y=\sqrt{6}}\int_{x=y^2/2}^{x=3}\int_{z=y^2}^{z=2x}
+                f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y}$
+
+$\int_{y=-\sqrt{6}}^{y=\sqrt{6}}\int_{z=y^2}^{z=6}\int_{x=z/2}^{x=3}
+                f(x,y,z)\ \dee{x}\,\dee{z}\,\dee{y}$
+
+$\int_{z=0}^{z=6}\int_{x=z/2}^{x=3}\int_{y=-\sqrt{z}}^{y=\sqrt{z}}
+                f(x,y,z)\ \dee{y}\,\dee{x}\,\dee{z}$
+\flushleft \hyperref [q:3.5.0.18]{A-18:} 
+(a) $\int_{-1}^1\int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}}
+        \int_{-1}^y f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y} $\qquad
+(b) $\int_{-1}^1\int_z^1 \int_{-\sqrt{1-y^2}}^{\sqrt{1-y^2}}
+              f(x,y,z)\ \dee{x}\,\dee{y}\,\dee{z}$
+
+(c) $\int_{-1}^1 \int_{-1}^{-\sqrt{1-x^2}} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}
+              f(x,y,z)\ \dee{y}\,\dee{z}\,\dee{x}
+       +\int_{-1}^1 \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}
+                    \int_z^{\sqrt{1-x^2}}  f(x,y,z)\ \dee{y}\,\dee{z}\,\dee{x}$
+\flushleft \hyperref [q:3.5.0.19]{A-19:} 
+(a) $\int_0^2 \int_{-\sqrt{3-y}}^{\sqrt{3-y}} \int_{x^2}^{3-y}
+                 f(x,y,z)\ \dee{z}\,\dee{x}\,\dee{y}$
+
+(b) $\int_0^1 \int_0^2 \int_{-\sqrt{z}}^{\sqrt{z}} f(x,y,z)\
+                 \dee{x}\,\dee{y}\,\dee{z}
+     +\int_1^3 \int_0^{3-z} \int_{-\sqrt{z}}^{\sqrt{z}} f(x,y,z)\
+                 \dee{x}\,\dee{y}\,\dee{z}$
+
+(c) $\int_0^1  \int_{-\sqrt{z}}^{\sqrt{z}}\int_0^2 f(x,y,z)\
+                 \dee{y}\,\dee{x}\,\dee{z}
+    +\int_1^3 \int_{-\sqrt{z}}^{\sqrt{z}}  \int_0^{3-z} f(x,y,z)\
+                 \dee{y}\,\dee{x}\,\dee{z}$
+\flushleft \hyperref [q:3.5.0.20]{A-20:} 
+$\frac{13}{24}\approx 0.5417$
+\flushleft \hyperref [q:3.5.0.21]{A-21:} 
+$\frac{1}{8}=0.125$
+\flushleft \hyperref [q:3.5.0.22]{A-22:} 
+(a)
+Here is a 3d sketch of the region. The coordinates of the labelled corners are
+\begin{equation*}
+a=(0,0,1)\quad
+b=(0,0,0)\quad
+c=(1,0,0)\quad
+d=(0,1,1)\quad
+f=(0,2,0)\quad
+g=(1,1,0)
+\end{equation*}
+\begin{center}
+     \includegraphics{OE01AQ8b.pdf}
+\end{center}
+
+
+(b) $\frac{17}{60}$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s3.6}}}\phantomsection \label {a ex:s3.6} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s3.6} \hspace {2ex} \nameref *{ex:s3.6}}
+\flushleft \hyperref [q:3.6.0.1]{A-1:} 
+(a), (b)
+\begin{center}
+   \includegraphics{cylR0.pdf}\qquad\qquad
+   \raisebox{-0.05\height}{\includegraphics[scale=1.0]{cylR.pdf}}
+\end{center}
+
+(c), (d)
+\begin{center}
+   \includegraphics{cylTh0.pdf}\qquad\qquad
+   \raisebox{0.0\height}{\includegraphics[scale=1.0]{cylTh.pdf}}
+\end{center}
+
+\flushleft \hyperref [q:3.6.0.2]{A-2:} 
+\begin{center}
+   \includegraphics{cylP1.pdf}
+\end{center}
+\flushleft \hyperref [q:3.6.0.3]{A-3:} 
+(a) $(1,0,0)$\qquad
+(b) $\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0\right)$\qquad
+(c) $(0,1,0)$\qquad
+(d) $(0,0,1)$\qquad
+(e) $\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},1\right)$
+\flushleft \hyperref [q:3.6.0.4]{A-4:} 
+(a) $r=\sqrt{2}$, $z=2$, $\theta=\frac{\pi}{4}$ (plus possibly
+any integer multiple of $2\pi$)
+
+(b) $r=\sqrt{2}$, $z=2$, $\theta=\frac{5\pi}{4}$ (plus possibly
+any integer multiple of $2\pi$)
+
+(c) $r=2$, $z=0$, $\theta=\frac{2\pi}{3}$ (plus possibly
+any integer multiple of $2\pi$)
+
+(d) $r=0$, $z=1$, $\theta=\text{arbitrary}$
+
+\flushleft \hyperref [q:3.6.0.5]{A-5:} 
+(a) $z=r^2\sin(2\theta)$\qquad
+(b) $r^2+z^2=1$\qquad
+(c) $r=2\cos\theta$
+
+\flushleft \hyperref [q:3.6.0.6]{A-6:} 
+(a) $a^3\big(2\pi-\frac{32}{9}\big)$ \qquad
+(b) $\frac{7}{48}\pi$\qquad
+(c) $\frac{\pi}{2}$
+\flushleft \hyperref [q:3.6.0.7]{A-7:} 
+$\frac{8\pi}{35}$
+\flushleft \hyperref [q:3.6.0.8]{A-8:} 
+$\big(0,0,\frac{7}{16\sqrt{2}-14}
+  \approx 0.811\big)$
+\flushleft \hyperref [q:3.6.0.9]{A-9:} 
+$\pi\left[\frac{48}{5}\sqrt{6}-\frac{328}{15}\right]
+\approx 1.65\pi$
+\flushleft \hyperref [q:3.6.0.10]{A-10:} 
+$\frac{4a^3}{3}\left[\frac{\pi}{2}  - \frac{2}{3} \right]$
+\flushleft \hyperref [q:3.6.0.11]{A-11:} 
+$\frac{16\pi}{3}$
+\flushleft \hyperref [q:3.6.0.12]{A-12:} 
+$\bar x=\bar y=\bar z=\frac{3}{8}a$
+\flushleft \hyperref [q:3.6.0.13]{A-13:} 
+(a) $\dst\text{mass} =
+\int_{1/2}^2 \dee{r} \int_{-\sqrt{4-r^2}}^{\sqrt{4-r^2}} \dee{z}\int_0^{2\pi}\dee{\theta}\
+\frac{5}{\sqrt{3}}(z^2+1)r$
+
+(b) $\frac{525}{24}\sqrt{5}\pi\approx 153.7\text{kg}$
+\flushleft \hyperref [q:3.6.0.14]{A-14:} 
+(a) $\dst\int_{-2}^2 \dee{x}
+    \int_{-\sqrt{4-x^2}}^{\sqrt{4-x^2}}\dee{y}\int_0^{e^{-x^2-y^2}}\dee{z}$
+\qquad
+(b) $\pi\big[1-e^{-4}\big]\approx 3.084$
+\flushleft \hyperref [q:3.6.0.15]{A-15:} 
+$\frac{8}{3}$
+\flushleft \hyperref [q:3.6.0.16]{A-16:} 
+(a) The unit vector in the direction of maximum rate of increse is $\frac{1}{\sqrt{10}}(3,0,1)$.
+
+(b) $2\pi$
+\flushleft \hyperref [q:3.6.0.17]{A-17:} 
+$M\big(\frac{3}{4}a^2+b^2\big)$
+ \par \nicerule \\[2ex]{\large \textbf {Answers to Exercises\nobreakspace {}\ref {ex:s3.7}}}\phantomsection \label {a ex:s3.7} --- Jump to \hyperlink {toc}{\textsc {table of contents}} \addcontentsline {toc}{section}{\ref*{ex:s3.7} \hspace {2ex} \nameref *{ex:s3.7}}
+\flushleft \hyperref [q:3.7.0.1]{A-1:} 
+\begin{center}
+   \includegraphics{spherPhi0.pdf}\qquad\quad
+   \raisebox{0.0\height}{\includegraphics[scale=1.0]{spherPhiUp.pdf}}
+      \qquad\quad
+   \raisebox{0.3\height}{\includegraphics[scale=1.0]{spherPhiFl.pdf}}
+\end{center}
+\begin{center}
+   \raisebox{0.0\height}{\includegraphics[scale=1.0]{spherPhiDn.pdf}}
+\qquad\qquad
+   \includegraphics{spherPhiPi.pdf}
+\end{center}
+\flushleft \hyperref [q:3.7.0.2]{A-2:} 
+\begin{center}
+   \includegraphics{sphericalP1.pdf}
+\end{center}
+\flushleft \hyperref [q:3.7.0.3]{A-3:} 
+(a) $\rho=2$, $\theta=\pi$, $\varphi=\frac{\pi}{2}$
+
+(b) $\rho=3$, $\theta=\frac{\pi}{2}$, $\varphi=\frac{\pi}{2}$
+
+(c) $\rho=4$, $\theta=\text{arbitrary}$, $\varphi=\pi$
+
+(d) $\rho=2$, $\theta=\frac{3\pi}{4}$, $\varphi=\frac{\pi}{6}$
+
+\flushleft \hyperref [q:3.7.0.4]{A-4:} 
+(a) $\left(\frac{1}{4}\,,\,\frac{\sqrt{3}}{4}\,,\,\frac{\sqrt{3}}{2}\right)$
+\qquad
+(b) $(0,2,0)$
+
+\flushleft \hyperref [q:3.7.0.5]{A-5:} 
+(a) $\varphi=\frac{\pi}{6}\text{ or }\frac{5\pi}{6}$\qquad
+(b) $\rho=2\cos\varphi$\qquad
+(c) $\rho\sin\varphi=2$
+\flushleft \hyperref [q:3.7.0.6]{A-6:} 
+See the solution.
+\flushleft \hyperref [q:3.7.0.7]{A-7:} 
+(a)
+\begin{center}
+     \includegraphics{OE06A_8b.pdf}
+\end{center}
+
+(b) $\frac{11\pi}{6}$
+\flushleft \hyperref [q:3.7.0.8]{A-8:} 
+$2\pi$
+\flushleft \hyperref [q:3.7.0.9]{A-9:} 
+(a) $2\pi\frac{a^3}{3}\big(1-\frac{1}{\sqrt{2}}\big)$\qquad
+(b) $\frac{\pi a^4}{16}$\qquad
+(c) $4\pi A\big(a-\sqrt{B}\tan^{-1}\frac{a}{\sqrt{B}}\big)$\qquad
+(d) $\frac{8}{3}\pi a^3$
+\flushleft \hyperref [q:3.7.0.10]{A-10:} 
+(a) $\frac{38}{3}\pi D$
+
+(b)
+$\bar x = \bar y=0$\qquad
+$\bar z =\frac{195}{152} \approx 1.28$
+\flushleft \hyperref [q:3.7.0.11]{A-11:} 
+(a)
+\begin{center}
+     \includegraphics{OE08D_8.pdf}
+\end{center}
+
+(b) $I=\int_0^{\pi/2}\dee{\varphi}\int_0^{\pi/2}\dee{\theta}\int_0^1\dee{\rho}\
+         \rho^4\sin^2\varphi\cos\varphi\ \cos\theta$
+
+(c) $\frac{1}{15}$
+\flushleft \hyperref [q:3.7.0.12]{A-12:} 
+$\frac{81}{5}$
+\flushleft \hyperref [q:3.7.0.13]{A-13:} 
+$\frac{2\pi^2}{3}$
+\flushleft \hyperref [q:3.7.0.14]{A-14:} 
+$\frac{64\pi}{9}$
+\flushleft \hyperref [q:3.7.0.15]{A-15:} 
+$\pi a^2h$
+\flushleft \hyperref [q:3.7.0.16]{A-16:} 
+$\frac{64}{15}\pi\big(1-\frac{1}{2\sqrt{2}}\big)\approx 8.665 $
+\flushleft \hyperref [q:3.7.0.17]{A-17:} 
+(a) $\frac{\pi}{16}$\qquad
+(b)  The centroid is $(\bar x,\bar y,\bar z)$ with
+$\bar x=\bar y=0$ and $\bar z=\frac{3}{8}$.
+\flushleft \hyperref [q:3.7.0.18]{A-18:} 
+(a) $\dst 9\int_0^2d\rho\int_0^{\pi/2}d\phi\int_0^{2\pi}d\theta\
+            \rho^3\,\sin\phi\,\cos\phi$\qquad
+(b) $\frac{1}{2}$
+\flushleft \hyperref [q:3.7.0.19]{A-19:} 
+It does not exist.
+\flushleft \hyperref [q:3.7.0.20]{A-20:} 
+(a) $\text{Mass} = \int_0^2\dee{z}\int_0^{2\pi}\dee{\theta}\int_z^2\dee{r}\
+                                  r^2$
+
+(b) $\text{Mass} =  \int_{\pi/4}^{\pi/2}\dee{\varphi}\int_0^{2\pi}\dee{\theta}
+            \int_0^{2/\sin\varphi}\dee{\rho}\
+                  \rho^3\sin^2\varphi$
+
+(c) $8\pi$
+\flushleft \hyperref [q:3.7.0.21]{A-21:} 
+(a) $\int_0^1\dee{r}\int_0^{2\pi}\dee{\theta}
+           \int_r^{\sqrt{2-r^2}}\dee{z}\ r^3$
+
+(b)  $\int_0^{\sqrt{2}}\dee{\rho}\int_0^{2\pi}\dee{\theta}
+           \int_0^{\pi/4}\dee{\varphi}\ \rho^4\sin^3\varphi$
+
+(c) $\pi \left[\frac{16\sqrt{2}}{15} - \frac{4}{3}\right]
+     \approx 0.5503$
+\flushleft \hyperref [q:3.7.0.22]{A-22:} 
+(a) $\int_0^{\pi/2}\dee{\varphi}\int_0^{\pi/2}\dee{\theta}\int_0^1\dee{\rho}\
+         \rho^4\sin^2\varphi\cos\varphi\ \cos\theta$\qquad
+(b) $\int_0^1\dee{z}\int_0^{\pi/2}\dee{\theta}\int_0^{\sqrt{1-z^2}}\dee{r} \
+         r^2\,z\,\cos\theta$
+
+(c) $\frac{1}{15}$
+\flushleft \hyperref [q:3.7.0.23]{A-23:} 
+(a) $\int_0^{3}\dee{\rho}\int_0^{2\pi}\dee{\theta}
+           \int_0^{\pi/6}\dee{\varphi}\ \rho^4\sin^3\varphi$
+
+(b) $\int_0^{3/2}\dee{r}\int_0^{2\pi}\dee{\theta}
+                          \int_{\sqrt{3}\,r}^{\sqrt{9-r^2}}\dee{z}\ \ r^3$
+
+(c) $81\pi \left[\frac{4}{5} - \frac{9\sqrt{3}}{20}\right]
+     \approx 5.24$
+\flushleft \hyperref [q:3.7.0.24]{A-24:} 
+(a) $\int_0^{1/\sqrt{2}}\dee{r}\int_0^{2\pi}\dee{\theta}
+           \int_r^{\sqrt{1-r^2}}\dee{z}\ r\sqrt{r^2+z^2}$
+
+(b) $\int_0^{1}\dee{\rho}\int_0^{2\pi}\dee{\theta}
+           \int_0^{\pi/4}\dee{\varphi}\ \rho^3\sin\varphi$
+
+(c) $\frac{\pi}{2}\ \left[1-\frac{1}{\sqrt{2}}\right]$
+\flushleft \hyperref [q:3.7.0.25]{A-25:} 
+(a) $\frac{2\pi}{3}\left[\big(12\big)^{3/2}+54\right]$
+
+(b) i. The top part is the part of the snowman's head that is inside the sphere\\
+$
+x^2+y^2+(z-4)^2 = 4
+$
+and above the cone
+$
+z-4 = - \sqrt{\frac{x^2+y^2}{3}}
+$.
+
+ii. The middle part is the part of the snowman's head and body that
+is bounded on the top by the  cone
+$
+z-4 = - \sqrt{\frac{x^2+y^2}{3}}
+$
+and is bounded on the bottom by the cone
+$
+z = \sqrt{3(x^2+y^2)}
+$.
+
+iii. The bottom part is the part of the snowman's body that is inside
+the sphere\\
+$
+x^2+y^2+z^2 = 12
+$
+and is below the cone
+$
+z = \sqrt{3(x^2+y^2)}
+$.
+\flushleft \hyperref [q:3.7.0.26]{A-26:} 
+(a) $\frac{2(8^3)\,\pi}{3}\ \frac{12\,\pi}{32}=128\pi^2$
+
+(b) The surface is a torus (a donut) but with the hole in the centre
+shrunk to a point.
+The figure below is a sketch of the part of the surface in the
+first octant.
+
+\begin{center}
+     \includegraphics{torusB.pdf}
+\end{center}
+\flushleft \hyperref [q:3.7.0.27]{A-27:} 
+(a) $I = \int_0^1\dee{r} \int_0^{2\pi}\dee{\theta} \int_0^r\dee{z}\
+           r\ z\ \sqrt{r^2+z^2}$\qquad
+(b) $I = \int_{\pi/4}^{\pi/2}\dee{\varphi}
+                \int_0^{2\pi}\dee{\theta}
+                \int_0^{1/\sin\varphi}\dee{\rho}\
+                \rho^4\sin\varphi \ \cos\varphi$
+
+(c) $\frac{2(2\sqrt{2}-1)\pi}{15}$
+\flushleft \hyperref [q:3.7.0.28]{A-28:} 
+(a) $\int_0^a \dee{z}\int_{\pi}^{3\pi/2}\dee{\theta}
+      \int_0^{\sqrt{a^2-z^2}}\dee{r}\ r\big(r^2+z^2\big)^{2014}$\qquad
+(b) $\int_0^{\pi/2} \dee{\varphi}\int_{\pi}^{3\pi/2}\dee{\theta}
+     \int_0^a\dee{\rho}\ \rho^{4030}\sin\varphi$
+
+(c) $\frac{a^{4031}\pi}{8062}$
+\flushleft \hyperref [q:3.7.0.29]{A-29:} 
+(a) $\int_0^1 \dee{r}\ r \int_0^{2\pi}\dee{\theta} \int_{r^2}^r\dee{z}\
+           z(r^2+z^2)$\qquad
+(b) $\int_{\pi/4}^{\pi/2} \dee{\varphi} \int_0^{2\pi}\dee{\theta}
+         \int_0^{\cos\varphi/\sin^2\varphi} \dee{\rho}\ \rho^5\sin\varphi
+             \cos\varphi$
+
+(c) $\frac{3\pi}{40}$
+\flushleft \hyperref [q:3.7.0.30]{A-30:} 
+(a)
+$V  = \int_0^1\dee{r} \int_0^{\pi/2}\dee{\theta}\int_r^{1+\sqrt{1-r^2}}\dee{z}
+     \ r$\qquad
+(b)
+$V = \int_0^{\pi/4}\dee{\varphi} \int_0^{\pi/2}\dee{\theta}
+               \int_0^{2\cos\varphi}\dee{\rho}\ \rho^2\sin\varphi$
+
+(c) $\frac{\pi}{4}$
+\flushleft \hyperref [q:3.7.0.31]{A-31:} 
+(a) $\int_0^{2\pi}\dee{\theta}\int_0^{3/2}\dee{r}\ r\int_{\sqrt{3}\,r}^{\sqrt{9-r^2}}dz\ r^2$
+
+(b) $\int_0^{2\pi}\dee{\theta}\int_0^{\pi/6}\dee{\varphi}\int_0^3\dee{\rho}\ \big(\rho^2\sin\varphi\big)
+\big(\rho^2\sin^2\varphi\big)$
+
+(c) $2\pi \frac{3^5}{5} \big[\frac{2}{3}-\frac{3\sqrt{3}}{8}\big]$

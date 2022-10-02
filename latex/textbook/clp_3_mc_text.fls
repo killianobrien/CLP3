@@ -1,4 +1,4 @@
-PWD /home/killian/Dropbox/Teaching2223/multi/CLP3/latex/textbook
+PWD /home/killian/math/multi/CLP3/latex/textbook
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -1690,9 +1690,9 @@ INPUT ./figures/integration/halfDomeB.pdf
 INPUT figures/integration/cos2graph.pdf
 INPUT ./figures/integration/cos2graph.pdf
 INPUT ./figures/integration/cos2graph.pdf
-INPUT figures/integration/sin2graph.pdf
-INPUT ./figures/integration/sin2graph.pdf
-INPUT ./figures/integration/sin2graph.pdf
+INPUT figures/integration/sin2Graph.pdf
+INPUT ./figures/integration/sin2Graph.pdf
+INPUT ./figures/integration/sin2Graph.pdf
 INPUT figures/integration/centroidXY.pdf
 INPUT ./figures/integration/centroidXY.pdf
 INPUT ./figures/integration/centroidXY.pdf
