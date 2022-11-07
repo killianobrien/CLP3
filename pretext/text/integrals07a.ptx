@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_greens">
+
+<!-- Copyright 2018-2020 Joel Feldman, Andrew Rechnitzer and Elyse Yeager -->
+<!-- This section added by Killian O'Brien in 2022 -->
+<!-- This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License-->
+<!-- https://creativecommons.org/licenses/by-nc-sa/4.0 -->
+
+<title>Green's Theorem</title>
+
+<subsection xml:id="sec_closed_path_integrals">
+  <title>Closed path integrals</title>
+<definition xml:id="def_closed_path">
+<statement><p>
+A closed path (in the plane) is one which starts and ends at the same point.
+</p>
+
+<figure xml:id="fig_closed_path">
+    <caption>A figure generated with TikZ in <latex /></caption>
+    <image width="15%" xml:id="closed_path">
+        <latex-image >
+              \begin{tikzpicture}[decoration={
+              markings,% switch on markings
+              mark=at position 1cm with {\arrowreversed[black]{stealth};}}
+              ]
+
+              \draw[->, postaction={decorate}] (0,0) [rounded corners=10pt] -- (1,1) -- (2,1)
+              [sharp corners] -- (2,0)
+              [rounded corners=5pt] -- cycle;
+
+              \draw (0,0) node[below] {$C$};
+              \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+
+
+<!-- <sidebyside width="50%">
+<image source="figs/closed_path"/>
+</sidebyside> -->
+</statement>
+</definition>
+
+
+
+
+
+
+<!-- When a path integral is performed along a closed path then we can use a variant of the integral symbol to denote it as follows,
+\beq
+I=\oint\limits_{C} \, P(x,y) \, dx + Q(x,y) \, dy .
+\eeq
+Using this variant of the integral sign simply indicates to the reader that the integral takes place along a closed path. -->
+
+</subsection>
+
+<!-- This bit includes the section exercises 
+<xi:include href="../problems/prob_s3.7.ptx" /> -->
+
+</section>

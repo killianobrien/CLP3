@@ -184,6 +184,9 @@
 \usepackage{calculator}
 \usepackage{tikz}
 \usetikzlibrary{shapes, patterns, snakes}
+
+\usetikzlibrary{patterns, calc, decorations.markings, circuits, circuits.ee, circuits.ee.IEC, decorations.pathmorphing, decorations.pathreplacing}
+
 \tikzstyle{vertex}=[shape=circle, minimum size=2mm, inner sep=0, fill]
 \tikzstyle{opendot}=[shape=circle, minimum size=2mm, inner sep=0, fill=white, draw]
 
