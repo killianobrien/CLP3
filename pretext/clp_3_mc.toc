@@ -113,7 +113,7 @@
 \contentsline {subsection}{\numberline {3.8.1}Closed path integrals}{374}{subsection.3.8.1}%
 \contentsline {subsection}{\numberline {3.8.2}Green's theorem}{375}{subsection.3.8.2}%
 \contentsline {subsection}{\numberline {3.8.3}The area enclosed by a closed loop}{376}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}Path dependence and independence}{376}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.4}Path dependence and independence}{377}{subsection.3.8.4}%
 \contentsline {section}{\numberline {3.9}Optional\textemdash {} Integrals in General Coordinates}{377}{section.3.9}%
 \contentsline {subsection}{\numberline {3.9.1}Optional \textemdash {} Dropping Higher Order Terms in \(\mathrm {d}u,\mathrm {d}v\)}{385}{subsection.3.9.1}%
 \vspace {\normalbaselineskip }
