@@ -1,0 +1,145 @@
+\hypertarget {x:book:clp_3_mc}{}
+\contentsline {chapter}{Preface}{v}{chapter*.1}%
+\contentsline {chapter}{Feedback about the text}{vi}{chapter*.2}%
+\contentsline {chapter}{CLP3 at Manchester Met}{vii}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Vectors and Geometry in Two and Three Dimensions}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Points}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Exercises}{5}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Vectors}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Addition of Vectors and Multiplication of a Vector by a Scalar}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}The Dot Product}{12}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}(Optional) Using Dot Products to Resolve Forces \textemdash {} The Pendulum}{17}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}(Optional) Areas of Parallelograms}{20}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}The Cross Product}{22}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}(Optional) Some Vector Identities}{30}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}(Optional) Application of Cross Products to Rotational Motion}{32}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.8}(Optional) Application of Cross Products to Rotating Reference Frames}{33}{subsection.1.2.8}%
+\contentsline {subsection}{\numberline {1.2.9}Exercises}{35}{subsection.1.2.9}%
+\contentsline {section}{\numberline {1.3}Equations of Lines in 2d}{40}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Exercises}{42}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Equations of Planes in 3d}{43}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Exercises}{49}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Equations of Lines in 3d}{51}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Exercises}{57}{subsection.1.5.1}%
+\contentsline {section}{\numberline {1.6}Curves and their Tangent Vectors}{60}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Derivatives and Tangent Vectors}{65}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Exercises}{70}{subsection.1.6.2}%
+\contentsline {section}{\numberline {1.7}Sketching Surfaces in 3d}{75}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Level Curves and Surfaces}{84}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Exercises}{87}{subsection.1.7.2}%
+\contentsline {section}{\numberline {1.8}Cylinders}{90}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Quadric Surfaces}{91}{section.1.9}%
+\contentsline {chapter}{\numberline {2}Partial Derivatives}{93}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Limits}{93}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Optional \textemdash {} A Nasty Limit That Doesn't Exist}{99}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Exercises}{101}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Partial Derivatives}{103}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Evaluation of Partial Derivatives}{106}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Exercises}{114}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Higher Order Derivatives}{116}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Optional \textemdash {} The Proof of Theorem {\relax \ref *{x:theorem:thm_mixed_partials}}}{118}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Outline}{118}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}The Details}{118}{subsubsection.2.3.1.2}%
+\contentsline {subsection}{\numberline {2.3.2}Optional \textemdash {} An Example of \(\frac {\partial ^2\ f}{\partial x\partial y}(x_0,y_0) \ne \frac {\partial ^2\ f}{\partial y\partial x}(x_0,y_0)\)}{120}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Exercises}{121}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}The Chain Rule}{122}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Memory Aids for the Chain Rule}{123}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Chain Rule Examples}{126}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Review of the Proof of \( \frac {\mathrm {d}}{\mathrm {d}t}f\leavevmode@ifvmode {\setbox \z@ \hbox {\mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }x(t)\leavevmode@ifvmode {\setbox \z@ \hbox {\mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ } = \frac {\mathrm {d}f}{\mathrm {d}x}\leavevmode@ifvmode {\setbox \z@ \hbox {\mathsurround \z@ $\nulldelimiterspace \z@ \left (\vcenter to\@ne \big@size {}\right .$}\box \z@ }x(t)\leavevmode@ifvmode {\setbox \z@ \hbox {\mathsurround \z@ $\nulldelimiterspace \z@ \left )\vcenter to\@ne \big@size {}\right .$}\box \z@ }\ \frac {\mathrm {d}x}{\mathrm {d}t}(t)\)}{130}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Proof of Theorem {\relax \ref *{x:theorem:thm_chainRule}}}{130}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Exercises}{132}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Tangent Planes and Normal Lines}{136}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Surfaces of the Form \(z=f(x,y)\)}{137}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Surfaces of the Form \(G(x,y,z)=0\)}{142}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Exercises}{153}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Linear Approximations and Error}{155}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Quadratic Approximation and Error Bounds}{161}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Optional \textemdash {} Taylor Polynomials}{166}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Exercises}{167}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Directional Derivatives and the Gradient}{171}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Directional Derivatives and the Gradient}{171}{subsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.1.1}A Question}{171}{subsubsection.2.7.1.1}%
+\contentsline {subsubsection}{\numberline {2.7.1.2}The Answer}{172}{subsubsection.2.7.1.2}%
+\contentsline {subsubsection}{\numberline {2.7.1.3}The Implications}{173}{subsubsection.2.7.1.3}%
+\contentsline {subsection}{\numberline {2.7.2}Exercises}{180}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.8}A First Look at Partial Differential Equations}{187}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Optional \textemdash {} Solving the Advection and Wave Equations}{189}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Really Optional \textemdash {} Derivation of the Wave Equation}{193}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}Exercises}{195}{subsection.2.8.3}%
+\contentsline {section}{\numberline {2.9}Maximum and Minimum Values}{197}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Local Maxima and Minima}{198}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}The Second Derivative Test}{207}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Absolute Minima and Maxima}{219}{subsection.2.9.3}%
+\contentsline {subsection}{\numberline {2.9.4}Exercises}{227}{subsection.2.9.4}%
+\contentsline {section}{\numberline {2.10}Lagrange Multipliers}{232}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}(Optional) An Example with Two Lagrange Multipliers}{239}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}Exercises}{243}{subsection.2.10.2}%
+\contentsline {chapter}{\numberline {3}Multiple Integrals}{247}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Double Integrals}{247}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Vertical Slices}{247}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Horizontal Slices}{250}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Volumes}{258}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Examples}{259}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Optional \textemdash {} More about the Definition of \(\ \DOTSI \MultiIntegral {2}_\mathcal {R}f(x,y)\ \mathrm {d}x\mathrm {d}y\)}{272}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Even and Odd Functions}{276}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Exercises}{284}{subsection.3.1.7}%
+\contentsline {section}{\numberline {3.2}Double Integrals in Polar Coordinates}{289}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Polar Coordinates}{290}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Polar Curves}{291}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Integrals in Polar Coordinates}{296}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Optional\textemdash {} Error Control for the Polar Area Formula\textgreater {}}{308}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Exercises}{310}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Applications of Double Integrals}{315}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Averages}{315}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Centre of Mass}{318}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Moment of Inertia}{323}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Exercises}{327}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Surface Area}{328}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Exercises}{334}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Triple Integrals}{335}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Exercises}{343}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Triple Integrals in Cylindrical Coordinates}{346}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Cylindrical Coordinates}{346}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}The Volume Element in Cylindrical Coordinates}{347}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Sample Integrals in Cylindrical Coordinates}{348}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Exercises}{354}{subsection.3.6.4}%
+\contentsline {section}{\numberline {3.7}Triple Integrals in Spherical Coordinates}{357}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Spherical Coordinates}{357}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}The Volume Element in Spherical Coordinates}{358}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}The Details}{360}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Sample Integrals in Spherical Coordinates}{362}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.5}Exercises}{368}{subsection.3.7.5}%
+\contentsline {section}{\numberline {3.8}Green's Theorem}{374}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Closed path integrals}{374}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Green's theorem}{375}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}The area enclosed by a closed loop}{376}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Path dependence and independence}{376}{subsection.3.8.4}%
+\contentsline {section}{\numberline {3.9}Optional\textemdash {} Integrals in General Coordinates}{377}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Optional \textemdash {} Dropping Higher Order Terms in \(\mathrm {d}u,\mathrm {d}v\)}{385}{subsection.3.9.1}%
+\vspace {\normalbaselineskip }
+\contentsline {chapter}{\numberline {A}Appendices}{387}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Trigonometry}{387}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Trigonometry \textemdash {} Graphs}{387}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Trigonometry \textemdash {} Special Triangles}{387}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Trigonometry \textemdash {} Simple Identities}{388}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Trigonometry \textemdash {} Add and Subtract Angles}{388}{subsection.A.1.4}%
+\contentsline {subsection}{\numberline {A.1.5}Inverse Trigonometric Functions}{389}{subsection.A.1.5}%
+\contentsline {section}{\numberline {A.2}Powers and Logarithms}{390}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Powers}{390}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Logarithms}{391}{subsection.A.2.2}%
+\contentsline {section}{\numberline {A.3}Table of Derivatives}{392}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Table of Integrals}{393}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Table of Taylor Expansions}{394}{section.A.5}%
+\contentsline {section}{\numberline {A.6}3d Coordinate Systems}{395}{section.A.6}%
+\contentsline {subsection}{\numberline {A.6.1}Cartesian Coordinates}{395}{subsection.A.6.1}%
+\contentsline {subsection}{\numberline {A.6.2}Cylindrical Coordinates}{396}{subsection.A.6.2}%
+\contentsline {subsection}{\numberline {A.6.3}Spherical Coordinates}{396}{subsection.A.6.3}%
+\contentsline {section}{\numberline {A.7}ISO Coordinate System Notation}{398}{section.A.7}%
+\contentsline {subsection}{\numberline {A.7.1}Polar Coordinates}{399}{subsection.A.7.1}%
+\contentsline {subsection}{\numberline {A.7.2}Cylindrical Coordinates}{400}{subsection.A.7.2}%
+\contentsline {subsection}{\numberline {A.7.3}Spherical Coordinates}{401}{subsection.A.7.3}%
+\contentsline {section}{\numberline {A.8}Conic Sections and Quadric Surfaces}{403}{section.A.8}%
+\contentsline {chapter}{\numberline {B}Hints for Exercises}{406}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Answers to Exercises}{419}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Solutions to Exercises}{475}{appendix.D}%
+\contentsfinish 
