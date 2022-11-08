@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-07T17:00:17Z    *-->
+<!--*    on 2022-11-08T13:44:10Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,23 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Domain: all real numbers</p>
-<span class="incontext"><a href="app_trig.html#p-4122">in-context</a></span>
+<p>So, expressed in terms of \(s\) and \(t\text{,}\) the domain of integration \(\cR\) is much simpler:</p>
+<div class="displaymath">
+\begin{equation*}
+\Set{(s,t)}{0\le s\le 1,\ 1\le t\le 2}
+\end{equation*}
+</div>
+<p data-braille="continuation">As \(\dee{x}\,\dee{y} = (1+s)\,\dee{s}\,\dee{t}\) and the integrand \(\frac{y}{1+x}=t\text{,}\) the integral is, by Theorem <a class="xref" data-knowl="./knowl/thm_2d_sub.html" title="Theorem 3.9.3">3.9.3</a>,</p>
+<div class="displaymath">
+\begin{align*}
+\dblInt_\cR\frac{y}{1+x}\ \dee{x}\,\dee{y}
+&amp;=\int_0^1\dee{s}\int_1^2\dee{t}\ (1+s)t
+=\int_0^1\dee{s}\ (1+s)\ \left[\frac{t^2}{2}\right]_1^2\\
+&amp;=\frac{3}{2}\left[s+\frac{s^2}{2}\right]_0^1\\
+&amp;=\frac{3}{2}\times \frac{3}{2}\\
+&amp;=\frac{9}{4}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_Jacobian.html#p-4122">in-context</a></span>
 </body>
 </html>

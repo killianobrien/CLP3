@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-07T17:00:17Z    *-->
+<!--*    on 2022-11-08T13:44:10Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>\(\arctan x\)</p>
-<span class="incontext"><a href="app_trig.html#p-4119">in-context</a></span>
+<p>By (<a class="xref" data-knowl="./knowl/eq_dA.html" title="Equation 3.9.2">3.9.2</a>), recalling that \(x(s,t)=s\) and \(y(s,t)=t(1+s)\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\dee{x}\,\dee{y}
+&amp;= \left|\det\left[\begin{matrix}\pdiff{x}{s}&amp;\pdiff{y}{s}\\
+\pdiff{x}{t}&amp;\pdiff{y}{t}
+\end{matrix}\right]\right| \dee{s}\,\dee{t}
+= \left|\det\left[\begin{matrix}1&amp;t\\
+0&amp;1+s
+\end{matrix}\right]\right| \dee{s}\,\dee{t}
+= (1+s)\,\dee{s}\,\dee{t}
+\end{align*}
+</div>
+<span class="incontext"><a href="sec_Jacobian.html#p-4119">in-context</a></span>
 </body>
 </html>

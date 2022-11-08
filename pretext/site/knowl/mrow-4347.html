@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-07T17:00:14Z    *-->
+<!--*    on 2022-11-08T13:44:10Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -14,12 +14,14 @@
 <body>
 <div class="displaymath">
 \begin{align*}
-\dblInt_\cR\frac{y}{1+x}\ \dee{x}\,\dee{y}
-&amp;=\int_0^1\dee{s}\int_1^2\dee{t}\ (1+s)t
-=\int_0^1\dee{s}\ (1+s)\ \left[\frac{t^2}{2}\right]_1^2\\
-&amp;=\frac{3}{2}\left[s+\frac{s^2}{2}\right]_0^1\\
-&amp;=\frac{3}{2}\times \frac{3}{2}\\
-&amp;=\frac{9}{4}
+\dee{x}\,\dee{y}
+&amp;= \left|\det\left[\begin{matrix}\pdiff{x}{s}&amp;\pdiff{y}{s}\\
+\pdiff{x}{t}&amp;\pdiff{y}{t}
+\end{matrix}\right]\right| \dee{s}\,\dee{t}
+= \left|\det\left[\begin{matrix}1&amp;t\\
+0&amp;1+s
+\end{matrix}\right]\right| \dee{s}\,\dee{t}
+= (1+s)\,\dee{s}\,\dee{t}
 \end{align*}
 </div>
 <span class="incontext"><a href="sec_Jacobian.html#mjx-eqn-mrow-4347">in-context</a></span>

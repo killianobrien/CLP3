@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-07T17:00:20Z    *-->
+<!--*    on 2022-11-08T13:44:13Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,36 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The cartesian and spherical coordinates are related by</p>
-<div class="displaymath">
-\begin{align*}
-x&amp;=\rho\sin\varphi\cos\theta &amp;
-y&amp;=\rho\sin\varphi\sin\theta &amp;
-z&amp;=\rho\cos\varphi\\
-\rho&amp;=\sqrt{x^2+y^2+z^2} &amp;
-\theta&amp;=\arctan\frac{y}{x} &amp;
-\varphi&amp;=\arctan\frac{\sqrt{x^2+y^2}}{z}
-\end{align*}
-</div>
-<p data-braille="continuation">Here are three figures showing a surface of constant \(\rho\text{,}\) a surface of constant \(\theta\text{,}\) and a surface of constant \(\varphi\text{.}\)</p>
-<span class="incontext"><a href="ap_3dcoord.html#p-4163">in-context</a></span>
+<p>In the following, \(x\) and \(y\) are arbitrary real numbers, \(q\) is an arbitrary constant that is strictly bigger than zero and \(e\) is 2.7182818284, to ten decimal places.</p>
+<ul class="disc">
+<li>\(\displaystyle e^0=1,\quad q^0=1\)</li>
+<li>\(\displaystyle e^{x+y}=e^xe^y,
+\quad e^{x-y}=\frac{e^x}{e^y},
+\quad q^{x+y}=q^xq^y,
+\quad q^{x-y}=\frac{q^x}{q^y}\)</li>
+<li>\(\displaystyle e^{-x}=\frac{1}{e^x},
+\quad q^{-x}=\frac{1}{q^x}\)</li>
+<li>\(\displaystyle \big(e^x\big)^y=e^{xy},
+\quad \big(q^x\big)^y=q^{xy}\)</li>
+<li>\(\displaystyle \diff{}{x}e^x=e^x,
+\quad \diff{}{x}e^{g(x)}=g'(x)e^{g(x)},
+\quad \diff{}{x}q^x=(\ln q)\ q^x\)</li>
+<li>\(\int e^x\ \dee{x}=e^x+C,
+\quad \int e^{ax}\ \dee{x}=\frac{1}{a}e^{ax}+C\) if \(a\ne 0\)</li>
+<li>\(\displaystyle e^x =\sum\limits_{n=0}^\infty\frac{x^n}{n!}\)</li>
+<li>
+<p>\(\lim\limits_{x\rightarrow\infty}e^x=\infty,
+\quad \lim\limits_{x\rightarrow-\infty}e^x=0\)</p>
+<p>\(\lim\limits_{x\rightarrow\infty}q^x=\infty,
+\quad \lim\limits_{x\rightarrow-\infty}q^x=0\) if \(q \gt 1\)</p>
+<p>\(\lim\limits_{x\rightarrow\infty}q^x=0,
+\quad \lim\limits_{x\rightarrow-\infty}q^x=\infty\) if \(0 \lt q \lt 1\)</p>
+</li>
+<li>
+<p>The graph of \(2^x\) is given below. The graph of  \(q^x\text{,}\) for any \(q \gt 1\text{,}\) is similar.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/expGraph2.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+</ul>
+<span class="incontext"><a href="app_power_log.html#p-4163">in-context</a></span>
 </body>
 </html>

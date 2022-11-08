@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-07T17:00:12Z    *-->
+<!--*    on 2022-11-08T13:44:08Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,19 +13,19 @@
 </head>
 <body>
 <div class="displaymath">
-\begin{align*}
-\overrightarrow{P_0P_1}
-\approx \overrightarrow{P_2P_3}
-&amp;\approx \pdiff{\vr}{u}(u_0\,,\,v_0)\,\dee{u}
-=\llt\pdiff{x}{u}(u_0,v_0)\,,\,
-\pdiff{y}{u}(u_0,v_0) \rgt \dee{u}\\
-\overrightarrow{P_0P_2}
-\approx \overrightarrow{P_1P_3}
-&amp;\approx \pdiff{\vr}{v}(u_0\,,\,v_0)\,\dee{v}
-=\llt\pdiff{x}{v}(u_0,v_0)\,,\,
-\pdiff{y}{v}(u_0,v_0) \rgt \dee{v}
-\qquad
-\end{align*}
+\begin{alignat*}{4}
+P_0&amp;=\vr(u_0\,,\,v_0)\\
+P_1&amp;=\vr(u_0+\dee{u}, v_0)
+&amp;&amp;\approx \vr(u_0\,,\,v_0)
+&amp;&amp;+\pdiff{\vr}{u}(u_0\,,\,v_0)\,\dee{u}\\
+P_2&amp;=\vr(u_0, v_0+\dee{v})
+&amp;&amp;\approx \vr(u_0\,,\,v_0) &amp;&amp;
+&amp;&amp;+\pdiff{\vr}{v}(u_0\,,\,v_0)\,\dee{v}\\
+P_3&amp;=\vr(u_0+\dee{u}, v_0+\dee{v})
+&amp;&amp;\approx\vr(u_0\,,\,v_0)
+&amp;&amp;+\pdiff{\vr}{u}(u_0\,,\,v_0)\,\dee{u}
+&amp;&amp;+\pdiff{\vr}{v}(u_0\,,\,v_0)\,\dee{v}
+\end{alignat*}
 </div>
 <span class="incontext"><a href="sec_Jacobian.html#mjx-eqn-mrow-4323">in-context</a></span>
 </body>

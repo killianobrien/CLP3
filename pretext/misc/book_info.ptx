@@ -11,6 +11,11 @@
 </latex-preamble>
 
 <macros>
+<!-- Killian's first here -->
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+ <!--  -->
+ 
+ 
   \newcommand{\dee}[1]{\mathrm{d}#1}
   \newcommand{\half}{ \frac{1}{2} }
   \newcommand{\veps}{\varepsilon}

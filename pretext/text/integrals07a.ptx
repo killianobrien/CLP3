@@ -6,8 +6,13 @@
 <!-- This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License-->
 <!-- https://creativecommons.org/licenses/by-nc-sa/4.0 -->
 
-<title>Green's Theorem</title>
-
+<title>Green's Theorem
+</title>
+<introduction>
+  <p>
+    Green's theorem<fn>This section on Green's theorem added by Killian OBrien in November 2022</fn> is an important result that links the integral of a function over a simply connected region of the plane, to a certain path integral around the boundary of that region. This is a simple case of more general results in integration theory and vector calculus.
+  </p>
+</introduction>
 <subsection xml:id="sec_closed_path_integrals">
   <title>Closed path integrals</title>
 <definition xml:id="def_closed_path">
@@ -16,8 +21,8 @@ A closed path (in the plane) is one which starts and ends at the same point.
 </p>
 
 <figure xml:id="fig_closed_path">
-    <caption>A figure generated with TikZ in <latex /></caption>
-    <image width="15%" xml:id="closed_path">
+    <caption>A closed path <m>C</m>.</caption>
+    <image width="30%" xml:id="closed_path">
         <latex-image >
               \begin{tikzpicture}[decoration={
               markings,% switch on markings
@@ -33,27 +38,242 @@ A closed path (in the plane) is one which starts and ends at the same point.
         </latex-image>
     </image>
 </figure>
-
-
 <!-- <sidebyside width="50%">
 <image source="figs/closed_path"/>
 </sidebyside> -->
 </statement>
 </definition>
-
-
-
-
-
-
-<!-- When a path integral is performed along a closed path then we can use a variant of the integral symbol to denote it as follows,
-\beq
+<p>When a path integral is performed along a closed path then we can use a variant of the integral symbol to denote it as follows,
+<me>
 I=\oint\limits_{C} \, P(x,y) \, dx + Q(x,y) \, dy .
-\eeq
-Using this variant of the integral sign simply indicates to the reader that the integral takes place along a closed path. -->
+</me>
+Using this variant of the integral sign, with the circle in the middle of the elongated 'S' shape, simply indicates to the reader that the integral takes place along a closed path.
+</p>
+<p>
+By convention closed paths are traversed in the counter-clockwise direction. The curve
+<m>-C</m> would denote the same curve, but traversed in the clockwise direction, and integrating along <m>-C</m> would change the sign of the integral, i.e.
+<me>
+  \oint\limits_{C}\, P(x,y) \, dx + Q(x,y) \, dy =
+   - \oint\limits_{-C} \, P(x,y) \, dx + Q(x,y) \, dy .
+</me>
+</p>
+
+<example xml:id = "eg_closed_path_integral">
+<title>A closed path integral</title>
+<statement>
+  <p>Evaluate the integral
+<me>
+I = \oint\limits_{C} \, 3x^2 y^2 , dx + 2xy \, dy ,
+</me>
+where <m>C</m> encloses the square <m>DEFG</m> as shown in figure <xref ref="fig_square_path"/>.
+  </p>
+<figure xml:id="fig_square_path">
+    <caption>The square path <m>C</m>.</caption>
+    <image width="30%">
+        <latex-image >
+             \begin{tikzpicture}
+              \coordinate (origin) at (0,0);
+              \coordinate (X) at (3,0);
+              \coordinate (Y) at (0,3);
+
+              \draw[->, color=gray] (origin) node[below left] {$O$} -- (X) node[below] {$X$};
+              \draw[->, color=gray] (origin) -- (Y) node[left] {$Y$};
+
+              \draw (1,1) node[below left] {$D$};
+              \draw (2,1) node[below right] {$E$};
+              \draw (1,2) node[above left] {$G$};
+              \draw (2,2) node[above right] {$F$};
+
+              \draw[->] (1,1) -- (2,1) -- (2,2) -- (1,2) -- (1,1);
+
+              \draw (1,0) node[below] {$1$};
+              \draw (2,0) node[below] {$2$};
+              \draw (0,1) node[left] {$1$};
+              \draw (0,2) node[left] {$2$};
+
+              \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+</statement>
+<solution>
+<p>
+We evaluate <m>I</m> by splitting <m>C</m> up as follows,
+<me>
+C = DE+EF+FG+GD,
+</me>
+and using a similar approach that we have used before. You should find that
+<me>
+  \oint\limits_{C} \, 3x^2 y^2 , dx + 2xy \, dy = -18.
+</me>
+This example also illustrates a phenomenon known as <em>path dependence</em>, i.e. the two paths<m>DEF</m> and <m>DGF</m> from <m>D</m> to <m>F</m> produce different values,
+<me>
+\oint\limits_{DEF} \, 3x^2 y^2 , dx + 2xy \, dy = 13 , \quad
+\oint\limits_{DFG} \, 3x^2 y^2 , dx + 2xy \, dy  = 31 .
+</me></p>
+</solution>
+</example>
+
 
 </subsection>
 
+<subsection xml:id="subsec-greens_theorem">
+  <title>Green's theorem</title>
+  <p>We begin with the definition of a simply connected region.</p>
+  <definition xml:id="def-simply_connected">
+    <statement>
+      <p>
+        A subset <m>S</m> of the plan is <em>connected</em> if every two points in <m>S</m> can be joined by a path contained in <m>S</m>.
+      </p>
+      <p>
+        The subset <m>S</m> is <em>simply connected</em> if the interior of every closed path in <m>S</m> is also contained in <m>S</m>.
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Or in other words, a simply connected set <m>S</m> is a connected set which has no <em>holes</em>. See the figures  for examples.
+  </p>
+  <sidebyside widths="25% 25% 25%" margins="auto" valign="bottom">
+    <figure xml:id="fig_not_connected">
+    <caption>This shaded region is not connected.</caption>
+    <image width="30%">
+        <latex-image >
+        \begin{tikzpicture}
+        \fill[black!15] (0,0) [rounded corners=10pt] -- (1,1) -- (2,1) -- cycle;
+        \fill[black!15] (-1,1) [rounded corners=10pt] -- (-2,2) -- (-1,2) -- cycle;
+        \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+    <figure xml:id="fig_simply_connected">
+    <caption>This shaded region is simply connected.</caption>
+    <image width="30%">
+        <latex-image >
+        \begin{tikzpicture}
+        \fill[black!15] (0,0) [rounded corners=10pt] -- (1,1) -- (2,1) -- (2,2) -- (3,0) -- cycle;
+        \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+    <figure xml:id="fig_connected_not_simply">
+    <caption>This shaded region is connected, but not simply connected.</caption>
+    <image width="30%">
+        <latex-image >
+        \begin{tikzpicture}
+        \fill[black!15] (0,0) [rounded corners=10pt] -- (1,1) -- (2,1) -- (2,2) -- (3,0) -- cycle;
+        \fill[white] (1,0.7) [rounded corners=5pt] -- (2,0.7) -- (2,0.3) -- (1,0.3) -- cycle;
+        \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+  </sidebyside>
+  <p>
+    This concept is important because of its relation to a result known as Green's theorem, which in two dimensions relates the integral over a simply connected to a path integral around the boundary of that region.
+  </p>
+
+  <theorem xml:id="thm-greens_theorem">
+  <title>Green's Theorem</title>
+      <statement>
+      <p>
+        Suppose that functions <m>P</m> and <m>Q</m> have continuous partial derivatives on the closed contour <m>C</m> and in the simply connected region <m>R</m> enclosed by <m>C</m>. Then
+<me>
+  \oint\limits_{C} \, P(x,y) \, dx + Q(x,y) \, dy
+= \iint\limits_{R} \, \left ( \pderiv{Q}{x} - \pderiv{P}{y} \right ) \, dx \, dy .
+</me>
+      </p>
+    </statement>
+    <proof>
+      <p>
+        See lecture for a sketch of the proof.
+      </p>
+    </proof>
+  </theorem>
+  <example>
+    <statement>
+      <p>
+        Verify Green's theorem for the closed path integral of example <xref ref="eg_closed_path_integral"/>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In example <xref ref="eg_closed_path_integral"/> the contour <m>C</m> encloses the region <m>R</m>, a square bounded by the lines <m>x=1</m>$, <m>x=2</m>, <m>y=1</m> and <m>y=2</m>. So we need to evaluate the integral
+<md>
+<mrow>
+\iint\limits_{R} \, \left ( \pderiv{Q}{x} - \pderiv{P}{y} \right ) \, dx \, dy
+\amp = \int_1^2 \, \int_1^2 \, (2y -6x^2 y ) \, dx \, dy </mrow>
+<mrow> \amp =  \dots</mrow>
+</md>
+      </p>
+    </solution>
+  </example>
+</subsection>
+
+<subsection xml:id="subsec-area_closed_loop">
+  <title>The area enclosed by a closed loop</title>
+  <p>
+    Green's theorem can be applied to give a nice way of evaluating the area enclosed by a curve, by carrying out a path integral around the boundary curve.</p>
+<p>
+Consider the functions <m>P</m> and <m>Q</m> defined by
+<me>
+P(x,y) = -y , \quad Q(x,y)=x .
+</me>
+Applying Green's theorem we will have
+<me>
+\oint \, x \, dy - y \, dx = \iint\limits_{R} \big ( 1 - (-1) \big ) \, dx \, dy
+= 2 \iint\limits_{R} \, dx \, dy .
+</me>
+But the latter integral <m>\iint\limits_{R} \, dx \, dy</m> represents the volume lying over the region <m>R</m> and bounded by the surface of constant height 1, i.e. this is simply the area of <m>R</m>! Therefore we can evaluate the area of <m>R</m> with the path integral
+<me>
+\text{area}(R) = \frac{1}{2} \oint \, x \, dy - y \, dx .
+</me>
+  </p>
+<example>
+  <p>The parametric equations
+<me>
+x(t) = a \cos t , \quad y(t) = b \sin t ,
+</me>
+define an ellipse <m>E</m> with the equation
+<me>
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.
+</me>
+The area of the ellipse can be evaluated using the path integral
+<me>
+\frac{1}{2} \oint \, x \, dy - y \, dx = \dots
+</me></p>
+</example>
+</subsection>
+<subsection xml:id="subsec-path_independence">
+  <title>Path dependence and independence</title>
+  <p>
+    We have previously seen examples of line integrals between the same endpoints where the value of the integral changes when a different path between the endpoints is chosen. This represents the general case. In general path integrals are <em>path dependent</em>. However there is a special class of integrals which are <em>path independent</em>, i.e. their value will not change depending on the path chosen. These special cases are described the following theorem
+  </p>
+  <theorem xml:id="thm-path-independence">
+    <statement>
+      <p>
+        If <m>\pderiv{P}{y} = \pderiv{Q}{x}</m> then the line integral
+<me>
+ \int\limits_{AB} \, P(x,y) \, dx + Q(x,y) \, dy , 
+</me>
+has the same value no matter what path is chosen between the endpoints <m>A</m> and <m>B</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        See lecture for a sketch of proof.
+      </p>
+    </proof>
+  </theorem>
+  <p>
+    This result can allow us to evaluate such integrals using the most convenient path.
+  </p>
+  <example>
+    <p>Consider the integral
+<me>
+I = \int\limits_{C} \, (6xy^2 - y^3 ) \, dx + (6x^2y -3xy^2) \, dy
+</me>
+along a path <m>C</m> from the point <m>A=(1,2)</m> to the point <m>B=(3,4)</m>. Choose a convenient path in order to evaluate such an integral.</p>
+  </example>
+</subsection>
 <!-- This bit includes the section exercises 
 <xi:include href="../problems/prob_s3.7.ptx" /> -->
 
