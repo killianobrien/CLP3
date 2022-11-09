@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="chap_laplace">
+<!-- Copyright 2018-2020 Joel Feldman, Andrew Rechnitzer and Elyse Yeager -->
+<!-- This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License-->
+<!-- https://creativecommons.org/licenses/by-nc-sa/4.0 -->
+<title>Laplace transforms</title>
+<introduction>
+  <p>
+    In this chapter we study Laplace transforms, which give us a method for finding <em>analytic</em><fn>An analytic solution to an ODE is an exact solution typically expressed as some combination of standard functions, as opposed to a <em>numerical solution</em>, which is one developed in an incremental way from some kind of initial or boundary conditions, like you have been studying in the Numerical Methods unit.</fn> solutions to certain linear ordinary differential equations. A key concept for understanding the topics in this chapter is how the Laplace transform takes the original problem, the ODE, and <em>transforms</em> it into a related problem in a different setting that is easier to solve than the original one. The solution to this related problem is then <em>transformed back</em>, using the inverse Laplace transform, to recover the solution to the original ODE.
+  </p>
+</introduction>
+<section xml:id="sec-test">
+  <title>test</title>
+  <p>
+    A placeholder.
+  </p>
+</section>
+<!-- <xi:include href="./integrals01.ptx" /> -->
+
+ </chapter>
