@@ -59,11 +59,23 @@ t^4 \frac{d^2y}{dt^2} + y \frac{dy}{dt} = 0.
     </p>
   </solution>
 </example>
+</section>
+
+
+<section xml:id="sec-laplace_transform">
+  <title>The transform and its properties</title>
+<p>
+In general a <em>transform</em> of a function, <m>x(t)</m> say, is a rule for associating a new function, <m>X(s)</m> say, to <m>x</m>. The new function depends on a new argument / variable <m>s</m>. The values of the original function <m>x(t)</m> are used somehow to define the new function <m>X</m>.
+</p>
+
+
 
 
 
 
 </section>
+
+
 <!-- <xi:include href="./integrals01.ptx" /> -->
 
  </chapter>

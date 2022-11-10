@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-10T13:16:53Z    *-->
+<!--*    on 2022-11-10T13:33:30Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -55,6 +55,14 @@ MathJax.Hub.Config({
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\Hv}{\textrm{H}}
+\newcommand{\laplace}[1]{\mathcal{L}\{#1\}}
+\newcommand{\trans}[1]{\ensuremath \int_0^\infty e^{-st} #1 \, dt}
+\renewcommand{\L}[1]{\ensuremath \mathcal{L} \left \{ #1 \right \}}
+\newcommand{\Linv}[1]{\ensuremath \mathcal{L}^{-1} \left \{ #1 \right \}}
+\newcommand{\ppderiv}[2]{\frac{\partial^2 #1}{\partial #2}}
+\renewcommand{\b}{\mathbf}
+
  
  
  
@@ -252,7 +260,10 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link active">
-<a href="chap_laplace.html" data-scroll="chap_laplace"><span class="codenumber">1</span> <span class="title">Laplace transforms</span></a><ul><li><a href="sec-terminology.html" data-scroll="sec-terminology">Terminology</a></li></ul>
+<a href="chap_laplace.html" data-scroll="chap_laplace"><span class="codenumber">1</span> <span class="title">Laplace transforms</span></a><ul>
+<li><a href="sec-terminology.html" data-scroll="sec-terminology">Terminology</a></li>
+<li><a href="sec-laplace_transform.html" data-scroll="sec-laplace_transform">The transform and its properties</a></li>
+</ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 </ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -261,7 +272,10 @@ MathJax.Hub.Config({
 <span class="type">Chapter</span> <span class="codenumber">1</span> <span class="title">Laplace transforms</span>
 </h2>
 <section class="introduction" id="introduction-1"><p id="p-6">In this chapter we study Laplace transforms, which give us a method for finding <em class="emphasis">analytic</em><a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-1" id="fn-1"><sup> 1 </sup></a> solutions to certain linear ordinary differential equations. A key concept for understanding the topics in this chapter is how the Laplace transform takes the original problem, the ODE, and <em class="emphasis">transforms</em> it into a related problem in a different setting that is easier to solve than the original one. The solution to this related problem is then <em class="emphasis">transformed back</em>, using the inverse Laplace transform, to recover the solution to the original ODE.</p>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-1"><div class="fn">An analytic solution to an ODE is an exact solution typically expressed as some combination of standard functions, as opposed to a <em class="emphasis">numerical solution</em>, which is one developed in an incremental way from some kind of initial or boundary conditions, like you have been studying in the Numerical Methods unit.</div></div></section><nav class="summary-links"><ul><li><a href="sec-terminology.html"><span class="codenumber">1.1</span> <span class="title">Terminology</span></a></li></ul></nav></section></div></main>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-1"><div class="fn">An analytic solution to an ODE is an exact solution typically expressed as some combination of standard functions, as opposed to a <em class="emphasis">numerical solution</em>, which is one developed in an incremental way from some kind of initial or boundary conditions, like you have been studying in the Numerical Methods unit.</div></div></section><nav class="summary-links"><ul>
+<li><a href="sec-terminology.html"><span class="codenumber">1.1</span> <span class="title">Terminology</span></a></li>
+<li><a href="sec-laplace_transform.html"><span class="codenumber">1.2</span> <span class="title">The transform and its properties</span></a></li>
+</ul></nav></section></div></main>
 </div>
 </body>
 </html>
