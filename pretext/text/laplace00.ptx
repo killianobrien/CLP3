@@ -9,11 +9,60 @@
     In this chapter we study Laplace transforms, which give us a method for finding <em>analytic</em><fn>An analytic solution to an ODE is an exact solution typically expressed as some combination of standard functions, as opposed to a <em>numerical solution</em>, which is one developed in an incremental way from some kind of initial or boundary conditions, like you have been studying in the Numerical Methods unit.</fn> solutions to certain linear ordinary differential equations. A key concept for understanding the topics in this chapter is how the Laplace transform takes the original problem, the ODE, and <em>transforms</em> it into a related problem in a different setting that is easier to solve than the original one. The solution to this related problem is then <em>transformed back</em>, using the inverse Laplace transform, to recover the solution to the original ODE.
   </p>
 </introduction>
-<section xml:id="sec-test">
-  <title>test</title>
-  <p>
-    A placeholder.
-  </p>
+<section xml:id="sec-terminology">
+  <title>Terminology</title>
+  <definition xml:id="def-de">
+  <title>Differential equations</title>
+    <statement>
+      <p>
+          A <em>differential equation</em> is an equation featuring one or more unknown functions and some of their derivatives. If the derivatives are all one-variable standard derivatives, e.g. <m>\frac{dy}{dt}</m> etc, then the equation is called an <em> ordinary differential equation</em> (ODE). If the derivatives are partial, e.g. <m>\frac{\partial y}{\partial t}</m> then the equation is called a <em>partial differential equation</em> (PDE).
+      </p>
+    </statement>
+  </definition>
+
+
+<p>Differential equations arise in a wide range of applications of mathematics to problems in motion, astronomy, physics, engineering, chemistry, biology , etc. In practice the differential equations one meets are often impossible to solve exactly (i.e. find an <em>analytic solution</em>) and instead we must use techniques to find approximations to the actual solutions (so called <em>numerical solutions</em>). However for special cases of ODEs we can describe methods to obtain exact solutions, one of which we describe in this chapter.</p>
+
+<definition xml:id="def-linearODE">
+<title>Linear and non-linear ODEs</title>
+  <statement>
+      <p>The method described here, Laplace transforms, can often find the exact solution to a <em>linear ordinary differential equation with constant coefficients</em>, i.e. one of the form
+<me>
+a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
+</me>
+where <m>y</m> is the unknown function whose solution is sought. Note that we are allowed a non-constant function <m>g</m> on the right hand side.</p>
+
+<p>A <em>non-linear</em> ODE is one where some of the derivatives of <m>y</m>, or <m>y</m> itself, appear to a power higher than 1 or are multiplied together, such as in
+<me>
+t^4 \frac{d^2y}{dt^2} + y \frac{dy}{dt} = 0.
+</me>
+</p>
+  </statement>
+</definition>
+
+<p>
+  Solutions to ODEs will often feature a number of undetermined constants which can be determined if extra information is given in form of <em>boundary conditions</em>, i.e. known values of the solution <m>y</m> at certain points in the domain, or <em>initial conditions</em>, i.e. known values of the solution <m>y(t)</m>  and some of its derivatives at <m>t=0</m>. Such initial values usually come from knowing the initial state of a system, the future behaviour of which will be governed by the ODE.
+</p>
+
+<example>
+  <statement>
+    <p>
+      Show how the boundary conditions <m>y(0)=1</m> and <m>y(1)=2</m> determine the constants that arise in the solution of
+<me>
+\frac{d^2y}{dt^2} = 0.
+</me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      See lecture.
+    </p>
+  </solution>
+</example>
+
+
+
+
 </section>
 <!-- <xi:include href="./integrals01.ptx" /> -->
 

@@ -12,7 +12,9 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
+<article class="definition definition-like"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Linear and non-linear ODEs.</span>
+</h6>
 <p>The method described here, Laplace transforms, can often find the exact solution to a <em class="emphasis">linear ordinary differential equation with constant coefficients</em>, i.e. one of the form</p>
 <div class="displaymath">
 \begin{equation*}
@@ -20,6 +22,11 @@ a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
 \end{equation*}
 </div>
 <p data-braille="continuation">where \(y\) is the unknown function whose solution is sought. Note that we are allowed a non-constant function \(g\) on the right hand side.</p>
-<span class="incontext"><a href="sec-terminology.html#p-9">in-context</a></span>
+<p>A <em class="emphasis">non-linear</em> ODE is one where some of the derivatives of \(y\text{,}\) or \(y\) itself, appear to a power higher than 1 or are multiplied together, such as in</p>
+<div class="displaymath">
+\begin{equation*}
+t^4 \frac{d^2y}{dt^2} + y \frac{dy}{dt} = 0.
+\end{equation*}
+</div></article><span class="incontext"><a href="sec-terminology.html#def-linearODE">in-context</a></span>
 </body>
 </html>
