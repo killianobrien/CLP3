@@ -68,7 +68,31 @@ t^4 \frac{d^2y}{dt^2} + y \frac{dy}{dt} = 0.
 In general a <em>transform</em> of a function, <m>x(t)</m> say, is a rule for associating a new function, <m>X(s)</m> say, to <m>x</m>. The new function depends on a new argument / variable <m>s</m>. The values of the original function <m>x(t)</m> are used somehow to define the new function <m>X</m>.
 </p>
 
+<definition xml:id="def-laplace-transform">
+<title>Laplace transform</title>
+  <statement>
+    <p>
+      Let <m>f</m> be a function defined on the positive real numbers. The <em>Laplace transform</em> of a function <m>f</m> is a function of a new variable <m>s</m> and is defined by the integral
+<me>
+\trans{f(t)} .
+</me>
+Various notations are commonly used for the Laplace transform of <m>f</m>. It can be denoted by any of
+<me>
+\L{f(t)}, \, \, \bar{f}(s) \text{ or } F(s).
+</me>
+    </p>
+  </statement>
+</definition>
+<p>
+The Laplace transform, <m>F(s)</m> makes sense as a complex valued function of the complex variable <m>s</m>. However we shall only consider it mostly as a function of the real variable <m>s</m>. In fact we shall not be making any particular use of the individual values of <m>F</m>, rather we shall be exploiting the existence of these transforms and their associated properties in order to find solutions to certain ODEs.
+</p>
+<p>
+Of course a function only has a transform if the integral in definition <xref ref="def-laplace-transform"/> converges. This will be so for most of the functions that we meet. In general it is so for functions of <em>exponential type</em>, i.e. functions that eventually are dominated by a suitable exponential function <m>e^{\lambda t}</m>.
+</p>
 
+<p>
+We can think of the Laplace transform of some kind of continuous analogue of a power series associated to a sequence of coefficients. This viewpoint is excellently described in a <url href="http://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/video-lectures/lecture-19-introduction-to-the-laplace-transform">video lecture</url> by Prof. Arthur Mattuck in the MIT OpenCourseWare Differential Equations course.
+</p>
 
 
 
