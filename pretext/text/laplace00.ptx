@@ -94,10 +94,398 @@ Of course a function only has a transform if the integral in definition <xref re
 We can think of the Laplace transform of some kind of continuous analogue of a power series associated to a sequence of coefficients. This viewpoint is excellently described in a <url href="http://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/video-lectures/lecture-19-introduction-to-the-laplace-transform">video lecture</url> by Prof. Arthur Mattuck in the MIT OpenCourseWare Differential Equations course.
 </p>
 
+<example>
+<title>The tranform of the constant function <m>1</m>.</title>
+  <statement>
+    <p>
+      The Laplace transform, <m>\L{1}</m>, of the constant function <m>1</m> is given by 
+      <me>
+        \L{1} = \frac{1}{s}.
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+<md>
+  <mrow>\L{f(t)} \amp= \trans{1},</mrow>
+  <mrow> \amp = \trans{},</mrow>
+  <mrow> \amp = \left [ \frac{e^{-st}}{-s} \right ]_0^\infty, </mrow>
+  <mrow> \amp = \frac{1}{s}, \text{ for $s>0$}.</mrow>
+</md>
+    </p>
+  </solution>
+</example>
 
+<example>
+  <title>The transform of the identity function, <m>f(t)=t</m>.</title>
+  <statement>
+    <p>
+      If <m>f</m> is the function defined by <m>f(t) = t</m> for <m>t\geq 0</m> then <m>\L{f(t)}=\frac{1}{s^2}.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>\L{f(t)} \amp = \trans{t},</mrow>
+        <mrow> \amp = \int_0^\infty t \, \frac{d}{dt} \left ( \frac{e^{-st}}{-s} \right ) \, dt,</mrow>
+        <mrow> \amp = \left [ t\,  \frac{e^{-st}}{-s} \right ]_0^\infty - \int_0^\infty \frac{e^{-st}}{-s} \, dt , \text{ int. by parts},</mrow>
+        <mrow> \amp = \frac{1}{s} \int_0^\infty e^{-st} \, dt, \text{ for $s>0$},</mrow>
+        <mrow> \amp =  \frac{1}{s^2}.</mrow>
+      </md>
+    </p>
+  </solution>
+</example>
 
-
+<example>
+  <title>Transform of the exponential</title>
+  <statement>
+    <p>
+      If <m>f</m> is a function of exponential type like <m>f(t) = e^{-at}</m> for <m>t>0</m> and <m>a \in \mathbb{R}</m> then <m>\L{f(t)}=\frac{1}{s-a}</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>\L{f(t)} \amp = \trans{e^{-at}},</mrow>
+        <mrow> \amp = \int_0^\infty e^{-(s+a)t} \, dt,</mrow>
+        <mrow> \amp = \frac{1}{s+a}, \text{ for $s+a > 0$}.</mrow>
+      </md>
+    </p>
+  </solution>
+</example>
 </section>
+
+<section xml:id="sec-laplace_table">
+  <title>Table of Laplace transforms</title>
+  <p>
+    Continuing in this vein we might find the Laplace transforms of all the standard functions that commonly arise in mathematics. However to make things easier, when we need to obtain transforms in practice we shall make use of a table of Laplace transforms, unless told otherwise. In table <xref ref="tab-laplace"/> you can find the transforms of the common functions we will encounter and a summary of some relevant properties of the transform.
+  </p>
+
+  <table xml:id="tab-laplace">
+  <title>Transforms of common functions</title>
+  <tabular top="major">
+    <row bottom="minor">
+      <cell>
+        Function
+      </cell>
+      <cell>
+        Transform <m>L[f(t)] = \displaystyle\int_0^\infty e^-stf(t) \, dt = \bar{f}(s)</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        1
+      </cell>
+      <cell>
+        <m>\dfrac{1}{s}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>t</m>
+      </cell>
+      <cell>
+        <m>\dfrac{1}{s^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>t^n</m>
+      </cell>
+      <cell>
+        <m>\dfrac{n!}{s^{n+1}} \qquad n</m> is a positive integer
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>e^-at</m>
+      </cell>
+      <cell>
+        <m>\dfrac{1}{s+a}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>te^-at</m>
+      </cell>
+      <cell>
+        <m>\dfrac{1}{(s+a)^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>t^ne^-at</m>
+      </cell>
+      <cell>
+        <m>\dfrac{n!}{(s+a)^{n+1}}\qquad n</m> is a positive integer
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\sin(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{\omega}{s^2 + \omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\cos(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{s}{s^2 + \omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>t\sin(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{2\omega s}{(s^2 + \omega^2)^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>t\cos(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{s^2 - \omega^2}{(s^2 + \omega^2)^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\sinh(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{\omega}{s^2 - \omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\cosh(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{s}{s^2 - \omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>e^-at\sin(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{\omega}{(s+a)^2+\omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>e^-at\cos(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{s+a}{(s+a)^2+\omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>e^-at\sinh(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{\omega}{(s+a)^2-\omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>e^-at\cosh(\omega t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{s+a}{(s+a)^2-\omega^2}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        Unit step function <m>H(t)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{1}{s}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        Unit impulse function <m>\delta (t)</m>
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>H(t-a)</m>
+      </cell>
+      <cell>
+        <m>\dfrac{1}{s}e^{-as}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\delta (t-a)</m>
+      </cell>
+      <cell>
+        <m>e^{-as}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>e^{-at}f(t)</m>
+      </cell>
+      <cell>
+        <m>\bar{f}(s+a)</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>tf(t)</m>
+      </cell>
+      <cell>
+        <m>-\dfrac{d}{ds} \bar{f}(s)</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>f(t-a)H(t-a)</m>
+      </cell>
+      <cell>
+        <m>e^{-as}\bar{f}(s)</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\dfrac{dx}{dt}</m>
+      </cell>
+      <cell>
+        <m>s\bar{x}-x_0</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\dfrac{d^2x}{dt^2}</m>
+      </cell>
+      <cell>
+        <m>s^2\bar{x}-sx_0-x_1</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\dfrac{d^3x}{dt^3}</m>
+      </cell>
+      <cell>
+        <m>s^3\bar{x}-s^2x_0-sx_1-x_2</m>
+      </cell>
+    </row>
+    <row bottom="major">
+      <cell>
+        <m>\displaystyle \int_0^t f(t) \, dt</m>
+      </cell>
+      <cell>
+        <m>\dfrac{1}{s}\bar{f}(s)</m>
+      </cell>
+    </row>
+  </tabular>
+</table>
+</section>
+
+<section xml:id="sec-transform_properties">
+  <title>Properties of the transform</title>
+  <p>
+    We now discuss some important properties of the transform that follow from the definition <xref ref="def-laplace-transform"/> and examples of using them to find transforms of futher functions.
+  </p>
+  <theorem xml:id="thm-transform_linearity">
+  <title>Linearity of the transform</title>
+      <statement>
+      <p>
+        The Laplace transform is linear, i.e. if <m>f</m> and <m>g</m> are two functions with Laplace transforms then for all <m>\alpha, \beta \in \mathbb{R}</m>,
+        <me>
+          \L{\alpha f + \beta g} = \alpha\L{f} + \beta \L{g}.
+        </me>
+             </p>
+    </statement>
+    <proof>
+      <p>
+        This follows directly from the linearity of integration.
+      </p>
+    </proof>
+  </theorem>
+  <example>
+  <title>Appying linearity</title>
+      <statement>
+      <p>
+        Find the Laplace transform <m>\L{3t + 4e^{-2t}}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>\L{3t + 4e^{-2t}} \amp = 3 \L{t} + 4 \L{e^{-2t}} , </mrow>
+          <mrow> \amp = \frac{3}{s^2} + \frac{4}{s+2}. </mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+  <p>
+    The next result links the derivative of a transform to the process of multiplying the original function by <m>t</m>.
+  </p>
+  <theorem xml:id="thm-deriv_of_transform">
+  <title>Derivative of the transform</title>
+      <statement>
+      <p>
+        Let <m>f</m> be a function with transform <m>F(s) = \L{f(t)}</m>, then 
+        <me>
+          \L{tf(t)} = - \frac{dF}{ds}.
+        </me>
+      </p>
+    </statement>
+    <proof>
+      <p>
+        <md>
+          <mrow>-\frac{dF}{ds} \amp = - \frac{d}{ds} \left ( \trans{f(t)} \right )  , </mrow>
+          <mrow> \amp  =  - \int_0^\infty \frac{\partial}{\partial s} \left ( e^{-st} f(t) \right ) \, dt ,</mrow>
+          <mrow> \amp  = - \int_0^\infty -t e^{-st} f(t) \, dt </mrow>
+          <mrow> \amp  = \trans{t f(t)}, </mrow>
+          <mrow> \amp  = \L{tf(t)}.</mrow>
+        </md>
+      </p>
+    </proof>
+  </theorem>
+  <p>
+    In a previous example we found that <m>\L{t}=\frac{1}{s}</m>. Now we can apply theorem <xref ref="thm-deriv_of_transform"/> to find <m>\L{t^n}</m> for any positive integer <m>n</m>.
+  </p>
+  
+  <example xml:id="eg-trans_poly_term">
+  <title>Transforms of polynomial terms</title>
+      <statement>
+      <p>
+      For any integer <m>n\geq 0</m>,
+      <me>
+        \L{t^n} = \frac{1}{s^{n+1}}
+      </me></p>
+    </statement>
+    <solution>
+      <p>
+        The base case of <m>\L{t^0}=\L{1}=1/s</m> has already been proven. If <m>\L{t^k} = 1/s^{k+1}</m> then 
+        <md>
+          <mrow>\L{t^{k+1}} \amp = \L{t \cdot t^k},</mrow>
+          <mrow> \amp = -\frac{d}{ds} \left ( \frac{1}{s^{k+1}} \right ),</mrow>
+          <mrow> \amp = \frac{1}{s^{k+2}}.</mrow>
+        </md>
+      and so the result follows by induction on <m>n</m>.
+      </p>
+    </solution>
+  </example>
+  <p>
+    So now using linearity and example <xref ref="eg-trans_poly_term"/> we can find the transform of any poynomial in <m>t</m>.
+  </p>
+</section>
+
+
+
 
 
 <!-- <xi:include href="./integrals01.ptx" /> -->

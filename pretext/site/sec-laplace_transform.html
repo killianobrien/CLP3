@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-10T18:11:04Z    *-->
+<!--*    on 2022-11-14T16:58:47Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -243,10 +243,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-terminology.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-terminology.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-laplace_table.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-terminology.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-terminology.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-laplace_table.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -263,6 +263,8 @@ MathJax.Hub.Config({
 <a href="chap_laplace.html" data-scroll="chap_laplace"><span class="codenumber">1</span> <span class="title">Laplace transforms</span></a><ul>
 <li><a href="sec-terminology.html" data-scroll="sec-terminology">Terminology</a></li>
 <li><a href="sec-laplace_transform.html" data-scroll="sec-laplace_transform" class="active">The transform and its properties</a></li>
+<li><a href="sec-laplace_table.html" data-scroll="sec-laplace_table">Table of Laplace transforms</a></li>
+<li><a href="sec-transform_properties.html" data-scroll="sec-transform_properties">Properties of the transform</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
@@ -288,7 +290,51 @@ MathJax.Hub.Config({
 \end{equation*}
 </div></article><p id="p-16">The Laplace transform, \(F(s)\) makes sense as a complex valued function of the complex variable \(s\text{.}\) However we shall only consider it mostly as a function of the real variable \(s\text{.}\) In fact we shall not be making any particular use of the individual values of \(F\text{,}\) rather we shall be exploiting the existence of these transforms and their associated properties in order to find solutions to certain ODEs.</p>
 <p id="p-17">Of course a function only has a transform if the integral in definition <a class="xref" data-knowl="./knowl/def-laplace-transform.html" title="Definition 1.2.1: Laplace transform">1.2.1</a> converges. This will be so for most of the functions that we meet. In general it is so for functions of <em class="emphasis">exponential type</em>, i.e. functions that eventually are dominated by a suitable exponential function \(e^{\lambda t}\text{.}\)</p>
-<p id="p-18">We can think of the Laplace transform of some kind of continuous analogue of a power series associated to a sequence of coefficients. This viewpoint is excellently described in a <a class="external" href="http://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/video-lectures/lecture-19-introduction-to-the-laplace-transform" target="_blank">video lecture</a> by Prof. Arthur Mattuck in the MIT OpenCourseWare Differential Equations course.</p></section></div></main>
+<p id="p-18">We can think of the Laplace transform of some kind of continuous analogue of a power series associated to a sequence of coefficients. This viewpoint is excellently described in a <a class="external" href="http://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/video-lectures/lecture-19-introduction-to-the-laplace-transform" target="_blank">video lecture</a> by Prof. Arthur Mattuck in the MIT OpenCourseWare Differential Equations course.</p>
+<article class="example example-like" id="example-2"><a data-knowl="" class="id-ref original" data-refid="hk-example-2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">The tranform of the constant function \(1\text{.}\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"><p id="p-19">The Laplace transform, \(\L{1}\text{,}\) of the constant function \(1\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+\L{1} = \frac{1}{s}.
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like"><div class="displaymath" id="p-20">
+\begin{align*}
+\L{f(t)} \amp= \trans{1},\\
+\amp = \trans{},\\
+\amp = \left [ \frac{e^{-st}}{-s} \right ]_0^\infty, \\
+\amp = \frac{1}{s}, \text{ for $s&gt;0$}.
+\end{align*}
+</div></div></div>
+</div></article></div>
+<article class="example example-like" id="example-3"><a data-knowl="" class="id-ref original" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">The transform of the identity function, \(f(t)=t\text{.}\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like"><p id="p-21">If \(f\) is the function defined by \(f(t) = t\) for \(t\geq 0\) then \(\L{f(t)}=\frac{1}{s^2}.\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><div class="displaymath" id="p-22">
+\begin{align*}
+\L{f(t)} \amp = \trans{t},\\
+\amp = \int_0^\infty t \, \frac{d}{dt} \left ( \frac{e^{-st}}{-s} \right ) \, dt,\\
+\amp = \left [ t\,  \frac{e^{-st}}{-s} \right ]_0^\infty - \int_0^\infty \frac{e^{-st}}{-s} \, dt , \text{ int. by parts},\\
+\amp = \frac{1}{s} \int_0^\infty e^{-st} \, dt, \text{ for $s&gt;0$},\\
+\amp =  \frac{1}{s^2}.
+\end{align*}
+</div></div></div>
+</div></article></div>
+<article class="example example-like" id="example-4"><a data-knowl="" class="id-ref original" data-refid="hk-example-4"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Transform of the exponential.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-23">If \(f\) is a function of exponential type like \(f(t) = e^{-at}\) for \(t&gt;0\) and \(a \in \mathbb{R}\) then \(\L{f(t)}=\frac{1}{s-a}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath" id="p-24">
+\begin{align*}
+\L{f(t)} \amp = \trans{e^{-at}},\\
+\amp = \int_0^\infty e^{-(s+a)t} \, dt,\\
+\amp = \frac{1}{s+a}, \text{ for $s+a &gt; 0$}.
+\end{align*}
+</div></div></div>
+</div></article></div></section></div></main>
 </div>
 </body>
 </html>

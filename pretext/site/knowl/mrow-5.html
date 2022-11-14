@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-09T16:20:55Z    *-->
+<!--*    on 2022-11-14T16:58:47Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -14,9 +14,13 @@
 <body>
 <div class="displaymath">
 \begin{align*}
-\sin(-\theta)&amp;=-\sin(\theta) &amp; \cos(-\theta) &amp;=\cos(\theta)
+\L{f(t)} \amp = \trans{t},\\
+\amp = \int_0^\infty t \, \frac{d}{dt} \left ( \frac{e^{-st}}{-s} \right ) \, dt,\\
+\amp = \left [ t\,  \frac{e^{-st}}{-s} \right ]_0^\infty - \int_0^\infty \frac{e^{-st}}{-s} \, dt , \text{ int. by parts},\\
+\amp = \frac{1}{s} \int_0^\infty e^{-st} \, dt, \text{ for $s&gt;0$},\\
+\amp =  \frac{1}{s^2}.
 \end{align*}
 </div>
-<span class="incontext"><a href="app_trig.html#mjx-eqn-mrow-5">in-context</a></span>
+<span class="incontext"><a href="sec-laplace_transform.html#mjx-eqn-mrow-5">in-context</a></span>
 </body>
 </html>
