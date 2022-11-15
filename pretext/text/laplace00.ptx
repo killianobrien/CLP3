@@ -482,10 +482,74 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
   <p>
     So now using linearity and example <xref ref="eg-trans_poly_term"/> we can find the transform of any poynomial in <m>t</m>.
   </p>
+
+<p>
+  The next property concerns taking the Laplace transform of the derivative of a function. This is a key property that enables the transform to be used as a tool to solve ODEs, as ODEs feature many derivatives of the unknown function that we wish to find.
+</p>
+
+<theorem xml:id="thm-trans_deriv">
+<title>Transform of a derivative</title>  
+  <statement>
+    <p>
+      Let <m>x</m> be a function having a Laplace transform <m>\L{x(t)}</m>. Then
+<me>
+\L{\frac{dx}{dt}} = s \L{x(t)} - x(0).
+</me>
+    </p>
+  </statement>
+  <proof>
+    <p>
+      This can be shown using integration by parts, as follows,
+      <md>
+        <mrow> \L{\frac{dx}{dt}} \amp =\trans{\frac{dx}{dt}} , </mrow>
+        <mrow> \amp  =  \left [ e^{-st} x(t) \right ]_0^\infty - \int_0^\infty -se^{-st} x(t) \, dt </mrow>
+        <mrow> \amp  = -x(0) + s \trans{x(t)} ,</mrow>
+        <mrow> \amp = s \L{x(t)} - x(0),</mrow>
+      </md>
+      as required.
+    </p>
+  </proof>
+</theorem>
+<p>
+  The transforms of higher order derivatives can be obtained by iterating this result.
+</p>
+<corollary xml:id="cor-trans-deriv">
+  <statement>
+    <p>
+      Let <m>x</m> be a function having a Laplace transform <m>\L{x(t)}</m> and let <m>n \geq 1</m>. Then
+      <me>
+        \L{\frac{d^n x}{dt^n}} = s^n \L{x(t)} - \sum_{i=0}^{n-1} s^{n-1 - i}x_i,
+      </me>
+      where <m>x_i</m> denotes the initial value of the <m>i</m>th derivative of <m>x</m>, i.e.
+      <me>
+        x_i = \left. \frac{d^ix}{dt^i} \right |_{t=0}.
+      </me>
+      
+    </p>
+  </statement>
+  <proof>
+    <p>
+      Use induction on <m>n</m>, base case provided by theorem <xref ref="thm-trans_deriv"/>.
+    </p>
+  </proof>
+</corollary>
+<p>
+  Laplace transforms are invertible for most applications, and we will assume that this is the case. So we speak of the <em>inverse Laplace transform</em> of a function <m>F(s)</m> as being the function <m>f(t)</m> whose Laplace transform is <m>F(s)</m>, and we write
+<me>
+\Linv{F(s)} = f(t).
+</me>
+So for example <m>\Linv{\frac{1}{s^2}} = t</m> and <m>\Linv{\frac{1}{s-4}} = e^{4t}</m>.
+</p>
+<p>
+The inverse transform of an arbitrary function <m>F(s)</m> can be expressed/evaluated as a certain integral in the complex plane of the product of suitable exponential and <m>F</m>. However for our purposes we think of finding an inverse transform as an exercise in using the Laplace transform table in reverse, although in many cases it will be necessary to use the method of partial fractions as a precursor to this.
+</p>
 </section>
-
-
-
+<section xml:id="sec-ODE_solving">
+  <title>Solving ODEs using the transform</title>
+  <p>
+    We
+  </p>
+</section>
 
 
 <!-- <xi:include href="./integrals01.ptx" /> -->

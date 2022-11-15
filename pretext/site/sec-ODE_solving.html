@@ -9,7 +9,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Table of Laplace transforms</title>
+<title>Solving ODEs using the transform</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -243,10 +243,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-laplace_transform.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-transform_properties.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-transform_properties.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-laplace_transform.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-transform_properties.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-transform_properties.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -263,132 +263,18 @@ MathJax.Hub.Config({
 <a href="chap_laplace.html" data-scroll="chap_laplace"><span class="codenumber">1</span> <span class="title">Laplace transforms</span></a><ul>
 <li><a href="sec-terminology.html" data-scroll="sec-terminology">Terminology</a></li>
 <li><a href="sec-laplace_transform.html" data-scroll="sec-laplace_transform">The transform and its properties</a></li>
-<li><a href="sec-laplace_table.html" data-scroll="sec-laplace_table" class="active">Table of Laplace transforms</a></li>
+<li><a href="sec-laplace_table.html" data-scroll="sec-laplace_table">Table of Laplace transforms</a></li>
 <li><a href="sec-transform_properties.html" data-scroll="sec-transform_properties">Properties of the transform</a></li>
-<li><a href="sec-ODE_solving.html" data-scroll="sec-ODE_solving">Solving ODEs using the transform</a></li>
+<li><a href="sec-ODE_solving.html" data-scroll="sec-ODE_solving" class="active">Solving ODEs using the transform</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 </ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-laplace_table"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Table of Laplace transforms</span>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-ODE_solving"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Solving ODEs using the transform</span>
 </h2>
-<p id="p-25">Continuing in this vein we might find the Laplace transforms of all the standard functions that commonly arise in mathematics. However to make things easier, when we need to obtain transforms in practice we shall make use of a table of Laplace transforms, unless told otherwise. In table <a class="xref" data-knowl="./knowl/tab-laplace.html" title="Table 1.3.1: Transforms of common functions">1.3.1</a> you can find the transforms of the common functions we will encounter and a summary of some relevant properties of the transform.</p>
-<figure class="table table-like" id="tab-laplace"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.3.1<span class="period">.</span></span><span class="space"> </span>Transforms of common functions</figcaption><table>
-<tr>
-<td class="l m b1 r0 l0 t3 lines">Function</td>
-<td class="l m b1 r0 l0 t3 lines" data-braille="last-cell">Transform \(L[f(t)] = \displaystyle\int_0^\infty e^-stf(t) \, dt = \bar{f}(s)\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">1</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{s}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(t\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{s^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(t^n\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{n!}{s^{n+1}} \qquad n\) is a positive integer</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(e^-at\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{s+a}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(te^-at\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{(s+a)^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(t^ne^-at\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{n!}{(s+a)^{n+1}}\qquad n\) is a positive integer</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\sin(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{\omega}{s^2 + \omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\cos(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{s}{s^2 + \omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(t\sin(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{2\omega s}{(s^2 + \omega^2)^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(t\cos(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{s^2 - \omega^2}{(s^2 + \omega^2)^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\sinh(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{\omega}{s^2 - \omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\cosh(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{s}{s^2 - \omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(e^-at\sin(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{\omega}{(s+a)^2+\omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(e^-at\cos(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{s+a}{(s+a)^2+\omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(e^-at\sinh(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{\omega}{(s+a)^2-\omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(e^-at\cosh(\omega t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{s+a}{(s+a)^2-\omega^2}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">Unit step function \(H(t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{s}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">Unit impulse function \(\delta (t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">1</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(H(t-a)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{s}e^{-as}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\delta (t-a)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(e^{-as}\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(e^{-at}f(t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(\bar{f}(s+a)\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(tf(t)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(-\dfrac{d}{ds} \bar{f}(s)\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(f(t-a)H(t-a)\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(e^{-as}\bar{f}(s)\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\dfrac{dx}{dt}\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(s\bar{x}-x_0\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\dfrac{d^2x}{dt^2}\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(s^2\bar{x}-sx_0-x_1\)</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">\(\dfrac{d^3x}{dt^3}\)</td>
-<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">\(s^3\bar{x}-s^2x_0-sx_1-x_2\)</td>
-</tr>
-<tr>
-<td class="l m b3 r0 l0 t0 lines">\(\displaystyle \int_0^t f(t) \, dt\)</td>
-<td class="l m b3 r0 l0 t0 lines" data-braille="last-cell">\(\dfrac{1}{s}\bar{f}(s)\)</td>
-</tr>
-</table></figure></section></div></main>
+<p id="p-46">We</p></section></div></main>
 </div>
 </body>
 </html>
