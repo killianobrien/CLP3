@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-15T11:59:47Z    *-->
+<!--*    on 2022-11-15T17:02:09Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -243,10 +243,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-transform_properties.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-transform_properties.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-simultaneous_ODEs.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-transform_properties.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-transform_properties.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-simultaneous_ODEs.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -266,6 +266,8 @@ MathJax.Hub.Config({
 <li><a href="sec-laplace_table.html" data-scroll="sec-laplace_table">Table of Laplace transforms</a></li>
 <li><a href="sec-transform_properties.html" data-scroll="sec-transform_properties">Properties of the transform</a></li>
 <li><a href="sec-ODE_solving.html" data-scroll="sec-ODE_solving" class="active">Solving ODEs using the transform</a></li>
+<li><a href="sec-simultaneous_ODEs.html" data-scroll="sec-simultaneous_ODEs">Solving simultaneous (coupled) ODEs</a></li>
+<li><a href="sec-dirac_heaviside.html" data-scroll="sec-dirac_heaviside">Impulses and steps: The Dirac and Heaviside functions</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
@@ -274,7 +276,103 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-ODE_solving"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Solving ODEs using the transform</span>
 </h2>
-<p id="p-46">We</p></section></div></main>
+<p id="p-46">We describe here a four-step method for solving a linear ODE of the form</p>
+<div class="displaymath">
+\begin{equation*}
+a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
+\end{equation*}
+</div>
+<p data-braille="continuation">by finding a suitable expression defining the unknown function \(y(t)\text{.}\) The method should work as long as the function \(g\) has a reasonable Laplace transform. Usually we shall have appropriate initial values for the function \(y\) and its derivatives so that there will be no undetermined constants in the solutions. The four steps are:</p>
+<ol class="decimal">
+<li id="li-8"><p id="p-47"><em class="alert">Find the Laplace transform of the whole ODE.</em> This will require using the transform of derivatives property from Theorem <a class="xref" data-knowl="./knowl/thm-trans_deriv.html" title="Theorem 1.4.5: Transform of a derivative">1.4.5</a> to transform the left hand side and using the table of transforms, if necessary, to transform the function \(g\) on the right.</p></li>
+<li id="li-9"><p id="p-48"><em class="alert">Insert the initial conditions.</em> This should supply actual values for the undetermined constants \(y_i\) from the left hand side.</p></li>
+<li id="li-10"><p id="p-49"><em class="alert">Solve the resulting equation for \(\bar{y}\text{,}\) the Laplace transform of \(y\text{.}\)</em> This step should be straightforward and just relies on regular algebraic manipulation to find a formula in the variable \(s\) for \(\bar{y}\text{.}\)</p></li>
+<li id="li-11"><p id="p-50"><em class="alert">Find the inverse transform of \(\bar{y}\) to get the solution \(y(t)\) of the original ODE.</em> This may well require some simplifying work do be done on \(\bar{y}\) first, so that we have it in a form that enables us to find its inverse transform using the table.</p></li>
+</ol>
+<p data-braille="continuation">We illustrate these steps now with some examples.</p>
+<article class="example example-like" id="example-7"><a data-knowl="" class="id-ref original" data-refid="hk-example-7"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Solving a second-order ODE.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-51">Solve</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d^2y}{dt^2} - 5\frac{dy}{dt} + 4y = 12,
+\end{equation*}
+</div>
+<p data-braille="continuation">subject to the intitial conditions \(y(0)=y'(0)=0\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like">
+<p id="p-52">Transforming the equation gives</p>
+<div class="displaymath">
+\begin{equation*}
+s^2 \bar{y} - s y_0 -y_1 - 5(s \bar{y} - y_0) + 4\bar{y} = \frac{12}{s}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Inserting the initial values this becomes</p>
+<div class="displaymath">
+\begin{equation*}
+s^2 \bar{y} - 5s \bar{y} + 4\bar{y} = \frac{12}{s}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Solving for \(\bar{y}\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+\bar{y} = \frac{12}{s (s^2 - 5 + 4)}.
+\end{equation*}
+</div>
+<p data-braille="continuation">We wish now to recover \(y(t)\) by taking inverse transform of \(\bar{y}\text{.}\) However our current expression for \(\bar{y}\) is not featured anywhere on the table of Laplace transforms. So we seek a simpler expression for this rational function, i.e. we find its partial fraction expansion.</p>
+<div class="displaymath">
+\begin{align*}
+\bar{y} \amp = \frac{12}{s (s^2 - 5s + 4)},\\
+\amp = \frac{12}{s(s-4)(s-1)}, \\
+\amp = \frac{3}{s} + \frac{1}{s-4} - \frac{4}{s-1}.
+\end{align*}
+</div>
+<p data-braille="continuation">Now we have \(\bar{y}\) expressed as a linear combination of functions, each of which can be found on table of Laplace transforms. So reading the inverse transforms from the table we find the solution \(y\) as</p>
+<div class="displaymath">
+\begin{equation*}
+y(t) = 3 + e^{4t} - 4e^t.
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-8"><a data-knowl="" class="id-ref original" data-refid="hk-example-8"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Solving a first-order ODE.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><p id="p-53">Solve</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{dy}{dt} + 2y = 4,
+\end{equation*}
+</div>
+<p data-braille="continuation">subject to the initial condition \(y(0)=3\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like"><p id="p-54">In lecture.</p></div></div>
+</div></article></div>
+<p id="p-55">If one encounters irreducible quadratic factors in the denominator of \(\bar{y}\) then in the resulting partial fraction expansion they should be rewritten by <em class="emphasis">completing the square</em>. The inverse transforms of these terms will then contribute trigonometric or hyperbolic functions to the solution \(y\text{.}\)</p>
+<article class="example example-like" id="example-9"><a data-knowl="" class="id-ref original" data-refid="hk-example-9"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Dealing with irreducible quadratic factors.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-9"><article class="example example-like"><p id="p-56">Find the inverse transform of \(\bar{y}\text{,}\) where</p>
+<div class="displaymath">
+\begin{equation*}
+\bar{y} = \frac{3s+18}{s^2 + 4s + 13} .
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-9"><div class="solution solution-like">
+<p id="p-57">Checking its discriminant confirms that the denominator is irreducible. We proceed according the guidance above,</p>
+<div class="displaymath">
+\begin{align*}
+\bar{y}  = \frac{3s+18}{s^2 + 4s + 13} \amp= \frac{3s+18}{(s + 2)^2 + 9},\\
+\amp = 3\frac{s+2}{(s + 2)^2 + 3^2} + 4\frac{3}{(s + 2)^2 + 3^2}.
+\end{align*}
+</div>
+<p data-braille="continuation">We chose to make the final arrangements so that \(\bar{y}\) is now expressed as a linear combination of functions of \(s\text{,}\) both of which we can locate in the table. The inverse transform is now read off the table as</p>
+<div class="displaymath">
+\begin{equation*}
+y(t) = 3 \, e^{-2t}\cos(3t) + 4 \, e^{-2t}\sin(3t).
+\end{equation*}
+</div>
+</div></div>
+</div></article></div></section></div></main>
 </div>
 </body>
 </html>

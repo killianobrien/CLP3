@@ -547,10 +547,243 @@ The inverse transform of an arbitrary function <m>F(s)</m> can be expressed/eval
 <section xml:id="sec-ODE_solving">
   <title>Solving ODEs using the transform</title>
   <p>
-    We
+    We describe here a four-step method for solving a linear ODE of the form
+<me>
+a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
+</me>
+by finding a suitable expression defining the unknown function <m>y(t)</m>. The method should work as long as the function <m>g</m> has a reasonable Laplace transform. Usually we shall have appropriate initial values for the function <m>y</m> and its derivatives so that there will be no undetermined constants in the solutions. The four steps are:
+  <ol>
+    <li>
+      <p>
+        <alert>Find the Laplace transform of the whole ODE.</alert> This will require using the transform of derivatives property from Theorem <xref ref="thm-trans_deriv"/> to transform the left hand side and using the table of transforms, if necessary, to transform the function <m>g</m> on the right.
+      </p>
+    </li>
+    <li>
+      <p>
+        <alert>Insert the initial conditions.</alert> This should supply actual values for the undetermined constants <m>y_i</m> from the left hand side.
+      </p>
+    </li>
+    <li>
+      <p>
+        <alert>Solve the resulting equation for <m>\bar{y}</m>, the Laplace transform of <m>y</m>.</alert> This step should be straightforward and just relies on regular algebraic manipulation to find a formula in the variable <m>s</m> for <m>\bar{y}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        <alert>Find the inverse transform of <m>\bar{y}</m> to get the solution <m>y(t)</m> of the original ODE.</alert> This may well require some simplifying work do be done on <m>\bar{y}</m> first, so that we have it in a form that enables us to find its inverse transform using the table.
+      </p>
+    </li>
+  </ol>
+  We illustrate these steps now with some examples.
   </p>
+  <example>
+  <title>Solving a second-order ODE</title>
+      <statement>
+      <p>
+       Solve
+       <me>
+        \frac{d^2y}{dt^2} - 5\frac{dy}{dt} + 4y = 12,
+       </me>
+      subject to the intitial conditions <m>y(0)=y'(0)=0</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Transforming the equation gives
+<me>
+s^2 \bar{y} - s y_0 -y_1 - 5(s \bar{y} - y_0) + 4\bar{y} = \frac{12}{s}.
+</me>
+Inserting the initial values this becomes
+<me>
+  s^2 \bar{y} - 5s \bar{y} + 4\bar{y} = \frac{12}{s}.
+</me>
+Solving for <m>\bar{y}</m> gives
+<me>
+\bar{y} = \frac{12}{s (s^2 - 5 + 4)}.
+</me>
+We wish now to recover <m>y(t)</m> by taking inverse transform of <m>\bar{y}</m>. However our current expression for <m>\bar{y}</m> is not featured anywhere on the table of Laplace transforms. So we seek a simpler expression for this rational function, i.e. we find its partial fraction expansion.
+<md>
+  <mrow>\bar{y} \amp = \frac{12}{s (s^2 - 5s + 4)},</mrow>
+  <mrow> \amp = \frac{12}{s(s-4)(s-1)}, </mrow>
+  <mrow> \amp = \frac{3}{s} + \frac{1}{s-4} - \frac{4}{s-1}.</mrow>
+</md>
+Now we have <m>\bar{y}</m> expressed as a linear combination of functions, each of which can be found on table of Laplace transforms. So reading the inverse transforms from the table we find the solution <m>y</m> as
+<me>
+  y(t) = 3 + e^{4t} - 4e^t.
+  </me>
+      </p>
+    </solution>
+    </example>
+  <example>
+    <title>Solving a first-order ODE</title>
+    <statement>
+      <p>
+        Solve
+        <me>
+          \frac{dy}{dt} + 2y = 4,
+        </me>
+        subject to the initial condition <m>y(0)=3</m>.
+      </p>
+    </statement>   
+    <solution>
+      <p>
+        In lecture.
+      </p>
+    </solution>
+  </example>
+  <p>
+    If one encounters irreducible quadratic factors in the denominator of <m>\bar{y}</m> then in the resulting partial fraction expansion they should be rewritten by <em>completing the square</em>. The inverse transforms of these terms will then contribute trigonometric or hyperbolic functions to the solution <m>y</m>.
+  </p>
+  <example><title>Dealing with irreducible quadratic factors</title>
+      <statement>
+      <p>
+        Find the inverse transform of <m>\bar{y}</m>, where
+<me>
+\bar{y} = \frac{3s+18}{s^2 + 4s + 13} .
+</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Checking its discriminant confirms that the denominator is irreducible. We proceed according the guidance above,
+        <md>
+          <mrow>\bar{y}  = \frac{3s+18}{s^2 + 4s + 13} \amp= \frac{3s+18}{(s + 2)^2 + 9},</mrow>
+          <mrow> \amp = 3\frac{s+2}{(s + 2)^2 + 3^2} + 4\frac{3}{(s + 2)^2 + 3^2}.</mrow>
+        </md>
+        We chose to make the final arrangements so that <m>\bar{y}</m> is now expressed as a linear combination of functions of <m>s</m>, both of which we can locate in the table. The inverse transform is now read off the table as
+<me>
+y(t) = 3 \, e^{-2t}\cos(3t) + 4 \, e^{-2t}\sin(3t).
+</me>
+      </p>
+    </solution>
+  </example>
 </section>
 
+<section xml:id="sec-simultaneous_ODEs">
+  <title>Solving simultaneous (coupled) ODEs</title>
+  <p>
+    The Laplace transform method can also be applied to pairs of ODEs, both involving two unknown functions, <m>x</m> and <m>y</m> say, to which a simultaneous solution <m>(x,y)</m> is sought. Or indeed, we could apply it to a set of <m>n</m> ODEs featuring <m>n</m> unknown functions <m>x_1, \dots , x_n</m>, although the details would soon become unwieldy (by hand at least) as <m>n</m> increases.
+
+    We follow the four steps given previously, only in step 3 we will require strategies like substitution and elimination to find expressions for <m>\bar{x}</m> and <m>\bar{y}</m> as functions of <m>s</m> so that inverse transforms can be taken and the solution recovered.
+  </p>
+  <example><title>Solving coupled ODEs</title>
+      <statement>
+      <p>
+        Find the solution <m>(x,y)</m> that solves the pair of coupled ODEs,
+        <md>
+          <mrow>\frac{dx}{dt} + 4 \frac{dy}{dt} + 5x  \amp =3,</mrow>
+          <mrow>\frac{dy}{dt} + 3x + y \amp =2t,</mrow>
+        </md>
+        subject to the initial conditions <m>y(0)=2</m> and <m>x(0)=-3</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In the lecture.
+      </p>
+    </solution>
+  </example>
+</section>
+
+<section xml:id="sec-dirac_heaviside">
+  <title>Impulses and steps: The Dirac and Heaviside functions</title>
+  <p>
+    Some applications generate differential equations featuring discontinuous function. In this section we show how such functions can be represented and dealt with by the Laplace transform solution method.
+  </p>
+  <figure xml:id="fig-circuit">
+    <caption>Electrical circuit</caption>
+    <image width="50%">
+        <latex-image >
+          \begin{tikzpicture}[circuit ee IEC,x=3cm,y=2cm,semithick,
+          every info/.style={font=\footnotesize},
+          small circuit symbols,
+          set resistor graphic=var resistor IEC graphic,
+          set diode graphic=var diode IEC graphic,
+          set make contact graphic= var make contact IEC graphic,
+          scale=0.75]
+          % Let us start with some contacts:
+          \foreach \contact/\x in {1/1,2/2,3/3}
+          {
+          \node [contact] (top contact \contact) at (\x,0) {};
+          \node [contact] (bottom contact \contact) at (\x,1) {};
+          }
+          %\draw (top contact 1) -- (top contact 2) -- (top contact 3)
+          %-- (bottom contact 3) -- (bottom contact 2) -- (bottom contact 1) -- (top contact 1);
+
+          \draw (top contact 1) to [resistor={info=R\,}] (top contact 2);
+          \draw (top contact 2) to [inductor={info=L}]  (top contact 3);
+          \draw (top contact 3) to [capacitor={info=C}]  (bottom contact 3);
+          \draw (bottom contact 3) to [voltage source={info'=$E_0 \sin(\omega t)$}]  (bottom contact  2);
+          \draw (bottom contact 2) to [make contact]  (bottom contact  1);
+          \draw (bottom contact 1) --  (top contact  1);
+          \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+  <p>
+    For example, if <m>\mathrm{i}(t)</m> is the current in the electrical circuit shown in figure <xref ref="fig-circuit"/>, then <m>\mathrm{i}(t)</m> satisfies the integral equation
+<me>
+L \frac{di}{dt} + Ri + \frac{1}{C} \int_0^1 i(t) \, dt = E_0 \sin(\omega t).
+</me>
+If the circuit is switched on for a certain time period then the graph of the current might be shown by figure <xref ref="fig-alternating"/>, or for a direct current (a battery say) powering the circuit, like that in figure <xref ref="fig-direct"/>.
+  </p>
+   <sidebyside widths="40% 40%" margins="auto" valign="top">
+    <figure xml:id="fig-alternating">
+    <caption>Alternating current</caption>
+    <image width="50%">
+        <latex-image >
+          \begin{tikzpicture}
+          \coordinate (origin) at (0,0);
+          \coordinate (X) at (3,0);
+          \coordinate (Y) at (0,3);
+
+          \draw[->, color=black] (origin) node[below left] {$O$} -- (X) node[below] {Time};
+          \draw[->, color=black] (origin) -- (Y) node[left] {Current};
+
+          \coordinate (A) at (1,1);
+          \coordinate (a) at (1,0);
+          \coordinate (B) at (2,1);
+          \coordinate (b) at (2,0);
+
+          \draw[decorate,decoration={snake}] (A) -- (B);
+          \draw[dashed] (a) -- (A);
+          \draw[dashed] (b) -- (B);
+          \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+    <figure xml:id="fig-direct">
+    <caption>Direct current</caption>
+    <image width="50%">
+        <latex-image >
+          \begin{tikzpicture}
+          \coordinate (origin) at (0,0);
+          \coordinate (X) at (3,0);
+          \coordinate (Y) at (0,3);
+
+          \draw[->, color=black] (origin) node[below left] {$O$} -- (X) node[below] {Time};
+          \draw[->, color=black] (origin) -- (Y) node[left] {Current};
+
+          \coordinate (A) at (1,1);
+          \coordinate (a) at (1,0);
+          \coordinate (B) at (2,1);
+          \coordinate (b) at (2,0);
+
+          \draw (A) -- (B);
+          \draw[dashed] (a) -- (A);
+          \draw[dashed] (b) -- (B);
+          \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+</sidebyside>
+
+
+
+
+
+
+</section>
 
 <!-- <xi:include href="./integrals01.ptx" /> -->
 
