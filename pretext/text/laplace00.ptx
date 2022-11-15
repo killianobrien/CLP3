@@ -169,7 +169,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
         Function
       </cell>
       <cell>
-        Transform <m>L[f(t)] = \displaystyle\int_0^\infty e^-stf(t) \, dt = \bar{f}(s)</m>
+        Transform <m>L[f(t)] = \displaystyle\int_0^\infty e^{-st}f(t) \, dt = \bar{f}(s)</m>
       </cell>
     </row>
     <row>
@@ -198,7 +198,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
     </row>
     <row>
       <cell>
-        <m>e^-at</m>
+        <m>e^{-at}</m>
       </cell>
       <cell>
         <m>\dfrac{1}{s+a}</m>
@@ -206,7 +206,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
     </row>
     <row>
       <cell>
-        <m>te^-at</m>
+        <m>te^{-at}</m>
       </cell>
       <cell>
         <m>\dfrac{1}{(s+a)^2}</m>
@@ -214,7 +214,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
     </row>
     <row>
       <cell>
-        <m>t^ne^-at</m>
+        <m>t^ne^{-at}</m>
       </cell>
       <cell>
         <m>\dfrac{n!}{(s+a)^{n+1}}\qquad n</m> is a positive integer
@@ -270,7 +270,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
     </row>
     <row>
       <cell>
-        <m>e^-at\sin(\omega t)</m>
+        <m>e^{-at}\sin(\omega t)</m>
       </cell>
       <cell>
         <m>\dfrac{\omega}{(s+a)^2+\omega^2}</m>
@@ -278,7 +278,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
     </row>
     <row>
       <cell>
-        <m>e^-at\cos(\omega t)</m>
+        <m>e^{-at}\cos(\omega t)</m>
       </cell>
       <cell>
         <m>\dfrac{s+a}{(s+a)^2+\omega^2}</m>
@@ -286,7 +286,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
     </row>
     <row>
       <cell>
-        <m>e^-at\sinh(\omega t)</m>
+        <m>e^{-at}\sinh(\omega t)</m>
       </cell>
       <cell>
         <m>\dfrac{\omega}{(s+a)^2-\omega^2}</m>
@@ -294,7 +294,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
     </row>
     <row>
       <cell>
-        <m>e^-at\cosh(\omega t)</m>
+        <m>e^{-at}\cosh(\omega t)</m>
       </cell>
       <cell>
         <m>\dfrac{s+a}{(s+a)^2-\omega^2}</m>
@@ -777,6 +777,296 @@ If the circuit is switched on for a certain time period then the graph of the cu
     </image>
 </figure>
 </sidebyside>
+<p>
+  Such functions, which are <em>switched on</em> in a certain time interval, and then <em>switched off</em> at other times, can be expressed with the aid of the Heaviside step function.
+</p>
+<definition xml:id="def-heaviside">
+<title>Heaviside step function</title>
+  <statement>
+    <p>
+      The <em>Heaviside step function</em> <m>H(t)</m> is defined as
+<me>
+H(t) = \begin{cases} 0 \amp\text{if } t\lt 0 \\ 1 \amp\text{if } t \geq 0\end{cases} .
+</me>
+Its graph is shown in figure <xref ref="fig-heaviside"/>. We think of it as representing a signal of strength <m>1</m> which is switched off until <m>t=0</m> and then switched on thereafter.
+    </p>
+  </statement>
+</definition>
+<figure xml:id="fig-heaviside">
+    <caption>The Heaviside step function</caption>
+    <image width="40%">
+        <latex-image >
+          \begin{tikzpicture}[]
+          \coordinate (origin) at (0,0);
+          \coordinate (X) at (3,0);
+          \coordinate (Y) at (0,3);
+
+
+          \draw[->, color=gray] (origin) node[below left] {$O$} -- (X) node[below] {$t$};
+          \draw[->, color=gray] (origin) -- (Y) node[left] {$H(t)$};
+
+
+          \draw[->] (0,1) node[left] {$1$} -- (3,1);
+          \draw (-1,0) -- (origin);
+
+          \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+<p>
+  One can easily have the signal switch on at other points apart from <m>t=0</m>, by considering the Heaviside function where the argument is shifted by a fixed amount. Consider the function <m>H(t-a)</m> which satisfies
+<me>
+H(t-a) = \begin{cases} 0 \amp \text{if } t\lt a \\ 1 \amp \text{if } t \geq a\end{cases} ,
+</me>
+and whose graph is shown in figure <xref ref="fig-heaviside_at_a"/>.
+</p>
+<figure xml:id="fig-heaviside_at_a">
+    <caption>The Heaviside step function <m>H(t-a)</m></caption>
+    <image width="40%">
+        <latex-image >
+          \begin{tikzpicture}[scale=0.75]
+          \coordinate (origin) at (0,0);
+          \coordinate (X) at (3,0);
+          \coordinate (Y) at (0,3);
+
+          \draw[->, color=gray] (-1,0) -- (origin) node[below left] {$O$} -- (X) node[below] {$t$};
+          \draw[->, color=gray] (origin) -- (Y) node[left] {$H(t-a)$};
+
+
+          \draw (0,1) node[left] {$1$};
+          \draw[->] (1,1) -- (3,1);
+          \draw[dashed] (1,0) node[below] {$a$} -- (1,1);
+
+          \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+<p>
+        Using combinations of different Heaviside functions like this we can produce arbitrary signals that are switched on in a desired time interval and switched off at other times, as in the following examples. 
+</p>
+<example><title>Applications of the Heaviside step function</title>
+  <statement>
+    <p>
+      <ol>
+        <li>
+          <p>
+            Let <m>a \lt b</m>. What are the various values taken on by the function <m>g</m> defined by
+            <me>
+            g(t) = H(t-a) - H(t-b).
+            </me>
+            Draw the graph of <m>g</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+           Let <m>a \lt b</m>. What are the various values taken on by the function <m>f</m> defined by
+            <me>
+            f(t) = \big ( 1 + \cos(t) \big ) \big ( H(t-a) - H(t-b) \big ).
+            </me>
+            Draw the graph of <m>f</m>. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Consider the function <m>V</m> defined by
+            <me>
+            V(t) = \begin{cases} 0 \amp \text{if } t \lt 0 \\ 
+            t \amp\text{if } 0 \leq t \lt 2 \\ 
+            2 \amp \text{if } t \geq 2 \end{cases}.
+            </me>
+            Draw a graph of <m>V</m> and find a definition for <m>V</m> (not utilising different cases) involving suitable Heaviside step functions.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In lecture.
+    </p>
+  </solution>
+</example>
+<p>
+  Its important to remember that a function <m>\phi(t) \big ( H(t-a) - H(t-b) \big )</m> is the signal <m>\phi(t)</m> switched on between the values <m>t=a</m> and <m>t=b</m> and switched off at other times.
+</p>
+<p>
+  We also want the ability to model <em>impulses</em>, which is done with the Dirac delta function.
+</p>
+<definition xml:id="def-dirac"><title>Dirac delta function</title>
+ <statement>
+    <p>
+      The <em>Dirac delta</em> function <m>\delta</m> is the function<fn>Strictly speaking this is not a real valued function in the usual sense, it is more properly called a <em>distribution</em></fn> defined by
+      <me>
+      \delta(t) = \begin{cases} \infty \amp\text{if } t=0 \\ 
+      0 \amp\text{if } t \neq 0 \end{cases}.
+      </me>
+      The position of the <em>spike</em> can be moved, just as we moved the step in the Heaviside function earlier, by shifting the argument, i.e. the function <m>\delta(t-a)</m> satisfies
+      <me>
+      \delta(t-a) = \begin{cases} \infty \amp\text{if } t=a \\ 
+      0 \amp\text{if } t \neq a\end{cases}.
+      </me>
+    </p>
+  </statement>
+</definition>
+<p>
+  The transforms of the functions $\delta$ and $H$ are given by the following results.
+</p>
+<theorem xml:id="thm-transform_heaviside"><title>Transform of the Heaviside</title>
+  <statement>
+    <p>
+      The Laplace transform of the Heaviside step function <m>H(t-a)</m> is given by
+      <me>
+      \L{H(t-a)} = \frac{e^{-as}}{s} .
+      </me>
+    </p>
+  </statement>
+  <proof>
+    <p>
+      In lecture.
+    </p>
+  </proof>
+</theorem>
+<theorem xml:id="thm-transform_heaviside_product">
+<title>Transform of products with Heaviside</title>
+  <statement>
+    <p>
+      If <me>\L{f(t)} = F(s)</me> then the Laplace transform of the function <m>f(t-a)H(t-a)</m> is given by
+      <me>
+      \L{f(t-a)H(t-a)}= e^{-as} F(s) .
+      </me>
+    </p>
+  </statement>
+  <proof>
+    <p>
+      In lecture. 
+    </p>
+  </proof>
+</theorem>
+<theorem xml:id="thm-transform_dirac">
+<title>Transform of the Dirac delta function</title>
+  <statement>
+    <p>
+      The Laplace transform of the Dirac delta function <m>\delta(t-a)</m> is given by
+      <me>
+      \L{\delta(t-a)} = e^{-as} .
+      </me>
+    </p>
+  </statement>
+  <proof>
+    <p>
+      In lecture.
+    </p>
+  </proof>
+</theorem>
+<p>
+  These results can be applied to find transforms and inverse transforms of more general functions involving <m>H</m> and <m>\delta</m>.
+</p>
+<example>
+<title>Working with <m>H</m> and <m>\delta</m></title>
+  <statement>
+    <p>
+      <ol>
+        <li>
+          <p>
+            Find the Laplace transform of the function <m>R</m> defined by
+            <me>
+            R(t) = t^2 H(t-2).
+            </me>
+            Hint: For this it is necessary to re-express <m>R</m> as a combination of functions, all of which have the form <m>f(t-a)H(t-a)</m>, so that we can apply theorem <xref ref="thm-transform_heaviside_product"/>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the inverse Laplace transform of the function <m>U</m> defined by
+            <me>
+            U(s) = e^{-3s} + \frac{e^{-3s}}{s^2 + 1}.
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In lecture.
+    </p>
+  </solution>
+</example>
+<p>
+  With the help of the results and techniques concerning <m>\delta</m> and <m>H</m> which we have described above we should now be able to solve a wider class of ODEs, i.e. those involving these functions. We still follow the basic four steps as described before.
+</p>
+<example>
+<title>ODE featuring a Heaviside step function</title>
+  <statement>
+    <p>
+      Solve the ODE
+      <me>
+      \frac{d^2 y}{dt^2} - 4 \frac{dy}{dt} + 3y = 6 H(t-5),
+      </me>
+    subject to the initial conditions <m>y(0)=y'(0)=0</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In lecture.
+    </p>
+  </solution>
+</example>
+</section>
+
+<section xml:id="sec-final">
+  <title>Further terminology and results</title>
+  <p>
+    In the solution of the ODE
+<me>
+  \frac{d^2 y}{dt^2} + 4y = 10 e^{-t} + 8,
+</me>
+subject to <m>y(0)=7</m> and <m>y'(0)=-2</m> we get
+<me>
+y(t) = 3 \cos(2t) + 2 e^{-t} + 2.
+</me>
+As <m>t \to \infty</m> the first and last term of <m>y</m> will continue to have an effect on <m>y</m>, however the middle exponential term decays (converges) to <m>0</m>. We call such terms in a solution that converge to 0 as <m>t \to \infty</m>, <alert>transient</alert> terms. The other terms, which do not decay, are called <alert>steady state</alert> terms.
+  </p>
+  <p>
+    If <m>F(s)</m> is the Laplace transform of <m>f(t)</m> then there are various relationships between the limits of these functions (assuming the limits exist). Generally we have
+    <me>
+      \lim_{s \to \infty} F(s)=0.
+    </me>
+  </p>
+  <theorem xml:id="thm-initial_value">
+  <title>Initial value theorem</title>
+      <statement>
+      <p>
+      <me>
+      \lim_{t \to \infty} f(t) = \lim_{s \to 0} sF(s).
+      </me>
+      </p>
+    </statement>
+    <proof>
+      <p>
+        Omitted.
+      </p>
+    </proof>
+  </theorem>
+  <theorem xml:id="thm-final_value">
+  <title>Final value theorem</title>
+      <statement>
+      <p>
+        <me>
+          \lim_{t \to 0} f(t) = \lim_{s \to \infty} sF(s).
+        </me>
+        
+      </p>
+    </statement>
+    <proof>
+      <p>
+        Omitted.
+      </p>
+    </proof>
+  </theorem>
+  
+  
+
 
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-15T17:02:09Z    *-->
+<!--*    on 2022-11-15T23:24:04Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -243,10 +243,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-simultaneous_ODEs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-simultaneous_ODEs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-final.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-simultaneous_ODEs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-simultaneous_ODEs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_laplace.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-final.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -268,6 +268,7 @@ MathJax.Hub.Config({
 <li><a href="sec-ODE_solving.html" data-scroll="sec-ODE_solving">Solving ODEs using the transform</a></li>
 <li><a href="sec-simultaneous_ODEs.html" data-scroll="sec-simultaneous_ODEs">Solving simultaneous (coupled) ODEs</a></li>
 <li><a href="sec-dirac_heaviside.html" data-scroll="sec-dirac_heaviside" class="active">Impulses and steps: The Dirac and Heaviside functions</a></li>
+<li><a href="sec-final.html" data-scroll="sec-final">Further terminology and results</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
@@ -288,7 +289,155 @@ L \frac{di}{dt} + Ri + \frac{1}{C} \int_0^1 i(t) \, dt = E_0 \sin(\omega t).
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
 <div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><figure class="figure figure-like" id="fig-alternating"><img src="images/image-2.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.2<span class="period">.</span></span><span class="space"> </span>Alternating current</figcaption></figure></div>
 <div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><figure class="figure figure-like" id="fig-direct"><img src="images/image-3.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.3<span class="period">.</span></span><span class="space"> </span>Direct current</figcaption></figure></div>
-</div></div></section></div></main>
+</div></div>
+<p id="p-63">Such functions, which are <em class="emphasis">switched on</em> in a certain time interval, and then <em class="emphasis">switched off</em> at other times, can be expressed with the aid of the Heaviside step function.</p>
+<article class="definition definition-like" id="def-heaviside"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.7.4</span><span class="period">.</span><span class="space"> </span><span class="title">Heaviside step function.</span>
+</h6>
+<p id="p-64">The <em class="emphasis">Heaviside step function</em> \(H(t)\) is defined as</p>
+<div class="displaymath">
+\begin{equation*}
+H(t) = \begin{cases} 0 \amp\text{if } t\lt 0 \\ 1 \amp\text{if } t \geq 0\end{cases} .
+\end{equation*}
+</div>
+<p data-braille="continuation">Its graph is shown in figure <a class="xref" data-knowl="./knowl/fig-heaviside.html" title="Figure 1.7.5">1.7.5</a>. We think of it as representing a signal of strength \(1\) which is switched off until \(t=0\) and then switched on thereafter.</p></article><figure class="figure figure-like" id="fig-heaviside"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/image-4.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.5<span class="period">.</span></span><span class="space"> </span>The Heaviside step function</figcaption></figure><p id="p-65">One can easily have the signal switch on at other points apart from \(t=0\text{,}\) by considering the Heaviside function where the argument is shifted by a fixed amount. Consider the function \(H(t-a)\) which satisfies</p>
+<div class="displaymath">
+\begin{equation*}
+H(t-a) = \begin{cases} 0 \amp \text{if } t\lt a \\ 1 \amp \text{if } t \geq a\end{cases} ,
+\end{equation*}
+</div>
+<p data-braille="continuation">and whose graph is shown in figure <a class="xref" data-knowl="./knowl/fig-heaviside_at_a.html" title="Figure 1.7.6">1.7.6</a>.</p>
+<figure class="figure figure-like" id="fig-heaviside_at_a"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/image-5.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.6<span class="period">.</span></span><span class="space"> </span>The Heaviside step function \(H(t-a)\)</figcaption></figure><p id="p-66">Using combinations of different Heaviside functions like this we can produce arbitrary signals that are switched on in a desired time interval and switched off at other times, as in the following examples.</p>
+<article class="example example-like" id="example-11"><a data-knowl="" class="id-ref original" data-refid="hk-example-11"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">Applications of the Heaviside step function.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-11"><article class="example example-like"><ol id="p-67" class="decimal">
+<li id="li-12">
+<p id="p-68">Let \(a \lt b\text{.}\) What are the various values taken on by the function \(g\) defined by</p>
+<div class="displaymath">
+\begin{equation*}
+g(t) = H(t-a) - H(t-b).
+\end{equation*}
+</div>
+<p data-braille="continuation">Draw the graph of \(g\text{.}\)</p>
+</li>
+<li id="li-13">
+<p id="p-69">Let \(a \lt b\text{.}\) What are the various values taken on by the function \(f\) defined by</p>
+<div class="displaymath">
+\begin{equation*}
+f(t) = \big ( 1 + \cos(t) \big ) \big ( H(t-a) - H(t-b) \big ).
+\end{equation*}
+</div>
+<p data-braille="continuation">Draw the graph of \(f\text{.}\)</p>
+</li>
+<li id="li-14">
+<p id="p-70">Consider the function \(V\) defined by</p>
+<div class="displaymath">
+\begin{equation*}
+V(t) = \begin{cases} 0 \amp \text{if } t \lt 0 \\ 
+t \amp\text{if } 0 \leq t \lt 2 \\ 
+2 \amp \text{if } t \geq 2 \end{cases}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Draw a graph of \(V\) and find a definition for \(V\) (not utilising different cases) involving suitable Heaviside step functions.</p>
+</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like"><p id="p-71">In lecture.</p></div></div>
+</div></article></div>
+<p id="p-72">Its important to remember that a function \(\phi(t) \big ( H(t-a) - H(t-b) \big )\) is the signal \(\phi(t)\) switched on between the values \(t=a\) and \(t=b\) and switched off at other times.</p>
+<p id="p-73">We also want the ability to model <em class="emphasis">impulses</em>, which is done with the Dirac delta function.</p>
+<article class="definition definition-like" id="def-dirac"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.7.8</span><span class="period">.</span><span class="space"> </span><span class="title">Dirac delta function.</span>
+</h6>
+<p id="p-74">The <em class="emphasis">Dirac delta</em> function \(\delta\) is the function<a data-knowl="" class="id-ref fn-knowl" data-refid="hk-fn-2" id="fn-2"><sup> 1 </sup></a> defined by</p>
+<div class="displaymath">
+\begin{equation*}
+\delta(t) = \begin{cases} \infty \amp\text{if } t=0 \\ 
+0 \amp\text{if } t \neq 0 \end{cases}.
+\end{equation*}
+</div>
+<p data-braille="continuation">The position of the <em class="emphasis">spike</em> can be moved, just as we moved the step in the Heaviside function earlier, by shifting the argument, i.e. the function \(\delta(t-a)\) satisfies</p>
+<div class="displaymath">
+\begin{equation*}
+\delta(t-a) = \begin{cases} \infty \amp\text{if } t=a \\ 
+0 \amp\text{if } t \neq a\end{cases}.
+\end{equation*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-2"><div class="fn">Strictly speaking this is not a real valued function in the usual sense, it is more properly called a <em class="emphasis">distribution</em>
+</div></div></article><p id="p-75">The transforms of the functions $\delta$ and $H$ are given by the following results.</p>
+<article class="theorem theorem-like" id="thm-transform_heaviside"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.7.9</span><span class="period">.</span><span class="space"> </span><span class="title">Transform of the Heaviside.</span>
+</h6>
+<p id="p-76">The Laplace transform of the Heaviside step function \(H(t-a)\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+\L{H(t-a)} = \frac{e^{-as}}{s} .
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><p id="p-77">In lecture.</p></article></div>
+<article class="theorem theorem-like" id="thm-transform_heaviside_product"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.7.10</span><span class="period">.</span><span class="space"> </span><span class="title">Transform of products with Heaviside.</span>
+</h6>
+<p id="p-78">If</p>
+<div class="displaymath">
+\begin{equation*}
+\L{f(t)} = F(s)
+\end{equation*}
+</div>
+<p data-braille="continuation">then the Laplace transform of the function \(f(t-a)H(t-a)\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+\L{f(t-a)H(t-a)}= e^{-as} F(s) .
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-6"><a data-knowl="" class="id-ref original" data-refid="hk-proof-6"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-79">In lecture.</p></article></div>
+<article class="theorem theorem-like" id="thm-transform_dirac"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.7.11</span><span class="period">.</span><span class="space"> </span><span class="title">Transform of the Dirac delta function.</span>
+</h6>
+<p id="p-80">The Laplace transform of the Dirac delta function \(\delta(t-a)\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+\L{\delta(t-a)} = e^{-as} .
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-7"><a data-knowl="" class="id-ref original" data-refid="hk-proof-7"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof"><p id="p-81">In lecture.</p></article></div>
+<p id="p-82">These results can be applied to find transforms and inverse transforms of more general functions involving \(H\) and \(\delta\text{.}\)</p>
+<article class="example example-like" id="example-12"><a data-knowl="" class="id-ref original" data-refid="hk-example-12"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.12</span><span class="period">.</span><span class="space"> </span><span class="title">Working with \(H\) and \(\delta\).</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-12"><article class="example example-like"><ol id="p-83" class="decimal">
+<li id="li-15">
+<p id="p-84">Find the Laplace transform of the function \(R\) defined by</p>
+<div class="displaymath">
+\begin{equation*}
+R(t) = t^2 H(t-2).
+\end{equation*}
+</div>
+<p data-braille="continuation">Hint: For this it is necessary to re-express \(R\) as a combination of functions, all of which have the form \(f(t-a)H(t-a)\text{,}\) so that we can apply theorem <a class="xref" data-knowl="./knowl/thm-transform_heaviside_product.html" title="Theorem 1.7.10: Transform of products with Heaviside">1.7.10</a>.</p>
+</li>
+<li id="li-16">
+<p id="p-85">Find the inverse Laplace transform of the function \(U\) defined by</p>
+<div class="displaymath">
+\begin{equation*}
+U(s) = e^{-3s} + \frac{e^{-3s}}{s^2 + 1}.
+\end{equation*}
+</div>
+</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like"><p id="p-86">In lecture.</p></div></div>
+</div></article></div>
+<p id="p-87">With the help of the results and techniques concerning \(\delta\) and \(H\) which we have described above we should now be able to solve a wider class of ODEs, i.e. those involving these functions. We still follow the basic four steps as described before.</p>
+<article class="example example-like" id="example-13"><a data-knowl="" class="id-ref original" data-refid="hk-example-13"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7.13</span><span class="period">.</span><span class="space"> </span><span class="title">ODE featuring a Heaviside step function.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-13"><article class="example example-like"><p id="p-88">Solve the ODE</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d^2 y}{dt^2} - 4 \frac{dy}{dt} + 3y = 6 H(t-5),
+\end{equation*}
+</div>
+<p data-braille="continuation">subject to the initial conditions \(y(0)=y'(0)=0\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like"><p id="p-89">In lecture.</p></div></div>
+</div></article></div></section></div></main>
 </div>
 </body>
 </html>

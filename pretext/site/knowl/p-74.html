@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-09T16:20:55Z    *-->
+<!--*    on 2022-11-15T23:24:04Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In the ISO convention the symbols \(r\) (instead of \(\rho\)), \(\phi\) (instead of \(\theta\)) and \(\theta\) (instead of \(\phi\)) are used for spherical coordinates.</p>
+<p>The <em class="emphasis">Dirac delta</em> function \(\delta\) is the function<a class="fn-knowl" data-knowl="./knowl/fn-2-hidden.html" title="Footnote 1.7.1"><sup> 1 </sup></a> defined by</p>
 <div class="displaymath">
-\begin{align*}
-r&amp;=\text{ distance from }(0,0,0)\text{ to }(x,y,z)\\
-\theta&amp;=\text{ angle between the $z$ axis and the line joining $(x,y,z)$ to $(0,0,0)$}\\
-\phi&amp;=\text{ angle between the $x$ axis and the line joining $(x,y,0)$ to $(0,0,0)$}
-\end{align*}
+\begin{equation*}
+\delta(t) = \begin{cases} \infty \amp\text{if } t=0 \\ 
+0 \amp\text{if } t \neq 0 \end{cases}.
+\end{equation*}
 </div>
-<span class="incontext"><a href="ap_ISO.html#p-74">in-context</a></span>
+<p data-braille="continuation">The position of the <em class="emphasis">spike</em> can be moved, just as we moved the step in the Heaviside function earlier, by shifting the argument, i.e. the function \(\delta(t-a)\) satisfies</p>
+<div class="displaymath">
+\begin{equation*}
+\delta(t-a) = \begin{cases} \infty \amp\text{if } t=a \\ 
+0 \amp\text{if } t \neq a\end{cases}.
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-dirac_heaviside.html#p-74">in-context</a></span>
 </body>
 </html>
