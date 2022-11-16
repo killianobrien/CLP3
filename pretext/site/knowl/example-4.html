@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-15T23:24:04Z    *-->
+<!--*    on 2022-11-15T23:38:07Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,9 +13,32 @@
 </head>
 <body>
 <article class="example example-like"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Transform of the exponential.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h6>
-<p>If \(f\) is a function of exponential type like \(f(t) = e^{-at}\) for \(t&gt;0\) and \(a \in \mathbb{R}\) then \(\L{f(t)}=\frac{1}{s-a}\)</p>
-<div class="solutions"><a class="original" data-knowl="./knowl/solution-4-hidden.html" title="Solution 1.2.4.1"><span class="type">Solution</span></a></div></article><span class="incontext"><a href="sec-laplace_transform.html#example-4">in-context</a></span>
+<p>For example, if</p>
+<div class="displaymath">
+\begin{equation*}
+\va = \llt 1,2,3\rgt\qquad
+\vb = \llt 3,2,1\rgt\qquad
+\vc = \llt 1,0,1\rgt
+\end{equation*}
+</div>
+<p data-braille="continuation">then</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+2\va&amp;=2\llt 1,2,3\rgt&amp;&amp;=\llt 2,4,6\rgt\\
+-\vb&amp;=-\llt 3,2,1\rgt&amp;&amp;=\llt -3,-2,-1\rgt\\
+3\vc&amp;=3\llt 1,0,1\rgt&amp;&amp;=\llt 3,0,3\rgt
+\end{alignat*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{align*}
+2\va-\vb+3\vc
+&amp;= \llt 2,4,6\rgt + \llt -3,-2,-1\rgt+\llt 3,0,3\rgt\\
+&amp;= \llt 2-3+3\,,\,4-2+0\,,\,6-1+3\rgt\\
+&amp;= \llt 2,2,8 \rgt
+\end{align*}
+</div></article><span class="incontext"><a href="sec_vectors.html#example-4">in-context</a></span>
 </body>
 </html>

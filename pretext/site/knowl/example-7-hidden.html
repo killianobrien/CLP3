@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-15T23:24:04Z    *-->
+<!--*    on 2022-11-15T23:38:08Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -11,12 +11,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="example example-like"><p>Solve</p>
+<body><article class="example example-like"><p>Consider the three vectors</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{d^2y}{dt^2} - 5\frac{dy}{dt} + 4y = 12,
+\va=\llt 1,1,0 \rgt\qquad
+\vb=\llt 1,0,1 \rgt \qquad
+\vc=\llt -1,1,1\rgt
 \end{equation*}
 </div>
-<p data-braille="continuation">subject to the intitial conditions \(y(0)=y'(0)=0\text{.}\)</p>
-<div class="solutions"><a class="original" data-knowl="./knowl/solution-7-hidden.html" title="Solution 1.5.1.1"><span class="type">Solution</span></a></div></article></body>
+<p data-braille="continuation">Their dot products</p>
+<div class="displaymath">
+\begin{alignat*}{3}
+\va\cdot\vb &amp; = \llt 1,1,0 \rgt \cdot \llt 1,0,1 \rgt
+&amp;&amp; = 1\times 1 +1\times 0+0\times 1
+&amp;&amp; = 1\\
+\va\cdot\vc &amp; = \llt 1,1,0 \rgt \cdot \llt -1,1,1 \rgt
+&amp;&amp; = 1\times(-1) +1\times 1+0\times 1
+&amp;&amp; = 0\\
+\vb\cdot\vc &amp; = \llt 1,0,1 \rgt \cdot \llt -1,1,1 \rgt
+&amp;&amp; = 1\times(-1) +0\times 1+1\times 1
+&amp;&amp; = 0
+\end{alignat*}
+</div>
+<p data-braille="continuation">tell us that \(\vc\) is perpendicular to both \(\va\) and \(\vb\text{.}\) Since both \(|\va|=|\vb|=\sqrt{1^2+1^2+0^2}=\sqrt{2}\) the first dot product tells us that the angle, \(\theta\text{,}\) between \(\va\) and \(\vb\) obeys</p>
+<div class="displaymath">
+\begin{gather*}
+\cos\theta =\frac{\va\cdot\vb}{|\va|\,|\vb|}=\frac{1}{2}
+\implies
+\theta =\frac{\pi}{3}
+\end{gather*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/dotProd.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-08T13:44:16Z    *-->
+<!--*    on 2022-11-15T23:44:03Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,18 +13,20 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The cartesian and spherical coordinates are related by</p>
+<p>The <em class="emphasis">Dirac delta</em> function \(\delta\) is the function<a class="fn-knowl" data-knowl="./knowl/fn-159-hidden.html" title="Footnote 4.7.1"><sup> 1 </sup></a> defined by</p>
 <div class="displaymath">
-\begin{align*}
-x&amp;=r\sin\theta\cos\phi &amp;
-y&amp;=r\sin\theta\sin\phi &amp;
-z&amp;=r\cos\theta\\
-r&amp;=\sqrt{x^2+y^2+z^2} &amp;
-\phi&amp;=\arctan\frac{y}{x} &amp;
-\theta&amp;=\arctan\frac{\sqrt{x^2+y^2}}{z}
-\end{align*}
+\begin{equation*}
+\delta(t) = \begin{cases} \infty \amp\text{if } t=0 \\ 
+0 \amp\text{if } t \neq 0 \end{cases}.
+\end{equation*}
 </div>
-<p data-braille="continuation">Here are three figures showing a surface of constant \(r\text{,}\) a surface of constant \(\phi\text{,}\) and a surface of constant \(\theta\text{.}\)</p>
-<span class="incontext"><a href="ap_ISO.html#p-4201">in-context</a></span>
+<p data-braille="continuation">The position of the <em class="emphasis">spike</em> can be moved, just as we moved the step in the Heaviside function earlier, by shifting the argument, i.e. the function \(\delta(t-a)\) satisfies</p>
+<div class="displaymath">
+\begin{equation*}
+\delta(t-a) = \begin{cases} \infty \amp\text{if } t=a \\ 
+0 \amp\text{if } t \neq a\end{cases}.
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-dirac_heaviside.html#p-4201">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-15T23:24:04Z    *-->
+<!--*    on 2022-11-15T23:38:02Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>A <em class="emphasis">non-linear</em> ODE is one where some of the derivatives of \(y\text{,}\) or \(y\) itself, appear to a power higher than 1 or are multiplied together, such as in</p>
-<div class="displaymath">
-\begin{equation*}
-t^4 \frac{d^2y}{dt^2} + y \frac{dy}{dt} = 0.
-\end{equation*}
-</div>
-<span class="incontext"><a href="sec-terminology.html#p-10">in-context</a></span>
+<p>Observe that our 2d distances extend quite easily to 3d.</p>
+<ul class="disc">
+<li>the distance from the point \((x,y,z)\) to the \(xy\)-plane is \(|z|\)</li>
+<li>the distance from the point \((x,y,z)\) to the \(xz\)-plane is \(|y|\)</li>
+<li>the distance from the point \((x,y,z)\) to the \(yz\)-plane is \(|x|\)</li>
+<li>the distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is \(\sqrt{x^2+y^2+z^2}\)</li>
+</ul>
+<p data-braille="continuation">To see that the distance from the point \((x,y,z)\) to the origin \((0,0,0)\) is indeed  \(\sqrt{x^2+y^2+z^2}\text{,}\)</p>
+<ul class="disc">
+<li>apply Pythagoras to the right-angled triangle with vertices \((0,0,0)\text{,}\) \((x,0,0)\) and \((x,y,0)\) to see that the distance from \((0,0,0)\) to \((x,y,0)\) is \(\sqrt{x^2+y^2}\) and then</li>
+<li>apply Pythagoras to the right-angled triangle with vertices \((0,0,0)\text{,}\) \((x,y,0)\) and \((x,y,z)\) to see that the distance from \((0,0,0)\) to \((x,y,z)\) is \(\sqrt{{\big(\sqrt{x^2+y^2}\big)}^2+z^2}
+=\sqrt{x^2+y^2+z^2}\text{.}\)</li>
+</ul>
+<span class="incontext"><a href="sec-points.html#p-10">in-context</a></span>
 </body>
 </html>
