@@ -464,16 +464,17 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
       <p>
       For any integer <m>n\geq 0</m>,
       <me>
-        \L{t^n} = \frac{1}{s^{n+1}}
+        \L{t^n} = \frac{n!}{s^{n+1}}
       </me></p>
     </statement>
     <solution>
       <p>
-        The base case of <m>\L{t^0}=\L{1}=1/s</m> has already been proven. If <m>\L{t^k} = 1/s^{k+1}</m> then 
+        The base case of <m>\L{t^0}=\L{1}=1/s</m> has already been proven. If <m>\L{t^k} = k!/s^{k+1}</m> then 
         <md>
           <mrow>\L{t^{k+1}} \amp = \L{t \cdot t^k},</mrow>
-          <mrow> \amp = -\frac{d}{ds} \left ( \frac{1}{s^{k+1}} \right ),</mrow>
-          <mrow> \amp = \frac{1}{s^{k+2}}.</mrow>
+          <mrow> \amp = -\frac{d}{ds} \left ( \frac{k!}{s^{k+1}} \right ),</mrow>
+          <mrow> \amp = - \left (-(k+1) \frac{k!}{s^{k+2}}  \right )  </mrow>
+          <mrow> \amp = \frac{(k+1)!}{s^{k+2}}.</mrow>
         </md>
       and so the result follows by induction on <m>n</m>.
       </p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-15T23:37:43Z    *-->
+<!--*    on 2022-11-16T14:23:44Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -377,17 +377,18 @@ MathJax.Hub.Config({
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg-trans_poly_term"><article class="example example-like"><p id="p-4162">For any integer \(n\geq 0\text{,}\)</p>
 <div class="displaymath">
 \begin{equation*}
-\L{t^n} = \frac{1}{s^{n+1}}
+\L{t^n} = \frac{n!}{s^{n+1}}
 \end{equation*}
 </div>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-582" id="solution-582"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-582"><div class="solution solution-like">
-<p id="p-4163">The base case of \(\L{t^0}=\L{1}=1/s\) has already been proven. If \(\L{t^k} = 1/s^{k+1}\) then</p>
+<p id="p-4163">The base case of \(\L{t^0}=\L{1}=1/s\) has already been proven. If \(\L{t^k} = k!/s^{k+1}\) then</p>
 <div class="displaymath">
 \begin{align*}
 \L{t^{k+1}} \amp = \L{t \cdot t^k},\\
-\amp = -\frac{d}{ds} \left ( \frac{1}{s^{k+1}} \right ),\\
-\amp = \frac{1}{s^{k+2}}.
+\amp = -\frac{d}{ds} \left ( \frac{k!}{s^{k+1}} \right ),\\
+\amp = - \left (-(k+1) \frac{k!}{s^{k+2}}  \right )  \\
+\amp = \frac{(k+1)!}{s^{k+2}}.
 \end{align*}
 </div>
 <p data-braille="continuation">and so the result follows by induction on \(n\text{.}\)</p>
