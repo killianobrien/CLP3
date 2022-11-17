@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-16T14:23:44Z    *-->
+<!--*    on 2022-11-17T14:09:21Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -332,37 +332,37 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-transform_properties"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.4</span> <span class="title">Properties of the transform</span>
 </h2>
-<p id="p-4153">We now discuss some important properties of the transform that follow from the definition <a class="xref" data-knowl="./knowl/def-laplace-transform.html" title="Definition 4.2.1: Laplace transform">4.2.1</a> and examples of using them to find transforms of futher functions.</p>
+<p id="p-4154">We now discuss some important properties of the transform that follow from the definition <a class="xref" data-knowl="./knowl/def-laplace-transform.html" title="Definition 4.2.1: Laplace transform">4.2.1</a> and examples of using them to find transforms of futher functions.</p>
 <article class="theorem theorem-like" id="thm-transform_linearity"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Linearity of the transform.</span>
 </h6>
-<p id="p-4154">The Laplace transform is linear, i.e. if \(f\) and \(g\) are two functions with Laplace transforms then for all \(\alpha, \beta \in \mathbb{R}\text{,}\)</p>
+<p id="p-4155">The Laplace transform is linear, i.e. if \(f\) and \(g\) are two functions with Laplace transforms then for all \(\alpha, \beta \in \mathbb{R}\text{,}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \L{\alpha f + \beta g} = \alpha\L{f} + \beta \L{g}.
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-15"><a data-knowl="" class="id-ref original" data-refid="hk-proof-15"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><p id="p-4155">This follows directly from the linearity of integration.</p></article></div>
+</div></article><article class="hiddenproof" id="proof-15"><a data-knowl="" class="id-ref original" data-refid="hk-proof-15"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><p id="p-4156">This follows directly from the linearity of integration.</p></article></div>
 <article class="example example-like" id="example-184"><a data-knowl="" class="id-ref original" data-refid="hk-example-184"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Appying linearity.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-184"><article class="example example-like"><p id="p-4156">Find the Laplace transform \(\L{3t + 4e^{-2t}}\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-184"><article class="example example-like"><p id="p-4157">Find the Laplace transform \(\L{3t + 4e^{-2t}}\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-solution-581" id="solution-581"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-581"><div class="solution solution-like"><div class="displaymath" id="p-4157">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-581" id="solution-581"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-581"><div class="solution solution-like"><div class="displaymath" id="p-4158">
 \begin{align*}
 \L{3t + 4e^{-2t}} \amp = 3 \L{t} + 4 \L{e^{-2t}} , \\
 \amp = \frac{3}{s^2} + \frac{4}{s+2}. 
 \end{align*}
 </div></div></div>
 </div></article></div>
-<p id="p-4158">The next result links the derivative of a transform to the process of multiplying the original function by \(t\text{.}\)</p>
+<p id="p-4159">The next result links the derivative of a transform to the process of multiplying the original function by \(t\text{.}\)</p>
 <article class="theorem theorem-like" id="thm-deriv_of_transform"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of the transform.</span>
 </h6>
-<p id="p-4159">Let \(f\) be a function with transform \(F(s) = \L{f(t)}\text{,}\) then</p>
+<p id="p-4160">Let \(f\) be a function with transform \(F(s) = \L{f(t)}\text{,}\) then</p>
 <div class="displaymath">
 \begin{equation*}
 \L{tf(t)} = - \frac{dF}{ds}.
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-16"><a data-knowl="" class="id-ref original" data-refid="hk-proof-16"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-16"><article class="hiddenproof"><div class="displaymath" id="p-4160">
+</div></article><article class="hiddenproof" id="proof-16"><a data-knowl="" class="id-ref original" data-refid="hk-proof-16"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-16"><article class="hiddenproof"><div class="displaymath" id="p-4161">
 \begin{align*}
 -\frac{dF}{ds} \amp = - \frac{d}{ds} \left ( \trans{f(t)} \right )  , \\
 \amp  =  - \int_0^\infty \frac{\partial}{\partial s} \left ( e^{-st} f(t) \right ) \, dt ,\\
@@ -371,10 +371,10 @@ MathJax.Hub.Config({
 \amp  = \L{tf(t)}.
 \end{align*}
 </div></article></div>
-<p id="p-4161">In a previous example we found that \(\L{t}=\frac{1}{s}\text{.}\) Now we can apply theorem <a class="xref" data-knowl="./knowl/thm-deriv_of_transform.html" title="Theorem 4.4.3: Derivative of the transform">4.4.3</a> to find \(\L{t^n}\) for any positive integer \(n\text{.}\)</p>
+<p id="p-4162">In a previous example we found that \(\L{t}=\frac{1}{s}\text{.}\) Now we can apply theorem <a class="xref" data-knowl="./knowl/thm-deriv_of_transform.html" title="Theorem 4.4.3: Derivative of the transform">4.4.3</a> to find \(\L{t^n}\) for any positive integer \(n\text{.}\)</p>
 <article class="example example-like" id="eg-trans_poly_term"><a data-knowl="" class="id-ref original" data-refid="hk-eg-trans_poly_term"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Transforms of polynomial terms.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg-trans_poly_term"><article class="example example-like"><p id="p-4162">For any integer \(n\geq 0\text{,}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-eg-trans_poly_term"><article class="example example-like"><p id="p-4163">For any integer \(n\geq 0\text{,}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \L{t^n} = \frac{n!}{s^{n+1}}
@@ -382,7 +382,7 @@ MathJax.Hub.Config({
 </div>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-582" id="solution-582"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-582"><div class="solution solution-like">
-<p id="p-4163">The base case of \(\L{t^0}=\L{1}=1/s\) has already been proven. If \(\L{t^k} = k!/s^{k+1}\) then</p>
+<p id="p-4164">The base case of \(\L{t^0}=\L{1}=1/s\) has already been proven. If \(\L{t^k} = k!/s^{k+1}\) then</p>
 <div class="displaymath">
 \begin{align*}
 \L{t^{k+1}} \amp = \L{t \cdot t^k},\\
@@ -394,17 +394,17 @@ MathJax.Hub.Config({
 <p data-braille="continuation">and so the result follows by induction on \(n\text{.}\)</p>
 </div></div>
 </div></article></div>
-<p id="p-4164">So now using linearity and example <a class="xref" data-knowl="./knowl/eg-trans_poly_term.html" title="Example 4.4.4: Transforms of polynomial terms">4.4.4</a> we can find the transform of any poynomial in \(t\text{.}\)</p>
-<p id="p-4165">The next property concerns taking the Laplace transform of the derivative of a function. This is a key property that enables the transform to be used as a tool to solve ODEs, as ODEs feature many derivatives of the unknown function that we wish to find.</p>
+<p id="p-4165">So now using linearity and example <a class="xref" data-knowl="./knowl/eg-trans_poly_term.html" title="Example 4.4.4: Transforms of polynomial terms">4.4.4</a> we can find the transform of any poynomial in \(t\text{.}\)</p>
+<p id="p-4166">The next property concerns taking the Laplace transform of the derivative of a function. This is a key property that enables the transform to be used as a tool to solve ODEs, as ODEs feature many derivatives of the unknown function that we wish to find.</p>
 <article class="theorem theorem-like" id="thm-trans_deriv"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Transform of a derivative.</span>
 </h6>
-<p id="p-4166">Let \(x\) be a function having a Laplace transform \(\L{x(t)}\text{.}\) Then</p>
+<p id="p-4167">Let \(x\) be a function having a Laplace transform \(\L{x(t)}\text{.}\) Then</p>
 <div class="displaymath">
 \begin{equation*}
 \L{\frac{dx}{dt}} = s \L{x(t)} - x(0).
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-17"><a data-knowl="" class="id-ref original" data-refid="hk-proof-17"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof"><p id="p-4167">This can be shown using integration by parts, as follows,</p>
+</div></article><article class="hiddenproof" id="proof-17"><a data-knowl="" class="id-ref original" data-refid="hk-proof-17"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof"><p id="p-4168">This can be shown using integration by parts, as follows,</p>
 <div class="displaymath">
 \begin{align*}
 \L{\frac{dx}{dt}} \amp =\trans{\frac{dx}{dt}} , \\
@@ -414,11 +414,11 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <p data-braille="continuation">as required.</p></article></div>
-<p id="p-4168">The transforms of higher order derivatives can be obtained by iterating this result.</p>
+<p id="p-4169">The transforms of higher order derivatives can be obtained by iterating this result.</p>
 <article class="corollary theorem-like" id="cor-trans-deriv"><h6 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">4.4.6</span><span class="period">.</span>
 </h6>
-<p id="p-4169">Let \(x\) be a function having a Laplace transform \(\L{x(t)}\) and let \(n \geq 1\text{.}\) Then</p>
+<p id="p-4170">Let \(x\) be a function having a Laplace transform \(\L{x(t)}\) and let \(n \geq 1\text{.}\) Then</p>
 <div class="displaymath">
 \begin{equation*}
 \L{\frac{d^n x}{dt^n}} = s^n \L{x(t)} - \sum_{i=0}^{n-1} s^{n-1 - i}x_i,
@@ -429,15 +429,15 @@ MathJax.Hub.Config({
 \begin{equation*}
 x_i = \left. \frac{d^ix}{dt^i} \right |_{t=0}.
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-18"><a data-knowl="" class="id-ref original" data-refid="hk-proof-18"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><p id="p-4170">Use induction on \(n\text{,}\) base case provided by theorem <a class="xref" data-knowl="./knowl/thm-trans_deriv.html" title="Theorem 4.4.5: Transform of a derivative">4.4.5</a>.</p></article></div>
-<p id="p-4171">Laplace transforms are invertible for most applications, and we will assume that this is the case. So we speak of the <em class="emphasis">inverse Laplace transform</em> of a function \(F(s)\) as being the function \(f(t)\) whose Laplace transform is \(F(s)\text{,}\) and we write</p>
+</div></article><article class="hiddenproof" id="proof-18"><a data-knowl="" class="id-ref original" data-refid="hk-proof-18"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><p id="p-4171">Use induction on \(n\text{,}\) base case provided by theorem <a class="xref" data-knowl="./knowl/thm-trans_deriv.html" title="Theorem 4.4.5: Transform of a derivative">4.4.5</a>.</p></article></div>
+<p id="p-4172">Laplace transforms are invertible for most applications, and we will assume that this is the case. So we speak of the <em class="emphasis">inverse Laplace transform</em> of a function \(F(s)\) as being the function \(f(t)\) whose Laplace transform is \(F(s)\text{,}\) and we write</p>
 <div class="displaymath">
 \begin{equation*}
 \Linv{F(s)} = f(t).
 \end{equation*}
 </div>
 <p data-braille="continuation">So for example \(\Linv{\frac{1}{s^2}} = t\) and \(\Linv{\frac{1}{s-4}} = e^{4t}\text{.}\)</p>
-<p id="p-4172">The inverse transform of an arbitrary function \(F(s)\) can be expressed/evaluated as a certain integral in the complex plane of the product of suitable exponential and \(F\text{.}\) However for our purposes we think of finding an inverse transform as an exercise in using the Laplace transform table in reverse, although in many cases it will be necessary to use the method of partial fractions as a precursor to this.</p></section></div></main>
+<p id="p-4173">The inverse transform of an arbitrary function \(F(s)\) can be expressed/evaluated as a certain integral in the complex plane of the product of suitable exponential and \(F\text{.}\) However for our purposes we think of finding an inverse transform as an exercise in using the Laplace transform table in reverse, although in many cases it will be necessary to use the method of partial fractions as a precursor to this.</p></section></div></main>
 </div>
 </body>
 </html>

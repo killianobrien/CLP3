@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-16T14:23:45Z    *-->
+<!--*    on 2022-11-17T14:09:21Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -332,7 +332,7 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-ODE_solving"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">Solving ODEs using the transform</span>
 </h2>
-<p id="p-4173">We describe here a four-step method for solving a linear ODE of the form</p>
+<p id="p-4174">We describe here a four-step method for solving a linear ODE of the form</p>
 <div class="displaymath">
 \begin{equation*}
 a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
@@ -340,15 +340,15 @@ a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
 </div>
 <p data-braille="continuation">by finding a suitable expression defining the unknown function \(y(t)\text{.}\) The method should work as long as the function \(g\) has a reasonable Laplace transform. Usually we shall have appropriate initial values for the function \(y\) and its derivatives so that there will be no undetermined constants in the solutions. The four steps are:</p>
 <ol class="decimal">
-<li id="li-2325"><p id="p-4174"><em class="alert">Find the Laplace transform of the whole ODE.</em> This will require using the transform of derivatives property from Theorem <a class="xref" data-knowl="./knowl/thm-trans_deriv.html" title="Theorem 4.4.5: Transform of a derivative">4.4.5</a> to transform the left hand side and using the table of transforms, if necessary, to transform the function \(g\) on the right.</p></li>
-<li id="li-2326"><p id="p-4175"><em class="alert">Insert the initial conditions.</em> This should supply actual values for the undetermined constants \(y_i\) from the left hand side.</p></li>
-<li id="li-2327"><p id="p-4176"><em class="alert">Solve the resulting equation for \(\bar{y}\text{,}\) the Laplace transform of \(y\text{.}\)</em> This step should be straightforward and just relies on regular algebraic manipulation to find a formula in the variable \(s\) for \(\bar{y}\text{.}\)</p></li>
-<li id="li-2328"><p id="p-4177"><em class="alert">Find the inverse transform of \(\bar{y}\) to get the solution \(y(t)\) of the original ODE.</em> This may well require some simplifying work do be done on \(\bar{y}\) first, so that we have it in a form that enables us to find its inverse transform using the table.</p></li>
+<li id="li-2325"><p id="p-4175"><em class="alert">Find the Laplace transform of the whole ODE.</em> This will require using the transform of derivatives property from Theorem <a class="xref" data-knowl="./knowl/thm-trans_deriv.html" title="Theorem 4.4.5: Transform of a derivative">4.4.5</a> to transform the left hand side and using the table of transforms, if necessary, to transform the function \(g\) on the right.</p></li>
+<li id="li-2326"><p id="p-4176"><em class="alert">Insert the initial conditions.</em> This should supply actual values for the undetermined constants \(y_i\) from the left hand side.</p></li>
+<li id="li-2327"><p id="p-4177"><em class="alert">Solve the resulting equation for \(\bar{y}\text{,}\) the Laplace transform of \(y\text{.}\)</em> This step should be straightforward and just relies on regular algebraic manipulation to find a formula in the variable \(s\) for \(\bar{y}\text{.}\)</p></li>
+<li id="li-2328"><p id="p-4178"><em class="alert">Find the inverse transform of \(\bar{y}\) to get the solution \(y(t)\) of the original ODE.</em> This may well require some simplifying work do be done on \(\bar{y}\) first, so that we have it in a form that enables us to find its inverse transform using the table.</p></li>
 </ol>
 <p data-braille="continuation">We illustrate these steps now with some examples.</p>
 <article class="example example-like" id="example-186"><a data-knowl="" class="id-ref original" data-refid="hk-example-186"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Solving a second-order ODE.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-186"><article class="example example-like"><p id="p-4178">Solve</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-186"><article class="example example-like"><p id="p-4179">Solve</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{d^2y}{dt^2} - 5\frac{dy}{dt} + 4y = 12,
@@ -357,7 +357,7 @@ a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
 <p data-braille="continuation">subject to the intitial conditions \(y(0)=y'(0)=0\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-583" id="solution-583"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-583"><div class="solution solution-like">
-<p id="p-4179">Transforming the equation gives</p>
+<p id="p-4180">Transforming the equation gives</p>
 <div class="displaymath">
 \begin{equation*}
 s^2 \bar{y} - s y_0 -y_1 - 5(s \bar{y} - y_0) + 4\bar{y} = \frac{12}{s}.
@@ -393,7 +393,7 @@ y(t) = 3 + e^{4t} - 4e^t.
 </div></article></div>
 <article class="example example-like" id="example-187"><a data-knowl="" class="id-ref original" data-refid="hk-example-187"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Solving a first-order ODE.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-187"><article class="example example-like"><p id="p-4180">Solve</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-187"><article class="example example-like"><p id="p-4181">Solve</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{dy}{dt} + 2y = 4,
@@ -401,12 +401,12 @@ y(t) = 3 + e^{4t} - 4e^t.
 </div>
 <p data-braille="continuation">subject to the initial condition \(y(0)=3\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-solution-584" id="solution-584"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-584"><div class="solution solution-like"><p id="p-4181">In lecture.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-584" id="solution-584"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-584"><div class="solution solution-like"><p id="p-4182">In lecture.</p></div></div>
 </div></article></div>
-<p id="p-4182">If one encounters irreducible quadratic factors in the denominator of \(\bar{y}\) then in the resulting partial fraction expansion they should be rewritten by <em class="emphasis">completing the square</em>. The inverse transforms of these terms will then contribute trigonometric or hyperbolic functions to the solution \(y\text{.}\)</p>
+<p id="p-4183">If one encounters irreducible quadratic factors in the denominator of \(\bar{y}\) then in the resulting partial fraction expansion they should be rewritten by <em class="emphasis">completing the square</em>. The inverse transforms of these terms will then contribute trigonometric or hyperbolic functions to the solution \(y\text{.}\)</p>
 <article class="example example-like" id="example-188"><a data-knowl="" class="id-ref original" data-refid="hk-example-188"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Dealing with irreducible quadratic factors.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-188"><article class="example example-like"><p id="p-4183">Find the inverse transform of \(\bar{y}\text{,}\) where</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-188"><article class="example example-like"><p id="p-4184">Find the inverse transform of \(\bar{y}\text{,}\) where</p>
 <div class="displaymath">
 \begin{equation*}
 \bar{y} = \frac{3s+18}{s^2 + 4s + 13} .
@@ -414,7 +414,7 @@ y(t) = 3 + e^{4t} - 4e^t.
 </div>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-585" id="solution-585"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-585"><div class="solution solution-like">
-<p id="p-4184">Checking its discriminant confirms that the denominator is irreducible. We proceed according the guidance above,</p>
+<p id="p-4185">Checking its discriminant confirms that the denominator is irreducible. We proceed according the guidance above,</p>
 <div class="displaymath">
 \begin{align*}
 \bar{y}  = \frac{3s+18}{s^2 + 4s + 13} \amp= \frac{3s+18}{(s + 2)^2 + 9},\\

@@ -8,6 +8,9 @@
   <p>
     In this chapter we study Laplace transforms, which give us a method for finding <em>analytic</em><fn>An analytic solution to an ODE is an exact solution typically expressed as some combination of standard functions, as opposed to a <em>numerical solution</em>, which is one developed in an incremental way from some kind of initial or boundary conditions, like you have been studying in the Numerical Methods unit.</fn> solutions to certain linear ordinary differential equations. A key concept for understanding the topics in this chapter is how the Laplace transform takes the original problem, the ODE, and <em>transforms</em> it into a related problem in a different setting that is easier to solve than the original one. The solution to this related problem is then <em>transformed back</em>, using the inverse Laplace transform, to recover the solution to the original ODE.
   </p>
+  <p>
+    This chapter on Laplace transforms was added here by Killian O'Brien in November 2022.
+  </p>
 </introduction>
 <section xml:id="sec-terminology">
   <title>Terminology</title>

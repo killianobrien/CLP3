@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-16T14:33:46Z    *-->
+<!--*    on 2022-11-17T14:16:43Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,16 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>So now using linearity and example <a class="xref" data-knowl="./knowl/eg-trans_poly_term.html" title="Example 4.4.4: Transforms of polynomial terms">4.4.4</a> we can find the transform of any poynomial in \(t\text{.}\)</p>
+<p>The base case of \(\L{t^0}=\L{1}=1/s\) has already been proven. If \(\L{t^k} = k!/s^{k+1}\) then</p>
+<div class="displaymath">
+\begin{align*}
+\L{t^{k+1}} \amp = \L{t \cdot t^k},\\
+\amp = -\frac{d}{ds} \left ( \frac{k!}{s^{k+1}} \right ),\\
+\amp = - \left (-(k+1) \frac{k!}{s^{k+2}}  \right )  \\
+\amp = \frac{(k+1)!}{s^{k+2}}.
+\end{align*}
+</div>
+<p data-braille="continuation">and so the result follows by induction on \(n\text{.}\)</p>
 <span class="incontext"><a href="sec-transform_properties.html#p-4164">in-context</a></span>
 </body>
 </html>

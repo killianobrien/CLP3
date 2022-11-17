@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-16T14:33:55Z    *-->
+<!--*    on 2022-11-17T14:16:49Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,12 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>If \(F(s)\) is the Laplace transform of \(f(t)\) then there are various relationships between the limits of these functions (assuming the limits exist). Generally we have</p>
+<p>In the solution of the ODE</p>
 <div class="displaymath">
 \begin{equation*}
-\lim_{s \to \infty} F(s)=0.
+\frac{d^2 y}{dt^2} + 4y = 10 e^{-t} + 8,
 \end{equation*}
 </div>
+<p data-braille="continuation">subject to \(y(0)=7\) and \(y'(0)=-2\) we get</p>
+<div class="displaymath">
+\begin{equation*}
+y(t) = 3 \cos(2t) + 2 e^{-t} + 2.
+\end{equation*}
+</div>
+<p data-braille="continuation">As \(t \to \infty\) the first and last term of \(y\) will continue to have an effect on \(y\text{,}\) however the middle exponential term decays (converges) to \(0\text{.}\) We call such terms in a solution that converge to 0 as \(t \to \infty\text{,}\) <em class="alert">transient</em> terms. The other terms, which do not decay, are called <em class="alert">steady state</em> terms.</p>
 <span class="incontext"><a href="sec-final.html#p-4218">in-context</a></span>
 </body>
 </html>

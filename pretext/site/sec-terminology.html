@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-16T14:23:42Z    *-->
+<!--*    on 2022-11-17T14:09:19Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -335,33 +335,33 @@ MathJax.Hub.Config({
 <article class="definition definition-like" id="def-de"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Differential equations.</span>
 </h6>
-<p id="p-4134">A <em class="emphasis">differential equation</em> is an equation featuring one or more unknown functions and some of their derivatives. If the derivatives are all one-variable standard derivatives, e.g. \(\frac{dy}{dt}\) etc, then the equation is called an <em class="emphasis">ordinary differential equation</em> (ODE). If the derivatives are partial, e.g. \(\frac{\partial y}{\partial t}\) then the equation is called a <em class="emphasis">partial differential equation</em> (PDE).</p></article><p id="p-4135">Differential equations arise in a wide range of applications of mathematics to problems in motion, astronomy, physics, engineering, chemistry, biology , etc. In practice the differential equations one meets are often impossible to solve exactly (i.e. find an <em class="emphasis">analytic solution</em>) and instead we must use techniques to find approximations to the actual solutions (so called <em class="emphasis">numerical solutions</em>). However for special cases of ODEs we can describe methods to obtain exact solutions, one of which we describe in this chapter.</p>
+<p id="p-4135">A <em class="emphasis">differential equation</em> is an equation featuring one or more unknown functions and some of their derivatives. If the derivatives are all one-variable standard derivatives, e.g. \(\frac{dy}{dt}\) etc, then the equation is called an <em class="emphasis">ordinary differential equation</em> (ODE). If the derivatives are partial, e.g. \(\frac{\partial y}{\partial t}\) then the equation is called a <em class="emphasis">partial differential equation</em> (PDE).</p></article><p id="p-4136">Differential equations arise in a wide range of applications of mathematics to problems in motion, astronomy, physics, engineering, chemistry, biology , etc. In practice the differential equations one meets are often impossible to solve exactly (i.e. find an <em class="emphasis">analytic solution</em>) and instead we must use techniques to find approximations to the actual solutions (so called <em class="emphasis">numerical solutions</em>). However for special cases of ODEs we can describe methods to obtain exact solutions, one of which we describe in this chapter.</p>
 <article class="definition definition-like" id="def-linearODE"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Linear and non-linear ODEs.</span>
 </h6>
-<p id="p-4136">The method described here, Laplace transforms, can often find the exact solution to a <em class="emphasis">linear ordinary differential equation with constant coefficients</em>, i.e. one of the form</p>
+<p id="p-4137">The method described here, Laplace transforms, can often find the exact solution to a <em class="emphasis">linear ordinary differential equation with constant coefficients</em>, i.e. one of the form</p>
 <div class="displaymath">
 \begin{equation*}
 a_n \frac{d^ny}{dt^n} + \dots + a_1 \frac{dy}{dt} + a_0y = g(t),
 \end{equation*}
 </div>
 <p data-braille="continuation">where \(y\) is the unknown function whose solution is sought. Note that we are allowed a non-constant function \(g\) on the right hand side.</p>
-<p id="p-4137">A <em class="emphasis">non-linear</em> ODE is one where some of the derivatives of \(y\text{,}\) or \(y\) itself, appear to a power higher than 1 or are multiplied together, such as in</p>
+<p id="p-4138">A <em class="emphasis">non-linear</em> ODE is one where some of the derivatives of \(y\text{,}\) or \(y\) itself, appear to a power higher than 1 or are multiplied together, such as in</p>
 <div class="displaymath">
 \begin{equation*}
 t^4 \frac{d^2y}{dt^2} + y \frac{dy}{dt} = 0.
 \end{equation*}
-</div></article><p id="p-4138">Solutions to ODEs will often feature a number of undetermined constants which can be determined if extra information is given in form of <em class="emphasis">boundary conditions</em>, i.e. known values of the solution \(y\) at certain points in the domain, or <em class="emphasis">initial conditions</em>, i.e. known values of the solution \(y(t)\)  and some of its derivatives at \(t=0\text{.}\) Such initial values usually come from knowing the initial state of a system, the future behaviour of which will be governed by the ODE.</p>
+</div></article><p id="p-4139">Solutions to ODEs will often feature a number of undetermined constants which can be determined if extra information is given in form of <em class="emphasis">boundary conditions</em>, i.e. known values of the solution \(y\) at certain points in the domain, or <em class="emphasis">initial conditions</em>, i.e. known values of the solution \(y(t)\)  and some of its derivatives at \(t=0\text{.}\) Such initial values usually come from knowing the initial state of a system, the future behaviour of which will be governed by the ODE.</p>
 <article class="example example-like" id="example-180"><a data-knowl="" class="id-ref original" data-refid="hk-example-180"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-180"><article class="example example-like"><p id="p-4139">Show how the boundary conditions \(y(0)=1\) and \(y(1)=2\) determine the constants that arise in the solution of</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-180"><article class="example example-like"><p id="p-4140">Show how the boundary conditions \(y(0)=1\) and \(y(1)=2\) determine the constants that arise in the solution of</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{d^2y}{dt^2} = 0.
 \end{equation*}
 </div>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-solution-577" id="solution-577"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-577"><div class="solution solution-like"><p id="p-4140">See lecture.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-577" id="solution-577"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-577"><div class="solution solution-like"><p id="p-4141">See lecture.</p></div></div>
 </div></article></div></section></div></main>
 </div>
 </body>
