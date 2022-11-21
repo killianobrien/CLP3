@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="chap_fourier">
+<!-- Copyright 2018-2020 Joel Feldman, Andrew Rechnitzer and Elyse Yeager -->
+<!-- This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License-->
+<!-- https://creativecommons.org/licenses/by-nc-sa/4.0 -->
+<!-- This chapter added by Killian O'Brien in November 2022 -->
+<title>Fourier series</title>
+<introduction>
+  <p>
+    The introduction to Fourier series.
+  </p>
+  </introduction>
+  <section xml:id="sec-test">
+    <title>test</title>
+    <p>asdf</p>
+  </section>
+  
+
+<!-- <xi:include href="./integrals01.ptx" /> -->
+
+ </chapter>
