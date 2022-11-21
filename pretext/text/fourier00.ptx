@@ -7,12 +7,56 @@
 <title>Fourier series</title>
 <introduction>
   <p>
-    The introduction to Fourier series.
+    In this chapter we learn how to express certain periodic functions as series of sine and cosine functions. Such a series is called a Fourier series. This and other aspects of Fourier analysis find important applications in the field of sound processing (and signal processing in general).
   </p>
   </introduction>
-  <section xml:id="sec-test">
-    <title>test</title>
-    <p>asdf</p>
+  <section xml:id="sec-fourier_defs">
+    <title>Fourier's theorem and initial definitions</title>
+    <theorem xml:id="thm-fourier">
+      <statement>
+        <p>
+          If <m>f: \mathbb{R} \to \mathbb{R}</m> is a periodic function of period <m>2 \pi</m> and in the interval <m>(-\pi, \pi)</m> has
+          <ol>
+            <li>
+              <p>
+                at most a finite number of discontinuities ,
+              </p>
+            </li>
+            <li>
+              <p>
+                at most a finite number of maxima and minima,
+              </p>
+            </li>
+          </ol>
+          then there exist a set of coefficients
+          <me>
+            a_0, a_1, a_2, \dots , b_1, b_2 , \dots \in \mathbb{R},
+          </me>
+          such that at any point of <m>x</m> of continuity of <m>f</m> 
+          we have
+          <me>
+            f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
+          </me>
+          and at points of discontinuity, <m>x_d</m>, the series satisfies
+          <me>
+            \frac{1}{2} \left ( f(x_d^+) + f(x_d^-) \right ) =
+\frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
+          </me>
+          where
+          <me>
+          f(x_d^+) = \lim_{x \downarrow x_d} f(x), \quad
+          f(x_d^-) = \lim_{x \uparrow x_d} f(x).            
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      The series of sines and cosines is referred to as the Fourier series for <m>f</m>. It agrees with <m>f</m> at all points of continuity of <m>f</m> and takes the average value of the left and right-handed limits of <m>f</m> at points of discontinuity.
+      </p>
+      <p>
+        The problem of finding a Fourier series for a given function <m>f</m> is the problem of determining the values of the <em>Fourier coefficients</em> <m>a_0, a_n , b_n, \, \, (n \geq 1)</m>, of <m>f</m>.
+      </p>
+    
   </section>
   
 
