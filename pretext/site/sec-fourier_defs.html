@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-21T12:28:56Z    *-->
+<!--*    on 2022-11-21T17:27:46Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -243,10 +243,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap_fourier.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap_fourier.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-fourier_coeffs.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap_fourier.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap_fourier.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-fourier_coeffs.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -260,7 +260,10 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link">
-<a href="chap_fourier.html" data-scroll="chap_fourier"><span class="codenumber">1</span> <span class="title">Fourier series</span></a><ul><li><a href="sec-fourier_defs.html" data-scroll="sec-fourier_defs" class="active">Fourier's theorem and initial definitions</a></li></ul>
+<a href="chap_fourier.html" data-scroll="chap_fourier"><span class="codenumber">1</span> <span class="title">Fourier series</span></a><ul>
+<li><a href="sec-fourier_defs.html" data-scroll="sec-fourier_defs" class="active">Fourier's theorem and initial definitions</a></li>
+<li><a href="sec-fourier_coeffs.html" data-scroll="sec-fourier_coeffs">Determining the Fourier coefficients</a></li>
+</ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 </ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -309,7 +312,7 @@ f(x_d^-) = \lim_{x \uparrow x_d} f(x).
 F= \left \{ 1, \cos(nx), \sin(nx) \, : \,  n \geq 1 \right \},
 \end{equation*}
 </div>
-<p data-braille="continuation">form an orthogonal basis for the infinite-dimensional vector space of functions satisfying the conditions in Fourier's theorem with respect to the inner-product</p>
+<p data-braille="continuation">form an <em class="emphasis">orthogonal basis</em> for the infinite-dimensional vector space of functions satisfying the conditions in Fourier's theorem with respect to the inner-product</p>
 <div class="displaymath">
 \begin{equation*}
 \langle \phi, \psi \rangle = \int_{-\pi}^\pi \phi(x) \psi(x) \, dx .
@@ -320,7 +323,15 @@ F= \left \{ 1, \cos(nx), \sin(nx) \, : \,  n \geq 1 \right \},
 \begin{equation*}
 \forall \phi, \psi \in F , \phi \neq \psi \Rightarrow \langle \phi, \psi \rangle = 0.
 \end{equation*}
-</div></section></div></main>
+</div>
+<p id="p-13">The various cases of the orthogonality of \(F\) can be proved by evaluating the integrals using standard trigonometric substitutions.</p>
+<article class="example example-like" id="example-1"><a data-knowl="" class="id-ref original" data-refid="hk-example-1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-1"><article class="example example-like"><p id="p-14">Show that the functions \(\phi(x)=\cos(mx)\) and \(\psi(x)=\sin(nx)\) are orthogonal with respect to \(\langle \, \,  , \,  \rangle\text{.}\)</p></article></div>
+<article class="example example-like" id="example-2"><a data-knowl="" class="id-ref original" data-refid="hk-example-2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"><p id="p-15">Evaluate \(\langle \phi, \psi \rangle\) when \(\phi(x) = \psi(x) =
+\sin(nx)\text{.}\)</p></article></div></section></div></main>
 </div>
 </body>
 </html>

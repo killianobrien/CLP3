@@ -71,8 +71,35 @@
            \forall \phi, \psi \in F , \phi \neq \psi \Rightarrow \langle \phi, \psi \rangle = 0.
         </me>
       </p>
+  <p>
+    The various cases of the orthogonality of <m>F</m> can be proved by evaluating the integrals using standard trigonometric substitutions. 
+    </p>
+  <example>
+    <p>
+    Show that the functions <m>\phi(x)=\cos(mx)</m> and <m>\psi(x)=\sin(nx)</m> are orthogonal with respect to <m>\langle \, \,  , \,  \rangle</m>.
+    </p>
+  </example>
+  <example>
+    <p>
+      Evaluate <m>\langle \phi, \psi \rangle</m> when <m>\phi(x) = \psi(x) =
+\sin(nx)</m>.
+    </p>
+  </example>
   </section>
-  
+  <section xml:id="sec-fourier_coeffs">
+    <title>Determining the Fourier coefficients</title>
+    <p>
+      The Fourier coefficients for a given function <m>f</m> can be found by evaluating the integral formulae.
+      <md>
+        <mrow>a_0  \amp = \frac{1}{\pi} \int_{-\pi}^\pi f(x) \, dx,</mrow>
+        <mrow>a_n \amp = \frac{1}{\pi} \int_{-\pi}^\pi f(x) \cos(nx) \, dx, \quad (n \geq 1)</mrow>
+        <mrow>b_n \amp = \frac{1}{\pi} \int_{-\pi}^\pi f(x) \sin(nx) \, dx \quad (n \geq 1).</mrow>
+      </md>
+      These can be justified by starting with the Fourier series for <m>f</m> and applying the orthogonality property of the inner product.
+    </p>
+    
+    
+  </section>
 
 <!-- <xi:include href="./integrals01.ptx" /> -->
 

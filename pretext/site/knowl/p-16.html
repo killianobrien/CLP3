@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-17T14:09:45Z    *-->
+<!--*    on 2022-11-21T17:27:46Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,19 +13,15 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>So the region</p>
+<p>The Fourier coefficients for a given function \(f\) can be found by evaluating the integral formulae.</p>
 <div class="displaymath">
-\begin{equation*}
-\Set{(x,y)}{ -12\le x^2-6x +y^2-4y \le -9,\ \ y\ge 1}
-\end{equation*}
+\begin{align*}
+a_0  \amp = \frac{1}{\pi} \int_{-\pi}^\pi f(x) \, dx,\\
+a_n \amp = \frac{1}{\pi} \int_{-\pi}^\pi f(x) \cos(nx) \, dx, \quad (n \geq 1)\\
+b_n \amp = \frac{1}{\pi} \int_{-\pi}^\pi f(x) \sin(nx) \, dx \quad (n \geq 1).
+\end{align*}
 </div>
-<p data-braille="continuation">consists of all points \((x,y)\) that</p>
-<ul class="circle">
-<li>are inside or on the circle \((x-3)^2 +(y-2)^2 = 4\) and</li>
-<li>are also outside or on the circle \((x-3)^2 +(y-2)^2 = 1\) and</li>
-<li>are also above or on the line \(y=1\text{.}\)</li>
-</ul>
-<p data-braille="continuation">It is the shaded region in the figure below.</p>
-<span class="incontext"><a href="sec-points.html#p-16">in-context</a></span>
+<p data-braille="continuation">These can be justified by starting with the Fourier series for \(f\) and applying the orthogonality property of the inner product.</p>
+<span class="incontext"><a href="sec-fourier_coeffs.html#p-16">in-context</a></span>
 </body>
 </html>
