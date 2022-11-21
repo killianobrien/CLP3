@@ -56,7 +56,21 @@
       <p>
         The problem of finding a Fourier series for a given function <m>f</m> is the problem of determining the values of the <em>Fourier coefficients</em> <m>a_0, a_n , b_n, \, \, (n \geq 1)</m>, of <m>f</m>.
       </p>
-    
+
+      <p>
+        The existence of Fourier series, and the method for finding the coefficients rely on the fact that the family of functions
+        <me>
+        F= \left \{ 1, \cos(nx), \sin(nx) \, : \,  n \geq 1 \right \},
+        </me>
+        form an <em>orthogonal basis</em> for the infinite-dimensional vector space of functions satisfying the conditions in Fourier's theorem with respect to the inner-product
+        <me>
+          \langle \phi, \psi \rangle = \int_{-\pi}^\pi \phi(x) \psi(x) \, dx .
+        </me>
+        That is
+        <me>
+           \forall \phi, \psi \in F , \phi \neq \psi \Rightarrow \langle \phi, \psi \rangle = 0.
+        </me>
+      </p>
   </section>
   
 
