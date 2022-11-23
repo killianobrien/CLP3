@@ -101,6 +101,24 @@
       These can be justified by starting with the Fourier series for <m>f</m> and applying the orthogonality property of the inner product.
     </p>
     
+    <example>
+      <statement>
+        <p>
+          Let <m>m</m> be an integer greater than <m>1</m>. Use the the Fourier series
+          <me>
+            f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
+          </me>
+to find an expression for <m>\langle f, \sin(mx) \rangle</m> and show how this produces the above formula for determining the Fourier coefficient <m>b_m</m>.
+
+A similar argument will produce the formulae for <m>a_0</m> and <m>a_m</m>, <m>m \geq 1</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In lectures.
+        </p>
+      </solution>
+    </example>
     
   </section>
 
