@@ -9,6 +9,9 @@
   <p>
     In this chapter we learn how to express certain periodic functions as series of sine and cosine functions. Such a series is called a Fourier series. This and other aspects of Fourier analysis find important applications in the field of sound processing (and signal processing in general).
   </p>
+  <p>
+    This chapter was added by Killian O'Brien in November 2022. 
+  </p>
   </introduction>
   <section xml:id="sec-fourier_defs">
     <title>Fourier's theorem and initial definitions</title>
