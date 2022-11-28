@@ -220,8 +220,236 @@ where the Fourier coefficients are given by
         </p>
       </solution>
   </example>
+  <p>
+    Odd and even functions behave systematically when we multiply them together.
+  </p>
+  <theorem xml:id="thm-fourier_odd_even">
+    <statement>
+      <p>
+        Products of odd and even functions obey the following rules,
+        <ol>
+          <li>
+            <p>
+            the product of two even funcctions is even,
+            </p>
+          </li>
+          <li>
+            <p>
+              the product of two odd functions is even,
+            </p>
+          </li>
+          <li>
+            <p>
+              the product of an odd function and an even function is odd.
+            </p>
+          </li>
+        </ol>
+        <alert>Warning:</alert> this multiplicative behaviour of odd and even functions does not match the multiplicative behaviour of odd and even <em>integers</em>! Make sure you do not confuse the two uses of the terms <em>odd</em> and <em>even.</em>
+      </p>
+    </statement>
+    <proof>
+      <p>
+        In lecture.
+      </p>
+    </proof>
+  </theorem>
+  <p>
+    Odd and even functions also have systematic behaviour when integrated over intervals centred at <m>0</m>. 
+  </p>
+<theorem xml:id="thm-fourier_odd_even_int">
+  <statement>
+    <p>
+      Suppose that <m>g</m> is an even function and <m>h</m> is an odd function. Then for any <m>T</m>,
+      <ul>
+        <li>
+          <p>
+             <me>
+              \int_{-T}^T g(x) \, dx = 2 \int_0^T g(x) \, dx,
+             </me>
+              
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              \int_{-T}^T h(x) \, dx = 0.
+            </me>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </statement>
+  <proof>
+    <p>
+      In lecture. 
+    </p>
+  </proof>
+</theorem>
+<p>
+  Applying these results to the integral formulae for Fourier coefficients we can prove the following results on Fourier series of even and odd functions.
+</p>
+<theorem xml:id="thm-fourier_even_series">
+  <title>Fourier series of even functions</title>
+   <statement>
+    <p>
+      Suppose that <m>g</m> is an even function with a Fourier series. Then its series takes the form
+<me>
+g(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx),
+</me>
+i.e. the sine Fourier coefficients are all zero. Moreover the <m>a_n</m> can be given by the formula
+<me>
+a_n = \frac{2}{\pi} \int_0^\pi g(x) \cos(nx) .
+</me>
+    </p>
+  </statement>
+</theorem>
 
+<theorem xml:id="thm-fourier_odd_series">
+  <title>Fourier series of odd functions</title>
+   <statement>
+    <p>
+      Suppose that <m>h</m> is an odd function with a Fourier series. Then its series takes the form
+<me>
+h(x) = \sum_{n=1}^\infty b_n \sin(nx),
+</me>
+i.e. the cosine and constant Fourier coefficients are all zero. Moreover the <m>b_n</m> can be given by the formula
+<me>
+b_n = \frac{2}{\pi} \int_0^\pi g(x) \sin(nx) .
+</me>
+    </p>
+  </statement>
+</theorem>
+
+<example>
+  <statement>
+    <p>
+Use the concept of odd/even functions to show that the Fourier series for the function <m>f</m> defined by
+<me>
+  f(x) = x^2,
+</me>
+is given by
+<me>
+f(x) = x^2 = \frac{\pi^2}{3} + 4 \sum_{n=1}^\infty \frac{(-1)^n}{n^2} \cos(nx) .
+</me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In lecture.
+    </p>
+  </solution>
+</example>
+<p>
+  Sometimes attention is only focused on the behaviour of a function <m>f</m> over half its range, i.e. looking at <m>f(x)</m> for <m>x \in (0 , \pi)</m>. Before finding the Fourier series we can alter the definition of <m>f</m> over the other half, <m>(-\pi,0)</m>, of its domain, in order to make <m>f</m> even or odd as we wish. In this way we can arrange that the resulting Fourier series is either a cosine series (one which consists of a constant term and cosine functions only) or a sine series (one which consists of sine functions only).
+</p>
+<example>
+  <statement>
+    <p>
+      Obtain a cosine Fourier series for the function <m>g</m> defined by,
+<me>
+  g(x)=x
+  </me>
+over the range <m>x \in (0, \infty)</m>.
+Use this Fourier series to obtain an interesting infinite series expression involving <m>\pi</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In lecture.4
+    </p>
+  </solution>
+</example>
 </section>
+<section xml:id="sec-fourier_convergence">
+  <title>Convergence of Fourier series</title>
+  <p>
+    Consider the Fourier series for <m>f(x)=x</m> over the range <m>(-\pi, \pi)</m> which is
+<md>
+  <mrow>x \amp = 2 \sum_{n=1}^\infty \frac{(-1)^{n+1}}{n} \sin(nx)</mrow>
+  <mrow>\amp = 2 \left ( \sin(x) - \frac{1}{2} \sin(2x) + \frac{1}{3} \sin(3x) - \frac{1}{4} \sin(4x) + \dots \right ).</mrow>
+  </md>
+Suppose we attempt to differentiate both sides of this equation, doing so term-by-term to the right hand side. This will produce the equation
+<me>
+1 = 2  \big ( \cos(x) - \cos(2x) + \cos(3x) - \cos(4x) + \dots  \big ).
+</me>
+However if we evaluate both sides of this equation at <m>x=0</m> we get
+<me>
+1 = 2 (1 - 1 + 1 - 1 + \dots ),
+</me>
+which is plainly nonsense. The problem is that we have assumed we could differentiate the right hand side of the Fourier series term-by-term, i.e. we assumed that
+<me>
+\frac{d}{dx} \left ( \sum_{n=1}^\infty b_n \sin(nx) \right ) = \sum_{n=1}^\infty \frac{d}{dx} \left ( b_n \sin(nx) \right ).
+</me>
+Of course, the derivative of a finite sum is always equal to the sum of the derivatives, as differentiation is a linear operator.  But infinite sums are a different matter. Term-by-term differentiation (or integration) of  an infinite series of functions (e.g. Taylor series, Fourier series, \dots) is only valid if the series <em>converges uniformly</em>. This is a stronger form of convergence than the usual <em>pointwise convergence</em>.
+  </p>
+
+
+  <theorem xml:id="thm-fourier_uni_conv">
+    <statement>
+      <p>
+        The Fourier series of the function <m>f</m> over <m>(-\pi, \pi)</m> is uniformly convergent if <m>f</m> is continuous on <m>(-\pi, \pi)</m>, <m>\frac{df}{dx}</m> is piece-wise continuous on <m>(-\pi, \pi)</m> and <m>f</m> is periodic of period <m>2\pi</m> so that <m>f(-\pi)=f(\pi)</m>.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        Omitted.
+      </p>
+    </proof>
+  </theorem>
+  
+  <theorem xml:id="thm-fourier_parseval">
+    <title>Parseval's theorem</title>
+    <statement>
+      <p>
+        If <m>f(x)</m> has period <m>2\pi</m> and its Fourier series
+<me>
+  f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
+  </me>
+converges uniformly over <m>(-\pi,\pi)</m> then
+<me>
+\frac{1}{2\pi} \int_{-\pi}^\pi \left ( f(x) \right )^2 \, dx =
+\frac{1}{4} a_0^2 + \frac{1}{2} \sum_{n=1}^\infty \left ( a_n^2 + b_n^2 \right ) .
+</me>
+      </p>
+    </statement>
+    <proof>
+      <p>
+        In lecture.
+      </p>
+    </proof>
+  </theorem>
+  <p>
+   Parseval's theorem can be used to determine the sum of particular series. 
+  </p>
+  <example>
+    <statement>
+      <p>
+        The Fourier series for the half-way rectified sine wave
+<me>
+  f(x) =
+\begin{cases}
+0 \amp , -\pi \lt x \leq 0 \\
+\sin(x) \amp, 0 \lt  x \leq \pi
+\end{cases}
+,</me>
+is the series
+<me>
+  f(x) = \frac{1}{\pi} + \frac{1}{2} \sin(x) -\frac{2}{\pi} \sum_{n=1}^\infty \frac{1}{4n^2 -1} \cos(2n x).
+  </me>
+Use Parseval's theorem to find the sum of the series
+<me>
+\sum_{n=1}^\infty \frac{1}{\left ( 4n^2 - 1 \right )^2}.
+</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In lecture. 
+      </p>
+    </solution>
+  </example>
+</section>
+
 <!-- <xi:include href="./integrals01.ptx" /> -->
 
  </chapter>
