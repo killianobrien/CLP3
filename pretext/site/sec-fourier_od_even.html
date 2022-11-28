@@ -9,7 +9,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Front Matter</title>
+<title>Odd and even functions</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -243,15 +243,15 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="clp_3_mc.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="clp_3_mc.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="colophon-1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-fourier_arbitrary.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="clp_3_mc.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="clp_3_mc.html" title="Up">Up</a><a class="next-button button toolbar-item" href="colophon-1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-fourier_arbitrary.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
-<li class="link frontmatter active">
+<li class="link frontmatter">
 <a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
 <li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
@@ -264,35 +264,37 @@ MathJax.Hub.Config({
 <li><a href="sec-fourier_defs.html" data-scroll="sec-fourier_defs">Fourier's theorem and initial definitions</a></li>
 <li><a href="sec-fourier_coeffs.html" data-scroll="sec-fourier_coeffs">Determining the Fourier coefficients</a></li>
 <li><a href="sec-fourier_arbitrary.html" data-scroll="sec-fourier_arbitrary">Fourier series on arbitrary intervals</a></li>
-<li><a href="sec-fourier_od_even.html" data-scroll="sec-fourier_od_even">Odd and even functions</a></li>
+<li><a href="sec-fourier_od_even.html" data-scroll="sec-fourier_od_even" class="active">Odd and even functions</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 </ul></nav><div class="extras"><nav><a class="feedback-link" href="mailto:clp@ugrad.math.ubc.ca?subject=clp3-pretext" target="_blank">Feedback</a><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="frontmatter" id="frontmatter"><h2 class="heading"><span class="title">CLP-3 Multivariable Calculus</span></h2>
-<div class="author">
-<div class="author-name">Joel Feldman</div>
-<div class="author-info">Department of Mathematics<br>University of British Columbia<br><a href="mailto:feldman@math.ubc.ca">feldman@math.ubc.ca</a>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-fourier_od_even"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Odd and even functions</span>
+</h2>
+<p id="p-27">Certain symmetry properties of functions can be reflected in their Fourier series.</p>
+<article class="definition definition-like" id="def-fourier-odd_even"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Odd and even functions.</span>
+</h6>
+<p id="p-28">A function \(f:\mathbb{R} \to \mathbb{R}\) is called <em class="emphasis">even</em> if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+\forall x \in \mathbb{R}, \, f(-x)=f(x).
+\end{equation*}
 </div>
+<p data-braille="continuation">A function \(f:\mathbb{R} \to \mathbb{R}\) is called <em class="emphasis">odd</em> if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+\forall x \in \mathbb{R}, \, f(-x)=-f(x).
+\end{equation*}
 </div>
-<div class="author">
-<div class="author-name">Andrew Rechnitzer</div>
-<div class="author-info">Department of Mathematics<br>University of British Columbia<br><a href="mailto:andrewr@math.ubc.ca">andrewr@math.ubc.ca</a>
-</div>
-</div>
-<div class="author">
-<div class="author-name">Elyse Yeager</div>
-<div class="author-info">Department of Mathematics<br>University of British Columbia<br><a href="mailto:elyse@math.ubc.ca">elyse@math.ubc.ca</a>
-</div>
-</div>
-<div class="date">November 28, 2022</div>
-<nav class="summary-links"><ul>
-<li><a href="colophon-1.html"><span class="title">Colophon</span></a></li>
-<li><a href="preface-1.html"><span class="title">Preface</span></a></li>
-<li><a href="preface-2.html"><span class="title">Feedback about the text</span></a></li>
-<li><a href="preface-3.html"><span class="title">CLP3 at Manchester Met</span></a></li>
-</ul></nav></section></div></main>
+<p id="p-29">The graph of an even function is symmetric under reflection in the \(y\)-axis. Whereas the graph of an odd function is symmetric under rotation about the origin by \(\pi\) radians.</p></article><article class="example example-like" id="example-6"><a data-knowl="" class="id-ref original" data-refid="hk-example-6"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like"><p id="p-30">The cosine function \(\cos(x)\) is even, while the sine function \(\sin(x)\) is odd. Is the function \(f(x)=x^n\) odd/even? Give an example of a function which is neither odd nor even. There is one function which is both odd and even. Which is it?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><p id="p-31">In lecture.</p></div></div>
+</div></article></div></section></div></main>
 </div>
 </body>
 </html>

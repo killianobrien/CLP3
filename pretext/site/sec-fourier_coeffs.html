@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-23T14:14:53Z    *-->
+<!--*    on 2022-11-28T13:34:46Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -243,10 +243,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-fourier_defs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-fourier_defs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-fourier_arbitrary.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-fourier_defs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-fourier_defs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap_fourier.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-fourier_arbitrary.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -263,6 +263,8 @@ MathJax.Hub.Config({
 <a href="chap_fourier.html" data-scroll="chap_fourier"><span class="codenumber">1</span> <span class="title">Fourier series</span></a><ul>
 <li><a href="sec-fourier_defs.html" data-scroll="sec-fourier_defs">Fourier's theorem and initial definitions</a></li>
 <li><a href="sec-fourier_coeffs.html" data-scroll="sec-fourier_coeffs" class="active">Determining the Fourier coefficients</a></li>
+<li><a href="sec-fourier_arbitrary.html" data-scroll="sec-fourier_arbitrary">Fourier series on arbitrary intervals</a></li>
+<li><a href="sec-fourier_od_even.html" data-scroll="sec-fourier_od_even">Odd and even functions</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
@@ -288,9 +290,41 @@ b_n \amp = \frac{1}{\pi} \int_{-\pi}^\pi f(x) \sin(nx) \, dx \quad (n \geq 1).
 f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
 \end{equation*}
 </div>
-<p data-braille="continuation">to find an expression for \(\langle f, \sin(mx) \rangle\) and show how this produces the above formula for determining the Fourier coefficient \(b_m\)$. A similar argument will produce the formulae for \(a_0\) and \(a_m\text{,}\) \(m \geq 1\text{.}\)</p>
+<p data-braille="continuation">to find an expression for \(\langle f, \sin(mx) \rangle\) and show how this produces the above formula for determining the Fourier coefficient \(b_m\text{.}\) A similar argument will produce the formulae for \(a_0\) and \(a_m\text{,}\) \(m \geq 1\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-19">In lectures.</p></div></div>
+</div></article></div>
+<p id="p-20">By evaluating these integrals we can determine the Fourier series representation of some familiar functions.</p>
+<article class="example example-like" id="example-4"><a data-knowl="" class="id-ref original" data-refid="hk-example-4"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-21">Show that the Fourier series for the square wave function \(f\) defined by</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = \begin{cases} 0 \amp \mbox{if } -\pi \lt x \lt 0 \\
+1 \amp \mbox{if } 0 \leq x \leq \pi . \end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">is given by</p>
+<div class="displaymath">
+\begin{align*}
+f(x) \amp = \frac{1}{2} + \frac{2}{\pi} \left (\sin(x) + \frac{1}{3}\sin(3x) + \frac{1}{5} \sin(5x) + \dots \right ),\\
+\amp = \frac{1}{2} + \frac{2}{\pi} \sum_{n=1}^\infty \frac{1}{2n-1} \sin \big((2n-1)x\big),
+\end{align*}
+</div>
+<p data-braille="continuation">and verify that the series has the required value at the point of discontinuity \(x=0\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like"><p id="p-22">In lecture.</p></div></div>
+</div></article></div>
+<article class="example example-like" id="example-5"><a data-knowl="" class="id-ref original" data-refid="hk-example-5"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-5"><article class="example example-like"><p id="p-23">Evaluating Fourier series at particular points can generate interesting series formulae. For instance, use evaluation at \(x=\frac{\pi}{2}\) of the Fourier series for the square wave to obtain the following formula for \(\pi\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\pi = 4 \sum_{m=1}^\infty \frac{(-1)^{m+1}}{2m -1} .
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><p id="p-24">In lecture.</p></div></div>
 </div></article></div></section></div></main>
 </div>
 </body>

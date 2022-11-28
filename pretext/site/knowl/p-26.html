@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-17T14:09:46Z    *-->
+<!--*    on 2022-11-28T13:34:46Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,14 +13,26 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Describe and sketch the set of all points \((x,y)\) in \(\bbbr^2\) that satisfy</p>
-<ol class="lower-alpha">
-<li>\(\displaystyle x=y\)</li>
-<li>\(\displaystyle x+y=1\)</li>
-<li>\(\displaystyle x^2+y^2=4\)</li>
-<li>\(\displaystyle x^2+y^2=2y\)</li>
-<li>\(\displaystyle x^2+y^2 \lt 2y\)</li>
-</ol>
-<span class="incontext"><a href="sec-points.html#p-26">in-context</a></span>
+<p>Consider the transformation</p>
+<div class="displaymath">
+\begin{equation*}
+t = \frac{\pi x}{T}.
+\end{equation*}
+</div>
+<p data-braille="continuation">As the variable \(x\) ranges from \(-T\) to \(T\text{,}\) the variable \(t\) ranges from \(-\pi\) to \(\pi\text{.}\) We can then show that if \(f\) is a function of period \(2T\) (which is well-behaved as described in Fourier's theorem) then \(f\) has a Fourier series</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos \left ( \frac{nx\pi}{T}\right ) + \sum_{n=1}^\infty b_n \sin\left ( \frac{nx\pi}{T}\right ) ,
+\end{equation*}
+</div>
+<p data-braille="continuation">where the Fourier coefficients are given by</p>
+<div class="displaymath">
+\begin{align*}
+a_0 \amp = \frac{1}{T} \int_{-T}^T f(x) \, dx,\\
+a_n \amp = \frac{1}{T} \int_{-T}^T f(x) \cos\left ( \frac{nx\pi}{T}\right )  \, dx, \quad (n \geq 1)\\
+b_n \amp = \frac{1}{T} \int_{-T}^T f(x) \sin\left ( \frac{nx\pi}{T}\right )  \, dx \quad (n \geq 1).
+\end{align*}
+</div>
+<span class="incontext"><a href="sec-fourier_arbitrary.html#p-26">in-context</a></span>
 </body>
 </html>
