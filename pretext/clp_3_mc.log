@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.19)  29 NOV 2022 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.19)  29 NOV 2022 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2124,7 +2124,7 @@ h the same identifier (name{tcb@cnt@block.4}) has been already used, duplicate
 ignored
 <to be read again> 
                    \relax 
-l.2957 ...{example}{}{g:example:idm45326319361504}
+l.2957 ...{example}{}{g:example:idm46424145969264}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.5}) has been already used, 
 duplicate ignored
@@ -3056,7 +3056,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5049 ...^2-2x+2\).}{g:example:idm45326282574768}
+l.5049 ...^2-2x+2\).}{g:example:idm46424109113728}
                                                   %
 
 pdfTeX warning: pdflatex (file ./figs/ellipseLevelB.pdf): PDF inclusion: found 
@@ -3077,7 +3077,7 @@ tion with the same identifier (name{tcb@cnt@block.6}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.5075 ...+y+z}=1\).}{g:example:idm45326282552256}
+l.5075 ...+y+z}=1\).}{g:example:idm46424109090304}
                                                   %
 <figs/planeLevel.pdf, id=2476, 204.765pt x 191.71625pt>
 File: figs/planeLevel.pdf Graphic file (type pdf)
@@ -4504,7 +4504,7 @@ on with the same identifier (name{tcb@cnt@block.4}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \relax 
-l.10818 ...Equation.}{g:example:idm45326278014832}
+l.10818 ...Equation.}{g:example:idm46424104553680}
                                                   % [191] [192]
 ************************************************
 Subsection 2.8.2 Really Optional \textemdash {} Derivation of the Wave Equation
@@ -5411,13 +5411,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .19}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14600 ...eorem}{}{}{g:theorem:idm45326274446144}
+l.14600 ...eorem}{}{}{g:theorem:idm46424100984672}
                                                   % [272 <./figs/intDecomp2.pdf
 >]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@blo
 ck.20}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14624 ...Fubini.}{}{g:theorem:idm45326274438304}
+l.14624 ...Fubini.}{}{g:theorem:idm46424100976832}
                                                   % [273]pdfTeX warning (ext4):
  destination with the same identifier (name{tcb@cnt@block.21}) has been already
  used, duplicate ignored
@@ -7019,7 +7019,7 @@ nation with the same identifier (name{tcb@cnt@block.10}) has been already used,
  duplicate ignored
 <to be read again> 
                    \relax 
-l.19839 ...example}{}{g:example:idm45326269433856}
+l.19839 ...example}{}{g:example:idm46424095971232}
                                                   % [375]
 ************************************************
 Subsection 3.8.3 The area enclosed by a closed loop
@@ -7028,7 +7028,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19874 ...example}{}{g:example:idm45326269422160}
+l.19874 ...example}{}{g:example:idm46424095959536}
                                                   %
 ************************************************
 Subsection 3.8.4 Path dependence and independence
@@ -7043,7 +7043,7 @@ l.19898 ...m}{}{}{x:theorem:thm-path-independence}
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19909 ...example}{}{g:example:idm45326269413632}
+l.19909 ...example}{}{g:example:idm46424095951072}
                                                   %
 ************************************************
 Section 3.9 Optional\textemdash {} Integrals in General Coordinates
@@ -7194,7 +7194,7 @@ l.20434 ...near ODEs.}{x:definition:def-linearODE}
 k.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20448 ...example}{}{g:example:idm45326269212864}
+l.20448 ...example}{}{g:example:idm46424095750176}
                                                   %
 ************************************************
 Section 4.2 The transform and its properties
@@ -7209,19 +7209,19 @@ nation with the same identifier (name{tcb@cnt@block.2}) has been already used,
 duplicate ignored
 <to be read again> 
                    \relax 
-l.20482 ...n \(1\)..}{g:example:idm45326269195776}
+l.20482 ...n \(1\)..}{g:example:idm46424095733088}
                                                   % [388]pdfTeX warning (ext4):
  destination with the same identifier (name{tcb@cnt@block.3}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20498 ...(t)=t\)..}{g:example:idm45326269190784}
+l.20498 ...(t)=t\)..}{g:example:idm46424095728096}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.4}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.20511 ...onential.}{g:example:idm45326269185312}
+l.20511 ...onential.}{g:example:idm46424095722624}
                                                   %
 ************************************************
 Section 4.3 Table of Laplace transforms
@@ -7245,7 +7245,7 @@ l.20575 ....}{}{x:theorem:thm-transform_linearity}
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20585 ...inearity.}{g:example:idm45326269127152}
+l.20585 ...inearity.}{g:example:idm46424095664528}
                                                   %
 Overfull \hbox (14.71472pt too wide) in paragraph at lines 20585--20587
 []\T1/lmr/bx/n/10 Example 4.4.2  Ap-py-ing lin-ear-ity. []\T1/lmr/m/n/10 Find t
@@ -7283,19 +7283,19 @@ Section 4.5 Solving ODEs using the transform
 block.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20693 ...rder ODE.}{g:example:idm45326269091936}
+l.20693 ...rder ODE.}{g:example:idm46424095629440}
                                                   % [393]pdfTeX warning (ext4):
  destination with the same identifier (name{tcb@cnt@block.2}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20724 ...rder ODE.}{g:example:idm45326269077184}
+l.20724 ...rder ODE.}{g:example:idm46424095614688}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.3}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.20734 ... factors.}{g:example:idm45326269067200}
+l.20734 ... factors.}{g:example:idm46424095604704}
                                                   %
 ************************************************
 Section 4.6 Solving simultaneous (coupled) ODEs
@@ -7304,7 +7304,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20761 ...led ODEs.}{g:example:idm45326269061024}
+l.20761 ...led ODEs.}{g:example:idm46424095598528}
                                                   % [394]
 ************************************************
 Section 4.7 Impulses and steps: The Dirac and Heaviside functions
@@ -7349,7 +7349,7 @@ nation with the same identifier (name{tcb@cnt@block.7}) has been already used,
 duplicate ignored
 <to be read again> 
                    \relax 
-l.20922 ...function.}{g:example:idm45326269028608}
+l.20922 ...function.}{g:example:idm46424095566176}
                                                   % [396]pdfTeX warning (ext4):
  destination with the same identifier (name{tcb@cnt@block.8}) has been already 
 used, duplicate ignored
@@ -7379,13 +7379,13 @@ nation with the same identifier (name{tcb@cnt@block.12}) has been already used,
  duplicate ignored
 <to be read again> 
                    \relax 
-l.21000 ...\delta\).}{g:example:idm45326269000608}
+l.21000 ...\delta\).}{g:example:idm46424095538112}
                                                   % [397]pdfTeX warning (ext4):
  destination with the same identifier (name{tcb@cnt@block.13}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21019 ...function.}{g:example:idm45326268991808}
+l.21019 ...function.}{g:example:idm46424095529312}
                                                   %
 ************************************************
 Section 4.8 Further terminology and results
@@ -7421,13 +7421,13 @@ l.21092 \begin{theorem}{}{}{x:theorem:thm-fourier}
 k.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21137 ...example}{}{g:example:idm45326268958448}
+l.21137 ...example}{}{g:example:idm46424095495824}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.3}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.21140 ...example}{}{g:example:idm45326268956512}
+l.21140 ...example}{}{g:example:idm46424095493888}
                                                   %
 ************************************************
 Section 5.2 Determining the Fourier coefficients
@@ -7436,19 +7436,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21159 ...example}{}{g:example:idm45326268951808}
+l.21159 ...example}{}{g:example:idm46424095489184}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.2}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.21169 ...example}{}{g:example:idm45326268946224}
+l.21169 ...example}{}{g:example:idm46424095483600}
                                                   % [400]pdfTeX warning (ext4):
  destination with the same identifier (name{tcb@cnt@block.3}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21184 ...example}{}{g:example:idm45326268942560}
+l.21184 ...example}{}{g:example:idm46424095479936}
                                                   %
 ************************************************
 Section 5.3 Fourier series on arbitrary intervals
@@ -7466,7 +7466,7 @@ l.21227 ...ns.}{x:definition:def-fourier-odd_even}
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21240 ...example}{}{g:example:idm45326268924704}
+l.21240 ...example}{}{g:example:idm46424095462144}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.3}) has been already used, 
 duplicate ignored
@@ -7496,13 +7496,13 @@ l.21290 ...s.}{}{x:theorem:thm-fourier_odd_series}
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21301 ...example}{}{g:example:idm45326268902720}
+l.21301 ...example}{}{g:example:idm46424095440032}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.8}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.21315 ...example}{}{g:example:idm45326268896928}
+l.21315 ...example}{}{g:example:idm46424095434240}
                                                   %
 ************************************************
 Section 5.5 Convergence of Fourier series
@@ -7535,7 +7535,7 @@ nation with the same identifier (name{tcb@cnt@block.5}) has been already used,
 duplicate ignored
 <to be read again> 
                    \relax 
-l.21381 ...example}{}{g:example:idm45326268864128}
+l.21381 ...example}{}{g:example:idm46424095401376}
                                                   % [404]
 ************************************************
 Appendix A Appendices
@@ -7952,7 +7952,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22599 ...sections}{g:figure:idm45326268510320}{}
+l.22599 ...sections}{g:figure:idm46424095047696}{}
                                                   %
 Underfull \hbox (badness 2635) in paragraph at lines 22607--22608
 []\T1/lmr/m/n/10 elliptic cylin-
@@ -8013,7 +8013,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22725 ...rfaces-1}{g:figure:idm45326268496080}{}
+l.22725 ...rfaces-1}{g:figure:idm46424095033456}{}
                                                   %
 Underfull \hbox (badness 10000) in paragraph at lines 22737--22738
 []\T1/lmr/m/n/10 elliptic
@@ -8060,7 +8060,7 @@ Hyperbola.pdf>]pdfTeX warning (ext4): destination with the same identifier (nam
 e{tcb@cnt@block.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22828 ...rfaces-2}{g:figure:idm45326268481856}{}
+l.22828 ...rfaces-2}{g:figure:idm46424095019232}{}
                                                   %
 Underfull \hbox (badness 10000) in paragraph at lines 22836--22837
 []\T1/lmr/m/n/10 hyperboloid of
@@ -11678,7 +11678,7 @@ sr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on clp_3_mc.pdf (837 pages, 6082180 bytes).
+Output written on clp_3_mc.pdf (837 pages, 6082085 bytes).
 PDF statistics:
  18591 PDF objects out of 22161 (max. 8388607)
  16636 compressed objects within 167 object streams
