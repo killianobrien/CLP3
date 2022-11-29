@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-28T16:39:13Z    *-->
+<!--*    on 2022-11-29T10:45:08Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -299,15 +299,23 @@ x \amp = 2 \sum_{n=1}^\infty \frac{(-1)^{n+1}}{n} \sin(nx)\\
 \frac{d}{dx} \left ( \sum_{n=1}^\infty b_n \sin(nx) \right ) = \sum_{n=1}^\infty \frac{d}{dx} \left ( b_n \sin(nx) \right ).
 \end{equation*}
 </div>
-<p data-braille="continuation">Of course, the derivative of a finite sum is always equal to the sum of the derivatives, as differentiation is a linear operator.  But infinite sums are a different matter. Term-by-term differentiation (or integration) of  an infinite series of functions (e.g. Taylor series, Fourier series, \dots) is only valid if the series <em class="emphasis">converges uniformly</em>. This is a stronger form of convergence than the usual <em class="emphasis">pointwise convergence</em>.</p>
-<article class="theorem theorem-like" id="thm-fourier_uni_conv"><h6 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+<p data-braille="continuation">Of course, the derivative of a finite sum is always equal to the sum of the derivatives, as differentiation is a linear operator.  But infinite sums are a different matter. Term-by-term differentiation (or integration) of  an infinite series of functions (e.g. Taylor series, Fourier series, ...) is only valid if the series <em class="emphasis">converges uniformly</em>. This is a stronger form of convergence than the usual <em class="emphasis">pointwise convergence</em>.</p>
+<p id="p-52">The two forms of convergence for sequences of functions are defined below. It is important to realise that uniform convergence is a far stronger condition on the bahaviour of the sequence of functions than pointwise convergence. So not all sequences of functions that converge in a pointwise fashion will converge uniformly.</p>
+<article class="definition definition-like" id="def-fourier-pointwise"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Pointwise convergence.</span>
 </h6>
-<p id="p-52">The Fourier series of the function \(f\) over \((-\pi, \pi)\) is uniformly convergent if \(f\) is continuous on \((-\pi, \pi)\text{,}\) \(\frac{df}{dx}\) is piece-wise continuous on \((-\pi, \pi)\) and \(f\) is periodic of period \(2\pi\) so that \(f(-\pi)=f(\pi)\text{.}\)</p></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-53">Omitted.</p></article></div>
+<p id="p-53">A sequence of functions \(f_n:\mathbb{R} \to \mathbb{R}\) converges <em class="emphasis">pointwise</em> to a limit function \(f:\mathbb{R} \to \mathbb{R}\) if and only if for each argument \(a \in \mathbb{R}\) the sequence of values \(\left \{ f_n(a) \right \}_{n=1}^\infty\) converges to the limit value \(f(a)\text{,}\) i.e. for all \(a \in \mathbb{R}\) and for all \(\epsilon \gt 0\) there exists \(N \in \mathbb{N}\) such that \(|f_n(a) - f(a)| \lt \epsilon\text{.}\)</p></article><p id="p-54">Both forms of convergence can also take place over restricted domains, i.e. not necessarily the whole of \(\mathbb{R}\text{.}\) This should be made clear wherever they appear.</p>
+<article class="definition definition-like" id="def-fourier-uniform"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Uniform convergence.</span>
+</h6>
+<p id="p-55">A sequence of functions \(f_n:\mathbb{R} \to \mathbb{R}\) converges <em class="emphasis">uniformly</em> to a limit function \(f:\mathbb{R} \to \mathbb{R}\) across the whole domain \(\mathbb{R}\) if and only if for each argument \(a \in \mathbb{R}\) the sequence of values \(\left \{ f_n(a) \right \}_{n=1}^\infty\) converges to the limit value \(f(a)\) and moreover there is an overall bound on the rate that this convergence takes place at. Put formally, this is,  for all \(\epsilon \gt 0\) there exists \(N \in \mathbb{N}\) such that for all \(a \in \mathbb{R}\text{,}\) \(|f_n(a) - f(a)| \lt \epsilon\text{.}\)</p></article><article class="theorem theorem-like" id="thm-fourier_uni_conv"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h6>
+<p id="p-56">The Fourier series of the function \(f\) over \((-\pi, \pi)\) is uniformly convergent if \(f\) is continuous on \((-\pi, \pi)\text{,}\) \(\frac{df}{dx}\) is piece-wise continuous on \((-\pi, \pi)\) and \(f\) is periodic of period \(2\pi\) so that \(f(-\pi)=f(\pi)\text{.}\)</p></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-57">Omitted.</p></article></div>
 <article class="theorem theorem-like" id="thm-fourier_parseval"><h6 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Parseval's theorem.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">Parseval's theorem.</span>
 </h6>
-<p id="p-54">If \(f(x)\) has period \(2\pi\) and its Fourier series</p>
+<p id="p-58">If \(f(x)\) has period \(2\pi\) and its Fourier series</p>
 <div class="displaymath">
 \begin{equation*}
 f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
@@ -319,11 +327,11 @@ f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n 
 \frac{1}{2\pi} \int_{-\pi}^\pi \left ( f(x) \right )^2 \, dx =
 \frac{1}{4} a_0^2 + \frac{1}{2} \sum_{n=1}^\infty \left ( a_n^2 + b_n^2 \right ) .
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref original" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-55">In lecture.</p></article></div>
-<p id="p-56">Parseval's theorem can be used to determine the sum of particular series.</p>
+</div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref original" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-59">In lecture.</p></article></div>
+<p id="p-60">Parseval's theorem can be used to determine the sum of particular series.</p>
 <article class="example example-like" id="example-9"><a data-knowl="" class="id-ref original" data-refid="hk-example-9"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-9"><article class="example example-like"><p id="p-57">The Fourier series for the half-way rectified sine wave</p>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-9"><article class="example example-like"><p id="p-61">The Fourier series for the half-way rectified sine wave</p>
 <div class="displaymath">
 \begin{equation*}
 f(x) =
@@ -347,7 +355,7 @@ f(x) = \frac{1}{\pi} + \frac{1}{2} \sin(x) -\frac{2}{\pi} \sum_{n=1}^\infty \fra
 \end{equation*}
 </div>
 <div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><p id="p-58">In lecture.</p></div></div>
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><p id="p-62">In lecture.</p></div></div>
 </div></article></div></section></div></main>
 </div>
 </body>

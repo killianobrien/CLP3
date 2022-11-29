@@ -380,9 +380,32 @@ which is plainly nonsense. The problem is that we have assumed we could differen
 <me>
 \frac{d}{dx} \left ( \sum_{n=1}^\infty b_n \sin(nx) \right ) = \sum_{n=1}^\infty \frac{d}{dx} \left ( b_n \sin(nx) \right ).
 </me>
-Of course, the derivative of a finite sum is always equal to the sum of the derivatives, as differentiation is a linear operator.  But infinite sums are a different matter. Term-by-term differentiation (or integration) of  an infinite series of functions (e.g. Taylor series, Fourier series, \dots) is only valid if the series <em>converges uniformly</em>. This is a stronger form of convergence than the usual <em>pointwise convergence</em>.
+Of course, the derivative of a finite sum is always equal to the sum of the derivatives, as differentiation is a linear operator.  But infinite sums are a different matter. Term-by-term differentiation (or integration) of  an infinite series of functions (e.g. Taylor series, Fourier series, ...) is only valid if the series <em>converges uniformly</em>. This is a stronger form of convergence than the usual <em>pointwise convergence</em>.
   </p>
+  <p>
+    The two forms of convergence for sequences of functions are defined below. It is important to realise that uniform convergence is a far stronger condition on the bahaviour of the sequence of functions than pointwise convergence. So not all sequences of functions that converge in a pointwise fashion will converge uniformly.  
+  </p>
+<definition xml:id="def-fourier-pointwise">
+  <title>Pointwise convergence</title>
+    <statement>
+    <p>
+     A sequence of functions <m>f_n:\mathbb{R} \to \mathbb{R}</m> converges <em>pointwise</em> to a limit function <m>f:\mathbb{R} \to \mathbb{R}</m> if and only if for each argument <m>a \in \mathbb{R}</m> the sequence of values <m>\left \{ f_n(a) \right \}_{n=1}^\infty</m> converges to the limit value <m>f(a)</m>, i.e. for all <m>a \in \mathbb{R}</m> and for all <m>\epsilon \gt 0</m> there exists <m>N \in \mathbb{N}</m> such that <m>|f_n(a) - f(a)| \lt \epsilon</m>. 
+    </p>
+  </statement>
+</definition>
 
+<p>
+  Both forms of convergence can also take place over restricted domains, i.e. not necessarily the whole of <m>\mathbb{R}</m>. This should be made clear wherever they appear. 
+</p>
+
+<definition xml:id="def-fourier-uniform">
+<title>Uniform convergence</title>
+  <statement>
+    <p>
+        A sequence of functions <m>f_n:\mathbb{R} \to \mathbb{R}</m> converges <em>uniformly</em> to a limit function <m>f:\mathbb{R} \to \mathbb{R}</m> across the whole domain <m>\mathbb{R}</m> if and only if for each argument <m>a \in \mathbb{R}</m> the sequence of values <m>\left \{ f_n(a) \right \}_{n=1}^\infty</m> converges to the limit value <m>f(a)</m> and moreover there is an overall bound on the rate that this convergence takes place at. Put formally, this is,  for all <m>\epsilon \gt 0</m> there exists <m>N \in \mathbb{N}</m> such that for all <m>a \in \mathbb{R}</m>, <m>|f_n(a) - f(a)| \lt \epsilon</m>. 
+    </p>
+  </statement>
+</definition>
 
   <theorem xml:id="thm-fourier_uni_conv">
     <statement>
