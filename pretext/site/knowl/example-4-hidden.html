@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-29T10:45:08Z    *-->
+<!--*    on 2022-11-29T10:50:00Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -11,20 +11,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="example example-like"><p>Show that the Fourier series for the square wave function \(f\) defined by</p>
+<body><article class="example example-like"><p>For example, if</p>
 <div class="displaymath">
 \begin{equation*}
-f(x) = \begin{cases} 0 \amp \mbox{if } -\pi \lt x \lt 0 \\
-1 \amp \mbox{if } 0 \leq x \leq \pi . \end{cases}
+\va = \llt 1,2,3\rgt\qquad
+\vb = \llt 3,2,1\rgt\qquad
+\vc = \llt 1,0,1\rgt
 \end{equation*}
 </div>
-<p data-braille="continuation">is given by</p>
+<p data-braille="continuation">then</p>
+<div class="displaymath">
+\begin{alignat*}{2}
+2\va&amp;=2\llt 1,2,3\rgt&amp;&amp;=\llt 2,4,6\rgt\\
+-\vb&amp;=-\llt 3,2,1\rgt&amp;&amp;=\llt -3,-2,-1\rgt\\
+3\vc&amp;=3\llt 1,0,1\rgt&amp;&amp;=\llt 3,0,3\rgt
+\end{alignat*}
+</div>
+<p data-braille="continuation">and</p>
 <div class="displaymath">
 \begin{align*}
-f(x) \amp = \frac{1}{2} + \frac{2}{\pi} \left (\sin(x) + \frac{1}{3}\sin(3x) + \frac{1}{5} \sin(5x) + \dots \right ),\\
-\amp = \frac{1}{2} + \frac{2}{\pi} \sum_{n=1}^\infty \frac{1}{2n-1} \sin \big((2n-1)x\big),
+2\va-\vb+3\vc
+&amp;= \llt 2,4,6\rgt + \llt -3,-2,-1\rgt+\llt 3,0,3\rgt\\
+&amp;= \llt 2-3+3\,,\,4-2+0\,,\,6-1+3\rgt\\
+&amp;= \llt 2,2,8 \rgt
 \end{align*}
-</div>
-<p data-braille="continuation">and verify that the series has the required value at the point of discontinuity \(x=0\text{.}\)</p>
-<div class="solutions"><a class="original" data-knowl="./knowl/solution-2-hidden.html" title="Solution 1.2.2.1"><span class="type">Solution</span></a></div></article></body>
+</div></article></body>
 </html>

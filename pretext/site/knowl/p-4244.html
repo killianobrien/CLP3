@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-17T14:16:51Z    *-->
+<!--*    on 2022-11-29T10:57:21Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,26 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Domain: \(|x|\ge 1\)</p>
-<span class="incontext"><a href="app_trig.html#p-4244">in-context</a></span>
+<p>Consider the transformation</p>
+<div class="displaymath">
+\begin{equation*}
+t = \frac{\pi x}{T}.
+\end{equation*}
+</div>
+<p data-braille="continuation">As the variable \(x\) ranges from \(-T\) to \(T\text{,}\) the variable \(t\) ranges from \(-\pi\) to \(\pi\text{.}\) We can then show that if \(f\) is a function of period \(2T\) (which is well-behaved as described in Fourier's theorem) then \(f\) has a Fourier series</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos \left ( \frac{nx\pi}{T}\right ) + \sum_{n=1}^\infty b_n \sin\left ( \frac{nx\pi}{T}\right ) ,
+\end{equation*}
+</div>
+<p data-braille="continuation">where the Fourier coefficients are given by</p>
+<div class="displaymath">
+\begin{align*}
+a_0 \amp = \frac{1}{T} \int_{-T}^T f(x) \, dx,\\
+a_n \amp = \frac{1}{T} \int_{-T}^T f(x) \cos\left ( \frac{nx\pi}{T}\right )  \, dx, \quad (n \geq 1)\\
+b_n \amp = \frac{1}{T} \int_{-T}^T f(x) \sin\left ( \frac{nx\pi}{T}\right )  \, dx \quad (n \geq 1).
+\end{align*}
+</div>
+<span class="incontext"><a href="sec-fourier_arbitrary.html#p-4244">in-context</a></span>
 </body>
 </html>

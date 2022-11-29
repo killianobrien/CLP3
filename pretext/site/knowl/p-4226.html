@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-17T14:16:50Z    *-->
+<!--*    on 2022-11-29T10:57:20Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,11 +13,37 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>If \(f: \mathbb{R} \to \mathbb{R}\) is a periodic function of period \(2 \pi\) and in the interval \((-\pi, \pi)\) has</p>
+<ol class="decimal">
+<li><p>at most a finite number of discontinuities ,</p></li>
+<li><p>at most a finite number of maxima and minima,</p></li>
+</ol>
+<p data-braille="continuation">then there exist a set of coefficients</p>
 <div class="displaymath">
 \begin{equation*}
-\cos \theta
+a_0, a_1, a_2, \dots , b_1, b_2 , \dots \in \mathbb{R},
 \end{equation*}
 </div>
-<span class="incontext"><a href="app_trig.html#p-4226">in-context</a></span>
+<p data-braille="continuation">such that at any point of \(x\) of continuity of \(f\) we have</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = \frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
+\end{equation*}
+</div>
+<p data-braille="continuation">and at points of discontinuity, \(x_d\text{,}\) the series satisfies</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{1}{2} \left ( f(x_d^+) + f(x_d^-) \right ) =
+\frac{1}{2} a_0 + \sum_{n=1}^\infty a_n \cos(nx) + \sum_{n=1}^\infty b_n \sin(nx),
+\end{equation*}
+</div>
+<p data-braille="continuation">where</p>
+<div class="displaymath">
+\begin{equation*}
+f(x_d^+) = \lim_{x \downarrow x_d} f(x), \quad
+f(x_d^-) = \lim_{x \uparrow x_d} f(x).            
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-fourier_defs.html#p-4226">in-context</a></span>
 </body>
 </html>

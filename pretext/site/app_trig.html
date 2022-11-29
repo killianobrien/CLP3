@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2022-11-17T14:09:26Z    *-->
+<!--*    on 2022-11-29T10:49:33Z    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -311,6 +311,15 @@ MathJax.Hub.Config({
 <li><a href="sec-final.html" data-scroll="sec-final">Further terminology and results</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="chap_fourier.html" data-scroll="chap_fourier"><span class="codenumber">5</span> <span class="title">Fourier series</span></a><ul>
+<li><a href="sec-fourier_defs.html" data-scroll="sec-fourier_defs">Fourier's theorem and initial definitions</a></li>
+<li><a href="sec-fourier_coeffs.html" data-scroll="sec-fourier_coeffs">Determining the Fourier coefficients</a></li>
+<li><a href="sec-fourier_arbitrary.html" data-scroll="sec-fourier_arbitrary">Fourier series on arbitrary intervals</a></li>
+<li><a href="sec-fourier_od_even.html" data-scroll="sec-fourier_od_even">Odd and even functions</a></li>
+<li><a href="sec-fourier_convergence.html" data-scroll="sec-fourier_convergence">Convergence of Fourier series</a></li>
+</ul>
+</li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Appendices</span></a></li>
 <li class="link">
 <a href="app_parent.html" data-scroll="app_parent"><span class="codenumber">A</span> <span class="title">Appendices</span></a><ul>
@@ -336,17 +345,17 @@ MathJax.Hub.Config({
 <span class="type">Subsection</span> <span class="codenumber">A.1.1</span> <span class="title">Trigonometry — Graphs</span>
 </h3>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4225">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4282">
 \begin{equation*}
 \sin \theta
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4226">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4283">
 \begin{equation*}
 \cos \theta
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4227">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4284">
 \begin{equation*}
 \tan \theta
 \end{equation*}
@@ -360,7 +369,7 @@ MathJax.Hub.Config({
 <span class="type">Subsection</span> <span class="codenumber">A.1.2</span> <span class="title">Trigonometry — Special Triangles</span>
 </h3>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="figs/special_triangles.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-4228">From the above pair of special triangles we have</p>
+<p id="p-4285">From the above pair of special triangles we have</p>
 <div class="displaymath">
 \begin{align*}
 \sin \frac{\pi}{4} &amp;= \frac{1}{\sqrt{2}} &amp;  \sin \frac{\pi}{6} &amp;= \frac{1}{2} &amp; \sin \frac{\pi}{3} &amp;= \frac{\sqrt{3}}{2}\\
@@ -371,42 +380,42 @@ MathJax.Hub.Config({
 </div></section><section class="subsection" id="subsection-57"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">A.1.3</span> <span class="title">Trigonometry — Simple Identities</span>
 </h3>
-<ul id="p-4229" class="disc">
-<li id="li-2334">Periodicity<div class="displaymath">
+<ul id="p-4286" class="disc">
+<li id="li-2341">Periodicity<div class="displaymath">
 \begin{align*}
 \sin(\theta+2\pi) &amp;= \sin(\theta) &amp;
 \cos(\theta+2\pi) &amp;= \cos(\theta)
 \end{align*}
 </div>
 </li>
-<li id="li-2335">Reflection<div class="displaymath">
+<li id="li-2342">Reflection<div class="displaymath">
 \begin{align*}
 \sin(-\theta)&amp;=-\sin(\theta) &amp; \cos(-\theta) &amp;=\cos(\theta)
 \end{align*}
 </div>
 </li>
-<li id="li-2336">Reflection around \(\pi/4\)<div class="displaymath">
+<li id="li-2343">Reflection around \(\pi/4\)<div class="displaymath">
 \begin{align*}
 \sin\left(\tfrac{\pi}{2}-\theta\right)&amp;=\cos\theta &amp;
 \cos\left(\tfrac{\pi}{2}-\theta\right)&amp;=\sin\theta
 \end{align*}
 </div>
 </li>
-<li id="li-2337">Reflection around \(\pi/2\)<div class="displaymath">
+<li id="li-2344">Reflection around \(\pi/2\)<div class="displaymath">
 \begin{align*}
 \sin\left(\pi-\theta\right)&amp;=\sin\theta &amp;
 \cos\left(\pi-\theta\right)&amp;=-\cos\theta
 \end{align*}
 </div>
 </li>
-<li id="li-2338">Rotation by \(\pi\)<div class="displaymath">
+<li id="li-2345">Rotation by \(\pi\)<div class="displaymath">
 \begin{align*}
 \sin\left(\theta+\pi\right)&amp;=-\sin\theta &amp;
 \cos\left(\theta+\pi\right)&amp;=-\cos\theta
 \end{align*}
 </div>
 </li>
-<li id="li-2339">Pythagoras<div class="displaymath">
+<li id="li-2346">Pythagoras<div class="displaymath">
 \begin{align*}
 \sin^2\theta + \cos^2 \theta &amp;=1\\
 \tan^2\theta + 1  &amp;= \sec^2\theta\\
@@ -414,7 +423,7 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 </li>
-<li id="li-2340">\(\sin\) and \(\cos\) building blocks<div class="displaymath">
+<li id="li-2347">\(\sin\) and \(\cos\) building blocks<div class="displaymath">
 \begin{gather*}
 \tan\theta=\frac{\sin\theta}{\cos\theta}\quad
 \csc\theta=\frac{1}{\sin\theta}\quad
@@ -426,27 +435,27 @@ MathJax.Hub.Config({
 </ul></section><section class="subsection" id="sec_trig_add"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">A.1.4</span> <span class="title">Trigonometry — Add and Subtract Angles</span>
 </h3>
-<ul id="p-4230" class="disc">
-<li id="li-2341">Sine<div class="displaymath">
+<ul id="p-4287" class="disc">
+<li id="li-2348">Sine<div class="displaymath">
 \begin{align*}
 \sin(\alpha \pm \beta) &amp;= \sin(\alpha)\cos(\beta) \pm \cos(\alpha)\sin(\beta)
 \end{align*}
 </div>
 </li>
-<li id="li-2342">Cosine<div class="displaymath">
+<li id="li-2349">Cosine<div class="displaymath">
 \begin{align*}
 \cos(\alpha \pm \beta) &amp;= \cos(\alpha)\cos(\beta) \mp \sin(\alpha)\sin(\beta)
 \end{align*}
 </div>
 </li>
-<li id="li-2343">Tangent<div class="displaymath">
+<li id="li-2350">Tangent<div class="displaymath">
 \begin{align*}
 \tan(\alpha+\beta)&amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\\
 \tan(\alpha-\beta)&amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}
 \end{align*}
 </div>
 </li>
-<li id="li-2344">Double angle<div class="displaymath">
+<li id="li-2351">Double angle<div class="displaymath">
 \begin{align*}
 \sin(2\theta) &amp;= 2\sin(\theta)\cos(\theta)\\
 \cos(2\theta) &amp;= \cos^2(\theta) - \sin^2(\theta)\\
@@ -459,7 +468,7 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 </li>
-<li id="li-2345">Products to sums<div class="displaymath">
+<li id="li-2352">Products to sums<div class="displaymath">
 \begin{align*}
 \sin(\alpha)\cos(\beta)&amp;= \frac{\sin(\alpha+\beta) +  \sin(\alpha-\beta)}{2}\\
 \sin(\alpha)\sin(\beta)&amp;= \frac{\cos(\alpha-\beta) - \cos(\alpha+\beta)}{2}\\
@@ -467,7 +476,7 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 </li>
-<li id="li-2346">Sums to products<div class="displaymath">
+<li id="li-2353">Sums to products<div class="displaymath">
 \begin{align*}
 \sin\alpha+\sin\beta
 &amp;= 2 \sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}\\
@@ -484,34 +493,34 @@ MathJax.Hub.Config({
 <span class="type">Subsection</span> <span class="codenumber">A.1.5</span> <span class="title">Inverse Trigonometric Functions</span>
 </h3>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4231">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4288">
 \begin{equation*}
 \arcsin x
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4232">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4289">
 \begin{equation*}
 \arccos x
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4233">\(\arctan x\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4290">\(\arctan x\)</p></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4234">Domain: \(-1 \leq x \leq 1\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4235">Domain: \(-1 \leq x \leq 1\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4236">Domain: all real numbers</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4291">Domain: \(-1 \leq x \leq 1\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4292">Domain: \(-1 \leq x \leq 1\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4293">Domain: all real numbers</p></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4237">Range: \(-\frac{\pi}{2} \leq \arcsin x \leq \frac{\pi}{2}\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4238">Range: \(0 \leq \arccos x \leq \pi\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4239">Range: \(-\frac{\pi}{2}  \lt  \arctan x  \lt  \frac{\pi}{2}\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4294">Range: \(-\frac{\pi}{2} \leq \arcsin x \leq \frac{\pi}{2}\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4295">Range: \(0 \leq \arccos x \leq \pi\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4296">Range: \(-\frac{\pi}{2}  \lt  \arctan x  \lt  \frac{\pi}{2}\)</p></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
 <div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><img src="images/image-865.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><img src="images/image-866.svg" style="width: 100%; height: auto;" alt=""></div>
 <div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><img src="images/image-867.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
-<p id="p-4240">Since these functions are inverses of each other we have</p>
+<p id="p-4297">Since these functions are inverses of each other we have</p>
 <div class="displaymath">
 \begin{align*}
 \arcsin(\sin \theta) &amp;= \theta &amp; -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}\\
@@ -528,31 +537,31 @@ MathJax.Hub.Config({
 \end{align*}
 </div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4241">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4298">
 \begin{equation*}
 \arccsc x
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4242">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4299">
 \begin{equation*}
 \arcsec x
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4243">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4300">
 \begin{equation*}
 \arccot x
 \end{equation*}
 </div></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4244">Domain: \(|x|\ge 1\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4245">Domain: \(|x|\ge 1\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4246">Domain: all real numbers</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4301">Domain: \(|x|\ge 1\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4302">Domain: \(|x|\ge 1\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4303">Domain: all real numbers</p></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4247">Range: \(-\frac{\pi}{2} \leq \arccsc x \leq \frac{\pi}{2}\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4248">Range: \(0 \leq \arcsec x \leq \pi\)</p></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4249">Range: \(0  \lt  \arccot x  \lt  \pi\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4304">Range: \(-\frac{\pi}{2} \leq \arccsc x \leq \frac{\pi}{2}\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4305">Range: \(0 \leq \arcsec x \leq \pi\)</p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4306">Range: \(0  \lt  \arccot x  \lt  \pi\)</p></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
 <div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><img src="images/image-868.svg" style="width: 100%; height: auto;" alt=""></div>
@@ -560,19 +569,19 @@ MathJax.Hub.Config({
 <div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><img src="images/image-870.svg" style="width: 100%; height: auto;" alt=""></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.166666666666667%;margin-right:1.166666666666667%;">
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4250">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4307">
 \begin{equation*}
 \arccsc x \ne 0
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4251">
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><div class="displaymath" id="p-4308">
 \begin{equation*}
 \arcsec x \ne \frac{\pi}{2}
 \end{equation*}
 </div></div>
-<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4252"></p></div>
+<div class="sbspanel" style="width:31.740614334471%;justify-content:flex-start;"><p id="p-4309"></p></div>
 </div></div>
-<p id="p-4253">Again</p>
+<p id="p-4310">Again</p>
 <div class="displaymath">
 \begin{align*}
 \arccsc(\csc \theta) &amp;= \theta &amp; -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2},\ \theta\ne 0\\
