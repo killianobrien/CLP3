@@ -125,30 +125,36 @@
 \contentsline {section}{\numberline {4.6}Solving simultaneous (coupled) ODEs}{394}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Impulses and steps: The Dirac and Heaviside functions}{395}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Further terminology and results}{398}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Fourier series}{399}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Fourier's theorem and initial definitions}{399}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Determining the Fourier coefficients}{400}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Fourier series on arbitrary intervals}{401}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Odd and even functions}{401}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Convergence of Fourier series}{403}{section.5.5}%
 \vspace {\normalbaselineskip }
-\contentsline {chapter}{\numberline {A}Appendices}{399}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Trigonometry}{399}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Trigonometry \textemdash {} Graphs}{399}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Trigonometry \textemdash {} Special Triangles}{399}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Trigonometry \textemdash {} Simple Identities}{400}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Trigonometry \textemdash {} Add and Subtract Angles}{400}{subsection.A.1.4}%
-\contentsline {subsection}{\numberline {A.1.5}Inverse Trigonometric Functions}{401}{subsection.A.1.5}%
-\contentsline {section}{\numberline {A.2}Powers and Logarithms}{402}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Powers}{402}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Logarithms}{403}{subsection.A.2.2}%
-\contentsline {section}{\numberline {A.3}Table of Derivatives}{404}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Table of Integrals}{405}{section.A.4}%
-\contentsline {section}{\numberline {A.5}Table of Taylor Expansions}{406}{section.A.5}%
-\contentsline {section}{\numberline {A.6}3d Coordinate Systems}{407}{section.A.6}%
-\contentsline {subsection}{\numberline {A.6.1}Cartesian Coordinates}{407}{subsection.A.6.1}%
-\contentsline {subsection}{\numberline {A.6.2}Cylindrical Coordinates}{408}{subsection.A.6.2}%
-\contentsline {subsection}{\numberline {A.6.3}Spherical Coordinates}{408}{subsection.A.6.3}%
-\contentsline {section}{\numberline {A.7}ISO Coordinate System Notation}{410}{section.A.7}%
-\contentsline {subsection}{\numberline {A.7.1}Polar Coordinates}{411}{subsection.A.7.1}%
-\contentsline {subsection}{\numberline {A.7.2}Cylindrical Coordinates}{412}{subsection.A.7.2}%
-\contentsline {subsection}{\numberline {A.7.3}Spherical Coordinates}{413}{subsection.A.7.3}%
-\contentsline {section}{\numberline {A.8}Conic Sections and Quadric Surfaces}{415}{section.A.8}%
-\contentsline {chapter}{\numberline {B}Hints for Exercises}{418}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Answers to Exercises}{431}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Solutions to Exercises}{487}{appendix.D}%
+\contentsline {chapter}{\numberline {A}Appendices}{406}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Trigonometry}{406}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Trigonometry \textemdash {} Graphs}{406}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Trigonometry \textemdash {} Special Triangles}{406}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Trigonometry \textemdash {} Simple Identities}{407}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Trigonometry \textemdash {} Add and Subtract Angles}{407}{subsection.A.1.4}%
+\contentsline {subsection}{\numberline {A.1.5}Inverse Trigonometric Functions}{408}{subsection.A.1.5}%
+\contentsline {section}{\numberline {A.2}Powers and Logarithms}{409}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Powers}{409}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Logarithms}{410}{subsection.A.2.2}%
+\contentsline {section}{\numberline {A.3}Table of Derivatives}{411}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Table of Integrals}{412}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Table of Taylor Expansions}{413}{section.A.5}%
+\contentsline {section}{\numberline {A.6}3d Coordinate Systems}{414}{section.A.6}%
+\contentsline {subsection}{\numberline {A.6.1}Cartesian Coordinates}{414}{subsection.A.6.1}%
+\contentsline {subsection}{\numberline {A.6.2}Cylindrical Coordinates}{415}{subsection.A.6.2}%
+\contentsline {subsection}{\numberline {A.6.3}Spherical Coordinates}{415}{subsection.A.6.3}%
+\contentsline {section}{\numberline {A.7}ISO Coordinate System Notation}{417}{section.A.7}%
+\contentsline {subsection}{\numberline {A.7.1}Polar Coordinates}{418}{subsection.A.7.1}%
+\contentsline {subsection}{\numberline {A.7.2}Cylindrical Coordinates}{419}{subsection.A.7.2}%
+\contentsline {subsection}{\numberline {A.7.3}Spherical Coordinates}{420}{subsection.A.7.3}%
+\contentsline {section}{\numberline {A.8}Conic Sections and Quadric Surfaces}{422}{section.A.8}%
+\contentsline {chapter}{\numberline {B}Hints for Exercises}{425}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Answers to Exercises}{438}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Solutions to Exercises}{494}{appendix.D}%
 \contentsfinish 
