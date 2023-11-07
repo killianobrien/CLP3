@@ -108,8 +108,8 @@ and using a similar approach that we have used before. You should find that
 </me>
 This example also illustrates a phenomenon known as <em>path dependence</em>, i.e. the two paths<m>DEF</m> and <m>DGF</m> from <m>D</m> to <m>F</m> produce different values,
 <me>
-\oint\limits_{DEF} \, 3x^2 y^2 , dx + 2xy \, dy = 13 , \quad
-\oint\limits_{DFG} \, 3x^2 y^2 , dx + 2xy \, dy  = 31 .
+\int\limits_{DEF} \, 3x^2 y^2 , dx + 2xy \, dy = 13 , \quad
+\int\limits_{DFG} \, 3x^2 y^2 , dx + 2xy \, dy  = 31 .
 </me></p>
 </solution>
 </example>
