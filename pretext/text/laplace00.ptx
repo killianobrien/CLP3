@@ -143,7 +143,7 @@ We can think of the Laplace transform of some kind of continuous analogue of a p
   <title>Transform of the exponential</title>
   <statement>
     <p>
-      If <m>f</m> is a function of exponential type like <m>f(t) = e^{-at}</m> for <m>t>0</m> and <m>a \in \mathbb{R}</m> then <m>\L{f(t)}=\frac{1}{s-a}</m>
+      If <m>f</m> is a function of exponential type like <m>f(t) = e^{-at}</m> for <m>t>0</m> and <m>a \in \mathbb{R}</m> then <m>\L{f(t)}=\frac{1}{s+a}</m>
     </p>
   </statement>
   <solution>

@@ -68,8 +68,8 @@
   <use xlink:href="#glyph1-1" x="135.64" y="9.549"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph1-2" x="148.056671" y="9.549"/>
-  <use xlink:href="#glyph1-3" x="153.909937" y="9.549"/>
+  <use xlink:href="#glyph1-2" x="148.049498" y="9.549"/>
+  <use xlink:href="#glyph1-3" x="153.89559" y="9.549"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-2" x="158.471" y="9.549"/>
@@ -79,7 +79,7 @@
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph1-4" x="179.219" y="9.549"/>
-  <use xlink:href="#glyph1-5" x="185.072266" y="9.549"/>
+  <use xlink:href="#glyph1-5" x="185.065093" y="9.549"/>
 </g>
 <path style="fill:none;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-dasharray:2.98883,2.98883;stroke-miterlimit:10;" d="M 28.346031 0.001625 L 63.779625 -106.299156 " transform="matrix(1,0,0,-1,57.986,112.861)"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
@@ -93,7 +93,7 @@
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph1-2" x="157.364" y="222.15"/>
-  <use xlink:href="#glyph1-3" x="163.217266" y="222.15"/>
+  <use xlink:href="#glyph1-3" x="163.210093" y="222.15"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-2" x="167.769" y="222.15"/>
@@ -103,7 +103,7 @@
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph1-4" x="188.518" y="222.15"/>
-  <use xlink:href="#glyph1-5" x="194.371266" y="222.15"/>
+  <use xlink:href="#glyph1-5" x="194.364093" y="222.15"/>
 </g>
 </g>
 </svg>
